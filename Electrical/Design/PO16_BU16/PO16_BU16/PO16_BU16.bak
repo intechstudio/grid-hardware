@@ -1,0 +1,354 @@
+EESchema Schematic File Version 4
+LIBS:PO16_BU16-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L suku_basics:SAMD51N20A U?
+U 1 1 5D5C23AF
+P 4600 10400
+F 0 "U?" H 3800 19665 50  0000 C CNN
+F 1 "SAMD51N20A" H 3800 19574 50  0000 C CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 3700 19900 50  0001 C CNN
+F 3 "" H 3700 19900 50  0001 C CNN
+	1    4600 10400
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1400 0    50   ~ 0
+XRTC1
+Text Label 5600 1500 0    50   ~ 0
+XRTC2
+Wire Wire Line
+	5300 1400 5600 1400
+Wire Wire Line
+	5300 1500 5600 1500
+Text Label 5600 1800 0    50   ~ 0
+MUX_OUT_1
+Wire Wire Line
+	5300 1800 5600 1800
+Wire Wire Line
+	5300 3200 5600 3200
+Text Label 5600 3200 0    50   ~ 0
+MUX_OUT_2
+Text Label 5600 2600 0    50   ~ 0
+SYNC_2
+Wire Wire Line
+	5600 2600 5300 2600
+Wire Wire Line
+	5300 3700 5600 3700
+Wire Wire Line
+	5300 3800 5600 3800
+Wire Wire Line
+	5300 3900 5600 3900
+Wire Wire Line
+	5300 4000 5600 4000
+Wire Wire Line
+	5300 4200 5600 4200
+Wire Wire Line
+	5300 4300 5600 4300
+Text Label 5600 3700 0    50   ~ 0
+QSPI_IO_0
+Text Label 5600 3800 0    50   ~ 0
+QSPI_IO_1
+Text Label 5600 3900 0    50   ~ 0
+QSPI_IO_2
+Text Label 5600 4000 0    50   ~ 0
+QSPI_IO_3
+Text Label 5600 4200 0    50   ~ 0
+QSPI_SCK
+Text Label 5600 4300 0    50   ~ 0
+QSPI_~CE
+Wire Wire Line
+	5300 4700 5600 4700
+Wire Wire Line
+	5300 4600 5600 4600
+Wire Wire Line
+	5300 4500 5600 4500
+Text Label 5600 4500 0    50   ~ 0
+HWCFG_SHIFT
+Text Label 5600 4600 0    50   ~ 0
+HWCFG_CLOCK
+Text Label 5600 4700 0    50   ~ 0
+HWCFG_DATA
+Wire Wire Line
+	5300 5000 5600 5000
+Wire Wire Line
+	5300 5100 5600 5100
+Wire Wire Line
+	5300 5200 5600 5200
+Wire Wire Line
+	5300 5300 5600 5300
+Text Label 5600 5000 0    50   ~ 0
+MAP_MODE
+Text Label 5600 5100 0    50   ~ 0
+GRID_SOUTH_RX
+Text Label 5600 5200 0    50   ~ 0
+GRID_SOUTH_TX
+Text Label 5600 5300 0    50   ~ 0
+UI_PWR_EN
+Wire Wire Line
+	5300 6900 5700 6900
+Wire Wire Line
+	5300 6800 5700 6800
+Wire Wire Line
+	5300 6700 5700 6700
+Wire Wire Line
+	5300 6600 5700 6600
+Wire Wire Line
+	5300 6500 5700 6500
+Wire Wire Line
+	5300 6400 5700 6400
+Text Label 5700 6700 0    50   ~ 0
+MUX_ADDRESS_A
+Text Label 5700 6800 0    50   ~ 0
+MUX_ADDRESS_B
+Text Label 5700 6900 0    50   ~ 0
+MUX_ADDRESS_C
+Text Label 5700 6600 0    50   ~ 0
+SYNC_1
+Text Label 5700 6400 0    50   ~ 0
+GRID_EAST_RX
+Text Label 5700 6500 0    50   ~ 0
+GRID_EAST_TX
+Wire Wire Line
+	5300 8100 5700 8100
+Wire Wire Line
+	5300 8200 5700 8200
+Text Label 5700 8100 0    50   ~ 0
+USB_DN
+Text Label 5700 8200 0    50   ~ 0
+USB_DP
+Text Label 5700 8400 0    50   ~ 0
+XTAL1
+Text Label 5700 8500 0    50   ~ 0
+XTAL2
+Wire Wire Line
+	5300 8400 5700 8400
+Wire Wire Line
+	5300 8500 5700 8500
+Wire Wire Line
+	5300 8600 5700 8600
+Wire Wire Line
+	5300 8700 5700 8700
+Text Label 5700 8600 0    50   ~ 0
+GRID_AUX_RX
+Text Label 5700 8700 0    50   ~ 0
+GRID_AUX_TX
+Text Label 5700 9400 0    50   ~ 0
+SYS_RESET
+Wire Wire Line
+	5700 9400 5300 9400
+Text Label 5700 9200 0    50   ~ 0
+GRID_NORTH_RX
+Text Label 5700 9100 0    50   ~ 0
+GRID_NORTH_TX
+Wire Wire Line
+	5700 9100 5300 9100
+Wire Wire Line
+	5300 9200 5700 9200
+Wire Wire Line
+	5300 9600 5700 9600
+Wire Wire Line
+	5300 9700 5700 9700
+Wire Wire Line
+	5300 9800 5700 9800
+Text Label 5700 9600 0    50   ~ 0
+SYS_SWCLK
+Text Label 5700 9700 0    50   ~ 0
+SYS_SWDIO
+Text Label 6400 9800 0    50   ~ 0
+SYS_SWO
+Text Label 6400 10000 0    50   ~ 0
+LED_DATA
+Text Label 5600 2700 0    50   ~ 0
+GRID_WEST_TX
+Text Label 5600 2800 0    50   ~ 0
+GRID_WEST_RX
+Wire Wire Line
+	5300 2700 5600 2700
+Wire Wire Line
+	5300 2800 5600 2800
+$Comp
+L suku_basics:+3V3_UC #PWR?
+U 1 1 5D5C1330
+P 1300 1300
+F 0 "#PWR?" H 1300 1150 50  0001 C CNN
+F 1 "+3V3_UC" H 1315 1473 50  0000 C CNN
+F 2 "" H 1300 1300 50  0001 C CNN
+F 3 "" H 1300 1300 50  0001 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UC #PWR?
+U 1 1 5D5C22B5
+P 1300 2700
+F 0 "#PWR?" H 1300 2550 50  0001 C CNN
+F 1 "+3V3_UC" H 1315 2873 50  0000 C CNN
+F 2 "" H 1300 2700 50  0001 C CNN
+F 3 "" H 1300 2700 50  0001 C CNN
+	1    1300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:FERRIT FB?
+U 1 1 5D5C27B3
+P 1500 1400
+F 0 "FB?" V 1263 1400 50  0000 C CNN
+F 1 "600 Ohm " V 1354 1400 50  0000 C CNN
+F 2 "suku_basics:FERRIT_0805" V 1430 1400 50  0001 C CNN
+F 3 "~" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D5C3D67
+P 2100 1600
+F 0 "C?" H 2192 1646 50  0000 L CNN
+F 1 "100n" H 2192 1555 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2100 1600 50  0001 C CNN
+F 3 "~" H 2100 1600 50  0001 C CNN
+	1    2100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D5C49BB
+P 1700 1600
+F 0 "C?" H 1792 1646 50  0000 L CNN
+F 1 "10u" H 1792 1555 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 1700 1600 50  0001 C CNN
+F 3 "~" H 1700 1600 50  0001 C CNN
+	1    1700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1300 1300 1400
+Wire Wire Line
+	1300 1400 1400 1400
+Wire Wire Line
+	1600 1400 1700 1400
+Wire Wire Line
+	1700 1500 1700 1400
+Connection ~ 1700 1400
+Wire Wire Line
+	1700 1400 2100 1400
+Wire Wire Line
+	2100 1500 2100 1400
+Connection ~ 2100 1400
+Wire Wire Line
+	2100 1400 2300 1400
+Wire Wire Line
+	2300 1800 2100 1800
+Wire Wire Line
+	1300 1800 1300 1900
+Wire Wire Line
+	1700 1700 1700 1800
+Connection ~ 1700 1800
+Wire Wire Line
+	1700 1800 1300 1800
+Wire Wire Line
+	2100 1700 2100 1800
+Connection ~ 2100 1800
+Wire Wire Line
+	2100 1800 1700 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5D5CB994
+P 1300 1900
+F 0 "#PWR?" H 1300 1650 50  0001 C CNN
+F 1 "GND" H 1305 1727 50  0000 C CNN
+F 2 "" H 1300 1900 50  0001 C CNN
+F 3 "" H 1300 1900 50  0001 C CNN
+	1    1300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D5CCADF
+P 2100 3000
+F 0 "C?" H 2192 3046 50  0000 L CNN
+F 1 "100n" H 2192 2955 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2100 3000 50  0001 C CNN
+F 3 "~" H 2100 3000 50  0001 C CNN
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D5CD15A
+P 1800 3000
+F 0 "C?" H 1892 3046 50  0000 L CNN
+F 1 "100n" H 1892 2955 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 1800 3000 50  0001 C CNN
+F 3 "~" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D5CD2DB
+P 1500 3000
+F 0 "C?" H 1592 3046 50  0000 L CNN
+F 1 "1u" H 1592 2955 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 1500 3000 50  0001 C CNN
+F 3 "~" H 1500 3000 50  0001 C CNN
+	1    1500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2700 1300 2800
+Wire Wire Line
+	2100 2800 2100 2900
+Wire Wire Line
+	1500 2800 1500 2900
+Wire Wire Line
+	1300 2800 1500 2800
+Connection ~ 1500 2800
+Wire Wire Line
+	1500 2800 1800 2800
+Wire Wire Line
+	1800 2900 1800 2800
+Connection ~ 1800 2800
+Wire Wire Line
+	1800 2800 2100 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5D5D1D9A
+P 1300 3300
+F 0 "#PWR?" H 1300 3050 50  0001 C CNN
+F 1 "GND" H 1305 3127 50  0000 C CNN
+F 2 "" H 1300 3300 50  0001 C CNN
+F 3 "" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3300 1300 3200
+Wire Wire Line
+	1300 3200 1500 3200
+Wire Wire Line
+	2100 3200 2100 3100
+Wire Wire Line
+	1800 3100 1800 3200
+Connection ~ 1800 3200
+Wire Wire Line
+	1800 3200 2100 3200
+Wire Wire Line
+	1500 3100 1500 3200
+Connection ~ 1500 3200
+Wire Wire Line
+	1500 3200 1800 3200
+$EndSCHEMATC
