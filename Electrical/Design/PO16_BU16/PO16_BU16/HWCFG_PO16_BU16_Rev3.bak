@@ -207,10 +207,10 @@ HWCFG_CLOCK
 Text HLabel 3400 4100 0    50   Input ~ 0
 HWCFG_SHIFT
 $Comp
-L suku_basics:JP_SolderJumper_2_Open JP?
+L suku_basics:JP_SolderJumper_2_Open JP1
 U 1 1 5D662D78
 P 2200 2000
-F 0 "JP?" V 2154 2068 50  0000 L CNN
+F 0 "JP1" V 2154 2068 50  0000 L CNN
 F 1 "JP_SolderJumper_2_Open" V 2245 2068 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2200 2000 50  0001 C CNN
 F 3 "~" H 2200 2000 50  0001 C CNN
@@ -225,8 +225,8 @@ L suku_basics:+3V3_UC #PWR?
 U 1 1 5D664F80
 P 2200 1800
 AR Path="/5D664F80" Ref="#PWR?"  Part="1" 
-AR Path="/5DC2DC06/5D664F80" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2200 1650 50  0001 C CNN
+AR Path="/5DC2DC06/5D664F80" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 2200 1650 50  0001 C CNN
 F 1 "+3V3_UC" H 2215 1973 50  0000 C CNN
 F 2 "" H 2200 1800 50  0001 C CNN
 F 3 "" H 2200 1800 50  0001 C CNN
