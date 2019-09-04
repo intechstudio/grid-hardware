@@ -1416,10 +1416,10 @@ Wire Wire Line
 Wire Wire Line
 	14100 -3800 14100 -3700
 Wire Wire Line
-	14100 -3800 13600 -3800
+	14100 -3800 13100 -3800
 Connection ~ 14100 -3800
 Wire Wire Line
-	14200 -3900 13400 -3900
+	14200 -3900 13800 -3900
 Wire Wire Line
 	13400 -3900 13400 -4900
 Wire Wire Line
@@ -1469,7 +1469,7 @@ Wire Wire Line
 	15600 -3900 15600 -4000
 Wire Wire Line
 	15000 -3900 15600 -3900
-Text Label 13600 -3800 2    50   ~ 0
+Text Label 13100 -3800 2    50   ~ 0
 UI_PWR_EN
 Text Label 9500 -3900 0    50   ~ 0
 USB_DP
@@ -1549,7 +1549,7 @@ U 1 1 5D6686E6
 P 10700 8500
 F 0 "U8" H 10700 9081 50  0000 C CNN
 F 1 "U_FLASH_W25Q16JVSSIQ" H 10700 8990 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 10700 8500 50  0001 C CNN
+F 2 "suku_basics:SOIC-8_WIDE" H 10700 8500 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 10700 8500 50  0001 C CNN
 	1    10700 8500
 	1    0    0    -1  
@@ -1751,10 +1751,10 @@ Wire Wire Line
 Wire Wire Line
 	14700 6800 15000 6800
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0212
 U 1 1 5D7BBAB5
 P 12600 -5000
-F 0 "#PWR?" H 12600 -5150 50  0001 C CNN
+F 0 "#PWR0212" H 12600 -5150 50  0001 C CNN
 F 1 "+5V" H 12615 -4827 50  0000 C CNN
 F 2 "" H 12600 -5000 50  0001 C CNN
 F 3 "" H 12600 -5000 50  0001 C CNN
@@ -1777,4 +1777,177 @@ Wire Wire Line
 Connection ~ 12600 -4900
 Wire Wire Line
 	12600 -4900 13100 -4900
+$Comp
+L suku_basics:CAP C53
+U 1 1 5D701EE7
+P 13800 -3600
+F 0 "C53" H 13892 -3554 50  0000 L CNN
+F 1 "1u" H 13892 -3645 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 13800 -3600 50  0001 C CNN
+F 3 "~" H 13800 -3600 50  0001 C CNN
+	1    13800 -3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 -3400 13800 -3400
+Wire Wire Line
+	13800 -3400 13800 -3500
+Connection ~ 14100 -3400
+Wire Wire Line
+	13800 -3700 13800 -3900
+Connection ~ 13800 -3900
+Wire Wire Line
+	13800 -3900 13400 -3900
+$Comp
+L suku_basics:+3V3_UC #PWR?
+U 1 1 5D768513
+P 1200 2800
+AR Path="/5D768513" Ref="#PWR?"  Part="1" 
+AR Path="/5D757C78/5D768513" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 1200 2650 50  0001 C CNN
+F 1 "+3V3_UC" H 1215 2973 50  0000 C CNN
+F 2 "" H 1200 2800 50  0001 C CNN
+F 3 "" H 1200 2800 50  0001 C CNN
+	1    1200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D76851D
+P 1600 3100
+AR Path="/5D76851D" Ref="C?"  Part="1" 
+AR Path="/5D757C78/5D76851D" Ref="C55"  Part="1" 
+F 0 "C55" H 1692 3146 50  0000 L CNN
+F 1 "100n" H 1692 3055 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 1600 3100 50  0001 C CNN
+F 3 "~" H 1600 3100 50  0001 C CNN
+	1    1600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5D768527
+P 1200 3100
+AR Path="/5D768527" Ref="C?"  Part="1" 
+AR Path="/5D757C78/5D768527" Ref="C54"  Part="1" 
+F 0 "C54" H 1292 3146 50  0000 L CNN
+F 1 "100n" H 1292 3055 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 1200 3100 50  0001 C CNN
+F 3 "~" H 1200 3100 50  0001 C CNN
+	1    1200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2800 1200 2900
+Wire Wire Line
+	1200 2900 1200 3000
+Connection ~ 1200 2900
+Wire Wire Line
+	1200 2900 1600 2900
+Wire Wire Line
+	1600 3000 1600 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5D768538
+P 1200 3400
+AR Path="/5D768538" Ref="#PWR?"  Part="1" 
+AR Path="/5D757C78/5D768538" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 1200 3150 50  0001 C CNN
+F 1 "GND" H 1205 3227 50  0000 C CNN
+F 2 "" H 1200 3400 50  0001 C CNN
+F 3 "" H 1200 3400 50  0001 C CNN
+	1    1200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3400 1200 3300
+Wire Wire Line
+	1600 3200 1600 3300
+Wire Wire Line
+	1200 3200 1200 3300
+Connection ~ 1200 3300
+Wire Wire Line
+	1200 3300 1600 3300
+Text Notes 1100 2500 0    50   ~ 0
+bonus caps\n
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D7C32F6
+P 1100 1600
+F 0 "TP2" H 1158 1718 50  0000 L CNN
+F 1 "TestPoint" H 1158 1627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1300 1600 50  0001 C CNN
+F 3 "~" H 1300 1600 50  0001 C CNN
+	1    1100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D7C4686
+P 1600 1600
+F 0 "TP4" H 1658 1718 50  0000 L CNN
+F 1 "TestPoint" H 1658 1627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1800 1600 50  0001 C CNN
+F 3 "~" H 1800 1600 50  0001 C CNN
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D7C5423
+P 1100 1100
+F 0 "TP1" H 1158 1218 50  0000 L CNN
+F 1 "TestPoint" H 1158 1127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1300 1100 50  0001 C CNN
+F 3 "~" H 1300 1100 50  0001 C CNN
+	1    1100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D7C55CF
+P 1600 1100
+F 0 "TP3" H 1658 1218 50  0000 L CNN
+F 1 "TestPoint" H 1658 1127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1800 1100 50  0001 C CNN
+F 3 "~" H 1800 1100 50  0001 C CNN
+	1    1600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UC #PWR?
+U 1 1 5D7C5805
+P 2200 1100
+AR Path="/5D7C5805" Ref="#PWR?"  Part="1" 
+AR Path="/5D757C78/5D7C5805" Ref="#PWR0215"  Part="1" 
+F 0 "#PWR0215" H 2200 950 50  0001 C CNN
+F 1 "+3V3_UC" H 2215 1273 50  0000 C CNN
+F 2 "" H 2200 1100 50  0001 C CNN
+F 3 "" H 2200 1100 50  0001 C CNN
+	1    2200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1100 2200 1300
+Wire Wire Line
+	2200 1300 1600 1300
+Wire Wire Line
+	1100 1300 1100 1100
+Wire Wire Line
+	1600 1100 1600 1300
+Connection ~ 1600 1300
+Wire Wire Line
+	1600 1300 1100 1300
+Wire Wire Line
+	1100 1600 1100 1800
+Wire Wire Line
+	1100 1800 1600 1800
+Wire Wire Line
+	2200 1800 2200 1300
+Connection ~ 2200 1300
+Wire Wire Line
+	1600 1600 1600 1800
+Connection ~ 1600 1800
+Wire Wire Line
+	1600 1800 2200 1800
 $EndSCHEMATC

@@ -88,6 +88,23 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Switch_SW_SPST
 #
 DEF Switch_SW_SPST SW 0 0 Y N 1 F N
@@ -846,7 +863,7 @@ ENDDEF
 DEF suku_basics_U_FLASH_W25Q16JVSSIQ U 0 20 Y Y 1 F N
 F0 "U" -350 350 50 H V C CNN
 F1 "suku_basics_U_FLASH_W25Q16JVSSIQ" 300 350 50 H V C CNN
-F2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" 0 0 50 H I C CNN
+F2 "suku_basics:SOIC-8_WIDE" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  SOIC*5.23x5.23mm*P1.27mm*
