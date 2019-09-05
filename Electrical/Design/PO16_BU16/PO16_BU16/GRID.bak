@@ -654,4 +654,30 @@ F 3 "~" H 7000 2500 50  0001 C CNN
 	1    7000 2500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6800 2200 6600 2200
+Wire Wire Line
+	6800 2300 6600 2300
+Wire Wire Line
+	6800 2400 6600 2400
+Wire Wire Line
+	6800 2500 6600 2500
+Wire Wire Line
+	6800 2600 6600 2600
+Wire Wire Line
+	6800 2700 6600 2700
+Wire Wire Line
+	6800 2800 6600 2800
+Wire Wire Line
+	6800 2900 6600 2900
+NoConn ~ 6600 2200
+NoConn ~ 6600 2300
+NoConn ~ 6600 2400
+NoConn ~ 6600 2500
+NoConn ~ 6600 2600
+NoConn ~ 6600 2700
+NoConn ~ 6600 2800
+NoConn ~ 6600 2900
+Text Notes 6400 2000 0    50   ~ 0
+Board Mounting Pattern\n
 $EndSCHEMATC
