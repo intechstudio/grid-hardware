@@ -980,7 +980,7 @@ AR Path="/5D89042C" Ref="Y?"  Part="1"
 AR Path="/5D757C78/5D89042C" Ref="Y1"  Part="1" 
 F 0 "Y1" H 2100 6285 50  0000 C CNN
 F 1 "XTAL" H 2100 6376 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2075 6475 50  0001 C CNN
+F 2 "suku_basics:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2075 6475 50  0001 C CNN
 F 3 "~" H 2075 6475 50  0001 C CNN
 	1    2100 6500
 	-1   0    0    1   
@@ -1245,7 +1245,7 @@ U 1 1 5D7788CE
 P 10800 1500
 F 0 "U4" V 11167 1500 50  0000 C CNN
 F 1 "U_ESD_4ch" V 11076 1500 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10850 1575 50  0001 C CNN
+F 2 "suku_basics:SOT-23-6" H 10850 1575 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NUP4202W1-D.PDF" H 10850 1575 50  0001 C CNN
 	1    10800 1500
 	0    -1   -1   0   
