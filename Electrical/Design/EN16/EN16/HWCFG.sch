@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 22
+Sheet 3 22
 Title ""
 Date ""
 Rev ""
@@ -148,10 +148,8 @@ Wire Wire Line
 	3600 3100 3100 3100
 Wire Wire Line
 	3600 3000 3100 3000
-Wire Wire Line
-	3600 2900 3300 2900
 Text Label 3100 3300 2    50   ~ 0
-HWCFG_HIGH
+HWCFG_LOW
 Text Label 3100 3400 2    50   ~ 0
 HWCFG_LOW
 Text Label 3100 3500 2    50   ~ 0
@@ -163,41 +161,7 @@ HWCFG_LOW
 Text Label 3100 3100 2    50   ~ 0
 HWCFG_LOW
 Text Label 3100 3000 2    50   ~ 0
-HWCFG_LOW
-Wire Wire Line
-	3300 2900 3300 2200
-Wire Wire Line
-	3300 2200 2200 2200
-$Comp
-L suku_basics:RES R?
-U 1 1 5DC5FE12
-P 2200 2400
-AR Path="/5DC5FE12" Ref="R?"  Part="1" 
-AR Path="/5DC2DC06/5DC5FE12" Ref="R33"  Part="1" 
-F 0 "R33" H 2259 2446 50  0000 L CNN
-F 1 "10k" H 2259 2355 50  0000 L CNN
-F 2 "suku_basics:RES_0805" H 2200 2400 50  0001 C CNN
-F 3 "~" H 2200 2400 50  0001 C CNN
-	1    2200 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC5FE18
-P 2200 2600
-AR Path="/5DC5FE18" Ref="#PWR?"  Part="1" 
-AR Path="/5DC2DC06/5DC5FE18" Ref="#PWR0152"  Part="1" 
-F 0 "#PWR0152" H 2200 2350 50  0001 C CNN
-F 1 "GND" H 2205 2427 50  0000 C CNN
-F 2 "" H 2200 2600 50  0001 C CNN
-F 3 "" H 2200 2600 50  0001 C CNN
-	1    2200 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 2600 2200 2500
-Wire Wire Line
-	2200 2300 2200 2200
+HWCFG_HIGH
 Text Notes 6100 5100 0    50   ~ 0
 Board Identification\n\nGrid firmware can identify the hardware and the board \nrevision thorugh a 3 wire serial interface using one \nor more shift register as read only memory. The content\nof the memory is defined by pulling the inputs high or\nlow through pcb traces or solderable configuration jumpers.\n\n4b'Model + 4b'Revision + nb'Reserved (Multiple shift registers)\n\nD0: MODEL (LSB)\nD1: MODEL\nD2: MODEL\nD3: MODEL (MSB)\nD4: REVISION (LSB)\nD5: REVISION\nD6: REVISION\nD7: REVISION (MSB)\n\n\n\nModel Codes (D3-D0):\n\nPo16 0000\nBo16 0001\nPBF4 0010\nEN16 0011\n...\n\nRevision Codes (D7-D4):\n\nRevA 0000\nRevB 0001\nRevC 0010\nRevD 0011\n...\n
 Text HLabel 4800 2800 2    50   Output ~ 0
@@ -206,34 +170,9 @@ Text HLabel 3400 3900 0    50   Input ~ 0
 HWCFG_CLOCK
 Text HLabel 3400 4100 0    50   Input ~ 0
 HWCFG_SHIFT
-$Comp
-L suku_basics:JP_SolderJumper_2_Open JP1
-U 1 1 5D662D78
-P 2200 2000
-F 0 "JP1" V 2154 2068 50  0000 L CNN
-F 1 "JP_SolderJumper_2_Open" V 2245 2068 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2200 2000 50  0001 C CNN
-F 3 "~" H 2200 2000 50  0001 C CNN
-	1    2200 2000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2200 2200 2200 2100
-Connection ~ 2200 2200
-$Comp
-L suku_basics:+3V3_UC #PWR?
-U 1 1 5D664F80
-P 2200 1800
-AR Path="/5D664F80" Ref="#PWR?"  Part="1" 
-AR Path="/5DC2DC06/5D664F80" Ref="#PWR0211"  Part="1" 
-F 0 "#PWR0211" H 2200 1650 50  0001 C CNN
-F 1 "+3V3_UC" H 2215 1973 50  0000 C CNN
-F 2 "" H 2200 1800 50  0001 C CNN
-F 3 "" H 2200 1800 50  0001 C CNN
-	1    2200 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1800 2200 1900
 NoConn ~ 4600 2900
+Wire Wire Line
+	3100 2900 3600 2900
+Text Label 3100 2900 2    50   ~ 0
+HWCFG_HIGH
 $EndSCHEMATC

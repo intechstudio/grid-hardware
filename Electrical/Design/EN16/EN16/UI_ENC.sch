@@ -1369,4 +1369,47 @@ Wire Wire Line
 	2500 6300 3000 6300
 Wire Wire Line
 	1400 8600 1400 9300
+Text HLabel 4500 1100 2    50   Output ~ 0
+ENCODER_MISO
+Text HLabel 4500 1200 2    50   Input ~ 0
+ENCODER_MOSI
+Text HLabel 4500 1300 2    50   Input ~ 0
+ENCODER_SCK
+Text HLabel 4500 1400 2    50   Input ~ 0
+ENCODER_CS
+Text Label 4200 1400 2    50   ~ 0
+SHIFT
+Wire Wire Line
+	4200 1400 4500 1400
+Text Label 4200 1300 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	4200 1300 4500 1300
+Wire Wire Line
+	4200 1100 4500 1100
+Text Label 4200 1100 2    50   ~ 0
+DATA
+Text Label 2700 9300 0    50   ~ 0
+DATA
+Wire Wire Line
+	1500 300  1400 300 
+Wire Wire Line
+	1400 300  1400 -300
+Wire Wire Line
+	1400 -300 -500 -300
+Wire Wire Line
+	-500 -300 -500 9300
+Wire Wire Line
+	-500 9300 -1500 9300
+NoConn ~ 2500 6400
+NoConn ~ 2500 9400
+NoConn ~ 2500 3400
+NoConn ~ 2500 400 
+NoConn ~ -1500 400 
+NoConn ~ -1500 3400
+NoConn ~ -1500 6400
+NoConn ~ -1500 9400
+Wire Wire Line
+	4500 1200 4200 1200
+NoConn ~ 4200 1200
 $EndSCHEMATC

@@ -1892,10 +1892,6 @@ NoConn ~ 6500 9000
 NoConn ~ 6500 8900
 NoConn ~ 6500 8100
 NoConn ~ 6500 8000
-NoConn ~ 6500 7900
-NoConn ~ 6500 7800
-NoConn ~ 6500 7700
-NoConn ~ 6500 7600
 NoConn ~ 6500 7500
 NoConn ~ 6500 7400
 NoConn ~ 6500 7300
@@ -2080,4 +2076,23 @@ Wire Wire Line
 	10400 6900 11600 6900
 Wire Wire Line
 	10400 7000 11900 7000
+Wire Wire Line
+	6500 7800 6900 7800
+Text HLabel 6900 7600 2    50   Output ~ 0
+UI_SPI_MOSI
+Text HLabel 6900 7800 2    50   Input ~ 0
+UI_SPI_MISO
+Text HLabel 6900 7700 2    50   Output ~ 0
+UI_SPI_SCK
+Text HLabel 6900 7900 2    50   Output ~ 0
+UI_SPI_CS
+Wire Wire Line
+	6500 7900 6900 7900
+NoConn ~ 8500 7000
+Wire Wire Line
+	6500 7700 6900 7700
+Wire Wire Line
+	6500 7600 6900 7600
+NoConn ~ 10600 1400
+NoConn ~ 10600 1600
 $EndSCHEMATC
