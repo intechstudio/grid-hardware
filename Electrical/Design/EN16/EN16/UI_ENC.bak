@@ -1,0 +1,1415 @@
+EESchema Schematic File Version 4
+LIBS:EN16-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 22
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S -3900 100  800  400 
+U 5D785E7D
+F0 "ENCODER_1" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 400 50 
+F3 "A" O R -3100 200 50 
+F4 "B" O R -3100 300 50 
+$EndSheet
+$Sheet
+S -3900 900  800  400 
+U 5D793A69
+F0 "ENCODER_2" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 1200 50 
+F3 "A" O R -3100 1000 50 
+F4 "B" O R -3100 1100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U1
+U 1 1 5D735511
+P -2000 900
+F 0 "U1" H -2400 1800 50  0000 C CNN
+F 1 "74HC165" H -2300 1700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H -2000 900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 900 50  0001 C CNN
+	1    -2000 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3100 1000 -2900 1000
+Wire Wire Line
+	-2900 1000 -2900 800 
+Wire Wire Line
+	-2900 800  -2500 800 
+Wire Wire Line
+	-3100 1100 -2800 1100
+Wire Wire Line
+	-2800 1100 -2800 900 
+Wire Wire Line
+	-2800 900  -2500 900 
+Wire Wire Line
+	-3100 1200 -2700 1200
+Wire Wire Line
+	-2700 1200 -2700 1000
+Wire Wire Line
+	-2700 1000 -2500 1000
+Wire Wire Line
+	-3100 400  -2900 400 
+Wire Wire Line
+	-2900 400  -2900 600 
+Wire Wire Line
+	-2900 600  -2500 600 
+Wire Wire Line
+	-2500 500  -2800 500 
+Wire Wire Line
+	-2800 500  -2800 300 
+Wire Wire Line
+	-2800 300  -3100 300 
+Wire Wire Line
+	-3100 200  -2700 200 
+Wire Wire Line
+	-2700 200  -2700 400 
+Wire Wire Line
+	-2700 400  -2500 400 
+$Comp
+L suku_basics:+3V3_UI #PWR0101
+U 1 1 5D79CD0E
+P -2000 0
+F 0 "#PWR0101" H -2000 -150 50  0001 C CNN
+F 1 "+3V3_UI" H -1985 173 50  0000 C CNN
+F 2 "" H -2000 0   50  0001 C CNN
+F 3 "" H -2000 0   50  0001 C CNN
+	1    -2000 0   
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 0    -2000 100 
+$Comp
+L power:GND #PWR0102
+U 1 1 5D79D5B5
+P -2000 1900
+F 0 "#PWR0102" H -2000 1650 50  0001 C CNN
+F 1 "GND" H -1995 1727 50  0000 C CNN
+F 2 "" H -2000 1900 50  0001 C CNN
+F 3 "" H -2000 1900 50  0001 C CNN
+	1    -2000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 1900 -2000 1800
+$Sheet
+S 100  100  800  400 
+U 5D7A3719
+F0 "ENCODER_3" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 400 50 
+F3 "A" O R 900 200 50 
+F4 "B" O R 900 300 50 
+$EndSheet
+$Sheet
+S 100  900  800  400 
+U 5D7A371E
+F0 "ENCODER_4" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 1200 50 
+F3 "A" O R 900 1000 50 
+F4 "B" O R 900 1100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U2
+U 1 1 5D7A3724
+P 2000 900
+F 0 "U2" H 1600 1800 50  0000 C CNN
+F 1 "74HC165" H 1700 1700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 2000 900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 900 50  0001 C CNN
+	1    2000 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 1100 1000
+Wire Wire Line
+	1100 1000 1100 800 
+Wire Wire Line
+	1100 800  1500 800 
+Wire Wire Line
+	900  1100 1200 1100
+Wire Wire Line
+	1200 1100 1200 900 
+Wire Wire Line
+	1200 900  1500 900 
+Wire Wire Line
+	900  1200 1300 1200
+Wire Wire Line
+	1300 1200 1300 1000
+Wire Wire Line
+	1300 1000 1500 1000
+Wire Wire Line
+	900  400  1100 400 
+Wire Wire Line
+	1100 400  1100 600 
+Wire Wire Line
+	1100 600  1500 600 
+Wire Wire Line
+	1500 500  1200 500 
+Wire Wire Line
+	1200 500  1200 300 
+Wire Wire Line
+	1200 300  900  300 
+Wire Wire Line
+	900  200  1300 200 
+Wire Wire Line
+	1300 200  1300 400 
+Wire Wire Line
+	1300 400  1500 400 
+$Comp
+L suku_basics:+3V3_UI #PWR0103
+U 1 1 5D7A373C
+P 2000 0
+F 0 "#PWR0103" H 2000 -150 50  0001 C CNN
+F 1 "+3V3_UI" H 2015 173 50  0000 C CNN
+F 2 "" H 2000 0   50  0001 C CNN
+F 3 "" H 2000 0   50  0001 C CNN
+	1    2000 0   
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 0    2000 100 
+$Comp
+L power:GND #PWR0104
+U 1 1 5D7A3743
+P 2000 1900
+F 0 "#PWR0104" H 2000 1650 50  0001 C CNN
+F 1 "GND" H 2005 1727 50  0000 C CNN
+F 2 "" H 2000 1900 50  0001 C CNN
+F 3 "" H 2000 1900 50  0001 C CNN
+	1    2000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1900 2000 1800
+Text Label -2700 1400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	-2700 1400 -2500 1400
+Text Label -2700 1600 2    50   ~ 0
+SHIFT
+$Sheet
+S -3900 3100 800  400 
+U 5D72D2F7
+F0 "sheet5D72D2F1" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 3400 50 
+F3 "A" O R -3100 3200 50 
+F4 "B" O R -3100 3300 50 
+$EndSheet
+$Sheet
+S -3900 3900 800  400 
+U 5D72D2FC
+F0 "sheet5D72D2F2" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 4200 50 
+F3 "A" O R -3100 4000 50 
+F4 "B" O R -3100 4100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U9
+U 1 1 5D72D302
+P -2000 3900
+F 0 "U9" H -2400 4800 50  0000 C CNN
+F 1 "74HC165" H -2300 4700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H -2000 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 3900 50  0001 C CNN
+	1    -2000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3100 4000 -2900 4000
+Wire Wire Line
+	-2900 4000 -2900 3800
+Wire Wire Line
+	-2900 3800 -2500 3800
+Wire Wire Line
+	-3100 4100 -2800 4100
+Wire Wire Line
+	-2800 4100 -2800 3900
+Wire Wire Line
+	-2800 3900 -2500 3900
+Wire Wire Line
+	-3100 4200 -2700 4200
+Wire Wire Line
+	-2700 4200 -2700 4000
+Wire Wire Line
+	-2700 4000 -2500 4000
+Wire Wire Line
+	-3100 3400 -2900 3400
+Wire Wire Line
+	-2900 3400 -2900 3600
+Wire Wire Line
+	-2900 3600 -2500 3600
+Wire Wire Line
+	-2500 3500 -2800 3500
+Wire Wire Line
+	-2800 3500 -2800 3300
+Wire Wire Line
+	-2800 3300 -3100 3300
+Wire Wire Line
+	-3100 3200 -2700 3200
+Wire Wire Line
+	-2700 3200 -2700 3400
+Wire Wire Line
+	-2700 3400 -2500 3400
+$Comp
+L suku_basics:+3V3_UI #PWR0137
+U 1 1 5D72D31A
+P -2000 3000
+F 0 "#PWR0137" H -2000 2850 50  0001 C CNN
+F 1 "+3V3_UI" H -1985 3173 50  0000 C CNN
+F 2 "" H -2000 3000 50  0001 C CNN
+F 3 "" H -2000 3000 50  0001 C CNN
+	1    -2000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 3000 -2000 3100
+$Comp
+L power:GND #PWR0138
+U 1 1 5D72D321
+P -2000 4900
+F 0 "#PWR0138" H -2000 4650 50  0001 C CNN
+F 1 "GND" H -1995 4727 50  0000 C CNN
+F 2 "" H -2000 4900 50  0001 C CNN
+F 3 "" H -2000 4900 50  0001 C CNN
+	1    -2000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 4900 -2000 4800
+$Sheet
+S 100  3100 800  400 
+U 5D7563C6
+F0 "sheet5D7563C0" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 3400 50 
+F3 "A" O R 900 3200 50 
+F4 "B" O R 900 3300 50 
+$EndSheet
+$Sheet
+S 100  3900 800  400 
+U 5D7563CB
+F0 "sheet5D7563C1" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 4200 50 
+F3 "A" O R 900 4000 50 
+F4 "B" O R 900 4100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U10
+U 1 1 5D7563D1
+P 2000 3900
+F 0 "U10" H 1600 4800 50  0000 C CNN
+F 1 "74HC165" H 1700 4700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 2000 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 3900 50  0001 C CNN
+	1    2000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4000 1100 4000
+Wire Wire Line
+	1100 4000 1100 3800
+Wire Wire Line
+	1100 3800 1500 3800
+Wire Wire Line
+	900  4100 1200 4100
+Wire Wire Line
+	1200 4100 1200 3900
+Wire Wire Line
+	1200 3900 1500 3900
+Wire Wire Line
+	900  4200 1300 4200
+Wire Wire Line
+	1300 4200 1300 4000
+Wire Wire Line
+	1300 4000 1500 4000
+Wire Wire Line
+	900  3400 1100 3400
+Wire Wire Line
+	1100 3400 1100 3600
+Wire Wire Line
+	1100 3600 1500 3600
+Wire Wire Line
+	1500 3500 1200 3500
+Wire Wire Line
+	1200 3500 1200 3300
+Wire Wire Line
+	1200 3300 900  3300
+Wire Wire Line
+	900  3200 1300 3200
+Wire Wire Line
+	1300 3200 1300 3400
+Wire Wire Line
+	1300 3400 1500 3400
+$Comp
+L suku_basics:+3V3_UI #PWR0218
+U 1 1 5D7563E9
+P 2000 3000
+F 0 "#PWR0218" H 2000 2850 50  0001 C CNN
+F 1 "+3V3_UI" H 2015 3173 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0001 C CNN
+	1    2000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3000 2000 3100
+$Comp
+L power:GND #PWR0219
+U 1 1 5D7563F0
+P 2000 4900
+F 0 "#PWR0219" H 2000 4650 50  0001 C CNN
+F 1 "GND" H 2005 4727 50  0000 C CNN
+F 2 "" H 2000 4900 50  0001 C CNN
+F 3 "" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4900 2000 4800
+$Sheet
+S -3900 6100 800  400 
+U 5D764040
+F0 "sheet5D76403A" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 6400 50 
+F3 "A" O R -3100 6200 50 
+F4 "B" O R -3100 6300 50 
+$EndSheet
+$Sheet
+S -3900 6900 800  400 
+U 5D764045
+F0 "sheet5D76403B" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 7200 50 
+F3 "A" O R -3100 7000 50 
+F4 "B" O R -3100 7100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U11
+U 1 1 5D76404B
+P -2000 6900
+F 0 "U11" H -2400 7800 50  0000 C CNN
+F 1 "74HC165" H -2300 7700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H -2000 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 6900 50  0001 C CNN
+	1    -2000 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3100 7000 -2900 7000
+Wire Wire Line
+	-2900 7000 -2900 6800
+Wire Wire Line
+	-2900 6800 -2500 6800
+Wire Wire Line
+	-3100 7100 -2800 7100
+Wire Wire Line
+	-2800 7100 -2800 6900
+Wire Wire Line
+	-2800 6900 -2500 6900
+Wire Wire Line
+	-3100 7200 -2700 7200
+Wire Wire Line
+	-2700 7200 -2700 7000
+Wire Wire Line
+	-2700 7000 -2500 7000
+Wire Wire Line
+	-3100 6400 -2900 6400
+Wire Wire Line
+	-2900 6400 -2900 6600
+Wire Wire Line
+	-2900 6600 -2500 6600
+Wire Wire Line
+	-2500 6500 -2800 6500
+Wire Wire Line
+	-2800 6500 -2800 6300
+Wire Wire Line
+	-2800 6300 -3100 6300
+Wire Wire Line
+	-3100 6200 -2700 6200
+Wire Wire Line
+	-2700 6200 -2700 6400
+Wire Wire Line
+	-2700 6400 -2500 6400
+$Comp
+L suku_basics:+3V3_UI #PWR0236
+U 1 1 5D764063
+P -2000 6000
+F 0 "#PWR0236" H -2000 5850 50  0001 C CNN
+F 1 "+3V3_UI" H -1985 6173 50  0000 C CNN
+F 2 "" H -2000 6000 50  0001 C CNN
+F 3 "" H -2000 6000 50  0001 C CNN
+	1    -2000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 6000 -2000 6100
+$Comp
+L power:GND #PWR0237
+U 1 1 5D76406A
+P -2000 7900
+F 0 "#PWR0237" H -2000 7650 50  0001 C CNN
+F 1 "GND" H -1995 7727 50  0000 C CNN
+F 2 "" H -2000 7900 50  0001 C CNN
+F 3 "" H -2000 7900 50  0001 C CNN
+	1    -2000 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 7900 -2000 7800
+Text Label -2700 7400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	-2700 7400 -2500 7400
+Wire Wire Line
+	-2700 7600 -2500 7600
+Text Label -2700 7600 2    50   ~ 0
+SHIFT
+$Sheet
+S 100  6100 800  400 
+U 5D77188C
+F0 "sheet5D771886" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 6400 50 
+F3 "A" O R 900 6200 50 
+F4 "B" O R 900 6300 50 
+$EndSheet
+$Sheet
+S 100  6900 800  400 
+U 5D771891
+F0 "sheet5D771887" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 7200 50 
+F3 "A" O R 900 7000 50 
+F4 "B" O R 900 7100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U12
+U 1 1 5D771897
+P 2000 6900
+F 0 "U12" H 1600 7800 50  0000 C CNN
+F 1 "74HC165" H 1700 7700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 2000 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 6900 50  0001 C CNN
+	1    2000 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  7000 1100 7000
+Wire Wire Line
+	1100 7000 1100 6800
+Wire Wire Line
+	1100 6800 1500 6800
+Wire Wire Line
+	900  7100 1200 7100
+Wire Wire Line
+	1200 7100 1200 6900
+Wire Wire Line
+	1200 6900 1500 6900
+Wire Wire Line
+	900  7200 1300 7200
+Wire Wire Line
+	1300 7200 1300 7000
+Wire Wire Line
+	1300 7000 1500 7000
+Wire Wire Line
+	900  6400 1100 6400
+Wire Wire Line
+	1100 6400 1100 6600
+Wire Wire Line
+	1100 6600 1500 6600
+Wire Wire Line
+	1500 6500 1200 6500
+Wire Wire Line
+	1200 6500 1200 6300
+Wire Wire Line
+	1200 6300 900  6300
+Wire Wire Line
+	900  6200 1300 6200
+Wire Wire Line
+	1300 6200 1300 6400
+Wire Wire Line
+	1300 6400 1500 6400
+$Comp
+L suku_basics:+3V3_UI #PWR0254
+U 1 1 5D7718AF
+P 2000 6000
+F 0 "#PWR0254" H 2000 5850 50  0001 C CNN
+F 1 "+3V3_UI" H 2015 6173 50  0000 C CNN
+F 2 "" H 2000 6000 50  0001 C CNN
+F 3 "" H 2000 6000 50  0001 C CNN
+	1    2000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6000 2000 6100
+$Comp
+L power:GND #PWR0255
+U 1 1 5D7718B6
+P 2000 7900
+F 0 "#PWR0255" H 2000 7650 50  0001 C CNN
+F 1 "GND" H 2005 7727 50  0000 C CNN
+F 2 "" H 2000 7900 50  0001 C CNN
+F 3 "" H 2000 7900 50  0001 C CNN
+	1    2000 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 7900 2000 7800
+Text Label 1300 7400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	1300 7400 1500 7400
+Wire Wire Line
+	1300 7600 1500 7600
+Text Label 1300 7600 2    50   ~ 0
+SHIFT
+$Sheet
+S -3900 9100 800  400 
+U 5D77F482
+F0 "sheet5D77F47A" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 9400 50 
+F3 "A" O R -3100 9200 50 
+F4 "B" O R -3100 9300 50 
+$EndSheet
+$Sheet
+S -3900 9900 800  400 
+U 5D77F487
+F0 "sheet5D77F47B" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R -3100 10200 50 
+F3 "A" O R -3100 10000 50 
+F4 "B" O R -3100 10100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U13
+U 1 1 5D77F48D
+P -2000 9900
+F 0 "U13" H -2400 10800 50  0000 C CNN
+F 1 "74HC165" H -2300 10700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H -2000 9900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 9900 50  0001 C CNN
+	1    -2000 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3100 10000 -2900 10000
+Wire Wire Line
+	-2900 10000 -2900 9800
+Wire Wire Line
+	-2900 9800 -2500 9800
+Wire Wire Line
+	-3100 10100 -2800 10100
+Wire Wire Line
+	-2800 10100 -2800 9900
+Wire Wire Line
+	-2800 9900 -2500 9900
+Wire Wire Line
+	-3100 10200 -2700 10200
+Wire Wire Line
+	-2700 10200 -2700 10000
+Wire Wire Line
+	-2700 10000 -2500 10000
+Wire Wire Line
+	-3100 9400 -2900 9400
+Wire Wire Line
+	-2900 9400 -2900 9600
+Wire Wire Line
+	-2900 9600 -2500 9600
+Wire Wire Line
+	-2500 9500 -2800 9500
+Wire Wire Line
+	-2800 9500 -2800 9300
+Wire Wire Line
+	-2800 9300 -3100 9300
+Wire Wire Line
+	-3100 9200 -2700 9200
+Wire Wire Line
+	-2700 9200 -2700 9400
+Wire Wire Line
+	-2700 9400 -2500 9400
+$Comp
+L suku_basics:+3V3_UI #PWR0272
+U 1 1 5D77F4A5
+P -2000 9000
+F 0 "#PWR0272" H -2000 8850 50  0001 C CNN
+F 1 "+3V3_UI" H -1985 9173 50  0000 C CNN
+F 2 "" H -2000 9000 50  0001 C CNN
+F 3 "" H -2000 9000 50  0001 C CNN
+	1    -2000 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 9000 -2000 9100
+$Comp
+L power:GND #PWR0273
+U 1 1 5D77F4AC
+P -2000 10900
+F 0 "#PWR0273" H -2000 10650 50  0001 C CNN
+F 1 "GND" H -1995 10727 50  0000 C CNN
+F 2 "" H -2000 10900 50  0001 C CNN
+F 3 "" H -2000 10900 50  0001 C CNN
+	1    -2000 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2000 10900 -2000 10800
+Text Label -2700 10400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	-2700 10400 -2500 10400
+Wire Wire Line
+	-2700 10600 -2500 10600
+Text Label -2700 10600 2    50   ~ 0
+SHIFT
+$Sheet
+S 100  9100 800  400 
+U 5D77F4B7
+F0 "sheet5D77F47C" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 9400 50 
+F3 "A" O R 900 9200 50 
+F4 "B" O R 900 9300 50 
+$EndSheet
+$Sheet
+S 100  9900 800  400 
+U 5D77F4BC
+F0 "sheet5D77F47D" 50
+F1 "UI_ENC_FILTER.sch" 50
+F2 "C" O R 900 10200 50 
+F3 "A" O R 900 10000 50 
+F4 "B" O R 900 10100 50 
+$EndSheet
+$Comp
+L suku_basics:74HC165 U14
+U 1 1 5D77F4C2
+P 2000 9900
+F 0 "U14" H 1600 10800 50  0000 C CNN
+F 1 "74HC165" H 1700 10700 50  0000 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 2000 9900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 9900 50  0001 C CNN
+	1    2000 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  10000 1100 10000
+Wire Wire Line
+	1100 10000 1100 9800
+Wire Wire Line
+	1100 9800 1500 9800
+Wire Wire Line
+	900  10100 1200 10100
+Wire Wire Line
+	1200 10100 1200 9900
+Wire Wire Line
+	1200 9900 1500 9900
+Wire Wire Line
+	900  10200 1300 10200
+Wire Wire Line
+	1300 10200 1300 10000
+Wire Wire Line
+	1300 10000 1500 10000
+Wire Wire Line
+	900  9400 1100 9400
+Wire Wire Line
+	1100 9400 1100 9600
+Wire Wire Line
+	1100 9600 1500 9600
+Wire Wire Line
+	1500 9500 1200 9500
+Wire Wire Line
+	1200 9500 1200 9300
+Wire Wire Line
+	1200 9300 900  9300
+Wire Wire Line
+	900  9200 1300 9200
+Wire Wire Line
+	1300 9200 1300 9400
+Wire Wire Line
+	1300 9400 1500 9400
+$Comp
+L suku_basics:+3V3_UI #PWR0274
+U 1 1 5D77F4DA
+P 2000 9000
+F 0 "#PWR0274" H 2000 8850 50  0001 C CNN
+F 1 "+3V3_UI" H 2015 9173 50  0000 C CNN
+F 2 "" H 2000 9000 50  0001 C CNN
+F 3 "" H 2000 9000 50  0001 C CNN
+	1    2000 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 9000 2000 9100
+$Comp
+L power:GND #PWR0275
+U 1 1 5D77F4E1
+P 2000 10900
+F 0 "#PWR0275" H 2000 10650 50  0001 C CNN
+F 1 "GND" H 2005 10727 50  0000 C CNN
+F 2 "" H 2000 10900 50  0001 C CNN
+F 3 "" H 2000 10900 50  0001 C CNN
+	1    2000 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 10900 2000 10800
+Text Label 1300 10400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	1300 10400 1500 10400
+Wire Wire Line
+	1300 10600 1500 10600
+Text Label 1300 10600 2    50   ~ 0
+SHIFT
+Wire Wire Line
+	2500 9300 2700 9300
+$Comp
+L suku_basics:CAP C86
+U 1 1 5D7D6914
+P -1300 1700
+F 0 "C86" H -1208 1746 50  0000 L CNN
+F 1 "CAP" H -1208 1655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H -1300 1700 50  0001 C CNN
+F 3 "~" H -1300 1700 50  0001 C CNN
+	1    -1300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0308
+U 1 1 5D7D7338
+P -1300 1500
+F 0 "#PWR0308" H -1300 1350 50  0001 C CNN
+F 1 "+3V3_UI" H -1285 1673 50  0000 C CNN
+F 2 "" H -1300 1500 50  0001 C CNN
+F 3 "" H -1300 1500 50  0001 C CNN
+	1    -1300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0309
+U 1 1 5D7D76C8
+P -1300 1900
+F 0 "#PWR0309" H -1300 1650 50  0001 C CNN
+F 1 "GND" H -1295 1727 50  0000 C CNN
+F 2 "" H -1300 1900 50  0001 C CNN
+F 3 "" H -1300 1900 50  0001 C CNN
+	1    -1300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 1900 -1300 1800
+Wire Wire Line
+	-1300 1600 -1300 1500
+$Comp
+L suku_basics:CAP C87
+U 1 1 5D7F497C
+P 2700 1700
+F 0 "C87" H 2792 1746 50  0000 L CNN
+F 1 "CAP" H 2792 1655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2700 1700 50  0001 C CNN
+F 3 "~" H 2700 1700 50  0001 C CNN
+	1    2700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0310
+U 1 1 5D7F4982
+P 2700 1500
+F 0 "#PWR0310" H 2700 1350 50  0001 C CNN
+F 1 "+3V3_UI" H 2715 1673 50  0000 C CNN
+F 2 "" H 2700 1500 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0311
+U 1 1 5D7F4988
+P 2700 1900
+F 0 "#PWR0311" H 2700 1650 50  0001 C CNN
+F 1 "GND" H 2705 1727 50  0000 C CNN
+F 2 "" H 2700 1900 50  0001 C CNN
+F 3 "" H 2700 1900 50  0001 C CNN
+	1    2700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1900 2700 1800
+Wire Wire Line
+	2700 1600 2700 1500
+$Comp
+L suku_basics:CAP C88
+U 1 1 5D7FEB3E
+P -1300 4700
+F 0 "C88" H -1208 4746 50  0000 L CNN
+F 1 "CAP" H -1208 4655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H -1300 4700 50  0001 C CNN
+F 3 "~" H -1300 4700 50  0001 C CNN
+	1    -1300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0312
+U 1 1 5D7FEB44
+P -1300 4500
+F 0 "#PWR0312" H -1300 4350 50  0001 C CNN
+F 1 "+3V3_UI" H -1285 4673 50  0000 C CNN
+F 2 "" H -1300 4500 50  0001 C CNN
+F 3 "" H -1300 4500 50  0001 C CNN
+	1    -1300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0313
+U 1 1 5D7FEB4A
+P -1300 4900
+F 0 "#PWR0313" H -1300 4650 50  0001 C CNN
+F 1 "GND" H -1295 4727 50  0000 C CNN
+F 2 "" H -1300 4900 50  0001 C CNN
+F 3 "" H -1300 4900 50  0001 C CNN
+	1    -1300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 4900 -1300 4800
+Wire Wire Line
+	-1300 4600 -1300 4500
+$Comp
+L suku_basics:CAP C89
+U 1 1 5D8093CD
+P 2700 4700
+F 0 "C89" H 2792 4746 50  0000 L CNN
+F 1 "CAP" H 2792 4655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2700 4700 50  0001 C CNN
+F 3 "~" H 2700 4700 50  0001 C CNN
+	1    2700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0314
+U 1 1 5D8093D3
+P 2700 4500
+F 0 "#PWR0314" H 2700 4350 50  0001 C CNN
+F 1 "+3V3_UI" H 2715 4673 50  0000 C CNN
+F 2 "" H 2700 4500 50  0001 C CNN
+F 3 "" H 2700 4500 50  0001 C CNN
+	1    2700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0315
+U 1 1 5D8093D9
+P 2700 4900
+F 0 "#PWR0315" H 2700 4650 50  0001 C CNN
+F 1 "GND" H 2705 4727 50  0000 C CNN
+F 2 "" H 2700 4900 50  0001 C CNN
+F 3 "" H 2700 4900 50  0001 C CNN
+	1    2700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4900 2700 4800
+Wire Wire Line
+	2700 4600 2700 4500
+$Comp
+L suku_basics:CAP C90
+U 1 1 5D813DC8
+P -1300 7700
+F 0 "C90" H -1208 7746 50  0000 L CNN
+F 1 "CAP" H -1208 7655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H -1300 7700 50  0001 C CNN
+F 3 "~" H -1300 7700 50  0001 C CNN
+	1    -1300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0316
+U 1 1 5D813DCE
+P -1300 7500
+F 0 "#PWR0316" H -1300 7350 50  0001 C CNN
+F 1 "+3V3_UI" H -1285 7673 50  0000 C CNN
+F 2 "" H -1300 7500 50  0001 C CNN
+F 3 "" H -1300 7500 50  0001 C CNN
+	1    -1300 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0317
+U 1 1 5D813DD4
+P -1300 7900
+F 0 "#PWR0317" H -1300 7650 50  0001 C CNN
+F 1 "GND" H -1295 7727 50  0000 C CNN
+F 2 "" H -1300 7900 50  0001 C CNN
+F 3 "" H -1300 7900 50  0001 C CNN
+	1    -1300 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 7900 -1300 7800
+Wire Wire Line
+	-1300 7600 -1300 7500
+$Comp
+L suku_basics:CAP C91
+U 1 1 5D81DEB6
+P 2700 7700
+F 0 "C91" H 2792 7746 50  0000 L CNN
+F 1 "CAP" H 2792 7655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2700 7700 50  0001 C CNN
+F 3 "~" H 2700 7700 50  0001 C CNN
+	1    2700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0318
+U 1 1 5D81DEBC
+P 2700 7500
+F 0 "#PWR0318" H 2700 7350 50  0001 C CNN
+F 1 "+3V3_UI" H 2715 7673 50  0000 C CNN
+F 2 "" H 2700 7500 50  0001 C CNN
+F 3 "" H 2700 7500 50  0001 C CNN
+	1    2700 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0319
+U 1 1 5D81DEC2
+P 2700 7900
+F 0 "#PWR0319" H 2700 7650 50  0001 C CNN
+F 1 "GND" H 2705 7727 50  0000 C CNN
+F 2 "" H 2700 7900 50  0001 C CNN
+F 3 "" H 2700 7900 50  0001 C CNN
+	1    2700 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 7900 2700 7800
+Wire Wire Line
+	2700 7600 2700 7500
+$Comp
+L suku_basics:CAP C92
+U 1 1 5D829D62
+P -1300 10700
+F 0 "C92" H -1208 10746 50  0000 L CNN
+F 1 "CAP" H -1208 10655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H -1300 10700 50  0001 C CNN
+F 3 "~" H -1300 10700 50  0001 C CNN
+	1    -1300 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0320
+U 1 1 5D829D68
+P -1300 10500
+F 0 "#PWR0320" H -1300 10350 50  0001 C CNN
+F 1 "+3V3_UI" H -1285 10673 50  0000 C CNN
+F 2 "" H -1300 10500 50  0001 C CNN
+F 3 "" H -1300 10500 50  0001 C CNN
+	1    -1300 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0321
+U 1 1 5D829D6E
+P -1300 10900
+F 0 "#PWR0321" H -1300 10650 50  0001 C CNN
+F 1 "GND" H -1295 10727 50  0000 C CNN
+F 2 "" H -1300 10900 50  0001 C CNN
+F 3 "" H -1300 10900 50  0001 C CNN
+	1    -1300 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 10900 -1300 10800
+Wire Wire Line
+	-1300 10600 -1300 10500
+$Comp
+L suku_basics:CAP C93
+U 1 1 5D834BAB
+P 2700 10700
+F 0 "C93" H 2792 10746 50  0000 L CNN
+F 1 "CAP" H 2792 10655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2700 10700 50  0001 C CNN
+F 3 "~" H 2700 10700 50  0001 C CNN
+	1    2700 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+3V3_UI #PWR0322
+U 1 1 5D834BB1
+P 2700 10500
+F 0 "#PWR0322" H 2700 10350 50  0001 C CNN
+F 1 "+3V3_UI" H 2715 10673 50  0000 C CNN
+F 2 "" H 2700 10500 50  0001 C CNN
+F 3 "" H 2700 10500 50  0001 C CNN
+	1    2700 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0323
+U 1 1 5D834BB7
+P 2700 10900
+F 0 "#PWR0323" H 2700 10650 50  0001 C CNN
+F 1 "GND" H 2705 10727 50  0000 C CNN
+F 2 "" H 2700 10900 50  0001 C CNN
+F 3 "" H 2700 10900 50  0001 C CNN
+	1    2700 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 10900 2700 10800
+Wire Wire Line
+	2700 10600 2700 10500
+Text Label 1300 1400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	1300 1400 1500 1400
+Wire Wire Line
+	1300 1600 1500 1600
+Text Label 1300 1600 2    50   ~ 0
+SHIFT
+Text Label -2700 4400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	-2700 4400 -2500 4400
+Wire Wire Line
+	-2700 4600 -2500 4600
+Text Label -2700 4600 2    50   ~ 0
+SHIFT
+Text Label 1300 4400 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	1300 4400 1500 4400
+Wire Wire Line
+	1300 4600 1500 4600
+Text Label 1300 4600 2    50   ~ 0
+SHIFT
+$Comp
+L power:GND #PWR0324
+U 1 1 5D8AD54B
+P -2600 1700
+F 0 "#PWR0324" H -2600 1450 50  0001 C CNN
+F 1 "GND" H -2595 1527 50  0000 C CNN
+F 2 "" H -2600 1700 50  0001 C CNN
+F 3 "" H -2600 1700 50  0001 C CNN
+	1    -2600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2700 1600 -2500 1600
+Wire Wire Line
+	-2600 1700 -2600 1500
+Wire Wire Line
+	-2600 1500 -2500 1500
+$Comp
+L power:GND #PWR0325
+U 1 1 5D8E7BAA
+P 1400 1800
+F 0 "#PWR0325" H 1400 1550 50  0001 C CNN
+F 1 "GND" H 1405 1627 50  0000 C CNN
+F 2 "" H 1400 1800 50  0001 C CNN
+F 3 "" H 1400 1800 50  0001 C CNN
+	1    1400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1500 1500 1500
+Wire Wire Line
+	1400 1500 1400 1800
+$Comp
+L power:GND #PWR0326
+U 1 1 5D90A620
+P -2600 4800
+F 0 "#PWR0326" H -2600 4550 50  0001 C CNN
+F 1 "GND" H -2595 4627 50  0000 C CNN
+F 2 "" H -2600 4800 50  0001 C CNN
+F 3 "" H -2600 4800 50  0001 C CNN
+	1    -2600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2600 4500 -2500 4500
+Wire Wire Line
+	-2600 4500 -2600 4800
+$Comp
+L power:GND #PWR0327
+U 1 1 5D92DC5C
+P 1400 4800
+F 0 "#PWR0327" H 1400 4550 50  0001 C CNN
+F 1 "GND" H 1405 4627 50  0000 C CNN
+F 2 "" H 1400 4800 50  0001 C CNN
+F 3 "" H 1400 4800 50  0001 C CNN
+	1    1400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4500 1500 4500
+Wire Wire Line
+	1400 4500 1400 4800
+$Comp
+L power:GND #PWR0328
+U 1 1 5D951D45
+P -2600 7800
+F 0 "#PWR0328" H -2600 7550 50  0001 C CNN
+F 1 "GND" H -2595 7627 50  0000 C CNN
+F 2 "" H -2600 7800 50  0001 C CNN
+F 3 "" H -2600 7800 50  0001 C CNN
+	1    -2600 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2600 7500 -2500 7500
+Wire Wire Line
+	-2600 7500 -2600 7800
+$Comp
+L power:GND #PWR0329
+U 1 1 5D9771A9
+P 1400 7800
+F 0 "#PWR0329" H 1400 7550 50  0001 C CNN
+F 1 "GND" H 1405 7627 50  0000 C CNN
+F 2 "" H 1400 7800 50  0001 C CNN
+F 3 "" H 1400 7800 50  0001 C CNN
+	1    1400 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7500 1500 7500
+Wire Wire Line
+	1400 7500 1400 7800
+$Comp
+L power:GND #PWR0330
+U 1 1 5D99CCC9
+P -2600 10800
+F 0 "#PWR0330" H -2600 10550 50  0001 C CNN
+F 1 "GND" H -2595 10627 50  0000 C CNN
+F 2 "" H -2600 10800 50  0001 C CNN
+F 3 "" H -2600 10800 50  0001 C CNN
+	1    -2600 10800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2600 10500 -2500 10500
+Wire Wire Line
+	-2600 10500 -2600 10800
+$Comp
+L power:GND #PWR0331
+U 1 1 5D9C3998
+P 1400 10800
+F 0 "#PWR0331" H 1400 10550 50  0001 C CNN
+F 1 "GND" H 1405 10627 50  0000 C CNN
+F 2 "" H 1400 10800 50  0001 C CNN
+F 3 "" H 1400 10800 50  0001 C CNN
+	1    1400 10800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 10500 1500 10500
+Wire Wire Line
+	1400 10500 1400 10800
+Wire Wire Line
+	1400 6300 1500 6300
+Wire Wire Line
+	-2600 9300 -2500 9300
+Wire Wire Line
+	1400 9300 1500 9300
+Wire Wire Line
+	-2600 6300 -2500 6300
+Wire Wire Line
+	-2500 300  -2600 300 
+Wire Wire Line
+	-2600 300  -2600 700 
+Connection ~ -2600 1500
+Wire Wire Line
+	-2500 700  -2600 700 
+Connection ~ -2600 700 
+Wire Wire Line
+	-2600 700  -2600 1100
+Wire Wire Line
+	-2500 1100 -2600 1100
+Connection ~ -2600 1100
+Wire Wire Line
+	-2600 1100 -2600 1500
+Wire Wire Line
+	1500 1100 1400 1100
+Wire Wire Line
+	1400 1100 1400 1500
+Connection ~ 1400 1500
+Wire Wire Line
+	1500 700  1400 700 
+Wire Wire Line
+	1400 700  1400 1100
+Connection ~ 1400 1100
+Wire Wire Line
+	-2500 3700 -2600 3700
+Wire Wire Line
+	-2600 3700 -2600 4100
+Connection ~ -2600 4500
+Wire Wire Line
+	-2500 4100 -2600 4100
+Connection ~ -2600 4100
+Wire Wire Line
+	-2600 4100 -2600 4500
+Wire Wire Line
+	1500 3700 1400 3700
+Wire Wire Line
+	1400 3700 1400 4100
+Connection ~ 1400 4500
+Wire Wire Line
+	1500 4100 1400 4100
+Connection ~ 1400 4100
+Wire Wire Line
+	1400 4100 1400 4500
+Wire Wire Line
+	-2500 6700 -2600 6700
+Wire Wire Line
+	-2600 6700 -2600 7100
+Connection ~ -2600 7500
+Wire Wire Line
+	-2500 7100 -2600 7100
+Connection ~ -2600 7100
+Wire Wire Line
+	-2600 7100 -2600 7500
+Wire Wire Line
+	1500 6700 1400 6700
+Wire Wire Line
+	1400 6700 1400 7100
+Connection ~ 1400 7500
+Wire Wire Line
+	1500 7100 1400 7100
+Connection ~ 1400 7100
+Wire Wire Line
+	1400 7100 1400 7500
+Wire Wire Line
+	-2500 9700 -2600 9700
+Wire Wire Line
+	-2600 9700 -2600 10100
+Connection ~ -2600 10500
+Wire Wire Line
+	-2500 10100 -2600 10100
+Connection ~ -2600 10100
+Wire Wire Line
+	-2600 10100 -2600 10500
+Wire Wire Line
+	1500 9700 1400 9700
+Wire Wire Line
+	1400 9700 1400 10100
+Connection ~ 1400 10500
+Wire Wire Line
+	1500 10100 1400 10100
+Connection ~ 1400 10100
+Wire Wire Line
+	1400 10100 1400 10500
+Wire Wire Line
+	-1500 300  -1000 300 
+Wire Wire Line
+	-1000 300  -1000 2600
+Wire Wire Line
+	-1000 2600 -2600 2600
+Wire Wire Line
+	-2600 2600 -2600 3300
+Wire Wire Line
+	-2600 3300 -2500 3300
+Wire Wire Line
+	-1500 3300 -1000 3300
+Wire Wire Line
+	-1000 3300 -1000 5600
+Wire Wire Line
+	-1000 5600 -2600 5600
+Wire Wire Line
+	-2600 5600 -2600 6300
+Wire Wire Line
+	-1500 6300 -1000 6300
+Wire Wire Line
+	-1000 6300 -1000 8600
+Wire Wire Line
+	-1000 8600 -2600 8600
+Wire Wire Line
+	-2600 8600 -2600 9300
+Wire Wire Line
+	2500 300  3000 300 
+Wire Wire Line
+	3000 300  3000 2600
+Wire Wire Line
+	3000 2600 1400 2600
+Wire Wire Line
+	1400 2600 1400 3300
+Wire Wire Line
+	1400 3300 1500 3300
+Wire Wire Line
+	2500 3300 3000 3300
+Wire Wire Line
+	3000 3300 3000 5500
+Wire Wire Line
+	3000 5500 1400 5500
+Wire Wire Line
+	1400 5500 1400 6300
+Wire Wire Line
+	3000 6300 3000 8600
+Wire Wire Line
+	3000 8600 1400 8600
+Wire Wire Line
+	2500 6300 3000 6300
+Wire Wire Line
+	1400 8600 1400 9300
+Text HLabel 4500 1100 2    50   Output ~ 0
+ENCODER_MISO
+Text HLabel 4500 1200 2    50   Input ~ 0
+ENCODER_MOSI
+Text HLabel 4500 1300 2    50   Input ~ 0
+ENCODER_SCK
+Text HLabel 4500 1400 2    50   Input ~ 0
+ENCODER_CS
+Text Label 4200 1400 2    50   ~ 0
+SHIFT
+Wire Wire Line
+	4200 1400 4500 1400
+Text Label 4200 1300 2    50   ~ 0
+CLOCK
+Wire Wire Line
+	4200 1300 4500 1300
+Wire Wire Line
+	4200 1100 4500 1100
+Text Label 4200 1100 2    50   ~ 0
+DATA
+Text Label 2700 9300 0    50   ~ 0
+DATA
+Wire Wire Line
+	1500 300  1400 300 
+Wire Wire Line
+	1400 300  1400 -300
+Wire Wire Line
+	1400 -300 -500 -300
+Wire Wire Line
+	-500 -300 -500 9300
+Wire Wire Line
+	-500 9300 -1500 9300
+NoConn ~ 2500 6400
+NoConn ~ 2500 9400
+NoConn ~ 2500 3400
+NoConn ~ 2500 400 
+NoConn ~ -1500 400 
+NoConn ~ -1500 3400
+NoConn ~ -1500 6400
+NoConn ~ -1500 9400
+Wire Wire Line
+	4500 1200 4200 1200
+NoConn ~ 4200 1200
+$EndSCHEMATC
