@@ -75,17 +75,17 @@ X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_Schottky_x2_KCom_AKA
+# Device_D_Schottky_x2_KCom_AAK
 #
-DEF Device_D_Schottky_x2_KCom_AKA D 0 30 Y N 1 F N
+DEF Device_D_Schottky_x2_KCom_AAK D 0 30 Y N 1 F N
 F0 "D" 50 -100 50 H V C CNN
-F1 "Device_D_Schottky_x2_KCom_AKA" 0 100 50 H V C CNN
+F1 "Device_D_Schottky_x2_KCom_AAK" 0 100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 C 0 0 10 0 1 0 F
+P 2 0 1 0 -150 0 150 0 N
 P 2 0 1 0 0 0 0 -100 N
-P 2 0 1 0 150 0 -150 0 N
 P 3 0 1 8 -50 -50 -50 50 -50 50 N
 P 3 0 1 8 50 -50 50 50 50 50 N
 P 4 0 1 8 -50 -50 -30 -50 -30 -40 -30 -40 N
@@ -95,8 +95,8 @@ P 5 0 1 8 -70 40 -70 50 -50 50 -50 50 -50 50 N
 P 6 0 1 8 -150 50 -50 0 -150 -50 -150 50 -150 50 -150 50 N
 P 6 0 1 8 150 -50 50 0 150 50 150 -50 150 -50 150 -50 N
 X A 1 -300 0 150 R 50 50 0 1 P
-X K 2 0 -200 100 U 50 50 0 1 P
-X A 3 300 0 150 L 50 50 0 1 P
+X A 2 300 0 150 L 50 50 0 1 P
+X K 3 0 -200 100 U 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
@@ -218,6 +218,21 @@ X G 5 -200 0 200 R 50 50 2 1 I
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Sensor_Magnetic_A1301KLHLT-T
 #
 DEF Sensor_Magnetic_A1301KLHLT-T U 0 20 Y Y 1 F N
@@ -292,6 +307,19 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
