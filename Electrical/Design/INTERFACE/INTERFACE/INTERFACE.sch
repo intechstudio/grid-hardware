@@ -1351,4 +1351,48 @@ Wire Wire Line
 Connection ~ 9400 3400
 Wire Wire Line
 	9400 3400 9600 3400
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5DE0D86A
+P 9300 1700
+F 0 "FID1" H 9385 1746 50  0000 L CNN
+F 1 "Fiducial" H 9385 1655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1.5mm_Mask3mm" H 9300 1700 50  0001 C CNN
+F 3 "~" H 9300 1700 50  0001 C CNN
+	1    9300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5DE0E454
+P 9300 1900
+F 0 "FID2" H 9385 1946 50  0000 L CNN
+F 1 "Fiducial" H 9385 1855 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1.5mm_Mask3mm" H 9300 1900 50  0001 C CNN
+F 3 "~" H 9300 1900 50  0001 C CNN
+	1    9300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5DE0F074
+P 9300 2100
+F 0 "FID3" H 9385 2146 50  0000 L CNN
+F 1 "Fiducial" H 9385 2055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1.5mm_Mask3mm" H 9300 2100 50  0001 C CNN
+F 3 "~" H 9300 2100 50  0001 C CNN
+	1    9300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5DE0FAD1
+P 9300 2300
+F 0 "FID4" H 9385 2346 50  0000 L CNN
+F 1 "Fiducial" H 9385 2255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1.5mm_Mask3mm" H 9300 2300 50  0001 C CNN
+F 3 "~" H 9300 2300 50  0001 C CNN
+	1    9300 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
