@@ -170,12 +170,12 @@ POGO_TX
 Text Label 4800 2900 1    50   ~ 0
 POGO_SYNC_1
 $Comp
-L Connector_Generic:Conn_01x08 J2
+L suku_basics:FFC_Conn_01x08_combine_pins J2
 U 1 1 5DC4B251
 P 1700 6000
 F 0 "J2" V 1900 6200 50  0000 R CNN
 F 1 "Conn_01x08" V 1800 6200 50  0000 R CNN
-F 2 "suku_basics:J_FFC_1x8_Solder" H 1700 6000 50  0001 C CNN
+F 2 "suku_basics:J_FFC_1x8_Solder_2common" H 1700 6000 50  0001 C CNN
 F 3 "~" H 1700 6000 50  0001 C CNN
 F 4 "N.F." V 1700 6000 50  0001 C CNN "Part"
 	1    1700 6000
@@ -409,12 +409,12 @@ F 3 "~" H 2300 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J4
+L suku_basics:FFC_Conn_01x08_combine_pins J4
 U 1 1 5DD08BD7
 P 5200 6000
 F 0 "J4" V 5400 6200 50  0000 R CNN
 F 1 "Conn_01x08" V 5300 6200 50  0000 R CNN
-F 2 "suku_basics:J_FFC_1x8_Solder" H 5200 6000 50  0001 C CNN
+F 2 "suku_basics:J_FFC_1x8_Solder_2common" H 5200 6000 50  0001 C CNN
 F 3 "~" H 5200 6000 50  0001 C CNN
 F 4 "N.F." V 5200 6000 50  0001 C CNN "Part"
 	1    5200 6000
@@ -434,14 +434,7 @@ $EndComp
 Wire Wire Line
 	1600 5700 1600 5800
 Wire Wire Line
-	1500 5800 1500 5700
-Connection ~ 1500 5700
-Wire Wire Line
-	1500 5700 1600 5700
-Wire Wire Line
 	1400 5800 1400 5700
-Wire Wire Line
-	1400 5700 1500 5700
 Wire Wire Line
 	1400 5700 1200 5700
 Wire Wire Line
@@ -465,15 +458,8 @@ Wire Wire Line
 Wire Wire Line
 	1900 5700 1900 5800
 Wire Wire Line
-	2000 5800 2000 5700
-Connection ~ 2000 5700
-Wire Wire Line
-	2000 5700 1900 5700
-Wire Wire Line
 	2100 5800 2100 5700
 Connection ~ 2100 5700
-Wire Wire Line
-	2100 5700 2000 5700
 Wire Wire Line
 	2300 5800 2300 5700
 Connection ~ 2300 5700
@@ -535,15 +521,8 @@ Connection ~ 4700 5700
 Wire Wire Line
 	4700 5700 4700 5800
 Wire Wire Line
-	5000 5800 5000 5700
-Connection ~ 5000 5700
-Wire Wire Line
-	5000 5700 5100 5700
-Wire Wire Line
 	4900 5800 4900 5700
 Connection ~ 4900 5700
-Wire Wire Line
-	4900 5700 5000 5700
 $Comp
 L power:GND #PWR016
 U 1 1 5DD5BFB1
@@ -562,15 +541,8 @@ Wire Wire Line
 Wire Wire Line
 	5400 5700 5400 5800
 Wire Wire Line
-	5500 5800 5500 5700
-Connection ~ 5500 5700
-Wire Wire Line
-	5500 5700 5400 5700
-Wire Wire Line
 	5600 5800 5600 5700
 Connection ~ 5600 5700
-Wire Wire Line
-	5600 5700 5500 5700
 Wire Wire Line
 	1700 5800 1700 5200
 Wire Wire Line
@@ -1423,4 +1395,12 @@ F 4 "N.F." H 9300 2300 50  0001 C CNN "Part"
 	1    9300 2300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1900 5700 2100 5700
+Wire Wire Line
+	1400 5700 1600 5700
+Wire Wire Line
+	5400 5700 5600 5700
+Wire Wire Line
+	4900 5700 5100 5700
 $EndSCHEMATC
