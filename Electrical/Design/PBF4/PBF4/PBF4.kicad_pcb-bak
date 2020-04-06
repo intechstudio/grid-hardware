@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-2")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -92,7 +92,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "/Render"))
+      (outputdirectory "Render/"))
   )
 
   (net 0 "")
@@ -407,7 +407,7 @@
     )
   )
 
-  (module suku_basics:SW_HYP_MAPMODE (layer F.Cu) (tedit 5E78ABFD) (tstamp 5D706067)
+  (module suku_basics:SW_HYP_MAPMODE (layer F.Cu) (tedit 5E8B3A9F) (tstamp 5D706067)
     (at 100 146.5 180)
     (descr "Light Touch Switch")
     (path /5D757C78/5D72A7FC)
@@ -421,8 +421,8 @@
     (fp_text user %R (at -7.62 -7.62) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad "" thru_hole roundrect (at 2.15 0 90) (size 1.8 1) (drill 0.75 (offset -0.4 0)) (layers *.Cu *.Mask) (roundrect_rratio 0.25))
-    (pad "" thru_hole roundrect (at -2.15 0 90) (size 1.8 1) (drill 0.75 (offset -0.4 0)) (layers *.Cu *.Mask) (roundrect_rratio 0.25))
+    (pad "" thru_hole roundrect (at 2.15 0 90) (size 1.8 1) (drill 0.75 (offset -0.4 0)) (layers *.Cu *.Mask F.Paste) (roundrect_rratio 0.25))
+    (pad "" thru_hole roundrect (at -2.15 0 90) (size 1.8 1) (drill 0.75 (offset -0.4 0)) (layers *.Cu *.Mask F.Paste) (roundrect_rratio 0.25))
     (pad "" smd rect (at 0 1.7 180) (size 1.7 1.2) (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect (at 1.7 1.4 90) (size 1.4 0.7) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
@@ -8502,7 +8502,7 @@
   (segment (start 109.525 131.75) (end 110.16 131.115) (width 0.254) (layer B.Cu) (net 96))
   (segment (start 116.51 131.115) (end 110.16 131.115) (width 0.254) (layer B.Cu) (net 96))
 
-  (zone (net 3) (net_name +3V3_UI) (layer In2.Cu) (tstamp 5E793C35) (hatch edge 0.508)
+  (zone (net 3) (net_name +3V3_UI) (layer In2.Cu) (tstamp 5E78B4D2) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.254))
@@ -11178,7 +11178,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5E793C32) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5E78B4CF) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.254))
@@ -13663,7 +13663,7 @@
       )
     )
   )
-  (zone (net 44) (net_name +5V) (layer B.Cu) (tstamp 5E793C2F) (hatch edge 0.508)
+  (zone (net 44) (net_name +5V) (layer B.Cu) (tstamp 5E78B4CC) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.254))
@@ -16735,7 +16735,7 @@
       )
     )
   )
-  (zone (net 20) (net_name +3V3_UC) (layer F.Cu) (tstamp 5E793C2C) (hatch edge 0.508)
+  (zone (net 20) (net_name +3V3_UC) (layer F.Cu) (tstamp 5E78B4C9) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.254))
