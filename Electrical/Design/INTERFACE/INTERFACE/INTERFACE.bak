@@ -397,18 +397,6 @@ F 3 "~" H 2300 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:FFC_Conn_01x08_combine_pins J4
-U 1 1 5DD08BD7
-P 5200 6000
-F 0 "J4" V 5400 6200 50  0000 R CNN
-F 1 "Conn_01x08" V 5300 6200 50  0000 R CNN
-F 2 "suku_basics:J_FFC_1x8_Solder_2common" H 5200 6000 50  0001 C CNN
-F 3 "~" H 5200 6000 50  0001 C CNN
-F 4 "N.F." V 5200 6000 50  0001 C CNN "Part"
-	1    5200 6000
-	0    -1   1    0   
-$EndComp
-$Comp
 L power:GND #PWR01
 U 1 1 5DD0A5B5
 P 1200 6100
@@ -587,7 +575,7 @@ U 1 1 5DE300B8
 P 8000 1400
 F 0 "D1" H 8000 1525 50  0000 C CNN
 F 1 "BAT54C" H 8000 1525 50  0001 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8000 1400 50  0001 C CNN
+F 2 "suku_basics:SOT-23" H 8000 1400 50  0001 C CNN
 F 3 "~" H 8000 1400 50  0001 C CNN
 F 4 "C375703" H 8000 1400 50  0001 C CNN "Part"
 	1    8000 1400
@@ -726,7 +714,7 @@ U 1 1 5DE55D76
 P 7800 4000
 F 0 "U3" H 7571 4046 50  0000 R CNN
 F 1 "HALL 39E" H 7571 3955 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23W" H 7800 3650 50  0001 L CIN
+F 2 "suku_basics:SOT-23W" H 7800 3650 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx" H 7700 4000 50  0001 C CNN
 F 4 "C85573" H 7800 4000 50  0001 C CNN "Part"
 	1    7800 4000
@@ -1392,37 +1380,181 @@ Wire Wire Line
 Wire Wire Line
 	4900 5700 5100 5700
 $Comp
-L suku_basics:FFC_Conn_01x08_combine_pins2 J?
-U 1 1 5EAAC63D
-P 1700 6900
-F 0 "J?" V 1572 6412 50  0000 R CNN
-F 1 "FFC_Conn_01x08_combine_pins2" V 1663 6412 50  0000 R CNN
-F 2 "suku_basics:J_FFC_1x8_Solder_3common" H 1700 6900 50  0001 C CNN
-F 3 "~" H 1700 6900 50  0001 C CNN
-	1    1700 6900
-	0    -1   1    0   
-$EndComp
-$Comp
-L suku_basics:FFC_Conn_01x08_combine_pins2 J?
+L suku_basics:FFC_Conn_01x08_combine_pins2 J6
 U 1 1 5EAADF8D
-P 5300 6900
-F 0 "J?" V 5172 6412 50  0000 R CNN
-F 1 "FFC_Conn_01x08_combine_pins2" V 5263 6412 50  0000 R CNN
-F 2 "suku_basics:J_FFC_1x8_Solder_3common" H 5300 6900 50  0001 C CNN
-F 3 "~" H 5300 6900 50  0001 C CNN
-	1    5300 6900
+P 5200 6000
+F 0 "J6" V 5072 5512 50  0000 R CNN
+F 1 "FFC_Conn_01x08_combine_pins2" V 5163 5512 50  0000 R CNN
+F 2 "suku_basics:J_FFC_1x8_Solder_3common" H 5200 6000 50  0001 C CNN
+F 3 "~" H 5200 6000 50  0001 C CNN
+	1    5200 6000
 	0    -1   1    0   
 $EndComp
 $Comp
-L suku_basics:FFC_Conn_01x08_combine_pins J2
-U 1 1 5DC4B251
+L suku_basics:FFC_Conn_01x08_combine_pins2 J5
+U 1 1 5EAAC63D
 P 1700 6000
-F 0 "J2" V 1900 6200 50  0000 R CNN
-F 1 "Conn_01x08" V 1800 6200 50  0000 R CNN
-F 2 "suku_basics:J_FFC_1x8_Solder_2common" H 1700 6000 50  0001 C CNN
+F 0 "J5" V 1572 5512 50  0000 R CNN
+F 1 "FFC_Conn_01x08_combine_pins2" V 1663 5512 50  0000 R CNN
+F 2 "suku_basics:J_FFC_1x8_Solder_3common" H 1700 6000 50  0001 C CNN
 F 3 "~" H 1700 6000 50  0001 C CNN
-F 4 "N.F." V 1700 6000 50  0001 C CNN "Part"
 	1    1700 6000
 	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB1FDDF
+P 1400 7100
+F 0 "TP?" H 1458 7218 50  0001 L CNN
+F 1 "TP_GND" V 1400 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1600 7100 50  0001 C CNN
+F 3 "~" H 1600 7100 50  0001 C CNN
+	1    1400 7100
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB4CDC2
+P 1600 7100
+F 0 "TP?" H 1658 7218 50  0001 L CNN
+F 1 "TP_S2" V 1600 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1800 7100 50  0001 C CNN
+F 3 "~" H 1800 7100 50  0001 C CNN
+	1    1600 7100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1600 6900 1600 7100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB550B3
+P 1800 7100
+F 0 "TP?" H 1858 7218 50  0001 L CNN
+F 1 "TP_RX" V 1800 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2000 7100 50  0001 C CNN
+F 3 "~" H 2000 7100 50  0001 C CNN
+	1    1800 7100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1800 6900 1800 7100
+Text Label 1600 6900 1    50   ~ 0
+FFC_SYNC_2
+Wire Wire Line
+	1400 6900 1400 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5EB276EE
+P 1400 6900
+F 0 "#PWR?" H 1400 6650 50  0001 C CNN
+F 1 "GND" H 1405 6727 50  0000 C CNN
+F 2 "" H 1400 6900 50  0001 C CNN
+F 3 "" H 1400 6900 50  0001 C CNN
+	1    1400 6900
+	1    0    0    1   
+$EndComp
+Text Label 1800 6900 1    50   ~ 0
+FFC_RX
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB9B8F9
+P 2900 7100
+F 0 "TP?" H 2958 7218 50  0001 L CNN
+F 1 "TP_5F" V 2900 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3100 7100 50  0001 C CNN
+F 3 "~" H 3100 7100 50  0001 C CNN
+	1    2900 7100
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB9B8FF
+P 3100 7100
+F 0 "TP?" H 3158 7218 50  0001 L CNN
+F 1 "TP_TX" V 3100 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3300 7100 50  0001 C CNN
+F 3 "~" H 3300 7100 50  0001 C CNN
+	1    3100 7100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6900 3100 7100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB9B906
+P 3300 7100
+F 0 "TP?" H 3358 7218 50  0001 L CNN
+F 1 "TP_S1" V 3300 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3500 7100 50  0001 C CNN
+F 3 "~" H 3500 7100 50  0001 C CNN
+	1    3300 7100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3300 6900 3300 7100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB9B90D
+P 3500 7100
+F 0 "TP?" H 3558 7218 50  0001 L CNN
+F 1 "TP_GND" V 3500 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3700 7100 50  0001 C CNN
+F 3 "~" H 3700 7100 50  0001 C CNN
+	1    3500 7100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 6900 3500 7100
+$Comp
+L power:+5F #PWR?
+U 1 1 5EB9B914
+P 2900 6900
+F 0 "#PWR?" H 2900 6750 50  0001 C CNN
+F 1 "+5F" H 2915 7073 50  0000 C CNN
+F 2 "" H 2900 6900 50  0001 C CNN
+F 3 "" H 2900 6900 50  0001 C CNN
+	1    2900 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6900 2900 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5EB9B91C
+P 3500 6900
+F 0 "#PWR?" H 3500 6650 50  0001 C CNN
+F 1 "GND" H 3505 6727 50  0000 C CNN
+F 2 "" H 3500 6900 50  0001 C CNN
+F 3 "" H 3500 6900 50  0001 C CNN
+	1    3500 6900
+	1    0    0    1   
+$EndComp
+Text Label 3100 6900 1    50   ~ 0
+FFC_TX
+Text Label 3300 6900 1    50   ~ 0
+FFC_SYNC_1
+$Comp
+L power:+5F #PWR?
+U 1 1 5EB7F80D
+P 2000 6900
+F 0 "#PWR?" H 2000 6750 50  0001 C CNN
+F 1 "+5F" H 2015 7073 50  0000 C CNN
+F 2 "" H 2000 6900 50  0001 C CNN
+F 3 "" H 2000 6900 50  0001 C CNN
+	1    2000 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6900 2000 7100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EB5D51C
+P 2000 7100
+F 0 "TP?" H 2058 7218 50  0001 L CNN
+F 1 "TP_5F" V 2000 7300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2200 7100 50  0001 C CNN
+F 3 "~" H 2200 7100 50  0001 C CNN
+	1    2000 7100
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
