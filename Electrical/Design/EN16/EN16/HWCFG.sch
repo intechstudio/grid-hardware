@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:EN16-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -22,7 +21,7 @@ AR Path="/5DC5FDC3" Ref="U?"  Part="1"
 AR Path="/5DC2DC06/5DC5FDC3" Ref="U3"  Part="1" 
 F 0 "U3" H 3700 4300 50  0000 C CNN
 F 1 "74HC165" H 3800 4200 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 4100 3400 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 4100 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4100 3400 50  0001 C CNN
 	1    4100 3400
 	1    0    0    -1  
@@ -141,15 +140,13 @@ Wire Wire Line
 Wire Wire Line
 	3600 3400 3100 3400
 Wire Wire Line
-	3600 3300 3100 3300
+	3600 3300 1400 3300
 Wire Wire Line
 	3600 3200 3100 3200
 Wire Wire Line
 	3600 3100 3100 3100
 Wire Wire Line
 	3600 3000 3100 3000
-Text Label 3100 3300 2    50   ~ 0
-HWCFG_LOW
 Text Label 3100 3400 2    50   ~ 0
 HWCFG_LOW
 Text Label 3100 3500 2    50   ~ 0
@@ -175,4 +172,63 @@ Wire Wire Line
 	3100 2900 3600 2900
 Text Label 3100 2900 2    50   ~ 0
 HWCFG_HIGH
+$Comp
+L suku_basics:RES R?
+U 1 1 5F5FDCF0
+P 1400 3500
+AR Path="/5D757C78/5F5FDCF0" Ref="R?"  Part="1" 
+AR Path="/5DC2DC06/5F5FDCF0" Ref="R33"  Part="1" 
+F 0 "R33" H 1459 3546 50  0000 L CNN
+F 1 "10k" H 1459 3455 50  0000 L CNN
+F 2 "suku_basics:RES_0805" H 1400 3500 50  0001 C CNN
+F 3 "~" H 1400 3500 50  0001 C CNN
+	1    1400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5FE00B
+P 1400 3700
+AR Path="/5F5FE00B" Ref="#PWR?"  Part="1" 
+AR Path="/5DC2DC06/5F5FE00B" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 1400 3450 50  0001 C CNN
+F 1 "GND" H 1405 3527 50  0000 C CNN
+F 2 "" H 1400 3700 50  0001 C CNN
+F 3 "" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3700 1400 3600
+Wire Wire Line
+	1400 3400 1400 3300
+$Comp
+L suku_basics:JP_SolderJumper_2_Open JP1
+U 1 1 5F6004A1
+P 1400 3100
+F 0 "JP1" V 1354 3168 50  0000 L CNN
+F 1 "N.F. Solder Jumper" V 1445 3168 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1400 3100 50  0001 C CNN
+F 3 "~" H 1400 3100 50  0001 C CNN
+	1    1400 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 3300 1400 3200
+Connection ~ 1400 3300
+$Comp
+L suku_basics:+3V3_UC #PWR?
+U 1 1 5F6014FB
+P 1400 2900
+AR Path="/5F6014FB" Ref="#PWR?"  Part="1" 
+AR Path="/5DC2DC06/5F6014FB" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 1400 2750 50  0001 C CNN
+F 1 "+3V3_UC" H 1415 3073 50  0000 C CNN
+F 2 "" H 1400 2900 50  0001 C CNN
+F 3 "" H 1400 2900 50  0001 C CNN
+	1    1400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2900 1400 3000
 $EndSCHEMATC

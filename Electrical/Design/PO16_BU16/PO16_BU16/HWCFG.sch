@@ -21,7 +21,7 @@ AR Path="/5DC5FDC3" Ref="U?"  Part="1"
 AR Path="/5DC2DC06/5DC5FDC3" Ref="U3"  Part="1" 
 F 0 "U3" H 3700 4300 50  0000 C CNN
 F 1 "74HC165" H 3800 4200 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 4100 3400 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 4100 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4100 3400 50  0001 C CNN
 	1    4100 3400
 	1    0    0    -1  
@@ -210,7 +210,7 @@ L suku_basics:JP_SolderJumper_2_Open JP1
 U 1 1 5D662D78
 P 2200 2000
 F 0 "JP1" V 2154 2068 50  0000 L CNN
-F 1 "JP_SolderJumper_2_Open" V 2245 2068 50  0000 L CNN
+F 1 "N.F. Solder Jumper" V 2245 2068 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2200 2000 50  0001 C CNN
 F 3 "~" H 2200 2000 50  0001 C CNN
 	1    2200 2000
