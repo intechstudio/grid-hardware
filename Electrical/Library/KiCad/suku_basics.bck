@@ -21,6 +21,24 @@ K HCMOS SR 3State
 F http://www.ti.com/lit/ds/symlink/sn74hc595.pdf
 $ENDCMP
 #
+$CMP 74HC1G125
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74HC1G66GW
+D Single Analog Switch
+K Single Analog Switch
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74HC4051
+D Analog Multiplexer 8 to 1 lins
+K CMOS MUX MUX8
+F http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf
+$ENDCMP
+#
 $CMP 74HCT595
 D 8-bit serial in/out Shift Register 3-State Outputs
 K HCTMOS SR 3State
@@ -31,6 +49,18 @@ $CMP 74LS595
 D 8-bit serial in/out Shift Register 3-State Outputs
 K TTL SR 3State
 F http://www.ti.com/lit/gpn/sn74ls595
+$ENDCMP
+#
+$CMP AOZ1282CI
+D 1.2A, 4.5 to 36V Input, High Voltage Input integrated switch step-down regulator, SOT-23-6
+K switching buck converter power-supply voltage regulator
+F https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AOZ1282CI_C111916.pdf
+$ENDCMP
+#
+$CMP BSP318SH6327
+D 2.6A Id, 60V Vds, N-Channel MOSFET, SOT-223
+K N-Channel MOSFET
+F https://hu.mouser.com/ProductDetail/Infineon-Technologies/BSP318S-H6327?qs=sGAEpiMZZMshyDBzk1%2FWizSW%252BwlCH%2FhMeA2LbLTNlxJd935pnkCaWA%3D%3D
 $ENDCMP
 #
 $CMP CAP
@@ -45,10 +75,46 @@ K cap capacitor
 F ~
 $ENDCMP
 #
+$CMP Conn_01x40
+D Generic connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x50
+D Generic connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP DIODE
 D Diode, small symbol
 K diode
 F ~
+$ENDCMP
+#
+$CMP DS1821C
+D Programmable Digital Thermostat and Thermometer TO-92
+K OneWire 1Wire Maxim Dallas
+F http://datasheets.maximintegrated.com/en/ds/DS1821.pdf
+$ENDCMP
+#
+$CMP DS1822
+D Econo 1-Wire Digital Thermometer TO-92
+K OneWire 1Wire Dallas Maxim
+F http://datasheets.maximintegrated.com/en/ds/DS1822.pdf
+$ENDCMP
+#
+$CMP DS18B20
+D 1-Wire Ambient Temperature Sensor TO-92
+K OneWire 1-Wire 1Wire Maxim Dallas
+F http://datasheets.maximintegrated.com/en/ds/MAX31820.pdf
+$ENDCMP
+#
+$CMP DS18S20
+D High-Precision 1-Wire Digital Thermometer TO-92
+K OneWire 1Wire Maxim Dallas
+F http://datasheets.maximintegrated.com/en/ds/DS18S20.pdf
 $ENDCMP
 #
 $CMP FERRIT
@@ -57,9 +123,32 @@ K L ferrite bead inductor filter
 F ~
 $ENDCMP
 #
+$CMP FFC_Conn_01x08_combine_pins
+D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP FFC_Conn_01x08_combine_pins2
+D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP FUSB302UCX
+K USB USB-C PD Power Delivery PHY
+F http://www.onsemi.com/pub/Collateral/FUSB302B-D.PDF
+$ENDCMP
+#
 $CMP INDUCTOR
 D Inductor, small symbol
 K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
+$CMP JP_SolderJumper_2_Open
+D Solder Jumper, 2-pole, open
+K solder jumper SPST
 F ~
 $ENDCMP
 #
@@ -67,6 +156,18 @@ $CMP LED
 D Light emitting diode, small symbol
 K LED diode light-emitting-diode
 F ~
+$ENDCMP
+#
+$CMP MCP16301H
+D 1A, 4.7 to 36V Input, High Voltage Input integrated switch step-down regulator, SOT-23-6
+K switching buck converter power-supply voltage regulator
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf
+$ENDCMP
+#
+$CMP MXT144U
+D 16Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8
+K flash memory SPI
+F http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf
 $ENDCMP
 #
 $CMP PCA9634
@@ -126,6 +227,22 @@ $CMP USB_C
 D USB Full-Featured Type-C Receptacle connector
 K usb universal serial bus type-C full-featured
 F https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+$ENDCMP
+#
+$CMP USB_C_TYPE-C-32-M-12
+D USB Type-C Receptacle connector
+$ENDCMP
+#
+$CMP U_ESD_4ch
+D Transient voltage suppressor designed to protect high speed data lines from ESD, EFT, and lightning
+K ESD Protection diodes  transient suppressor
+F http://www.onsemi.com/pub_link/Collateral/NUP4202W1-D.PDF
+$ENDCMP
+#
+$CMP U_FLASH_W25Q16JVSSIQ
+D 16Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8
+K flash memory SPI
+F http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf
 $ENDCMP
 #
 $CMP U_REGULATOR_SOT23-5
