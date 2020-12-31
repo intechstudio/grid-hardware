@@ -1501,7 +1501,7 @@ ENDDEF
 DEF capsense_diamond CS 0 30 N N 1 F N
 F0 "CS" 0 270 50 H V C CNN
 F1 "capsense_diamond" 0 200 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
+F2 "suku_basics:capsense_diamond" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 $FPLIST
  Pin*
@@ -1509,6 +1509,23 @@ $FPLIST
 $ENDFPLIST
 DRAW
 P 5 0 1 0 0 150 -150 0 0 -150 150 0 0 150 N
+X 1 1 0 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# capsense_diamond_edge
+#
+DEF capsense_diamond_edge CS 0 30 N N 1 F N
+F0 "CS" 0 270 50 H V C CNN
+F1 "capsense_diamond_edge" 0 200 50 H V C CNN
+F2 "suku_basics:capsense_diamond_edge" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+P 6 0 1 0 -150 0 0 -150 150 0 150 50 -150 50 -150 0 N
 X 1 1 0 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
