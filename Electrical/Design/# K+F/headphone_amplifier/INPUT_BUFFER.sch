@@ -1,0 +1,602 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5FF782BF
+P 1700 3600
+AR Path="/5FF782BF" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF782BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1700 3350 50  0001 C CNN
+F 1 "GND" H 1705 3427 50  0000 C CNN
+F 2 "" H 1700 3600 50  0001 C CNN
+F 3 "" H 1700 3600 50  0001 C CNN
+	1    1700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3600 1700 3500
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF782C6
+P 3800 2100
+AR Path="/5FF782C6" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF782C6" Ref="R?"  Part="1" 
+F 0 "R?" H 3741 2054 50  0000 R CNN
+F 1 "100k" H 3741 2145 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 3800 2100 50  0001 C CNN
+F 3 "~" H 3800 2100 50  0001 C CNN
+	1    3800 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FF782CC
+P 2100 1500
+AR Path="/5FF782CC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF782CC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 1350 50  0001 C CNN
+F 1 "+12V" H 2115 1673 50  0000 C CNN
+F 2 "" H 2100 1500 50  0001 C CNN
+F 3 "" H 2100 1500 50  0001 C CNN
+	1    2100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP_POL C?
+U 1 1 5FF782D2
+P 3400 2500
+AR Path="/5FF782D2" Ref="C?"  Part="1" 
+AR Path="/5FF7361D/5FF782D2" Ref="C?"  Part="1" 
+F 0 "C?" V 3172 2500 50  0000 C CNN
+F 1 "1u" V 3263 2500 50  0000 C CNN
+F 2 "" H 3400 2500 50  0001 C CNN
+F 3 "~" H 3400 2500 50  0001 C CNN
+	1    3400 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:NJM4556A U?
+U 1 1 5FF782D8
+P 5000 2400
+AR Path="/5FF782D8" Ref="U?"  Part="1" 
+AR Path="/5FF7361D/5FF782D8" Ref="U?"  Part="1" 
+F 0 "U?" H 5000 2033 50  0000 C CNN
+F 1 "NJM4556A" H 5000 2124 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 2400 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2500 3800 2500
+Wire Wire Line
+	3300 2500 3000 2500
+Wire Wire Line
+	3800 2200 3800 2500
+Connection ~ 3800 2500
+Wire Wire Line
+	3800 2500 4700 2500
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF782E3
+P 2100 1700
+AR Path="/5FF782E3" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF782E3" Ref="R?"  Part="1" 
+F 0 "R?" H 2041 1654 50  0000 R CNN
+F 1 "100k" H 2041 1745 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 2100 1700 50  0001 C CNN
+F 3 "~" H 2100 1700 50  0001 C CNN
+	1    2100 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 1500 2100 1600
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF782EA
+P 2100 2100
+AR Path="/5FF782EA" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF782EA" Ref="R?"  Part="1" 
+F 0 "R?" H 2041 2054 50  0000 R CNN
+F 1 "100k" H 2041 2145 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 2100 2100 50  0001 C CNN
+F 3 "~" H 2100 2100 50  0001 C CNN
+	1    2100 2100
+	-1   0    0    1   
+$EndComp
+Connection ~ 3800 1900
+Wire Wire Line
+	3800 1900 3800 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5FF782F2
+P 2100 2300
+AR Path="/5FF782F2" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF782F2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 2050 50  0001 C CNN
+F 1 "GND" H 2105 2127 50  0000 C CNN
+F 2 "" H 2100 2300 50  0001 C CNN
+F 3 "" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1800 2100 1900
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF782F9
+P 4300 2100
+AR Path="/5FF782F9" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF782F9" Ref="R?"  Part="1" 
+F 0 "R?" H 4359 2146 50  0000 L CNN
+F 1 "100k" H 4359 2055 50  0000 L CNN
+F 2 "suku_basics:RES_0805" H 4300 2100 50  0001 C CNN
+F 3 "~" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1900 4300 1900
+Wire Wire Line
+	4300 1900 4300 2000
+Wire Wire Line
+	4300 2200 4300 2300
+Wire Wire Line
+	4300 2300 4600 2300
+Wire Wire Line
+	2100 2200 2100 2300
+$Comp
+L suku_basics:CAP C?
+U 1 1 5FF78304
+P 2500 2100
+AR Path="/5FF78304" Ref="C?"  Part="1" 
+AR Path="/5FF7361D/5FF78304" Ref="C?"  Part="1" 
+F 0 "C?" H 2592 2146 50  0000 L CNN
+F 1 "10u" H 2592 2055 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2500 2100 50  0001 C CNN
+F 3 "~" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF7830A
+P 2500 2300
+AR Path="/5FF7830A" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF7830A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2500 2050 50  0001 C CNN
+F 1 "GND" H 2505 2127 50  0000 C CNN
+F 2 "" H 2500 2300 50  0001 C CNN
+F 3 "" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2300 2500 2200
+Wire Wire Line
+	2500 2000 2500 1900
+Wire Wire Line
+	2500 1900 2100 1900
+Connection ~ 2100 1900
+Wire Wire Line
+	2100 1900 2100 2000
+Wire Wire Line
+	2500 1900 3800 1900
+Connection ~ 2500 1900
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF78317
+P 5000 1800
+AR Path="/5FF78317" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF78317" Ref="R?"  Part="1" 
+F 0 "R?" V 4804 1800 50  0000 C CNN
+F 1 "0R" V 4895 1800 50  0000 C CNN
+F 2 "suku_basics:RES_0805" H 5000 1800 50  0001 C CNN
+F 3 "~" H 5000 1800 50  0001 C CNN
+	1    5000 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1800 4600 1800
+Wire Wire Line
+	4600 1800 4600 2300
+Connection ~ 4600 2300
+Wire Wire Line
+	4600 2300 4700 2300
+Wire Wire Line
+	5100 1800 5400 1800
+Wire Wire Line
+	5400 1800 5400 2400
+Wire Wire Line
+	5400 2400 5300 2400
+Wire Wire Line
+	5800 2400 5400 2400
+Connection ~ 5400 2400
+Wire Wire Line
+	1900 3300 3000 3300
+Wire Wire Line
+	3000 2500 3000 3300
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5FF78329
+P 1700 3300
+AR Path="/5FF09E25/5FF78329" Ref="J?"  Part="1" 
+AR Path="/5FF78329" Ref="J?"  Part="1" 
+AR Path="/5FF7361D/5FF78329" Ref="J?"  Part="1" 
+F 0 "J?" H 1732 3625 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 1732 3534 50  0000 C CNN
+F 2 "" H 1700 3300 50  0001 C CNN
+F 3 "~" H 1700 3300 50  0001 C CNN
+	1    1700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF7D1A8
+P 3800 4700
+AR Path="/5FF7D1A8" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1A8" Ref="R?"  Part="1" 
+F 0 "R?" H 3741 4654 50  0000 R CNN
+F 1 "100k" H 3741 4745 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 3800 4700 50  0001 C CNN
+F 3 "~" H 3800 4700 50  0001 C CNN
+	1    3800 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FF7D1AE
+P 2100 4100
+AR Path="/5FF7D1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1AE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 3950 50  0001 C CNN
+F 1 "+12V" H 2115 4273 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP_POL C?
+U 1 1 5FF7D1B4
+P 3400 5100
+AR Path="/5FF7D1B4" Ref="C?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1B4" Ref="C?"  Part="1" 
+F 0 "C?" V 3172 5100 50  0000 C CNN
+F 1 "1u" V 3263 5100 50  0000 C CNN
+F 2 "" H 3400 5100 50  0001 C CNN
+F 3 "~" H 3400 5100 50  0001 C CNN
+	1    3400 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:NJM4556A U?
+U 1 1 5FF7D1BA
+P 5000 5000
+AR Path="/5FF7D1BA" Ref="U?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1BA" Ref="U?"  Part="1" 
+F 0 "U?" H 5000 4633 50  0000 C CNN
+F 1 "NJM4556A" H 5000 4724 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 5000 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf" H 5000 5000 50  0001 C CNN
+	1    5000 5000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 5100 3800 5100
+Wire Wire Line
+	3300 5100 3000 5100
+Wire Wire Line
+	3800 4800 3800 5100
+Connection ~ 3800 5100
+Wire Wire Line
+	3800 5100 4700 5100
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF7D1C5
+P 2100 4300
+AR Path="/5FF7D1C5" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1C5" Ref="R?"  Part="1" 
+F 0 "R?" H 2041 4254 50  0000 R CNN
+F 1 "100k" H 2041 4345 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 2100 4300 50  0001 C CNN
+F 3 "~" H 2100 4300 50  0001 C CNN
+	1    2100 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 4100 2100 4200
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF7D1CC
+P 2100 4700
+AR Path="/5FF7D1CC" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1CC" Ref="R?"  Part="1" 
+F 0 "R?" H 2041 4654 50  0000 R CNN
+F 1 "100k" H 2041 4745 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 2100 4700 50  0001 C CNN
+F 3 "~" H 2100 4700 50  0001 C CNN
+	1    2100 4700
+	-1   0    0    1   
+$EndComp
+Connection ~ 3800 4500
+Wire Wire Line
+	3800 4500 3800 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5FF7D1D4
+P 2100 4900
+AR Path="/5FF7D1D4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1D4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 4650 50  0001 C CNN
+F 1 "GND" H 2105 4727 50  0000 C CNN
+F 2 "" H 2100 4900 50  0001 C CNN
+F 3 "" H 2100 4900 50  0001 C CNN
+	1    2100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4400 2100 4500
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF7D1DB
+P 4300 4700
+AR Path="/5FF7D1DB" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1DB" Ref="R?"  Part="1" 
+F 0 "R?" H 4359 4746 50  0000 L CNN
+F 1 "100k" H 4359 4655 50  0000 L CNN
+F 2 "suku_basics:RES_0805" H 4300 4700 50  0001 C CNN
+F 3 "~" H 4300 4700 50  0001 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4500 4300 4500
+Wire Wire Line
+	4300 4500 4300 4600
+Wire Wire Line
+	4300 4800 4300 4900
+Wire Wire Line
+	4300 4900 4600 4900
+Wire Wire Line
+	2100 4800 2100 4900
+$Comp
+L suku_basics:CAP C?
+U 1 1 5FF7D1E6
+P 2500 4700
+AR Path="/5FF7D1E6" Ref="C?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1E6" Ref="C?"  Part="1" 
+F 0 "C?" H 2592 4746 50  0000 L CNN
+F 1 "10u" H 2592 4655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2500 4700 50  0001 C CNN
+F 3 "~" H 2500 4700 50  0001 C CNN
+	1    2500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF7D1EC
+P 2500 4900
+AR Path="/5FF7D1EC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1EC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2500 4650 50  0001 C CNN
+F 1 "GND" H 2505 4727 50  0000 C CNN
+F 2 "" H 2500 4900 50  0001 C CNN
+F 3 "" H 2500 4900 50  0001 C CNN
+	1    2500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4900 2500 4800
+Wire Wire Line
+	2500 4600 2500 4500
+Wire Wire Line
+	2500 4500 2100 4500
+Connection ~ 2100 4500
+Wire Wire Line
+	2100 4500 2100 4600
+Wire Wire Line
+	2500 4500 3800 4500
+Connection ~ 2500 4500
+$Comp
+L suku_basics:RES R?
+U 1 1 5FF7D1F9
+P 5000 4400
+AR Path="/5FF7D1F9" Ref="R?"  Part="1" 
+AR Path="/5FF7361D/5FF7D1F9" Ref="R?"  Part="1" 
+F 0 "R?" V 4804 4400 50  0000 C CNN
+F 1 "0R" V 4895 4400 50  0000 C CNN
+F 2 "suku_basics:RES_0805" H 5000 4400 50  0001 C CNN
+F 3 "~" H 5000 4400 50  0001 C CNN
+	1    5000 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 4400 4600 4400
+Wire Wire Line
+	4600 4400 4600 4900
+Connection ~ 4600 4900
+Wire Wire Line
+	4600 4900 4700 4900
+Wire Wire Line
+	5100 4400 5400 4400
+Wire Wire Line
+	5400 4400 5400 5000
+Wire Wire Line
+	5400 5000 5300 5000
+Wire Wire Line
+	5800 5000 5400 5000
+Connection ~ 5400 5000
+Wire Wire Line
+	1900 3200 2000 3200
+Wire Wire Line
+	2000 3200 2000 3400
+Wire Wire Line
+	2000 3400 3000 3400
+Wire Wire Line
+	3000 3400 3000 5100
+Text HLabel 5800 2400 2    50   Output ~ 0
+PREAMP_LEFT
+Text HLabel 5800 5000 2    50   Output ~ 0
+PREAMP_RIGHT
+$Comp
+L Amplifier_Operational:NJM4556A U?
+U 3 1 5FF8F44B
+P 5000 6200
+AR Path="/5FF8F44B" Ref="U?"  Part="3" 
+AR Path="/5FF7361D/5FF8F44B" Ref="U?"  Part="3" 
+F 0 "U?" H 4958 6246 50  0000 L CNN
+F 1 "NJM4556A" H 4958 6155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 6200 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf" H 5000 6200 50  0001 C CNN
+	3    5000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FF8F451
+P 4900 5800
+AR Path="/5FF8F451" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF8F451" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 5650 50  0001 C CNN
+F 1 "+12V" H 4915 5973 50  0000 C CNN
+F 2 "" H 4900 5800 50  0001 C CNN
+F 3 "" H 4900 5800 50  0001 C CNN
+	1    4900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8F457
+P 4900 6600
+AR Path="/5FF8F457" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF8F457" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 6350 50  0001 C CNN
+F 1 "GND" H 4905 6427 50  0000 C CNN
+F 2 "" H 4900 6600 50  0001 C CNN
+F 3 "" H 4900 6600 50  0001 C CNN
+	1    4900 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6600 4900 6500
+Wire Wire Line
+	4900 5800 4900 5900
+$Comp
+L suku_basics:CAP C?
+U 1 1 5FF921F4
+P 5600 6200
+AR Path="/5FF09E25/5FF921F4" Ref="C?"  Part="1" 
+AR Path="/5FF89B41/5FF921F4" Ref="C?"  Part="1" 
+AR Path="/5FF89E02/5FF921F4" Ref="C?"  Part="1" 
+AR Path="/5FF89F0F/5FF921F4" Ref="C?"  Part="1" 
+AR Path="/5FF7361D/5FF921F4" Ref="C?"  Part="1" 
+F 0 "C?" H 5692 6246 50  0000 L CNN
+F 1 "100n" H 5692 6155 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 5600 6200 50  0001 C CNN
+F 3 "~" H 5600 6200 50  0001 C CNN
+	1    5600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 5FF921FA
+P 6100 6200
+AR Path="/5FF09E25/5FF921FA" Ref="C?"  Part="1" 
+AR Path="/5FF89B41/5FF921FA" Ref="C?"  Part="1" 
+AR Path="/5FF89E02/5FF921FA" Ref="C?"  Part="1" 
+AR Path="/5FF89F0F/5FF921FA" Ref="C?"  Part="1" 
+AR Path="/5FF7361D/5FF921FA" Ref="C?"  Part="1" 
+F 0 "C?" H 6192 6246 50  0000 L CNN
+F 1 "1u" H 6192 6155 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 6100 6200 50  0001 C CNN
+F 3 "~" H 6100 6200 50  0001 C CNN
+	1    6100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FF92200
+P 5600 5800
+AR Path="/5FF09E25/5FF92200" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89B41/5FF92200" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89E02/5FF92200" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89F0F/5FF92200" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF92200" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5600 5650 50  0001 C CNN
+F 1 "+12V" H 5615 5973 50  0000 C CNN
+F 2 "" H 5600 5800 50  0001 C CNN
+F 3 "" H 5600 5800 50  0001 C CNN
+	1    5600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FF92206
+P 6100 5800
+AR Path="/5FF09E25/5FF92206" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89B41/5FF92206" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89E02/5FF92206" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89F0F/5FF92206" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF92206" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 5650 50  0001 C CNN
+F 1 "+12V" H 6115 5973 50  0000 C CNN
+F 2 "" H 6100 5800 50  0001 C CNN
+F 3 "" H 6100 5800 50  0001 C CNN
+	1    6100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5800 6100 6100
+Wire Wire Line
+	5600 5800 5600 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5FF9220E
+P 5600 6600
+AR Path="/5FF09E25/5FF9220E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89B41/5FF9220E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89E02/5FF9220E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89F0F/5FF9220E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF9220E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5600 6350 50  0001 C CNN
+F 1 "GND" H 5605 6427 50  0000 C CNN
+F 2 "" H 5600 6600 50  0001 C CNN
+F 3 "" H 5600 6600 50  0001 C CNN
+	1    5600 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF92214
+P 6100 6600
+AR Path="/5FF09E25/5FF92214" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89B41/5FF92214" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89E02/5FF92214" Ref="#PWR?"  Part="1" 
+AR Path="/5FF89F0F/5FF92214" Ref="#PWR?"  Part="1" 
+AR Path="/5FF7361D/5FF92214" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 6350 50  0001 C CNN
+F 1 "GND" H 6105 6427 50  0000 C CNN
+F 2 "" H 6100 6600 50  0001 C CNN
+F 3 "" H 6100 6600 50  0001 C CNN
+	1    6100 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6600 6100 6300
+Wire Wire Line
+	5600 6600 5600 6300
+$EndSCHEMATC

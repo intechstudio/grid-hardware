@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L suku_basics:FP6291 U?
+U 1 1 6008C2B7
+P 4300 2400
+F 0 "U?" H 4300 2767 50  0000 C CNN
+F 1 "FP6291" H 4300 2676 50  0000 C CNN
+F 2 "suku_basics:SOT-23-6" H 4350 2150 50  0001 L CIN
+F 3 "https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf" H 4050 2850 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:SCHOTTKY D?
+U 1 1 6008C2BD
+P 5000 2500
+F 0 "D?" H 5000 2295 50  0000 C CNN
+F 1 "SCHOTTKY" H 5000 2386 50  0000 C CNN
+F 2 "" V 5000 2500 50  0001 C CNN
+F 3 "~" V 5000 2500 50  0001 C CNN
+	1    5000 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L suku_basics:INDUCTOR L?
+U 1 1 6008C2C3
+P 3500 3300
+F 0 "L?" V 3304 3300 50  0000 C CNN
+F 1 "3.3uH" V 3395 3300 50  0000 C CNN
+F 2 "suku_basics:IND_0805" H 3500 3300 50  0001 C CNN
+F 3 "~" H 3500 3300 50  0001 C CNN
+	1    3500 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6008C2C9
+P 4300 2900
+F 0 "#PWR?" H 4300 2650 50  0001 C CNN
+F 1 "GND" H 4305 2727 50  0000 C CNN
+F 2 "" H 4300 2900 50  0001 C CNN
+F 3 "" H 4300 2900 50  0001 C CNN
+	1    4300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2900 4300 2700
+$Comp
+L suku_basics:CAP C?
+U 1 1 6008C2D0
+P 2900 3500
+F 0 "C?" H 2992 3546 50  0000 L CNN
+F 1 "100n" H 2992 3455 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2900 3500 50  0001 C CNN
+F 3 "~" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:CAP C?
+U 1 1 6008C2D6
+P 2500 3500
+F 0 "C?" H 2592 3546 50  0000 L CNN
+F 1 "20u" H 2592 3455 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 2500 3500 50  0001 C CNN
+F 3 "~" H 2500 3500 50  0001 C CNN
+	1    2500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6008C2DC
+P 2700 3900
+F 0 "#PWR?" H 2700 3650 50  0001 C CNN
+F 1 "GND" H 2705 3727 50  0000 C CNN
+F 2 "" H 2700 3900 50  0001 C CNN
+F 3 "" H 2700 3900 50  0001 C CNN
+	1    2700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3600 2500 3800
+Wire Wire Line
+	2500 3800 2700 3800
+Wire Wire Line
+	2700 3800 2700 3900
+Wire Wire Line
+	2900 3600 2900 3800
+Wire Wire Line
+	2900 3800 2700 3800
+Connection ~ 2700 3800
+Wire Wire Line
+	3400 3300 3200 3300
+Wire Wire Line
+	2500 3400 2500 3300
+Wire Wire Line
+	2900 3400 2900 3300
+Connection ~ 2900 3300
+Wire Wire Line
+	2900 3300 2500 3300
+$Comp
+L suku_basics:RES R?
+U 1 1 6008C2ED
+P 3900 2700
+F 0 "R?" H 3959 2746 50  0000 L CNN
+F 1 "10k" H 3959 2655 50  0000 L CNN
+F 2 "suku_basics:RES_0805" H 3900 2700 50  0001 C CNN
+F 3 "~" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6008C2F3
+P 3900 2900
+F 0 "#PWR?" H 3900 2650 50  0001 C CNN
+F 1 "GND" H 3905 2727 50  0000 C CNN
+F 2 "" H 3900 2900 50  0001 C CNN
+F 3 "" H 3900 2900 50  0001 C CNN
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2900 3900 2800
+Wire Wire Line
+	3900 2600 3900 2500
+Wire Wire Line
+	3900 2500 4000 2500
+Wire Wire Line
+	3200 3300 3200 2400
+Connection ~ 3200 3300
+Wire Wire Line
+	3200 3300 2900 3300
+Wire Wire Line
+	4000 2400 3900 2400
+Wire Wire Line
+	3900 2400 3900 2300
+Wire Wire Line
+	3900 2300 4000 2300
+Connection ~ 3900 2400
+Wire Wire Line
+	3900 2400 3200 2400
+Wire Wire Line
+	3600 3300 4700 3300
+Wire Wire Line
+	4700 3300 4700 2500
+Wire Wire Line
+	4600 2500 4700 2500
+Connection ~ 4700 2500
+Wire Wire Line
+	4700 2500 4900 2500
+$Comp
+L suku_basics:RES R?
+U 1 1 6008C309
+P 5200 2700
+F 0 "R?" H 5259 2746 50  0000 L CNN
+F 1 "100k" H 5259 2655 50  0000 L CNN
+F 2 "suku_basics:RES_0805" H 5200 2700 50  0001 C CNN
+F 3 "~" H 5200 2700 50  0001 C CNN
+	1    5200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:RES R?
+U 1 1 6008C30F
+P 5200 3100
+F 0 "R?" H 5141 3054 50  0000 R CNN
+F 1 "5.1k" H 5141 3145 50  0000 R CNN
+F 2 "suku_basics:RES_0805" H 5200 3100 50  0001 C CNN
+F 3 "~" H 5200 3100 50  0001 C CNN
+	1    5200 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 2600 5200 2500
+Wire Wire Line
+	5200 2500 5100 2500
+Wire Wire Line
+	5200 2800 5200 2900
+Wire Wire Line
+	5200 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 2300
+Wire Wire Line
+	4800 2300 4600 2300
+Connection ~ 5200 2900
+Wire Wire Line
+	5200 2900 5200 3000
+$Comp
+L power:GND #PWR?
+U 1 1 6008C31D
+P 5200 3300
+F 0 "#PWR?" H 5200 3050 50  0001 C CNN
+F 1 "GND" H 5205 3127 50  0000 C CNN
+F 2 "" H 5200 3300 50  0001 C CNN
+F 3 "" H 5200 3300 50  0001 C CNN
+	1    5200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3300 5200 3200
+Wire Wire Line
+	5200 2500 5600 2500
+Connection ~ 5200 2500
+$Comp
+L suku_basics:CAP C?
+U 1 1 6008C326
+P 5600 2700
+F 0 "C?" H 5692 2746 50  0000 L CNN
+F 1 "100n" H 5692 2655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 5600 2700 50  0001 C CNN
+F 3 "~" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2600 5600 2500
+$Comp
+L power:GND #PWR?
+U 1 1 6008C32D
+P 5600 2900
+F 0 "#PWR?" H 5600 2650 50  0001 C CNN
+F 1 "GND" H 5605 2727 50  0000 C CNN
+F 2 "" H 5600 2900 50  0001 C CNN
+F 3 "" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2900 5600 2800
+$Comp
+L suku_basics:CAP C?
+U 1 1 6008C334
+P 6000 2700
+F 0 "C?" H 6092 2746 50  0000 L CNN
+F 1 "20u" H 6092 2655 50  0000 L CNN
+F 2 "suku_basics:CAP_0805" H 6000 2700 50  0001 C CNN
+F 3 "~" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2500 6000 2500
+Wire Wire Line
+	6000 2500 6000 2600
+Connection ~ 5600 2500
+$Comp
+L power:GND #PWR?
+U 1 1 6008C33D
+P 6000 2900
+F 0 "#PWR?" H 6000 2650 50  0001 C CNN
+F 1 "GND" H 6005 2727 50  0000 C CNN
+F 2 "" H 6000 2900 50  0001 C CNN
+F 3 "" H 6000 2900 50  0001 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2900 6000 2800
+Connection ~ 6000 2500
+Text Notes 3800 4100 0    50   ~ 0
+Vout = 0.6V * (1 + (R1/R2))\nVout = 0.6V * (1 + (100k/5.1k)) = 12.36V
+Connection ~ 2500 3300
+Text HLabel 2200 3300 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	2200 3300 2500 3300
+Text HLabel 6500 2500 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	6000 2500 6500 2500
+$EndSCHEMATC
