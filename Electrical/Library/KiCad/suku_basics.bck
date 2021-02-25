@@ -75,12 +75,6 @@ K cap capacitor
 F ~
 $ENDCMP
 #
-$CMP Conn_01x40
-D Generic connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)
-K connector
-F ~
-$ENDCMP
-#
 $CMP Conn_01x50
 D Generic connector, single row, 01x40, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -135,6 +129,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP FP6291
+D High Efficiency 1.2MHz 2A Step Up Converter, 2-24V Vin, 28V Vout, 4A current limit, 1.2MHz, SOT23-6
+K Step-Up Boost DC-DC Regulator Adjustable
+F https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf
+$ENDCMP
+#
 $CMP FUSB302UCX
 K USB USB-C PD Power Delivery PHY
 F http://www.onsemi.com/pub/Collateral/FUSB302B-D.PDF
@@ -165,8 +165,8 @@ F http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf
 $ENDCMP
 #
 $CMP MXT144U
-D 16Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8
-K flash memory SPI
+D 12 horizontal 12 vertical capacitive touch interface
+K touch controller
 F http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf
 $ENDCMP
 #
@@ -185,6 +185,12 @@ $ENDCMP
 $CMP RES
 D Resistor, small symbol
 K R resistor
+F ~
+$ENDCMP
+#
+$CMP R_POT_Dual_Separate
+D Dual potentiometer, separate units
+K resistor variable
 F ~
 $ENDCMP
 #
@@ -260,6 +266,18 @@ $ENDCMP
 $CMP ZENER
 D Zener diode, small symbol
 K diode
+F ~
+$ENDCMP
+#
+$CMP capsense_diamond
+D test point (alternative shape)
+K test point tp
+F ~
+$ENDCMP
+#
+$CMP capsense_diamond_edge
+D test point (alternative shape)
+K test point tp
 F ~
 $ENDCMP
 #

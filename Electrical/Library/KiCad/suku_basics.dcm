@@ -15,6 +15,11 @@ D Power symbol creates a global label with name "+3V3_UI"
 K power-flag
 $ENDCMP
 #
+$CMP +5V_UI
+D Power symbol creates a global label with name "+3V3_UI"
+K power-flag
+$ENDCMP
+#
 $CMP 74HC165
 D 8-bit serial in/out Shift Register 3-State Outputs
 K HCMOS SR 3State
@@ -174,6 +179,12 @@ $CMP PCA9634
 D 8-channel 8-bit PWM Driver I2C-bus LED controller
 K PWM LED driver I2C TSSOP
 F http://www.nxp.com/documents/data_sheet/PCA9685.pdf
+$ENDCMP
+#
+$CMP PMIC_MT9700
+D Current Limited Load Switch, SOT-23-5
+K Limit USB Active High
+F http://www.skyworksinc.com/uploads/documents/201937A.pdf
 $ENDCMP
 #
 $CMP POLY
