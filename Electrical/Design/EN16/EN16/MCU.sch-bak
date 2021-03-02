@@ -1274,7 +1274,6 @@ NoConn ~ 6500 10400
 NoConn ~ 6500 9400
 NoConn ~ 6500 9100
 NoConn ~ 6500 9000
-NoConn ~ 6500 8900
 NoConn ~ 6500 7500
 NoConn ~ 6500 7400
 NoConn ~ 6500 7300
@@ -1478,4 +1477,12 @@ Text Label 9700 7100 2    50   ~ 0
 UI_PWR_EN
 Wire Wire Line
 	9700 7100 10000 7100
+Wire Wire Line
+	6500 8900 6900 8900
+Text Label 6900 8900 0    50   ~ 0
+SYS_I2C_INT_0
+Text Label 9700 7900 2    50   ~ 0
+SYS_I2C_INT_0
+Wire Wire Line
+	9700 7900 10000 7900
 $EndSCHEMATC

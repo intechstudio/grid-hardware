@@ -674,10 +674,6 @@ F 3 "" H 6000 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 4900 6000 4800
-Text Label 6600 4400 0    50   ~ 0
-SYS_I2C_SCL
-Text Label 6600 4300 0    50   ~ 0
-SYS_I2C_SDA
 Wire Wire Line
 	6600 4400 6500 4400
 Wire Wire Line
@@ -1056,4 +1052,102 @@ Text HLabel 2700 3800 2    50   BiDi ~ 0
 USB_DATA_N
 Text HLabel 2700 3900 2    50   BiDi ~ 0
 USB_DATA_P
+Text HLabel 6600 1500 2    50   BiDi ~ 0
+USB_DATA_P
+Text HLabel 6600 1700 2    50   BiDi ~ 0
+USB_DATA_N
+$Comp
+L Connector:TestPoint_Alt TP6
+U 1 1 6040020F
+P 6500 1200
+F 0 "TP6" H 6558 1318 50  0000 L CNN
+F 1 "D+" H 6558 1227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6700 1200 50  0001 C CNN
+F 3 "~" H 6700 1200 50  0001 C CNN
+	1    6500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP5
+U 1 1 60400B4B
+P 6300 1200
+F 0 "TP5" H 6358 1318 50  0000 L CNN
+F 1 "D-" H 6358 1227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6500 1200 50  0001 C CNN
+F 3 "~" H 6500 1200 50  0001 C CNN
+	1    6300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1200 6500 1500
+Wire Wire Line
+	6500 1500 6600 1500
+Wire Wire Line
+	6300 1200 6300 1700
+Wire Wire Line
+	6300 1700 6600 1700
+$Comp
+L Connector:TestPoint_Alt TP8
+U 1 1 6041B1EB
+P 5800 1200
+F 0 "TP8" H 5858 1318 50  0000 L CNN
+F 1 "VB" H 5858 1227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6000 1200 50  0001 C CNN
+F 3 "~" H 6000 1200 50  0001 C CNN
+	1    5800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP7
+U 1 1 6041B9E7
+P 5500 1200
+F 0 "TP7" H 5558 1318 50  0000 L CNN
+F 1 "GND" H 5558 1227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5700 1200 50  0001 C CNN
+F 3 "~" H 5700 1200 50  0001 C CNN
+	1    5500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 6041BC23
+P 6000 1600
+AR Path="/5D757C78/6041BC23" Ref="#PWR?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/6041BC23" Ref="#PWR0346"  Part="1" 
+F 0 "#PWR0346" H 6000 1450 50  0001 C CNN
+F 1 "VBUS" H 6015 1773 50  0000 C CNN
+F 2 "" H 6000 1600 50  0001 C CNN
+F 3 "" H 6000 1600 50  0001 C CNN
+	1    6000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1200 5800 1700
+Wire Wire Line
+	5800 1700 6000 1700
+Wire Wire Line
+	6000 1700 6000 1600
+$Comp
+L power:GND #PWR?
+U 1 1 60422735
+P 5500 1600
+AR Path="/5D757C78/60422735" Ref="#PWR?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/60422735" Ref="#PWR0347"  Part="1" 
+F 0 "#PWR0347" H 5500 1350 50  0001 C CNN
+F 1 "GND" H 5505 1427 50  0000 C CNN
+F 2 "" H 5500 1600 50  0001 C CNN
+F 3 "" H 5500 1600 50  0001 C CNN
+	1    5500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1600 5500 1200
+Text HLabel 6600 4300 2    50   BiDi ~ 0
+USBC_INTERFACE_SDA
+Text HLabel 6600 4400 2    50   BiDi ~ 0
+USBC_INTERFACE_SCL
+Text HLabel 6600 4500 2    50   Output ~ 0
+USBC_INTERFACE_INT
+Wire Wire Line
+	6500 4500 6600 4500
 $EndSCHEMATC
