@@ -28,20 +28,6 @@ F 3 "" H 2100 1625 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772842
-P 2000 1500
-AR Path="/5D6136C4/5D772842" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772842" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772842" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 2000 1350 50  0001 C CNN
-F 1 "+3V3_UI" H 2015 1673 50  0000 C CNN
-F 2 "" H 2000 1500 50  0001 C CNN
-F 3 "" H 2000 1500 50  0001 C CNN
-	1    2000 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D772848
 P 2000 2400
@@ -71,20 +57,6 @@ F 1 "UI_WS2812C-2020" H 3344 1955 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 3050 1700 50  0001 L TNN
 F 3 "" H 3100 1625 50  0001 L TNN
 	1    3000 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772856
-P 3000 1500
-AR Path="/5D6136C4/5D772856" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772856" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772856" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 3000 1350 50  0001 C CNN
-F 1 "+3V3_UI" H 3015 1673 50  0000 C CNN
-F 2 "" H 3000 1500 50  0001 C CNN
-F 3 "" H 3000 1500 50  0001 C CNN
-	1    3000 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -120,20 +92,6 @@ F 3 "" H 4100 1625 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D77286A
-P 4000 1500
-AR Path="/5D6136C4/5D77286A" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D77286A" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D77286A" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 4000 1350 50  0001 C CNN
-F 1 "+3V3_UI" H 4015 1673 50  0000 C CNN
-F 2 "" H 4000 1500 50  0001 C CNN
-F 3 "" H 4000 1500 50  0001 C CNN
-	1    4000 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D772870
 P 4000 2400
@@ -166,20 +124,6 @@ F 3 "" H 5100 1625 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D77287E
-P 5000 1500
-AR Path="/5D6136C4/5D77287E" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D77287E" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D77287E" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 5000 1350 50  0001 C CNN
-F 1 "+3V3_UI" H 5015 1673 50  0000 C CNN
-F 2 "" H 5000 1500 50  0001 C CNN
-F 3 "" H 5000 1500 50  0001 C CNN
-	1    5000 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D772884
 P 5000 2400
@@ -195,8 +139,6 @@ F 3 "" H 5000 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 2400 5000 2300
-Wire Wire Line
-	5000 1700 5000 1600
 Wire Wire Line
 	2300 2000 2700 2000
 Wire Wire Line
@@ -237,9 +179,6 @@ Wire Wire Line
 	2500 1600 2400 1600
 Wire Wire Line
 	2000 1600 2200 1600
-Connection ~ 2000 1600
-Wire Wire Line
-	2000 1600 2000 1500
 $Comp
 L suku_basics:CAP C?
 U 1 1 5D7728A0
@@ -338,19 +277,10 @@ Wire Wire Line
 	5500 1600 5400 1600
 Wire Wire Line
 	5200 1600 5000 1600
-Connection ~ 5000 1600
-Wire Wire Line
-	5000 1600 5000 1500
 Wire Wire Line
 	4200 1600 4000 1600
-Connection ~ 4000 1600
-Wire Wire Line
-	4000 1600 4000 1500
 Wire Wire Line
 	3200 1600 3000 1600
-Connection ~ 3000 1600
-Wire Wire Line
-	3000 1600 3000 1500
 $Comp
 L suku_basics:UI_WS2812C-2020 D?
 U 1 1 5D7728D3
@@ -363,20 +293,6 @@ F 1 "UI_WS2812C-2020" H 2344 3455 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 2050 3200 50  0001 L TNN
 F 3 "" H 2100 3125 50  0001 L TNN
 	1    2000 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D7728D9
-P 2000 3000
-AR Path="/5D6136C4/5D7728D9" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D7728D9" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D7728D9" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 2000 2850 50  0001 C CNN
-F 1 "+3V3_UI" H 2015 3173 50  0000 C CNN
-F 2 "" H 2000 3000 50  0001 C CNN
-F 3 "" H 2000 3000 50  0001 C CNN
-	1    2000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -412,20 +328,6 @@ F 3 "" H 3100 3125 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D7728ED
-P 3000 3000
-AR Path="/5D6136C4/5D7728ED" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D7728ED" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D7728ED" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 3000 2850 50  0001 C CNN
-F 1 "+3V3_UI" H 3015 3173 50  0000 C CNN
-F 2 "" H 3000 3000 50  0001 C CNN
-F 3 "" H 3000 3000 50  0001 C CNN
-	1    3000 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D7728F3
 P 3000 3900
@@ -458,20 +360,6 @@ F 3 "" H 4100 3125 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772901
-P 4000 3000
-AR Path="/5D6136C4/5D772901" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772901" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772901" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 4000 2850 50  0001 C CNN
-F 1 "+3V3_UI" H 4015 3173 50  0000 C CNN
-F 2 "" H 4000 3000 50  0001 C CNN
-F 3 "" H 4000 3000 50  0001 C CNN
-	1    4000 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D772907
 P 4000 3900
@@ -501,20 +389,6 @@ F 1 "UI_WS2812C-2020" H 5344 3455 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 5050 3200 50  0001 L TNN
 F 3 "" H 5100 3125 50  0001 L TNN
 	1    5000 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772915
-P 5000 3000
-AR Path="/5D6136C4/5D772915" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772915" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772915" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 5000 2850 50  0001 C CNN
-F 1 "+3V3_UI" H 5015 3173 50  0000 C CNN
-F 2 "" H 5000 3000 50  0001 C CNN
-F 3 "" H 5000 3000 50  0001 C CNN
-	1    5000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -575,9 +449,6 @@ Wire Wire Line
 	2500 3100 2400 3100
 Wire Wire Line
 	2000 3100 2200 3100
-Connection ~ 2000 3100
-Wire Wire Line
-	2000 3100 2000 3000
 $Comp
 L suku_basics:CAP C?
 U 1 1 5D772937
@@ -676,19 +547,10 @@ Wire Wire Line
 	5500 3100 5400 3100
 Wire Wire Line
 	5200 3100 5000 3100
-Connection ~ 5000 3100
-Wire Wire Line
-	5000 3100 5000 3000
 Wire Wire Line
 	4200 3100 4000 3100
-Connection ~ 4000 3100
-Wire Wire Line
-	4000 3100 4000 3000
 Wire Wire Line
 	3200 3100 3000 3100
-Connection ~ 3000 3100
-Wire Wire Line
-	3000 3100 3000 3000
 $Comp
 L suku_basics:UI_WS2812C-2020 D?
 U 1 1 5D77296A
@@ -701,20 +563,6 @@ F 1 "UI_WS2812C-2020" H 2344 4955 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 2050 4700 50  0001 L TNN
 F 3 "" H 2100 4625 50  0001 L TNN
 	1    2000 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772970
-P 2000 4500
-AR Path="/5D6136C4/5D772970" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772970" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772970" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 2000 4350 50  0001 C CNN
-F 1 "+3V3_UI" H 2015 4673 50  0000 C CNN
-F 2 "" H 2000 4500 50  0001 C CNN
-F 3 "" H 2000 4500 50  0001 C CNN
-	1    2000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -750,20 +598,6 @@ F 3 "" H 3100 4625 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772984
-P 3000 4500
-AR Path="/5D6136C4/5D772984" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772984" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772984" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 3000 4350 50  0001 C CNN
-F 1 "+3V3_UI" H 3015 4673 50  0000 C CNN
-F 2 "" H 3000 4500 50  0001 C CNN
-F 3 "" H 3000 4500 50  0001 C CNN
-	1    3000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D77298A
 P 3000 5400
@@ -796,20 +630,6 @@ F 3 "" H 4100 4625 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772998
-P 4000 4500
-AR Path="/5D6136C4/5D772998" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772998" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772998" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 4000 4350 50  0001 C CNN
-F 1 "+3V3_UI" H 4015 4673 50  0000 C CNN
-F 2 "" H 4000 4500 50  0001 C CNN
-F 3 "" H 4000 4500 50  0001 C CNN
-	1    4000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D77299E
 P 4000 5400
@@ -839,20 +659,6 @@ F 1 "UI_WS2812C-2020" H 5344 4955 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 5050 4700 50  0001 L TNN
 F 3 "" H 5100 4625 50  0001 L TNN
 	1    5000 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D7729AC
-P 5000 4500
-AR Path="/5D6136C4/5D7729AC" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D7729AC" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D7729AC" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 5000 4350 50  0001 C CNN
-F 1 "+3V3_UI" H 5015 4673 50  0000 C CNN
-F 2 "" H 5000 4500 50  0001 C CNN
-F 3 "" H 5000 4500 50  0001 C CNN
-	1    5000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -913,9 +719,6 @@ Wire Wire Line
 	2500 4600 2400 4600
 Wire Wire Line
 	2000 4600 2200 4600
-Connection ~ 2000 4600
-Wire Wire Line
-	2000 4600 2000 4500
 $Comp
 L suku_basics:CAP C?
 U 1 1 5D7729CE
@@ -1014,19 +817,10 @@ Wire Wire Line
 	5500 4600 5400 4600
 Wire Wire Line
 	5200 4600 5000 4600
-Connection ~ 5000 4600
-Wire Wire Line
-	5000 4600 5000 4500
 Wire Wire Line
 	4200 4600 4000 4600
-Connection ~ 4000 4600
-Wire Wire Line
-	4000 4600 4000 4500
 Wire Wire Line
 	3200 4600 3000 4600
-Connection ~ 3000 4600
-Wire Wire Line
-	3000 4600 3000 4500
 $Comp
 L suku_basics:UI_WS2812C-2020 D?
 U 1 1 5D772A01
@@ -1039,20 +833,6 @@ F 1 "UI_WS2812C-2020" H 2344 6455 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 2050 6200 50  0001 L TNN
 F 3 "" H 2100 6125 50  0001 L TNN
 	1    2000 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772A07
-P 2000 6000
-AR Path="/5D6136C4/5D772A07" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772A07" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772A07" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 2000 5850 50  0001 C CNN
-F 1 "+3V3_UI" H 2015 6173 50  0000 C CNN
-F 2 "" H 2000 6000 50  0001 C CNN
-F 3 "" H 2000 6000 50  0001 C CNN
-	1    2000 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1088,20 +868,6 @@ F 3 "" H 3100 6125 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772A1B
-P 3000 6000
-AR Path="/5D6136C4/5D772A1B" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772A1B" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772A1B" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 3000 5850 50  0001 C CNN
-F 1 "+3V3_UI" H 3015 6173 50  0000 C CNN
-F 2 "" H 3000 6000 50  0001 C CNN
-F 3 "" H 3000 6000 50  0001 C CNN
-	1    3000 6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D772A21
 P 3000 6900
@@ -1134,20 +900,6 @@ F 3 "" H 4100 6125 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772A2F
-P 4000 6000
-AR Path="/5D6136C4/5D772A2F" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772A2F" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772A2F" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 4000 5850 50  0001 C CNN
-F 1 "+3V3_UI" H 4015 6173 50  0000 C CNN
-F 2 "" H 4000 6000 50  0001 C CNN
-F 3 "" H 4000 6000 50  0001 C CNN
-	1    4000 6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D772A35
 P 4000 6900
@@ -1177,20 +929,6 @@ F 1 "UI_WS2812C-2020" H 5344 6455 50  0001 L CNN
 F 2 "suku_basics:UI_WS2812C-2020" H 5050 6200 50  0001 L TNN
 F 3 "" H 5100 6125 50  0001 L TNN
 	1    5000 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UI #PWR?
-U 1 1 5D772A43
-P 5000 6000
-AR Path="/5D6136C4/5D772A43" Ref="#PWR?"  Part="1" 
-AR Path="/5D6DB4EB/5D772A43" Ref="#PWR?"  Part="1" 
-AR Path="/5D735388/5D772A43" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 5000 5850 50  0001 C CNN
-F 1 "+3V3_UI" H 5015 6173 50  0000 C CNN
-F 2 "" H 5000 6000 50  0001 C CNN
-F 3 "" H 5000 6000 50  0001 C CNN
-	1    5000 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1251,9 +989,6 @@ Wire Wire Line
 	2500 6100 2400 6100
 Wire Wire Line
 	2000 6100 2200 6100
-Connection ~ 2000 6100
-Wire Wire Line
-	2000 6100 2000 6000
 $Comp
 L suku_basics:CAP C?
 U 1 1 5D772A65
@@ -1352,19 +1087,10 @@ Wire Wire Line
 	5500 6100 5400 6100
 Wire Wire Line
 	5200 6100 5000 6100
-Connection ~ 5000 6100
-Wire Wire Line
-	5000 6100 5000 6000
 Wire Wire Line
 	4200 6100 4000 6100
-Connection ~ 4000 6100
-Wire Wire Line
-	4000 6100 4000 6000
 Wire Wire Line
 	3200 6100 3000 6100
-Connection ~ 3000 6100
-Wire Wire Line
-	3000 6100 3000 6000
 Wire Wire Line
 	5300 2000 5500 2000
 Wire Wire Line
@@ -1403,4 +1129,262 @@ Wire Wire Line
 	5300 6500 5700 6500
 Text HLabel 5700 6500 2    50   Input ~ 0
 LED_DATA_OUT
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 6056CD34
+P 2000 1500
+AR Path="/5D757C78/60FB6C46/6056CD34" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/6056CD34" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 1350 50  0001 C CNN
+F 1 "+5V_UI" H 2015 1673 50  0000 C CNN
+F 2 "" H 2000 1500 50  0001 C CNN
+F 3 "" H 2000 1500 50  0001 C CNN
+	1    2000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 60583C2D
+P 3000 1500
+AR Path="/5D757C78/60FB6C46/60583C2D" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/60583C2D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 1350 50  0001 C CNN
+F 1 "+5V_UI" H 3015 1673 50  0000 C CNN
+F 2 "" H 3000 1500 50  0001 C CNN
+F 3 "" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 6058711E
+P 4000 1500
+AR Path="/5D757C78/60FB6C46/6058711E" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/6058711E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 1350 50  0001 C CNN
+F 1 "+5V_UI" H 4015 1673 50  0000 C CNN
+F 2 "" H 4000 1500 50  0001 C CNN
+F 3 "" H 4000 1500 50  0001 C CNN
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 6058A583
+P 5000 1500
+AR Path="/5D757C78/60FB6C46/6058A583" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/6058A583" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 1350 50  0001 C CNN
+F 1 "+5V_UI" H 5015 1673 50  0000 C CNN
+F 2 "" H 5000 1500 50  0001 C CNN
+F 3 "" H 5000 1500 50  0001 C CNN
+	1    5000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 6058DC66
+P 2000 3000
+AR Path="/5D757C78/60FB6C46/6058DC66" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/6058DC66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 2850 50  0001 C CNN
+F 1 "+5V_UI" H 2015 3173 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0001 C CNN
+	1    2000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 60591067
+P 3000 3000
+AR Path="/5D757C78/60FB6C46/60591067" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/60591067" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 2850 50  0001 C CNN
+F 1 "+5V_UI" H 3015 3173 50  0000 C CNN
+F 2 "" H 3000 3000 50  0001 C CNN
+F 3 "" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 60594487
+P 4000 3000
+AR Path="/5D757C78/60FB6C46/60594487" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/60594487" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 2850 50  0001 C CNN
+F 1 "+5V_UI" H 4015 3173 50  0000 C CNN
+F 2 "" H 4000 3000 50  0001 C CNN
+F 3 "" H 4000 3000 50  0001 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 60597A20
+P 5000 3000
+AR Path="/5D757C78/60FB6C46/60597A20" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/60597A20" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 2850 50  0001 C CNN
+F 1 "+5V_UI" H 5015 3173 50  0000 C CNN
+F 2 "" H 5000 3000 50  0001 C CNN
+F 3 "" H 5000 3000 50  0001 C CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 6059B01C
+P 2000 4500
+AR Path="/5D757C78/60FB6C46/6059B01C" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/6059B01C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 4350 50  0001 C CNN
+F 1 "+5V_UI" H 2015 4673 50  0000 C CNN
+F 2 "" H 2000 4500 50  0001 C CNN
+F 3 "" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 6059E4E4
+P 4000 4500
+AR Path="/5D757C78/60FB6C46/6059E4E4" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/6059E4E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 4350 50  0001 C CNN
+F 1 "+5V_UI" H 4015 4673 50  0000 C CNN
+F 2 "" H 4000 4500 50  0001 C CNN
+F 3 "" H 4000 4500 50  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 605A19C5
+P 3000 4500
+AR Path="/5D757C78/60FB6C46/605A19C5" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/605A19C5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 4350 50  0001 C CNN
+F 1 "+5V_UI" H 3015 4673 50  0000 C CNN
+F 2 "" H 3000 4500 50  0001 C CNN
+F 3 "" H 3000 4500 50  0001 C CNN
+	1    3000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 605A4EF7
+P 5000 4500
+AR Path="/5D757C78/60FB6C46/605A4EF7" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/605A4EF7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 4350 50  0001 C CNN
+F 1 "+5V_UI" H 5015 4673 50  0000 C CNN
+F 2 "" H 5000 4500 50  0001 C CNN
+F 3 "" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 605A9016
+P 2000 6000
+AR Path="/5D757C78/60FB6C46/605A9016" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/605A9016" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 5850 50  0001 C CNN
+F 1 "+5V_UI" H 2015 6173 50  0000 C CNN
+F 2 "" H 2000 6000 50  0001 C CNN
+F 3 "" H 2000 6000 50  0001 C CNN
+	1    2000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 605AC4E9
+P 3000 6000
+AR Path="/5D757C78/60FB6C46/605AC4E9" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/605AC4E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 5850 50  0001 C CNN
+F 1 "+5V_UI" H 3015 6173 50  0000 C CNN
+F 2 "" H 3000 6000 50  0001 C CNN
+F 3 "" H 3000 6000 50  0001 C CNN
+	1    3000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 605AF8E0
+P 4000 6000
+AR Path="/5D757C78/60FB6C46/605AF8E0" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/605AF8E0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 5850 50  0001 C CNN
+F 1 "+5V_UI" H 4015 6173 50  0000 C CNN
+F 2 "" H 4000 6000 50  0001 C CNN
+F 3 "" H 4000 6000 50  0001 C CNN
+	1    4000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:+5V_UI #PWR?
+U 1 1 605B2D88
+P 5000 6000
+AR Path="/5D757C78/60FB6C46/605B2D88" Ref="#PWR?"  Part="1" 
+AR Path="/5D735388/605B2D88" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 5850 50  0001 C CNN
+F 1 "+5V_UI" H 5015 6173 50  0000 C CNN
+F 2 "" H 5000 6000 50  0001 C CNN
+F 3 "" H 5000 6000 50  0001 C CNN
+	1    5000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6100 2000 6000
+Connection ~ 2000 6100
+Wire Wire Line
+	3000 6000 3000 6100
+Connection ~ 3000 6100
+Wire Wire Line
+	4000 6000 4000 6100
+Connection ~ 4000 6100
+Wire Wire Line
+	5000 6000 5000 6100
+Connection ~ 5000 6100
+Wire Wire Line
+	5000 4500 5000 4600
+Connection ~ 5000 4600
+Wire Wire Line
+	4000 4500 4000 4600
+Connection ~ 4000 4600
+Wire Wire Line
+	3000 4500 3000 4600
+Connection ~ 3000 4600
+Wire Wire Line
+	2000 4500 2000 4600
+Connection ~ 2000 4600
+Wire Wire Line
+	2000 3000 2000 3100
+Connection ~ 2000 3100
+Wire Wire Line
+	3000 3000 3000 3100
+Connection ~ 3000 3100
+Wire Wire Line
+	4000 3000 4000 3100
+Connection ~ 4000 3100
+Wire Wire Line
+	5000 3000 5000 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	5000 1700 5000 1600
+Wire Wire Line
+	5000 1500 5000 1600
+Connection ~ 5000 1600
+Wire Wire Line
+	4000 1500 4000 1600
+Connection ~ 4000 1600
+Wire Wire Line
+	3000 1500 3000 1600
+Connection ~ 3000 1600
+Wire Wire Line
+	2000 1500 2000 1600
+Connection ~ 2000 1600
 $EndSCHEMATC

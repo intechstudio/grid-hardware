@@ -674,10 +674,6 @@ F 3 "" H 6000 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 4900 6000 4800
-Text Label 6600 4400 0    50   ~ 0
-SYS_I2C_SCL
-Text Label 6600 4300 0    50   ~ 0
-SYS_I2C_SDA
 Wire Wire Line
 	6600 4400 6500 4400
 Wire Wire Line
@@ -1146,4 +1142,59 @@ F 3 "" H 5500 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 1600 5500 1200
+Text HLabel 6600 4300 2    50   BiDi ~ 0
+USBC_INTERFACE_SDA
+Text HLabel 6600 4400 2    50   BiDi ~ 0
+USBC_INTERFACE_SCL
+Text HLabel 6600 4500 2    50   Output ~ 0
+USBC_INTERFACE_INT
+Wire Wire Line
+	6500 4500 6600 4500
+$Comp
+L Connector:TestPoint_Alt TP10
+U 1 1 604CAC0A
+P 10600 3300
+F 0 "TP10" H 10658 3418 50  0000 L CNN
+F 1 "UI" H 10658 3327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 3300 50  0001 C CNN
+F 3 "~" H 10800 3300 50  0001 C CNN
+	1    10600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP9
+U 1 1 604CAC10
+P 10600 2300
+F 0 "TP9" H 10658 2418 50  0000 L CNN
+F 1 "UC" H 10658 2327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 2300 50  0001 C CNN
+F 3 "~" H 10800 2300 50  0001 C CNN
+	1    10600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2400 10600 2400
+Wire Wire Line
+	10600 2400 10600 2300
+Connection ~ 10300 2400
+Wire Wire Line
+	10300 3400 10600 3400
+Wire Wire Line
+	10600 3400 10600 3300
+Connection ~ 10300 3400
+$Comp
+L Connector:TestPoint_Alt TP11
+U 1 1 604F728F
+P 10700 4500
+F 0 "TP11" H 10758 4618 50  0000 L CNN
+F 1 "UI_5V" H 10758 4527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10900 4500 50  0001 C CNN
+F 3 "~" H 10900 4500 50  0001 C CNN
+	1    10700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4600 10700 4600
+Wire Wire Line
+	10700 4600 10700 4500
 $EndSCHEMATC
