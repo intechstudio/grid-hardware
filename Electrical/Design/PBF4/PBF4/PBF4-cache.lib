@@ -1,27 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x03
-#
-DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -150 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x08
 #
 DEF Connector_Generic_Conn_01x08 J 0 40 Y N 1 F N
@@ -101,6 +80,23 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint_Alt
+#
+DEF Connector_TestPoint_Alt TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint_Alt" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+P 5 0 1 0 0 100 -30 130 0 160 30 130 0 100 N
 X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
@@ -204,6 +200,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +3V3_UI 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# suku_basics_+5V_UI
+#
+DEF suku_basics_+5V_UI #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "suku_basics_+5V_UI" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V_UI 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -916,25 +927,6 @@ X GND 2 0 -300 100 U 50 50 1 1 W
 X EN 3 -300 0 100 R 50 50 1 1 I
 X NC 4 300 0 100 L 50 50 1 1 N
 X OUT 5 300 100 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# suku_basics_XTAL
-#
-DEF suku_basics_XTAL Y 0 40 N N 1 F N
-F0 "Y" 0 150 50 H V C CNN
-F1 "suku_basics_XTAL" 0 -150 50 H V C CNN
-F2 "suku_basics:Crystal_SMD_3215-2Pin_3.2x1.5mm" -25 -25 50 H I C CNN
-F3 "" -25 -25 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -25 50 25 -50 0 1 0 N
-P 2 0 1 0 -50 -50 -50 50 N
-P 2 0 1 0 50 -50 50 50 N
-X 1 1 -100 0 50 R 50 50 1 1 P
-X 2 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

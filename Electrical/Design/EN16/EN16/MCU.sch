@@ -1416,8 +1416,6 @@ Wire Wire Line
 Connection ~ 7700 10300
 Wire Wire Line
 	7700 10300 7800 10300
-Text Notes 6700 1500 0    50   ~ 0
-XTAL\n
 NoConn ~ 6500 1600
 NoConn ~ 6500 1500
 $Sheet
