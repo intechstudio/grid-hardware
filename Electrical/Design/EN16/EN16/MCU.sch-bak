@@ -1308,8 +1308,6 @@ NoConn ~ 6500 8600
 Text Notes 6600 8600 0    50   ~ 0
 XTAL\n
 NoConn ~ 3500 6600
-NoConn ~ 14100 2400
-NoConn ~ 13600 2400
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E671DBD
@@ -1416,8 +1414,6 @@ Wire Wire Line
 Connection ~ 7700 10300
 Wire Wire Line
 	7700 10300 7800 10300
-Text Notes 6700 1500 0    50   ~ 0
-XTAL\n
 NoConn ~ 6500 1600
 NoConn ~ 6500 1500
 $Sheet
@@ -1486,9 +1482,9 @@ F 3 "~" H 13900 5100 50  0001 C CNN
 	1    13700 5100
 	1    0    0    -1  
 $EndComp
-Text Label 13700 5200 3    50   ~ 0
+Text Label 13400 2400 2    50   ~ 0
 GRID_AUX_TX
-Text Label 14000 5200 3    50   ~ 0
+Text Label 14300 2400 0    50   ~ 0
 GRID_AUX_RX
 $Comp
 L Connector:TestPoint_Alt TP?
@@ -1537,4 +1533,8 @@ Wire Wire Line
 	13700 5100 13700 5200
 Wire Wire Line
 	14000 5200 14000 5100
+Wire Wire Line
+	14100 2400 14300 2400
+Wire Wire Line
+	13400 2400 13600 2400
 $EndSCHEMATC

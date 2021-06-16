@@ -1308,8 +1308,6 @@ NoConn ~ 6500 8600
 Text Notes 6600 8600 0    50   ~ 0
 XTAL\n
 NoConn ~ 3500 6600
-NoConn ~ 14100 2400
-NoConn ~ 13600 2400
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E671DBD
@@ -1360,21 +1358,6 @@ Wire Wire Line
 	6500 7700 6900 7700
 Wire Wire Line
 	6500 7600 6900 7600
-Text Notes 13300 4800 0    50   ~ 0
-Debug port\n\nThis port can be used to output debug and servicing \ninformation to a serial terminal program.
-$Comp
-L power:GND #PWR?
-U 1 1 5D87FC66
-P 13400 5200
-AR Path="/5D87FC66" Ref="#PWR?"  Part="1" 
-AR Path="/5D757C78/5D87FC66" Ref="#PWR0179"  Part="1" 
-F 0 "#PWR0179" H 13400 4950 50  0001 C CNN
-F 1 "GND" H 13405 5027 50  0000 C CNN
-F 2 "" H 13400 5200 50  0001 C CNN
-F 3 "" H 13400 5200 50  0001 C CNN
-	1    13400 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 8000 6900 8000
 Wire Wire Line
@@ -1458,81 +1441,12 @@ Text Label 9700 7900 2    50   ~ 0
 SYS_I2C_INT_0
 Wire Wire Line
 	9700 7900 10000 7900
-$Comp
-L Connector:TestPoint_Alt TP?
-U 1 1 60DD9726
-P 13400 5100
-AR Path="/5D757C78/60FB6C46/60DD9726" Ref="TP?"  Part="1" 
-AR Path="/5D757C78/60DD9726" Ref="TP12"  Part="1" 
-F 0 "TP12" H 13458 5218 50  0000 L CNN
-F 1 "GND" H 13458 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 13600 5100 50  0001 C CNN
-F 3 "~" H 13600 5100 50  0001 C CNN
-	1    13400 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Alt TP?
-U 1 1 60DF5F01
-P 13700 5100
-AR Path="/5D757C78/60FB6C46/60DF5F01" Ref="TP?"  Part="1" 
-AR Path="/5D757C78/60DF5F01" Ref="TP13"  Part="1" 
-F 0 "TP13" H 13758 5218 50  0000 L CNN
-F 1 "TX" H 13758 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 13900 5100 50  0001 C CNN
-F 3 "~" H 13900 5100 50  0001 C CNN
-	1    13700 5100
-	1    0    0    -1  
-$EndComp
-Text Label 13700 5200 3    50   ~ 0
+Text Label 13400 2400 2    50   ~ 0
 GRID_AUX_TX
-Text Label 14000 5200 3    50   ~ 0
+Text Label 14300 2400 0    50   ~ 0
 GRID_AUX_RX
-$Comp
-L Connector:TestPoint_Alt TP?
-U 1 1 60E2F1C2
-P 14000 5100
-AR Path="/5D757C78/60FB6C46/60E2F1C2" Ref="TP?"  Part="1" 
-AR Path="/5D757C78/60E2F1C2" Ref="TP14"  Part="1" 
-F 0 "TP14" H 14058 5218 50  0000 L CNN
-F 1 "RX" H 14058 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14200 5100 50  0001 C CNN
-F 3 "~" H 14200 5100 50  0001 C CNN
-	1    14000 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L suku_basics:+3V3_UC #PWR?
-U 1 1 60E3E9F7
-P 14300 5200
-AR Path="/60E3E9F7" Ref="#PWR?"  Part="1" 
-AR Path="/5D757C78/60E3E9F7" Ref="#PWR0366"  Part="1" 
-F 0 "#PWR0366" H 14300 5050 50  0001 C CNN
-F 1 "+3V3_UC" H 14300 5400 50  0000 C CNN
-F 2 "" H 14300 5200 50  0001 C CNN
-F 3 "" H 14300 5200 50  0001 C CNN
-	1    14300 5200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	14300 5100 14300 5200
-$Comp
-L Connector:TestPoint_Alt TP?
-U 1 1 60E4DA11
-P 14300 5100
-AR Path="/5D757C78/60FB6C46/60E4DA11" Ref="TP?"  Part="1" 
-AR Path="/5D757C78/60E4DA11" Ref="TP15"  Part="1" 
-F 0 "TP15" H 14358 5218 50  0000 L CNN
-F 1 "UC" H 14358 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14500 5100 50  0001 C CNN
-F 3 "~" H 14500 5100 50  0001 C CNN
-	1    14300 5100
-	1    0    0    -1  
-$EndComp
+	14100 2400 14300 2400
 Wire Wire Line
-	13400 5200 13400 5100
-Wire Wire Line
-	13700 5100 13700 5200
-Wire Wire Line
-	14000 5200 14000 5100
+	13400 2400 13600 2400
 $EndSCHEMATC
