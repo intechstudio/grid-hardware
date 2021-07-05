@@ -1712,4 +1712,12 @@ F 3 "~" H 4900 7100 50  0001 C CNN
 	1    4700 7100
 	1    0    0    1   
 $EndComp
+Wire Notes Line
+	8300 5200 8600 5200
+Wire Notes Line
+	8600 5200 8600 4900
+Wire Notes Line
+	8600 4900 9000 4900
+Text Notes 8200 5500 0    50   ~ 0
+Rising as two modules connect\n
 $EndSCHEMATC
