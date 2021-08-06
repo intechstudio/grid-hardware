@@ -134,8 +134,6 @@ HWCFG_HIGH
 Text Label 5100 3900 0    50   ~ 0
 HWCFG_LOW
 Wire Wire Line
-	3600 3600 3100 3600
-Wire Wire Line
 	3600 3500 3100 3500
 Wire Wire Line
 	3600 3400 3100 3400
@@ -154,8 +152,6 @@ HWCFG_HIGH
 Text Label 3100 3400 2    50   ~ 0
 HWCFG_LOW
 Text Label 3100 3500 2    50   ~ 0
-HWCFG_LOW
-Text Label 3100 3600 2    50   ~ 0
 HWCFG_LOW
 Text Label 3100 3200 2    50   ~ 0
 HWCFG_LOW
@@ -235,4 +231,71 @@ $EndComp
 Wire Wire Line
 	2200 1800 2200 1900
 NoConn ~ 4600 2900
+Wire Wire Line
+	2600 4500 1500 4500
+$Comp
+L suku_basics:RES R?
+U 1 1 610D77CF
+P 1500 4300
+AR Path="/610D77CF" Ref="R?"  Part="1" 
+AR Path="/5DC2DC06/610D77CF" Ref="R?"  Part="1" 
+F 0 "R?" H 1559 4346 50  0000 L CNN
+F 1 "10k" H 1559 4255 50  0000 L CNN
+F 2 "suku_basics:RES_0805" H 1500 4300 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610D77D5
+P 1500 4900
+AR Path="/610D77D5" Ref="#PWR?"  Part="1" 
+AR Path="/5DC2DC06/610D77D5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 4650 50  0001 C CNN
+F 1 "GND" H 1505 4727 50  0000 C CNN
+F 2 "" H 1500 4900 50  0001 C CNN
+F 3 "" H 1500 4900 50  0001 C CNN
+	1    1500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4900 1500 4800
+Wire Wire Line
+	1500 4600 1500 4500
+$Comp
+L suku_basics:JP_SolderJumper_2_Open JP?
+U 1 1 610D77DD
+P 1500 4700
+F 0 "JP?" V 1454 4768 50  0000 L CNN
+F 1 "N.F. Solder Jumper" V 1545 4768 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1500 4700 50  0001 C CNN
+F 3 "~" H 1500 4700 50  0001 C CNN
+	1    1500 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 4500 1500 4400
+Connection ~ 1500 4500
+$Comp
+L suku_basics:+3V3_UC #PWR?
+U 1 1 610D77E5
+P 1500 4100
+AR Path="/610D77E5" Ref="#PWR?"  Part="1" 
+AR Path="/5DC2DC06/610D77E5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 3950 50  0001 C CNN
+F 1 "+3V3_UC" H 1515 4273 50  0000 C CNN
+F 2 "" H 1500 4100 50  0001 C CNN
+F 3 "" H 1500 4100 50  0001 C CNN
+	1    1500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4100 1500 4200
+Wire Wire Line
+	2600 4500 2600 3600
+Wire Wire Line
+	2600 3600 3600 3600
+Text Notes 1800 4700 0    50   ~ 0
+OPEN IF FUSB IC IS FITTED
 $EndSCHEMATC
