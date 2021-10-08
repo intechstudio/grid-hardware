@@ -138,8 +138,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 3400 3100 3400
 Wire Wire Line
-	3600 3300 1400 3300
-Wire Wire Line
 	3600 3200 3100 3200
 Wire Wire Line
 	3600 3100 3100 3100
@@ -151,10 +149,8 @@ Text Label 3100 3500 2    50   ~ 0
 HWCFG_LOW
 Text Label 3100 3200 2    50   ~ 0
 HWCFG_LOW
-Text Label 3100 3100 2    50   ~ 0
+Text Label 3100 2900 2    50   ~ 0
 HWCFG_LOW
-Text Label 3100 3000 2    50   ~ 0
-HWCFG_HIGH
 Text Notes 6100 5100 0    50   ~ 0
 Board Identification\n\nGrid firmware can identify the hardware and the board \nrevision thorugh a 3 wire serial interface using one \nor more shift register as read only memory. The content\nof the memory is defined by pulling the inputs high or\nlow through pcb traces or solderable configuration jumpers.\n\n4b'Model + 4b'Revision + nb'Reserved (Multiple shift registers)\n\nD0: MODEL (LSB)\nD1: MODEL\nD2: MODEL\nD3: MODEL (MSB)\nD4: REVISION (LSB)\nD5: REVISION\nD6: REVISION\nD7: REVISION (MSB)\n\n\n\nModel Codes (D3-D0):\n\nPo16 0000\nBo16 0001\nPBF4 0010\nEN16 0011\n...\n\nRevision Codes (D7-D4):\n\nRevA 0000\nRevB 0001\nRevC 0010\nRevD 0011\n...\n
 Text HLabel 4800 2800 2    50   Output ~ 0
@@ -166,67 +162,8 @@ HWCFG_SHIFT
 NoConn ~ 4600 2900
 Wire Wire Line
 	3100 2900 3600 2900
-Text Label 3100 2900 2    50   ~ 0
+Text Label 3100 3100 2    50   ~ 0
 HWCFG_HIGH
-$Comp
-L suku_basics:RES R?
-U 1 1 5F5FDCF0
-P 1400 3500
-AR Path="/5D757C78/5F5FDCF0" Ref="R?"  Part="1" 
-AR Path="/5DC2DC06/5F5FDCF0" Ref="R33"  Part="1" 
-F 0 "R33" H 1459 3546 50  0000 L CNN
-F 1 "10k" H 1459 3455 50  0000 L CNN
-F 2 "suku_basics:RES_0805" H 1400 3500 50  0001 C CNN
-F 3 "~" H 1400 3500 50  0001 C CNN
-	1    1400 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F5FE00B
-P 1400 3700
-AR Path="/5F5FE00B" Ref="#PWR?"  Part="1" 
-AR Path="/5DC2DC06/5F5FE00B" Ref="#PWR0152"  Part="1" 
-F 0 "#PWR0152" H 1400 3450 50  0001 C CNN
-F 1 "GND" H 1405 3527 50  0000 C CNN
-F 2 "" H 1400 3700 50  0001 C CNN
-F 3 "" H 1400 3700 50  0001 C CNN
-	1    1400 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 3700 1400 3600
-Wire Wire Line
-	1400 3400 1400 3300
-$Comp
-L suku_basics:JP_SolderJumper_2_Open JP1
-U 1 1 5F6004A1
-P 1400 3100
-F 0 "JP1" V 1354 3168 50  0000 L CNN
-F 1 "N.F. Solder Jumper" V 1445 3168 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1400 3100 50  0001 C CNN
-F 3 "~" H 1400 3100 50  0001 C CNN
-	1    1400 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1400 3300 1400 3200
-Connection ~ 1400 3300
-$Comp
-L suku_basics:+3V3_UC #PWR?
-U 1 1 5F6014FB
-P 1400 2900
-AR Path="/5F6014FB" Ref="#PWR?"  Part="1" 
-AR Path="/5DC2DC06/5F6014FB" Ref="#PWR0211"  Part="1" 
-F 0 "#PWR0211" H 1400 2750 50  0001 C CNN
-F 1 "+3V3_UC" H 1415 3073 50  0000 C CNN
-F 2 "" H 1400 2900 50  0001 C CNN
-F 3 "" H 1400 2900 50  0001 C CNN
-	1    1400 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 2900 1400 3000
 $Comp
 L suku_basics:RES R?
 U 1 1 60507332
@@ -294,6 +231,10 @@ Wire Wire Line
 	2200 3600 3600 3600
 Text Notes 1600 5100 0    50   ~ 0
 OPEN IF FUSB IC IS FITTED
-Text Notes 1500 3300 0    50   ~ 0
-OPEN IF ENCODER HAS DETENTS
+Text Label 3100 3000 2    50   ~ 0
+HWCFG_LOW
+Text Label 3100 3300 2    50   ~ 0
+HWCFG_LOW
+Wire Wire Line
+	3100 3300 3600 3300
 $EndSCHEMATC
