@@ -117,8 +117,6 @@ Text Label 1900 10300 2    50   ~ 0
 GRID_NORTH_RX
 Text Label 1900 10200 2    50   ~ 0
 GRID_NORTH_TX
-Text Notes 13300 4800 0    50   ~ 0
-Debug port\n\nThis port can be used to output debug and servicing \ninformation to a serial terminal program.
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5D87FC71
@@ -1314,8 +1312,6 @@ NoConn ~ 6500 8600
 Text Notes 6600 8600 0    50   ~ 0
 XTAL\n
 NoConn ~ 3500 6600
-NoConn ~ 14100 2400
-NoConn ~ 13600 2400
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E671DBD
@@ -1397,86 +1393,10 @@ Wire Wire Line
 	7700 10300 7800 10300
 NoConn ~ 6500 1600
 NoConn ~ 6500 1500
-$Comp
-L Connector:TestPoint_Alt TP5
-U 1 1 60DE7E5F
-P 13400 5100
-F 0 "TP5" H 13458 5218 50  0000 L CNN
-F 1 "GND" H 13458 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 13600 5100 50  0001 C CNN
-F 3 "~" H 13600 5100 50  0001 C CNN
-	1    13400 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Alt TP6
-U 1 1 60DE92DD
-P 13700 5100
-F 0 "TP6" H 13758 5218 50  0000 L CNN
-F 1 "TX" H 13758 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 13900 5100 50  0001 C CNN
-F 3 "~" H 13900 5100 50  0001 C CNN
-	1    13700 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Alt TP7
-U 1 1 60DEA092
-P 14000 5100
-F 0 "TP7" H 14058 5218 50  0000 L CNN
-F 1 "RX" H 14058 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14200 5100 50  0001 C CNN
-F 3 "~" H 14200 5100 50  0001 C CNN
-	1    14000 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Alt TP8
-U 1 1 60DEA276
-P 14300 5100
-F 0 "TP8" H 14358 5218 50  0000 L CNN
-F 1 "UC" H 14358 5127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14500 5100 50  0001 C CNN
-F 3 "~" H 14500 5100 50  0001 C CNN
-	1    14300 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60DEAD1D
-P 13400 5200
-AR Path="/60DEAD1D" Ref="#PWR?"  Part="1" 
-AR Path="/5D757C78/60DEAD1D" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 13400 4950 50  0001 C CNN
-F 1 "GND" H 13405 5027 50  0000 C CNN
-F 2 "" H 13400 5200 50  0001 C CNN
-F 3 "" H 13400 5200 50  0001 C CNN
-	1    13400 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13400 5200 13400 5100
-$Comp
-L suku_basics:+3V3_UC #PWR0111
-U 1 1 60E02FD8
-P 14300 5200
-F 0 "#PWR0111" H 14300 5050 50  0001 C CNN
-F 1 "+3V3_UC" H 14315 5373 50  0000 C CNN
-F 2 "" H 14300 5200 50  0001 C CNN
-F 3 "" H 14300 5200 50  0001 C CNN
-	1    14300 5200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	14300 5200 14300 5100
-Text Label 13700 5200 3    50   ~ 0
+Text Label 13400 2400 2    50   ~ 0
 GRID_AUX_TX
-Wire Wire Line
-	13700 5200 13700 5100
-Text Label 14000 5200 3    50   ~ 0
+Text Label 14300 2400 0    50   ~ 0
 GRID_AUX_RX
-Wire Wire Line
-	14000 5200 14000 5100
 Text Label 9700 7900 2    50   ~ 0
 SYS_I2C_INT_0
 Text Label 9700 7800 2    50   ~ 0
@@ -1513,4 +1433,8 @@ Wire Wire Line
 	9700 7800 10000 7800
 Wire Wire Line
 	9700 7900 10000 7900
+Wire Wire Line
+	13400 2400 13600 2400
+Wire Wire Line
+	14100 2400 14300 2400
 $EndSCHEMATC
