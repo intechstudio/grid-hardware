@@ -1,0 +1,110 @@
+name: "KiCad CI/CD for EF44"
+
+const_source_paths: &source_paths
+  - 'Electrical/Design/EF44/EF44/*.sch'
+  - 'Electrical/Design/EF44/EF44/*.kicad_pcb'
+  - 'Electrical/Design/EF44/EF44/*.kibot.yaml'
+  - 'Electrical/Design/EF44/EF44/Makefile'
+  - '.github/workflows/EF44.yml'
+
+const_run_command_erc: &run_command_erc |
+  make -C Electrical/Design/EF44/EF44 erc
+
+const_run_command_drc: &run_command_drc |
+  make -C Electrical/Design/EF44/EF44 drc
+
+const_run_command_sch_fab: &run_command_sch_fab |
+  make -C Electrical/Design/EF44/EF44 sch_fab
+
+const_run_command_pcb_fab: &run_command_pcb_fab |
+  make -C Electrical/Design/EF44/EF44 pcb_fab
+
+const_kicad_auto_container: &kicad_auto_container "setsoft/kicad_auto:nightly"
+const_manufacturing_output_path: &manufacturing_output_path 'Electrical/Design/EF44/EF44/mfg-bot'
+const_manufacturing_output_path_with_log:  &manufacturing_output_path_with_log |
+  Electrical/Design/EF44/EF44/mfg-bot/
+  Electrical/Design/EF44/EF44/kibot_error.log
+  
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    paths: *source_paths
+  pull_request:
+    paths: *source_paths
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  ERC:
+    runs-on: ubuntu-latest
+    container: *kicad_auto_container
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run ERC
+      run: *run_command_erc
+
+    - name: Retrieve results
+      uses: actions/upload-artifact@v1
+      with:
+        name: ERC_Output
+        path: *manufacturing_output_path
+
+  DRC:
+    runs-on: ubuntu-latest
+    container: *kicad_auto_container
+    needs: ERC
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run DRC
+      run: *run_command_drc
+
+    - name: Retrieve results
+      uses: actions/upload-artifact@v1
+      with:
+        name: DRC_Output
+        path: *manufacturing_output_path
+
+  FabSch:
+    name: Schematic fabrication files
+    runs-on: ubuntu-latest
+    container: *kicad_auto_container
+    needs: ERC
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run schematic stuff
+      run: *run_command_sch_fab
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: FabSch_Output
+        path:  *manufacturing_output_path_with_log
+        if-no-files-found: warn
+
+  FabPCB:
+    name: PCB fabrication files
+    runs-on: ubuntu-latest
+    container: *kicad_auto_container
+    needs: DRC
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run PCB stuff
+      run: *run_command_pcb_fab
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: FabPCB_Output
+        path: *manufacturing_output_path_with_log
+        if-no-files-found: warn
+
