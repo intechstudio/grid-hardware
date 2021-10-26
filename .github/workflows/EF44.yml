@@ -96,7 +96,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: FabPCB_Output
-        path: *|
+        path: |
           Electrical/Design/EF44/EF44/mfg-bot/
           Electrical/Design/EF44/EF44/kibot_error.log
         if-no-files-found: warn
