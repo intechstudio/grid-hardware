@@ -1,0 +1,60 @@
+# Gerber and drill files for FusionPCB, without stencil
+# URL: https://www.seeedstudio.io/fusion.html
+# Based on setting used by Gerber Zipper (https://github.com/g200kg/kicad-gerberzipper)
+kibot:
+  version: 1
+
+outputs:
+  - name: FusionPCB_gerbers
+    comment: Gerbers compatible with FusionPCB
+    type: gerber
+    dir: FusionPCB
+    options: &gerber_options
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: true
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: true
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+      use_protel_extensions: true
+      create_gerber_job_file: false
+      output: "%f.%x"
+      gerber_precision: 4.6
+      use_gerber_x2_attributes: false
+      use_gerber_net_attributes: false
+      disable_aperture_macros: true
+      line_width: 0.1
+      uppercase_extensions: true
+      subtract_mask_from_silk: false
+      use_aux_axis_as_origin: true
+      inner_extension_pattern: '.gl%N'
+      edge_cut_extension: '.gml'
+    layers:
+      - copper
+      - F.SilkS
+      - B.SilkS
+      - F.Mask
+      - B.Mask
+      - Edge.Cuts
+
+  - name: FusionPCB_drill
+    comment: Drill files compatible with FusionPCB
+    type: excellon
+    dir: FusionPCB
+    options:
+      pth_and_npth_single_file: true
+      use_aux_axis_as_origin: true
+      output: "%f.TXT"
+
+  - name: FusionPCB
+    comment: ZIP file for FusionPCB
+    type: compress
+    dir: FusionPCB
+    options:
+      files:
+        - from_output: FusionPCB_gerbers
+          dest: /
+        - from_output: FusionPCB_drill
+          dest: /
+
