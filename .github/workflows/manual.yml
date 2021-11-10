@@ -37,5 +37,6 @@ jobs:
 
     - name: Run ERC
       run: |
+        dir
         echo "Hi from FreeCAD"
-        FreeCADCmd -v
+        FreeCAD --console "print(FreeCAD.ConfigGet(\"ExeVersion\"))"
