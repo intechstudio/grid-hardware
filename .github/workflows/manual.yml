@@ -30,7 +30,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
   FreeCAD_test:
     runs-on: ubuntu-latest
-    container: "freecadci/runner:latest"
+    container: "amrit3701/freecad-cli:latest"
 
     steps:
     - uses: actions/checkout@v2
