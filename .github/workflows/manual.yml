@@ -28,3 +28,13 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+  FreeCAD_test:
+    runs-on: ubuntu-latest
+    container: "freecadci/runner:latest"
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run ERC
+      run: |
+        echo "Hi from FreeCAD"
