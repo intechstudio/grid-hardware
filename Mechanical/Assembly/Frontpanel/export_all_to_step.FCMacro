@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-
-# Macro Begin: C:\Users\suku\AppData\Roaming\FreeCAD\Macro\test.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
 import FreeCAD
 import ImportGui
+App.openDocument("\Mechanical\Assembly\Frontpanel\grid_frontpanel.FCStd")
 objs = App.ActiveDocument.RootObjects
 for obj in objs:
 	sono=App.ActiveDocument.getObject(obj.Name)
-	sono.Shape.exportStep("I:/"+obj.Label+".step")
+	print(obj.Label)
+	sono.Shape.exportStep("\"+obj.Label+".step")
