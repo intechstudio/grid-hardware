@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: C:\Users\suku\AppData\Roaming\FreeCAD\Macro\test.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import ImportGui
+objs = App.ActiveDocument.RootObjects
+for obj in objs:
+	sono=App.ActiveDocument.getObject(obj.Name)
+	sono.Shape.exportStep("I:/"+obj.Label+".step")
