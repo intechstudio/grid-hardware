@@ -35,10 +35,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run ERC
-      run: >-
-        FreeCADCmd --console
-        print(FreeCAD.ConfigGet("ExeVersion"))
-        print(FreeCAD.ConfigGet("ExeVersion"))
-        print(FreeCAD.ConfigGet("ExeVersion"))
-        print(FreeCAD.ConfigGet("ExeVersion"))
-        exit()
+      run: |
+        FreeCADCmd --console "print(FreeCAD.ConfigGet(\"ExeVersion\")) print(FreeCAD.ConfigGet(\"ExeVersion\")) exit()"
