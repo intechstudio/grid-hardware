@@ -36,4 +36,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run ERC
       run: |
-        FreeCADCmd --console "print(FreeCAD.ConfigGet(\"ExeVersion\")) print(FreeCAD.ConfigGet(\"ExeVersion\")) exit()"
+        FreeCADCmd --console "print(FreeCAD.ConfigGet(\"ExeVersion\"))"
