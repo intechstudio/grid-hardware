@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import FreeCAD
-import ImportGui
 App.openDocument("\Mechanical\Assembly\Frontpanel\grid_frontpanel.FCStd")
 objs = App.ActiveDocument.RootObjects
 for obj in objs:
