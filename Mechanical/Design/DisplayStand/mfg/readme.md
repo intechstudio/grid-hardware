@@ -15,4 +15,4 @@
 - Rotate +125°along the X axis
 - Rotate +90°along the Z axis
 - Scale X & Y (not Z) to 100.5% when printing in PLA or PETG
-- Set infill to 30% rectlinear
+- Set infill to 30% (Honey)
