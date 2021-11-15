@@ -38,7 +38,7 @@ jobs:
         mkdir temp
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
-        sudo apt install zip
+        sudo apt install -y zip
         zip -r -j frontpanel.zip temp/*
         
   
