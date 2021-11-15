@@ -45,12 +45,12 @@ jobs:
     - name: Zipping artifacts
       uses: montudor/action-zip@v1
       with:
-        args: zip -r -j "fronpanel_${{ env.action_date }}.zip" temp
+        args: zip -r -j "frontpanel_${{ env.action_date }}.zip" temp/\*
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: "fronpanel_${{ env.action_date }}"
+        name: "frontpanel_${{ env.action_date }}"
         path: temp/*.*
       
     - uses: tsickert/discord-webhook@v4.0.0
