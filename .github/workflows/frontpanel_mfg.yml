@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
+name: Frontpanel mfg workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -36,7 +36,7 @@ jobs:
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
         
     - name: Set Date
-      run: echo "action_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
       
     - name: Zipping artifacts      
       uses: papeloto/action-zip@v1
