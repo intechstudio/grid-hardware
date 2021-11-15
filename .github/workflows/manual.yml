@@ -28,12 +28,12 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-  FreeCAD_test:
+  FreeCAD:
     runs-on: ubuntu-latest
     container: "amrit3701/freecad-cli:latest"
     steps:
     - uses: actions/checkout@v2
-    - name: Run ERC
+    - name: Export step files
       run: |
         mkdir temp
         ls
@@ -44,8 +44,20 @@ jobs:
       with:
         name: fronpanel
         path: temp/*.*
-
+        
+  Discord:
+    needs: FreeCAD
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download Artifacts
+      uses: actions/download-artifact@v2
+      
+    - name: Check files
+      run: |
+        ls
+      
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Test"
+        filename: frontpanel.zip
