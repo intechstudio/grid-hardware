@@ -38,26 +38,17 @@ jobs:
         mkdir temp
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
+        zip -r -j frontpanel.zip temp/*
+        
   
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
         name: fronpanel
         path: temp/*.*
-        
-  Discord:
-    needs: FreeCAD
-    runs-on: ubuntu-latest
-    steps:
-    - name: Download Artifacts
-      uses: actions/download-artifact@v2
-      
-    - name: Check files
-      run: |
-        ls
       
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Test"
-        filename: frontpanel
+        filename: "frontpanel.zip"
