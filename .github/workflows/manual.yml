@@ -37,10 +37,11 @@ jobs:
       run: |
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
-        
-    - uses: tsickert/discord-webhook@v4.0.0
+  
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
       with:
-        webhook-url: ${{ secrets.WEBHOOK_URL }}
-        content: "Test"
+        name: fronpanel
+        path: temp/*.*
 
       
