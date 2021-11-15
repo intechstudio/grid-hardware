@@ -40,7 +40,7 @@ jobs:
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
 
     - name: Zipping artifacts
-    - uses: montudor/action-zip@v1
+      uses: montudor/action-zip@v1
       with:
         args: zip -qq -r frontpanel.zip temp
         
