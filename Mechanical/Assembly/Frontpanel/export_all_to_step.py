@@ -5,4 +5,4 @@ objs = App.ActiveDocument.RootObjects
 for obj in objs:
 	sono=App.ActiveDocument.getObject(obj.Name)
 	print(obj.Label)
-	sono.Shape.exportStep("/temp/"+obj.Label+".step")
+	sono.Shape.exportStep("temp/"+obj.Label+".step")
