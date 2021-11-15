@@ -57,4 +57,4 @@ jobs:
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Test"
-        filename: "frontpanel_${{ env:action_state }}.zip"
+        filename: "frontpanel_${{ env.action_state }}.zip"
