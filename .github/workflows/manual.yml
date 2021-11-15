@@ -31,7 +31,6 @@ jobs:
   FreeCAD_test:
     runs-on: ubuntu-latest
     container: "amrit3701/freecad-cli:latest"
-
     steps:
     - uses: actions/checkout@v2
     - name: Run ERC
@@ -39,3 +38,9 @@ jobs:
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
         ls
+    - name: Discord Webhook Action
+      uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Test"
+        filename: "EN16.step"
