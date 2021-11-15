@@ -17,8 +17,8 @@ on:
         required: true
   push:
     paths:
-      - 'Mechanical/Assembly/Frontpanel/export_all_to_step.py'
-      - 'Mechanical/Assembly/Frontpanel/grid_frontpanel_new.FCStd'
+      - 'Mechanical/Design/Frontpanel/export_action.py'
+      - 'Mechanical/Design/Frontpanel/grid_frontpanel.FCStd'
       - '.github/workflows/frontpanel_mfg.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -33,7 +33,7 @@ jobs:
         echo "Hello ${{ github.event.inputs.name }}"
         mkdir temp
         ls
-        FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
+        FreeCADCmd "Mechanical\Design\Frontpanel\export_action.py"
         
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
