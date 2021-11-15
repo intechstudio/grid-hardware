@@ -38,20 +38,20 @@ jobs:
         mkdir temp
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
-
+        
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      
     - name: Zipping artifacts
       uses: montudor/action-zip@v1
       with:
-        args: zip -r -j frontpanel.zip temp/\*
+        args: zip -r -j "fronpanel_${{ env.action_date }}.zip" temp
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: fronpanel
+        name: "fronpanel_${{ env.action_date }}"
         path: temp/*.*
-        
-    - name: Set Date
-      run: echo "action_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       
     - uses: tsickert/discord-webhook@v4.0.0
       with:
