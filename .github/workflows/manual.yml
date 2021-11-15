@@ -42,7 +42,7 @@ jobs:
     - name: Zipping artifacts
       uses: montudor/action-zip@v1
       with:
-        args: zip -qq -r frontpanel.zip temp
+        args: zip -qq -r frontpanel.zip temp/*.*
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
@@ -50,9 +50,11 @@ jobs:
         name: fronpanel
         path: temp/*.*
         
+    - name: Set Date
+      run: echo "NOW::$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Test"
-        filename: "frontpanel.zip"
+        filename: "frontpanel_${{ NOW }}.zip"
