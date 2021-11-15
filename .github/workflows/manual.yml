@@ -51,10 +51,10 @@ jobs:
         path: temp/*.*
         
     - name: Set Date
-      run: echo "NOW::$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      run: echo "::set-env name=DATE::$(date +'%Y-%m-%d')"
       
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Test"
-        filename: "frontpanel_${{ NOW }}.zip"
+        filename: "frontpanel_${{ env:DATE }}.zip"
