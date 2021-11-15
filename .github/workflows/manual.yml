@@ -37,10 +37,15 @@ jobs:
       run: |
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
+        ls    
+    - name: Test
+      run: |
         ls
     - name: Discord Webhook Action
       uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Test"
-        filename: "EN16.step"
+        filename: "EN16"
+
+      
