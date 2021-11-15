@@ -38,15 +38,18 @@ jobs:
         mkdir temp
         ls
         FreeCADCmd "Mechanical\Assembly\Frontpanel\export_all_to_step.py"
-        apt install -y zip
-        zip -r -j frontpanel.zip temp/*
+
+    - name: Zipping artifacts
+    - uses: montudor/action-zip@v1
+      with:
+        args: zip -qq -r frontpanel.zip temp
         
-  
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
         name: fronpanel
         path: temp/*.*
+        
       
     - uses: tsickert/discord-webhook@v4.0.0
       with:
