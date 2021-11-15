@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import FreeCAD
-App.openDocument("Mechanical/Assembly/Frontpanel/grid_frontpanel_new.FCStd")
+App.openDocument("./grid_frontpanel.FCStd")
 objs = App.ActiveDocument.RootObjects
 for obj in objs:
 	sono=App.ActiveDocument.getObject(obj.Name)
