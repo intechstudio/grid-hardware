@@ -8,6 +8,9 @@ DEST=mfg-bot
 
 all: erc_and_fab drc_and_fab
 
+clean: 
+	rm -dr mfg-bot
+
 $(MAK): $(CONFIG)
 	kibot -e $(SCH) -b $(PCB) -c $< -d $(DEST) -m $@
 

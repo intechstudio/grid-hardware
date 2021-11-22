@@ -12,59 +12,29 @@ LOGFILE?=kibot_error.log
 #
 # Default target
 #
-all: run_erc run_drc Elecrow_gerbers Elecrow_drill Elecrow FusionPCB_gerbers FusionPCB_drill FusionPCB JLCPCB_gerbers JLCPCB_drill JLCPCB P-Ban_gerbers P-Ban_drill P-Ban PCBWay_gerbers PCBWay_drill PCBWay print_sch print_front print_bottom interactive_bom bom_html bom_xlsx bom_csv gerbers excellon_drill gerber_drills position
+all: run_erc run_drc print_sch print_front print_bottom bom_html bom_csv JLCPCB_gerbers JLCPCB_drill JLCPCB position
 
 #
 # SCH/PCB targets
 #
 pre_sch: run_erc
 
-out_sch: print_sch bom_html bom_xlsx bom_csv
+out_sch: print_sch bom_html bom_csv
 
 all_sch: pre_sch out_sch
 
 pre_pcb: run_drc
 
-out_pcb: Elecrow_gerbers Elecrow_drill Elecrow FusionPCB_gerbers FusionPCB_drill FusionPCB JLCPCB_gerbers JLCPCB_drill JLCPCB P-Ban_gerbers P-Ban_drill P-Ban PCBWay_gerbers PCBWay_drill PCBWay print_front print_bottom interactive_bom gerbers excellon_drill gerber_drills position
+out_pcb: print_front print_bottom JLCPCB_gerbers JLCPCB_drill JLCPCB position
 
 all_pcb: pre_pcb out_pcb
 
 #
 # Available targets (outputs)
 #
-run_erc: mfg-bot/EF44-erc_.txt
+run_erc: mfg-bot/EF44-erc.txt
 
-run_drc: mfg-bot/EF44-drc_.txt
-
-Elecrow_gerbers: mfg-bot/Elecrow/EF44.GTL mfg-bot/Elecrow/EF44.G1 mfg-bot/Elecrow/EF44.G2 mfg-bot/Elecrow/EF44.GBL mfg-bot/Elecrow/EF44.GTO mfg-bot/Elecrow/EF44.GBO mfg-bot/Elecrow/EF44.GTS mfg-bot/Elecrow/EF44.GBS mfg-bot/Elecrow/EF44.GML
-
-Elecrow_drill: mfg-bot/Elecrow/EF44.TXT mfg-bot/Elecrow/EF44-NPTH.TXT
-
-Elecrow: mfg-bot/Elecrow/EF44-Elecrow_.zip
-
-FusionPCB_gerbers: mfg-bot/FusionPCB/EF44.GTL mfg-bot/FusionPCB/EF44.GL2 mfg-bot/FusionPCB/EF44.GL3 mfg-bot/FusionPCB/EF44.GBL mfg-bot/FusionPCB/EF44.GTO mfg-bot/FusionPCB/EF44.GBO mfg-bot/FusionPCB/EF44.GTS mfg-bot/FusionPCB/EF44.GBS mfg-bot/FusionPCB/EF44.GML
-
-FusionPCB_drill: mfg-bot/FusionPCB/EF44.TXT
-
-FusionPCB: mfg-bot/FusionPCB/EF44-FusionPCB_.zip
-
-JLCPCB_gerbers: mfg-bot/JLCPCB/EF44-F_Cu_.gbr mfg-bot/JLCPCB/EF44-B_Cu_.gbr mfg-bot/JLCPCB/EF44-In1_Cu_.gbr mfg-bot/JLCPCB/EF44-In2_Cu_.gbr mfg-bot/JLCPCB/EF44-F_SilkS_.gbr mfg-bot/JLCPCB/EF44-B_SilkS_.gbr mfg-bot/JLCPCB/EF44-F_Mask_.gbr mfg-bot/JLCPCB/EF44-B_Mask_.gbr mfg-bot/JLCPCB/EF44-Edge_Cuts_.gbr
-
-JLCPCB_drill: mfg-bot/JLCPCB/EF44-PTH.drl mfg-bot/JLCPCB/EF44-NPTH.drl
-
-JLCPCB: mfg-bot/JLCPCB/EF44-JLCPCB_.zip
-
-P-Ban_gerbers: mfg-bot/P-Ban/EF44-F_Cu_.gtl mfg-bot/P-Ban/EF44-B_Cu_.gbl mfg-bot/P-Ban/EF44-In1_Cu_.gp1 mfg-bot/P-Ban/EF44-In2_Cu_.gp2 mfg-bot/P-Ban/EF44-F_SilkS_.gto mfg-bot/P-Ban/EF44-B_SilkS_.gbo mfg-bot/P-Ban/EF44-F_Mask_.gts mfg-bot/P-Ban/EF44-B_Mask_.gbs mfg-bot/P-Ban/EF44-Edge_Cuts_.gm1 mfg-bot/P-Ban/製造基準書.txt
-
-P-Ban_drill: mfg-bot/P-Ban/EF44.drl mfg-bot/P-Ban/EF44-drill_map_.gbr mfg-bot/P-Ban/EF44-drl.rpt
-
-P-Ban: mfg-bot/P-Ban/EF44-P-Ban_.zip
-
-PCBWay_gerbers: mfg-bot/PCBWay/EF44.gtl mfg-bot/PCBWay/EF44.gl2 mfg-bot/PCBWay/EF44.gl3 mfg-bot/PCBWay/EF44.gbl mfg-bot/PCBWay/EF44.gto mfg-bot/PCBWay/EF44.gbo mfg-bot/PCBWay/EF44.gts mfg-bot/PCBWay/EF44.gbs mfg-bot/PCBWay/EF44.gtp mfg-bot/PCBWay/EF44.gbp mfg-bot/PCBWay/EF44.gm1
-
-PCBWay_drill: mfg-bot/PCBWay/EF44.drl mfg-bot/PCBWay/EF44-NPTH.drl
-
-PCBWay: mfg-bot/PCBWay/EF44-PCBWay_.zip
+run_drc: mfg-bot/EF44-drc.txt
 
 print_sch: mfg-bot/Schematic.pdf
 
@@ -72,90 +42,26 @@ print_front: mfg-bot/PCB_Top.pdf
 
 print_bottom: mfg-bot/PCB_Bottom.pdf
 
-interactive_bom: mfg-bot/BoM/EF44-ibom_.html
+bom_html: mfg-bot/mfg/EF44-bom.html
 
-bom_html: mfg-bot/BoM/EF44-bom_.html
+bom_csv: mfg-bot/mfg/EF44-bom.csv
 
-bom_xlsx: mfg-bot/BoM/EF44-bom_.xlsx
+JLCPCB_gerbers: mfg-bot/JLCPCB/EF44-F_Cu.gbr mfg-bot/JLCPCB/EF44-B_Cu.gbr mfg-bot/JLCPCB/EF44-In1_Cu.gbr mfg-bot/JLCPCB/EF44-In2_Cu.gbr mfg-bot/JLCPCB/EF44-F_SilkS.gbr mfg-bot/JLCPCB/EF44-B_SilkS.gbr mfg-bot/JLCPCB/EF44-F_Mask.gbr mfg-bot/JLCPCB/EF44-B_Mask.gbr mfg-bot/JLCPCB/EF44-Edge_Cuts.gbr
 
-bom_csv: mfg-bot/BoM/EF44-bom_.csv
+JLCPCB_drill: mfg-bot/JLCPCB/EF44drill.drl
 
-gerbers: mfg-bot/Gerbers/EF44-F_Cu_.gbr mfg-bot/Gerbers/EF44-B_Cu_.gbr mfg-bot/Gerbers/EF44-F_Paste_.gbr mfg-bot/Gerbers/EF44-B_Paste_.gbr mfg-bot/Gerbers/EF44-F_SilkS_.gbr mfg-bot/Gerbers/EF44-B_SilkS_.gbr mfg-bot/Gerbers/EF44-F_Mask_.gbr mfg-bot/Gerbers/EF44-B_Mask_.gbr mfg-bot/Gerbers/EF44-Dwgs_User_.gbr mfg-bot/Gerbers/EF44-Edge_Cuts_.gbr mfg-bot/Gerbers/EF44-F_Fab_.gbr mfg-bot/Gerbers/EF44-B_Fab_.gbr mfg-bot/Gerbers/EF44-job.gbrjob
+JLCPCB: mfg-bot/mfg/EF44-JLCPCB.zip
 
-excellon_drill: mfg-bot/Drill/EF44-PTH_drill_.drl mfg-bot/Drill/EF44-PTH_drill_map_.pdf mfg-bot/Drill/EF44-NPTH_drill_.drl mfg-bot/Drill/EF44-NPTH_drill_map_.pdf mfg-bot/Drill/EF44-drl.rpt
-
-gerber_drills: mfg-bot/Drill/EF44-PTH_drill_.gbr mfg-bot/Drill/EF44-NPTH_drill_.gbr
-
-position: mfg-bot/Position/EF44-top_pos_.pos mfg-bot/Position/EF44-bottom_pos_.pos
+position: mfg-bot/mfg/EF44-top_pos.csv mfg-bot/mfg/EF44-bottom_pos.csv
 
 #
 # Rules and dependencies
 #
-mfg-bot/EF44-erc_.txt: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
+mfg-bot/EF44-erc.txt: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
 	@$(KIBOT_CMD) -s run_drc -i 2>> $(LOGFILE)
 
-mfg-bot/EF44-drc_.txt: EF44.kicad_pcb EF44.kibot.yaml
+mfg-bot/EF44-drc.txt: EF44.kicad_pcb EF44.kibot.yaml
 	@$(KIBOT_CMD) -s run_erc -i 2>> $(LOGFILE)
-
-# Gerbers compatible with Elecrow
-mfg-bot/Elecrow/EF44.GTL mfg-bot/Elecrow/EF44.G1 mfg-bot/Elecrow/EF44.G2 mfg-bot/Elecrow/EF44.GBL mfg-bot/Elecrow/EF44.GTO mfg-bot/Elecrow/EF44.GBO mfg-bot/Elecrow/EF44.GTS mfg-bot/Elecrow/EF44.GBS mfg-bot/Elecrow/EF44.GML: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all Elecrow_gerbers 2>> $(LOGFILE)
-
-# Drill files compatible with Elecrow
-mfg-bot/Elecrow/EF44.TXT mfg-bot/Elecrow/EF44-NPTH.TXT: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all Elecrow_drill 2>> $(LOGFILE)
-
-# ZIP file for Elecrow
-mfg-bot/Elecrow/EF44-Elecrow_.zip: mfg-bot/Elecrow/EF44.GTL mfg-bot/Elecrow/EF44.G1 mfg-bot/Elecrow/EF44.G2 mfg-bot/Elecrow/EF44.GBL mfg-bot/Elecrow/EF44.GTO mfg-bot/Elecrow/EF44.GBO mfg-bot/Elecrow/EF44.GTS mfg-bot/Elecrow/EF44.GBS mfg-bot/Elecrow/EF44.GML mfg-bot/Elecrow/EF44.TXT mfg-bot/Elecrow/EF44-NPTH.TXT EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all Elecrow 2>> $(LOGFILE)
-
-# Gerbers compatible with FusionPCB
-mfg-bot/FusionPCB/EF44.GTL mfg-bot/FusionPCB/EF44.GL2 mfg-bot/FusionPCB/EF44.GL3 mfg-bot/FusionPCB/EF44.GBL mfg-bot/FusionPCB/EF44.GTO mfg-bot/FusionPCB/EF44.GBO mfg-bot/FusionPCB/EF44.GTS mfg-bot/FusionPCB/EF44.GBS mfg-bot/FusionPCB/EF44.GML: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all FusionPCB_gerbers 2>> $(LOGFILE)
-
-# Drill files compatible with FusionPCB
-mfg-bot/FusionPCB/EF44.TXT: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all FusionPCB_drill 2>> $(LOGFILE)
-
-# ZIP file for FusionPCB
-mfg-bot/FusionPCB/EF44-FusionPCB_.zip: mfg-bot/FusionPCB/EF44.GTL mfg-bot/FusionPCB/EF44.GL2 mfg-bot/FusionPCB/EF44.GL3 mfg-bot/FusionPCB/EF44.GBL mfg-bot/FusionPCB/EF44.GTO mfg-bot/FusionPCB/EF44.GBO mfg-bot/FusionPCB/EF44.GTS mfg-bot/FusionPCB/EF44.GBS mfg-bot/FusionPCB/EF44.GML mfg-bot/FusionPCB/EF44.TXT EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all FusionPCB 2>> $(LOGFILE)
-
-# Gerbers compatible with JLCPCB
-mfg-bot/JLCPCB/EF44-F_Cu_.gbr mfg-bot/JLCPCB/EF44-B_Cu_.gbr mfg-bot/JLCPCB/EF44-In1_Cu_.gbr mfg-bot/JLCPCB/EF44-In2_Cu_.gbr mfg-bot/JLCPCB/EF44-F_SilkS_.gbr mfg-bot/JLCPCB/EF44-B_SilkS_.gbr mfg-bot/JLCPCB/EF44-F_Mask_.gbr mfg-bot/JLCPCB/EF44-B_Mask_.gbr mfg-bot/JLCPCB/EF44-Edge_Cuts_.gbr: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all JLCPCB_gerbers 2>> $(LOGFILE)
-
-# Drill files compatible with JLCPCB
-mfg-bot/JLCPCB/EF44-PTH.drl mfg-bot/JLCPCB/EF44-NPTH.drl: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all JLCPCB_drill 2>> $(LOGFILE)
-
-# ZIP file for JLCPCB
-mfg-bot/JLCPCB/EF44-JLCPCB_.zip: mfg-bot/JLCPCB/EF44-F_Cu_.gbr mfg-bot/JLCPCB/EF44-B_Cu_.gbr mfg-bot/JLCPCB/EF44-In1_Cu_.gbr mfg-bot/JLCPCB/EF44-In2_Cu_.gbr mfg-bot/JLCPCB/EF44-F_SilkS_.gbr mfg-bot/JLCPCB/EF44-B_SilkS_.gbr mfg-bot/JLCPCB/EF44-F_Mask_.gbr mfg-bot/JLCPCB/EF44-B_Mask_.gbr mfg-bot/JLCPCB/EF44-Edge_Cuts_.gbr mfg-bot/JLCPCB/EF44-PTH.drl mfg-bot/JLCPCB/EF44-NPTH.drl EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all JLCPCB 2>> $(LOGFILE)
-
-# Gerbers compatible with P-Ban
-mfg-bot/P-Ban/EF44-F_Cu_.gtl mfg-bot/P-Ban/EF44-B_Cu_.gbl mfg-bot/P-Ban/EF44-In1_Cu_.gp1 mfg-bot/P-Ban/EF44-In2_Cu_.gp2 mfg-bot/P-Ban/EF44-F_SilkS_.gto mfg-bot/P-Ban/EF44-B_SilkS_.gbo mfg-bot/P-Ban/EF44-F_Mask_.gts mfg-bot/P-Ban/EF44-B_Mask_.gbs mfg-bot/P-Ban/EF44-Edge_Cuts_.gm1 mfg-bot/P-Ban/製造基準書.txt: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all P-Ban_gerbers 2>> $(LOGFILE)
-
-# Drill files compatible with P-Ban
-mfg-bot/P-Ban/EF44.drl mfg-bot/P-Ban/EF44-drill_map_.gbr mfg-bot/P-Ban/EF44-drl.rpt: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all P-Ban_drill 2>> $(LOGFILE)
-
-# ZIP file for P-Ban
-mfg-bot/P-Ban/EF44-P-Ban_.zip: mfg-bot/P-Ban/EF44-F_Cu_.gtl mfg-bot/P-Ban/EF44-B_Cu_.gbl mfg-bot/P-Ban/EF44-In1_Cu_.gp1 mfg-bot/P-Ban/EF44-In2_Cu_.gp2 mfg-bot/P-Ban/EF44-F_SilkS_.gto mfg-bot/P-Ban/EF44-B_SilkS_.gbo mfg-bot/P-Ban/EF44-F_Mask_.gts mfg-bot/P-Ban/EF44-B_Mask_.gbs mfg-bot/P-Ban/EF44-Edge_Cuts_.gm1 mfg-bot/P-Ban/製造基準書.txt mfg-bot/P-Ban/EF44.drl mfg-bot/P-Ban/EF44-drill_map_.gbr mfg-bot/P-Ban/EF44-drl.rpt EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all P-Ban 2>> $(LOGFILE)
-
-# Gerbers compatible with PCBWay
-mfg-bot/PCBWay/EF44.gtl mfg-bot/PCBWay/EF44.gl2 mfg-bot/PCBWay/EF44.gl3 mfg-bot/PCBWay/EF44.gbl mfg-bot/PCBWay/EF44.gto mfg-bot/PCBWay/EF44.gbo mfg-bot/PCBWay/EF44.gts mfg-bot/PCBWay/EF44.gbs mfg-bot/PCBWay/EF44.gtp mfg-bot/PCBWay/EF44.gbp mfg-bot/PCBWay/EF44.gm1: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all PCBWay_gerbers 2>> $(LOGFILE)
-
-# Drill files compatible with PCBWay
-mfg-bot/PCBWay/EF44.drl mfg-bot/PCBWay/EF44-NPTH.drl: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all PCBWay_drill 2>> $(LOGFILE)
-
-# ZIP file for PCBWay
-mfg-bot/PCBWay/EF44-PCBWay_.zip: mfg-bot/PCBWay/EF44.gtl mfg-bot/PCBWay/EF44.gl2 mfg-bot/PCBWay/EF44.gl3 mfg-bot/PCBWay/EF44.gbl mfg-bot/PCBWay/EF44.gto mfg-bot/PCBWay/EF44.gbo mfg-bot/PCBWay/EF44.gts mfg-bot/PCBWay/EF44.gbs mfg-bot/PCBWay/EF44.gtp mfg-bot/PCBWay/EF44.gbp mfg-bot/PCBWay/EF44.gm1 mfg-bot/PCBWay/EF44.drl mfg-bot/PCBWay/EF44-NPTH.drl EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all PCBWay 2>> $(LOGFILE)
 
 # Print schematic (PDF)
 mfg-bot/Schematic.pdf: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
@@ -169,36 +75,28 @@ mfg-bot/PCB_Top.pdf: EF44.kicad_pcb EF44.kibot.yaml
 mfg-bot/PCB_Bottom.pdf: EF44.kicad_pcb EF44.kibot.yaml
 	@$(KIBOT_CMD) -s all print_bottom 2>> $(LOGFILE)
 
-# Interactive Bill of Materials (HTML)
-mfg-bot/BoM/EF44-ibom_.html: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all interactive_bom 2>> $(LOGFILE)
-
 # Bill of Materials in HTML format
-mfg-bot/BoM/EF44-bom_.html: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
+mfg-bot/mfg/EF44-bom.html: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
 	@$(KIBOT_CMD) -s all bom_html 2>> $(LOGFILE)
 
-# Bill of Materials in XLSX format
-mfg-bot/BoM/EF44-bom_.xlsx: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all bom_xlsx 2>> $(LOGFILE)
-
 # Bill of Materials in CSV format
-mfg-bot/BoM/EF44-bom_.csv: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
+mfg-bot/mfg/EF44-bom.csv: EF44.sch GRID.sch HWCFG.sch MCU.sch UI_ENC.sch UI_ENC_FILTER.sch UI_LED.sch USB_POWER.sch EF44.kibot.yaml
 	@$(KIBOT_CMD) -s all bom_csv 2>> $(LOGFILE)
 
-# Gerbers for the board house
-mfg-bot/Gerbers/EF44-F_Cu_.gbr mfg-bot/Gerbers/EF44-B_Cu_.gbr mfg-bot/Gerbers/EF44-F_Paste_.gbr mfg-bot/Gerbers/EF44-B_Paste_.gbr mfg-bot/Gerbers/EF44-F_SilkS_.gbr mfg-bot/Gerbers/EF44-B_SilkS_.gbr mfg-bot/Gerbers/EF44-F_Mask_.gbr mfg-bot/Gerbers/EF44-B_Mask_.gbr mfg-bot/Gerbers/EF44-Dwgs_User_.gbr mfg-bot/Gerbers/EF44-Edge_Cuts_.gbr mfg-bot/Gerbers/EF44-F_Fab_.gbr mfg-bot/Gerbers/EF44-B_Fab_.gbr mfg-bot/Gerbers/EF44-job.gbrjob: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all gerbers 2>> $(LOGFILE)
+# Gerbers compatible with JLCPCB
+mfg-bot/JLCPCB/EF44-F_Cu.gbr mfg-bot/JLCPCB/EF44-B_Cu.gbr mfg-bot/JLCPCB/EF44-In1_Cu.gbr mfg-bot/JLCPCB/EF44-In2_Cu.gbr mfg-bot/JLCPCB/EF44-F_SilkS.gbr mfg-bot/JLCPCB/EF44-B_SilkS.gbr mfg-bot/JLCPCB/EF44-F_Mask.gbr mfg-bot/JLCPCB/EF44-B_Mask.gbr mfg-bot/JLCPCB/EF44-Edge_Cuts.gbr: EF44.kicad_pcb EF44.kibot.yaml
+	@$(KIBOT_CMD) -s all JLCPCB_gerbers 2>> $(LOGFILE)
 
-# Excellon drill files
-mfg-bot/Drill/EF44-PTH_drill_.drl mfg-bot/Drill/EF44-PTH_drill_map_.pdf mfg-bot/Drill/EF44-NPTH_drill_.drl mfg-bot/Drill/EF44-NPTH_drill_map_.pdf mfg-bot/Drill/EF44-drl.rpt: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all excellon_drill 2>> $(LOGFILE)
+# Drill files compatible with JLCPCB
+mfg-bot/JLCPCB/EF44drill.drl: EF44.kicad_pcb EF44.kibot.yaml
+	@$(KIBOT_CMD) -s all JLCPCB_drill 2>> $(LOGFILE)
 
-# Gerber drill files
-mfg-bot/Drill/EF44-PTH_drill_.gbr mfg-bot/Drill/EF44-NPTH_drill_.gbr: EF44.kicad_pcb EF44.kibot.yaml
-	@$(KIBOT_CMD) -s all gerber_drills 2>> $(LOGFILE)
+# ZIP file for JLCPCB
+mfg-bot/mfg/EF44-JLCPCB.zip: mfg-bot/JLCPCB/EF44-F_Cu.gbr mfg-bot/JLCPCB/EF44-B_Cu.gbr mfg-bot/JLCPCB/EF44-In1_Cu.gbr mfg-bot/JLCPCB/EF44-In2_Cu.gbr mfg-bot/JLCPCB/EF44-F_SilkS.gbr mfg-bot/JLCPCB/EF44-B_SilkS.gbr mfg-bot/JLCPCB/EF44-F_Mask.gbr mfg-bot/JLCPCB/EF44-B_Mask.gbr mfg-bot/JLCPCB/EF44-Edge_Cuts.gbr mfg-bot/JLCPCB/EF44drill.drl EF44.kibot.yaml
+	@$(KIBOT_CMD) -s all JLCPCB 2>> $(LOGFILE)
 
 # Pick and place file
-mfg-bot/Position/EF44-top_pos_.pos mfg-bot/Position/EF44-bottom_pos_.pos: EF44.kicad_pcb EF44.kibot.yaml
+mfg-bot/mfg/EF44-top_pos.csv mfg-bot/mfg/EF44-bottom_pos.csv: EF44.kicad_pcb EF44.kibot.yaml
 	@$(KIBOT_CMD) -s all position 2>> $(LOGFILE)
 
-.PHONY: all pre_sch out_sch all_sch pre_pcb out_pcb all_pcb run_erc run_drc Elecrow_gerbers Elecrow_drill Elecrow FusionPCB_gerbers FusionPCB_drill FusionPCB JLCPCB_gerbers JLCPCB_drill JLCPCB P-Ban_gerbers P-Ban_drill P-Ban PCBWay_gerbers PCBWay_drill PCBWay print_sch print_front print_bottom interactive_bom bom_html bom_xlsx bom_csv gerbers excellon_drill gerber_drills position
+.PHONY: all pre_sch out_sch all_sch pre_pcb out_pcb all_pcb run_erc run_drc print_sch print_front print_bottom bom_html bom_csv JLCPCB_gerbers JLCPCB_drill JLCPCB position

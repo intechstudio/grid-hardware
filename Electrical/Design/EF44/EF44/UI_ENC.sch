@@ -37,7 +37,7 @@ U 1 1 5D735511
 P 2600 1800
 F 0 "U1" H 2200 2700 50  0000 C CNN
 F 1 "74HC165" H 2300 2600 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 2600 1800 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H 2600 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2600 1800 50  0001 C CNN
 	1    2600 1800
 	1    0    0    -1  
@@ -128,7 +128,7 @@ U 1 1 5D7A3724
 P 6600 1800
 F 0 "U2" H 6200 2700 50  0000 C CNN
 F 1 "74HC165" H 6300 2600 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 6600 1800 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H 6600 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 6600 1800 50  0001 C CNN
 	1    6600 1800
 	1    0    0    -1  
@@ -433,7 +433,7 @@ U 1 1 616463AB
 P 6000 5600
 F 0 "U10" H 6100 6600 50  0000 L CNN
 F 1 "74HC4051" H 6100 6500 50  0000 L CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 6000 5600 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC4051" H 6000 5600 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 6000 5600 50  0001 C CNN
 	1    6000 5600
 	1    0    0    -1  
@@ -444,7 +444,7 @@ U 1 1 61646C5C
 P 3000 5600
 F 0 "U9" H 3100 6600 50  0000 L CNN
 F 1 "74HC4051" H 3100 6500 50  0000 L CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 3000 5600 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC4051" H 3000 5600 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 3000 5600 50  0001 C CNN
 	1    3000 5600
 	1    0    0    -1  
