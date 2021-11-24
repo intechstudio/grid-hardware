@@ -22,7 +22,7 @@ AR Path="/5DC2DC06/5DC5FDC3" Ref="U3"  Part="1"
 F 0 "U3" H 3700 4300 50  0000 C CNN
 F 1 "74HC165" H 3800 4200 50  0000 C CNN
 F 2 "suku_basics:SOIC-16_74HC165" H 4100 3400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
 	1    4100 3400
 	1    0    0    -1  
 $EndComp
