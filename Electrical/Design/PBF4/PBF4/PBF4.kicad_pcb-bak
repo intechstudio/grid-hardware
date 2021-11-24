@@ -510,6 +510,63 @@
     (add_net /MCU/USB_DP)
   )
 
+  (module suku_basics:SOIC-8W_FLASH (layer B.Cu) (tedit 5F5B4FF5) (tstamp 5D68E5A1)
+    (at 100 113.335 180)
+    (descr "SOIC, 8 Pin (http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf#page=68), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+    (tags "SOIC SO")
+    (path /5D757C78/5D6686E6)
+    (attr smd)
+    (fp_text reference U8 (at 0 3.56) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value W25Q16JVSSIQ (at 0 -3.56) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_circle (center -5.08 3.048) (end -4.83 3.048) (layer B.SilkS) (width 0.5))
+    (fp_line (start 4.65 2.86) (end -4.65 2.86) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 4.65 -2.86) (end 4.65 2.86) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -4.65 -2.86) (end 4.65 -2.86) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -4.65 2.86) (end -4.65 -2.86) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -2.615 1.615) (end -1.615 2.615) (layer B.Fab) (width 0.1))
+    (fp_line (start -2.615 -2.615) (end -2.615 1.615) (layer B.Fab) (width 0.1))
+    (fp_line (start 2.615 -2.615) (end -2.615 -2.615) (layer B.Fab) (width 0.1))
+    (fp_line (start 2.615 2.615) (end 2.615 -2.615) (layer B.Fab) (width 0.1))
+    (fp_line (start -1.615 2.615) (end 2.615 2.615) (layer B.Fab) (width 0.1))
+    (fp_line (start -2.725 2.465) (end -4.4 2.465) (layer B.SilkS) (width 0.12))
+    (fp_line (start -2.725 2.725) (end -2.725 2.465) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0 2.725) (end -2.725 2.725) (layer B.SilkS) (width 0.12))
+    (fp_line (start 2.725 2.725) (end 2.725 2.465) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0 2.725) (end 2.725 2.725) (layer B.SilkS) (width 0.12))
+    (fp_line (start -2.725 -2.725) (end -2.725 -2.465) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0 -2.725) (end -2.725 -2.725) (layer B.SilkS) (width 0.12))
+    (fp_line (start 2.725 -2.725) (end 2.725 -2.465) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0 -2.725) (end 2.725 -2.725) (layer B.SilkS) (width 0.12))
+    (pad 8 smd roundrect (at 3.6 1.905 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 20 +3V3_UC))
+    (pad 7 smd roundrect (at 3.6 0.635 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 61 /MCU/QSPI_IO_3))
+    (pad 6 smd roundrect (at 3.6 -0.635 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 60 /MCU/QSPI_SCK))
+    (pad 5 smd roundrect (at 3.6 -1.905 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 64 /MCU/QSPI_IO_0))
+    (pad 4 smd roundrect (at -3.6 -1.905 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 1 GND))
+    (pad 3 smd roundrect (at -3.6 -0.635 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 62 /MCU/QSPI_IO_2))
+    (pad 2 smd roundrect (at -3.6 0.635 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 63 /MCU/QSPI_IO_1))
+    (pad 1 smd roundrect (at -3.6 1.905 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 59 /MCU/QSPI_~CE))
+    (model ${INTECH_3D}/SOIC-8-1_wide.STEP
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 90))
+    )
+  )
+
   (module suku_basics:UI_WS2812C-2020 (layer F.Cu) (tedit 6050BC1C) (tstamp 5D62AECC)
     (at 113.335 52.375)
     (descr "2.0mm x 2.0mm PLCC4 LED, http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/HB/Data-Sheets/CLMVBFKA.pdf")
@@ -521,9 +578,6 @@
     )
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
     )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -540,6 +594,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -561,15 +618,11 @@
     (tags "SOIC SO")
     (path /5DC2DC06/5DC5FDC3)
     (attr smd)
-    (fp_text reference U3 (at 0 5.9) (layer B.SilkS)
+    (fp_text reference U3 (at 0 5.9) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 74HC165 (at 0 -5.9) (layer B.Fab)
+    (fp_text value 74HC165 (at 0 -5.9) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab)
-      (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0 -5.06) (end 1.95 -5.06) (layer B.SilkS) (width 0.12))
     (fp_line (start 0 -5.06) (end -1.95 -5.06) (layer B.SilkS) (width 0.12))
@@ -585,6 +638,10 @@
     (fp_line (start 3.7 -5.2) (end 3.7 5.2) (layer B.CrtYd) (width 0.05))
     (fp_line (start 3.7 5.2) (end -3.7 5.2) (layer B.CrtYd) (width 0.05))
     (fp_circle (center -3 6.5) (end -2.75 6.5) (layer B.SilkS) (width 0.5))
+    (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
+    )
     (pad 1 smd roundrect (at -2.475 4.445) (size 1.95 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 83 /HWCFG/HWCFG_SHIFT))
     (pad 2 smd roundrect (at -2.475 3.175) (size 1.95 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -630,15 +687,11 @@
     (tags "SOIC SO")
     (path /5D8763E1/5DB28C51)
     (attr smd)
-    (fp_text reference U2 (at 0 5.9 90) (layer B.SilkS)
+    (fp_text reference U2 (at 0 5.9 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab)
+    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab)
-      (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0 -5.06) (end 1.95 -5.06) (layer B.SilkS) (width 0.12))
     (fp_line (start 0 -5.06) (end -1.95 -5.06) (layer B.SilkS) (width 0.12))
@@ -654,6 +707,10 @@
     (fp_line (start 3.7 -5.2) (end 3.7 5.2) (layer B.CrtYd) (width 0.05))
     (fp_line (start 3.7 5.2) (end -3.7 5.2) (layer B.CrtYd) (width 0.05))
     (fp_circle (center -3 6.5) (end -2.75 6.5) (layer B.SilkS) (width 0.5))
+    (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
+    )
     (pad 1 smd roundrect (at -2.475 4.445 90) (size 1.95 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 16 "Net-(C29-Pad1)"))
     (pad 2 smd roundrect (at -2.475 3.175 90) (size 1.95 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -699,15 +756,11 @@
     (tags "SOIC SO")
     (path /5D7C8BFE/5DB28C51)
     (attr smd)
-    (fp_text reference U1 (at 0 5.9 90) (layer B.SilkS)
+    (fp_text reference U1 (at 0 5.9 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab)
+    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab)
-      (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0 -5.06) (end 1.95 -5.06) (layer B.SilkS) (width 0.12))
     (fp_line (start 0 -5.06) (end -1.95 -5.06) (layer B.SilkS) (width 0.12))
@@ -723,6 +776,10 @@
     (fp_line (start 3.7 -5.2) (end 3.7 5.2) (layer B.CrtYd) (width 0.05))
     (fp_line (start 3.7 5.2) (end -3.7 5.2) (layer B.CrtYd) (width 0.05))
     (fp_circle (center -3 6.5) (end -2.75 6.5) (layer B.SilkS) (width 0.5))
+    (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
+    )
     (pad 1 smd roundrect (at -2.475 4.445 90) (size 1.95 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 8 "Net-(C21-Pad1)"))
     (pad 2 smd roundrect (at -2.475 3.175 90) (size 1.95 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -773,9 +830,6 @@
     (fp_text value UI_Fader (at 0 24) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -1 18) (end -1 -18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 18) (end -1 18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 -18) (end 1 18) (layer F.SilkS) (width 0.12))
@@ -788,6 +842,9 @@
     (fp_line (start 4.5 22.5) (end -4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 4.5 -22.5) (end 4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -22.5) (end 4.5 -22.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 7 thru_hole circle (at -4.25 17.6) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
       (net 157 "Net-(UI7-Pad7)"))
     (pad 6 thru_hole circle (at 4.25 16.4) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
@@ -809,63 +866,6 @@
     )
   )
 
-  (module "suku_basics:SOIC-8_WIDE(rot90)" (layer B.Cu) (tedit 5F5B4FFC) (tstamp 5D68E5A1)
-    (at 100 113.335 270)
-    (descr "SOIC, 8 Pin (http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf#page=68), generated with kicad-footprint-generator ipc_gullwing_generator.py")
-    (tags "SOIC SO")
-    (path /5D757C78/5D6686E6)
-    (attr smd)
-    (fp_text reference U8 (at -3.56 0 180) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text value W25Q16JVSSIQ (at 3.56 0 180) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_circle (center -3.048 -5.08) (end -3.048 -4.83) (layer B.SilkS) (width 0.5))
-    (fp_line (start -2.86 4.65) (end -2.86 -4.65) (layer B.CrtYd) (width 0.05))
-    (fp_line (start 2.86 4.65) (end -2.86 4.65) (layer B.CrtYd) (width 0.05))
-    (fp_line (start 2.86 -4.65) (end 2.86 4.65) (layer B.CrtYd) (width 0.05))
-    (fp_line (start -2.86 -4.65) (end 2.86 -4.65) (layer B.CrtYd) (width 0.05))
-    (fp_line (start -1.615 -2.615) (end -2.615 -1.615) (layer B.Fab) (width 0.1))
-    (fp_line (start 2.615 -2.615) (end -1.615 -2.615) (layer B.Fab) (width 0.1))
-    (fp_line (start 2.615 2.615) (end 2.615 -2.615) (layer B.Fab) (width 0.1))
-    (fp_line (start -2.615 2.615) (end 2.615 2.615) (layer B.Fab) (width 0.1))
-    (fp_line (start -2.615 -1.615) (end -2.615 2.615) (layer B.Fab) (width 0.1))
-    (fp_line (start -2.465 -2.725) (end -2.465 -4.4) (layer B.SilkS) (width 0.12))
-    (fp_line (start -2.725 -2.725) (end -2.465 -2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start -2.725 0) (end -2.725 -2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start -2.725 2.725) (end -2.465 2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start -2.725 0) (end -2.725 2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start 2.725 -2.725) (end 2.465 -2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start 2.725 0) (end 2.725 -2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start 2.725 2.725) (end 2.465 2.725) (layer B.SilkS) (width 0.12))
-    (fp_line (start 2.725 0) (end 2.725 2.725) (layer B.SilkS) (width 0.12))
-    (pad 8 smd roundrect (at -1.905 3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 20 +3V3_UC))
-    (pad 7 smd roundrect (at -0.635 3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 61 /MCU/QSPI_IO_3))
-    (pad 6 smd roundrect (at 0.635 3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 60 /MCU/QSPI_SCK))
-    (pad 5 smd roundrect (at 1.905 3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 64 /MCU/QSPI_IO_0))
-    (pad 4 smd roundrect (at 1.905 -3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 1 GND))
-    (pad 3 smd roundrect (at 0.635 -3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 62 /MCU/QSPI_IO_2))
-    (pad 2 smd roundrect (at -0.635 -3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 63 /MCU/QSPI_IO_1))
-    (pad 1 smd roundrect (at -1.905 -3.6 180) (size 1.6 0.6) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
-      (net 59 /MCU/QSPI_~CE))
-    (model ${INTECH_3D}/SOIC-8-1_wide.STEP
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz -90 0 0))
-    )
-  )
-
   (module suku_basics:RES_0805 (layer B.Cu) (tedit 5D4FF020) (tstamp 610D3649)
     (at 95 123 270)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
@@ -877,10 +877,6 @@
     )
     (fp_text value 10k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
@@ -896,6 +892,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 188 "Net-(JP1-Pad1)"))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1008,9 +1008,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1031,6 +1028,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1054,11 +1054,11 @@
     (fp_text value CC2 (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 180 /MCU/Sheet60F06FE1/USB_CC2))
   )
@@ -1075,11 +1075,11 @@
     (fp_text value CC1 (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 181 /MCU/Sheet60F06FE1/USB_CC1))
   )
@@ -1095,9 +1095,6 @@
     )
     (fp_text value 1u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
@@ -1119,6 +1116,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1142,9 +1142,6 @@
     (fp_text value LN1134A332MR-G (at 0 -2.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
-    )
     (fp_line (start 0.9 1.61) (end -0.9 1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.9 -1.61) (end 1.55 -1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start 1.9 -1.8) (end -1.9 -1.8) (layer B.CrtYd) (width 0.05))
@@ -1157,6 +1154,9 @@
     (fp_line (start -0.9 1.55) (end 0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_line (start -0.9 -1.55) (end -0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_circle (center 2.032 -1.778) (end 1.907 -1.778) (layer B.SilkS) (width 0.25))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
+    )
     (pad 5 smd roundrect (at -1.1 -0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 20 +3V3_UC))
     (pad 4 smd roundrect (at -1.1 0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1186,9 +1186,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1209,6 +1206,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1232,9 +1232,6 @@
     (fp_text value MT9700 (at 0 -2.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
-    )
     (fp_line (start 0.9 1.61) (end -0.9 1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.9 -1.61) (end 1.55 -1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start 1.9 -1.8) (end -1.9 -1.8) (layer B.CrtYd) (width 0.05))
@@ -1247,6 +1244,9 @@
     (fp_line (start -0.9 1.55) (end 0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_line (start -0.9 -1.55) (end -0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_circle (center 2.032 -1.778) (end 1.907 -1.778) (layer B.SilkS) (width 0.25))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
+    )
     (pad 5 smd roundrect (at -1.1 -0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 40 +5V))
     (pad 4 smd roundrect (at -1.1 0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1276,9 +1276,6 @@
     (fp_text value "FUSB302BMPX(N.F.)" (at 0 2.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.62 0.62) (thickness 0.09)))
-    )
     (fp_line (start 1.135 -1.36) (end 1.36 -1.36) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.36 -1.36) (end 1.36 -0.885) (layer F.SilkS) (width 0.12))
     (fp_line (start -1.135 1.36) (end -1.36 1.36) (layer F.SilkS) (width 0.12))
@@ -1295,6 +1292,9 @@
     (fp_line (start -1.85 1.85) (end 1.85 1.85) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1.85 1.85) (end 1.85 -1.85) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1.85 -1.85) (end -1.85 -1.85) (layer F.CrtYd) (width 0.05))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.62 0.62) (thickness 0.09)))
+    )
     (pad "" smd roundrect (at 0.36 0.36) (size 0.58 0.58) (layers F.Paste) (roundrect_rratio 0.25))
     (pad "" smd roundrect (at 0.36 -0.36) (size 0.58 0.58) (layers F.Paste) (roundrect_rratio 0.25))
     (pad "" smd roundrect (at -0.36 0.36) (size 0.58 0.58) (layers F.Paste) (roundrect_rratio 0.25))
@@ -1348,9 +1348,6 @@
     (fp_text value LN1134A332MR-G (at 0 -2.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
-    )
     (fp_line (start 0.9 1.61) (end -0.9 1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.9 -1.61) (end 1.55 -1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start 1.9 -1.8) (end -1.9 -1.8) (layer B.CrtYd) (width 0.05))
@@ -1363,6 +1360,9 @@
     (fp_line (start -0.9 1.55) (end 0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_line (start -0.9 -1.55) (end -0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_circle (center 2.032 -1.778) (end 1.907 -1.778) (layer B.SilkS) (width 0.25))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
+    )
     (pad 5 smd roundrect (at -1.1 -0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 3 +3V3_UI))
     (pad 4 smd roundrect (at -1.1 0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1392,9 +1392,6 @@
     (fp_text value FUSB302BMPX (at 0 -2.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.62 0.62) (thickness 0.09)) (justify mirror))
-    )
     (fp_line (start 1.135 1.36) (end 1.36 1.36) (layer B.SilkS) (width 0.12))
     (fp_line (start 1.36 1.36) (end 1.36 0.885) (layer B.SilkS) (width 0.12))
     (fp_line (start -1.135 -1.36) (end -1.36 -1.36) (layer B.SilkS) (width 0.12))
@@ -1411,6 +1408,9 @@
     (fp_line (start -1.85 -1.85) (end 1.85 -1.85) (layer B.CrtYd) (width 0.05))
     (fp_line (start 1.85 -1.85) (end 1.85 1.85) (layer B.CrtYd) (width 0.05))
     (fp_line (start 1.85 1.85) (end -1.85 1.85) (layer B.CrtYd) (width 0.05))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.62 0.62) (thickness 0.09)) (justify mirror))
+    )
     (pad "" smd roundrect (at 0.36 -0.36 180) (size 0.58 0.58) (layers B.Paste) (roundrect_rratio 0.25))
     (pad "" smd roundrect (at 0.36 0.36 180) (size 0.58 0.58) (layers B.Paste) (roundrect_rratio 0.25))
     (pad "" smd roundrect (at -0.36 -0.36 180) (size 0.58 0.58) (layers B.Paste) (roundrect_rratio 0.25))
@@ -1464,9 +1464,6 @@
     (fp_text value SESRV05-4 (at 0 -2.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
-    )
     (fp_line (start 0.9 1.61) (end -0.9 1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.9 -1.61) (end 1.55 -1.61) (layer B.SilkS) (width 0.12))
     (fp_line (start -1.9 -1.8) (end 1.9 -1.8) (layer B.CrtYd) (width 0.05))
@@ -1479,6 +1476,9 @@
     (fp_line (start -0.9 1.55) (end 0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_line (start -0.9 -1.55) (end -0.9 1.55) (layer B.Fab) (width 0.1))
     (fp_circle (center 1.778 -1.778) (end 1.653 -1.778) (layer B.SilkS) (width 0.25))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)) (justify mirror))
+    )
     (pad 5 smd roundrect (at -1.1 0 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 40 +5V))
     (pad 6 smd roundrect (at -1.1 -0.95 270) (size 1.06 0.65) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1510,11 +1510,11 @@
     (fp_text value UI_5V (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 178 +5V_UI))
   )
@@ -1531,11 +1531,11 @@
     (fp_text value UI (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 3 +3V3_UI))
   )
@@ -1552,11 +1552,11 @@
     (fp_text value INT (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 173 /MCU/SYS_I2C_INT_0))
   )
@@ -1573,11 +1573,11 @@
     (fp_text value SCL (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 175 /MCU/SYS_I2C_SCL))
   )
@@ -1594,11 +1594,11 @@
     (fp_text value SDA (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 174 /MCU/SYS_I2C_SDA))
   )
@@ -1615,11 +1615,11 @@
     (fp_text value UC (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 20 +3V3_UC))
   )
@@ -1636,11 +1636,11 @@
     (fp_text value D+ (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 31 /MCU/USB_DP))
   )
@@ -1657,11 +1657,11 @@
     (fp_text value D- (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 30 /MCU/USB_DN))
   )
@@ -1678,11 +1678,11 @@
     (fp_text value VB (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 40 +5V))
   )
@@ -1699,11 +1699,11 @@
     (fp_text value GND (at 0 -1.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
+    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
+    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (fp_text user %R (at 0 1.45) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_circle (center 0 0) (end 1 0) (layer B.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 -0.7) (layer B.SilkS) (width 0.12))
     (pad 1 smd circle (at 0 0) (size 1 1) (layers B.Cu B.Mask)
       (net 1 GND))
   )
@@ -1720,10 +1720,6 @@
     (fp_text value 1M (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1738,6 +1734,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1761,10 +1761,6 @@
     (fp_text value 10k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1779,6 +1775,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1802,10 +1802,6 @@
     (fp_text value "5k1(N.F.)" (at 0 1.65 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_arc (start 0.0254 -0.2032) (end 0.0254 0) (angle -180) (layer F.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)))
-    )
     (fp_line (start -1 0.6) (end -1 -0.6) (layer F.Fab) (width 0.1))
     (fp_line (start -1 -0.6) (end 1 -0.6) (layer F.Fab) (width 0.1))
     (fp_line (start 1 -0.6) (end 1 0.6) (layer F.Fab) (width 0.1))
@@ -1820,6 +1816,10 @@
     (fp_line (start -0.2032 -0.4064) (end 0.0762 -0.4064) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.2286 0.3302) (end 0 0) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 -0.2032) (end 0.0254 0) (angle -180) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -1843,10 +1843,6 @@
     (fp_text value "5k1(N.F.)" (at 0 1.65 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_arc (start 0.0254 -0.2032) (end 0.0254 0) (angle -180) (layer F.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)))
-    )
     (fp_line (start -1 0.6) (end -1 -0.6) (layer F.Fab) (width 0.1))
     (fp_line (start -1 -0.6) (end 1 -0.6) (layer F.Fab) (width 0.1))
     (fp_line (start 1 -0.6) (end 1 0.6) (layer F.Fab) (width 0.1))
@@ -1861,6 +1857,10 @@
     (fp_line (start -0.2032 -0.4064) (end 0.0762 -0.4064) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.2286 0.3302) (end 0 0) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 -0.2032) (end 0.0254 0) (angle -180) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -1884,10 +1884,6 @@
     (fp_text value 10k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1902,6 +1898,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1925,10 +1925,6 @@
     (fp_text value 5k1 (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1943,6 +1939,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 173 /MCU/SYS_I2C_INT_0))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1966,10 +1966,6 @@
     (fp_text value 5k1 (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -1984,6 +1980,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 175 /MCU/SYS_I2C_SCL))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2007,10 +2007,6 @@
     (fp_text value 5k1 (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2025,6 +2021,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 174 /MCU/SYS_I2C_SDA))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2048,9 +2048,6 @@
     (fp_text value USB_C_TYPE-C-32-M-12 (at 0 7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.1)))
-    )
     (fp_line (start -5.39 3) (end -5.39 -5.87) (layer F.CrtYd) (width 0.05))
     (fp_line (start 5.39 3) (end -5.39 3) (layer F.CrtYd) (width 0.05))
     (fp_line (start 5.39 -5.87) (end 5.39 3) (layer F.CrtYd) (width 0.05))
@@ -2064,6 +2061,9 @@
     (fp_line (start -4.6 -5.22) (end 4.6 -5.22) (layer F.Fab) (width 0.1))
     (fp_line (start -4.6 2.5) (end -4.6 -5.22) (layer F.Fab) (width 0.1))
     (fp_line (start -4.75 2.6) (end 4.75 2.6) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.1)))
+    )
     (pad "" np_thru_hole circle (at 2.89 -3.65 180) (size 0.65 0.65) (drill 0.65) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at -2.89 -3.65 180) (size 0.65 0.65) (drill 0.65) (layers *.Cu *.Mask))
     (pad S3 thru_hole oval (at -4.32 0 180) (size 0.8 2) (drill oval 0.5 0.9 (offset 0 -0.25)) (layers *.Cu *.Mask F.Paste)
@@ -2117,11 +2117,6 @@
     (fp_text value "600 Ohm @ 100MHz" (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 -0.2032) (end 0.0254 -0.4064) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2137,6 +2132,11 @@
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0762 0) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 -0.4064) (end 0.0254 -0.4064) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 -0.2032) (end 0.0254 -0.4064) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 40 +5V))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2160,9 +2160,6 @@
     (fp_text value 4n7 (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2183,6 +2180,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2206,9 +2206,6 @@
     (fp_text value 1u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2229,6 +2226,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2252,9 +2252,6 @@
     (fp_text value 1u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2275,6 +2272,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2298,9 +2298,6 @@
     (fp_text value 1u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2321,6 +2318,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2344,9 +2344,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2367,6 +2364,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2390,10 +2390,6 @@
     (fp_text value 5k1 (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2408,6 +2404,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 86 /UI_LED/LED_DATA_IN))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2430,9 +2430,6 @@
     (fp_text value UI_Fader (at 0 24) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -1 18) (end -1 -18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 18) (end -1 18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 -18) (end 1 18) (layer F.SilkS) (width 0.12))
@@ -2445,6 +2442,9 @@
     (fp_line (start 4.5 22.5) (end -4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 4.5 -22.5) (end 4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -22.5) (end 4.5 -22.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 7 thru_hole circle (at -4.25 17.6) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
       (net 149 "Net-(UI5-Pad7)"))
     (pad 6 thru_hole circle (at 4.25 16.4) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
@@ -2505,9 +2505,6 @@
     (fp_text value UI_Fader (at 0 24) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -1 18) (end -1 -18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 18) (end -1 18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 -18) (end 1 18) (layer F.SilkS) (width 0.12))
@@ -2520,6 +2517,9 @@
     (fp_line (start 4.5 22.5) (end -4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 4.5 -22.5) (end 4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -22.5) (end 4.5 -22.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 7 thru_hole circle (at -4.25 17.6) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
       (net 161 "Net-(UI8-Pad7)"))
     (pad 6 thru_hole circle (at 4.25 16.4) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
@@ -2552,9 +2552,6 @@
     (fp_text value UI_Fader (at 0 24) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -1 18) (end -1 -18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 18) (end -1 18) (layer F.SilkS) (width 0.12))
     (fp_line (start 1 -18) (end 1 18) (layer F.SilkS) (width 0.12))
@@ -2567,6 +2564,9 @@
     (fp_line (start 4.5 22.5) (end -4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 4.5 -22.5) (end 4.5 22.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -22.5) (end 4.5 -22.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0.5 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 7 thru_hole circle (at -4.25 17.6) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
       (net 153 "Net-(UI6-Pad7)"))
     (pad 6 thru_hole circle (at 4.25 16.4) (size 2.8 2.8) (drill oval 0.6 1.5) (layers *.Cu *.Mask)
@@ -2600,9 +2600,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -2623,6 +2620,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -2646,9 +2646,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2664,6 +2661,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2691,9 +2691,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2709,6 +2706,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2736,9 +2736,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2754,6 +2751,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2781,9 +2781,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2799,6 +2796,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2826,9 +2826,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2844,6 +2841,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2871,9 +2871,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2889,6 +2886,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2916,9 +2916,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2934,6 +2931,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -2961,9 +2961,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -2979,6 +2976,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -3006,9 +3006,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -3024,6 +3021,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -3051,9 +3051,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -3069,6 +3066,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -3096,9 +3096,6 @@
     (fp_text value UI_WS2812C-2020 (at 0 2.25) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
     (fp_circle (center 0 0) (end 0.8 0) (layer F.Fab) (width 0.1))
     (fp_line (start -1.7 -1.4) (end -1.7 1.4) (layer F.CrtYd) (width 0.05))
     (fp_line (start -1.7 1.4) (end 1.7 1.4) (layer F.CrtYd) (width 0.05))
@@ -3114,6 +3111,9 @@
     (fp_line (start -1.45 1.15) (end 1.45 1.15) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.8 1.4) (end 1.7 1.4) (layer F.SilkS) (width 0.12))
     (fp_line (start 1.7 1.4) (end 1.7 0.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.075)))
+    )
     (pad 4 smd roundrect (at -0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at 0.9 0.55) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -3141,9 +3141,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3164,6 +3161,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3187,9 +3187,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3210,6 +3207,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3233,9 +3233,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3256,6 +3253,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3279,9 +3279,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3302,6 +3299,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3325,9 +3325,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3348,6 +3345,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3371,9 +3371,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3394,6 +3391,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3417,9 +3417,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3440,6 +3437,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3463,9 +3463,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3486,6 +3483,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3509,9 +3509,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3532,6 +3529,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3555,9 +3555,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3578,6 +3575,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3601,9 +3601,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -3624,6 +3621,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 178 +5V_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3645,9 +3645,6 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value SAMD51N20A (at 0 9.35) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -6.41 -7.11) (end -7.11 -7.11) (layer F.SilkS) (width 0.12))
@@ -3692,6 +3689,9 @@
     (fp_circle (center -5.5 -5.5) (end -5.25 -5.5) (layer F.SilkS) (width 0.5))
     (fp_poly (pts (xy -10 -6.5) (xy -9 -6) (xy -10 -5.5)) (layer F.SilkS) (width 0.1))
     (fp_circle (center 5 5) (end 6 5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 100 smd roundrect (at -6 -7.6625) (size 0.3 1.475) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 97 "Net-(U7-Pad100)"))
     (pad 99 smd roundrect (at -5.5 -7.6625) (size 0.3 1.475) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -3911,9 +3911,6 @@
     (fp_text value TestPoint (at 0 1.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.7 -0.7) (end 0.7 -0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 -0.7) (end 0.7 0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 0.7) (end -0.7 0.7) (layer F.SilkS) (width 0.12))
@@ -3922,6 +3919,9 @@
     (fp_line (start -1 -1) (end -1 1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end 1 -1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end -1 1) (layer F.CrtYd) (width 0.05))
+    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 1 thru_hole rect (at 0 0) (size 1 1) (drill 0.5) (layers *.Cu *.Mask)
       (net 20 +3V3_UC))
   )
@@ -3938,9 +3938,6 @@
     (fp_text value TestPoint (at 0 1.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.7 -0.7) (end 0.7 -0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 -0.7) (end 0.7 0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 0.7) (end -0.7 0.7) (layer F.SilkS) (width 0.12))
@@ -3949,6 +3946,9 @@
     (fp_line (start -1 -1) (end -1 1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end 1 -1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end -1 1) (layer F.CrtYd) (width 0.05))
+    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 1 thru_hole rect (at 0 0) (size 1 1) (drill 0.5) (layers *.Cu *.Mask)
       (net 20 +3V3_UC))
   )
@@ -3965,9 +3965,6 @@
     (fp_text value TestPoint (at 0 1.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.7 -0.7) (end 0.7 -0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 -0.7) (end 0.7 0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 0.7) (end -0.7 0.7) (layer F.SilkS) (width 0.12))
@@ -3976,6 +3973,9 @@
     (fp_line (start -1 -1) (end -1 1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end 1 -1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end -1 1) (layer F.CrtYd) (width 0.05))
+    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 1 thru_hole rect (at 0 0) (size 1 1) (drill 0.5) (layers *.Cu *.Mask)
       (net 20 +3V3_UC))
   )
@@ -3992,9 +3992,6 @@
     (fp_text value TestPoint (at 0 1.55) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.7 -0.7) (end 0.7 -0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 -0.7) (end 0.7 0.7) (layer F.SilkS) (width 0.12))
     (fp_line (start 0.7 0.7) (end -0.7 0.7) (layer F.SilkS) (width 0.12))
@@ -4003,6 +4000,9 @@
     (fp_line (start -1 -1) (end -1 1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end 1 -1) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 1) (end -1 1) (layer F.CrtYd) (width 0.05))
+    (fp_text user %R (at 0 -1.45) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 1 thru_hole rect (at 0 0) (size 1 1) (drill 0.5) (layers *.Cu *.Mask)
       (net 20 +3V3_UC))
   )
@@ -4018,9 +4018,6 @@
     )
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
@@ -4042,6 +4039,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4065,9 +4065,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4088,6 +4085,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4111,9 +4111,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4134,6 +4131,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4157,11 +4157,6 @@
     (fp_text value "600 Ohm @ 100MHz" (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 -0.2032) (end 0.0254 -0.4064) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4177,6 +4172,11 @@
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0762 0) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 -0.4064) (end 0.0254 -0.4064) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 -0.2032) (end 0.0254 -0.4064) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 20 +3V3_UC))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4200,9 +4200,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4223,6 +4220,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4246,9 +4246,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4269,6 +4266,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4292,9 +4292,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4315,6 +4312,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4338,9 +4338,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4361,6 +4358,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4384,9 +4384,6 @@
     (fp_text value 10u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4407,6 +4404,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4430,9 +4430,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4453,6 +4450,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4476,9 +4476,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4499,6 +4496,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4522,9 +4522,6 @@
     (fp_text value 1u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4545,6 +4542,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4568,9 +4568,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4591,6 +4588,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4614,9 +4614,6 @@
     (fp_text value 10u (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4637,6 +4634,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4659,12 +4659,12 @@
     (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5 180) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5 180) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0 180) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -4701,12 +4701,12 @@
     (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5 180) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5 180) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0 180) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -4744,9 +4744,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4767,6 +4764,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4790,9 +4790,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4813,6 +4810,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4836,9 +4836,6 @@
     (fp_text value 100n (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -4859,6 +4856,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4879,9 +4879,6 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value UI_Pushbutton_Omron (at 0 7) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
@@ -4906,6 +4903,9 @@
     (fp_line (start 4.5 -6) (end 6 -4.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -6) (end 4.5 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -6 -4.5) (end -4.5 -6) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 6 thru_hole circle (at 0 -4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
       (net 171 "Net-(UI32-Pad6)"))
     (pad 5 thru_hole circle (at 0 4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
@@ -4936,9 +4936,6 @@
     (fp_text value UI_Pushbutton_Omron (at 0 7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 5 2.5) (end 4 2.5) (layer F.SilkS) (width 0.12))
@@ -4961,6 +4958,9 @@
     (fp_line (start 4.5 -6) (end 6 -4.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -6) (end 4.5 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -6 -4.5) (end -4.5 -6) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 6 thru_hole circle (at 0 -4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
       (net 169 "Net-(UI31-Pad6)"))
     (pad 5 thru_hole circle (at 0 4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
@@ -4991,9 +4991,6 @@
     (fp_text value UI_Pushbutton_Omron (at 0 7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 5 2.5) (end 4 2.5) (layer F.SilkS) (width 0.12))
@@ -5016,6 +5013,9 @@
     (fp_line (start 4.5 -6) (end 6 -4.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -6) (end 4.5 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -6 -4.5) (end -4.5 -6) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 6 thru_hole circle (at 0 -4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
       (net 167 "Net-(UI30-Pad6)"))
     (pad 5 thru_hole circle (at 0 4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
@@ -5046,9 +5046,6 @@
     (fp_text value UI_Pushbutton_Omron (at 0 7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start 5 2.5) (end 4 2.5) (layer F.SilkS) (width 0.12))
@@ -5071,6 +5068,9 @@
     (fp_line (start 4.5 -6) (end 6 -4.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -4.5 -6) (end 4.5 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -6 -4.5) (end -4.5 -6) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 6 thru_hole circle (at 0 -4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
       (net 165 "Net-(UI29-Pad6)"))
     (pad 5 thru_hole circle (at 0 4.5 90) (size 2.4 2.4) (drill 1.8) (layers *.Cu *.Mask)
@@ -5101,13 +5101,6 @@
     (fp_text value UI_Potentiometer (at -0.04 9.493) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_circle (center -0.04 -0.007) (end 2.96 -0.007) (layer F.Fab) (width 0.12))
     (fp_line (start -3 -6) (end 3 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -4 -5) (end -4 -2) (layer F.SilkS) (width 0.12))
@@ -5119,6 +5112,13 @@
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -2.5 1.5) (end 2.5 1.5) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 5 thru_hole oval (at 4.5 0 180) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
       (net 147 "Net-(UI4-Pad5)"))
     (pad 4 thru_hole oval (at -4.5 0) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
@@ -5147,13 +5147,6 @@
     (fp_text value UI_Potentiometer (at -0.04 9.493) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_circle (center -0.04 -0.007) (end 2.96 -0.007) (layer F.Fab) (width 0.12))
     (fp_line (start -3 -6) (end 3 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -4 -5) (end -4 -2) (layer F.SilkS) (width 0.12))
@@ -5165,6 +5158,13 @@
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -2.5 1.5) (end 2.5 1.5) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 5 thru_hole oval (at 4.5 0 180) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
       (net 145 "Net-(UI3-Pad5)"))
     (pad 4 thru_hole oval (at -4.5 0) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
@@ -5193,13 +5193,6 @@
     (fp_text value UI_Potentiometer (at -0.04 9.493) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_circle (center -0.04 -0.007) (end 2.96 -0.007) (layer F.Fab) (width 0.12))
     (fp_line (start -3 -6) (end 3 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -4 -5) (end -4 -2) (layer F.SilkS) (width 0.12))
@@ -5211,6 +5204,13 @@
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -2.5 1.5) (end 2.5 1.5) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 5 thru_hole oval (at 4.5 0 180) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
       (net 143 "Net-(UI2-Pad5)"))
     (pad 4 thru_hole oval (at -4.5 0) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
@@ -5239,13 +5239,6 @@
     (fp_text value UI_Potentiometer (at -0.04 9.493) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
-    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_circle (center -0.04 -0.007) (end 2.96 -0.007) (layer F.Fab) (width 0.12))
     (fp_line (start -3 -6) (end 3 -6) (layer F.SilkS) (width 0.12))
     (fp_line (start -4 -5) (end -4 -2) (layer F.SilkS) (width 0.12))
@@ -5257,6 +5250,13 @@
     (fp_line (start -0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -0.5 -0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -2.5 1.5) (end 2.5 1.5) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 5) (end -4 5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 5) (end 3 6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 3 -5) (end 4 -5) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_arc (start -3 -5) (end -3 -6) (angle -90) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at -0.04 -0.007) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 5 thru_hole oval (at 4.5 0 180) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
       (net 141 "Net-(UI1-Pad5)"))
     (pad 4 thru_hole oval (at -4.5 0) (size 3.2 2.8) (drill 2.4 (offset 0.2 0)) (layers *.Cu *.Mask)
@@ -5286,10 +5286,6 @@
     (fp_text value 1k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5304,6 +5300,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 20 +3V3_UC))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5327,10 +5327,6 @@
     (fp_text value 1k (at 0 -1.65 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5345,6 +5341,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 20 +3V3_UC))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5368,10 +5368,6 @@
     (fp_text value 1k (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5386,6 +5382,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 2 /MCU/MAP_MODE))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5409,10 +5409,6 @@
     (fp_text value 1k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5427,6 +5423,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 86 /UI_LED/LED_DATA_IN))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5450,10 +5450,6 @@
     (fp_text value 1k (at 0 -1.65 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5468,6 +5464,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 35 /MCU/SYS_SWO))
     (pad 1 smd roundrect (at -0.9375 0) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5491,10 +5491,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5509,6 +5505,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 82 /ANA_15))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5532,10 +5532,6 @@
     (fp_text value 1k (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5550,6 +5546,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5573,10 +5573,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5591,6 +5587,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 80 /ANA_7))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5614,10 +5614,6 @@
     (fp_text value 1k (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5632,6 +5628,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 78 /ANA_3))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5655,10 +5655,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5673,6 +5669,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 81 /ANA_14))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5696,10 +5696,6 @@
     (fp_text value 1k (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5714,6 +5710,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5737,10 +5737,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5755,6 +5751,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 79 /ANA_6))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5778,10 +5778,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5796,6 +5792,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 77 /ANA_2))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5819,10 +5819,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5837,6 +5833,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 76 /ANA_13))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5860,10 +5860,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5878,6 +5874,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5901,10 +5901,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5919,6 +5915,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 74 /ANA_5))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5942,10 +5942,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -5960,6 +5956,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 72 /ANA_1))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5983,10 +5983,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6001,6 +5997,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 75 /ANA_12))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6024,10 +6024,6 @@
     (fp_text value 1k (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6042,6 +6038,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6065,10 +6065,6 @@
     (fp_text value 1k (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6083,6 +6079,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 73 /ANA_4))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6106,10 +6106,6 @@
     (fp_text value 1k (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6124,6 +6120,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 71 /ANA_0))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6147,10 +6147,6 @@
     (fp_text value 10k (at 0 -1.65 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6165,6 +6161,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 3 +3V3_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6188,10 +6188,6 @@
     (fp_text value 10k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6206,6 +6202,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 3 +3V3_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6229,10 +6229,6 @@
     (fp_text value 10k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6247,6 +6243,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 3 +3V3_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6270,10 +6270,6 @@
     (fp_text value 10k (at 0 -1.65) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6288,6 +6284,10 @@
     (fp_line (start -0.2032 0.4064) (end 0.0762 0.4064) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2032 0) (end 0.0254 0) (layer B.SilkS) (width 0.12))
     (fp_line (start 0.2286 -0.3302) (end 0 0) (layer B.SilkS) (width 0.12))
+    (fp_arc (start 0.0254 0.2032) (end 0.0254 0) (angle 180) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 3 +3V3_UI))
     (pad 1 smd roundrect (at -0.9375 0 180) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6310,12 +6310,12 @@
     (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5 270) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5 270) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0 270) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -6352,12 +6352,12 @@
     (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5 270) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5 270) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0 270) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -6394,12 +6394,12 @@
     (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -6436,12 +6436,12 @@
     (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -6478,12 +6478,12 @@
     (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5 90) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5 90) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0 90) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -6520,12 +6520,12 @@
     (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
-      (effects (font (size 0.76 0.76) (thickness 0.114)))
-    )
     (fp_line (start 7 -2.5) (end 7 0.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 -2.5) (end 7 -2.5) (layer F.SilkS) (width 0.12))
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
+      (effects (font (size 0.76 0.76) (thickness 0.114)))
+    )
     (pad "" thru_hole rect (at -5.5 0.5 90) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad "" thru_hole rect (at 5.5 0.5 90) (size 2.5 2.5) (drill 1) (layers *.Cu *.Mask))
     (pad 1 thru_hole oval (at 3.5 0 90) (size 0.8 2) (drill oval 0.5 1.3) (layers *.Cu *.Mask)
@@ -6562,9 +6562,6 @@
     (fp_text value N.F. (at 0.635 6.775 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.635 2.54) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
     (fp_line (start -0.2175 -0.635) (end 2.34 -0.635) (layer F.Fab) (width 0.1))
     (fp_line (start 2.34 -0.635) (end 2.34 5.715) (layer F.Fab) (width 0.1))
     (fp_line (start 2.34 5.715) (end -1.07 5.715) (layer F.Fab) (width 0.1))
@@ -6587,6 +6584,9 @@
     (fp_line (start -1.6 6.25) (end 2.85 6.25) (layer F.CrtYd) (width 0.05))
     (fp_line (start 2.85 6.25) (end 2.85 -1.15) (layer F.CrtYd) (width 0.05))
     (fp_line (start 2.85 -1.15) (end -1.6 -1.15) (layer F.CrtYd) (width 0.05))
+    (fp_text user %R (at 0.635 2.54) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
     (pad 10 thru_hole oval (at 1.27 5.08 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask)
       (net 34 /MCU/SYS_RESET))
     (pad 9 thru_hole oval (at 0 5.08 270) (size 1 1) (drill 0.65) (layers *.Cu *.Mask)
@@ -6626,9 +6626,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6649,6 +6646,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6672,9 +6672,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6695,6 +6692,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6718,9 +6718,6 @@
     (fp_text value 100n (at 0 -1.65 -90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 -90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6741,6 +6738,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 -90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6764,9 +6764,6 @@
     (fp_text value 100n (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6787,6 +6784,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6810,9 +6810,6 @@
     (fp_text value 100n (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6833,6 +6830,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6856,9 +6856,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6879,6 +6876,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6902,9 +6902,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6925,6 +6922,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6948,9 +6948,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -6971,6 +6968,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -6994,9 +6994,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7017,6 +7014,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7040,9 +7040,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7063,6 +7060,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7086,9 +7086,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7109,6 +7106,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7132,9 +7132,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7155,6 +7152,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7178,9 +7178,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7201,6 +7198,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7224,9 +7224,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7247,6 +7244,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 90) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7270,9 +7270,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7293,6 +7290,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7316,9 +7316,6 @@
     (fp_text value 100n (at 0 -1.65 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7339,6 +7336,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -7362,9 +7362,6 @@
     (fp_text value 100n (at 0 -1.65 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
-    )
     (fp_line (start -1 -0.6) (end -1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start -1 0.6) (end 1 0.6) (layer B.Fab) (width 0.1))
     (fp_line (start 1 0.6) (end 1 -0.6) (layer B.Fab) (width 0.1))
@@ -7385,6 +7382,9 @@
     (fp_line (start -0.0508 -0.381) (end -0.1778 -0.2794) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.1778 -0.2794) (end -0.2286 -0.127) (layer B.SilkS) (width 0.12))
     (fp_line (start -0.2286 -0.127) (end -0.254 0) (layer B.SilkS) (width 0.12))
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
+      (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
+    )
     (pad 2 smd roundrect (at 0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 1 smd roundrect (at -0.9375 0 270) (size 0.975 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)

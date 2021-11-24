@@ -41,7 +41,7 @@ F 3 "" H 2200 2500 50  0001 C CNN
 	1    2200 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 2000 2400 3    50   Input ~ 0
+Text HLabel 2000 2400 3    50   UnSpc ~ 0
 OUT_0
 Wire Wire Line
 	2000 2400 2000 2300
@@ -79,7 +79,7 @@ F 3 "" H 3200 2500 50  0001 C CNN
 	1    3200 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 3000 2400 3    50   Input ~ 0
+Text HLabel 3000 2400 3    50   UnSpc ~ 0
 OUT_1
 Wire Wire Line
 	3000 2400 3000 2300
@@ -117,7 +117,7 @@ F 3 "" H 4200 2500 50  0001 C CNN
 	1    4200 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 4000 2400 3    50   Input ~ 0
+Text HLabel 4000 2400 3    50   UnSpc ~ 0
 OUT_2
 Wire Wire Line
 	4000 2400 4000 2300
@@ -155,7 +155,7 @@ F 3 "" H 5200 2500 50  0001 C CNN
 	1    5200 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 5000 2400 3    50   Input ~ 0
+Text HLabel 5000 2400 3    50   UnSpc ~ 0
 OUT_3
 Wire Wire Line
 	5000 2400 5000 2300
@@ -250,7 +250,7 @@ Wire Wire Line
 	1700 4400 1600 4400
 Wire Wire Line
 	1600 4400 1600 4500
-Text HLabel 1400 4500 3    50   Input ~ 0
+Text HLabel 1400 4500 3    50   UnSpc ~ 0
 OUT_4
 Wire Wire Line
 	1400 4500 1400 4300
@@ -297,7 +297,7 @@ Wire Wire Line
 	2700 4400 2600 4400
 Wire Wire Line
 	2600 4400 2600 4500
-Text HLabel 2400 4500 3    50   Input ~ 0
+Text HLabel 2400 4500 3    50   UnSpc ~ 0
 OUT_5
 Wire Wire Line
 	2400 4500 2400 4300
@@ -344,7 +344,7 @@ Wire Wire Line
 	3700 4400 3600 4400
 Wire Wire Line
 	3600 4400 3600 4500
-Text HLabel 3400 4500 3    50   Input ~ 0
+Text HLabel 3400 4500 3    50   UnSpc ~ 0
 OUT_6
 Wire Wire Line
 	3400 4500 3400 4300
@@ -391,13 +391,13 @@ Wire Wire Line
 	4700 4400 4600 4400
 Wire Wire Line
 	4600 4400 4600 4500
-Text HLabel 4400 4500 3    50   Input ~ 0
+Text HLabel 4400 4500 3    50   UnSpc ~ 0
 OUT_7
 Wire Wire Line
 	4400 4500 4400 4300
 Wire Wire Line
 	4400 4300 4700 4300
-Text HLabel 1400 5500 3    50   Input ~ 0
+Text HLabel 1400 5500 3    50   UnSpc ~ 0
 OUT_8
 $Comp
 L power:GND #PWR025
@@ -416,7 +416,7 @@ Wire Wire Line
 	1400 5400 1700 5400
 Wire Wire Line
 	1700 5400 1700 5500
-Text HLabel 2400 5500 3    50   Input ~ 0
+Text HLabel 2400 5500 3    50   UnSpc ~ 0
 OUT_9
 $Comp
 L power:GND #PWR026
@@ -435,7 +435,7 @@ Wire Wire Line
 	2400 5400 2700 5400
 Wire Wire Line
 	2700 5400 2700 5500
-Text HLabel 3400 5500 3    50   Input ~ 0
+Text HLabel 3400 5500 3    50   UnSpc ~ 0
 OUT_10
 $Comp
 L power:GND #PWR027
@@ -454,7 +454,7 @@ Wire Wire Line
 	3400 5400 3700 5400
 Wire Wire Line
 	3700 5400 3700 5500
-Text HLabel 4400 5500 3    50   Input ~ 0
+Text HLabel 4400 5500 3    50   UnSpc ~ 0
 OUT_11
 $Comp
 L power:GND #PWR028
