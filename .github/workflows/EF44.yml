@@ -55,7 +55,11 @@ jobs:
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        content: "Hello, your files are ready!"
-        filename: | 
-          "EF44_${{ env.action_date }}.zip"
-          "Electrical/Design/EF44/EF44/kibot_error.log"
+        content: "Heyo, fresh PCB files are ready!"
+        filename: "EF44_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Don't forget to check the kibot report!"
+        filename: "Electrical/Design/EF44/EF44/kibot_error.log"
