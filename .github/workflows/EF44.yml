@@ -20,76 +20,18 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  ERC:
-    runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:latest"
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Run ERC
-      run: |
-        make -C Electrical/Design/EF44/EF44 erc
-
-    - name: Retrieve results
-      uses: actions/upload-artifact@v1
-      with:
-        name: ERC_Output
-        path: 'Electrical/Design/EF44/EF44/mfg-bot'
-
-  DRC:
-    runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:latest"
-    needs: ERC
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Run DRC
-      run: |
-        make -C Electrical/Design/EF44/EF44 drc
-
-    - name: Retrieve results
-      uses: actions/upload-artifact@v1
-      with:
-        name: DRC_Output
-        path: 'Electrical/Design/EF44/EF44/mfg-bot'
-
-  FabSch:
-    name: Schematic fabrication files
-    runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:latest"
-    needs: ERC
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Run schematic stuff
-      run: |
-        make -C Electrical/Design/EF44/EF44 sch_fab
-
-    - name: Retrieve results
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v2
-      with:
-        name: FabSch_Output
-        path: |
-          Electrical/Design/EF44/EF44/mfg-bot/
-          Electrical/Design/EF44/EF44/kibot_error.log
-        if-no-files-found: warn
 
   FabPCB:
     name: PCB fabrication files
     runs-on: ubuntu-latest
     container: "setsoft/kicad_auto:latest"
-    needs: DRC
 
     steps:
     - uses: actions/checkout@v2
 
     - name: Run PCB stuff
       run: |
-        make -C Electrical/Design/EF44/EF44 pcb_fab
+        make -C Electrical/Design/EF44/EF44
 
     - name: Retrieve results
       if: ${{ always() }}
