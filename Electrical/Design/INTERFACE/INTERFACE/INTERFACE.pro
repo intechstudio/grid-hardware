@@ -1,4 +1,4 @@
-update=2021. aug. 24., kedd, 15:14:02 CEST
+update=2021. dec. 3., péntek, 15:42:50 CET
 version=1
 last_client=kicad
 [general]
@@ -31,7 +31,7 @@ BoardThickness=1
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
-ProhibitOverlappingCourtyards=1
+ProhibitOverlappingCourtyards=0
 MinTrackWidth=0.15
 MinViaDiameter=0.254
 MinViaDrill=0.3
@@ -73,7 +73,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
