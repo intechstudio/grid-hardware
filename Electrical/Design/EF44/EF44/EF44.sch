@@ -87,4 +87,10 @@ Wire Wire Line
 	9000 6500 8000 6500
 Wire Wire Line
 	8000 6700 9000 6700
+Wire Wire Line
+	9000 6800 8700 6800
+Wire Wire Line
+	9000 6900 8700 6900
+NoConn ~ 8700 6800
+NoConn ~ 8700 6900
 $EndSCHEMATC
