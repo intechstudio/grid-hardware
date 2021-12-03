@@ -535,7 +535,7 @@ AR Path="/5D7C8BFE/5DB28C51" Ref="U1"  Part="1"
 AR Path="/5D8763E1/5DB28C51" Ref="U2"  Part="1" 
 F 0 "U2" H 6544 4246 50  0000 L CNN
 F 1 "74HC4051" H 6544 4155 50  0000 L CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm" H 6000 4200 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC4051" H 6000 4200 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 6000 4200 50  0001 C CNN
 	1    6000 4200
 	1    0    0    -1  
