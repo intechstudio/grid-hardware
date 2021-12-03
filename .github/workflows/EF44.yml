@@ -3,6 +3,7 @@ name: "KiCad CI/CD for EF44"
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'Electrical/Design/EF44/EF44/*.sch'
