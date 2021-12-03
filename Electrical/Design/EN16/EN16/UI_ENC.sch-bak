@@ -37,7 +37,7 @@ U 1 1 5D735511
 P -2000 900
 F 0 "U1" H -2400 1800 50  0000 C CNN
 F 1 "74HC165" H -2300 1700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H -2000 900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H -2000 900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 900 50  0001 C CNN
 	1    -2000 900 
 	1    0    0    -1  
@@ -128,7 +128,7 @@ U 1 1 5D7A3724
 P 2000 900
 F 0 "U2" H 1600 1800 50  0000 C CNN
 F 1 "74HC165" H 1700 1700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 2000 900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H 2000 900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 900 50  0001 C CNN
 	1    2000 900 
 	1    0    0    -1  
@@ -225,7 +225,7 @@ U 1 1 5D72D302
 P -2000 3900
 F 0 "U9" H -2400 4800 50  0000 C CNN
 F 1 "74HC165" H -2300 4700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H -2000 3900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H -2000 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 3900 50  0001 C CNN
 	1    -2000 3900
 	1    0    0    -1  
@@ -316,7 +316,7 @@ U 1 1 5D7563D1
 P 2000 3900
 F 0 "U10" H 1600 4800 50  0000 C CNN
 F 1 "74HC165" H 1700 4700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 2000 3900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H 2000 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 3900 50  0001 C CNN
 	1    2000 3900
 	1    0    0    -1  
@@ -407,7 +407,7 @@ U 1 1 5D76404B
 P -2000 6900
 F 0 "U11" H -2400 7800 50  0000 C CNN
 F 1 "74HC165" H -2300 7700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H -2000 6900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H -2000 6900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 6900 50  0001 C CNN
 	1    -2000 6900
 	1    0    0    -1  
@@ -506,7 +506,7 @@ U 1 1 5D771897
 P 2000 6900
 F 0 "U12" H 1600 7800 50  0000 C CNN
 F 1 "74HC165" H 1700 7700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 2000 6900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H 2000 6900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 6900 50  0001 C CNN
 	1    2000 6900
 	1    0    0    -1  
@@ -605,7 +605,7 @@ U 1 1 5D77F48D
 P -2000 9900
 F 0 "U13" H -2400 10800 50  0000 C CNN
 F 1 "74HC165" H -2300 10700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H -2000 9900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H -2000 9900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H -2000 9900 50  0001 C CNN
 	1    -2000 9900
 	1    0    0    -1  
@@ -704,7 +704,7 @@ U 1 1 5D77F4C2
 P 2000 9900
 F 0 "U14" H 1600 10800 50  0000 C CNN
 F 1 "74HC165" H 1700 10700 50  0000 C CNN
-F 2 "suku_basics:SOIC-16_3.9x9.9mm_P1.27mm(rot90)" H 2000 9900 50  0001 C CNN
+F 2 "suku_basics:SOIC-16_74HC165" H 2000 9900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2000 9900 50  0001 C CNN
 	1    2000 9900
 	1    0    0    -1  
