@@ -42,6 +42,12 @@ jobs:
         ls
         FreeCADCmd "macro.py"
         
+    - uses: actions/checkout@v2
+    - name: Export svg files
+      run: |
+        python3 .github/workflows/layer2svg.py Mechanical/Design/Frontpanel/frontpanel_laser.svg
+        cp Mechanical/Design/Frontpanel/frontpanel_laser/*.svg temp   
+
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
       
