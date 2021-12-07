@@ -46,7 +46,9 @@ jobs:
       run: |
         python3 .github/workflows/layer2svg.py Mechanical/Design/Frontpanel/frontpanel_laser.svg
         ls
-        cp Mechanical/Design/Frontpanel/frontpanel_laser/*.svg ./temp   
+        cp Mechanical/Design/Frontpanel/frontpanel_laser/*.svg ./temp
+        ls
+        python3 .github/workflows/dxf_outlines.py -h
 
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
