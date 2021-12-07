@@ -46,6 +46,7 @@ jobs:
     - name: Export svg files
       run: |
         python3 .github/workflows/layer2svg.py Mechanical/Design/Frontpanel/frontpanel_laser.svg
+        ls
         cp Mechanical/Design/Frontpanel/frontpanel_laser/*.svg ./temp   
 
     - name: Set Date
