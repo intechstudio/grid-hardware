@@ -827,9 +827,6 @@ $EndComp
 Wire Wire Line
 	2100 5500 2100 5400
 Wire Wire Line
-	2100 5100 2500 5100
-Connection ~ 2100 5100
-Wire Wire Line
 	1800 5100 1700 5100
 Wire Wire Line
 	1700 5100 1700 4100
@@ -923,9 +920,6 @@ $EndComp
 Wire Wire Line
 	5100 5500 5100 5400
 Wire Wire Line
-	5100 5100 5500 5100
-Connection ~ 5100 5100
-Wire Wire Line
 	4800 5100 4700 5100
 Wire Wire Line
 	4700 5100 4700 4100
@@ -979,13 +973,6 @@ Wire Wire Line
 	2500 5400 2400 5400
 Connection ~ 2400 5400
 Wire Wire Line
-	2400 5400 2400 5500
-Wire Wire Line
-	2500 5500 2400 5500
-Connection ~ 2400 5500
-Wire Wire Line
-	2400 5500 2400 5600
-Wire Wire Line
 	2500 5600 2400 5600
 Connection ~ 2400 5600
 Wire Wire Line
@@ -1011,15 +998,8 @@ Connection ~ 5400 5400
 Wire Wire Line
 	5400 5400 5400 5300
 Wire Wire Line
-	5500 5500 5400 5500
-Connection ~ 5400 5500
-Wire Wire Line
-	5400 5500 5400 5400
-Wire Wire Line
 	5500 5600 5400 5600
 Connection ~ 5400 5600
-Wire Wire Line
-	5400 5600 5400 5500
 Wire Wire Line
 	5500 5700 5400 5700
 Connection ~ 5400 5700
@@ -1027,4 +1007,24 @@ Wire Wire Line
 	5400 5700 5400 5600
 Text Label 7600 1200 0    50   ~ 0
 DATA
+Wire Wire Line
+	5400 5600 5400 5500
+Wire Wire Line
+	5400 5500 5400 5400
+Connection ~ 5400 5500
+Wire Wire Line
+	5500 5500 5400 5500
+Connection ~ 5100 5100
+Wire Wire Line
+	5100 5100 5500 5100
+Wire Wire Line
+	2400 5500 2400 5600
+Wire Wire Line
+	2400 5400 2400 5500
+Connection ~ 2400 5500
+Wire Wire Line
+	2500 5500 2400 5500
+Connection ~ 2100 5100
+Wire Wire Line
+	2100 5100 2500 5100
 $EndSCHEMATC
