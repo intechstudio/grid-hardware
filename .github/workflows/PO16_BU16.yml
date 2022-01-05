@@ -48,7 +48,7 @@ jobs:
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
       
     - name: Zipping artifacts      
-      uses: papeloto/action-zip@v1
+      uses: vimtor/action-zip@v1
       with:
         files: Electrical/Design/PO16_BU16/PO16_BU16/mfg-bot/
         dest: "PO16_BU16_${{ env.action_date }}.zip"
