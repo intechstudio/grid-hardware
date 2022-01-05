@@ -1,0 +1,66 @@
+name: "KiCad CI/CD for XY"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Electrical/Design/XY/XY/*.sch'
+      - 'Electrical/Design/XY/XY/*.kicad_pcb'
+      - 'Electrical/Design/XY/XY/*.kibot.yaml'
+      - 'Electrical/Design/XY/XY/Makefile'
+      - '.github/workflows/XY.yml'
+  pull_request:
+    paths:
+      - 'Electrical/Design/XY/XY/*.sch'
+      - 'Electrical/Design/XY/XY/*.kicad_pcb'
+      - 'Electrical/Design/XY/XY/*.kibot.yaml'
+      - 'Electrical/Design/XY/XY/Makefile'
+      - '.github/workflows/XY.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  FabPCB:
+    name: PCB fabrication files
+    runs-on: ubuntu-latest
+    container: "setsoft/kicad_auto:latest"
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run PCB stuff
+      run: |
+        make -C Electrical/Design/XY/XY
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: FabPCB_Output
+        path: |
+          Electrical/Design/XY/XY/mfg-bot/
+          Electrical/Design/XY/XY/kibot_error.log
+        if-no-files-found: warn
+        
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+      
+    - name: Zipping artifacts      
+      uses: papeloto/action-zip@v1
+      with:
+        files: Electrical/Design/XY/XY/mfg-bot/
+        dest: "XY_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Heyo, fresh PCB files are ready!"
+        filename: "XY_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Don't forget to check the kibot report!"
+        filename: "Electrical/Design/XY/XY/kibot_error.log"
