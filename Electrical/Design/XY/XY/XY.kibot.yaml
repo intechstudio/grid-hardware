@@ -68,11 +68,12 @@ outputs:
       - layer: B.Cu
       - layer: Dwgs.User
 
-  - name: 'bom_html'
-    comment: "Bill of Materials in HTML format"
+  - name: 'bom_csv'
+    comment: "Bill of Materials in CSV format"
     type: bom
     dir: mfg
     options: &bom_options
+      format: CSV
       columns:
         - field: References
           name: Designator
@@ -85,22 +86,18 @@ outputs:
       dnf_filter: 'exclude_any'
       exclude_filter: 'exclude_any'
       ref_separator: ','
-      html:
-        logo: '../images/inti.png'
-        digikey_link: 'digikey#'
-        highlight_empty: false
       csv:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: true
 
-  - name: 'bom_csv'
-    comment: "Bill of Materials in CSV format"
-    type: bom
+  - name: 'ibom'
+    comment: "Bill of Materials in HTML format"
+    type: ibom
     dir: mfg
     options:
-      <<: *bom_options
-      format: CSV
+      dnf_filter: 'exclude_any'
+      exclude_filter: 'exclude_any'
 
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
