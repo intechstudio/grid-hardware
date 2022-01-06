@@ -19,6 +19,8 @@ filters:
     exclude_any:
       - column: Reference
         regex: '^(G|#|TP).*'
+      - column: Value
+        regex: '^.*(\(NF\)).*'
 
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
