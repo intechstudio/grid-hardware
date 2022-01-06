@@ -25,12 +25,13 @@ filters:
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
     type: rot_footprint
+    invert_bottom: true
     rotations:
-      - ["SOIC-16_74HC165", 90.0]
-      - ["SOIC-16_74HC4051", 90.0]
+      - ["SOIC-16_74HC165", 270.0]
+      - ["SOIC-16_74HC4051", 270.0]
       - ["SOT-23-5", 180.0]
       - ["SOT-23-6", 180.0]
-      - ["SOIC-8W_FLASH", 90.0]
+      - ["SOIC-8W_FLASH", 270.0]
 
 variants:
   - name: rotated
@@ -167,7 +168,7 @@ outputs:
       variant: rotated
       format: CSV   # CSV or ASCII format
       units: millimeters  # millimeters or inches
-      separate_files_for_front_and_back: true
+      separate_files_for_front_and_back: false
       only_smd: true
       columns:
         - id: Ref
