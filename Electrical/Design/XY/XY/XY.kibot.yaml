@@ -81,6 +81,7 @@ outputs:
           name: Comment
         - field: Footprint
           name: Footprint
+      dnf_filter: 'exclude_any'
       exclude_filter: 'exclude_any'
       ref_separator: ','
       html:
@@ -162,6 +163,7 @@ outputs:
     type: position
     dir: mfg
     options:
+      dnf_filter: 'exclude_any'
       variant: rotated
       format: CSV   # CSV or ASCII format
       units: millimeters  # millimeters or inches
