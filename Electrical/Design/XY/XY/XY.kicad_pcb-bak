@@ -178,6 +178,9 @@
     (add_net /MCU/MAP_MODE)
     (add_net /MCU/MUX_ADDRESS_A)
     (add_net /MCU/MUX_ADDRESS_B)
+    (add_net /MCU/MUX_ADDRESS_C)
+    (add_net /MCU/MUX_OUT_1)
+    (add_net /MCU/MUX_OUT_2)
     (add_net /MCU/QSPI_IO_0)
     (add_net /MCU/QSPI_IO_1)
     (add_net /MCU/QSPI_IO_2)
@@ -192,6 +195,10 @@
     (add_net /MCU/Sheet60FB6C45/USB_CC1)
     (add_net /MCU/Sheet60FB6C45/USB_CC2)
     (add_net /MCU/UI_PWR_EN)
+    (add_net /MCU/UI_SPI_CS)
+    (add_net /MCU/UI_SPI_MISO)
+    (add_net /MCU/UI_SPI_MOSI)
+    (add_net /MCU/UI_SPI_SCK)
     (add_net /UI_LED/DBG_CLK)
     (add_net /UI_LED/DBG_DATA)
     (add_net /UI_LED/DBG_SS)
@@ -203,10 +210,73 @@
     (add_net "Net-(C37-Pad1)")
     (add_net "Net-(C38-Pad1)")
     (add_net "Net-(C49-Pad1)")
+    (add_net "Net-(J1-PadA8)")
+    (add_net "Net-(J1-PadB8)")
+    (add_net "Net-(J1-PadS3)")
+    (add_net "Net-(J1-PadS4)")
     (add_net "Net-(JP2-Pad1)")
+    (add_net "Net-(M1-Pad1)")
+    (add_net "Net-(M1-Pad2)")
+    (add_net "Net-(M1-Pad3)")
+    (add_net "Net-(M1-Pad4)")
+    (add_net "Net-(M1-Pad5)")
+    (add_net "Net-(M1-Pad6)")
+    (add_net "Net-(M1-Pad7)")
+    (add_net "Net-(M1-Pad8)")
     (add_net "Net-(R111-Pad1)")
     (add_net "Net-(R40-Pad1)")
     (add_net "Net-(R41-Pad1)")
+    (add_net "Net-(U15-Pad12)")
+    (add_net "Net-(U15-Pad13)")
+    (add_net "Net-(U16-Pad12)")
+    (add_net "Net-(U16-Pad13)")
+    (add_net "Net-(U3-Pad7)")
+    (add_net "Net-(U4-Pad4)")
+    (add_net "Net-(U4-Pad6)")
+    (add_net "Net-(U5-Pad4)")
+    (add_net "Net-(U6-Pad4)")
+    (add_net "Net-(U7-Pad1)")
+    (add_net "Net-(U7-Pad10)")
+    (add_net "Net-(U7-Pad100)")
+    (add_net "Net-(U7-Pad13)")
+    (add_net "Net-(U7-Pad17)")
+    (add_net "Net-(U7-Pad18)")
+    (add_net "Net-(U7-Pad19)")
+    (add_net "Net-(U7-Pad2)")
+    (add_net "Net-(U7-Pad21)")
+    (add_net "Net-(U7-Pad22)")
+    (add_net "Net-(U7-Pad23)")
+    (add_net "Net-(U7-Pad3)")
+    (add_net "Net-(U7-Pad34)")
+    (add_net "Net-(U7-Pad4)")
+    (add_net "Net-(U7-Pad40)")
+    (add_net "Net-(U7-Pad45)")
+    (add_net "Net-(U7-Pad46)")
+    (add_net "Net-(U7-Pad47)")
+    (add_net "Net-(U7-Pad48)")
+    (add_net "Net-(U7-Pad49)")
+    (add_net "Net-(U7-Pad52)")
+    (add_net "Net-(U7-Pad53)")
+    (add_net "Net-(U7-Pad54)")
+    (add_net "Net-(U7-Pad55)")
+    (add_net "Net-(U7-Pad6)")
+    (add_net "Net-(U7-Pad64)")
+    (add_net "Net-(U7-Pad65)")
+    (add_net "Net-(U7-Pad66)")
+    (add_net "Net-(U7-Pad67)")
+    (add_net "Net-(U7-Pad7)")
+    (add_net "Net-(U7-Pad78)")
+    (add_net "Net-(U7-Pad79)")
+    (add_net "Net-(U7-Pad8)")
+    (add_net "Net-(U7-Pad83)")
+    (add_net "Net-(U7-Pad84)")
+    (add_net "Net-(U7-Pad87)")
+    (add_net "Net-(U7-Pad9)")
+    (add_net "Net-(U7-Pad91)")
+    (add_net "Net-(U7-Pad96)")
+    (add_net "Net-(U7-Pad97)")
+    (add_net "Net-(U7-Pad98)")
+    (add_net "Net-(U7-Pad99)")
   )
 
   (net_class USB2.0 ""
@@ -310,7 +380,7 @@
     (fp_text reference M1 (at 0 0.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value "(NF)" (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -50 -44) (end -48.5 -45.5) (layer Dwgs.User) (width 0.12))
@@ -355,7 +425,7 @@
     (fp_text reference J3 (at 0 -2.33) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x03 (at 0 7.41) (layer F.Fab) hide
+    (fp_text value "(NF)" (at 0 7.41) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.8 -1.8) (end -1.8 -1.8) (layer F.CrtYd) (width 0.05))
@@ -524,7 +594,7 @@
     (fp_text reference J13 (at 0 -2.61) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x10 (at 0 5.39) (layer F.Fab) hide
+    (fp_text value "C262716 (NF)" (at 0 5.39) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 8.8 -1.91) (end -8.8 -1.91) (layer F.CrtYd) (width 0.05))
@@ -602,7 +672,7 @@
     (fp_text reference J12 (at 0 -2.61) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x10 (at 0 5.39) (layer F.Fab) hide
+    (fp_text value C262716 (at 0 5.39) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 8.8 -1.91) (end -8.8 -1.91) (layer F.CrtYd) (width 0.05))
@@ -1019,7 +1089,7 @@
     (fp_text reference J2 (at 0.635 -1.695 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value N.F. (at 0.635 6.775 90) (layer F.Fab) hide
+    (fp_text value "(NF)" (at 0.635 6.775 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 2.85 -1.15) (end -1.6 -1.15) (layer F.CrtYd) (width 0.05))
@@ -1321,7 +1391,7 @@
     (fp_text reference JP2 (at 0 -1.8 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "N.F. Solder Jumper" (at 0 1.9 90) (layer F.Fab) hide
+    (fp_text value "(NF)" (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.65 1.25) (end -1.65 1.25) (layer F.CrtYd) (width 0.05))
@@ -1707,7 +1777,7 @@
     (fp_text reference U15 (at 0 2.55) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value FUSB302BMPX (at 0 -2.55) (layer B.Fab) hide
+    (fp_text value "FUSB302BMPX (NF)" (at 0 -2.55) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 1.85 1.85) (end -1.85 1.85) (layer B.CrtYd) (width 0.05))
@@ -2030,7 +2100,7 @@
     (fp_text reference R107 (at 0 -1.65 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "5k1 (NF)" (at 0 1.65 90) (layer F.Fab) hide
+    (fp_text value 5k1 (at 0 1.65 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.2286 0.3302) (end 0 0) (layer F.SilkS) (width 0.12))
@@ -2071,7 +2141,7 @@
     (fp_text reference R37 (at 0 -1.65 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "5k1 (NF)" (at 0 1.65 90) (layer F.Fab) hide
+    (fp_text value 5k1 (at 0 1.65 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.2286 0.3302) (end 0 0) (layer F.SilkS) (width 0.12))
@@ -2572,7 +2642,7 @@
     (fp_text reference J4 (at 0 -3.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -2614,7 +2684,7 @@
     (fp_text reference SW1 (at -7.62 -7.62) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_SPST (at -5.08 10.16) (layer F.Fab) hide
+    (fp_text value C255807 (at -5.08 10.16) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at -7.62 -7.62) (layer F.Fab) hide
@@ -3345,7 +3415,7 @@
     (fp_text reference J11 (at 0 -3.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -3387,7 +3457,7 @@
     (fp_text reference J10 (at 0 -3.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -3680,7 +3750,7 @@
     (fp_text reference J9 (at 0 -3.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -3722,7 +3792,7 @@
     (fp_text reference J7 (at 0 -3.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -3764,7 +3834,7 @@
     (fp_text reference J5 (at 0 -3.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -3806,7 +3876,7 @@
     (fp_text reference J8 (at 0 -3.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
@@ -3848,7 +3918,7 @@
     (fp_text reference J6 (at 0 -3.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 3.5 90) (layer F.Fab) hide
+    (fp_text value "C20110 (NF)" (at 0 3.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7 0.5) (end -7 -2.5) (layer F.SilkS) (width 0.12))
