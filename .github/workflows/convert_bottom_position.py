@@ -2,8 +2,7 @@ import csv
 import sys
 
 if len(sys.argv) != 3:
-  print 'Invalid Number of arguments:', len(sys.argv), 'arguments.'
-  print 'Argument List:', str(sys.argv)
+  print 'Invalid Number of arguments'
   quit()
 
 input_file = open(sys.argv[1])
