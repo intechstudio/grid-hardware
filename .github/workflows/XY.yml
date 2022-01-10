@@ -46,6 +46,11 @@ jobs:
         
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+
+    - name: Convert position file
+      run: |
+        python3 .github/workflows/convert_bottom_position.py Electrical/Design/XY/XY/mfg-bot/XY-both_pos.csv Electrical/Design/XY/XY/mfg-bot/XY-both_pos_fixed.csv
+        rm Electrical/Design/XY/XY/mfg-bot/XY-both_pos.csv
       
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
