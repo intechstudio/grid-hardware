@@ -1,12 +1,17 @@
 import csv
 import sys
+import os
 
 if len(sys.argv) != 3:
   print('Invalid Number of arguments')
   quit()
 
-input_file = open(sys.argv[1])
-output_file = open(sys.argv[2], 'w')
+script_dir = os.path.dirname(__file__)
+abs_file_path_input = os.path.join(script_dir, sys.argv[1])
+abs_file_path_output = os.path.join(script_dir, sys.argv[2])
+
+input_file = open(abs_file_path_input)
+output_file = open(abs_file_path_output, 'w')
 
 startwriter = csv.writer(output_file)
 
