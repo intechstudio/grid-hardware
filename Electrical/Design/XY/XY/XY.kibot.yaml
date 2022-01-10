@@ -25,8 +25,10 @@ filters:
   - name: fix_rotation_bottom
     comment: 'Adjust rotation for JLC'
     type: rot_footprint
+    skip_top: true
+    negative_bottom: true
     rotations:
-      - ["SOIC-16_74HC165", 90.0]
+      - ["SOIC-16_74HC165", 180.0]
       - ["SOIC-16_74HC4051", 90.0]
       - ["SOT-23-5", 180.0]
       - ["SOT-23-6", 180.0]
@@ -35,8 +37,9 @@ filters:
   - name: fix_rotation_top
     comment: 'Adjust rotation for JLC'
     type: rot_footprint
+    skip_bottom: true
     rotations:
-      - ["SOIC-16_74HC165", 90.0]
+      - ["SOIC-16_74HC165", 180.0]
       - ["SOIC-16_74HC4051", 90.0]
       - ["SOT-23-5", 180.0]
       - ["SOT-23-6", 180.0]
