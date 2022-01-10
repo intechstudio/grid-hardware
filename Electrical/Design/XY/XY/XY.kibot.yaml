@@ -25,7 +25,7 @@ filters:
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
     type: rot_footprint
-    negative_bottom: true
+    negative_bottom: false
     rotations:
       - ["SOIC-16_74HC165", 90.0]
       - ["SOIC-16_74HC4051", 90.0]
@@ -74,7 +74,9 @@ outputs:
     dir: mfg
     options: &bom_options
       format: CSV
-      columns:
+      columns:        
+        - field: Quantity Per PCB
+          name: Qty
         - field: References
           name: Designator
         - field: Part
