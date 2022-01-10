@@ -75,7 +75,8 @@ outputs:
     options: &bom_options
       format: CSV
       columns:
-        - 'Quantity Per PCB'
+        - field: Quantity Per PCB
+          name: Qty
         - field: References
           name: Designator
         - field: Part
