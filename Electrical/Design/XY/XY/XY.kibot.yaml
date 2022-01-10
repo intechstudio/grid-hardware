@@ -22,11 +22,19 @@ filters:
       - column: Value
         regex: '^.*(\(NF\)).*'
 
-  - name: fix_rotation
+  - name: fix_rotation_bottom
     comment: 'Adjust rotation for JLC'
     type: rot_footprint
-    negative_bottom: false
-    invert_bottom: true
+    rotations:
+      - ["SOIC-16_74HC165", 90.0]
+      - ["SOIC-16_74HC4051", 90.0]
+      - ["SOT-23-5", 180.0]
+      - ["SOT-23-6", 180.0]
+      - ["SOIC-8W_FLASH", 90.0]
+
+  - name: fix_rotation_top
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
     rotations:
       - ["SOIC-16_74HC165", 90.0]
       - ["SOIC-16_74HC4051", 90.0]
@@ -39,7 +47,9 @@ variants:
     comment: 'Just a place holder for the rotation filter'
     type: kibom
     variant: rotated
-    pre_transform: fix_rotation
+    pre_transform: 
+      - fix_rotation_bottom
+      - fix_rotation_top
 
 outputs:
   - name: 'print_sch'
