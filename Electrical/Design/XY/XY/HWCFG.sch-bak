@@ -341,4 +341,116 @@ F 3 "" H 13000 4300 50  0001 C CNN
 	1    13000 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E0F0ED
+P 14600 2300
+AR Path="/5D757C78/61E0F0ED" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E0F0ED" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E0F0ED" Ref="U18"  Part="1" 
+F 0 "U18" H 14600 2642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 14600 2551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 14600 2600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 14600 2300 50  0001 C CNN
+	1    14600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E0F791
+P 15600 2300
+AR Path="/5D757C78/61E0F791" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E0F791" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E0F791" Ref="U20"  Part="1" 
+F 0 "U20" H 15600 2642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 15600 2551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 15600 2600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 15600 2300 50  0001 C CNN
+	1    15600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E0FFBC
+P 16600 2300
+AR Path="/5D757C78/61E0FFBC" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E0FFBC" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E0FFBC" Ref="U22"  Part="1" 
+F 0 "U22" H 16600 2642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 16600 2551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 16600 2600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 16600 2300 50  0001 C CNN
+	1    16600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E10919
+P 17600 2300
+AR Path="/5D757C78/61E10919" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E10919" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E10919" Ref="U24"  Part="1" 
+F 0 "U24" H 17600 2642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 17600 2551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 17600 2600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 17600 2300 50  0001 C CNN
+	1    17600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E135CF
+P 14700 4300
+AR Path="/5D757C78/61E135CF" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E135CF" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E135CF" Ref="U19"  Part="1" 
+F 0 "U19" H 14700 4642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 14700 4551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 14700 4600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 14700 4300 50  0001 C CNN
+	1    14700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E135D5
+P 15700 4300
+AR Path="/5D757C78/61E135D5" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E135D5" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E135D5" Ref="U21"  Part="1" 
+F 0 "U21" H 15700 4642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 15700 4551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 15700 4600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 15700 4300 50  0001 C CNN
+	1    15700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E135DB
+P 16700 4300
+AR Path="/5D757C78/61E135DB" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E135DB" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E135DB" Ref="U23"  Part="1" 
+F 0 "U23" H 16700 4642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 16700 4551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 16700 4600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 16700 4300 50  0001 C CNN
+	1    16700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L suku_basics:U_REGULATOR_SOT23-5 U?
+U 1 1 61E135E1
+P 17700 4300
+AR Path="/5D757C78/61E135E1" Ref="U?"  Part="1" 
+AR Path="/5D757C78/60FB6C46/61E135E1" Ref="U?"  Part="1" 
+AR Path="/5DC2DC06/61E135E1" Ref="U25"  Part="1" 
+F 0 "U25" H 17700 4642 50  0000 C CNN
+F 1 "LN1134A332MR-G" H 17700 4551 50  0000 C CNN
+F 2 "suku_basics:SOT-23-5" H 17700 4600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv712.pdf" H 17700 4300 50  0001 C CNN
+	1    17700 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
