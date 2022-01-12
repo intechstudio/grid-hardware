@@ -27,11 +27,11 @@ filters:
     type: rot_footprint
     negative_bottom: true
     rotations:
-      - ["SOIC-16_74HC165", 90.0]
-      - ["SOIC-16_74HC4051", 90.0]
-      - ["SOT-23-5", 180.0]
-      - ["SOT-23-6", 180.0]
-      - ["SOIC-8W_FLASH", 90.0]
+      - ["SOIC-16_74HC165", 270.0]
+      - ["SOIC-16_74HC4051", 270.0]
+      - ["SOT-23-5", 0.0]
+      - ["SOT-23-6", 0.0]
+      - ["SOIC-8W_FLASH", 270.0]
 
 variants:
   - name: rotated
@@ -74,7 +74,7 @@ outputs:
     dir: mfg
     options: &bom_options
       format: CSV
-      columns:
+      columns:        
         - field: Quantity Per PCB
           name: Qty
         - field: References
