@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 201)
+    (drawings 202)
     (tracks 1838)
     (zones 0)
     (modules 196)
@@ -620,13 +620,13 @@
     (tags "SOIC SO")
     (path /5D757C78/5D6686E6)
     (attr smd)
-    (fp_text reference U8 (at 0 3.56) (layer B.SilkS)
+    (fp_text reference U8 (at 0 3.56) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value W25Q16JVSSIQ (at 0 -3.56) (layer B.Fab)
+    (fp_text value W25Q16JVSSIQ (at 0 -3.56) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_circle (center -5.08 3.048) (end -4.83 3.048) (layer B.SilkS) (width 0.5))
@@ -677,14 +677,14 @@
     (tags "SOIC SO")
     (path /5DC2DC06/5DC5FDC3)
     (attr smd)
-    (fp_text reference U3 (at 0 5.9) (layer B.SilkS)
+    (fp_text reference U3 (at 0 5.9) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 74HC165 (at 0 -5.9) (layer B.Fab)
+    (fp_text value 74HC165 (at 0 -5.9) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0 -5.06) (end 1.95 -5.06) (layer B.SilkS) (width 0.12))
@@ -746,14 +746,14 @@
     (tags "SOIC SO")
     (path /5D8763E1/5DB28C51)
     (attr smd)
-    (fp_text reference U2 (at 0 5.9 90) (layer B.SilkS)
+    (fp_text reference U2 (at 0 5.9 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab)
+    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab)
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0 -5.06) (end 1.95 -5.06) (layer B.SilkS) (width 0.12))
@@ -815,14 +815,14 @@
     (tags "SOIC SO")
     (path /5D7C8BFE/5DB28C51)
     (attr smd)
-    (fp_text reference U1 (at 0 5.9 90) (layer B.SilkS)
+    (fp_text reference U1 (at 0 5.9 90) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab)
+    (fp_text value 74HC4051 (at 0 -5.9 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_arc (start 0 5) (end -0.5 5) (angle 180) (layer B.SilkS) (width 0.12))
-    (fp_text user %R (at 0 0 90) (layer B.Fab)
+    (fp_text user %R (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 0.98 0.98) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0 -5.06) (end 1.95 -5.06) (layer B.SilkS) (width 0.12))
@@ -881,10 +881,10 @@
   (module suku_basics:grid_outline (layer F.Cu) (tedit 604E1D7B) (tstamp 6155E847)
     (at 100 100)
     (path /5D757C78/5D85C9FC/5DB31921)
-    (fp_text reference M1 (at 0 0.5) (layer F.SilkS)
+    (fp_text reference M1 (at 0 0.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x08 (at 0 -0.5) (layer F.Fab)
+    (fp_text value Conn_01x08 (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -50 44) (end -50 -44) (layer Dwgs.User) (width 0.12))
@@ -9459,6 +9459,9 @@
     )
   )
 
+  (gr_text "USB\nRES" (at 97.968 123.5712) (layer F.SilkS) (tstamp 61AC6FE9)
+    (effects (font (size 1 1) (thickness 0.25)))
+  )
   (gr_line (start 96.5 87) (end 96.5 83.5) (layer B.SilkS) (width 0.12) (tstamp 611B4600))
   (gr_line (start 103.5 87) (end 96.5 87) (layer B.SilkS) (width 0.12))
   (gr_line (start 103.5 83.5) (end 103.5 87) (layer B.SilkS) (width 0.12))
@@ -9466,7 +9469,7 @@
   (gr_line (start 96.25 89) (end 92.75 91) (layer B.SilkS) (width 0.12) (tstamp 611B4569))
   (gr_line (start 103.75 89) (end 96.25 89) (layer B.SilkS) (width 0.12))
   (gr_line (start 107.25 93) (end 103.75 89) (layer B.SilkS) (width 0.12))
-  (gr_text PO (at 105 119.8) (layer F.SilkS) (tstamp 5F5AB168)
+  (gr_text PO (at 107.4168 123.6982) (layer F.SilkS) (tstamp 5F5AB168)
     (effects (font (size 1 1) (thickness 0.25)))
   )
   (gr_line (start 105 149.5) (end 105.5 150) (layer Edge.Cuts) (width 0.05) (tstamp 5E793C1E))
@@ -9690,7 +9693,7 @@
   (gr_line (start 92.75 107) (end 92.75 91) (layer B.SilkS) (width 0.12) (tstamp 5D71CE71))
   (gr_line (start 107.25 107) (end 92.75 107) (layer B.SilkS) (width 0.12))
   (gr_line (start 107.25 93) (end 107.25 107) (layer B.SilkS) (width 0.12))
-  (gr_text "Intech Studio\nGrid PO16/BU16\nRevD 2021/9\nEE: Suku" (at 100 135.5) (layer F.SilkS) (tstamp 5D6FF51B)
+  (gr_text "Intech Studio\nGrid PO16/BU16\nRevD 2021/12\nEE: Suku" (at 100 135.5) (layer F.SilkS) (tstamp 5D6FF51B)
     (effects (font (size 1 1) (thickness 0.25)))
   )
   (gr_line (start 50 144) (end 50 56) (layer Edge.Cuts) (width 0.05) (tstamp 5D6429FD))

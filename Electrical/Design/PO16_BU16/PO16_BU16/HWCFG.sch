@@ -206,7 +206,7 @@ L suku_basics:JP_SolderJumper_2_Open JP1
 U 1 1 5D662D78
 P 2200 2400
 F 0 "JP1" V 2154 2468 50  0000 L CNN
-F 1 "N.F. Solder Jumper" V 2245 2468 50  0000 L CNN
+F 1 "(NF)" V 2245 2468 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2200 2400 50  0001 C CNN
 F 3 "~" H 2200 2400 50  0001 C CNN
 	1    2200 2400
@@ -268,7 +268,7 @@ L suku_basics:JP_SolderJumper_2_Open JP2
 U 1 1 610D77DD
 P 1500 4700
 F 0 "JP2" V 1454 4768 50  0000 L CNN
-F 1 "N.F. Solder Jumper" V 1545 4768 50  0000 L CNN
+F 1 "(NF)" V 1545 4768 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1500 4700 50  0001 C CNN
 F 3 "~" H 1500 4700 50  0001 C CNN
 	1    1500 4700
