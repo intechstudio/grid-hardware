@@ -19,16 +19,19 @@ filters:
     exclude_any:
       - column: Reference
         regex: '^(G|#|TP).*'
+      - column: Value
+        regex: '^.*(\(NF\)).*'
 
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
     type: rot_footprint
+    negative_bottom: true
     rotations:
-      - ["SOIC-16_74HC165", 90.0]
-      - ["SOIC-16_74HC4051", 90.0]
-      - ["SOT-23-5", 180.0]
-      - ["SOT-23-6", 180.0]
-      - ["SOIC-8W_FLASH", 90.0]
+      - ["SOIC-16_74HC165", 270.0]
+      - ["SOIC-16_74HC4051", 270.0]
+      - ["SOT-23-5", 0.0]
+      - ["SOT-23-6", 0.0]
+      - ["SOIC-8W_FLASH", 270.0]
 
 variants:
   - name: rotated
@@ -65,12 +68,15 @@ outputs:
       - layer: B.Cu
       - layer: Dwgs.User
 
-  - name: 'bom_html'
-    comment: "Bill of Materials in HTML format"
+  - name: 'bom_csv'
+    comment: "Bill of Materials in CSV format"
     type: bom
     dir: mfg
     options: &bom_options
-      columns:
+      format: CSV
+      columns:        
+        - field: Quantity Per PCB
+          name: Qty
         - field: References
           name: Designator
         - field: Part
@@ -79,24 +85,21 @@ outputs:
           name: Comment
         - field: Footprint
           name: Footprint
+      dnf_filter: 'exclude_any'
       exclude_filter: 'exclude_any'
       ref_separator: ','
-      html:
-        logo: '../images/inti.png'
-        digikey_link: 'digikey#'
-        highlight_empty: false
       csv:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: true
 
-  - name: 'bom_csv'
-    comment: "Bill of Materials in CSV format"
-    type: bom
+  - name: 'ibom'
+    comment: "Bill of Materials in HTML format"
+    type: ibom
     dir: mfg
     options:
-      <<: *bom_options
-      format: CSV
+      dnf_filter: 'exclude_any'
+      exclude_filter: 'exclude_any'
 
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
@@ -160,10 +163,11 @@ outputs:
     type: position
     dir: mfg
     options:
+      dnf_filter: 'exclude_any'
       variant: rotated
       format: CSV   # CSV or ASCII format
       units: millimeters  # millimeters or inches
-      separate_files_for_front_and_back: true
+      separate_files_for_front_and_back: false
       only_smd: true
       columns:
         - id: Ref
