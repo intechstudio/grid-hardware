@@ -4,7 +4,7 @@ kibot:
 
 preflight:
   run_erc: true
-  run_drc: false
+  run_drc: true
   check_zone_fills: false
   ignore_unconnected: true
 
@@ -31,8 +31,8 @@ filters:
       - ["SOIC-16_74HC4051", 270.0]
       - ["SOT-23-5", 0.0]
       - ["SOT-23-6", 0.0]
-      - ["SOT-23", 180.0]
-      - ["SOT-23W", 180.0]
+      - ["SOT-23", 0.0]
+      - ["SOT-23W", 0.0]
       - ["SOIC-8W_FLASH", 270.0]
 
 variants:
