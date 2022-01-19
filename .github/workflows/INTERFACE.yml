@@ -34,7 +34,7 @@ jobs:
     - name: Run PCB stuff
       run: |
         make -C Electrical/Design/INTERFACE/INTERFACE drc
-	cat Electrical/Design/INTERFACE/INTERFACE/mfg-bot/INTERFACE-drc.txt
+        cat Electrical/Design/INTERFACE/INTERFACE/mfg-bot/INTERFACE-drc.txt
         make -C Electrical/Design/INTERFACE/INTERFACE
 
     - name: Retrieve results
