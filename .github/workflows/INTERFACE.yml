@@ -27,15 +27,13 @@ jobs:
   FabPCB:
     name: PCB fabrication files
     runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:latest"
-
+    container: "setsoft/kicad_auto:10.4-5.1.9"
     steps:
     - uses: actions/checkout@v2
 
     - name: Run PCB stuff
       run: |
         make -C Electrical/Design/INTERFACE/INTERFACE
-        cat Electrical/Design/INTERFACE/INTERFACE/mfg-bot/INTERFACE-drc.txt
 
     - name: Retrieve results
       if: ${{ always() }}
