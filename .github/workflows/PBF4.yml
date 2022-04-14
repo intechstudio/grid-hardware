@@ -45,6 +45,12 @@ jobs:
           Electrical/Design/PBF4/PBF4/mfg-bot/
           Electrical/Design/PBF4/PBF4/kibot_error.log
         if-no-files-found: warn
+
+    - name: Print errors
+      if: ${{ always() }}
+      run: |
+        cat Electrical/Design/PBF4/PBF4/mfg-bot/PBF4-drc.txt
+        cat Electrical/Design/PBF4/PBF4/kibot_error.log
         
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
