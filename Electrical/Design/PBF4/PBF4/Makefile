@@ -2,7 +2,7 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=PBF4.kibot.yaml
-SCH=PBF4.sch
+SCH=PBF4.kicad_sch
 PCB=PBF4.kicad_pcb
 DEST=mfg-bot
 
