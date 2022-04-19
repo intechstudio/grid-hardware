@@ -49,6 +49,7 @@ jobs:
     - name: Print errors
       if: ${{ always() }}
       run: |
+        cat Electrical/Design/PBF4/PBF4/mfg-bot/PBF4-drc.txt
         cat Electrical/Design/PBF4/PBF4/kibot_error.log
         
     - name: Set Date

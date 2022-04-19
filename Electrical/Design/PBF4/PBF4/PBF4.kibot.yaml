@@ -4,9 +4,16 @@ kibot:
 
 preflight:
   run_erc: true
-  run_drc: false
+  run_drc: true
   check_zone_fills: false
-  ignore_unconnected: true
+  ignore_unconnected: true  
+  filters:
+    - filter: 'Filter to ignore courtyards_overlap'
+      error: 'courtyards_overlap'
+    - filter: 'Filter to ignore silk_over_copper'
+      error: 'silk_over_copper'
+    - filter: 'Filter to ignore silk_overlap'
+      error: 'silk_overlap'
 
 global:
   # We want the revision added to the names for this project
