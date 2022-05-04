@@ -63,6 +63,12 @@ jobs:
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
+        files: Electrical/Design/PBF4/PBF4/mfg-bot/JLCPCB
+        dest: "Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-gerber.zip"
+
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
         files: Electrical/Design/PBF4/PBF4/mfg-bot/
         dest: "PBF4_${{ env.action_date }}.zip"
         
