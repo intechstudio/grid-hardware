@@ -33,7 +33,7 @@ jobs:
         mkdir temp
         touch macro.py
         echo 'import FreeCAD' >> macro.py
-	echo 'import TechDrawGui' >> macro.py
+        echo 'import TechDrawGui' >> macro.py
         echo 'App.openDocument("Mechanical/Design/Frontpanel/grid_frontpanel.FCStd")' >> macro.py
         echo 'objs = App.ActiveDocument.RootObjects' >> macro.py
         echo 'for obj in objs:' >> macro.py
