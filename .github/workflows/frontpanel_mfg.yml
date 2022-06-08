@@ -40,9 +40,9 @@ jobs:
         echo ' sono=App.ActiveDocument.getObject(obj.Name)' >> macro.py
         echo ' print(obj.Label)' >> macro.py
         echo ' if sono.TypeId == "PartDesign::Body":' >> macro.py
-        echo '	sono.Shape.exportStep("temp/"+obj.Label+".step")' >> macro.py
+        echo '  sono.Shape.exportStep("temp/"+obj.Label+".step")' >> macro.py
         echo ' elif sono.TypeId == "TechDraw::DrawPage":' >> macro.py
-        echo '	TechDrawGui.export([sono],u"temp/"+obj.Label+".step")' >> macro.py
+        echo '  TechDrawGui.export([sono],u"temp/"+obj.Label+".step")' >> macro.py
         ls
         FreeCADCmd "macro.py"
         
