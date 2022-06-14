@@ -35,11 +35,14 @@ jobs:
         echo 'import FreeCAD' >> macro.py
         echo '# import TechDrawGui' >> macro.py
         echo 'App.openDocument("Mechanical/Design/Frontpanel/grid_frontpanel.FCStd")' >> macro.py
-        echo 'objs = App.ActiveDocument.RootObjects' >> macro.py
+        echo 'objs = App.ActiveDocument.Objects' >> macro.py
         echo 'for obj in objs:' >> macro.py
         echo ' sono=App.ActiveDocument.getObject(obj.Name)' >> macro.py
-        echo ' print(obj.Label)' >> macro.py
-        echo ' sono.Shape.exportStep("temp/"+obj.Label+".step")' >> macro.py
+        echo ' if sono.TypeId == "PartDesign::Body":' >> macro.py
+        echo '  print(obj.Label, "STEP")' >> macro.py
+        echo '  sono.Shape.exportStep("temp/"+obj.Label+".step")' >> macro.py
+        echo '# elif sono.TypeId == "TechDraw::DrawPage":' >> macro.py
+        echo '#  TechDrawGui.export([sono],u"temp/"+obj.Label+".step")' >> macro.py
         ls
         FreeCADCmd "macro.py"
         
