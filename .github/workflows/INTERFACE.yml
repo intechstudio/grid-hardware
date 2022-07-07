@@ -52,7 +52,13 @@ jobs:
       run: |
         python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv ../../Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos_fixed.csv
         rm Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv
-      
+                  
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: Electrical/Design/INTERFACE/INTERFACE/mfg-bot/JLCPCB
+        dest: "Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-gerber.zip"
+
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:

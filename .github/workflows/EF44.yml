@@ -53,7 +53,13 @@ jobs:
       run: |
         python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-both_pos.csv ../../Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-both_pos_fixed.csv
         rm Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-both_pos.csv
-      
+            
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: Electrical/Design/EF44/EF44/mfg-bot/JLCPCB
+        dest: "Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-gerber.zip"
+
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
