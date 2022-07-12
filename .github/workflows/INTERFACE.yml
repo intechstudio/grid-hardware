@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'Electrical/Design/INTERFACE/INTERFACE/*.sch'
+      - 'Electrical/Design/INTERFACE/INTERFACE/*.kicad_sch'
       - 'Electrical/Design/INTERFACE/INTERFACE/*.kicad_pcb'
       - 'Electrical/Design/INTERFACE/INTERFACE/*.kibot.yaml'
       - 'Electrical/Design/INTERFACE/INTERFACE/Makefile'
@@ -14,7 +14,7 @@ on:
       - '.github/workflows/convert_bottom_position.py'
   pull_request:
     paths:
-      - 'Electrical/Design/INTERFACE/INTERFACE/*.sch'
+      - 'Electrical/Design/INTERFACE/INTERFACE/*.kicad_sch'
       - 'Electrical/Design/INTERFACE/INTERFACE/*.kicad_pcb'
       - 'Electrical/Design/INTERFACE/INTERFACE/*.kibot.yaml'
       - 'Electrical/Design/INTERFACE/INTERFACE/Makefile'

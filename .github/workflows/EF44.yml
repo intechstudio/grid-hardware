@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'Electrical/Design/EF44/EF44/*.sch'
+      - 'Electrical/Design/EF44/EF44/*.kicad_sch'
       - 'Electrical/Design/EF44/EF44/*.kicad_pcb'
       - 'Electrical/Design/EF44/EF44/*.kibot.yaml'
       - 'Electrical/Design/EF44/EF44/Makefile'
@@ -14,7 +14,7 @@ on:
       - '.github/workflows/convert_bottom_position.py'
   pull_request:
     paths:
-      - 'Electrical/Design/EF44/EF44/*.sch'
+      - 'Electrical/Design/EF44/EF44/*.kicad_sch'
       - 'Electrical/Design/EF44/EF44/*.kicad_pcb'
       - 'Electrical/Design/EF44/EF44/*.kibot.yaml'
       - 'Electrical/Design/EF44/EF44/Makefile'
