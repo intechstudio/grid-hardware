@@ -2,7 +2,7 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=INTERFACE.kibot.yaml
-SCH=INTERFACE.sch
+SCH=INTERFACE.kicad_sch
 PCB=INTERFACE.kicad_pcb
 DEST=mfg-bot
 

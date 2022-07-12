@@ -27,7 +27,8 @@ jobs:
   FabPCB:
     name: PCB fabrication files
     runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:10.4-5.1.9"
+    container: "setsoft/kicad_auto:dev_k6"
+
     steps:
     - uses: actions/checkout@v2
 
@@ -44,6 +45,12 @@ jobs:
           Electrical/Design/INTERFACE/INTERFACE/mfg-bot/
           Electrical/Design/INTERFACE/INTERFACE/kibot_error.log
         if-no-files-found: warn
+
+    - name: Print errors
+      if: ${{ always() }}
+      run: |
+        cat Electrical/Design/INTERFACE/INTERFACE/mfg-bot/INTERFACE-drc.txt
+        cat Electrical/Design/INTERFACE/INTERFACE/kibot_error.log
         
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
@@ -52,7 +59,7 @@ jobs:
       run: |
         python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv ../../Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos_fixed.csv
         rm Electrical/Design/INTERFACE/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv
-                  
+      
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
