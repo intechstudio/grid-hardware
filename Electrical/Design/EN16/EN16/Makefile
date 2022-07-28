@@ -2,7 +2,7 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=EN16.kibot.yaml
-SCH=EN16.sch
+SCH=EN16.kicad_sch
 PCB=EN16.kicad_pcb
 DEST=mfg-bot
 
