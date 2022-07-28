@@ -48,7 +48,13 @@
           "min_clearance": 0.254
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -58,7 +64,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -102,7 +108,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_copper_edge_clearance": 0.024999999999999998,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.09999999999999999,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -119,7 +125,12 @@
         0.254,
         0.381
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -437,6 +448,99 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "1fbb0219-551e-409b-a61b-76e8cebdfb9d",
+      ""
+    ],
+    [
+      "00000000-0000-0000-0000-00005d735388",
+      "UI_LED"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d744189",
+      "UI_ENC"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d785e7d",
+      "ENCODER_1"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d793a69",
+      "ENCODER_2"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d72d2f7",
+      "sheet5D72D2F1"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d72d2fc",
+      "sheet5D72D2F2"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d764040",
+      "sheet5D76403A"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d764045",
+      "sheet5D76403B"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d77f482",
+      "sheet5D77F47A"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d77f487",
+      "sheet5D77F47B"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d7a3719",
+      "ENCODER_3"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d7a371e",
+      "ENCODER_4"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d7563c6",
+      "sheet5D7563C0"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d7563cb",
+      "sheet5D7563C1"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d77188c",
+      "sheet5D771886"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d771891",
+      "sheet5D771887"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d77f4b7",
+      "sheet5D77F47C"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d77f4bc",
+      "sheet5D77F47D"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d757c78",
+      "MCU"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d85c9fc",
+      "sheet5D85C9EA"
+    ],
+    [
+      "00000000-0000-0000-0000-000060fb6c46",
+      "Sheet60FB6C45"
+    ],
+    [
+      "00000000-0000-0000-0000-00005dc2dc06",
+      "HWCFG"
+    ]
+  ],
   "text_variables": {}
 }
