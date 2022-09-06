@@ -27,7 +27,7 @@ jobs:
   FabPCB:
     name: PCB fabrication files
     runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:latest"
+    container: "setsoft/kicad_auto:dev_k6"
 
     steps:
     - uses: actions/checkout@v2
@@ -45,6 +45,12 @@ jobs:
           Electrical/Design/EF44/EF44/mfg-bot/
           Electrical/Design/EF44/EF44/kibot_error.log
         if-no-files-found: warn
+
+    - name: Print errors
+      if: ${{ always() }}
+      run: |
+        cat Electrical/Design/EF44/EF44/mfg-bot/EF44-drc.txt
+        cat Electrical/Design/EF44/EF44/kibot_error.log
         
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
@@ -53,7 +59,7 @@ jobs:
       run: |
         python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-both_pos.csv ../../Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-both_pos_fixed.csv
         rm Electrical/Design/EF44/EF44/mfg-bot/mfg/EF44-both_pos.csv
-            
+      
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:

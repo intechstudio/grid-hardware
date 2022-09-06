@@ -2,7 +2,7 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=EF44.kibot.yaml
-SCH=EF44.sch
+SCH=EF44.kicad_sch
 PCB=EF44.kicad_pcb
 DEST=mfg-bot
 
