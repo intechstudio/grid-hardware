@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Relative",
+    "description": "Z+\u003d5",
+    "gcode": "G91 Z5 F500"
+  },
+  {
+    "name": "Absolute",
+    "description": "Center XY",
+    "gcode": "G90 X0 Y0 F500"
+  },
+  {
+    "name": "Touch",
+    "description": "Left",
+    "gcode": "G90 Z5; X-60 Y-27; Z-15; G38.3 X10 F100; $J\u003dG91X-5F1000; G4 P4; G90 X-60 Y27  F1000; G38.3 X10 F100;  $J\u003dG91X-5F1000; G4 P4; G90 Z5 F1000; X0 Y0; Z0"
+  },
+  {
+    "name": "Touch",
+    "description": "Right",
+    "gcode": "G90 Z5; X60 Y-27; Z-15; G38.3 X-10 F100; $J\u003dG91X5F1000; G4 P4; G90 X60 Y27 F1000; G38.3 X-10 F100; $J\u003dG91X5F1000; G4 P4; G90 Z5 F1000; X0 Y0; Z0"
+  },
+  {
+    "name": "Touch",
+    "description": "Front",
+    "gcode": "G90 Z5; Y-60 X-27; Z-15; G38.3 Y10 F100; $J\u003dG91Y-5F1000; G4 P4; G90 Y-60 X27 F1000; G38.3 Y10 F100; $J\u003dG91Y-5F1000; G4 P4; G90 Z5 F1000; X0 Y0; Z0"
+  },
+  {
+    "name": "Touch",
+    "description": "Back",
+    "gcode": "G90 Z5; Y60 X-27; Z-15; G38.3 Y-10 F100; $J\u003dG91Y5F1000; G4 P4; G90 Y60 X27 F1000; G38.3 Y-10 F100; $J\u003dG91Y5F1000; G4 P4; G90 Z5 F1000; X0 Y0; Z0"
+  },
+  {
+    "name": "Eject",
+    "description": "Eject",
+    "gcode": "G90 Z35F500; Y75X0F500"
+  },
+  {
+    "name": "Z Touch",
+    "description": "FL",
+    "gcode": "G90 Z5; Y-80 X-40; G38.3 Z-50 F100; $J\u003dG91Z5F1000; G4 P4; G90 Y0 X0 F1000; Z0"
+  },
+  {
+    "name": "Z Touch",
+    "description": "FR",
+    "gcode": "G90 Z5; Y-80 X40; G38.3 Z-50 F100; $J\u003dG91Z5F1000; G4 P4; G90 Y0 X0 F1000; Z0"
+  },
+  {
+    "name": "Z Touch",
+    "description": "BL",
+    "gcode": "G90 Z5; Y80 X-40; G38.3 Z-50 F100; $J\u003dG91Z5F1000; G4 P4; G90 Y0 X0 F1000; Z0"
+  },
+  {
+    "name": "Z Touch",
+    "description": "BR",
+    "gcode": "G90 Z5; Y80 X40; G38.3 Z-50 F100; $J\u003dG91Z5F1000; G4 P4; G90 Y0 X0 F1000; Z0"
+  },
+  {
+    "name": "Z Calibration",
+    "description": "Empty",
+    "gcode": " G90 X0Y0Z25F500; G4 P4; G38.3 Z-10 F100; $J\u003dG91Z5F500; G4 P4; G91 Z-20.13F500;  G91 Z-0.2F500; G90;"
+  },
+  {
+    "name": "Eject",
+    "description": "Left",
+    "gcode": "G90 Z30F500; Y80X40F500"
+  },
+  {
+    "name": "Eject",
+    "description": "Right",
+    "gcode": "G90 Z30F500; Y80X-40F500"
+  }
+]
