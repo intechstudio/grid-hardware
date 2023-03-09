@@ -34,7 +34,7 @@ jobs:
         touch macro.py
         echo 'import FreeCAD' >> macro.py
         echo '# import TechDrawGui' >> macro.py
-        echo 'App.openDocument("Mechanical/Design/Frontpanel/grid_frontpanel.FCStd")' >> macro.py
+        echo 'App.openDocument("Mechanical/Design/Frontpanel/grid_frontpanel_new.FCStd")' >> macro.py
         echo 'objs = App.ActiveDocument.Objects' >> macro.py
         echo 'for obj in objs:' >> macro.py
         echo ' sono=App.ActiveDocument.getObject(obj.Name)' >> macro.py
