@@ -33,6 +33,8 @@ jobs:
       with:
         config: Electrical/Design/PBF4/PBF4/PBF4.kibot.yaml
         dir: output
+        schema: 'PBF4.kicad_sch'
+        board: 'PBF4.kicad_pcb'
 
     - name: upload results
       uses: actions/upload-artifact@v2
