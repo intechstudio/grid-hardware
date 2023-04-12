@@ -1,0 +1,85 @@
+name: "KiCad CI/CD for PBF4"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Electrical/Design/EN16/EN16/*.kicad_sch'
+      - 'Electrical/Design/EN16/EN16/*.kicad_pcb'
+      - 'Electrical/Design/EN16/EN16/*.kibot.yaml'
+      - 'Electrical/Design/EN16/EN16/Makefile'
+      - '.github/workflows/EN16.yml'
+      - '.github/workflows/convert_bottom_position.py'
+  pull_request:
+    paths:
+      - 'Electrical/Design/EN16/EN16/*.kicad_sch'
+      - 'Electrical/Design/EN16/EN16/*.kicad_pcb'
+      - 'Electrical/Design/EN16/EN16/*.kibot.yaml'
+      - 'Electrical/Design/EN16/EN16/Makefile'
+      - '.github/workflows/EN16.yml'
+      - '.github/workflows/convert_bottom_position.py'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  FabPCB:
+    name: PCB fabrication files
+    runs-on: ubuntu-latest
+    container: "setsoft/kicad_auto:v2_k7"
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run PCB stuff
+      run: |
+        make -C Electrical/Design/EN16/EN16
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: FabPCB_Output
+        path: |
+          Electrical/Design/EN16/EN16/mfg-bot/
+          Electrical/Design/EN16/EN16/kibot_error.log
+        if-no-files-found: warn
+
+    - name: Print errors
+      if: ${{ always() }}
+      run: |
+        cat Electrical/Design/EN16/EN16/mfg-bot/EN16-drc.txt
+        cat Electrical/Design/EN16/EN16/kibot_error.log
+        
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+
+    - name: Convert position file
+      run: |
+        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos.csv ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos_fixed.csv
+        rm Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos.csv
+      
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: Electrical/Design/EN16/EN16/mfg-bot/JLCPCB
+        dest: "Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-gerber.zip"
+
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: Electrical/Design/EN16/EN16/mfg-bot/
+        dest: "EN16_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Heyo, fresh PCB files are ready!"
+        filename: "EN16_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Don't forget to check the kibot report!"
+        filename: "Electrical/Design/EN16/EN16/kibot_error.log"
