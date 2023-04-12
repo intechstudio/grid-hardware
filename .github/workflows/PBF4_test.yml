@@ -6,19 +6,19 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'Electrical/Design/EN16/EN16/*.kicad_sch'
-      - 'Electrical/Design/EN16/EN16/*.kicad_pcb'
-      - 'Electrical/Design/EN16/EN16/*.kibot.yaml'
-      - 'Electrical/Design/EN16/EN16/Makefile'
-      - '.github/workflows/EN16.yml'
+      - 'Electrical/Design/PBF4/PBF4/*.kicad_sch'
+      - 'Electrical/Design/PBF4/PBF4/*.kicad_pcb'
+      - 'Electrical/Design/PBF4/PBF4/*.kibot.yaml'
+      - 'Electrical/Design/PBF4/PBF4/Makefile'
+      - '.github/workflows/PBF4.yml'
       - '.github/workflows/convert_bottom_position.py'
   pull_request:
     paths:
-      - 'Electrical/Design/EN16/EN16/*.kicad_sch'
-      - 'Electrical/Design/EN16/EN16/*.kicad_pcb'
-      - 'Electrical/Design/EN16/EN16/*.kibot.yaml'
-      - 'Electrical/Design/EN16/EN16/Makefile'
-      - '.github/workflows/EN16.yml'
+      - 'Electrical/Design/PBF4/PBF4/*.kicad_sch'
+      - 'Electrical/Design/PBF4/PBF4/*.kicad_pcb'
+      - 'Electrical/Design/PBF4/PBF4/*.kibot.yaml'
+      - 'Electrical/Design/PBF4/PBF4/Makefile'
+      - '.github/workflows/PBF4.yml'
       - '.github/workflows/convert_bottom_position.py'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -34,7 +34,7 @@ jobs:
 
     - name: Run PCB stuff
       run: |
-        make -C Electrical/Design/EN16/EN16
+        make -C Electrical/Design/PBF4/PBF4
 
     - name: Retrieve results
       if: ${{ always() }}
@@ -42,44 +42,44 @@ jobs:
       with:
         name: FabPCB_Output
         path: |
-          Electrical/Design/EN16/EN16/mfg-bot/
-          Electrical/Design/EN16/EN16/kibot_error.log
+          Electrical/Design/PBF4/PBF4/mfg-bot/
+          Electrical/Design/PBF4/PBF4/kibot_error.log
         if-no-files-found: warn
 
     - name: Print errors
       if: ${{ always() }}
       run: |
-        cat Electrical/Design/EN16/EN16/mfg-bot/EN16-drc.txt
-        cat Electrical/Design/EN16/EN16/kibot_error.log
+        cat Electrical/Design/PBF4/PBF4/mfg-bot/PBF4-drc.txt
+        cat Electrical/Design/PBF4/PBF4/kibot_error.log
         
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
 
     - name: Convert position file
       run: |
-        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos.csv ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos_fixed.csv
-        rm Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos.csv
+        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-both_pos.csv ../../Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-both_pos_fixed.csv
+        rm Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-both_pos.csv
       
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/EN16/EN16/mfg-bot/JLCPCB
-        dest: "Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-gerber.zip"
+        files: Electrical/Design/PBF4/PBF4/mfg-bot/JLCPCB
+        dest: "Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-gerber.zip"
 
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/EN16/EN16/mfg-bot/
-        dest: "EN16_${{ env.action_date }}.zip"
+        files: Electrical/Design/PBF4/PBF4/mfg-bot/
+        dest: "PBF4_${{ env.action_date }}.zip"
         
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Heyo, fresh PCB files are ready!"
-        filename: "EN16_${{ env.action_date }}.zip"
+        filename: "PBF4_${{ env.action_date }}.zip"
         
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Don't forget to check the kibot report!"
-        filename: "Electrical/Design/EN16/EN16/kibot_error.log"
+        filename: "Electrical/Design/PBF4/PBF4/kibot_error.log"
