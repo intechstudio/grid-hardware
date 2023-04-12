@@ -25,19 +25,61 @@ on:
 jobs:
 
   FabPCB:
+    name: PCB fabrication files
     runs-on: ubuntu-latest
+    container: "setsoft/kicad_auto:ki7"
+
     steps:
     - uses: actions/checkout@v2
 
-    - uses: INTI-CMNB/KiBot@v2_k7
-      with:
-        config: Electrical/Design/PBF4/PBF4/PBF4.kibot.yaml
-        dir: output
-        schema: 'PBF4.kicad_sch'
-        board: 'PBF4.kicad_pcb'
+    - name: Run PCB stuff
+      run: |
+        make -C Electrical/Design/PBF4/PBF4
 
-    - name: upload results
+    - name: Retrieve results
+      if: ${{ always() }}
       uses: actions/upload-artifact@v2
       with:
-        name: output
-        path: output
+        name: FabPCB_Output
+        path: |
+          Electrical/Design/PBF4/PBF4/mfg-bot/
+          Electrical/Design/PBF4/PBF4/kibot_error.log
+        if-no-files-found: warn
+
+    - name: Print errors
+      if: ${{ always() }}
+      run: |
+        cat Electrical/Design/PBF4/PBF4/mfg-bot/PBF4-drc.txt
+        cat Electrical/Design/PBF4/PBF4/kibot_error.log
+        
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+
+    - name: Convert position file
+      run: |
+        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-both_pos.csv ../../Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-both_pos_fixed.csv
+        rm Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-both_pos.csv
+      
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: Electrical/Design/PBF4/PBF4/mfg-bot/JLCPCB
+        dest: "Electrical/Design/PBF4/PBF4/mfg-bot/mfg/PBF4-gerber.zip"
+
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: Electrical/Design/PBF4/PBF4/mfg-bot/
+        dest: "PBF4_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Heyo, fresh PCB files are ready!"
+        filename: "PBF4_${{ env.action_date }}.zip"
+        
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Don't forget to check the kibot report!"
+        filename: "Electrical/Design/PBF4/PBF4/kibot_error.log"
