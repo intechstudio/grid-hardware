@@ -31,14 +31,8 @@ jobs:
 
     - uses: INTI-CMNB/KiBot@v2
       with:
-        # Required - kibot config file
         config: Electrical/Design/PBF4/PBF4/PBF4.kibot.yaml
-        # optional - prefix to output defined in config
-          dir: output
-        # optional - schematic file
-        # schema: 'schematic.sch'
-        # optional - PCB design file
-        # board: 'pcb.kicad_pcb'
+        dir: output
 
     - name: upload results
       uses: actions/upload-artifact@v2
