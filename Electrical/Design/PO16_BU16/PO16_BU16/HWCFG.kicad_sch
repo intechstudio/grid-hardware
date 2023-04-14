@@ -349,7 +349,6 @@
     )
   )
 
-
   (junction (at 104.14 111.76) (diameter 0) (color 0 0 0 0)
     (uuid 633292d3-80c5-4986-be82-ce926e9f09f4)
   )
@@ -493,6 +492,10 @@
     (uuid fc4ad874-c922-4070-89f9-7262080469d8)
   )
 
+  (text "800" (at 25.4 33.02 0)
+    (effects (font (size 10.16 10.16) (thickness 2.032) bold) (justify left bottom))
+    (uuid 05348e42-a272-426b-ba52-12ec3219c06a)
+  )
   (text "Board Identification\n\nGrid firmware can identify the hardware and the board \nrevision thorugh a 3 wire serial interface using one \nor more shift register as read only memory. The content\nof the memory is defined by pulling the inputs high or\nlow through pcb traces or solderable configuration jumpers.\n\n4b'Model + 4b'Revision + nb'Reserved (Multiple shift registers)\n\nD0: MODEL (LSB)\nD1: MODEL\nD2: MODEL\nD3: MODEL (MSB)\nD4: REVISION (LSB)\nD5: REVISION\nD6: REVISION\nD7: REVISION (MSB)\n\n\n\nModel Codes (D3-D0):\n\nPo16 0000\nBo16 0001\nPBF4 0010\nEN16 0011\n...\n\nRevision Codes (D7-D4):\n\nRevA 0000\nRevB 0001\nRevC 0010\nRevD 0011\n...\n"
     (at 154.94 129.54 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -556,7 +559,7 @@
   (symbol (lib_id "suku_basics:74HC165") (at 104.14 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fdc3)
-    (property "Reference" "U708" (at 93.98 63.5 0)
+    (property "Reference" "U801" (at 93.98 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74HC165" (at 96.52 66.04 0)
@@ -587,7 +590,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "U708") (unit 1)
+          (reference "U801") (unit 1)
         )
       )
     )
@@ -596,7 +599,7 @@
   (symbol (lib_id "power:GND") (at 104.14 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fdd6)
-    (property "Reference" "#PWR0880" (at 104.14 120.65 0)
+    (property "Reference" "#PWR0882" (at 104.14 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 104.267 118.6942 0)
@@ -612,7 +615,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0880") (unit 1)
+          (reference "#PWR0882") (unit 1)
         )
       )
     )
@@ -621,7 +624,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 121.92 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fddc)
-    (property "Reference" "C762" (at 124.2568 92.8116 0)
+    (property "Reference" "C801" (at 124.2568 92.8116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 124.2568 95.123 0)
@@ -638,7 +641,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "C762") (unit 1)
+          (reference "C801") (unit 1)
         )
       )
     )
@@ -647,7 +650,7 @@
   (symbol (lib_id "power:GND") (at 121.92 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fde2)
-    (property "Reference" "#PWR0882" (at 121.92 107.95 0)
+    (property "Reference" "#PWR0943" (at 121.92 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 122.047 105.9942 0)
@@ -663,7 +666,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0882") (unit 1)
+          (reference "#PWR0943") (unit 1)
         )
       )
     )
@@ -672,7 +675,7 @@
   (symbol (lib_id "power:+3V3") (at 104.14 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 06852551-ddb3-47e1-a229-a4b146f674fd)
-    (property "Reference" "#PWR0879" (at 104.14 67.31 0)
+    (property "Reference" "#PWR0881" (at 104.14 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 104.14 58.42 0)
@@ -688,7 +691,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0879") (unit 1)
+          (reference "#PWR0881") (unit 1)
         )
       )
     )
@@ -718,7 +721,7 @@
       )
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0943") (unit 1)
+          (reference "#PWR0880") (unit 1)
         )
       )
     )
@@ -727,7 +730,7 @@
   (symbol (lib_id "power:+3V3") (at 55.88 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a3aa1e1-930a-4e61-aa85-fe439a947aa9)
-    (property "Reference" "#PWR0942" (at 55.88 57.15 0)
+    (property "Reference" "#PWR0879" (at 55.88 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 55.88 48.26 0)
@@ -743,7 +746,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0942") (unit 1)
+          (reference "#PWR0879") (unit 1)
         )
       )
     )
@@ -774,7 +777,7 @@
       )
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "R758") (unit 1)
+          (reference "R801") (unit 1)
         )
       )
     )
@@ -783,7 +786,7 @@
   (symbol (lib_id "power:+3V3") (at 121.92 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dd24d952-c354-4f03-9b35-709883fe313d)
-    (property "Reference" "#PWR0881" (at 121.92 90.17 0)
+    (property "Reference" "#PWR0942" (at 121.92 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 121.92 81.28 0)
@@ -799,7 +802,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0881") (unit 1)
+          (reference "#PWR0942") (unit 1)
         )
       )
     )
@@ -830,7 +833,7 @@
       )
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "JP701") (unit 1)
+          (reference "JP801") (unit 1)
         )
       )
     )

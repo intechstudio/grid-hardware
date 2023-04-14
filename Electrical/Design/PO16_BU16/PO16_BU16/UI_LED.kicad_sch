@@ -813,6 +813,11 @@
     (uuid ffde4898-4c0e-4c24-bd8c-aadcd7279172)
   )
 
+  (text "900" (at 15.24 30.48 0)
+    (effects (font (size 10.16 10.16) (thickness 2.032) bold) (justify left bottom))
+    (uuid c3c884a2-a100-4cfd-bd12-0c0b8f95d7c5)
+  )
+
   (hierarchical_label "LED_DATA_OUT" (shape input) (at 144.78 165.1 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d97f24b8-3f5c-4536-a071-0786594f3ffe)
@@ -825,7 +830,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 50.8 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77283c)
-    (property "Reference" "D701" (at 58.42 45.72 0)
+    (property "Reference" "D901" (at 58.42 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 59.5376 51.943 0)
@@ -844,7 +849,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D701") (unit 1)
+          (reference "D901") (unit 1)
         )
       )
     )
@@ -853,7 +858,7 @@
   (symbol (lib_id "power:GND") (at 50.8 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772848)
-    (property "Reference" "#PWR0734" (at 50.8 67.31 0)
+    (property "Reference" "#PWR0931" (at 50.8 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.927 65.3542 0)
@@ -869,7 +874,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0734") (unit 1)
+          (reference "#PWR0931") (unit 1)
         )
       )
     )
@@ -878,7 +883,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 76.2 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772850)
-    (property "Reference" "D704" (at 83.82 45.72 0)
+    (property "Reference" "D905" (at 83.82 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 84.9376 51.943 0)
@@ -897,7 +902,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D704") (unit 1)
+          (reference "D905") (unit 1)
         )
       )
     )
@@ -906,7 +911,7 @@
   (symbol (lib_id "power:GND") (at 76.2 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77285c)
-    (property "Reference" "#PWR0743" (at 76.2 67.31 0)
+    (property "Reference" "#PWR0945" (at 76.2 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.327 65.3542 0)
@@ -922,7 +927,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0743") (unit 1)
+          (reference "#PWR0945") (unit 1)
         )
       )
     )
@@ -931,7 +936,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 101.6 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772864)
-    (property "Reference" "D707" (at 109.22 45.72 0)
+    (property "Reference" "D909" (at 109.22 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 110.3376 51.943 0)
@@ -950,7 +955,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D707") (unit 1)
+          (reference "D909") (unit 1)
         )
       )
     )
@@ -959,7 +964,7 @@
   (symbol (lib_id "power:GND") (at 101.6 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772870)
-    (property "Reference" "#PWR0752" (at 101.6 67.31 0)
+    (property "Reference" "#PWR0957" (at 101.6 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.727 65.3542 0)
@@ -975,7 +980,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0752") (unit 1)
+          (reference "#PWR0957") (unit 1)
         )
       )
     )
@@ -984,7 +989,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 127 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772878)
-    (property "Reference" "D710" (at 134.62 45.72 0)
+    (property "Reference" "D913" (at 134.62 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 135.7376 51.943 0)
@@ -1003,7 +1008,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D710") (unit 1)
+          (reference "D913") (unit 1)
         )
       )
     )
@@ -1012,7 +1017,7 @@
   (symbol (lib_id "power:GND") (at 127 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772884)
-    (property "Reference" "#PWR0761" (at 127 67.31 0)
+    (property "Reference" "#PWR0969" (at 127 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127.127 65.3542 0)
@@ -1028,7 +1033,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0761") (unit 1)
+          (reference "#PWR0969") (unit 1)
         )
       )
     )
@@ -1037,7 +1042,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 58.42 40.64 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77288f)
-    (property "Reference" "C701" (at 58.42 34.8234 90)
+    (property "Reference" "C901" (at 58.42 34.8234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 58.42 37.1348 90)
@@ -1054,7 +1059,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C701") (unit 1)
+          (reference "C901") (unit 1)
         )
       )
     )
@@ -1063,7 +1068,7 @@
   (symbol (lib_id "power:GND") (at 63.5 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772895)
-    (property "Reference" "#PWR0739" (at 63.5 49.53 0)
+    (property "Reference" "#PWR0938" (at 63.5 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.627 47.5742 0)
@@ -1079,7 +1084,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0739") (unit 1)
+          (reference "#PWR0938") (unit 1)
         )
       )
     )
@@ -1088,7 +1093,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 83.82 40.64 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728a0)
-    (property "Reference" "C704" (at 83.82 34.8234 90)
+    (property "Reference" "C905" (at 83.82 34.8234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 83.82 37.1348 90)
@@ -1105,7 +1110,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C704") (unit 1)
+          (reference "C905") (unit 1)
         )
       )
     )
@@ -1114,7 +1119,7 @@
   (symbol (lib_id "power:GND") (at 88.9 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728a6)
-    (property "Reference" "#PWR0748" (at 88.9 49.53 0)
+    (property "Reference" "#PWR0952" (at 88.9 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 89.027 47.5742 0)
@@ -1130,7 +1135,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0748") (unit 1)
+          (reference "#PWR0952") (unit 1)
         )
       )
     )
@@ -1139,7 +1144,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 109.22 40.64 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728ae)
-    (property "Reference" "C707" (at 109.22 34.8234 90)
+    (property "Reference" "C909" (at 109.22 34.8234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 109.22 37.1348 90)
@@ -1156,7 +1161,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C707") (unit 1)
+          (reference "C909") (unit 1)
         )
       )
     )
@@ -1165,7 +1170,7 @@
   (symbol (lib_id "power:GND") (at 114.3 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728b4)
-    (property "Reference" "#PWR0757" (at 114.3 49.53 0)
+    (property "Reference" "#PWR0964" (at 114.3 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.427 47.5742 0)
@@ -1181,7 +1186,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0757") (unit 1)
+          (reference "#PWR0964") (unit 1)
         )
       )
     )
@@ -1190,7 +1195,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 134.62 40.64 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728bc)
-    (property "Reference" "C710" (at 134.62 34.8234 90)
+    (property "Reference" "C913" (at 134.62 34.8234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 134.62 37.1348 90)
@@ -1207,7 +1212,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C710") (unit 1)
+          (reference "C913") (unit 1)
         )
       )
     )
@@ -1216,7 +1221,7 @@
   (symbol (lib_id "power:GND") (at 139.7 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728c2)
-    (property "Reference" "#PWR0766" (at 139.7 49.53 0)
+    (property "Reference" "#PWR0976" (at 139.7 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.827 47.5742 0)
@@ -1232,7 +1237,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0766") (unit 1)
+          (reference "#PWR0976") (unit 1)
         )
       )
     )
@@ -1241,7 +1246,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 50.8 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728d3)
-    (property "Reference" "D702" (at 58.42 83.82 0)
+    (property "Reference" "D902" (at 58.42 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 59.5376 90.043 0)
@@ -1260,7 +1265,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D702") (unit 1)
+          (reference "D902") (unit 1)
         )
       )
     )
@@ -1269,7 +1274,7 @@
   (symbol (lib_id "power:GND") (at 50.8 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728df)
-    (property "Reference" "#PWR0736" (at 50.8 105.41 0)
+    (property "Reference" "#PWR0933" (at 50.8 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.927 103.4542 0)
@@ -1285,7 +1290,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0736") (unit 1)
+          (reference "#PWR0933") (unit 1)
         )
       )
     )
@@ -1294,7 +1299,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 76.2 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728e7)
-    (property "Reference" "D705" (at 83.82 83.82 0)
+    (property "Reference" "D906" (at 83.82 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 84.9376 90.043 0)
@@ -1313,7 +1318,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D705") (unit 1)
+          (reference "D906") (unit 1)
         )
       )
     )
@@ -1322,7 +1327,7 @@
   (symbol (lib_id "power:GND") (at 76.2 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728f3)
-    (property "Reference" "#PWR0745" (at 76.2 105.41 0)
+    (property "Reference" "#PWR0947" (at 76.2 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.327 103.4542 0)
@@ -1338,7 +1343,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0745") (unit 1)
+          (reference "#PWR0947") (unit 1)
         )
       )
     )
@@ -1347,7 +1352,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 101.6 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7728fb)
-    (property "Reference" "D708" (at 109.22 83.82 0)
+    (property "Reference" "D910" (at 109.22 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 110.3376 90.043 0)
@@ -1366,7 +1371,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D708") (unit 1)
+          (reference "D910") (unit 1)
         )
       )
     )
@@ -1375,7 +1380,7 @@
   (symbol (lib_id "power:GND") (at 101.6 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772907)
-    (property "Reference" "#PWR0754" (at 101.6 105.41 0)
+    (property "Reference" "#PWR0959" (at 101.6 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.727 103.4542 0)
@@ -1391,7 +1396,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0754") (unit 1)
+          (reference "#PWR0959") (unit 1)
         )
       )
     )
@@ -1400,7 +1405,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 127 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77290f)
-    (property "Reference" "D711" (at 134.62 83.82 0)
+    (property "Reference" "D914" (at 134.62 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 135.7376 90.043 0)
@@ -1419,7 +1424,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D711") (unit 1)
+          (reference "D914") (unit 1)
         )
       )
     )
@@ -1428,7 +1433,7 @@
   (symbol (lib_id "power:GND") (at 127 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77291b)
-    (property "Reference" "#PWR0763" (at 127 105.41 0)
+    (property "Reference" "#PWR0971" (at 127 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127.127 103.4542 0)
@@ -1444,7 +1449,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0763") (unit 1)
+          (reference "#PWR0971") (unit 1)
         )
       )
     )
@@ -1453,7 +1458,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 58.42 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772926)
-    (property "Reference" "C702" (at 58.42 72.9234 90)
+    (property "Reference" "C902" (at 58.42 72.9234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 58.42 75.2348 90)
@@ -1470,7 +1475,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C702") (unit 1)
+          (reference "C902") (unit 1)
         )
       )
     )
@@ -1479,7 +1484,7 @@
   (symbol (lib_id "power:GND") (at 63.5 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77292c)
-    (property "Reference" "#PWR0740" (at 63.5 87.63 0)
+    (property "Reference" "#PWR0939" (at 63.5 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.627 85.6742 0)
@@ -1495,7 +1500,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0740") (unit 1)
+          (reference "#PWR0939") (unit 1)
         )
       )
     )
@@ -1504,7 +1509,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 83.82 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772937)
-    (property "Reference" "C705" (at 83.82 72.9234 90)
+    (property "Reference" "C906" (at 83.82 72.9234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 83.82 75.2348 90)
@@ -1521,7 +1526,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C705") (unit 1)
+          (reference "C906") (unit 1)
         )
       )
     )
@@ -1530,7 +1535,7 @@
   (symbol (lib_id "power:GND") (at 88.9 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77293d)
-    (property "Reference" "#PWR0749" (at 88.9 87.63 0)
+    (property "Reference" "#PWR0953" (at 88.9 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 89.027 85.6742 0)
@@ -1546,7 +1551,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0749") (unit 1)
+          (reference "#PWR0953") (unit 1)
         )
       )
     )
@@ -1555,7 +1560,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 109.22 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772945)
-    (property "Reference" "C708" (at 109.22 72.9234 90)
+    (property "Reference" "C910" (at 109.22 72.9234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 109.22 75.2348 90)
@@ -1572,7 +1577,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C708") (unit 1)
+          (reference "C910") (unit 1)
         )
       )
     )
@@ -1581,7 +1586,7 @@
   (symbol (lib_id "power:GND") (at 114.3 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d77294b)
-    (property "Reference" "#PWR0758" (at 114.3 87.63 0)
+    (property "Reference" "#PWR0965" (at 114.3 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.427 85.6742 0)
@@ -1597,7 +1602,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0758") (unit 1)
+          (reference "#PWR0965") (unit 1)
         )
       )
     )
@@ -1606,7 +1611,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 134.62 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772953)
-    (property "Reference" "C711" (at 134.62 72.9234 90)
+    (property "Reference" "C914" (at 134.62 72.9234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 134.62 75.2348 90)
@@ -1623,7 +1628,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C711") (unit 1)
+          (reference "C914") (unit 1)
         )
       )
     )
@@ -1632,7 +1637,7 @@
   (symbol (lib_id "power:GND") (at 139.7 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772959)
-    (property "Reference" "#PWR0767" (at 139.7 87.63 0)
+    (property "Reference" "#PWR0977" (at 139.7 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.827 85.6742 0)
@@ -1648,7 +1653,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0767") (unit 1)
+          (reference "#PWR0977") (unit 1)
         )
       )
     )
@@ -1657,7 +1662,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 50.8 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a01)
-    (property "Reference" "D703" (at 58.42 160.02 0)
+    (property "Reference" "D904" (at 58.42 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 59.5376 166.243 0)
@@ -1676,7 +1681,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D703") (unit 1)
+          (reference "D904") (unit 1)
         )
       )
     )
@@ -1685,7 +1690,7 @@
   (symbol (lib_id "power:GND") (at 50.8 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a0d)
-    (property "Reference" "#PWR0738" (at 50.8 181.61 0)
+    (property "Reference" "#PWR0937" (at 50.8 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.927 179.6542 0)
@@ -1701,7 +1706,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0738") (unit 1)
+          (reference "#PWR0937") (unit 1)
         )
       )
     )
@@ -1710,7 +1715,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 76.2 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a15)
-    (property "Reference" "D706" (at 83.82 160.02 0)
+    (property "Reference" "D908" (at 83.82 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 84.9376 166.243 0)
@@ -1729,7 +1734,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D706") (unit 1)
+          (reference "D908") (unit 1)
         )
       )
     )
@@ -1738,7 +1743,7 @@
   (symbol (lib_id "power:GND") (at 76.2 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a21)
-    (property "Reference" "#PWR0747" (at 76.2 181.61 0)
+    (property "Reference" "#PWR0951" (at 76.2 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.327 179.6542 0)
@@ -1754,7 +1759,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0747") (unit 1)
+          (reference "#PWR0951") (unit 1)
         )
       )
     )
@@ -1763,7 +1768,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 101.6 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a29)
-    (property "Reference" "D709" (at 109.22 160.02 0)
+    (property "Reference" "D912" (at 109.22 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 110.3376 166.243 0)
@@ -1782,7 +1787,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D709") (unit 1)
+          (reference "D912") (unit 1)
         )
       )
     )
@@ -1791,7 +1796,7 @@
   (symbol (lib_id "power:GND") (at 101.6 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a35)
-    (property "Reference" "#PWR0756" (at 101.6 181.61 0)
+    (property "Reference" "#PWR0963" (at 101.6 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.727 179.6542 0)
@@ -1807,7 +1812,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0756") (unit 1)
+          (reference "#PWR0963") (unit 1)
         )
       )
     )
@@ -1816,7 +1821,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 127 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a3d)
-    (property "Reference" "D712" (at 134.62 160.02 0)
+    (property "Reference" "D916" (at 134.62 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 135.7376 166.243 0)
@@ -1835,7 +1840,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D712") (unit 1)
+          (reference "D916") (unit 1)
         )
       )
     )
@@ -1844,7 +1849,7 @@
   (symbol (lib_id "power:GND") (at 127 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a49)
-    (property "Reference" "#PWR0765" (at 127 181.61 0)
+    (property "Reference" "#PWR0975" (at 127 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127.127 179.6542 0)
@@ -1860,7 +1865,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0765") (unit 1)
+          (reference "#PWR0975") (unit 1)
         )
       )
     )
@@ -1869,7 +1874,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 58.42 154.94 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a54)
-    (property "Reference" "C703" (at 58.42 149.1234 90)
+    (property "Reference" "C904" (at 58.42 149.1234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 58.42 151.4348 90)
@@ -1886,7 +1891,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C703") (unit 1)
+          (reference "C904") (unit 1)
         )
       )
     )
@@ -1895,7 +1900,7 @@
   (symbol (lib_id "power:GND") (at 63.5 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a5a)
-    (property "Reference" "#PWR0741" (at 63.5 163.83 0)
+    (property "Reference" "#PWR0941" (at 63.5 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.627 161.8742 0)
@@ -1911,7 +1916,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0741") (unit 1)
+          (reference "#PWR0941") (unit 1)
         )
       )
     )
@@ -1920,7 +1925,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 83.82 154.94 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a65)
-    (property "Reference" "C706" (at 83.82 149.1234 90)
+    (property "Reference" "C908" (at 83.82 149.1234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 83.82 151.4348 90)
@@ -1937,7 +1942,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C706") (unit 1)
+          (reference "C908") (unit 1)
         )
       )
     )
@@ -1946,7 +1951,7 @@
   (symbol (lib_id "power:GND") (at 88.9 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a6b)
-    (property "Reference" "#PWR0750" (at 88.9 163.83 0)
+    (property "Reference" "#PWR0955" (at 88.9 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 89.027 161.8742 0)
@@ -1962,7 +1967,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0750") (unit 1)
+          (reference "#PWR0955") (unit 1)
         )
       )
     )
@@ -1971,7 +1976,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 109.22 154.94 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a73)
-    (property "Reference" "C709" (at 109.22 149.1234 90)
+    (property "Reference" "C912" (at 109.22 149.1234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 109.22 151.4348 90)
@@ -1988,7 +1993,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C709") (unit 1)
+          (reference "C912") (unit 1)
         )
       )
     )
@@ -1997,7 +2002,7 @@
   (symbol (lib_id "power:GND") (at 114.3 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a79)
-    (property "Reference" "#PWR0759" (at 114.3 163.83 0)
+    (property "Reference" "#PWR0967" (at 114.3 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.427 161.8742 0)
@@ -2013,7 +2018,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0759") (unit 1)
+          (reference "#PWR0967") (unit 1)
         )
       )
     )
@@ -2022,7 +2027,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 134.62 154.94 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a81)
-    (property "Reference" "C712" (at 134.62 149.1234 90)
+    (property "Reference" "C916" (at 134.62 149.1234 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 134.62 151.4348 90)
@@ -2039,7 +2044,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C712") (unit 1)
+          (reference "C916") (unit 1)
         )
       )
     )
@@ -2048,7 +2053,7 @@
   (symbol (lib_id "power:GND") (at 139.7 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d772a87)
-    (property "Reference" "#PWR0768" (at 139.7 163.83 0)
+    (property "Reference" "#PWR0979" (at 139.7 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.827 161.8742 0)
@@ -2064,7 +2069,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0768") (unit 1)
+          (reference "#PWR0979") (unit 1)
         )
       )
     )
@@ -2073,7 +2078,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 76.2 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 02d55d47-cb44-44b6-a06e-e32d9eaedaee)
-    (property "Reference" "D714" (at 83.82 124.46 0)
+    (property "Reference" "D907" (at 83.82 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 84.9376 130.683 0)
@@ -2092,7 +2097,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D714") (unit 1)
+          (reference "D907") (unit 1)
         )
       )
     )
@@ -2101,7 +2106,7 @@
   (symbol (lib_id "power:+5V") (at 127 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2835beb1-ebdb-4d55-b036-80d3dc01d583)
-    (property "Reference" "#PWR0764" (at 127 156.21 0)
+    (property "Reference" "#PWR0974" (at 127 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 127 147.32 0)
@@ -2117,7 +2122,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0764") (unit 1)
+          (reference "#PWR0974") (unit 1)
         )
       )
     )
@@ -2126,7 +2131,7 @@
   (symbol (lib_id "power:+5V") (at 101.6 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 321f0fb8-9954-4ff3-ba36-44b77ed85a60)
-    (property "Reference" "#PWR0755" (at 101.6 156.21 0)
+    (property "Reference" "#PWR0962" (at 101.6 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 101.6 147.32 0)
@@ -2142,7 +2147,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0755") (unit 1)
+          (reference "#PWR0962") (unit 1)
         )
       )
     )
@@ -2151,7 +2156,7 @@
   (symbol (lib_id "power:+5V") (at 76.2 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 403d14fc-391a-45b9-9db2-d3d5f110bb14)
-    (property "Reference" "#PWR0742" (at 76.2 41.91 0)
+    (property "Reference" "#PWR0944" (at 76.2 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 76.2 33.02 0)
@@ -2167,7 +2172,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0742") (unit 1)
+          (reference "#PWR0944") (unit 1)
         )
       )
     )
@@ -2176,7 +2181,7 @@
   (symbol (lib_id "power:GND") (at 76.2 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 46676b0f-18e7-4711-a3f0-4d32f0649f00)
-    (property "Reference" "#PWR0934" (at 76.2 146.05 0)
+    (property "Reference" "#PWR0949" (at 76.2 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.327 144.0942 0)
@@ -2192,7 +2197,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0934") (unit 1)
+          (reference "#PWR0949") (unit 1)
         )
       )
     )
@@ -2201,7 +2206,7 @@
   (symbol (lib_id "power:GND") (at 88.9 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 47ad6414-4cfb-4737-b56f-7e6404806a95)
-    (property "Reference" "#PWR0935" (at 88.9 128.27 0)
+    (property "Reference" "#PWR0954" (at 88.9 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 89.027 126.3142 0)
@@ -2217,7 +2222,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0935") (unit 1)
+          (reference "#PWR0954") (unit 1)
         )
       )
     )
@@ -2226,7 +2231,7 @@
   (symbol (lib_id "power:+5V") (at 127 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4f0036d9-f4d3-425b-8b72-d06a9c55d7b5)
-    (property "Reference" "#PWR0760" (at 127 41.91 0)
+    (property "Reference" "#PWR0968" (at 127 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 127 33.02 0)
@@ -2242,7 +2247,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0760") (unit 1)
+          (reference "#PWR0968") (unit 1)
         )
       )
     )
@@ -2251,7 +2256,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 58.42 119.38 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50ab10aa-cb49-40ab-b8a0-e1cc2d5d4782)
-    (property "Reference" "C763" (at 58.42 113.5634 90)
+    (property "Reference" "C903" (at 58.42 113.5634 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 58.42 115.8748 90)
@@ -2268,7 +2273,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C763") (unit 1)
+          (reference "C903") (unit 1)
         )
       )
     )
@@ -2277,7 +2282,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 83.82 119.38 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5b302f7c-9c81-4040-ac0f-f32cedbc0a19)
-    (property "Reference" "C764" (at 83.82 113.5634 90)
+    (property "Reference" "C907" (at 83.82 113.5634 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 83.82 115.8748 90)
@@ -2294,7 +2299,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C764") (unit 1)
+          (reference "C907") (unit 1)
         )
       )
     )
@@ -2303,7 +2308,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 127 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a88303f-4291-418e-a3e2-aab84fd2e57b)
-    (property "Reference" "D716" (at 134.62 124.46 0)
+    (property "Reference" "D915" (at 134.62 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 135.7376 130.683 0)
@@ -2322,7 +2327,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D716") (unit 1)
+          (reference "D915") (unit 1)
         )
       )
     )
@@ -2331,7 +2336,7 @@
   (symbol (lib_id "power:+5V") (at 101.6 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 79592bcd-099c-4276-ba30-763ff1b24f23)
-    (property "Reference" "#PWR0936" (at 101.6 120.65 0)
+    (property "Reference" "#PWR0960" (at 101.6 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 101.6 111.76 0)
@@ -2347,7 +2352,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0936") (unit 1)
+          (reference "#PWR0960") (unit 1)
         )
       )
     )
@@ -2356,7 +2361,7 @@
   (symbol (lib_id "power:+5V") (at 50.8 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f957e71-10d7-435e-9176-cd6651dde83a)
-    (property "Reference" "#PWR0737" (at 50.8 156.21 0)
+    (property "Reference" "#PWR0936" (at 50.8 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 50.8 147.32 0)
@@ -2372,7 +2377,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0737") (unit 1)
+          (reference "#PWR0936") (unit 1)
         )
       )
     )
@@ -2381,7 +2386,7 @@
   (symbol (lib_id "power:+5V") (at 76.2 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8622eb09-85e8-4c32-aed7-317da29ee74f)
-    (property "Reference" "#PWR0933" (at 76.2 120.65 0)
+    (property "Reference" "#PWR0948" (at 76.2 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 76.2 111.76 0)
@@ -2397,7 +2402,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0933") (unit 1)
+          (reference "#PWR0948") (unit 1)
         )
       )
     )
@@ -2406,7 +2411,7 @@
   (symbol (lib_id "power:+5V") (at 127 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 926e16a5-1d8e-4ac6-af9e-fae1574bb3c9)
-    (property "Reference" "#PWR0762" (at 127 80.01 0)
+    (property "Reference" "#PWR0970" (at 127 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 127 71.12 0)
@@ -2422,7 +2427,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0762") (unit 1)
+          (reference "#PWR0970") (unit 1)
         )
       )
     )
@@ -2431,7 +2436,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 101.6 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 950e3c14-fe5c-4b87-8849-2440a4006b68)
-    (property "Reference" "D715" (at 109.22 124.46 0)
+    (property "Reference" "D911" (at 109.22 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 110.3376 130.683 0)
@@ -2450,7 +2455,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D715") (unit 1)
+          (reference "D911") (unit 1)
         )
       )
     )
@@ -2459,7 +2464,7 @@
   (symbol (lib_id "power:+5V") (at 101.6 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9cf50884-c553-4441-b6ec-04db63a5c8b9)
-    (property "Reference" "#PWR0753" (at 101.6 80.01 0)
+    (property "Reference" "#PWR0958" (at 101.6 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 101.6 71.12 0)
@@ -2475,7 +2480,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0753") (unit 1)
+          (reference "#PWR0958") (unit 1)
         )
       )
     )
@@ -2484,7 +2489,7 @@
   (symbol (lib_id "power:GND") (at 63.5 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a38147cd-df5d-4a00-9712-750580e41267)
-    (property "Reference" "#PWR0932" (at 63.5 128.27 0)
+    (property "Reference" "#PWR0940" (at 63.5 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.627 126.3142 0)
@@ -2500,7 +2505,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0932") (unit 1)
+          (reference "#PWR0940") (unit 1)
         )
       )
     )
@@ -2509,7 +2514,7 @@
   (symbol (lib_id "power:GND") (at 127 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3db83ff-9255-441d-a5f9-3b5c609cf962)
-    (property "Reference" "#PWR0940" (at 127 146.05 0)
+    (property "Reference" "#PWR0973" (at 127 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127.127 144.0942 0)
@@ -2525,7 +2530,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0940") (unit 1)
+          (reference "#PWR0973") (unit 1)
         )
       )
     )
@@ -2534,7 +2539,7 @@
   (symbol (lib_id "power:GND") (at 101.6 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a90dec31-4269-4648-a31a-98b8420e0cae)
-    (property "Reference" "#PWR0937" (at 101.6 146.05 0)
+    (property "Reference" "#PWR0961" (at 101.6 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.727 144.0942 0)
@@ -2550,7 +2555,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0937") (unit 1)
+          (reference "#PWR0961") (unit 1)
         )
       )
     )
@@ -2559,7 +2564,7 @@
   (symbol (lib_id "power:GND") (at 50.8 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aa74d2d1-3612-46ef-af45-b1df2fceefc3)
-    (property "Reference" "#PWR0931" (at 50.8 146.05 0)
+    (property "Reference" "#PWR0935" (at 50.8 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.927 144.0942 0)
@@ -2575,7 +2580,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0931") (unit 1)
+          (reference "#PWR0935") (unit 1)
         )
       )
     )
@@ -2584,7 +2589,7 @@
   (symbol (lib_id "power:+5V") (at 50.8 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ae2aeae7-b4cd-4989-bb9b-1ed601238769)
-    (property "Reference" "#PWR0735" (at 50.8 80.01 0)
+    (property "Reference" "#PWR0932" (at 50.8 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 50.8 71.12 0)
@@ -2600,7 +2605,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0735") (unit 1)
+          (reference "#PWR0932") (unit 1)
         )
       )
     )
@@ -2609,7 +2614,7 @@
   (symbol (lib_id "power:+5V") (at 50.8 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b5f8fa81-582c-4dfd-ac12-f9461d9c51cd)
-    (property "Reference" "#PWR0930" (at 50.8 120.65 0)
+    (property "Reference" "#PWR0934" (at 50.8 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 50.8 111.76 0)
@@ -2625,7 +2630,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0930") (unit 1)
+          (reference "#PWR0934") (unit 1)
         )
       )
     )
@@ -2634,7 +2639,7 @@
   (symbol (lib_id "power:GND") (at 139.7 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bf80ccc9-93a7-420a-a21b-7c33ae766985)
-    (property "Reference" "#PWR0941" (at 139.7 128.27 0)
+    (property "Reference" "#PWR0978" (at 139.7 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.827 126.3142 0)
@@ -2650,7 +2655,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0941") (unit 1)
+          (reference "#PWR0978") (unit 1)
         )
       )
     )
@@ -2659,7 +2664,7 @@
   (symbol (lib_id "power:GND") (at 114.3 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c12ae367-adea-4882-b45d-4a6f1e308cba)
-    (property "Reference" "#PWR0938" (at 114.3 128.27 0)
+    (property "Reference" "#PWR0966" (at 114.3 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.427 126.3142 0)
@@ -2675,7 +2680,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0938") (unit 1)
+          (reference "#PWR0966") (unit 1)
         )
       )
     )
@@ -2684,7 +2689,7 @@
   (symbol (lib_id "power:+5V") (at 50.8 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c13f55a0-981f-4aed-8c49-3ff0a3aad7b8)
-    (property "Reference" "#PWR0733" (at 50.8 41.91 0)
+    (property "Reference" "#PWR0930" (at 50.8 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 50.8 33.02 0)
@@ -2700,7 +2705,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0733") (unit 1)
+          (reference "#PWR0930") (unit 1)
         )
       )
     )
@@ -2709,7 +2714,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 134.62 119.38 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c16b951f-ea84-48c4-995e-373ad6d207d2)
-    (property "Reference" "C766" (at 134.62 113.5634 90)
+    (property "Reference" "C915" (at 134.62 113.5634 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 134.62 115.8748 90)
@@ -2726,7 +2731,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C766") (unit 1)
+          (reference "C915") (unit 1)
         )
       )
     )
@@ -2735,7 +2740,7 @@
   (symbol (lib_id "power:+5V") (at 127 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cd48747d-2020-4e6a-bbbb-bea0b8cf4f63)
-    (property "Reference" "#PWR0939" (at 127 120.65 0)
+    (property "Reference" "#PWR0972" (at 127 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 127 111.76 0)
@@ -2751,7 +2756,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0939") (unit 1)
+          (reference "#PWR0972") (unit 1)
         )
       )
     )
@@ -2760,7 +2765,7 @@
   (symbol (lib_id "power:+5V") (at 76.2 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cdd3cf7b-f622-4c51-bf46-c3f5780e99f4)
-    (property "Reference" "#PWR0746" (at 76.2 156.21 0)
+    (property "Reference" "#PWR0950" (at 76.2 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 76.2 147.32 0)
@@ -2776,7 +2781,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0746") (unit 1)
+          (reference "#PWR0950") (unit 1)
         )
       )
     )
@@ -2785,7 +2790,7 @@
   (symbol (lib_id "power:+5V") (at 76.2 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dc25d996-0d30-447b-89ea-a6bc1357aa54)
-    (property "Reference" "#PWR0744" (at 76.2 80.01 0)
+    (property "Reference" "#PWR0946" (at 76.2 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 76.2 71.12 0)
@@ -2801,7 +2806,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0744") (unit 1)
+          (reference "#PWR0946") (unit 1)
         )
       )
     )
@@ -2810,7 +2815,7 @@
   (symbol (lib_id "power:+5V") (at 101.6 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e81ceecc-6c19-453b-98f2-e4a1511595ce)
-    (property "Reference" "#PWR0751" (at 101.6 41.91 0)
+    (property "Reference" "#PWR0956" (at 101.6 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 101.6 33.02 0)
@@ -2826,7 +2831,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "#PWR0751") (unit 1)
+          (reference "#PWR0956") (unit 1)
         )
       )
     )
@@ -2835,7 +2840,7 @@
   (symbol (lib_id "suku_basics:UI_WS2812C-2020") (at 50.8 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f51a6256-5700-47fa-908b-12f0790a37f4)
-    (property "Reference" "D713" (at 58.42 124.46 0)
+    (property "Reference" "D903" (at 58.42 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WS2812C-2020" (at 59.5376 130.683 0)
@@ -2854,7 +2859,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "D713") (unit 1)
+          (reference "D903") (unit 1)
         )
       )
     )
@@ -2863,7 +2868,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 109.22 119.38 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fbb46d6d-4b8f-457f-867c-754293757470)
-    (property "Reference" "C765" (at 109.22 113.5634 90)
+    (property "Reference" "C911" (at 109.22 113.5634 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 109.22 115.8748 90)
@@ -2880,7 +2885,7 @@
     (instances
       (project "PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735388"
-          (reference "C765") (unit 1)
+          (reference "C911") (unit 1)
         )
       )
     )
