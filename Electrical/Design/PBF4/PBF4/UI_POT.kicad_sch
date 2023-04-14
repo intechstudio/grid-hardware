@@ -660,6 +660,11 @@
     (uuid fedb7d4b-8ca2-493c-b9a1-22e781d6d436)
   )
 
+  (text "1000" (at 17.78 30.48 0)
+    (effects (font (size 10.16 10.16) (thickness 2.032) bold) (justify left bottom))
+    (uuid 88b01420-c995-47c4-bfc5-2601bea36cc0)
+  )
+
   (hierarchical_label "OUT_7" (shape passive) (at 111.76 114.3 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0f0d22b0-c2a7-436a-931c-fa4be6782d48)
@@ -712,7 +717,7 @@
   (symbol (lib_id "suku_basics:UI_Potentiometer") (at 50.8 50.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d645ca5)
-    (property "Reference" "UI701" (at 40.64 43.18 90)
+    (property "Reference" "UI1001" (at 40.64 43.18 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "P090S-04F20BR10K (NF)" (at 40.64 40.64 90)
@@ -732,7 +737,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI701") (unit 1)
+          (reference "UI1001") (unit 1)
         )
       )
     )
@@ -741,7 +746,7 @@
   (symbol (lib_id "suku_basics:UI_Potentiometer") (at 76.2 50.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d64728d)
-    (property "Reference" "UI703" (at 66.04 40.64 90)
+    (property "Reference" "UI1003" (at 66.04 40.64 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "P090S-04F20BR10K (NF)" (at 66.04 38.1 90)
@@ -761,7 +766,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI703") (unit 1)
+          (reference "UI1003") (unit 1)
         )
       )
     )
@@ -770,7 +775,7 @@
   (symbol (lib_id "suku_basics:UI_Potentiometer") (at 101.6 50.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d647f6f)
-    (property "Reference" "UI705" (at 91.44 43.18 90)
+    (property "Reference" "UI1005" (at 91.44 43.18 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "P090S-04F20BR10K (NF)" (at 91.44 40.64 90)
@@ -790,7 +795,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI705") (unit 1)
+          (reference "UI1005") (unit 1)
         )
       )
     )
@@ -799,7 +804,7 @@
   (symbol (lib_id "suku_basics:UI_Potentiometer") (at 127 50.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d64871c)
-    (property "Reference" "UI707" (at 116.84 40.64 90)
+    (property "Reference" "UI1007" (at 116.84 40.64 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "P090S-04F20BR10K (NF)" (at 116.84 38.1 90)
@@ -819,7 +824,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI707") (unit 1)
+          (reference "UI1007") (unit 1)
         )
       )
     )
@@ -828,7 +833,7 @@
   (symbol (lib_id "suku_basics:UI_Fader") (at 50.8 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7618d2)
-    (property "Reference" "UI702" (at 59.5376 108.0516 0)
+    (property "Reference" "UI1002" (at 59.5376 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PS30-10MC1BR10K (NF)" (at 38.1 88.9 0)
@@ -850,7 +855,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI702") (unit 1)
+          (reference "UI1002") (unit 1)
         )
       )
     )
@@ -859,7 +864,7 @@
   (symbol (lib_id "power:GND") (at 40.64 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7629c7)
-    (property "Reference" "#PWR0703" (at 40.64 120.65 0)
+    (property "Reference" "#PWR01027" (at 40.64 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 40.767 118.6942 0)
@@ -875,7 +880,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0703") (unit 1)
+          (reference "#PWR01027") (unit 1)
         )
       )
     )
@@ -884,7 +889,7 @@
   (symbol (lib_id "suku_basics:UI_Fader") (at 76.2 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7691fa)
-    (property "Reference" "UI704" (at 84.9376 108.0516 0)
+    (property "Reference" "UI1004" (at 84.9376 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PS30-10MC1BR10K (NF)" (at 63.5 86.36 0)
@@ -906,7 +911,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI704") (unit 1)
+          (reference "UI1004") (unit 1)
         )
       )
     )
@@ -915,7 +920,7 @@
   (symbol (lib_id "power:GND") (at 66.04 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d769206)
-    (property "Reference" "#PWR0708" (at 66.04 120.65 0)
+    (property "Reference" "#PWR01032" (at 66.04 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.167 118.6942 0)
@@ -931,7 +936,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0708") (unit 1)
+          (reference "#PWR01032") (unit 1)
         )
       )
     )
@@ -940,7 +945,7 @@
   (symbol (lib_id "suku_basics:UI_Fader") (at 101.6 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d76aff4)
-    (property "Reference" "UI706" (at 110.3376 108.0516 0)
+    (property "Reference" "UI1006" (at 110.3376 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PS30-10MC1BR10K (NF)" (at 91.44 88.9 0)
@@ -962,7 +967,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI706") (unit 1)
+          (reference "UI1006") (unit 1)
         )
       )
     )
@@ -971,7 +976,7 @@
   (symbol (lib_id "power:GND") (at 91.44 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d76b000)
-    (property "Reference" "#PWR0713" (at 91.44 120.65 0)
+    (property "Reference" "#PWR01037" (at 91.44 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.567 118.6942 0)
@@ -987,7 +992,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0713") (unit 1)
+          (reference "#PWR01037") (unit 1)
         )
       )
     )
@@ -996,7 +1001,7 @@
   (symbol (lib_id "suku_basics:UI_Fader") (at 127 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d76d1bb)
-    (property "Reference" "UI708" (at 135.7376 108.0516 0)
+    (property "Reference" "UI1008" (at 135.7376 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PS30-10MC1BR10K (NF)" (at 116.84 86.36 0)
@@ -1018,7 +1023,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "UI708") (unit 1)
+          (reference "UI1008") (unit 1)
         )
       )
     )
@@ -1027,7 +1032,7 @@
   (symbol (lib_id "power:GND") (at 116.84 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d76d1c7)
-    (property "Reference" "#PWR0718" (at 116.84 120.65 0)
+    (property "Reference" "#PWR01042" (at 116.84 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.967 118.6942 0)
@@ -1043,7 +1048,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0718") (unit 1)
+          (reference "#PWR01042") (unit 1)
         )
       )
     )
@@ -1052,7 +1057,7 @@
   (symbol (lib_id "power:GND") (at 55.88 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d790490)
-    (property "Reference" "#PWR0705" (at 55.88 69.85 0)
+    (property "Reference" "#PWR01029" (at 55.88 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 56.007 67.8942 0)
@@ -1068,7 +1073,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0705") (unit 1)
+          (reference "#PWR01029") (unit 1)
         )
       )
     )
@@ -1077,7 +1082,7 @@
   (symbol (lib_id "power:GND") (at 81.28 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d792e76)
-    (property "Reference" "#PWR0710" (at 81.28 69.85 0)
+    (property "Reference" "#PWR01034" (at 81.28 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.407 67.8942 0)
@@ -1093,7 +1098,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0710") (unit 1)
+          (reference "#PWR01034") (unit 1)
         )
       )
     )
@@ -1102,7 +1107,7 @@
   (symbol (lib_id "power:GND") (at 106.68 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7939af)
-    (property "Reference" "#PWR0715" (at 106.68 69.85 0)
+    (property "Reference" "#PWR01039" (at 106.68 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.807 67.8942 0)
@@ -1118,7 +1123,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0715") (unit 1)
+          (reference "#PWR01039") (unit 1)
         )
       )
     )
@@ -1127,7 +1132,7 @@
   (symbol (lib_id "power:GND") (at 132.08 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d794739)
-    (property "Reference" "#PWR0720" (at 132.08 69.85 0)
+    (property "Reference" "#PWR01044" (at 132.08 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.207 67.8942 0)
@@ -1143,7 +1148,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0720") (unit 1)
+          (reference "#PWR01044") (unit 1)
         )
       )
     )
@@ -1152,7 +1157,7 @@
   (symbol (lib_id "power:GND") (at 43.18 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7af3d6)
-    (property "Reference" "#PWR0704" (at 43.18 146.05 0)
+    (property "Reference" "#PWR01028" (at 43.18 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 43.307 144.0942 0)
@@ -1168,7 +1173,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0704") (unit 1)
+          (reference "#PWR01028") (unit 1)
         )
       )
     )
@@ -1177,7 +1182,7 @@
   (symbol (lib_id "power:GND") (at 68.58 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7b211a)
-    (property "Reference" "#PWR0709" (at 68.58 146.05 0)
+    (property "Reference" "#PWR01033" (at 68.58 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 68.707 144.0942 0)
@@ -1193,7 +1198,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0709") (unit 1)
+          (reference "#PWR01033") (unit 1)
         )
       )
     )
@@ -1202,7 +1207,7 @@
   (symbol (lib_id "power:GND") (at 93.98 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7b45d0)
-    (property "Reference" "#PWR0714" (at 93.98 146.05 0)
+    (property "Reference" "#PWR01038" (at 93.98 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 94.107 144.0942 0)
@@ -1218,7 +1223,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0714") (unit 1)
+          (reference "#PWR01038") (unit 1)
         )
       )
     )
@@ -1227,7 +1232,7 @@
   (symbol (lib_id "power:GND") (at 119.38 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d7b6be8)
-    (property "Reference" "#PWR0719" (at 119.38 146.05 0)
+    (property "Reference" "#PWR01043" (at 119.38 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.507 144.0942 0)
@@ -1243,7 +1248,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0719") (unit 1)
+          (reference "#PWR01043") (unit 1)
         )
       )
     )
@@ -1252,7 +1257,7 @@
   (symbol (lib_id "suku_basics:RES") (at 91.44 55.88 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23e38ac1-1f16-4cb2-af85-a8542888e389)
-    (property "Reference" "R705" (at 89.9414 54.7116 0)
+    (property "Reference" "R1021" (at 89.9414 54.7116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 89.9414 57.023 0)
@@ -1269,7 +1274,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R705") (unit 1)
+          (reference "R1021") (unit 1)
         )
       )
     )
@@ -1278,7 +1283,7 @@
   (symbol (lib_id "power:+3V3") (at 116.84 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2767bc35-2889-4a4a-8479-9c0471244a51)
-    (property "Reference" "#PWR0716" (at 116.84 54.61 0)
+    (property "Reference" "#PWR01040" (at 116.84 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 116.84 45.72 0)
@@ -1294,7 +1299,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0716") (unit 1)
+          (reference "#PWR01040") (unit 1)
         )
       )
     )
@@ -1303,7 +1308,7 @@
   (symbol (lib_id "suku_basics:RES") (at 40.64 101.6 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 377ac3bc-4d3e-4a28-aa94-6fefa08af9eb)
-    (property "Reference" "R702" (at 39.1414 100.4316 0)
+    (property "Reference" "R1018" (at 39.1414 100.4316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 39.1414 102.743 0)
@@ -1320,7 +1325,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R702") (unit 1)
+          (reference "R1018") (unit 1)
         )
       )
     )
@@ -1329,7 +1334,7 @@
   (symbol (lib_id "suku_basics:RES") (at 66.04 55.88 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 497437a2-a337-4433-a818-0b794f3dc273)
-    (property "Reference" "R703" (at 64.5414 54.7116 0)
+    (property "Reference" "R1019" (at 64.5414 54.7116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 64.5414 57.023 0)
@@ -1346,7 +1351,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R703") (unit 1)
+          (reference "R1019") (unit 1)
         )
       )
     )
@@ -1355,7 +1360,7 @@
   (symbol (lib_id "power:+3V3") (at 91.44 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5611bf92-18bd-41b8-900f-981d284d4130)
-    (property "Reference" "#PWR0712" (at 91.44 100.33 0)
+    (property "Reference" "#PWR01036" (at 91.44 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 91.44 91.44 0)
@@ -1371,7 +1376,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0712") (unit 1)
+          (reference "#PWR01036") (unit 1)
         )
       )
     )
@@ -1380,7 +1385,7 @@
   (symbol (lib_id "power:+3V3") (at 66.04 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f1e706b-3e75-4ac6-91bb-c385c45a3e8b)
-    (property "Reference" "#PWR0707" (at 66.04 100.33 0)
+    (property "Reference" "#PWR01031" (at 66.04 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 66.04 91.44 0)
@@ -1396,7 +1401,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0707") (unit 1)
+          (reference "#PWR01031") (unit 1)
         )
       )
     )
@@ -1405,7 +1410,7 @@
   (symbol (lib_id "power:+3V3") (at 40.64 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76847679-ecc2-45da-b7df-a47104a5b3d4)
-    (property "Reference" "#PWR0702" (at 40.64 100.33 0)
+    (property "Reference" "#PWR01026" (at 40.64 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 40.64 91.44 0)
@@ -1421,7 +1426,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0702") (unit 1)
+          (reference "#PWR01026") (unit 1)
         )
       )
     )
@@ -1430,7 +1435,7 @@
   (symbol (lib_id "power:+3V3") (at 91.44 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 77f702d9-498c-4c60-841a-a2a3268f2414)
-    (property "Reference" "#PWR0711" (at 91.44 54.61 0)
+    (property "Reference" "#PWR01035" (at 91.44 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 91.44 45.72 0)
@@ -1446,7 +1451,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0711") (unit 1)
+          (reference "#PWR01035") (unit 1)
         )
       )
     )
@@ -1455,7 +1460,7 @@
   (symbol (lib_id "suku_basics:RES") (at 91.44 101.6 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d6bc460-b443-4259-991d-bf6307969dc9)
-    (property "Reference" "R706" (at 89.9414 100.4316 0)
+    (property "Reference" "R1022" (at 89.9414 100.4316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 89.9414 102.743 0)
@@ -1472,7 +1477,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R706") (unit 1)
+          (reference "R1022") (unit 1)
         )
       )
     )
@@ -1481,7 +1486,7 @@
   (symbol (lib_id "suku_basics:RES") (at 116.84 55.88 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9dc1c756-5e0b-457d-af68-1db6eca691ff)
-    (property "Reference" "R707" (at 115.3414 54.7116 0)
+    (property "Reference" "R1023" (at 115.3414 54.7116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 115.3414 57.023 0)
@@ -1498,7 +1503,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R707") (unit 1)
+          (reference "R1023") (unit 1)
         )
       )
     )
@@ -1507,7 +1512,7 @@
   (symbol (lib_id "suku_basics:RES") (at 40.64 55.88 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cadc99a8-4767-49f7-a079-2f93f197ea0a)
-    (property "Reference" "R701" (at 39.1414 54.7116 0)
+    (property "Reference" "R1017" (at 39.1414 54.7116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 39.1414 57.023 0)
@@ -1524,7 +1529,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R701") (unit 1)
+          (reference "R1017") (unit 1)
         )
       )
     )
@@ -1533,7 +1538,7 @@
   (symbol (lib_id "power:+3V3") (at 116.84 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4091656-d639-4711-94fa-af0fca3a1927)
-    (property "Reference" "#PWR0717" (at 116.84 100.33 0)
+    (property "Reference" "#PWR01041" (at 116.84 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 116.84 91.44 0)
@@ -1549,7 +1554,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0717") (unit 1)
+          (reference "#PWR01041") (unit 1)
         )
       )
     )
@@ -1558,7 +1563,7 @@
   (symbol (lib_id "power:+3V3") (at 66.04 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ddc83700-64ff-44c0-b3c6-15fd146220d4)
-    (property "Reference" "#PWR0706" (at 66.04 54.61 0)
+    (property "Reference" "#PWR01030" (at 66.04 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 66.04 45.72 0)
@@ -1574,7 +1579,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0706") (unit 1)
+          (reference "#PWR01030") (unit 1)
         )
       )
     )
@@ -1583,7 +1588,7 @@
   (symbol (lib_id "suku_basics:RES") (at 116.84 101.6 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1f02170-7a8d-4984-84d6-7731a310a313)
-    (property "Reference" "R708" (at 115.3414 100.4316 0)
+    (property "Reference" "R1024" (at 115.3414 100.4316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 115.3414 102.743 0)
@@ -1600,7 +1605,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R708") (unit 1)
+          (reference "R1024") (unit 1)
         )
       )
     )
@@ -1609,7 +1614,7 @@
   (symbol (lib_id "power:+3V3") (at 40.64 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f45b6bcd-59f9-49fe-a1a4-e67e5320a1f5)
-    (property "Reference" "#PWR0701" (at 40.64 54.61 0)
+    (property "Reference" "#PWR01025" (at 40.64 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 40.64 45.72 0)
@@ -1625,7 +1630,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "#PWR0701") (unit 1)
+          (reference "#PWR01025") (unit 1)
         )
       )
     )
@@ -1634,7 +1639,7 @@
   (symbol (lib_id "suku_basics:RES") (at 66.04 101.6 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f5f36ff3-e957-4b6d-b5a3-649740fbb8ea)
-    (property "Reference" "R704" (at 64.5414 100.4316 0)
+    (property "Reference" "R1020" (at 64.5414 100.4316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 64.5414 102.743 0)
@@ -1651,7 +1656,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
-          (reference "R704") (unit 1)
+          (reference "R1020") (unit 1)
         )
       )
     )

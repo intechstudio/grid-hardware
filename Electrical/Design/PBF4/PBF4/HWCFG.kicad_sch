@@ -366,6 +366,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1cb22080-0f59-4c18-a6e6-8685ef44ec53)
   )
+  (text "800" (at 20.32 33.02 0)
+    (effects (font (size 10.16 10.16) (thickness 2.032) bold) (justify left bottom))
+    (uuid 7476011f-ba03-40d5-be7c-032eeadb122a)
+  )
 
   (label "HWCFG_LOW" (at 129.54 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -424,7 +428,7 @@
   (symbol (lib_id "suku_basics:74HC165") (at 104.14 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fdc3)
-    (property "Reference" "U708" (at 93.98 63.5 0)
+    (property "Reference" "U801" (at 93.98 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74HC165" (at 96.52 66.04 0)
@@ -455,7 +459,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "U708") (unit 1)
+          (reference "U801") (unit 1)
         )
       )
     )
@@ -464,7 +468,7 @@
   (symbol (lib_id "power:GND") (at 104.14 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fdd6)
-    (property "Reference" "#PWR0880" (at 104.14 120.65 0)
+    (property "Reference" "#PWR0879" (at 104.14 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 104.267 118.6942 0)
@@ -480,7 +484,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0880") (unit 1)
+          (reference "#PWR0879") (unit 1)
         )
       )
     )
@@ -489,7 +493,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 121.92 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fddc)
-    (property "Reference" "C762" (at 124.2568 92.8116 0)
+    (property "Reference" "C801" (at 124.2568 92.8116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 124.2568 95.123 0)
@@ -506,7 +510,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "C762") (unit 1)
+          (reference "C801") (unit 1)
         )
       )
     )
@@ -515,7 +519,7 @@
   (symbol (lib_id "power:GND") (at 121.92 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5fde2)
-    (property "Reference" "#PWR0882" (at 121.92 107.95 0)
+    (property "Reference" "#PWR0881" (at 121.92 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 122.047 105.9942 0)
@@ -531,7 +535,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0882") (unit 1)
+          (reference "#PWR0881") (unit 1)
         )
       )
     )
@@ -540,7 +544,7 @@
   (symbol (lib_id "power:+3V3") (at 104.14 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 06852551-ddb3-47e1-a229-a4b146f674fd)
-    (property "Reference" "#PWR0879" (at 104.14 67.31 0)
+    (property "Reference" "#PWR0832" (at 104.14 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 104.14 58.42 0)
@@ -556,7 +560,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0879") (unit 1)
+          (reference "#PWR0832") (unit 1)
         )
       )
     )
@@ -565,7 +569,7 @@
   (symbol (lib_id "power:+3V3") (at 121.92 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dd24d952-c354-4f03-9b35-709883fe313d)
-    (property "Reference" "#PWR0881" (at 121.92 90.17 0)
+    (property "Reference" "#PWR0880" (at 121.92 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 121.92 81.28 0)
@@ -581,7 +585,7 @@
     (instances
       (project "PBF4"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
-          (reference "#PWR0881") (unit 1)
+          (reference "#PWR0880") (unit 1)
         )
       )
     )
