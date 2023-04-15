@@ -6,17 +6,7 @@ preflight:
   run_erc: true
   run_drc: true
   check_zone_fills: false
-  ignore_unconnected: true  
-  filters:
-    - filter: 'Filter to ignore courtyards_overlap'
-      error: 'courtyards_overlap'
-      regex: 'Footprint'
-    - filter: 'Filter to ignore silk_over_copper'
-      error: 'silk_over_copper'
-      regex: 'Silkscreen'
-    - filter: 'Filter to ignore silk_overlap'
-      error: 'silk_overlap'
-      regex: 'Silkscreen'
+  ignore_unconnected: true
 
 global:
   # We want the revision added to the names for this project
