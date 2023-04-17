@@ -58,6 +58,7 @@ jobs:
     - name: Convert position file
       run: |
         python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos.csv ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos_fixed.csv
+        python3 .github/workflows/convert_position_offset.py ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos_fixed.csv ../../Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos_fixed_offset.csv
         rm Electrical/Design/EN16/EN16/mfg-bot/mfg/EN16-both_pos.csv
       
     - name: Zipping artifacts      
