@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <textarea id="input_text"  rows="16" cols="70">
+      [PRB:-30.0000,39.3350,-7.5000:1]
+      balbalblas
+      X1231412
+      [PRB:30.0000,39.3190,-7.5000:1]
+      
+      [PRB:39.3600,30.0000,-7.5000:1]
+      [PRB:39.3550,-30.0000,-7.5000:1]
+      
+      [PRB:30.0000,-39.4110,-7.5000:1]
+      [PRB:-30.0000,-39.4420,-7.5000:1]
+      
+          
+      [PRB:-35.219,-30.0000,-7.5000:1]
+      [PRB:-40.219,-30.0000,-7.5000:0]
+      [PRB:-35.249,30.0000,-7.5000:1]
+    </textarea>
+
+
+
+    <input type="button" onclick="calc()" value="Calc!">
+    
+    
+    <div id="preview_container">
+
+
+      <div class="point point0">
+        <div id="p0x" class="field x"></div>
+        <div id="p0y" class="field y"></div>
+        <div id="p0z" class="field z"></div>
+        <div id="p0d" class="field d"></div>
+      </div>
+      <div class="point point1">
+        <div id="p1x" class="field x"></div>
+        <div id="p1y" class="field y"></div>
+        <div id="p1z" class="field z"></div>
+        <div id="p1d" class="field d"></div>
+      </div>
+      <div class="point point2">
+        <div id="p2x" class="field x"></div>
+        <div id="p2y" class="field y"></div>
+        <div id="p2z" class="field z"></div>
+        <div id="p2d" class="field d"></div>
+      </div>
+      <div class="point point3">
+        <div id="p3x" class="field x"></div>
+        <div id="p3y" class="field y"></div>
+        <div id="p3z" class="field z"></div>
+        <div id="p3d" class="field d"></div>
+      </div>
+
+      <div class="point point4">
+        <div id="p4x" class="field x"></div>
+        <div id="p4y" class="field y"></div>
+        <div id="p4z" class="field z"></div>
+        <div id="p4d" class="field d"></div>
+      </div>
+      <div class="point point5">
+        <div id="p5x" class="field x"></div>
+        <div id="p5y" class="field y"></div>
+        <div id="p5z" class="field z"></div>
+        <div id="p5d" class="field d"></div>
+      </div>
+      <div class="point point6">
+        <div id="p6x" class="field x"></div>
+        <div id="p6y" class="field y"></div>
+        <div id="p6z" class="field z"></div>
+        <div id="p6d" class="field d"></div>
+      </div>
+      <div class="point point7">
+        <div id="p7x" class="field x"></div>
+        <div id="p7y" class="field y"></div>
+        <div id="p7z" class="field z"></div>
+        <div id="p7d" class="field d"></div>
+      </div>
+
+
+      <div class="point intersection0">
+        <div id="i0x" class="field x"></div>
+        <div id="i0y" class="field y"></div>
+      </div>      
+      
+      <div class="point intersection1">
+        <div id="i1x" class="field x"></div>
+        <div id="i1y" class="field y"></div>
+      </div>      
+      
+      <div class="point intersection2">
+        <div id="i2x" class="field x"></div>
+        <div id="i2y" class="field y"></div>
+      </div>
+
+      <div class="point intersection3">
+        <div id="i3x" class="field x"></div>
+        <div id="i3y" class="field y"></div>
+      </div>
+
+      <svg class="preview" >
+        <polyline stroke="red" id="poly_intersections" stroke="black" fill="none"
+        points=""/>
+        <polyline id="poly_points" stroke="black" fill="none"
+        points=""/>
+      </svg>
+
+    </div>
+
+    <div id="xoffset">X offset</div>
+    <div id="yoffset">Y offset</div>
+    <div id="rotation">Rotation</div>
+
+
+    
+    <!-- page content -->
+  </body>
+</html>
