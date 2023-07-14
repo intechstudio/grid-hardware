@@ -158,20 +158,26 @@
         )
       )
     )
-    (symbol "INTERFACE-rescue:D_Schottky_x2_KCom_AAK-Device" (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:D_Schottky_Dual_CommonCathode_AAK" (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 1.27 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "D_Schottky_x2_KCom_AAK-Device" (at 0 2.54 0)
+      (property "Value" "D_Schottky_Dual_CommonCathode_AAK" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (at 0 0 0)
+      (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "D_Schottky_x2_KCom_AAK-Device_0_1"
+      (property "ki_keywords" "diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Dual Schottky diode, common cathode on pin 3" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "D_Schottky_Dual_CommonCathode_AAK_0_1"
         (polyline
           (pts
             (xy -3.81 0)
@@ -289,23 +295,29 @@
         )
       )
     )
-    (symbol "INTERFACE-rescue:Q_DUAL_PMOS_G1S2G2D2S1D1-Device" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:Q_Dual_PMOS_G1S2G2D2S1D1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 6.35 1.27 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Q_DUAL_PMOS_G1S2G2D2S1D1-Device" (at 19.05 -1.27 0)
+      (property "Value" "Q_Dual_PMOS_G1S2G2D2S1D1" (at 19.05 -1.27 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 1.27 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (at 1.27 0 0)
+      (property "Datasheet" "~" (at 1.27 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Dual PMOS transistor, 6 pin package" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "TSOP* SC?70* SC?88* SOT?363*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Q_DUAL_PMOS_G1S2G2D2S1D1-Device_0_1"
+      (symbol "Q_Dual_PMOS_G1S2G2D2S1D1_0_1"
         (polyline
           (pts
             (xy 0.254 0)
@@ -416,7 +428,7 @@
           (fill (type outline))
         )
       )
-      (symbol "Q_DUAL_PMOS_G1S2G2D2S1D1-Device_1_1"
+      (symbol "Q_Dual_PMOS_G1S2G2D2S1D1_1_1"
         (pin input line (at -5.08 0 0) (length 2.54)
           (name "G" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -430,7 +442,7 @@
           (number "6" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "Q_DUAL_PMOS_G1S2G2D2S1D1-Device_2_1"
+      (symbol "Q_Dual_PMOS_G1S2G2D2S1D1_2_1"
         (pin passive line (at 2.54 -5.08 90) (length 2.54)
           (name "S" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
@@ -2599,7 +2611,7 @@
     )
   )
 
-  (symbol (lib_id "INTERFACE-rescue:Q_DUAL_PMOS_G1S2G2D2S1D1-Device") (at 86.36 27.94 0) (unit 1)
+  (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 86.36 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc760a9)
     (property "Reference" "Q3" (at 91.5924 27.94 0)
@@ -2632,7 +2644,7 @@
     )
   )
 
-  (symbol (lib_id "INTERFACE-rescue:Q_DUAL_PMOS_G1S2G2D2S1D1-Device") (at 86.36 40.64 0) (mirror x) (unit 2)
+  (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 86.36 40.64 0) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc7c398)
     (property "Reference" "Q3" (at 91.5924 40.64 0)
@@ -2715,7 +2727,7 @@
     )
   )
 
-  (symbol (lib_id "INTERFACE-rescue:Q_DUAL_PMOS_G1S2G2D2S1D1-Device") (at 71.12 27.94 0) (mirror y) (unit 2)
+  (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 71.12 27.94 0) (mirror y) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc98a1b)
     (property "Reference" "Q4" (at 65.8876 27.94 0)
@@ -2748,7 +2760,7 @@
     )
   )
 
-  (symbol (lib_id "INTERFACE-rescue:Q_DUAL_PMOS_G1S2G2D2S1D1-Device") (at 71.12 40.64 180) (unit 1)
+  (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 71.12 40.64 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc98a21)
     (property "Reference" "Q4" (at 65.8876 40.64 0)
@@ -3091,7 +3103,7 @@
     )
   )
 
-  (symbol (lib_id "INTERFACE-rescue:D_Schottky_x2_KCom_AAK-Device") (at 261.62 68.58 90) (unit 1)
+  (symbol (lib_id "Device:D_Schottky_Dual_CommonCathode_AAK") (at 261.62 68.58 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de300b8)
     (property "Reference" "D1" (at 258.445 68.58 0)
