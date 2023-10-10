@@ -17,7 +17,7 @@ on:
         required: true
   push:
     paths:
-      - 'Mechanical/Design/Frontpanel/grid_frontpanel_new.FCStd'
+      - 'Mechanical/Design/Frontpanel/grid_frontpanel.FCStd'
       - '.github/workflows/frontpanel_mfg.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -34,7 +34,7 @@ jobs:
         touch macro.py
         echo 'import FreeCAD' >> macro.py
         echo '# import TechDrawGui' >> macro.py
-        echo 'App.openDocument("Mechanical/Design/Frontpanel/grid_frontpanel_new.FCStd")' >> macro.py
+        echo 'App.openDocument("Mechanical/Design/Frontpanel/grid_frontpanel.FCStd")' >> macro.py
         echo 'objs = App.ActiveDocument.Objects' >> macro.py
         echo 'for obj in objs:' >> macro.py
         echo ' sono=App.ActiveDocument.getObject(obj.Name)' >> macro.py
