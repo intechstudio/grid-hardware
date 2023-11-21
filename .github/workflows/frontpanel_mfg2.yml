@@ -33,6 +33,9 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y xvfb x11vnc
+        apt install snapd
+        apt-get install -y x11-apps
+        snap install freecad
 
     - name: Start Xvfb and x11vnc
       run: |
@@ -43,8 +46,8 @@ jobs:
     - name: Run GUI application
       run: |
         export DISPLAY=:99
-        apt-get install -y x11-apps
-        xclock
+        ls
+        freecad
 
     - name: Stop x11vnc
       run: pkill x11vnc
