@@ -43,6 +43,7 @@ jobs:
     - name: Run GUI application
       run: |
         export DISPLAY=:99
+        apt-get install -y x11-apps
         xclock
 
     - name: Stop x11vnc
