@@ -33,8 +33,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y xvfb x11vnc
-        apt install snapd
-        apt-get install -y x11-apps
+        sudo apt-get  install snapd
+        sudo apt-get  install -y x11-apps
         snap install freecad
 
     - name: Start Xvfb and x11vnc
