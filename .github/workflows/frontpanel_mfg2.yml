@@ -58,7 +58,7 @@ jobs:
       run: |
         export DISPLAY=:99
         ls
-        xvfb-run -a freecad
+        freecad --hidden
 
     - name: Stop x11vnc
       run: pkill x11vnc
