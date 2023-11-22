@@ -6,6 +6,12 @@ import sys
 
 print(f"sys.argv = {sys.argv}")
 
+import os 
+if os.path.isdir("temp"):
+  print("Directory already exists")
+else:
+  os.mkdir("temp")
+
 export_list = sys.argv[3:]
 
 print(f"export_list = {export_list}")
