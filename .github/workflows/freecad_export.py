@@ -17,7 +17,8 @@ if "step" in export_list:
 if "pdf" in export_list:
   print("export pdf requested")
 
-App.openDocument(sys.argv[1]+".FCStd")
+App.openDocument(sys.argv[2])
+
 objs = App.ActiveDocument.Objects
 for obj in objs:
   sono=App.ActiveDocument.getObject(obj.Name)
@@ -40,8 +41,14 @@ for obj in objs:
 
 print("DONE")
 
-Gui.SendMsgToActiveView("Save")
+App.Gui.SendMsgToActiveView("Save")
+print("DONE2")
+
 App.ActiveDocument.save()
+print("DONE3")
+
+
 App.Gui.getMainWindow().close()
 
+# sys.exit(0)
 # exit(0)
