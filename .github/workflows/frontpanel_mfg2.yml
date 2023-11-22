@@ -60,8 +60,30 @@ jobs:
       run: |
         export DISPLAY=:99
         ls
-        freecad --hidden /Mechanical/Design/Frontpanel/grid_frontpanel.FCSstd /.github/workflows/freecad_export.py stl step pdf
+        freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCSstd ./.github/workflows/freecad_export.py stl step pdf
 
 
     - name: Stop x11vnc
       run: pkill x11vnc
+
+
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+      
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: temp/
+        dest: "frontpanel_${{ env.action_date }}.zip"
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: "frontpanel_${{ env.action_date }}"
+        path: temp/*.*
+      
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Hello, your files are ready!"
+        filename: "frontpanel_${{ env.action_date }}.zip"
