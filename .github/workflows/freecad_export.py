@@ -23,7 +23,10 @@ if "step" in export_list:
 if "pdf" in export_list:
   print("export pdf requested")
 
-App.openDocument(sys.argv[2])
+
+docname = sys.argv[2]
+print("Opening document: ", docname, os.path.isfile(docname))
+App.openDocument(docname)
 
 objs = App.ActiveDocument.Objects
 for obj in objs:
