@@ -5,7 +5,7 @@ import time
 
 
 
-def export(tdg):
+def export():
   objs = App.ActiveDocument.Objects
   for obj in objs:
     
@@ -26,19 +26,10 @@ def export(tdg):
         print(obj.Label, "DRAW")
 
 
-        tdg.export([sono], u"temp/"+obj.Label+".pdf")
+        TechDrawGui.export([sono], u"temp/"+obj.Label+".pdf")
 
 
 from threading import Timer
-
-def twoArgs(tdg, foo):
-    export(tdg)
-    print("tdg")
-    print("")
-
-def nArgs(*args):
-    for each in args:
-        print(each)
 
 #arguments: 
 #how long to wait (in seconds), 
@@ -73,18 +64,23 @@ docname = sys.argv[2]
 print("Opening document: ", docname, os.path.isfile(docname))
 App.openDocument(docname)
 
+FreeCADGui.updateGui()
 
+FreeCADGui.updateGui()
 
-r = Timer(6.0, twoArgs, (TechDrawGui, 123))
-s = Timer(10.0, nArgs, ("OWLS","OWLS","OWLS"))
+FreeCADGui.updateGui()
 
-r.start()
-s.start()
+FreeCADGui.updateGui()
+
+FreeCADGui.updateGui()
+
+export()
+
 
 # time.sleep(5.0)
 
 print("DONE")
-#App.Gui.getMainWindow().close()
+App.Gui.getMainWindow().close()
 
 # sys.exit(0)
 # exit(0)
