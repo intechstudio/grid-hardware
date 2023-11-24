@@ -1,7 +1,6 @@
 import FreeCAD
 import FreeCADGui
 import TechDrawGui
-import time
 
 
 
@@ -27,14 +26,6 @@ def export():
 
 
         TechDrawGui.export([sono], u"temp/"+obj.Label+".pdf")
-
-
-from threading import Timer
-
-#arguments: 
-#how long to wait (in seconds), 
-#what function to call, 
-#what gets passed in
 
 
 
@@ -64,15 +55,11 @@ docname = sys.argv[2]
 print("Opening document: ", docname, os.path.isfile(docname))
 App.openDocument(docname)
 
-FreeCADGui.updateGui()
-
-FreeCADGui.updateGui()
-
-FreeCADGui.updateGui()
-
-FreeCADGui.updateGui()
-
-FreeCADGui.updateGui()
+# FreeCADGui.updateGui()
+# FreeCADGui.updateGui()
+# FreeCADGui.updateGui()
+# FreeCADGui.updateGui()
+# FreeCADGui.updateGui()
 
 export()
 
