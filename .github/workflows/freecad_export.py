@@ -41,7 +41,7 @@ for obj in objs:
   sono=App.ActiveDocument.getObject(obj.Name)
   if sono.TypeId == "PartDesign::Body":
 
-    if "stl" in export_list:
+    if "step" in export_list:
       print(obj.Label, "STEP")
       sono.Shape.exportStep("temp/"+obj.Label+".step")
 
