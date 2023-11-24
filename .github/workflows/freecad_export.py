@@ -28,7 +28,12 @@ docname = sys.argv[2]
 print("Opening document: ", docname, os.path.isfile(docname))
 App.openDocument(docname)
 
-
+# Ez kell ide
+FreeCADGui.updateGui()
+FreeCADGui.updateGui()
+FreeCADGui.updateGui()
+FreeCADGui.updateGui()
+FreeCADGui.updateGui()
 FreeCADGui.updateGui()
 
 objs = App.ActiveDocument.Objects
