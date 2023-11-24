@@ -2,33 +2,6 @@ import FreeCAD
 import FreeCADGui
 import TechDrawGui
 
-
-
-def export():
-  objs = App.ActiveDocument.Objects
-  for obj in objs:
-    
-    sono=App.ActiveDocument.getObject(obj.Name)
-    if sono.TypeId == "PartDesign::Body":
-
-      if "stl" in export_list:
-        print(obj.Label, "STEP")
-        sono.Shape.exportStep("temp/"+obj.Label+".step")
-
-      if "stl" in export_list:
-        print(obj.Label, "STL")
-        sono.Shape.exportStl("temp/"+obj.Label+".stl")
-
-    elif sono.TypeId == "TechDraw::DrawPage":
-
-      if "pdf" in export_list:
-        print(obj.Label, "DRAW")
-
-
-        TechDrawGui.export([sono], u"temp/"+obj.Label+".pdf")
-
-
-
 import sys
 
 print(f"sys.argv = {sys.argv}")
@@ -55,18 +28,38 @@ docname = sys.argv[2]
 print("Opening document: ", docname, os.path.isfile(docname))
 App.openDocument(docname)
 
-# FreeCADGui.updateGui()
-# FreeCADGui.updateGui()
-# FreeCADGui.updateGui()
-# FreeCADGui.updateGui()
+
 # FreeCADGui.updateGui()
 
-export()
+objs = App.ActiveDocument.Objects
+for obj in objs:
+  sono=App.ActiveDocument.getObject(obj.Name)
+  if sono.TypeId == "PartDesign::Body":
 
+    if "stl" in export_list:
+      print(obj.Label, "STEP")
+      sono.Shape.exportStep("temp/"+obj.Label+".step")
 
-# time.sleep(5.0)
+    if "stl" in export_list:
+      print(obj.Label, "STL")
+      sono.Shape.exportStl("temp/"+obj.Label+".stl")
+
+  elif sono.TypeId == "TechDraw::DrawPage":
+
+    if "pdf" in export_list:
+      print(obj.Label, "DRAW")
+      TechDrawGui.export([sono],u"temp/"+obj.Label+".pdf")
+
 
 print("DONE")
+
+App.Gui.SendMsgToActiveView("Save")
+print("DONE2")
+
+App.ActiveDocument.save()
+print("DONE3")
+
+
 App.Gui.getMainWindow().close()
 
 # sys.exit(0)
