@@ -29,7 +29,7 @@ print("Opening document: ", docname, os.path.isfile(docname))
 App.openDocument(docname)
 
 
-# FreeCADGui.updateGui()
+FreeCADGui.updateGui()
 
 objs = App.ActiveDocument.Objects
 for obj in objs:
