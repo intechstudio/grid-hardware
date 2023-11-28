@@ -105,6 +105,7 @@ jobs:
       run: |
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
+        git pull
         git checkout -b preview
         git pull
         git add Preview
