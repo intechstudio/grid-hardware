@@ -23,10 +23,56 @@ if "step" in export_list:
 if "pdf" in export_list:
   print("export pdf requested")
 
-
 docname = sys.argv[2]
 print("Opening document: ", docname, os.path.isfile(docname))
 App.openDocument(docname)
+
+def hideAll():
+  doc = App.ActiveDocument
+  assert(doc)
+  bodies = [obj for obj in doc.Objects if obj.isDerivedFrom("PartDesign::Body")]
+  shown = []
+  for body in bodies:
+    grp = body.Group
+    # print (body.Label)
+    App.Gui.ActiveDocument.getObject(body.Name).hide()
+
+def showPartDesignBody(name):
+  doc = App.ActiveDocument
+  assert(doc)
+  bodies = [obj for obj in doc.Objects if obj.isDerivedFrom("PartDesign::Body")]
+  shown = []
+  hideAll()
+  for body in bodies:
+    if body.Label == name:
+      grp = body.Group
+      #print (body.Label)
+      App.Gui.ActiveDocument.getObject(body.Name).show()
+      for feat in body.Origin.OriginFeatures:
+        if feat.Label in shown:
+          continue
+        shown.append(feat.Label)
+
+      for item in grp:
+        if item.TypeId == "Sketcher::SketchObject":
+          continue
+
+        #print(f"-->{item.TypeId} {item.Label}")
+        App.Gui.ActiveDocument.getObject(item.Name).show()
+
+def exportScreenshot(label, filename):
+  hideAll()
+  showPartDesignBody(label)
+
+  view = App.Gui.ActiveDocument.ActiveView
+  FreeCADGui.updateGui()
+  view.viewAxometric()
+  view.fitAll()
+  FreeCADGui.updateGui()
+  # print("SCREENSHOT")
+  Gui.ActiveDocument.ActiveView.saveImage(filename,3200,2400,'Transparent')
+
+  hideAll()
 
 # Ez kell ide
 FreeCADGui.updateGui()
@@ -36,24 +82,41 @@ FreeCADGui.updateGui()
 FreeCADGui.updateGui()
 FreeCADGui.updateGui()
 
+hideAll()
+
 objs = App.ActiveDocument.Objects
 for obj in objs:
   sono=App.ActiveDocument.getObject(obj.Name)
+
+for obj in objs:
+  sono=App.ActiveDocument.getObject(obj.Name)
+  sono.ViewObject.show()
   if sono.TypeId == "PartDesign::Body":
 
+    if "png" in export_list:
+      print(obj.Label, obj.Name, "PNG")
+      exportScreenshot(obj.Label, "temp/"+obj.Label+".png")
+
     if "step" in export_list:
-      print(obj.Label, "STEP")
+      print(obj.Label, obj.Name, "STEP")
+
       sono.Shape.exportStep("temp/"+obj.Label+".step")
 
     if "stl" in export_list:
-      print(obj.Label, "STL")
+      print(obj.Label, obj.Name, "STL")
       sono.Shape.exportStl("temp/"+obj.Label+".stl")
 
   elif sono.TypeId == "TechDraw::DrawPage":
 
     if "pdf" in export_list:
-      print(obj.Label, "DRAW")
+      print(obj.Label, obj.Name, "DRAW")
       TechDrawGui.export([sono],u"temp/"+obj.Label+".pdf")
+  sono.ViewObject.hide()
+
+
+hideAll()
+
+
 
 
 print("DONE")
