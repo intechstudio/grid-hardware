@@ -74,13 +74,8 @@ jobs:
     - name: Run GUI application
       continue-on-error: true
       run: |
-        # export DISPLAY=:99
         ls
         freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf
-
-    - name: Stop x11vnc
-      run: pkill x11vnc
-
 
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
