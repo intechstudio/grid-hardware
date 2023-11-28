@@ -65,7 +65,7 @@ def exportScreenshot(label, filename):
   showPartDesignBody(label)
 
   view = App.Gui.ActiveDocument.ActiveView
-  print("STEP 1",filename)
+  print("STEP 1",filename, dir(view), vars(view))
   FreeCADGui.updateGui()
   print("STEP 2",filename)
   #view.viewAxometric()
