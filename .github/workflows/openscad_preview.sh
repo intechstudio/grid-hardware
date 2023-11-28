@@ -11,7 +11,7 @@ for stl_file in *.stl; do
     # Generate OpenSCAD script
     echo "import(\"$stl_file\");" > "$tmp_script"
 
-    echo "$tmp_script"
+    cat "$tmp_script"
 
     # Generate PNG preview using OpenSCAD
     openscad -o "$filename_no_ext.png" --imgsize=3200,2400 "$tmp_script"
