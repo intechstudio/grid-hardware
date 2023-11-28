@@ -62,6 +62,9 @@ jobs:
     - name: Start virtual display with Xdummy
       run: |
         sudo Xorg -noreset +extension GLX +extension RANDR +extension RENDER -logfile ./xdummy.log -config ./xorg.conf :1 & export DISPLAY=:1
+    
+    - name: Set QT_QPA_PLATFORM environment variable
+      run: export QT_QPA_PLATFORM=xcb
 
     - name: Install snapd
       run: |
