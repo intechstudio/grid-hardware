@@ -65,11 +65,16 @@ def exportScreenshot(label, filename):
   showPartDesignBody(label)
 
   view = App.Gui.ActiveDocument.ActiveView
-  print(filename)
+  print("STEP 1",filename)
   FreeCADGui.updateGui()
+  print("STEP 2",filename)
   view.viewAxometric()
+  print("STEP 3",filename)
   view.fitAll()
+  print("STEP 4",filename)
   FreeCADGui.updateGui()
+  print("STEP 5",filename)
+  
   print("SCREENSHOT", label, filename)
   App.Gui.ActiveDocument.ActiveView.saveImage(filename,3200,2400,'Transparent')
 
