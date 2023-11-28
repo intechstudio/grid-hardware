@@ -17,7 +17,7 @@ on:
         required: true
   push:
     paths:
-      - '.github/workflows/grid_frontpanel.yml'
+      - '.github/workflows/grid_frontpanel_proto.yml'
       - '.github/workflows/freecad_export.py'
       - 'Mechanical/Design/Frontpanel/grid_frontpanel.FCStd'
 
@@ -34,12 +34,34 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y xserver-xorg-video-dummy # Install Xdummy    
-    
+        sudo apt-get install -y xserver-xorg-video-dummy # Install Xdummy
+
+    - name: Configure Xdummy
+      run: |
+        echo 'Section "Device"
+                Identifier  "Configured Video Device"
+                Driver      "dummy"
+                Option      "NoDDC" "True"
+              EndSection
+              Section "Monitor"
+                Identifier  "Configured Monitor"
+                HorizSync 31.5-48.5
+                VertRefresh 50-70
+              EndSection
+              Section "Screen"
+                Identifier  "Default Screen"
+                Monitor     "Configured Monitor"
+                Device      "Configured Video Device"
+                DefaultDepth 24
+                SubSection "Display"
+                  Depth 24
+                  Modes "1024x768"
+                EndSubSection
+              EndSection' > xorg.conf
+
     - name: Start virtual display with Xdummy
       run: |
-        sudo Xorg -noreset +extension GLX +extension RANDR +extension RENDER -logfile ./xdummy.log -config /dev/null :1 & export DISPLAY=:1
-        sleep 10
+        sudo Xorg -noreset +extension GLX +extension RANDR +extension RENDER -logfile ./xdummy.log -config ./xorg.conf :1 & export DISPLAY=:1
 
     - name: Install snapd
       run: |
