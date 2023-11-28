@@ -90,10 +90,23 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: "frontpanel_${{ env.action_date }}"
-        path: temp/*.*
-      
+        path: temp/*.*    
+
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Hello, your files are ready!"
         filename: "frontpanel_${{ env.action_date }}.zip"
+   
+    - name: Commit rendered files
+      run: |
+        -cp temp/* Preview/
+    - name: Commit Changes
+      run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor }}@users.noreply.github.com"
+        git checkout -b preview-branch
+        git add Preview
+        git commit -m "Committing changes to preview-branch from GitHub Actions"
+        git push origin preview-branch
+    
