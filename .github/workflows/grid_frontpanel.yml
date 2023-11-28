@@ -105,8 +105,8 @@ jobs:
       run: |
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
-        git checkout -b preview-branch
+        git checkout -b preview
         git add Preview
-        git commit -m "Committing changes to preview-branch from GitHub Actions"
-        git push origin preview-branch
+        git commit -m "Committing changes to preview from GitHub Actions"
+        git push origin preview
     
