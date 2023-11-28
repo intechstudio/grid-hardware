@@ -100,7 +100,7 @@ jobs:
    
     - name: Commit rendered files
       run: |
-        -cp temp/* Preview/
+        cp temp/* Preview/
     - name: Commit Changes
       run: |
         git config user.name "${{ github.actor }}"
