@@ -68,7 +68,7 @@ def exportScreenshot(label, filename):
   object = FreeCADGui.ActiveDocument.ActiveObject
   print("STEP 1",filename, dir(view), vars(view))
   FreeCADGui.updateGui()
-  print("STEP 2",filename, dir(view), vars(view))
+  print("STEP 2",filename, dir(object), vars(object))
   view.fitAll(1)
   #view.viewAxometric()
   print("STEP 3",filename)
