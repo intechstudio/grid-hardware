@@ -65,9 +65,11 @@ def exportScreenshot(label, filename):
   showPartDesignBody(label)
 
   view = FreeCADGui.ActiveDocument.ActiveView
+  object = FreeCADGui.ActiveDocument.ActiveObject
   print("STEP 1",filename, dir(view), vars(view))
   FreeCADGui.updateGui()
-  print("STEP 2",filename)
+  print("STEP 2",filename, dir(view), vars(view))
+  view.fitAll(1)
   #view.viewAxometric()
   print("STEP 3",filename)
   #view.fitAll()
@@ -134,7 +136,7 @@ App.ActiveDocument.save()
 print("DONE3")
 
 
-App.Gui.getMainWindow().close()
+##App.Gui.getMainWindow().close()
 
 # sys.exit(0)
 # exit(0)
