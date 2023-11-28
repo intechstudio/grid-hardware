@@ -2,6 +2,9 @@ import FreeCAD
 import FreeCADGui
 import TechDrawGui
 
+import PartGui
+import PartDesignGui
+
 import sys
 
 print(f"sys.argv = {sys.argv}")
@@ -65,14 +68,9 @@ def exportScreenshot(label, filename):
   showPartDesignBody(label)
 
   view = FreeCADGui.ActiveDocument.ActiveView
-  object = FreeCADGui.ActiveDocument.ActiveObject
-  print("STEP 1",filename, dir(view), vars(view))
-  FreeCADGui.updateGui()
-  print("STEP 2",filename, dir(object), vars(object))
-  view.fitAll(1)
-  #view.viewAxometric()
+  view.viewAxometric()
   print("STEP 3",filename)
-  #view.fitAll()
+  view.fitAll()
   print("STEP 4",filename)
   FreeCADGui.updateGui()
   print("STEP 5",filename)
