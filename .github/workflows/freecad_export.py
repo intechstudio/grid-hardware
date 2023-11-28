@@ -64,7 +64,7 @@ def exportScreenshot(label, filename):
   hideAll()
   showPartDesignBody(label)
 
-  view = App.Gui.ActiveDocument.ActiveView
+  view = FreeCADGui.ActiveDocument.ActiveView
   print("STEP 1",filename, dir(view), vars(view))
   FreeCADGui.updateGui()
   print("STEP 2",filename)
