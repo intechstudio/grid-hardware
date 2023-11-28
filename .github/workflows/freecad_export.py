@@ -106,7 +106,7 @@ for obj in objs:
     if "step" in export_list:
       print(obj.Label, obj.Name, "STEP")
 
-      sono.Shape.exportStep("temp/"+obj.Label+".stp")
+      sono.Shape.exportStep("temp/"+obj.Label+".step")
 
     if "stl" in export_list:
       print(obj.Label, obj.Name, "STL")
