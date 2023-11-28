@@ -61,7 +61,7 @@ jobs:
       run: |
         export DISPLAY=:99
         ls
-        freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf
+        freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf png
 
     - name: Stop x11vnc
       run: pkill x11vnc
