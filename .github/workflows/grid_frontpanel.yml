@@ -44,6 +44,10 @@ jobs:
       run: |
         sudo snap install freecad
 
+    - name: Install openscad
+      run: |
+        sudo apt-get install -y openscad
+
     - name: Start Xvfb and x11vnc
       run: |
         Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
@@ -61,7 +65,12 @@ jobs:
       run: |
         export DISPLAY=:99
         ls
-        freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf png
+        freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf stl
+        
+
+    - name: Generate preview from stl
+      run: |
+        ./.github/workflows/openscad_preview.sh
 
     - name: Stop x11vnc
       run: pkill x11vnc
