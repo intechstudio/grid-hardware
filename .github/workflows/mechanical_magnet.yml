@@ -78,6 +78,8 @@ jobs:
     - name: Copy files to preview folder
       run: |
         mkdir -p Preview/Preview/Mechanical && cp temp/* Preview/Preview/Mechanical
+        cd Preview/Preview/Mechanical
+        ls
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
