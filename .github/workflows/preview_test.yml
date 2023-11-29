@@ -16,7 +16,7 @@ jobs:
 
     - name: Configure Git
       run: |
-        git checkout preview
+        git checkout -b "preview" "origin/preview"
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
 
