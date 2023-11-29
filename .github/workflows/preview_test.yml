@@ -1,7 +1,10 @@
 name: preview test
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  
+  push:
+    paths:
+      - '.github/workflows/preview_test.yml'
 
 jobs:
   test-commit:
