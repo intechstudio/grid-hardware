@@ -14,13 +14,9 @@ jobs:
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> Preview/test.txt
 
-    - name: Checkout code preview branch
-      uses: actions/checkout@v2
-      with:
-        ref: 'preview'
-
     - name: Configure Git
       run: |
+        git checkout preview
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
 
