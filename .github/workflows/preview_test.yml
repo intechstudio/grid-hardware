@@ -14,7 +14,6 @@ jobs:
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> Preview/test.txt
 
-    steps:
     - name: Checkout code preview branch
       uses: actions/checkout@v2
       ref: 'preview'
