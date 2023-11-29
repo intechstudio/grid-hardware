@@ -36,46 +36,23 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y xvfb x11vnc
-
-    - name: Install snapd
-      run: |
         sudo apt-get  install snapd
-
-    - name: Install freecad
-      run: |
         sudo snap install freecad
-
-    - name: Install openscad
-      run: |
         sudo apt-get install -y openscad
-
-    - name: Start Xvfb and x11vnc
-      run: |
         Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
         sleep 10  # Give Xvfb some time to start
         x11vnc -display :99 -nopw -listen localhost -xkb -ncache 10 -ncache_cr -forever > /dev/null 2>&1 &
-
-    - name: Add user to groups
-      run: |
-        groups
-        sudo usermod -aG audio,video $USER
-        groups
+        export DISPLAY=:99
 
     - name: Run GUI application
       continue-on-error: true
       run: |
-        export DISPLAY=:99
         ls
         freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf stl
-        
-
-    - name: Generate preview from stl
-      run: |
         ./.github/workflows/openscad_preview.sh
 
     - name: Stop x11vnc
       run: pkill x11vnc
-
 
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
@@ -89,7 +66,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: "frontpanel_${{ env.action_date }}"
+        name: "frontpanel_${{ env.action_date }}.zip"
         path: temp/*.*    
 
     - uses: tsickert/discord-webhook@v4.0.0
