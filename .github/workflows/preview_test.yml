@@ -28,7 +28,9 @@ jobs:
         fi
 
     - name: Pull changes
-      run: git pull origin preview
+      run: |
+        git config pull.rebase true   # rebase
+        git pull origin preview
 
     - name: Commit Changes
       run: |
