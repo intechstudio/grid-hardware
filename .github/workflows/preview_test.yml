@@ -14,18 +14,15 @@ jobs:
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> Preview/test.txt
 
+    steps:
+    - name: Checkout code preview branch
+      uses: actions/checkout@v2
+      ref: 'preview'
+
     - name: Configure Git
       run: |
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
-
-    - name: Check if preview branch exists
-      run: |
-        git checkout origin preview
-
-    - name: Pull changes
-      run: |
-        git pull origin preview
 
     - name: Commit Changes
       run: |
