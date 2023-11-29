@@ -49,6 +49,9 @@ jobs:
         ls
         export DISPLAY=:99
         freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf stl
+
+    - name: Generate Preview PNG
+      run: |
         ./.github/workflows/openscad_preview.sh
 
     - name: Stop x11vnc

@@ -40,6 +40,9 @@ jobs:
         ls        
         export DISPLAY=:99
         freecad --hidden ./Mechanical/Design/Magnet/magnet.FCStd ./.github/workflows/freecad_export.py stl step pdf
+
+    - name: Generate Preview PNG
+      run: |
         ./.github/workflows/openscad_preview.sh
 
     - name: Stop x11vnc
