@@ -1,13 +1,7 @@
-# This is a basic workflow that is manually triggered
-
 name: preview test
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
 jobs:
   test-commit:
@@ -17,19 +11,27 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> Preview/test.txt
-   
 
-    - name: Commit Changes
+    - name: Configure Git
       run: |
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
-        git pull
-        git checkout -b preview
-        git pull
+
+    - name: Check if preview branch exists
+      run: |
+        if git show-ref --quiet refs/heads/preview; then
+          git checkout preview
+        else
+          git checkout -b preview
+        fi
+
+    - name: Pull changes
+      run: git pull origin preview
+
+    - name: Commit Changes
+      run: |
         git add Preview
         git commit -m "Committing changes to preview from GitHub Actions"
         git push origin preview
-    
