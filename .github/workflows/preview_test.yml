@@ -21,15 +21,10 @@ jobs:
 
     - name: Check if preview branch exists
       run: |
-        if git show-ref --quiet refs/heads/preview; then
-          git checkout preview
-        else
-          git checkout -b preview
-        fi
+        git checkout preview
 
     - name: Pull changes
       run: |
-        git merge --no-ff
         git pull origin preview
 
     - name: Commit Changes
