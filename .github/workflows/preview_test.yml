@@ -16,7 +16,8 @@ jobs:
 
     - name: Checkout code preview branch
       uses: actions/checkout@v2
-      ref: 'preview'
+      with:
+        ref: 'preview'
 
     - name: Configure Git
       run: |
