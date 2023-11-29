@@ -6,15 +6,6 @@ name: magnet CAD export
 # or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
-        # Default value if no value is explicitly provided
-        default: 'World'
-        # Input has to be provided for the workflow to run
-        required: true
   push:
     paths:
       - '.github/workflows/mechanical_magnet.yml'
@@ -87,6 +78,7 @@ jobs:
         REPO: self
         BRANCH: preview # The branch name where you want to push the assets
         FOLDER: Preview # The directory where your assets are generated
+        SQUASH_HISTORY: false
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
         MESSAGE: "Build: ({sha}) {msg}" # The commit message
 
