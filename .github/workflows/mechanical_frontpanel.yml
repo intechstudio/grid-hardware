@@ -42,12 +42,12 @@ jobs:
         Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
         sleep 10  # Give Xvfb some time to start
         x11vnc -display :99 -nopw -listen localhost -xkb -ncache 10 -ncache_cr -forever > /dev/null 2>&1 &
-        export DISPLAY=:99
 
     - name: Run GUI application
       continue-on-error: true
       run: |
         ls
+        export DISPLAY=:99
         freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf stl
         ./.github/workflows/openscad_preview.sh
 
