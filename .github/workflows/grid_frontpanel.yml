@@ -100,7 +100,7 @@ jobs:
    
     - name: Copy files to preview folder
       run: |
-        mkdir -p Preview && cp temp/* Preview/
+        mkdir -p Preview/Preview && cp temp/* Preview/Preview
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
