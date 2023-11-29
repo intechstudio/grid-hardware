@@ -80,13 +80,6 @@ def exportScreenshot(label, filename):
 
   hideAll()
 
-# Ez kell ide
-FreeCADGui.updateGui()
-FreeCADGui.updateGui()
-FreeCADGui.updateGui()
-FreeCADGui.updateGui()
-FreeCADGui.updateGui()
-FreeCADGui.updateGui()
 
 hideAll()
 
@@ -97,6 +90,15 @@ for obj in objs:
 for obj in objs:
   sono=App.ActiveDocument.getObject(obj.Name)
   sono.ViewObject.show()
+
+  # Ez kell ide
+  FreeCADGui.updateGui()
+  FreeCADGui.updateGui()
+  FreeCADGui.updateGui()
+  FreeCADGui.updateGui()
+  FreeCADGui.updateGui()
+  FreeCADGui.updateGui()
+
   if sono.TypeId == "PartDesign::Body":
 
     if "png" in export_list:
