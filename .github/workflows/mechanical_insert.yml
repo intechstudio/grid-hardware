@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: insert 4 CAD export
+name: insert CAD export
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/mechanical_insert_4.yml'
+      - '.github/workflows/mechanical_insert_3.yml'
       - '.github/workflows/freecad_export.py'
       - '.github/workflows/openscad_preview.sh'
-      - 'Mechanical/Design/Inserts/INSERT-M1.6x2.5x4.FCStd'
+      - 'Mechanical/Design/Inserts/**'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
@@ -39,7 +39,14 @@ jobs:
       run: |
         ls        
         export DISPLAY=:99
-        freecad --hidden ./Mechanical/Design/Inserts/INSERT-M1.6x2.5x4.FCStd ./.github/workflows/freecad_export.py stl step pdf
+        timeout 1m freecad --hidden ./Mechanical/Design/Inserts/INSERT-M1.6x2.5x3.FCStd ./.github/workflows/freecad_export.py stl step pdf
+
+    - name: Run GUI application
+      continue-on-error: true
+      run: |
+        ls        
+        export DISPLAY=:99
+        timeout 1m freecad --hidden ./Mechanical/Design/Inserts/INSERT-M1.6x2.5x4.FCStd ./.github/workflows/freecad_export.py stl step pdf
 
     - name: Generate Preview PNG
       run: |
