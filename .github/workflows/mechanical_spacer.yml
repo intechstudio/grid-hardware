@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: bushing CAD export
+name: spacer CAD export
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/mechanical_bushing.yml'
+      - '.github/workflows/mechanical_spacer.yml'
       - '.github/workflows/freecad_export.py'
       - '.github/workflows/openscad_preview.sh'
-      - 'Mechanical/Design/Bushing/PLASTIC-BUSHING-POT.FCStd'
+      - 'Mechanical/Design/Spacer/PLASTIC-SPACER.FCStd'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
@@ -39,7 +39,7 @@ jobs:
       run: |
         ls        
         export DISPLAY=:99
-        timeout 1m freecad --hidden ./Mechanical/Design/Bushing/PLASTIC-BUSHING-POT.FCStd ./.github/workflows/freecad_export.py stl step pdf
+        timeout 1m freecad --hidden ./Mechanical/Design/Bushing/PLASTIC-SPACER.FCStd ./.github/workflows/freecad_export.py stl step pdf
 
     - name: Generate Preview PNG
       run: |
