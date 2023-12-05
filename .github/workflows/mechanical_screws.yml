@@ -40,7 +40,7 @@ jobs:
       run: |
         ls        
         export DISPLAY=:99
-        xvfb-run -a freecad --hidden ./Mechanical/Design/Screws/SCREW-M1.6x16.FCStd ./.github/workflows/freecad_export.py stl step pdf
+        timeout 1m xvfb-run -a freecad --hidden ./Mechanical/Design/Screws/SCREW-M1.6x16.FCStd ./.github/workflows/freecad_export.py stl step pdf
 
     - name: Generate Preview PNG
       run: |
