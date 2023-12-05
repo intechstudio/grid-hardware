@@ -49,7 +49,7 @@ jobs:
       run: |
         ls
         export DISPLAY=:99
-        freecad --hidden ./Mechanical/Design/Canvas/canvas_injection.FCStd ./.github/workflows/freecad_export.py step pdf
+        timeout 5m freecad --hidden ./Mechanical/Design/Canvas/canvas_injection.FCStd ./.github/workflows/freecad_export.py step pdf
 
     - name: Install conda, pythonocc and do the conversion
       run: |
