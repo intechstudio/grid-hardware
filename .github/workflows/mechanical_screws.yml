@@ -42,6 +42,13 @@ jobs:
         export DISPLAY=:99
         timeout 1m xvfb-run -a freecad --hidden ./Mechanical/Design/Screws/SCREW-M1.6x16.FCStd ./.github/workflows/freecad_export.py stl step pdf
 
+    - name: Run GUI application
+      continue-on-error: true
+      run: |
+        ls        
+        export DISPLAY=:99
+        timeout 1m xvfb-run -a freecad --hidden ./Mechanical/Design/Screws/SCREW-M1.6x8.FCStd ./.github/workflows/freecad_export.py stl step pdf
+        
     - name: Generate Preview PNG
       run: |
         ./.github/workflows/openscad_preview.sh
@@ -56,19 +63,19 @@ jobs:
       uses: vimtor/action-zip@v1
       with:
         files: temp/
-        dest: "screws_${{ env.action_date }}.zip"
+        dest: "result_${{ env.action_date }}.zip"
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: "screws_${{ env.action_date }}.zip"
+        name: "result_${{ env.action_date }}.zip"
         path: temp/*.*    
 
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Hello, your files are ready!"
-        filename: "screws_${{ env.action_date }}.zip"
+        filename: "result_${{ env.action_date }}.zip"
    
     - name: Copy files to preview folder
       run: |
