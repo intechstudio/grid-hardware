@@ -1,0 +1,87 @@
+# This is a basic workflow that is manually triggered
+
+name: screws CAD export
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/mechanical_screws.yml'
+      - '.github/workflows/freecad_export.py'
+      - '.github/workflows/openscad_preview.sh'
+      - 'Mechanical/Design/Screws/**'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+jobs:
+  freecad_export:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb x11vnc
+        sudo apt-get  install snapd
+        sudo snap install freecad
+        sudo apt-get install -y openscad
+        Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
+        sleep 10  # Give Xvfb some time to start
+        x11vnc -display :99 -nopw -listen localhost -xkb -ncache 10 -ncache_cr -forever > /dev/null 2>&1 &
+
+    - name: Run GUI application
+      continue-on-error: true
+      run: |
+        ls        
+        export DISPLAY=:99
+        freecad --hidden ./Mechanical/Design/Screws/SCREW-M1.6x16.FCStd ./.github/workflows/freecad_export.py stl step pdf
+
+    - name: Generate Preview PNG
+      run: |
+        ./.github/workflows/openscad_preview.sh
+
+    - name: Stop x11vnc
+      run: pkill x11vnc
+
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+      
+    - name: Zipping artifacts      
+      uses: vimtor/action-zip@v1
+      with:
+        files: temp/
+        dest: "screws_${{ env.action_date }}.zip"
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: "screws_${{ env.action_date }}.zip"
+        path: temp/*.*    
+
+    - uses: tsickert/discord-webhook@v4.0.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Hello, your files are ready!"
+        filename: "screws_${{ env.action_date }}.zip"
+   
+    - name: Copy files to preview folder
+      run: |
+        mkdir -p Preview/Preview/Mechanical && cp temp/* Preview/Preview/Mechanical
+        cd Preview/Preview/Mechanical
+        ls
+
+    - name: Push
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: preview # The branch name where you want to push the assets
+        FOLDER: Preview # The directory where your assets are generated
+        CLEAR_GLOBS_FILE: ".clear-target-files"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
+
