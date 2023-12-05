@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: grid_frontpanel CAD export
+name: canvas CAD export
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -17,11 +17,11 @@ on:
         required: true
   push:
     paths:
-      - '.github/workflows/mechanical_frontpanel.yml'
+      - '.github/workflows/mechanical_canvas.yml'
       - '.github/workflows/convert_step_to_stl.py'
       - '.github/workflows/freecad_export.py'
       - '.github/workflows/openscad_preview.sh'
-      - 'Mechanical/Design/Frontpanel/grid_frontpanel.FCStd'
+      - 'Mechanical/Design/Canvas/canvas_injection.FCStd'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
@@ -49,7 +49,7 @@ jobs:
       run: |
         ls
         export DISPLAY=:99
-        freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf
+        freecad --hidden ./Mechanical/Design/Canvas/canvas_injection.FCStd ./.github/workflows/freecad_export.py step pdf
 
     - name: Install conda, pythonocc and do the conversion
       run: |
@@ -101,18 +101,3 @@ jobs:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Hello, your files are ready!"
         filename: "result_${{ env.action_date }}.zip"
-   
-    - name: Copy files to preview folder
-      run: |
-        mkdir -p Preview/Preview/Mechanical && cp temp/* Preview/Preview/Mechanical
-
-    - name: Push
-      uses: s0/git-publish-subdir-action@develop
-      env:
-        REPO: self
-        BRANCH: preview # The branch name where you want to push the assets
-        FOLDER: Preview # The directory where your assets are generated
-        CLEAR_GLOBS_FILE: ".clear-target-files"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-        MESSAGE: "Build: ({sha}) {msg}" # The commit message
-
