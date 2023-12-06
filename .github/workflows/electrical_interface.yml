@@ -25,16 +25,6 @@ jobs:
       run: |
         make -C Electrical/Design/INTERFACE
 
-    - name: Retrieve results
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v2
-      with:
-        name: FabPCB_Output
-        path: |
-          Electrical/Design/INTERFACE/mfg-bot/
-          Electrical/Design/INTERFACE/kibot_error.log
-        if-no-files-found: warn
-
     - name: Print errors
       if: ${{ always() }}
       run: |
@@ -57,10 +47,20 @@ jobs:
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
-        mv Electrical/Design/INTERFACE/Schematic.pdf Electrical/Design/INTERFACE/INTERFACE_Schematic.pdf
-        mv Electrical/Design/INTERFACE/PCB_Top.pdf Electrical/Design/INTERFACE/INTERFACE_PCB_Top.pdf
-        mv Electrical/Design/INTERFACE/PCB_Bottom.pdf Electrical/Design/INTERFACE/INTERFACE_PCB_Bottom.pdf
+        mv Electrical/Design/INTERFACE/mfg-bot/Schematic.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_Schematic.pdf
+        mv Electrical/Design/INTERFACE/mfg-bot/PCB_Top.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_PCB_Top.pdf
+        mv Electrical/Design/INTERFACE/mfg-bot/PCB_Bottom.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_PCB_Bottom.pdf
+        mv Electrical/Design/INTERFACE/kibot_error.log Electrical/Design/INTERFACE/mfg-bot/INTERFACE_kibot_error.log
         rm -r Electrical/Design/INTERFACE/mfg-bot/JLCPCB
+
+    - name: Upload results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: FabPCB_Output
+        path: |
+          Electrical/Design/INTERFACE/mfg-bot/
+        if-no-files-found: warn
 
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
