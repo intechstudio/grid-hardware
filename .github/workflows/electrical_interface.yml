@@ -40,7 +40,7 @@ jobs:
       run: |
         cat Electrical/Design/INTERFACE/mfg-bot/INTERFACE-drc.txt
         cat Electrical/Design/INTERFACE/kibot_error.log
-        
+
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
 
@@ -48,12 +48,19 @@ jobs:
       run: |
         python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv ../../Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos_fixed.csv
         rm Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv
-      
-    - name: Zipping artifacts      
+  
+    - name: Zipping gerber      
       uses: vimtor/action-zip@v1
       with:
         files: Electrical/Design/INTERFACE/mfg-bot/JLCPCB
         dest: "Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-gerber.zip"
+
+    - name: Rename pdf files and removing non-zipped gerber files
+      run: |
+        mv Electrical/Design/INTERFACE/Schematic.pdf Electrical/Design/INTERFACE/INTERFACE_Schematic.pdf
+        mv Electrical/Design/INTERFACE/PCB_Top.pdf Electrical/Design/INTERFACE/INTERFACE_PCB_Top.pdf
+        mv Electrical/Design/INTERFACE/PCB_Bottom.pdf Electrical/Design/INTERFACE/INTERFACE_PCB_Bottom.pdf
+        rm -r Electrical/Design/INTERFACE/mfg-bot/JLCPCB
 
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
