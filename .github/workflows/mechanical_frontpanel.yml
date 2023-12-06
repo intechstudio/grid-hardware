@@ -88,19 +88,19 @@ jobs:
       uses: vimtor/action-zip@v1
       with:
         files: temp/
-        dest: "result_${{ github.event.workflow }}_${{ env.action_date }}.zip"
+        dest: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: "result_${{ github.event.workflow }}_${{ env.action_date }}.zip"
+        name: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         path: temp/*.*    
 
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Hello, your files are ready!"
-        filename: "result_${{ github.event.workflow }}_${{ env.action_date }}.zip"
+        filename: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
    
     - name: Copy files to preview folder
       run: |
