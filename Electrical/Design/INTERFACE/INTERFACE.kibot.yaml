@@ -81,12 +81,6 @@ outputs:
       - layer: B.Cu
       - layer: Dwgs.User
 
-  - name: 'print_pcb'
-    type: pcb_print
-    dir: .
-    options:
-      output_name: PCB_Render.PNG
-
   - name: 'bom_csv'
     comment: "Bill of Materials in CSV format"
     type: bom
