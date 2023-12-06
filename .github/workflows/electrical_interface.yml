@@ -45,8 +45,8 @@ jobs:
     - name: Zipping gerber      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/${{ PROJECT_NAME }}/mfg-bot/JLCPCB
-        dest: "Electrical/Design/${{ PROJECT_NAME }}/mfg-bot/mfg/${{ PROJECT_NAME }}-gerber.zip"
+        files: Electrical/Design/${{ env.PROJECT_NAME }}/mfg-bot/JLCPCB
+        dest: "Electrical/Design/${{ env.PROJECT_NAME }}/mfg-bot/mfg/${{ env.PROJECT_NAME }}-gerber.zip"
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
@@ -64,13 +64,13 @@ jobs:
       with:
         name: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         path: |
-          Electrical/Design/${{ PROJECT_NAME }}/mfg-bot/
+          Electrical/Design/${{ env.PROJECT_NAME }}/mfg-bot/
         if-no-files-found: warn
 
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/${{ PROJECT_NAME }}/mfg-bot/
+        files: Electrical/Design/${{ env.PROJECT_NAME }}/mfg-bot/
         dest: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         
     - uses: tsickert/discord-webhook@v4.0.0
