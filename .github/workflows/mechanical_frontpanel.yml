@@ -18,7 +18,7 @@ on:
   push:
     paths:
       - '.github/workflows/mechanical_frontpanel.yml'
-      - '.github/workflows/convert_step_to_stl.py'
+      - '.github/workflows/openocc_step_to_stl.py'
       - '.github/workflows/freecad_export.py'
       - '.github/workflows/openscad_preview.sh'
       - 'Mechanical/Design/Frontpanel/grid_frontpanel.FCStd'
@@ -72,7 +72,7 @@ jobs:
         conda install -c conda-forge pythonocc-core=7.7.0 --yes
 
         conda --version
-        python ./.github/workflows/convert_step_to_stl.py
+        python ./.github/workflows/openocc_step_to_stl.py
 
     - name: Generate Preview PNG
       run: |

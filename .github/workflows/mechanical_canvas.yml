@@ -18,7 +18,7 @@ on:
   push:
     paths:
       - '.github/workflows/mechanical_canvas.yml'
-      - '.github/workflows/convert_step_to_stl.py'
+      - '.github/workflows/pythonocc_step_to_stl.py'
       - '.github/workflows/freecad_export.py'
       - '.github/workflows/openscad_preview.sh'
       - 'Mechanical/Design/Canvas/canvas_injection.FCStd'
@@ -49,30 +49,24 @@ jobs:
       run: |
         ls
         export DISPLAY=:99
-        timeout 5m freecad --hidden ./Mechanical/Design/Canvas/canvas_injection.FCStd ./.github/workflows/freecad_export.py step pdf
+        timeout 2m freecad --hidden ./Mechanical/Design/Canvas/canvas_injection.FCStd ./.github/workflows/freecad_export.py step pdf
 
     - name: Install conda, pythonocc and do the conversion
       run: |
         CONDA_INSTALL_DIR="$HOME/miniconda3"
-
         # Download and install Miniconda
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
         bash miniconda.sh -b -p "$CONDA_INSTALL_DIR"
         rm miniconda.sh
-
         # Add Miniconda to PATH
         export PATH="$CONDA_INSTALL_DIR/bin:$PATH"
-
         # Initialize conda
         conda init bash
-
         # Print Miniconda version
         conda --version
-
         conda install -c conda-forge pythonocc-core=7.7.0 --yes
-
-        conda --version
-        python ./.github/workflows/convert_step_to_stl.py
+        # Convert step files to stl
+        python ./.github/workflows/pythonocc_step_to_stl.py
 
     - name: Generate Preview PNG
       run: |
@@ -101,3 +95,17 @@ jobs:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Hello, your files are ready!"
         filename: "result_${{ env.action_date }}.zip"
+   
+    - name: Copy files to preview folder
+      run: |
+        mkdir -p Preview/Preview/Mechanical/Canvas && cp temp/* Preview/Preview/Mechanical/Canvas
+
+    - name: Push
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: preview # The branch name where you want to push the assets
+        FOLDER: Preview # The directory where your assets are generated
+        CLEAR_GLOBS_FILE: ".clear-target-files"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
