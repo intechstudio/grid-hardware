@@ -47,6 +47,8 @@ jobs:
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
+        mv Electrical/Design/INTERFACE/mfg-bot/INTERFACE-erc.txt Electrical/Design/INTERFACE/mfg-bot/INTERFACE_erc.txt
+        mv Electrical/Design/INTERFACE/mfg-bot/INTERFACE-drc.txt Electrical/Design/INTERFACE/mfg-bot/INTERFACE_drc.txt
         mv Electrical/Design/INTERFACE/mfg-bot/Schematic.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_Schematic.pdf
         mv Electrical/Design/INTERFACE/mfg-bot/PCB_Top.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_PCB_Top.pdf
         mv Electrical/Design/INTERFACE/mfg-bot/PCB_Bottom.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_PCB_Bottom.pdf
@@ -74,3 +76,17 @@ jobs:
         content: "Heyo, fresh PCB files are ready!"
         filename: "INTERFACE_${{ env.action_date }}.zip"
         
+    - name: Copy files to preview folder
+      run: |
+        mkdir -p Preview/Preview/Electrical && cp Electrical/Design/INTERFACE/mfg-bot/* Preview/Preview/Electrical
+
+    - name: Push
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: preview # The branch name where you want to push the assets
+        FOLDER: Preview # The directory where your assets are generated
+        CLEAR_GLOBS_FILE: ".clear-target-files"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
+
