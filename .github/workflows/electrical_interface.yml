@@ -10,6 +10,9 @@ on:
       - '.github/workflows/electrical_interface.yml'
       - '.github/workflows/convert_bottom_position.py'
 
+env:
+  PROJECT_NAME: "Mechanical/Design/Frontpanel/grid_frontpanel.FCStd"
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
@@ -23,21 +26,21 @@ jobs:
 
     - name: Run PCB stuff
       run: |
-        make -C Electrical/Design/INTERFACE
+        make -C Electrical/Design/$PROJECT_NAME
 
     - name: Print errors
       if: ${{ always() }}
       run: |
-        cat Electrical/Design/INTERFACE/mfg-bot/INTERFACE-drc.txt
-        cat Electrical/Design/INTERFACE/kibot_error.log
+        cat Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME-drc.txt
+        cat Electrical/Design/$PROJECT_NAME/kibot_error.log
 
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
 
     - name: Convert position file
       run: |
-        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv ../../Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos_fixed.csv
-        rm Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-both_pos.csv
+        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/$PROJECT_NAME/mfg-bot/mfg/$PROJECT_NAME-both_pos.csv ../../Electrical/Design/$PROJECT_NAME/mfg-bot/mfg/$PROJECT_NAME-both_pos_fixed.csv
+        rm Electrical/Design/$PROJECT_NAME/mfg-bot/mfg/$PROJECT_NAME-both_pos.csv
   
     - name: Zipping gerber      
       uses: vimtor/action-zip@v1
@@ -47,19 +50,19 @@ jobs:
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
-        mv Electrical/Design/INTERFACE/mfg-bot/INTERFACE-erc.txt Electrical/Design/INTERFACE/mfg-bot/INTERFACE_erc.txt
-        mv Electrical/Design/INTERFACE/mfg-bot/INTERFACE-drc.txt Electrical/Design/INTERFACE/mfg-bot/INTERFACE_drc.txt
-        mv Electrical/Design/INTERFACE/mfg-bot/Schematic.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_Schematic.pdf
-        mv Electrical/Design/INTERFACE/mfg-bot/PCB_Top.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_PCB_Top.pdf
-        mv Electrical/Design/INTERFACE/mfg-bot/PCB_Bottom.pdf Electrical/Design/INTERFACE/mfg-bot/INTERFACE_PCB_Bottom.pdf
-        mv Electrical/Design/INTERFACE/kibot_error.log Electrical/Design/INTERFACE/mfg-bot/INTERFACE_kibot_error.log
-        rm -r Electrical/Design/INTERFACE/mfg-bot/JLCPCB
+        mv Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME-erc.txt Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME_erc.txt
+        mv Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME-drc.txt Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME_drc.txt
+        mv Electrical/Design/$PROJECT_NAME/mfg-bot/Schematic.pdf Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME_Schematic.pdf
+        mv Electrical/Design/$PROJECT_NAME/mfg-bot/PCB_Top.pdf Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME_PCB_Top.pdf
+        mv Electrical/Design/$PROJECT_NAME/mfg-bot/PCB_Bottom.pdf Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME_PCB_Bottom.pdf
+        mv Electrical/Design/$PROJECT_NAME/kibot_error.log Electrical/Design/$PROJECT_NAME/mfg-bot/$PROJECT_NAME_kibot_error.log
+        rm -r Electrical/Design/$PROJECT_NAME/mfg-bot/JLCPCB
 
     - name: Upload results
       if: ${{ always() }}
       uses: actions/upload-artifact@v2
       with:
-        name: FabPCB_Output
+        name: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         path: |
           Electrical/Design/INTERFACE/mfg-bot/
         if-no-files-found: warn
@@ -68,17 +71,17 @@ jobs:
       uses: vimtor/action-zip@v1
       with:
         files: Electrical/Design/INTERFACE/mfg-bot/
-        dest: "INTERFACE_${{ env.action_date }}.zip"
+        dest: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         content: "Heyo, fresh PCB files are ready!"
-        filename: "INTERFACE_${{ env.action_date }}.zip"
+        filename: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         
     - name: Copy files to preview folder
       run: |
-        mkdir -p Preview/Preview/Electrical && cp Electrical/Design/INTERFACE/mfg-bot/* Preview/Preview/Electrical
+        mkdir -p Preview/Preview/Electrical && cp -r Electrical/Design/$PROJECT_NAME/mfg-bot/* Preview/Preview/Electrical
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
