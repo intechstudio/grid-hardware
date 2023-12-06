@@ -11,7 +11,7 @@ on:
       - '.github/workflows/convert_bottom_position.py'
 
 env:
-  PROJECT_NAME: "Mechanical/Design/Frontpanel/grid_frontpanel.FCStd"
+  PROJECT_NAME: "INTERFACE"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -45,8 +45,8 @@ jobs:
     - name: Zipping gerber      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/INTERFACE/mfg-bot/JLCPCB
-        dest: "Electrical/Design/INTERFACE/mfg-bot/mfg/INTERFACE-gerber.zip"
+        files: Electrical/Design/$PROJECT_NAME/mfg-bot/JLCPCB
+        dest: "Electrical/Design/$PROJECT_NAME/mfg-bot/mfg/$PROJECT_NAME-gerber.zip"
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
@@ -64,13 +64,13 @@ jobs:
       with:
         name: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         path: |
-          Electrical/Design/INTERFACE/mfg-bot/
+          Electrical/Design/$PROJECT_NAME/mfg-bot/
         if-no-files-found: warn
 
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/INTERFACE/mfg-bot/
+        files: Electrical/Design/$PROJECT_NAME/mfg-bot/
         dest: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
         
     - uses: tsickert/discord-webhook@v4.0.0
