@@ -74,8 +74,3 @@ jobs:
         content: "Heyo, fresh PCB files are ready!"
         filename: "INTERFACE_${{ env.action_date }}.zip"
         
-    - uses: tsickert/discord-webhook@v4.0.0
-      with:
-        webhook-url: ${{ secrets.WEBHOOK_URL }}
-        content: "Don't forget to check the kibot report!"
-        filename: "Electrical/Design/INTERFACE/kibot_error.log"
