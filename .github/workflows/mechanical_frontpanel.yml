@@ -1,25 +1,20 @@
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
+
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
-        # Default value if no value is explicitly provided
-        default: 'World'
-        # Input has to be provided for the workflow to run
-        required: true
   push:
     paths:
       - '.github/workflows/mechanical_frontpanel.yml'
-      - '.github/workflows/openocc_step_to_stl.py'
+      - '.github/workflows/pythonocc_step_to_stl.py'
       - '.github/workflows/freecad_export.py'
       - '.github/workflows/openscad_preview.sh'
       - 'Mechanical/Design/Frontpanel/grid_frontpanel.FCStd'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+env:
+  DESIGN_FILE_PATH: "Mechanical/Design/Frontpanel/grid_frontpanel.FCStd"
 
 jobs:
   freecad_export:
@@ -45,7 +40,7 @@ jobs:
       run: |
         ls
         export DISPLAY=:99
-        timeout 1m freecad --hidden ./Mechanical/Design/Frontpanel/grid_frontpanel.FCStd ./.github/workflows/freecad_export.py step pdf
+        timeout 1m freecad --hidden $DESIGN_FILE_PATH ./.github/workflows/freecad_export.py step pdf
 
     - name: Install conda, pythonocc and do the conversion
       run: |
@@ -68,7 +63,7 @@ jobs:
         conda install -c conda-forge pythonocc-core=7.7.0 --yes
 
         conda --version
-        python ./.github/workflows/openocc_step_to_stl.py
+        python ./.github/workflows/pythonocc_step_to_stl.py
 
     - name: Generate Preview PNG
       run: |
