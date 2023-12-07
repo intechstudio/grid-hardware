@@ -51,8 +51,8 @@ jobs:
     - name: Zipping gerber      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/${{ env.matrix.board }}/mfg-bot/JLCPCB
-        dest: "Electrical/Design/${{ env.matrix.board }}/mfg-bot/mfg/${{ env.matrix.board }}-gerber.zip"
+        files: Electrical/Design/${{ matrix.board }}/mfg-bot/JLCPCB
+        dest: Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-gerber.zip
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
@@ -68,22 +68,22 @@ jobs:
       if: ${{ always() }}
       uses: actions/upload-artifact@v2
       with:
-        name: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
+        name: "result_${{ matrix.board }}_${{ env.action_date }}.zip"
         path: |
-          Electrical/Design/${{ env.matrix.board }}/mfg-bot/
+          Electrical/Design/${{ matrix.board }}/mfg-bot/
         if-no-files-found: warn
 
     - name: Zipping artifacts      
       uses: vimtor/action-zip@v1
       with:
-        files: Electrical/Design/${{ env.matrix.board }}/mfg-bot/
-        dest: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
+        files: Electrical/Design/${{ matrix.board }}/mfg-bot/
+        dest: "result_${{ matrix.board }}_${{ env.action_date }}.zip"
         
     - uses: tsickert/discord-webhook@v4.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        content: "Heyo, fresh PCB files are ready!"
-        filename: "result_${{ github.workflow }}_${{ env.action_date }}.zip"
+        content: "Heyo, fresh ${{ matrix.board }} PCB files are ready!"
+        filename: "result_${{ matrix.board }}_${{ env.action_date }}.zip"
         
     - name: Copy files to preview folder
       run: |
