@@ -107,7 +107,7 @@ jobs:
 
       - name: Copy files to preview folder
         run: |
-          mkdir -p Preview/Preview/Electrical && cp temp/* Preview/Preview/Electrical
+          mkdir -p Preview/Preview/Electrical && cp -r temp/* Preview/Preview/Electrical
           cd Preview/Preview/Electrical
           ls
 
