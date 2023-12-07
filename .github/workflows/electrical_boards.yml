@@ -94,13 +94,22 @@ jobs:
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
+        with:
+          path: download
 
-      - name: Unzip all files from download
+      - name: Collecting files
         run: |
-          mkdir temp
-          ls
-          for file *.zip; do
-            unzip -qq "$file" -d temp/
+
+          # Create the temp folder if it doesn't exist
+          mkdir -p temp
+
+          # Loop through each subdirectory in the download folder
+          for subdirectory in download/*; do
+              # Check if it is a directory
+              if [ -d "$subdirectory" ]; then
+                  # Copy the contents of the subdirectory to the temp folder
+                  cp -r "$subdirectory"/* "temp/"
+              fi
           done
 
       - name: Display Unzipped Files
