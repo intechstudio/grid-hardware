@@ -94,13 +94,12 @@ jobs:
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
-        with:
-          path: download
 
       - name: Unzip all files from download
         run: |
           mkdir temp
-          for file in download/*; do
+          ls
+          for file *.zip; do
             unzip -qq "$file" -d temp/
           done
 
