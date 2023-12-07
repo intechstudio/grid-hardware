@@ -61,7 +61,9 @@ jobs:
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/Schematic.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_Schematic.pdf
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Top.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Top.pdf
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Bottom.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Bottom.pdf
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/kibot_errors.filter Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_errors.filter
         mv Electrical/Design/${{ matrix.board }}/kibot_error.log Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_error.log
+        
         rm -r Electrical/Design/${{ matrix.board }}/mfg-bot/JLCPCB
 
     - name: Upload results
