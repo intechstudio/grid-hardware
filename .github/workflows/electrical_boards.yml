@@ -68,7 +68,7 @@ jobs:
       if: ${{ always() }}
       uses: actions/upload-artifact@v2
       with:
-        name: "result_${{ matrix.board }}_${{ env.action_date }}.zip"
+        name: "result_${{ matrix.board }}_${{ env.action_date }}"
         path: |
           Electrical/Design/${{ matrix.board }}/mfg-bot/
         if-no-files-found: warn
@@ -89,6 +89,8 @@ jobs:
     needs: generate-artifacts    
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: preview  # Specify the branch to checkout
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
