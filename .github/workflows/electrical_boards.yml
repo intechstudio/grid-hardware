@@ -14,7 +14,7 @@ on:
 jobs:
 
   generate-artifacts:
-    name: PCB fabrication files
+    name: kicad export
     runs-on: ubuntu-latest
     container: "setsoft/kicad_auto:ki7"    
     strategy:
@@ -75,17 +75,6 @@ jobs:
         path: |
           Electrical/Design/${{ matrix.board }}/mfg-bot/
         if-no-files-found: warn
-
-    - name: Zipping artifacts      
-      uses: vimtor/action-zip@v1
-      with:
-        files: Electrical/Design/${{ matrix.board }}/mfg-bot/
-        dest: "result_${{ matrix.board }}_${{ env.action_date }}.zip"
-        
-    - name: Copy files to preview folder
-      run: |
-        mkdir -p Preview/Preview/Electrical && cp -r Electrical/Design/${{ matrix.board }}/mfg-bot/* Preview/Preview/Electrical
-        mkdir -p temp && cp Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_error.log temp/${{ matrix.board }}.txt
 
   deploy-results:
     runs-on: ubuntu-latest
