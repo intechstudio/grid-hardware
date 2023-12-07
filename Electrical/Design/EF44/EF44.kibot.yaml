@@ -198,3 +198,25 @@ outputs:
           name: Rotation
         - id: Side
           name: Layer
+
+  - name: 3d_no_variant top
+    comment: "3D view without variant"
+    type: render_3d
+    options:
+      download: true
+      view: 'top'
+      zoom: 10
+      ray_tracing: true
+      transparent_background: true
+      auto_crop: true
+
+  - name: 3d_no_variant bottom
+    comment: "3D view without variant"
+    type: render_3d
+    options:
+      download: true
+      view: 'bottom'
+      zoom: 10
+      ray_tracing: true
+      transparent_background: true
+      auto_crop: true
