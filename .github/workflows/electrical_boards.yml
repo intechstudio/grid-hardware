@@ -95,15 +95,8 @@ jobs:
         with:
           path: download
 
-      - name: Set up Python for zipping
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'  # Replace 'x' with the desired Python version
-
       - name: Unzip all files from download
         run: |
-          python -m pip install --upgrade pip
-          pip install unzip
           mkdir temp
           for file in download/*; do
             unzip -qq "$file" -d temp/
