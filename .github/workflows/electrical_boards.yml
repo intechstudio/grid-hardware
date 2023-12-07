@@ -13,7 +13,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
-  FabPCB:
+  generate-artifacts:
     name: PCB fabrication files
     runs-on: ubuntu-latest
     container: "setsoft/kicad_auto:ki7"    
@@ -88,6 +88,7 @@ jobs:
     - name: Copy files to preview folder
       run: |
         mkdir -p Preview/Preview/Electrical && cp -r Electrical/Design/${{ matrix.board }}/mfg-bot/* Preview/Preview/Electrical
+        mkdir -p temp && cp Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_error.log temp/${{ matrix.board }}.txt
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
@@ -99,3 +100,20 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
         MESSAGE: "Build: ({sha}) {msg}" # The commit message
 
+  deploy-results:
+    runs-on: ubuntu-latest
+    needs: generate-artifacts
+
+      - name: Download reports' artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: temp
+
+      - name: Show results
+        run: |
+          cd temp
+          ls
+
+      - name: grep
+        run: |
+          grep -irn "-gerber"
