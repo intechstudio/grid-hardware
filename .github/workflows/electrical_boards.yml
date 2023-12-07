@@ -105,7 +105,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install unzip
           mkdir temp
-          for file in download/*.zip; do
+          for file in download/*; do
             unzip -qq "$file" -d temp/
           done
 
