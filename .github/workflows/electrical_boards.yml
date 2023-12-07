@@ -93,13 +93,21 @@ jobs:
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
         with:
-          path: temp
+          path: download
 
-      - name: Show results
-        run: |
-          cd temp
-          ls
+      - name: Set up Python for zipping
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace 'x' with the desired Python version
 
-      - name: grep
+      - name: Unzip all files from download
         run: |
-          grep -irn "-gerber"
+          python -m pip install --upgrade pip
+          pip install unzip
+          mkdir temp
+          for file in download/*.zip; do
+            unzip -qq "$file" -d temp/
+          done
+
+      - name: Display Unzipped Files
+        run: ls temp/
