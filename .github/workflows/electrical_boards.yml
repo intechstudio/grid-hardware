@@ -32,21 +32,21 @@ jobs:
 
     - name: Run PCB stuff
       run: |
-        make -C Electrical/Design/${matrix.board}
+        make -C Electrical/Design/${{ matrix.board }}
 
     - name: Print errors
       if: ${{ always() }}
       run: |
-        cat Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}-drc.txt
-        cat Electrical/Design/${matrix.board}/kibot_error.log
+        cat Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt
+        cat Electrical/Design/${{ matrix.board }}/kibot_error.log
 
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
 
     - name: Convert position file
       run: |
-        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/${matrix.board}/mfg-bot/mfg/${matrix.board}-both_pos.csv ../../Electrical/Design/${matrix.board}/mfg-bot/mfg/${matrix.board}-both_pos_fixed.csv
-        rm Electrical/Design/${matrix.board}/mfg-bot/mfg/${matrix.board}-both_pos.csv
+        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos.csv ../../Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos_fixed.csv
+        rm Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos.csv
   
     - name: Zipping gerber      
       uses: vimtor/action-zip@v1
@@ -56,13 +56,13 @@ jobs:
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
-        mv Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}-erc.txt Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}_erc.txt
-        mv Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}-drc.txt Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}_drc.txt
-        mv Electrical/Design/${matrix.board}/mfg-bot/Schematic.pdf Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}_Schematic.pdf
-        mv Electrical/Design/${matrix.board}/mfg-bot/PCB_Top.pdf Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}_PCB_Top.pdf
-        mv Electrical/Design/${matrix.board}/mfg-bot/PCB_Bottom.pdf Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}_PCB_Bottom.pdf
-        mv Electrical/Design/${matrix.board}/kibot_error.log Electrical/Design/${matrix.board}/mfg-bot/${matrix.board}_kibot_error.log
-        rm -r Electrical/Design/${matrix.board}/mfg-bot/JLCPCB
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-erc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_erc.txt
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_drc.txt
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/Schematic.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_Schematic.pdf
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Top.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Top.pdf
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Bottom.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Bottom.pdf
+        mv Electrical/Design/${{ matrix.board }}/kibot_error.log Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_error.log
+        rm -r Electrical/Design/${{ matrix.board }}/mfg-bot/JLCPCB
 
     - name: Upload results
       if: ${{ always() }}
@@ -87,7 +87,7 @@ jobs:
         
     - name: Copy files to preview folder
       run: |
-        mkdir -p Preview/Preview/Electrical && cp -r Electrical/Design/${matrix.board}/mfg-bot/* Preview/Preview/Electrical
+        mkdir -p Preview/Preview/Electrical && cp -r Electrical/Design/${{ matrix.board }}/mfg-bot/* Preview/Preview/Electrical
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
