@@ -81,6 +81,8 @@ jobs:
     needs: generate-artifacts    
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: preview
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
