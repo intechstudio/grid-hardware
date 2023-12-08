@@ -84,6 +84,12 @@ jobs:
         with:
           ref: preview
 
+      - name: Check files
+        run: |
+          ls
+          ls Preview/
+          ls Preview/Mechanical/
+
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
         with:
