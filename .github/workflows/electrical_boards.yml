@@ -84,17 +84,6 @@ jobs:
         with:
           ref: preview
 
-      - name: Check files
-        run: |          
-          git config --global user.name ${{ github.actor }}
-          git config --global user.email ${{ github.actor }}@users.noreply.github.com
-
-      - name: Copy files to preview folder
-        run: |          
-          echo "YOLO${{ github.sha }}" >> test.txt
-          mkdir -p Preview/Electrical && cp -r test.txt Preview/Electrical
-          cd Preview/Electrical
-
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
         with:
@@ -104,31 +93,20 @@ jobs:
         run: |
 
           # Create the temp folder if it doesn't exist
-          mkdir -p temp
+          mkdir -p Preview/Electrical
 
           # Loop through each subdirectory in the download folder
           for subdirectory in download/*; do
               # Check if it is a directory
               if [ -d "$subdirectory" ]; then
                   # Copy the contents of the subdirectory to the temp folder
-                  cp -r "$subdirectory"/* "temp/"
+                  cp -r "$subdirectory"/* "Preview/Electrical/"
               fi
           done
 
-      - name: Display collected files
-        run: ls temp/
-
-      - name: Copy files to preview folder
-        run: |
-          mkdir -p Preview/Preview/Electrical && cp -r temp/* Preview/Preview/Electrical
-          cd Preview/Preview/Electrical
-          ls
-
       - name: Commit the files
         run: |          
-          git status
           git add Preview/*
-          git status
           git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
           git push
 
