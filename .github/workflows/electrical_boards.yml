@@ -83,9 +83,6 @@ jobs:
       - name: Check files
         run: |
           git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
-          ls
-          ls grid-hardware/Preview/
-          ls grid-hardware/Preview/Mechanical/
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
@@ -118,10 +115,11 @@ jobs:
 
       - name: Commit the files
         run: |          
+          cd grid-hardware
           git config --global user.email "bot@intech.studio"
           git config --global user.name "Intech Bot"
           git status
-          git add grid-hardware/Preview/*
+          git add Preview/*
           git status
           git commit -m ${{ github.workflow }}" "BOT ${{ github.sha }} 
           git push
