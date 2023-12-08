@@ -84,8 +84,8 @@ jobs:
         run: |
           git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
           ls
-          ls Preview/
-          ls Preview/Mechanical/
+          ls grid-hardware/Preview/
+          ls grid-hardware/Preview/Mechanical/
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
@@ -112,8 +112,8 @@ jobs:
 
       - name: Copy files to preview folder
         run: |
-          mkdir -p Preview/Preview/Electrical && cp -r temp/* Preview/Preview/Electrical
-          cd Preview/Preview/Electrical
+          mkdir -p grid-hardware/Preview/Preview/Electrical && cp -r temp/* grid-hardware/Preview/Preview/Electrical
+          cd grid-hardware/Preview/Preview/Electrical
           ls
 
       - name: Commit the files
@@ -121,7 +121,7 @@ jobs:
           git config --global user.email "bot@intech.studio"
           git config --global user.name "Intech Bot"
           git status
-          git add Preview/*
+          git add grid-hardware/Preview/*
           git status
           git commit -m ${{ github.workflow }}" "BOT ${{ github.sha }} 
           git push
