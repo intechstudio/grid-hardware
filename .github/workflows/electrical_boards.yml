@@ -113,13 +113,15 @@ jobs:
           cd Preview/Preview/Electrical
           ls
 
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: preview # The branch name where you want to push the assets
-          FOLDER: Preview # The directory where your assets are generated
-          CLEAR_GLOBS_FILE: ".clear-target-files"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+      - name: Commit the files
+        run: |          
+          git config --global user.email "bot@intech.studio"
+          git config --global user.name "Intech Bot"
+          git status
+          git add Preview/*
+          git status
+          git commit -m ${{ github.workflow }}" "BOT ${{ github.sha }} 
+          git pull
+          git push
+
 
