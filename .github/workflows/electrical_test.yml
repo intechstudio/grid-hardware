@@ -1,4 +1,4 @@
-name: "electrical_boards"
+name: "electrical_test"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -19,7 +19,7 @@ jobs:
         run: |          
           git config --global user.email "bot@intech.studio"
           git config --global user.name "Intech Bot"
-          git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
+          git clone -b preview https://github.com/intechstudio/grid-hardware.git
           echo "YOLO${{ github.sha }}" >> test.txt
 
 
