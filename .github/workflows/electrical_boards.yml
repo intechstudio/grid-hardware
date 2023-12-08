@@ -80,11 +80,20 @@ jobs:
     runs-on: ubuntu-latest
     needs: generate-artifacts    
     steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: preview
+
       - name: Check files
         run: |          
-          git config --global user.email "bot@intech.studio"
-          git config --global user.name "Intech Bot"
-          git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
+
+      - name: Copy files to preview folder
+        run: |          
+          echo "YOLO${{ github.sha }}" >> test.txt
+          mkdir -p Preview/Electrical && cp -r test.txt Preview/Electrical
+          cd Preview/Electrical
 
       - name: Download reports' artifacts
         uses: actions/download-artifact@v3
@@ -117,11 +126,9 @@ jobs:
 
       - name: Commit the files
         run: |          
-          cd grid-hardware
           git status
           git add Preview/*
           git status
           git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
           git push
-
 

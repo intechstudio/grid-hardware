@@ -29,8 +29,8 @@ jobs:
 
       - name: Copy files to preview folder
         run: |
-          mkdir -p Preview/Preview/Electrical && cp -r test.txt Preview/Preview/Electrical
-          cd Preview/Preview/Electrical
+          mkdir -p Preview/Electrical && cp -r test.txt Preview/Electrical
+          cd Preview/Electrical
 
       - name: Commit the files
         run: |          
