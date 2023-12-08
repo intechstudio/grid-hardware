@@ -80,12 +80,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: generate-artifacts    
     steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: preview
-
       - name: Check files
         run: |
+          git clone -b preview https://${{ secrets.GITHUB_TOKEN }}github.com/intechstudio/grid-hardware.git
           ls
           ls Preview/
           ls Preview/Mechanical/
