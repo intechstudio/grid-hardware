@@ -120,8 +120,8 @@ jobs:
 
       - name: Copy files to preview folder
         run: |
-          mkdir -p grid-hardware/Preview/Preview/Electrical && cp -r temp/* grid-hardware/Preview/Preview/Electrical
-          cd grid-hardware/Preview/Preview/Electrical
+          mkdir -p Preview/Preview/Electrical && cp -r temp/* Preview/Preview/Electrical
+          cd Preview/Preview/Electrical
           ls
 
       - name: Commit the files
