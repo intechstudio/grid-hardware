@@ -1,0 +1,41 @@
+name: "electrical_boards"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Electrical/Design/**'
+      - '.github/workflows/electrical_test.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  deploy-results:
+    runs-on: ubuntu-latest
+    needs: generate-artifacts    
+    steps:
+      - name: Check files
+        run: |          
+          git config --global user.email "bot@intech.studio"
+          git config --global user.name "Intech Bot"
+          git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
+          echo "YOLO${{ github.sha }}" >> test.txt
+
+
+      - name: Copy files to preview folder
+        run: |
+          mkdir -p grid-hardware/Preview/Preview/Electrical && cp -r test.txt grid-hardware/Preview/Preview/Electrical
+          cd grid-hardware/Preview/Preview/Electrical
+
+      - name: Commit the files
+        run: |          
+          cd grid-hardware
+          git status
+          git add Preview/*
+          git status
+          git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
+          git push
+
+
