@@ -82,7 +82,7 @@ jobs:
     steps:
       - name: Check files
         run: |
-          git clone -b preview https://${{ secrets.GITHUB_TOKEN }}github.com/intechstudio/grid-hardware.git
+          git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
           ls
           ls Preview/
           ls Preview/Mechanical/
