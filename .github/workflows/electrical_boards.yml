@@ -21,12 +21,12 @@ jobs:
       fail-fast: false
       matrix:
         board:
-        - 'INTERFACE'
-        - 'PO16_BU16'
-        - 'PBF4'
-        - 'EN16'
-        - 'EF44'
-        - 'TEK2'
+        - 'PCBA-INTERFACE'
+        - 'PCBA-PO16_BU16'
+        - 'PCBA-PBF4'
+        - 'PCBA-EN16'
+        - 'PCBA-EF44'
+        - 'PCBA-TEK2'
 
     steps:
     - uses: actions/checkout@v2
@@ -81,7 +81,9 @@ jobs:
     needs: generate-artifacts    
     steps:
       - name: Check files
-        run: |
+        run: |          
+          git config --global user.email "bot@intech.studio"
+          git config --global user.name "Intech Bot"
           git clone -b preview https://${{ secrets.GITHUB_TOKEN }}@github.com/intechstudio/grid-hardware.git
 
       - name: Download reports' artifacts
@@ -116,8 +118,6 @@ jobs:
       - name: Commit the files
         run: |          
           cd grid-hardware
-          git config --global user.email "bot@intech.studio"
-          git config --global user.name "Intech Bot"
           git status
           git add Preview/*
           git status

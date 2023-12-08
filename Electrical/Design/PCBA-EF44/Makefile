@@ -1,9 +1,9 @@
 #!/usr/bin/make
 DEBUG=
 MAK=kibot.mak
-CONFIG=INTERFACE.kibot.yaml
-SCH=INTERFACE.kicad_sch
-PCB=INTERFACE.kicad_pcb
+CONFIG=PCBA-EF44.kibot.yaml
+SCH=PCBA-EF44.kicad_sch
+PCB=PCBA-EF44.kicad_pcb
 DEST=mfg-bot
 
 all: erc_and_fab drc_and_fab
