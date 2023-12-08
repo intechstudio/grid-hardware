@@ -121,7 +121,7 @@ jobs:
           git status
           git add Preview/*
           git status
-          git commit -m ${{ github.workflow }}" "BOT ${{ github.sha }} 
+          git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
           git push
 
 
