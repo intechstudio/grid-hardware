@@ -17,8 +17,8 @@ jobs:
     steps:
       - name: Check files
         run: |          
-          git config --global user.email "bot@intech.studio"
-          git config --global user.name "Intech Bot"
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
           git clone -b preview https://github.com/intechstudio/grid-hardware.git
           echo "YOLO${{ github.sha }}" >> test.txt
 
