@@ -15,22 +15,25 @@ jobs:
   deploy-results:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: preview
+
+
       - name: Check files
         run: |          
           git config --global user.name ${{ github.actor }}
           git config --global user.email ${{ github.actor }}@users.noreply.github.com
-          git clone -b preview https://github.com/intechstudio/grid-hardware.git
           echo "YOLO${{ github.sha }}" >> test.txt
 
 
       - name: Copy files to preview folder
         run: |
-          mkdir -p grid-hardware/Preview/Preview/Electrical && cp -r test.txt grid-hardware/Preview/Preview/Electrical
-          cd grid-hardware/Preview/Preview/Electrical
+          mkdir -p Preview/Preview/Electrical && cp -r test.txt Preview/Preview/Electrical
+          cd Preview/Preview/Electrical
 
       - name: Commit the files
         run: |          
-          cd grid-hardware
           git status
           git add Preview/*
           git status
