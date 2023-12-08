@@ -105,4 +105,4 @@ jobs:
         git status
         git add Preview/*
         git status
-        git commit -m "BOT ${{ GITHUB_SHA }} ${{ GITHUB_WORKFLOW }}"
+        git commit -m "BOT ${{ github.sha }} ${{ github.workflow }}"
