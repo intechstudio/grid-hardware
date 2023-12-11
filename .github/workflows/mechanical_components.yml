@@ -84,3 +84,39 @@ jobs:
       with:
         name: "result_${{ matrix.component }}_${{ env.action_date }}"
         path: temp/*.*
+
+  deploy-results:
+    runs-on: ubuntu-latest
+    needs: generate-artifacts    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: preview
+
+      - name: Download reports' artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: download
+
+      - name: Collecting files
+        run: |
+
+          # Create the temp folder if it doesn't exist
+          mkdir -p Preview/Mechanical
+
+          # Loop through each subdirectory in the download folder
+          for subdirectory in download/*; do
+              # Check if it is a directory
+              if [ -d "$subdirectory" ]; then
+                  # Copy the contents of the subdirectory to the temp folder
+                  cp -r "$subdirectory"/* "Preview/Mechanical/"
+              fi
+          done
+
+      - name: Commit the files
+        run: |        
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com  
+          git add Preview/*
+          git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
+          git push
