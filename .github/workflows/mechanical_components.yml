@@ -1,0 +1,86 @@
+name: mechanical_components
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/mechanical_components.yml'
+      - '.github/workflows/freecad_export.py'
+      - '.github/workflows/openscad_preview.sh'
+      - 'Mechanical/Design/**'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  generate-artifacts:
+    name: freecad export
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        component:
+        - 'SCREW-M1.6x8'
+        - 'SCREW-M1.6x16'
+        - 'PLASTIC-SPACER'
+        - 'PLASTIC-BUSHING-POT'
+        - 'RUBBER-FOOT'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb x11vnc
+        sudo apt-get  install snapd
+        sudo snap install freecad
+        sudo apt-get install -y openscad
+        Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
+        sleep 10  # Give Xvfb some time to start
+        x11vnc -display :99 -nopw -listen localhost -xkb -ncache 10 -ncache_cr -forever > /dev/null 2>&1 &
+
+    - name: Run GUI application
+      continue-on-error: true
+      run: |
+        ls        
+        export DISPLAY=:99
+        timeout 1m freecad --hidden ./Mechanical/Design/${{ matrix.component }}/${{ matrix.component }}.FCStd ./.github/workflows/freecad_export.py step pdf
+
+    - name: Install conda, pythonocc and do the conversion
+      run: |
+        CONDA_INSTALL_DIR="$HOME/miniconda3"
+
+        # Download and install Miniconda
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+        bash miniconda.sh -b -p "$CONDA_INSTALL_DIR"
+        rm miniconda.sh
+
+        # Add Miniconda to PATH
+        export PATH="$CONDA_INSTALL_DIR/bin:$PATH"
+
+        # Initialize conda
+        conda init bash
+
+        # Print Miniconda version
+        conda --version
+
+        conda install -c conda-forge pythonocc-core=7.7.0 --yes
+
+        conda --version
+        python ./.github/workflows/pythonocc_step_to_stl.py
+
+    - name: Generate Preview PNG
+      run: |
+        ./.github/workflows/openscad_preview.sh
+
+    - name: Stop x11vnc
+      run: pkill x11vnc
+
+    - name: Set Date
+      run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: "result_${{ matrix.component }}_${{ env.action_date }}"
+        path: temp/*.*
