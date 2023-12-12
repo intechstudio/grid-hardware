@@ -59,7 +59,12 @@
   (pad "S2" thru_hole oval (at 4.32 -1.98) (size 0.8 1.9) (drill oval 0.5 1.2) (layers "*.Cu" "*.Mask" "F.Paste") (tstamp cedb5cab-755a-411d-920c-53af2c9c03a3))
   (pad "S3" thru_hole oval (at -4.32 2.2) (size 0.8 2) (drill oval 0.5 0.9 (offset 0 -0.25)) (layers "*.Cu" "*.Mask" "F.Paste") (tstamp dc1612a7-51f3-4bd8-8741-cb4e2662c8fa))
   (pad "S4" thru_hole oval (at 4.32 2.2) (size 0.8 2) (drill oval 0.5 0.9 (offset 0 -0.25)) (layers "*.Cu" "*.Mask" "F.Paste") (tstamp bc88292d-da3e-472c-b011-de74c2b8b73b))
-  (model "${INTECH_3D}/HRO_TYPE-C-31-M-12.step"
+  (model "${INTECH_3D}/HRO_TYPE-C-31-M-12.step" hide
+    (offset (xyz -4.48 -4.8 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/HRO_TYPE-C-31-M-12.step"
     (offset (xyz -4.48 -4.8 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

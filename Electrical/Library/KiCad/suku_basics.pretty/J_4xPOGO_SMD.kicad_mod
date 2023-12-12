@@ -39,22 +39,42 @@
   (pad "3" smd circle (at 1.27 0 90) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 59a3caa5-82f3-4e22-b58d-584448f0c257))
   (pad "4" thru_hole circle (at 3.81 0 90) (size 1.2 1.2) (drill 0.7) (layers "*.Cu" "*.Mask") (tstamp c3c4a2a8-a3e0-428f-81c7-51269f59aadd))
   (pad "4" smd circle (at 3.81 0 90) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8b844470-6707-4e9e-b32f-b80f07087d7b))
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step" hide
     (offset (xyz 1.27 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 -90 0))
   )
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step" hide
     (offset (xyz -1.27 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 -90 0))
   )
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step" hide
     (offset (xyz -3.81 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 -90 0))
   )
   (model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+    (offset (xyz 3.81 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -90 0))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+    (offset (xyz 1.27 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -90 0))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+    (offset (xyz -1.27 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -90 0))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+    (offset (xyz -3.81 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -90 0))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
     (offset (xyz 3.81 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 -90 0))

@@ -19,7 +19,12 @@
   (pad "" thru_hole roundrect (at 2.15 -0.3 270) (size 1.4 1) (drill 0.75 (offset -0.2 0)) (layers "*.Cu" "*.Mask" "F.Paste") (roundrect_rratio 0.25) (tstamp 7127d8d9-1cc2-468f-8eac-b91c95e881ba))
   (pad "1" smd rect (at -1.7 1.1 90) (size 1.4 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 66afeefe-d0ba-4eb0-9aff-da9d06552d88))
   (pad "2" smd rect (at 1.7 1.1 270) (size 1.4 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a3349dad-dbd5-4ef5-be6f-04a22319ee58))
-  (model "${INTECH_3D}/hyp_mapmode.step"
+  (model "${INTECH_3D}/hyp_mapmode.step" hide
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/hyp_mapmode.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
