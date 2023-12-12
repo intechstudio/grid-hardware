@@ -46,7 +46,12 @@
   (pad "5" thru_hole roundrect (at -4.25 -32.6) (size 2 2.8) (drill oval 0.6 1.5 (offset 0.5 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.5) (tstamp 4982437a-86fe-487f-ac0a-4ebeb82668e3))
   (pad "6" thru_hole roundrect (at 4.25 31.4) (size 2 2.8) (drill oval 0.6 1.5 (offset -0.5 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.5) (tstamp 5471ec22-f574-4f76-9657-d2b3814e252d))
   (pad "7" thru_hole roundrect (at -4.25 32.6) (size 2 2.8) (drill oval 0.6 1.5 (offset 0.5 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.5) (tstamp 3a176e43-257f-4740-a59b-0f7980151630))
-  (model "${INTECH_3D}/ps60-10mc1BR10K.stp"
+  (model "${INTECH_3D}/ps60-10mc1BR10K.stp" hide
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
+  (model "${KIPRJMOD}/../../Library/3D/ps60-10mc1BR10K.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 90))
