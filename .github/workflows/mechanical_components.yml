@@ -18,12 +18,26 @@ jobs:
       fail-fast: false
       matrix:
         component:
+        - 'BATTERY_SPRING'
+        - 'FRONTPANEL-SHEET-BU16'
+        - 'FRONTPANEL-SHEET-EF44'
+        - 'FRONTPANEL-SHEET-PBF4'
+        - 'FRONTPANEL-SHEET-TEK2'
+        - 'INSERT-FADER'
+        - 'INSERT-M1.6x2.5x3'
+        - 'INSERT-M1.6x2.5x4'
+        - 'LIGHTPIPE'
+        - 'MAGNET-D3x13'
+        - 'MAGNET-SQ3'
+        - 'PLASTIC-BUSHING-POT'
+        - 'PLASTIC-CANVAS'
+        - 'PLASTIC-MAGNET-COVER'
+        - 'PLASTIC-MAPMODE'
+        - 'PLASTIC-SPACER'
+        - 'RUBBER-FOOT'
         - 'SCREW-M1.6x8'
         - 'SCREW-M1.6x16'
-        - 'PLASTIC-SPACER'
-        - 'PLASTIC-BUSHING-POT'
-        - 'RUBBER-FOOT'
-
+        
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
