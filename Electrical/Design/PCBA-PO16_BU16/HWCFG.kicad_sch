@@ -349,6 +349,9 @@
     )
   )
 
+  (junction (at 33.02 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid 5ea98de8-7698-4c03-a986-d339c6f5aeed)
+  )
   (junction (at 104.14 111.76) (diameter 0) (color 0 0 0 0)
     (uuid 633292d3-80c5-4986-be82-ce926e9f09f4)
   )
@@ -367,6 +370,14 @@
 
   (no_connect (at 116.84 73.66) (uuid be41ac9e-b8ba-4089-983b-b84269707f1c))
 
+  (wire (pts (xy 33.02 91.44) (xy 33.02 93.98))
+    (stroke (width 0) (type default))
+    (uuid 025c3e38-bb3f-4ef9-afcc-945ae041389c)
+  )
+  (wire (pts (xy 33.02 93.98) (xy 33.02 96.52))
+    (stroke (width 0) (type default))
+    (uuid 095b8bb4-3b01-4327-80e6-8a8ba83460f9)
+  )
   (wire (pts (xy 88.9 71.12) (xy 88.9 101.6))
     (stroke (width 0) (type default))
     (uuid 13bbfffc-affb-4b43-9eb1-f2ed90a8a919)
@@ -379,9 +390,17 @@
     (stroke (width 0) (type default))
     (uuid 1ab71a3c-340b-469a-ada5-4f87f0b7b2fa)
   )
+  (wire (pts (xy 55.88 81.28) (xy 91.44 81.28))
+    (stroke (width 0) (type default))
+    (uuid 20f57f0b-4677-4512-a6b3-b2cdfe2a9e14)
+  )
   (wire (pts (xy 78.74 73.66) (xy 78.74 63.5))
     (stroke (width 0) (type default))
     (uuid 246a0292-7f7c-4b58-9558-8d47f8e073f0)
+  )
+  (wire (pts (xy 33.02 83.82) (xy 33.02 86.36))
+    (stroke (width 0) (type default))
+    (uuid 2882d059-8acd-483f-9fb6-356f17c81ff7)
   )
   (wire (pts (xy 91.44 101.6) (xy 88.9 101.6))
     (stroke (width 0) (type default))
@@ -403,6 +422,10 @@
     (stroke (width 0) (type default))
     (uuid 59cb2966-1e9c-4b3b-b3c8-7499378d8dde)
   )
+  (wire (pts (xy 55.88 93.98) (xy 33.02 93.98))
+    (stroke (width 0) (type default))
+    (uuid 61370930-40f7-4a4e-8599-60f914ee0be4)
+  )
   (wire (pts (xy 91.44 76.2) (xy 78.74 76.2))
     (stroke (width 0) (type default))
     (uuid 637f12be-fa48-4ce4-96b2-04c21a8795c8)
@@ -410,6 +433,10 @@
   (wire (pts (xy 104.14 63.5) (xy 104.14 66.04))
     (stroke (width 0) (type default))
     (uuid 6d0c9e39-9878-44c8-8283-9a59e45006fa)
+  )
+  (wire (pts (xy 55.88 81.28) (xy 55.88 93.98))
+    (stroke (width 0) (type default))
+    (uuid 6e83bda7-2589-4eb8-bd31-919ec67b62ea)
   )
   (wire (pts (xy 78.74 91.44) (xy 91.44 91.44))
     (stroke (width 0) (type default))
@@ -443,6 +470,10 @@
     (stroke (width 0) (type default))
     (uuid a5c8e189-1ddc-4a66-984b-e0fd1529d346)
   )
+  (wire (pts (xy 33.02 104.14) (xy 33.02 101.6))
+    (stroke (width 0) (type default))
+    (uuid b59dd7f4-7e0a-4321-a445-f5afc1ef492c)
+  )
   (wire (pts (xy 121.92 88.9) (xy 121.92 91.44))
     (stroke (width 0) (type default))
     (uuid b854a395-bfc6-4140-9640-75d4f9296771)
@@ -450,10 +481,6 @@
   (wire (pts (xy 88.9 111.76) (xy 104.14 111.76))
     (stroke (width 0) (type default))
     (uuid c71f56c1-5b7c-4373-9716-fffac482104c)
-  )
-  (wire (pts (xy 91.44 81.28) (xy 78.74 81.28))
-    (stroke (width 0) (type default))
-    (uuid cbebc05a-c4dd-4baf-8c08-196e84e08b27)
   )
   (wire (pts (xy 116.84 71.12) (xy 121.92 71.12))
     (stroke (width 0) (type default))
@@ -501,6 +528,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1cb22080-0f59-4c18-a6e6-8685ef44ec53)
   )
+  (text "CLOSED IF PB44" (at 15.24 91.44 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 2035dbb2-2273-4c0c-985e-50c81909a379)
+  )
   (text "OPEN IF BU16" (at 38.1 68.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid afd81d02-5bdf-4444-80d9-d6c486d3d056)
@@ -521,10 +552,6 @@
   (label "HWCFG_LOW" (at 78.74 86.36 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 5ff19d63-2cb4-438b-93c4-e66d37a05329)
-  )
-  (label "HWCFG_LOW" (at 78.74 81.28 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 616287d9-a51f-498c-8b91-be46a0aa3a7f)
   )
   (label "HWCFG_HIGH" (at 129.54 88.9 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -588,7 +615,7 @@
     (pin "15" (uuid 641ded29-578f-46f0-92d4-9c9b17acb285))
     (pin "7" (uuid 47be6af3-88bb-4746-b5b1-12678ba8382a))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "U801") (unit 1)
         )
@@ -613,7 +640,7 @@
     )
     (pin "1" (uuid 25abd2fe-ae0e-471d-91ae-32a21f1c200d))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "#PWR0882") (unit 1)
         )
@@ -639,7 +666,7 @@
     (pin "1" (uuid 09108e89-2eef-4e74-bf52-be838a1dea43))
     (pin "2" (uuid f55ff3fa-d4cc-4dfc-92f2-ee50e03ff709))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "C801") (unit 1)
         )
@@ -664,7 +691,7 @@
     )
     (pin "1" (uuid a9a7bd7c-01ff-4497-815c-0813761b3afc))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "#PWR0943") (unit 1)
         )
@@ -689,9 +716,65 @@
     )
     (pin "1" (uuid f6a18405-7ab9-48ae-bd6a-791e0d9b02fb))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "#PWR0881") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 33.02 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6161b29d-f7e6-4269-939f-e4a25b4ea906)
+    (property "Reference" "#PWR0701" (at 33.02 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 33.02 78.74 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 33.02 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 33.02 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ebbbbe57-0f7e-419b-8377-d8daecb10159))
+    (instances
+      (project "PCBA-PO16_BU16"
+        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
+          (reference "#PWR0701") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "suku_basics:JP_SolderJumper_2_Open") (at 33.02 88.9 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6aa95f6c-3e37-4c6f-a5f1-6662e0b9bc3d)
+    (property "Reference" "JP1" (at 34.7472 87.7316 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "(NF)" (at 34.7472 90.043 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" (at 33.02 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 33.02 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8660de0f-76a2-4dec-ad7c-4c3aee68bf67))
+    (pin "2" (uuid 05d82bc1-5673-4981-811a-f7b40f6b978a))
+    (instances
+      (project "HWCFG"
+        (path "/dbe92a0d-89cb-4d3f-9497-c2c1d93a3018"
+          (reference "JP1") (unit 1)
+        )
+      )
+      (project "PCBA-PO16_BU16"
+        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
+          (reference "JP701") (unit 1)
         )
       )
     )
@@ -719,7 +802,7 @@
           (reference "#PWR0152") (unit 1)
         )
       )
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "#PWR0880") (unit 1)
         )
@@ -744,9 +827,39 @@
     )
     (pin "1" (uuid 6cb6c0ae-f4c4-423a-ac63-fd277624cd5e))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "#PWR0879") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 33.02 104.14 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a9a0de4e-a740-4518-ba48-ecfe2862b3f8)
+    (property "Reference" "#PWR0152" (at 33.02 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 33.147 108.5342 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 33.02 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 33.02 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 85b0acc9-f9cb-4061-bb6e-55278b1e7699))
+    (instances
+      (project "HWCFG"
+        (path "/dbe92a0d-89cb-4d3f-9497-c2c1d93a3018"
+          (reference "#PWR0152") (unit 1)
+        )
+      )
+      (project "PCBA-PO16_BU16"
+        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
+          (reference "#PWR0702") (unit 1)
         )
       )
     )
@@ -775,9 +888,40 @@
           (reference "R33") (unit 1)
         )
       )
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "R801") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "suku_basics:RES") (at 33.02 99.06 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid dd2174c4-28d9-4720-8c01-c4d4dc0510e2)
+    (property "Reference" "R33" (at 34.5186 97.8916 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "5k1" (at 34.5186 100.203 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "suku_basics:RES_0402" (at 33.02 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 33.02 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7a85f0a2-e652-4563-9b2f-67d4f6d5275c))
+    (pin "2" (uuid 04213fb4-1ef6-4831-be88-42d62640197d))
+    (instances
+      (project "HWCFG"
+        (path "/dbe92a0d-89cb-4d3f-9497-c2c1d93a3018"
+          (reference "R33") (unit 1)
+        )
+      )
+      (project "PCBA-PO16_BU16"
+        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
+          (reference "R702") (unit 1)
         )
       )
     )
@@ -800,7 +944,7 @@
     )
     (pin "1" (uuid 2b32faab-9eac-491b-8be3-7a4f22e16c04))
     (instances
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "#PWR0942") (unit 1)
         )
@@ -831,7 +975,7 @@
           (reference "JP1") (unit 1)
         )
       )
-      (project "PO16_BU16"
+      (project "PCBA-PO16_BU16"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005dc2dc06"
           (reference "JP801") (unit 1)
         )
