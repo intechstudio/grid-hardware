@@ -2,6 +2,7 @@ import FreeCAD
 import FreeCADGui
 import TechDrawGui
 
+import Part
 import PartGui
 import PartDesignGui
 
@@ -24,5 +25,11 @@ for obj in objs:
     print(obj.Label, obj.Name, "STEP")
     if hasattr(sono, 'Shape'):
       sono.Shape.exportStep("temp/"+obj.Label+".step")
+      # __objs__=[]
+      # __objs__.append(App.ActiveDocument.getObject(obj.Name))
+      # Part.export(__objs__,"temp/"+obj.Label+"_test.step")
     else:
       print(".Shape not available")
+      __objs__=[]
+      __objs__.append(App.ActiveDocument.getObject(obj.Name))
+      Part.export(__objs__,"temp/"+obj.Label+".step")
