@@ -125,7 +125,10 @@ for obj in objs:
       print(".Shape not available")
       __objs__=[]
       __objs__.append(App.ActiveDocument.getObject(obj.Name))
-      Part.export(__objs__,"temp/"+obj.Label+".step")
+      Part.export(__objs__,"temp/"+obj.Label+".step")      
+      print(__objs__)
+      import ImportGui
+      ImportGui.export(__objs__,"temp/"+obj.Label+"_test.step")
 
   elif sono.TypeId == "TechDraw::DrawPage":
 
