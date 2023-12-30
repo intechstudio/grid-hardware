@@ -114,6 +114,11 @@ for obj in objs:
       print(obj.Label, obj.Name, "STL")
       sono.Shape.exportStl("temp/"+obj.Label+".stl")
 
+  elif sono.TypeId == "App::Part":
+    if "step" in export_list:
+      print(obj.Label, obj.Name, "STEP")
+      sono.Shape.exportStep("temp/"+obj.Label+".step")
+
   elif sono.TypeId == "TechDraw::DrawPage":
 
     if "pdf" in export_list:
