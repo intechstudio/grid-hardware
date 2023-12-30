@@ -25,9 +25,11 @@ for obj in objs:
     print(obj.Label, obj.Name, "STEP")
     if hasattr(sono, 'Shape'):
       sono.Shape.exportStep("temp/"+obj.Label+".step")
-      # __objs__=[]
-      # __objs__.append(App.ActiveDocument.getObject(obj.Name))
-      # Part.export(__objs__,"temp/"+obj.Label+"_test.step")
+      __objs__=[]
+      __objs__.append(App.ActiveDocument.getObject(obj.Name))
+      print(__objs__)
+      import ImportGui
+      ImportGui.export(__objs__,"temp/"+obj.Label+"_test.step")
     else:
       print(".Shape not available")
       __objs__=[]
