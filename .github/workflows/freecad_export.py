@@ -115,9 +115,12 @@ for obj in objs:
       sono.Shape.exportStl("temp/"+obj.Label+".stl")
 
   elif sono.TypeId == "App::Part":
-    if "step" in export_list:
+    if sono.TypeId == "App::Part":
       print(obj.Label, obj.Name, "STEP")
-      sono.Shape.exportStep("temp/"+obj.Label+".step")
+      if hasattr(sono, 'Shape'):
+        sono.Shape.exportStep("temp/"+obj.Label+".step")
+      else:
+        print(".Shape not available")
 
   elif sono.TypeId == "TechDraw::DrawPage":
 

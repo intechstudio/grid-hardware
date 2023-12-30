@@ -1,0 +1,28 @@
+import FreeCAD
+import FreeCADGui
+import TechDrawGui
+
+import PartGui
+import PartDesignGui
+
+import sys
+
+print(f"sys.argv = {sys.argv}")
+
+import os 
+if os.path.isdir("temp"):
+  print("Directory already exists")
+else:
+  os.mkdir("temp")
+
+objs = App.ActiveDocument.Objects
+for obj in objs:
+  sono=App.ActiveDocument.getObject(obj.Name)
+  sono.ViewObject.show()
+
+  if sono.TypeId == "App::Part":
+    print(obj.Label, obj.Name, "STEP")
+    if hasattr(sono, 'Shape'):
+      sono.Shape.exportStep("temp/"+obj.Label+".step")
+    else:
+      print(".Shape not available")
