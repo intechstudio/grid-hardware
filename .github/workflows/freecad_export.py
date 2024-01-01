@@ -122,10 +122,10 @@ for obj in objs:
     ImportGui.export([sono],"temp/"+obj.Label+"_test.step")
 
   elif sono.TypeId == "TechDraw::DrawPage":
-
     if "pdf" in export_list:
       print(obj.Label, obj.Name, "DRAW")
       TechDrawGui.export([sono],u"temp/"+obj.Label+".pdf")
+
   sono.ViewObject.hide()
 
 
