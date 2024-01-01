@@ -4,6 +4,7 @@ import TechDrawGui
 
 import PartGui
 import PartDesignGui
+import ImportGui
 
 import sys
 
@@ -116,20 +117,9 @@ for obj in objs:
 
   if sono.TypeId == "App::Part":
     print(obj.Label, obj.Name, "STEP")
-    if hasattr(sono, 'Shape'):
-      sono.Shape.exportStep("temp/"+obj.Label+".step")
-      # __objs__=[]
-      # __objs__.append(App.ActiveDocument.getObject(obj.Name))
-      # Part.export(__objs__,"temp/"+obj.Label+"_test.step")
-    else:
-      print(".Shape not available")
-      __objs__=[]
-      __objs__.append(App.ActiveDocument.getObject(obj.Name))
-      Part.export(__objs__,"temp/"+obj.Label+".step")          
-      print(dir(sono))  
-      print(__objs__)
-      import ImportGui
-      ImportGui.export(__objs__,"temp/"+obj.Label+"_test.step")
+    print(".Shape not available")
+    Part.export([sono],"temp/"+obj.Label+".step")          
+    ImportGui.export([sono],"temp/"+obj.Label+"_test.step")
 
   elif sono.TypeId == "TechDraw::DrawPage":
 
