@@ -102,7 +102,7 @@ jobs:
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
         
     - name: Upload artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: "result_${{ matrix.component }}_${{ env.action_date }}"
         path: temp/*.*
