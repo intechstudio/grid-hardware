@@ -4,6 +4,7 @@ import TechDrawGui
 
 import PartGui
 import PartDesignGui
+import ImportGui
 
 import sys
 
@@ -114,11 +115,17 @@ for obj in objs:
       print(obj.Label, obj.Name, "STL")
       sono.Shape.exportStl("temp/"+obj.Label+".stl")
 
-  elif sono.TypeId == "TechDraw::DrawPage":
+  if sono.TypeId == "App::Part":
+    print(obj.Label, obj.Name, "STEP")
+    print(".Shape not available")
+    Part.export([sono],"temp/"+obj.Label+".step")          
+    ImportGui.export([sono],"temp/"+obj.Label+"_test.step")
 
+  elif sono.TypeId == "TechDraw::DrawPage":
     if "pdf" in export_list:
       print(obj.Label, obj.Name, "DRAW")
       TechDrawGui.export([sono],u"temp/"+obj.Label+".pdf")
+
   sono.ViewObject.hide()
 
 
