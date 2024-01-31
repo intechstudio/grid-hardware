@@ -18,7 +18,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
@@ -70,7 +70,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -101,7 +101,7 @@
       (property "Reference" "R" (at 0.762 0.508 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "RES" (at 0.762 -1.016 0)
+      (property "Value" "" (at 0.762 -1.016 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "suku_basics:RES_0805" (at 0 0 0)
@@ -552,16 +552,16 @@
     (property "Datasheet" "~" (at 46.736 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2a808a90-7b73-4dcd-a154-b11a20e688b9))
-    (pin "2A" (uuid 01d8d407-82f9-4032-9b0f-d5b96ce0071c))
-    (pin "2B" (uuid 27c1cf7e-b4bb-4ec0-8f88-b852cdb184ef))
-    (pin "3" (uuid b7988589-ad69-4935-8022-2ac7a0f05c72))
-    (pin "4" (uuid 40a1614a-72b1-4140-8860-86504aa2f12f))
-    (pin "5" (uuid 70bd683a-24a3-46c6-915c-5aba11923193))
-    (pin "6" (uuid abfb77db-357c-4776-a520-47a7ea84519f))
-    (pin "7" (uuid c5d27615-86b8-4b61-a0d1-ba6c4dcbc21a))
+    (pin "1" (uuid c98104ba-1b92-4c7d-bc3e-4fbccc45721c))
+    (pin "2A" (uuid c863c7ec-8c2c-4e09-967f-16fc8d9f4c11))
+    (pin "2B" (uuid d0b3760e-a26b-46e3-9c3a-7b13282d352c))
+    (pin "3" (uuid e3b38f50-76b9-49da-a7fc-edb113f9f83a))
+    (pin "4" (uuid e0081c9f-8928-433a-9a3d-d735c369e7f7))
+    (pin "5" (uuid 01ddc65c-1154-4f7e-93e4-621909b67b11))
+    (pin "6" (uuid 2e3cca60-56a5-42a9-8ba8-50ba1be94a92))
+    (pin "7" (uuid 32bc202f-002b-4606-8636-7ab8f31c0920))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "UI1001") (unit 1)
         )
@@ -584,16 +584,16 @@
     (property "Datasheet" "~" (at 97.536 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d3393e9-b517-47ee-9db4-2ba7ccd79c87))
-    (pin "2A" (uuid cf7200ff-cafb-4b87-af8e-c10b2edfe07c))
-    (pin "2B" (uuid 96bfb9ee-0abe-4756-a9cd-819f19813b52))
-    (pin "3" (uuid 17e1e704-8799-4a2b-9dfd-2045e14285b6))
-    (pin "4" (uuid fea8763d-016a-4c55-8683-5c901e24dd42))
-    (pin "5" (uuid fe27d7ae-33df-46f4-8568-bedb3b8b74c8))
-    (pin "6" (uuid 008e6cb6-90fe-458b-b48d-a7a3f91241da))
-    (pin "7" (uuid 5f6b0c7f-b124-41db-b070-a6cff4393d96))
+    (pin "1" (uuid 5914144e-f4b0-4ff6-aaa0-3e25bf967345))
+    (pin "2A" (uuid 3f7d5cdc-35b2-478c-b7b2-aa4079468669))
+    (pin "2B" (uuid 9ea745c1-4f5a-4494-8be0-42daaf4ae9fc))
+    (pin "3" (uuid 6cdc6199-be44-407e-a356-dd023b5d8a1f))
+    (pin "4" (uuid 713ffb81-c751-4de7-8913-a8a5f2dc55fc))
+    (pin "5" (uuid 4c6fb6e1-cd3e-41db-9f5b-5591a4071f32))
+    (pin "6" (uuid 419d5344-96b9-4ff9-a0a7-91daf94bac01))
+    (pin "7" (uuid 64607f11-a840-410b-9a6e-31ac5949f3cd))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "UI1009") (unit 1)
         )
@@ -616,9 +616,9 @@
     (property "Datasheet" "" (at 58.42 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 70e259a8-ba9f-415a-b84f-7e11d79ed9c9))
+    (pin "1" (uuid b184b533-efb7-4247-bb5d-32da33c5f68d))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR01029") (unit 1)
         )
@@ -641,9 +641,9 @@
     (property "Datasheet" "" (at 109.22 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eebbdd2a-3001-499f-8899-351b9bd86dd6))
+    (pin "1" (uuid d5bb46b0-4b07-4531-9e34-5d171b1bf315))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR01045") (unit 1)
         )
@@ -666,9 +666,9 @@
     (property "Datasheet" "" (at 106.68 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 62d8bd3d-4311-437c-9ff9-431488e23bdb))
+    (pin "1" (uuid e6e353b3-70a0-416e-8448-46e4a87e6eca))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR0703") (unit 1)
         )
@@ -691,10 +691,10 @@
     (property "Datasheet" "~" (at 93.98 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 10868c4e-a7d0-4aef-b3bd-37c1b1737c37))
-    (pin "2" (uuid 7b881cef-6b3b-4186-b9fc-eaefcfde74b6))
+    (pin "1" (uuid 6687cacb-2a18-4220-b808-d3044db7f502))
+    (pin "2" (uuid 78e189c6-3a54-45ad-a4ce-44312f5c56c7))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "R1025") (unit 1)
         )
@@ -717,9 +717,9 @@
     (property "Datasheet" "" (at 106.68 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 08c8329d-9c5c-4ca3-8e75-5e473c57cb1c))
+    (pin "1" (uuid bcb547ac-405d-49dc-8f73-ffb2a3345c7a))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
           (reference "#PWR01057") (unit 1)
         )
@@ -745,10 +745,10 @@
     (property "Datasheet" "~" (at 106.68 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid edb4a16d-8405-4238-a429-aa461128b273))
-    (pin "2" (uuid db95bf76-c454-4620-b41f-344d9bddce57))
+    (pin "1" (uuid a252d9a7-99df-4ec5-b98d-be8c293f55ee))
+    (pin "2" (uuid f3eaaf40-1536-4590-b8b4-fa6d0986bc48))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
           (reference "R1033") (unit 1)
         )
@@ -774,9 +774,9 @@
     (property "Datasheet" "" (at 55.88 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5e2ad9cb-5563-46e2-85d4-600c8d4e5d24))
+    (pin "1" (uuid 1377525d-f0b6-45d2-915a-758be7087785))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
           (reference "#PWR01057") (unit 1)
         )
@@ -802,9 +802,9 @@
     (property "Datasheet" "" (at 93.98 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b05305c0-1117-44df-97eb-4c6b836cca55))
+    (pin "1" (uuid a68056ef-0002-4f46-9e90-5d895b5dd1f1))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR01041") (unit 1)
         )
@@ -827,9 +827,9 @@
     (property "Datasheet" "" (at 91.44 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a705cadc-4274-4c9a-8e43-3ae7fb065063))
+    (pin "1" (uuid 642989a5-5c27-45a2-b34d-14f7d1c6dd74))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR0958") (unit 1)
         )
@@ -852,10 +852,10 @@
     (property "Datasheet" "~" (at 43.18 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5c2b6679-e83a-477d-9fac-2c7bd66d9290))
-    (pin "2" (uuid 135da08b-041e-4dd6-bb01-bee0445ce860))
+    (pin "1" (uuid 84178d77-c2cb-4f17-8cfe-c221e58b9967))
+    (pin "2" (uuid 81bc0806-c24d-496e-9ead-c4c0485d5df3))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "R1017") (unit 1)
         )
@@ -878,9 +878,9 @@
     (property "Datasheet" "" (at 40.64 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2f13fb3c-c283-4563-b8f0-c79bb01d66dd))
+    (pin "1" (uuid bdbe86ef-1c27-45c2-8ae6-692d19a21546))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR0957") (unit 1)
         )
@@ -903,9 +903,9 @@
     (property "Datasheet" "" (at 43.18 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 66ae9792-7acb-4af5-bd64-f23accab5429))
+    (pin "1" (uuid 2c5c1762-2b5c-4f08-b04d-7cfc96a72fd7))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR01025") (unit 1)
         )
@@ -928,9 +928,9 @@
     (property "Datasheet" "" (at 55.88 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 25b7b27f-b09b-494c-858d-85ecb211e798))
+    (pin "1" (uuid 802e67fe-19ed-4a08-809f-4ffe7793b65f))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d735a13"
           (reference "#PWR0704") (unit 1)
         )
@@ -953,10 +953,10 @@
     (property "Datasheet" "~" (at 55.88 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f10c4d81-c30e-4ddd-a742-2b60a5f15b5e))
-    (pin "2" (uuid af2dc982-f8c9-4557-9717-d68d1d421a00))
+    (pin "1" (uuid d8d8fb81-75f1-4607-8bb5-271146b0bb26))
+    (pin "2" (uuid 7d6e9b5c-c31a-4e3f-893d-03a850fff893))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
           (reference "R1033") (unit 1)
         )

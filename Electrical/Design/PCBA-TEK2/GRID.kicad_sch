@@ -172,7 +172,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
@@ -224,7 +224,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -564,11 +564,6 @@
     (effects (font (size 10.16 10.16) (thickness 2.032) bold) (justify left bottom))
     (uuid badc3adf-8b30-400e-af72-85f64c94f40c)
   )
-  (text "Connector:\nAFB10-S08LCA-00\nor\nTE Connectivity 84982-8"
-    (at 109.22 35.56 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c226ad72-88c1-465f-94c6-eb3edaa59890)
-  )
 
   (hierarchical_label "GRID_NORTH_RX" (shape bidirectional) (at 66.04 38.1 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -636,12 +631,12 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 48.26 66.04 0) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d631784)
-    (property "Reference" "J703" (at 50.8 55.88 90)
+    (property "Reference" "J504" (at 50.8 55.88 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 53.34 55.88 90)
+    (property "Value" "Conn_01x04" (at 53.34 55.88 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 48.26 66.04 0)
@@ -650,26 +645,26 @@
     (property "Datasheet" "~" (at 48.26 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 872c1813-f600-44e2-9529-db2493d42e6d))
-    (pin "2" (uuid 29e39da2-b15b-4f2d-878d-06a656f924bb))
-    (pin "3" (uuid 9f08e886-94f5-4652-9ee8-cadbdff142d5))
-    (pin "4" (uuid bc5c53b5-c0ac-4f69-999c-f37632534d9d))
+    (pin "1" (uuid 8e482b3e-87f8-41cf-9ec2-db3416fdef07))
+    (pin "2" (uuid 26eadf4d-d6ac-4805-b4ee-eda6828b2b8a))
+    (pin "3" (uuid 6795302c-fd3e-4742-91b2-f5b9852a4a8c))
+    (pin "4" (uuid c40b65cb-920a-4940-bd7d-1ab96fdfc001))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J703") (unit 1)
+          (reference "J504") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 48.26 88.9 0) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d631796)
-    (property "Reference" "J704" (at 50.8 78.74 90)
+    (property "Reference" "J506" (at 50.8 78.74 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 53.34 78.74 90)
+    (property "Value" "Conn_01x04" (at 53.34 78.74 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 48.26 88.9 0)
@@ -678,14 +673,14 @@
     (property "Datasheet" "~" (at 48.26 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 906984d0-0843-44fe-8c58-61f0ac540375))
-    (pin "2" (uuid 7bf09607-f409-4781-9f86-4cfcda78e43b))
-    (pin "3" (uuid 7dab9a6a-6407-4545-a62d-404a6b83262e))
-    (pin "4" (uuid b4663e49-fdf6-4cd1-a0d1-3e99344da1ef))
+    (pin "1" (uuid ddaa85d4-d9e7-4c60-b776-26454485a394))
+    (pin "2" (uuid fbbd1387-3d3c-4eff-bf5c-939928e7ed07))
+    (pin "3" (uuid 8e831368-0ff8-4ff7-81f5-2ad9def745c7))
+    (pin "4" (uuid 275785dd-e9ab-4a70-a6e0-fb0f2df5e29c))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J704") (unit 1)
+          (reference "J506") (unit 1)
         )
       )
     )
@@ -694,7 +689,7 @@
   (symbol (lib_id "power:+5V") (at 38.1 55.88 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d63179c)
-    (property "Reference" "#PWR0847" (at 41.91 55.88 0)
+    (property "Reference" "#PWR0505" (at 41.91 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 33.7058 55.499 0)
@@ -706,11 +701,11 @@
     (property "Datasheet" "" (at 38.1 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e761cc5c-0717-4901-a85b-15fffd30ebcb))
+    (pin "1" (uuid 848d71ab-a8e7-4280-8f4f-74dad91f80c8))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0847") (unit 1)
+          (reference "#PWR0505") (unit 1)
         )
       )
     )
@@ -719,7 +714,7 @@
   (symbol (lib_id "power:GND") (at 38.1 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d6317a2)
-    (property "Reference" "#PWR0848" (at 31.75 73.66 0)
+    (property "Reference" "#PWR0507" (at 31.75 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.7058 73.787 0)
@@ -731,11 +726,11 @@
     (property "Datasheet" "" (at 38.1 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b662713a-c52f-4d24-bac4-0376034f0a96))
+    (pin "1" (uuid 30400041-ae06-43b8-965d-688672473852))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0848") (unit 1)
+          (reference "#PWR0507") (unit 1)
         )
       )
     )
@@ -744,7 +739,7 @@
   (symbol (lib_id "power:GND") (at 38.1 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d6317bc)
-    (property "Reference" "#PWR0849" (at 31.75 78.74 0)
+    (property "Reference" "#PWR0509" (at 31.75 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.7058 78.867 0)
@@ -756,11 +751,11 @@
     (property "Datasheet" "" (at 38.1 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a99c7862-d7cf-4bec-8254-d072b34fb419))
+    (pin "1" (uuid ab30327e-bfaf-4704-b328-eb0e70c70721))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0849") (unit 1)
+          (reference "#PWR0509") (unit 1)
         )
       )
     )
@@ -769,7 +764,7 @@
   (symbol (lib_id "power:+5V") (at 38.1 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005d6317c4)
-    (property "Reference" "#PWR0850" (at 41.91 96.52 0)
+    (property "Reference" "#PWR0511" (at 41.91 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 33.7058 96.139 0)
@@ -781,23 +776,23 @@
     (property "Datasheet" "" (at 38.1 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6767558b-8dd2-496c-baac-4d9be646e323))
+    (pin "1" (uuid 2195bc2e-c4e3-4a64-b92c-d6efd4b3bc1f))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0850") (unit 1)
+          (reference "#PWR0511") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 86.36 48.26 90) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d6317d0)
-    (property "Reference" "J707" (at 96.52 50.8 90)
+    (property "Reference" "J502" (at 96.52 50.8 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 96.52 53.34 90)
+    (property "Value" "Conn_01x04" (at 96.52 53.34 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 86.36 48.26 0)
@@ -806,26 +801,26 @@
     (property "Datasheet" "~" (at 86.36 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3fdc1205-170d-4bad-a583-c2274b810ac0))
-    (pin "2" (uuid 8d5dcac7-0ca3-47b3-b0d6-95dfddc0a1ad))
-    (pin "3" (uuid 7213f912-695a-4804-93ca-860c266c2583))
-    (pin "4" (uuid c856083e-1aea-44bb-96f4-e3806f7616b0))
+    (pin "1" (uuid 11c474fc-0a88-4ba3-8bcf-200a1eb1fbc5))
+    (pin "2" (uuid e5ea4dd3-c0b2-42fe-b4c0-aeeac4a4f0c2))
+    (pin "3" (uuid 84165f72-3490-4917-b05d-7efab0e74c00))
+    (pin "4" (uuid ff2e3286-11d7-46eb-9728-bdbde38568be))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J707") (unit 1)
+          (reference "J502") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 63.5 48.26 90) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d6317e2)
-    (property "Reference" "J705" (at 73.66 50.8 90)
+    (property "Reference" "J501" (at 73.66 50.8 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 73.66 53.34 90)
+    (property "Value" "Conn_01x04" (at 73.66 53.34 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 63.5 48.26 0)
@@ -834,26 +829,26 @@
     (property "Datasheet" "~" (at 63.5 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3224840d-861a-4de2-97f7-f0e942682cd3))
-    (pin "2" (uuid 58455dd9-b148-4e70-9931-75c08b361a79))
-    (pin "3" (uuid 08b0f9c0-2a1a-4231-a5ef-364f815a0181))
-    (pin "4" (uuid 5bf85790-4294-4e1f-a566-40989fc2a6c1))
+    (pin "1" (uuid 35f57568-757c-4e37-ae11-f00fae96883b))
+    (pin "2" (uuid e91a22e7-5787-47c4-9316-32d584509680))
+    (pin "3" (uuid b8d8c474-53a0-4410-88c1-e9c96462c4ea))
+    (pin "4" (uuid 0ffb9d0a-3fb8-4bbd-bcdb-1ebe80f6858e))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J705") (unit 1)
+          (reference "J501") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 104.14 86.36 0) (mirror y) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d63181c)
-    (property "Reference" "J710" (at 101.6 96.52 90)
+    (property "Reference" "J505" (at 101.6 96.52 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 99.06 96.52 90)
+    (property "Value" "Conn_01x04" (at 99.06 96.52 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 104.14 86.36 0)
@@ -862,26 +857,26 @@
     (property "Datasheet" "~" (at 104.14 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fb181a9b-e416-4743-91d4-ca34323e6af7))
-    (pin "2" (uuid af422a5f-7c49-4665-b72f-14a8b722fbee))
-    (pin "3" (uuid 63a0939b-6567-46d2-a101-4d79d84ec80d))
-    (pin "4" (uuid 2943a394-6d2a-4724-9337-7a8c8d89b171))
+    (pin "1" (uuid 04c32f23-ae0b-4c7a-a0d1-9621bac768f7))
+    (pin "2" (uuid 7933dc5d-19aa-4c63-a5da-0b8e39dee5fd))
+    (pin "3" (uuid 63a73cf7-2fab-4830-9f59-be82472c93da))
+    (pin "4" (uuid d911bd20-3946-4b97-a9fd-fc33a1eca90e))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J710") (unit 1)
+          (reference "J505") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 104.14 63.5 0) (mirror y) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d63182e)
-    (property "Reference" "J709" (at 101.6 73.66 90)
+    (property "Reference" "J503" (at 101.6 73.66 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 99.06 73.66 90)
+    (property "Value" "Conn_01x04" (at 99.06 73.66 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 104.14 63.5 0)
@@ -890,26 +885,26 @@
     (property "Datasheet" "~" (at 104.14 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 54dc09fb-becf-4481-88d7-c6c2ac3fe6df))
-    (pin "2" (uuid af540457-77e9-470d-9dde-018647ac814d))
-    (pin "3" (uuid f7c7f8c7-1537-434d-afa6-03fbbd7a6e82))
-    (pin "4" (uuid 782c7201-1ac8-439b-b4d0-e3a2ef01eb31))
+    (pin "1" (uuid 9fb73335-7897-4d36-ad2a-3721932bbb09))
+    (pin "2" (uuid 131c7ab4-cdd5-47f3-a2e4-9e2366282d7a))
+    (pin "3" (uuid 312ec252-c3a9-49e1-b5fb-034b54347b4c))
+    (pin "4" (uuid ca2b7b42-a875-46ae-b5d3-89dd86fcaa8d))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J709") (unit 1)
+          (reference "J503") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 66.04 104.14 270) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d631868)
-    (property "Reference" "J706" (at 55.88 101.6 90)
+    (property "Reference" "J507" (at 55.88 101.6 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 55.88 99.06 90)
+    (property "Value" "Conn_01x04" (at 55.88 99.06 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 66.04 104.14 0)
@@ -918,26 +913,26 @@
     (property "Datasheet" "~" (at 66.04 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8fe1b51c-813d-483d-9b3a-b42a4834d162))
-    (pin "2" (uuid 636414f5-15c1-47d6-ac9c-65a7d7e846c1))
-    (pin "3" (uuid 63e6d13c-9c4f-4b22-bad8-6e73181d124d))
-    (pin "4" (uuid b2bf0c22-2f22-4fec-8b82-750d1974be9e))
+    (pin "1" (uuid 97258fb5-bf47-409d-a803-433f7d243ee7))
+    (pin "2" (uuid ebe95af4-5add-4286-a515-3806c56f0aa9))
+    (pin "3" (uuid 9d55dda1-68ea-46ea-849e-8a13968bd5b2))
+    (pin "4" (uuid b49499eb-b34a-4b5f-80d0-5ea7bfe1a2e6))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J706") (unit 1)
+          (reference "J507") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 88.9 104.14 270) (mirror x) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005d63187a)
-    (property "Reference" "J708" (at 78.74 101.6 90)
+    (property "Reference" "J508" (at 78.74 101.6 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "AFB10-S08LCA-00" (at 78.74 99.06 90)
+    (property "Value" "Conn_01x04" (at 78.74 99.06 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:J_INTERFACE_SPRINGPATTERN" (at 88.9 104.14 0)
@@ -946,26 +941,26 @@
     (property "Datasheet" "~" (at 88.9 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 92c55cef-81cc-4b31-9b35-4f0b4ef98074))
-    (pin "2" (uuid 7812cfb6-9655-42c5-97dc-1ae1bd2610cf))
-    (pin "3" (uuid 2e60a6b8-0592-46af-8fc0-71697dd9b196))
-    (pin "4" (uuid e368843c-3936-432f-8013-b054e6995045))
+    (pin "1" (uuid f2d680da-b25d-4309-9592-7bc312e0842d))
+    (pin "2" (uuid b93f5e4b-6dee-4429-95f7-76642c164dad))
+    (pin "3" (uuid 2038a9b9-45c3-4aac-85cd-32dafe4b1143))
+    (pin "4" (uuid e9a71f0f-c92f-4340-94b7-0f595e58bf11))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "J708") (unit 1)
+          (reference "J508") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x08") (at 177.8 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp yes)
     (uuid 00000000-0000-0000-0000-00005db31921)
-    (property "Reference" "M701" (at 180.34 73.66 90)
+    (property "Reference" "M501" (at 180.34 73.66 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "(NF)" (at 180.34 66.04 90)
+    (property "Value" "Conn_01x08" (at 180.34 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "suku_basics:grid_outline" (at 177.8 63.5 0)
@@ -974,18 +969,18 @@
     (property "Datasheet" "~" (at 177.8 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 278c9277-ba7b-428b-9cff-5812056e2b71))
-    (pin "2" (uuid ca6d15b5-3b6a-43d4-b9d3-6a8c7adedd1d))
-    (pin "3" (uuid 93cc0da8-68ce-4bde-a85a-7f850767b825))
-    (pin "4" (uuid 4f7ef842-4b12-4650-80b4-48f7cc2ac603))
-    (pin "5" (uuid de66d1f1-17ba-4609-99a4-7bf76c42f6e4))
-    (pin "6" (uuid ce5d6f73-f1fb-49ee-88f5-5162668ebe9e))
-    (pin "7" (uuid 157be617-9522-4781-881d-71db47e852cc))
-    (pin "8" (uuid b160ee44-b44a-4230-b8ed-3991c2b084d3))
+    (pin "1" (uuid 2e7e9dca-94ff-48ae-9710-a4f9c43ffcab))
+    (pin "2" (uuid e2e785ab-89c2-4a91-826a-587fd649e71c))
+    (pin "3" (uuid 994705f7-dd82-4b8d-862e-f45a9d5706f7))
+    (pin "4" (uuid 1caae058-7fa7-48a0-b5f2-305f65fefa73))
+    (pin "5" (uuid beb284fe-92ad-4f63-84bb-9d40955884f9))
+    (pin "6" (uuid c147ccbe-47b6-44d5-b77e-e9a39c34da10))
+    (pin "7" (uuid e1fa7170-2ac0-4d0d-a98c-df9175b5c87a))
+    (pin "8" (uuid 8f577f4f-3195-4ca4-abce-ad213c7c0522))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "M701") (unit 1)
+          (reference "M501") (unit 1)
         )
       )
     )
@@ -994,7 +989,7 @@
   (symbol (lib_id "power:+5V") (at 96.52 114.3 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1554cf56-60ff-49a7-b0b2-15495a4d8bf6)
-    (property "Reference" "#PWR0858" (at 96.52 110.49 0)
+    (property "Reference" "#PWR0516" (at 96.52 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 96.139 118.6942 0)
@@ -1006,11 +1001,11 @@
     (property "Datasheet" "" (at 96.52 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ed48610b-709b-4e93-8708-c3c7659b5d51))
+    (pin "1" (uuid f1b2e15a-c5a7-46b6-a573-04648182610f))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0858") (unit 1)
+          (reference "#PWR0516") (unit 1)
         )
       )
     )
@@ -1019,7 +1014,7 @@
   (symbol (lib_id "power:+5V") (at 114.3 55.88 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6df15e5e-1519-4c66-9eb0-633dd99e9226)
-    (property "Reference" "#PWR0859" (at 110.49 55.88 0)
+    (property "Reference" "#PWR0506" (at 110.49 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 118.6942 56.261 0)
@@ -1031,11 +1026,11 @@
     (property "Datasheet" "" (at 114.3 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cadfbfff-180b-4ce4-911f-f47ee35e7857))
+    (pin "1" (uuid aed5d2de-ced5-4a8a-8bca-fe852e853e20))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0859") (unit 1)
+          (reference "#PWR0506") (unit 1)
         )
       )
     )
@@ -1044,7 +1039,7 @@
   (symbol (lib_id "power:+5V") (at 114.3 96.52 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a2bffa1-0340-4573-a82e-29a85569a095)
-    (property "Reference" "#PWR0862" (at 110.49 96.52 0)
+    (property "Reference" "#PWR0512" (at 110.49 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 118.6942 96.901 0)
@@ -1056,11 +1051,11 @@
     (property "Datasheet" "" (at 114.3 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bf34e50b-7dd5-4a35-be53-e85638ac8a3b))
+    (pin "1" (uuid 8ecf4d3f-3364-4bea-8931-383d17c1a0ce))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0862") (unit 1)
+          (reference "#PWR0512") (unit 1)
         )
       )
     )
@@ -1069,7 +1064,7 @@
   (symbol (lib_id "power:+5V") (at 96.52 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ee6d903-347e-474a-9252-9ddea0112501)
-    (property "Reference" "#PWR0857" (at 96.52 41.91 0)
+    (property "Reference" "#PWR0504" (at 96.52 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 96.901 33.7058 0)
@@ -1081,11 +1076,11 @@
     (property "Datasheet" "" (at 96.52 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6c6f7dd-428f-4697-9608-17bebb04470c))
+    (pin "1" (uuid 22cc08f8-97c8-4f7f-a71d-ca57c101a1c7))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0857") (unit 1)
+          (reference "#PWR0504") (unit 1)
         )
       )
     )
@@ -1094,7 +1089,7 @@
   (symbol (lib_id "power:GND") (at 114.3 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81bbf738-3f4e-403d-8a5f-7cf105456180)
-    (property "Reference" "#PWR0861" (at 120.65 78.74 0)
+    (property "Reference" "#PWR0510" (at 120.65 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.6942 78.613 0)
@@ -1106,11 +1101,11 @@
     (property "Datasheet" "" (at 114.3 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 23d6919b-cfc5-4c3b-8988-cf44c9eb0474))
+    (pin "1" (uuid 1a36d874-4701-4c43-a954-eb8b41a90c22))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0861") (unit 1)
+          (reference "#PWR0510") (unit 1)
         )
       )
     )
@@ -1119,7 +1114,7 @@
   (symbol (lib_id "power:GND") (at 78.74 38.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c7cc6a6-bc32-4502-818f-8602d472457f)
-    (property "Reference" "#PWR0855" (at 78.74 31.75 0)
+    (property "Reference" "#PWR0503" (at 78.74 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.613 33.7058 0)
@@ -1131,11 +1126,11 @@
     (property "Datasheet" "" (at 78.74 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 165c1e00-0941-422f-bc4a-cc29cdb74fda))
+    (pin "1" (uuid e122b58c-fdc9-4522-b7b0-70241735aadd))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0855") (unit 1)
+          (reference "#PWR0503") (unit 1)
         )
       )
     )
@@ -1144,7 +1139,7 @@
   (symbol (lib_id "power:GND") (at 73.66 38.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e4cd3a9-5817-4519-8ca0-b2958bfa08e6)
-    (property "Reference" "#PWR0853" (at 73.66 31.75 0)
+    (property "Reference" "#PWR0502" (at 73.66 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 73.533 33.7058 0)
@@ -1156,11 +1151,11 @@
     (property "Datasheet" "" (at 73.66 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 99a183fa-43cc-4849-b38f-0d4e6133fcf3))
+    (pin "1" (uuid 9fdac2bc-8bd4-4786-a739-17f0aa6e05e3))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0853") (unit 1)
+          (reference "#PWR0502") (unit 1)
         )
       )
     )
@@ -1169,7 +1164,7 @@
   (symbol (lib_id "power:GND") (at 73.66 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1e51ee5-a928-40fd-a6ef-5aaa7c075e71)
-    (property "Reference" "#PWR0854" (at 73.66 120.65 0)
+    (property "Reference" "#PWR0514" (at 73.66 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 73.787 118.6942 0)
@@ -1181,11 +1176,11 @@
     (property "Datasheet" "" (at 73.66 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4bb93a6e-3926-4474-8e30-a579db952f96))
+    (pin "1" (uuid f80bfef1-c8e9-42fa-98e9-a2f988dede73))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0854") (unit 1)
+          (reference "#PWR0514") (unit 1)
         )
       )
     )
@@ -1194,7 +1189,7 @@
   (symbol (lib_id "power:+5V") (at 55.88 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aaf69e12-13fe-4f53-b40b-8d0089b8e88f)
-    (property "Reference" "#PWR0851" (at 55.88 41.91 0)
+    (property "Reference" "#PWR0501" (at 55.88 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 56.261 33.7058 0)
@@ -1206,11 +1201,11 @@
     (property "Datasheet" "" (at 55.88 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 333de3f1-5f9a-4450-be42-739674aab803))
+    (pin "1" (uuid b036282f-bae3-4058-aec3-f922b4d446dc))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0851") (unit 1)
+          (reference "#PWR0501") (unit 1)
         )
       )
     )
@@ -1219,7 +1214,7 @@
   (symbol (lib_id "power:GND") (at 78.74 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bd74b3e0-cead-4d53-8071-8536147ca1c9)
-    (property "Reference" "#PWR0856" (at 78.74 120.65 0)
+    (property "Reference" "#PWR0515" (at 78.74 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.867 118.6942 0)
@@ -1231,11 +1226,11 @@
     (property "Datasheet" "" (at 78.74 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c1c8ec82-fea6-4d1e-a769-c11009c8f152))
+    (pin "1" (uuid b7c891bd-30e9-4d8b-ad89-59587d9753a8))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0856") (unit 1)
+          (reference "#PWR0515") (unit 1)
         )
       )
     )
@@ -1244,7 +1239,7 @@
   (symbol (lib_id "power:GND") (at 114.3 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce04e698-9242-4eb8-839e-ea7ea998cd2c)
-    (property "Reference" "#PWR0860" (at 120.65 73.66 0)
+    (property "Reference" "#PWR0508" (at 120.65 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.6942 73.533 0)
@@ -1256,11 +1251,11 @@
     (property "Datasheet" "" (at 114.3 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid afb121de-29e3-4739-8496-4af8d35c4993))
+    (pin "1" (uuid 63d0e8f2-4fb1-4fb4-9874-fa9d9f53ace1))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0860") (unit 1)
+          (reference "#PWR0508") (unit 1)
         )
       )
     )
@@ -1269,7 +1264,7 @@
   (symbol (lib_id "power:+5V") (at 55.88 114.3 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce6e777c-f05d-4471-8cfd-997dfe59282f)
-    (property "Reference" "#PWR0852" (at 55.88 110.49 0)
+    (property "Reference" "#PWR0513" (at 55.88 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 55.499 118.6942 0)
@@ -1281,11 +1276,11 @@
     (property "Datasheet" "" (at 55.88 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8d021e0d-983c-45f3-b697-62e4bbb1b2a9))
+    (pin "1" (uuid f069ce97-0923-4956-8973-a9c58f6b8344))
     (instances
-      (project "TEK2"
+      (project "PCBA-TEK2"
         (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-00005d85c9fc"
-          (reference "#PWR0852") (unit 1)
+          (reference "#PWR0513") (unit 1)
         )
       )
     )
