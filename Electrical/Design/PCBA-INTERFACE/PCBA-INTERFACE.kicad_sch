@@ -2305,7 +2305,7 @@
   (symbol (lib_id "suku_basics:U_ESD_4ch") (at 101.6 76.2 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc3e8ea)
-    (property "Reference" "U1" (at 111.76 73.66 90)
+    (property "Reference" "U2" (at 111.76 73.66 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NUP4202W1T2G" (at 111.76 76.2 90)
@@ -2329,7 +2329,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U1") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2338,7 +2338,7 @@
   (symbol (lib_id "suku_basics:RES") (at 91.44 68.58 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc48976)
-    (property "Reference" "R2" (at 92.6084 70.0786 0)
+    (property "Reference" "R1" (at 92.6084 70.0786 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 90.297 70.0786 0)
@@ -2355,7 +2355,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -2395,7 +2395,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 124.46 20.32 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc4a959)
-    (property "Reference" "J3" (at 131.7752 21.2344 90)
+    (property "Reference" "J2" (at 131.7752 21.2344 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LBC1130B" (at 131.7752 23.5458 90)
@@ -2417,7 +2417,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -2426,7 +2426,7 @@
   (symbol (lib_id "power:GND") (at 93.98 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc50f97)
-    (property "Reference" "#PWR04" (at 93.98 85.09 0)
+    (property "Reference" "#PWR018" (at 93.98 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 78.74 0)
@@ -2442,7 +2442,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -2451,7 +2451,7 @@
   (symbol (lib_id "power:+5P") (at 116.84 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc540dd)
-    (property "Reference" "#PWR012" (at 116.84 26.67 0)
+    (property "Reference" "#PWR04" (at 116.84 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 117.221 18.4658 0)
@@ -2467,7 +2467,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -2476,7 +2476,7 @@
   (symbol (lib_id "power:GND") (at 25.4 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc5721d)
-    (property "Reference" "#PWR02" (at 25.4 36.83 0)
+    (property "Reference" "#PWR05" (at 25.4 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 25.527 34.8742 0)
@@ -2492,7 +2492,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2501,7 +2501,7 @@
   (symbol (lib_id "power:+5P") (at 40.64 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc61c2d)
-    (property "Reference" "#PWR05" (at 40.64 26.67 0)
+    (property "Reference" "#PWR03" (at 40.64 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 41.021 18.4658 0)
@@ -2517,7 +2517,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2526,7 +2526,7 @@
   (symbol (lib_id "power:GND") (at 132.08 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc63c0d)
-    (property "Reference" "#PWR015" (at 132.08 36.83 0)
+    (property "Reference" "#PWR06" (at 132.08 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.207 34.8742 0)
@@ -2542,7 +2542,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -2551,7 +2551,7 @@
   (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 86.36 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc760a9)
-    (property "Reference" "Q3" (at 91.5924 27.94 0)
+    (property "Reference" "Q2" (at 91.5924 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WST2011" (at 91.5924 29.083 0)
@@ -2575,7 +2575,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "Q3") (unit 1)
+          (reference "Q2") (unit 1)
         )
       )
     )
@@ -2584,7 +2584,7 @@
   (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 86.36 40.64 0) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc7c398)
-    (property "Reference" "Q3" (at 91.5924 40.64 0)
+    (property "Reference" "Q2" (at 91.5924 40.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WST2011" (at 91.5924 41.783 0)
@@ -2608,7 +2608,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "Q3") (unit 2)
+          (reference "Q2") (unit 2)
         )
       )
     )
@@ -2617,7 +2617,7 @@
   (symbol (lib_id "power:+5P") (at 88.9 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc88feb)
-    (property "Reference" "#PWR08" (at 88.9 24.13 0)
+    (property "Reference" "#PWR02" (at 88.9 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 89.281 15.9258 0)
@@ -2633,7 +2633,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2642,7 +2642,7 @@
   (symbol (lib_id "power:+5F") (at 68.58 48.26 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc8a9cd)
-    (property "Reference" "#PWR09" (at 68.58 44.45 0)
+    (property "Reference" "#PWR07" (at 68.58 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 68.199 52.6542 0)
@@ -2658,7 +2658,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -2667,7 +2667,7 @@
   (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 71.12 27.94 0) (mirror y) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc98a1b)
-    (property "Reference" "Q4" (at 65.8876 27.94 0)
+    (property "Reference" "Q1" (at 65.8876 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WST2011" (at 65.8876 29.083 0)
@@ -2691,7 +2691,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "Q4") (unit 2)
+          (reference "Q1") (unit 2)
         )
       )
     )
@@ -2700,7 +2700,7 @@
   (symbol (lib_id "Device:Q_Dual_PMOS_G1S2G2D2S1D1") (at 71.12 40.64 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc98a21)
-    (property "Reference" "Q4" (at 65.8876 40.64 0)
+    (property "Reference" "Q1" (at 65.8876 40.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "WST2011" (at 65.8876 41.783 0)
@@ -2724,7 +2724,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "Q4") (unit 1)
+          (reference "Q1") (unit 1)
         )
       )
     )
@@ -2733,7 +2733,7 @@
   (symbol (lib_id "power:+5P") (at 68.58 20.32 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc98a28)
-    (property "Reference" "#PWR010" (at 68.58 24.13 0)
+    (property "Reference" "#PWR01" (at 68.58 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 68.199 15.9258 0)
@@ -2749,7 +2749,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -2758,7 +2758,7 @@
   (symbol (lib_id "power:+5F") (at 88.9 48.26 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dc98a2f)
-    (property "Reference" "#PWR011" (at 88.9 44.45 0)
+    (property "Reference" "#PWR08" (at 88.9 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 89.281 52.6542 0)
@@ -2774,7 +2774,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2783,7 +2783,7 @@
   (symbol (lib_id "power:+5P") (at 109.22 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dce137a)
-    (property "Reference" "#PWR03" (at 109.22 77.47 0)
+    (property "Reference" "#PWR012" (at 109.22 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 111.76 71.12 0)
@@ -2799,7 +2799,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2808,7 +2808,7 @@
   (symbol (lib_id "suku_basics:U_ESD_4ch") (at 101.6 114.3 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dcffc46)
-    (property "Reference" "U2" (at 111.76 111.76 90)
+    (property "Reference" "U6" (at 111.76 111.76 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NUP4202W1T2G" (at 111.76 114.3 90)
@@ -2832,7 +2832,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U2") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -2841,7 +2841,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 58.42 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd066a7)
-    (property "Reference" "C1" (at 60.7568 151.2316 0)
+    (property "Reference" "C4" (at 60.7568 151.2316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 60.7568 153.543 0)
@@ -2858,7 +2858,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "C1") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -2867,7 +2867,7 @@
   (symbol (lib_id "power:GND") (at 30.48 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd0a5b5)
-    (property "Reference" "#PWR01" (at 30.48 163.83 0)
+    (property "Reference" "#PWR040" (at 30.48 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 30.607 161.8742 0)
@@ -2883,7 +2883,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -2892,7 +2892,7 @@
   (symbol (lib_id "power:+5F") (at 58.42 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd1feb1)
-    (property "Reference" "#PWR06" (at 58.42 148.59 0)
+    (property "Reference" "#PWR038" (at 58.42 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 58.801 140.3858 0)
@@ -2908,7 +2908,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -2917,7 +2917,7 @@
   (symbol (lib_id "power:GND") (at 58.42 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd3220d)
-    (property "Reference" "#PWR07" (at 58.42 163.83 0)
+    (property "Reference" "#PWR041" (at 58.42 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 58.547 161.8742 0)
@@ -2933,7 +2933,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -2942,7 +2942,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 119.38 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd3f24e)
-    (property "Reference" "C2" (at 114.3 149.86 0)
+    (property "Reference" "C5" (at 114.3 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 114.3 154.94 0)
@@ -2959,7 +2959,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "C2") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -2968,7 +2968,7 @@
   (symbol (lib_id "power:+5F") (at 119.38 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd3f254)
-    (property "Reference" "#PWR013" (at 119.38 148.59 0)
+    (property "Reference" "#PWR039" (at 119.38 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 119.761 140.3858 0)
@@ -2984,7 +2984,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -2993,7 +2993,7 @@
   (symbol (lib_id "power:GND") (at 119.38 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd3f25e)
-    (property "Reference" "#PWR014" (at 119.38 163.83 0)
+    (property "Reference" "#PWR042" (at 119.38 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.507 161.8742 0)
@@ -3009,7 +3009,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -3018,7 +3018,7 @@
   (symbol (lib_id "power:GND") (at 147.32 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dd5bfb1)
-    (property "Reference" "#PWR016" (at 147.32 163.83 0)
+    (property "Reference" "#PWR043" (at 147.32 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.447 161.8742 0)
@@ -3034,7 +3034,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -3073,7 +3073,7 @@
   (symbol (lib_id "power:+5P") (at 261.62 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de3b76a)
-    (property "Reference" "#PWR019" (at 261.62 62.23 0)
+    (property "Reference" "#PWR09" (at 261.62 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 262.001 54.0258 0)
@@ -3089,7 +3089,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3098,7 +3098,7 @@
   (symbol (lib_id "power:+5F") (at 261.62 78.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de3bddd)
-    (property "Reference" "#PWR020" (at 261.62 74.93 0)
+    (property "Reference" "#PWR019" (at 261.62 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 261.239 83.1342 0)
@@ -3114,7 +3114,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -3123,7 +3123,7 @@
   (symbol (lib_id "power:+5V") (at 208.28 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de4924e)
-    (property "Reference" "#PWR021" (at 208.28 115.57 0)
+    (property "Reference" "#PWR029" (at 208.28 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 208.661 107.3658 0)
@@ -3139,7 +3139,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -3148,7 +3148,7 @@
   (symbol (lib_id "power:GND") (at 208.28 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de4a1b0)
-    (property "Reference" "#PWR022" (at 208.28 143.51 0)
+    (property "Reference" "#PWR037" (at 208.28 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 208.407 141.5542 0)
@@ -3164,7 +3164,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -3173,7 +3173,7 @@
   (symbol (lib_id "Sensor_Magnetic:A1301KLHLT-T") (at 210.82 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de55d76)
-    (property "Reference" "U3" (at 205.0034 123.2916 0)
+    (property "Reference" "U8" (at 205.0034 123.2916 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "OH49E-S" (at 205.0034 125.603 0)
@@ -3194,7 +3194,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U3") (unit 1)
+          (reference "U8") (unit 1)
         )
       )
     )
@@ -3203,7 +3203,7 @@
   (symbol (lib_id "power:+5V") (at 63.5 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de561b4)
-    (property "Reference" "#PWR0105" (at 63.5 69.85 0)
+    (property "Reference" "#PWR010" (at 63.5 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 63.881 61.6458 0)
@@ -3219,7 +3219,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -3228,7 +3228,7 @@
   (symbol (lib_id "power:+5V") (at 63.5 81.28 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de5e17c)
-    (property "Reference" "#PWR0106" (at 63.5 85.09 0)
+    (property "Reference" "#PWR021" (at 63.5 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 63.119 76.8858 0)
@@ -3244,7 +3244,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -3253,7 +3253,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 210.82 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005de8e478)
-    (property "Reference" "#FLG0101" (at 210.82 71.755 0)
+    (property "Reference" "#FLG01" (at 210.82 71.755 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 210.82 69.2658 0)
@@ -3269,7 +3269,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#FLG0101") (unit 1)
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -3278,7 +3278,7 @@
   (symbol (lib_id "suku_basics:RES") (at 223.52 124.46 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dea2821)
-    (property "Reference" "R6" (at 223.52 119.4816 90)
+    (property "Reference" "R7" (at 223.52 119.4816 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 223.52 121.793 90)
@@ -3295,7 +3295,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R6") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -3304,7 +3304,7 @@
   (symbol (lib_id "power:GND") (at 223.52 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dea4ff8)
-    (property "Reference" "#PWR0101" (at 223.52 82.55 0)
+    (property "Reference" "#PWR015" (at 223.52 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.647 80.5942 0)
@@ -3320,7 +3320,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -3329,7 +3329,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 223.52 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dea52f9)
-    (property "Reference" "#FLG0102" (at 223.52 71.755 0)
+    (property "Reference" "#FLG02" (at 223.52 71.755 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 223.52 69.2658 0)
@@ -3345,7 +3345,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#FLG0102") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -3380,7 +3380,7 @@
   (symbol (lib_id "power:GND") (at 228.6 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005debb640)
-    (property "Reference" "#PWR027" (at 228.6 140.97 0)
+    (property "Reference" "#PWR035" (at 228.6 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.727 139.0142 0)
@@ -3396,7 +3396,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -3405,7 +3405,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 236.22 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005debb907)
-    (property "Reference" "C5" (at 238.5568 128.3716 0)
+    (property "Reference" "C3" (at 238.5568 128.3716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 238.5568 130.683 0)
@@ -3422,7 +3422,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "C5") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -3431,7 +3431,7 @@
   (symbol (lib_id "power:GND") (at 236.22 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005debc296)
-    (property "Reference" "#PWR029" (at 236.22 140.97 0)
+    (property "Reference" "#PWR036" (at 236.22 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 236.347 139.0142 0)
@@ -3447,7 +3447,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -3456,7 +3456,7 @@
   (symbol (lib_id "power:+5V") (at 218.44 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dec827b)
-    (property "Reference" "#PWR024" (at 218.44 100.33 0)
+    (property "Reference" "#PWR023" (at 218.44 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 218.821 92.1258 0)
@@ -3472,7 +3472,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -3481,7 +3481,7 @@
   (symbol (lib_id "suku_basics:RES") (at 223.52 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ded0292)
-    (property "Reference" "R5" (at 223.52 94.0816 90)
+    (property "Reference" "R3" (at 223.52 94.0816 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 223.52 96.393 90)
@@ -3498,7 +3498,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R5") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3507,7 +3507,7 @@
   (symbol (lib_id "suku_basics:RES") (at 228.6 104.14 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ded0299)
-    (property "Reference" "R7" (at 230.0986 102.9716 0)
+    (property "Reference" "R4" (at 230.0986 102.9716 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 230.0986 105.283 0)
@@ -3524,7 +3524,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R7") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -3558,7 +3558,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 236.22 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ded02a8)
-    (property "Reference" "C4" (at 238.5568 102.9716 0)
+    (property "Reference" "C2" (at 238.5568 102.9716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 238.5568 105.283 0)
@@ -3575,7 +3575,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "C4") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -3584,7 +3584,7 @@
   (symbol (lib_id "power:GND") (at 236.22 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ded02ae)
-    (property "Reference" "#PWR028" (at 236.22 115.57 0)
+    (property "Reference" "#PWR027" (at 236.22 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 236.347 113.6142 0)
@@ -3600,7 +3600,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -3609,7 +3609,7 @@
   (symbol (lib_id "power:+5P") (at 210.82 76.2 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ded44a7)
-    (property "Reference" "#PWR0102" (at 210.82 72.39 0)
+    (property "Reference" "#PWR014" (at 210.82 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 210.439 80.5942 0)
@@ -3625,7 +3625,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -3634,7 +3634,7 @@
   (symbol (lib_id "power:+5V") (at 276.86 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005dee8479)
-    (property "Reference" "#PWR025" (at 276.86 69.85 0)
+    (property "Reference" "#PWR011" (at 276.86 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 277.241 61.6458 0)
@@ -3650,7 +3650,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3659,7 +3659,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 236.22 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005def2076)
-    (property "Reference" "#FLG0103" (at 236.22 71.755 0)
+    (property "Reference" "#FLG03" (at 236.22 71.755 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 236.22 69.2658 0)
@@ -3675,7 +3675,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#FLG0103") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
       )
     )
@@ -3684,7 +3684,7 @@
   (symbol (lib_id "power:+5F") (at 236.22 76.2 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005def88d4)
-    (property "Reference" "#PWR0103" (at 236.22 72.39 0)
+    (property "Reference" "#PWR016" (at 236.22 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 235.839 80.5942 0)
@@ -3700,7 +3700,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -3709,7 +3709,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 248.92 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005def9ea0)
-    (property "Reference" "#FLG0104" (at 248.92 71.755 0)
+    (property "Reference" "#FLG04" (at 248.92 71.755 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 248.92 69.2658 0)
@@ -3725,7 +3725,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#FLG0104") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
     )
@@ -3734,7 +3734,7 @@
   (symbol (lib_id "power:+5V") (at 248.92 76.2 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005df075af)
-    (property "Reference" "#PWR0104" (at 248.92 72.39 0)
+    (property "Reference" "#PWR017" (at 248.92 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 248.539 80.5942 0)
@@ -3750,7 +3750,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0104") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3759,7 +3759,7 @@
   (symbol (lib_id "suku_basics:CAP") (at 269.24 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005df30957)
-    (property "Reference" "C3" (at 271.5768 72.4916 0)
+    (property "Reference" "C1" (at 271.5768 72.4916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 271.5768 74.803 0)
@@ -3776,7 +3776,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "C3") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -3785,7 +3785,7 @@
   (symbol (lib_id "power:GND") (at 269.24 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005df36b30)
-    (property "Reference" "#PWR023" (at 269.24 85.09 0)
+    (property "Reference" "#PWR020" (at 269.24 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 269.367 83.1342 0)
@@ -3801,7 +3801,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -3810,7 +3810,7 @@
   (symbol (lib_id "Amplifier_Operational:LM321") (at 264.16 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005df89f87)
-    (property "Reference" "U4" (at 264.16 116.84 0)
+    (property "Reference" "U5" (at 264.16 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LMV321" (at 264.16 119.38 0)
@@ -3833,7 +3833,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U4") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -3842,7 +3842,7 @@
   (symbol (lib_id "power:GND") (at 261.62 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005df8a88f)
-    (property "Reference" "#PWR031" (at 261.62 128.27 0)
+    (property "Reference" "#PWR033" (at 261.62 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 261.747 126.3142 0)
@@ -3858,7 +3858,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -3867,7 +3867,7 @@
   (symbol (lib_id "power:+5V") (at 261.62 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005df90a41)
-    (property "Reference" "#PWR030" (at 261.62 105.41 0)
+    (property "Reference" "#PWR024" (at 261.62 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 262.001 97.2058 0)
@@ -3883,7 +3883,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -3892,7 +3892,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 43.18 154.94 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eaac63d)
-    (property "Reference" "J5" (at 33.02 157.48 90)
+    (property "Reference" "J3" (at 33.02 157.48 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "BC-12-4PD170-08" (at 33.02 160.02 90)
@@ -3911,7 +3911,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "J5") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -3920,7 +3920,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 132.08 154.94 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eaadf8d)
-    (property "Reference" "J6" (at 121.92 157.48 90)
+    (property "Reference" "J4" (at 121.92 157.48 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "BC-12-4PD170-08" (at 121.92 160.02 90)
@@ -3939,7 +3939,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "J6") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -3948,7 +3948,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 33.02 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb1fddf)
-    (property "Reference" "TP1" (at 34.4932 188.4172 0)
+    (property "Reference" "TP3" (at 34.4932 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_GND" (at 33.02 190.5 90)
@@ -3964,7 +3964,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP1") (unit 1)
+          (reference "TP3") (unit 1)
         )
       )
     )
@@ -3973,7 +3973,7 @@
   (symbol (lib_id "power:GND") (at 33.02 180.34 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb276ee)
-    (property "Reference" "#PWR0112" (at 33.02 173.99 0)
+    (property "Reference" "#PWR044" (at 33.02 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.147 175.9458 0)
@@ -3989,7 +3989,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0112") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -3998,7 +3998,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 38.1 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb4cdc2)
-    (property "Reference" "TP2" (at 39.5732 188.4172 0)
+    (property "Reference" "TP4" (at 39.5732 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_S2F" (at 38.1 190.5 90)
@@ -4014,7 +4014,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP2") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
     )
@@ -4023,7 +4023,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 43.18 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb550b3)
-    (property "Reference" "TP3" (at 44.6532 188.4172 0)
+    (property "Reference" "TP5" (at 44.6532 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_RXF" (at 43.18 190.5 90)
@@ -4039,7 +4039,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP3") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -4048,7 +4048,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 48.26 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb5d51c)
-    (property "Reference" "TP4" (at 49.7332 188.4172 0)
+    (property "Reference" "TP6" (at 49.7332 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_5F" (at 48.26 190.5 90)
@@ -4064,7 +4064,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP4") (unit 1)
+          (reference "TP6") (unit 1)
         )
       )
     )
@@ -4073,7 +4073,7 @@
   (symbol (lib_id "power:+5F") (at 48.26 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb7f80d)
-    (property "Reference" "#PWR0115" (at 48.26 184.15 0)
+    (property "Reference" "#PWR045" (at 48.26 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 48.641 175.9458 0)
@@ -4089,7 +4089,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0115") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -4098,7 +4098,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 132.08 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb9b8f9)
-    (property "Reference" "TP5" (at 133.5532 188.4172 0)
+    (property "Reference" "TP15" (at 133.5532 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_5F" (at 132.08 190.5 90)
@@ -4114,7 +4114,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP5") (unit 1)
+          (reference "TP15") (unit 1)
         )
       )
     )
@@ -4123,7 +4123,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 137.16 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb9b8ff)
-    (property "Reference" "TP6" (at 138.6332 188.4172 0)
+    (property "Reference" "TP16" (at 138.6332 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_TXF" (at 137.16 190.5 90)
@@ -4139,7 +4139,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP6") (unit 1)
+          (reference "TP16") (unit 1)
         )
       )
     )
@@ -4148,7 +4148,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 142.24 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb9b906)
-    (property "Reference" "TP7" (at 143.7132 188.4172 0)
+    (property "Reference" "TP17" (at 143.7132 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_S1F" (at 142.24 190.5 90)
@@ -4164,7 +4164,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP7") (unit 1)
+          (reference "TP17") (unit 1)
         )
       )
     )
@@ -4173,7 +4173,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 147.32 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb9b90d)
-    (property "Reference" "TP8" (at 148.7932 188.4172 0)
+    (property "Reference" "TP18" (at 148.7932 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_GND" (at 147.32 190.5 90)
@@ -4189,7 +4189,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP8") (unit 1)
+          (reference "TP18") (unit 1)
         )
       )
     )
@@ -4198,7 +4198,7 @@
   (symbol (lib_id "power:+5F") (at 132.08 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb9b914)
-    (property "Reference" "#PWR0113" (at 132.08 184.15 0)
+    (property "Reference" "#PWR050" (at 132.08 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 132.461 175.9458 0)
@@ -4214,7 +4214,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0113") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -4223,7 +4223,7 @@
   (symbol (lib_id "power:GND") (at 147.32 180.34 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb9b91c)
-    (property "Reference" "#PWR0114" (at 147.32 173.99 0)
+    (property "Reference" "#PWR051" (at 147.32 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.447 175.9458 0)
@@ -4239,7 +4239,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -4248,7 +4248,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 66.04 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec1a534)
-    (property "Reference" "TP9" (at 67.5132 188.4172 0)
+    (property "Reference" "TP7" (at 67.5132 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_GND" (at 66.04 190.5 90)
@@ -4264,7 +4264,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP9") (unit 1)
+          (reference "TP7") (unit 1)
         )
       )
     )
@@ -4273,7 +4273,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 76.2 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec1a53a)
-    (property "Reference" "TP11" (at 77.6732 188.4172 0)
+    (property "Reference" "TP9" (at 77.6732 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_S2P" (at 76.2 190.5 90)
@@ -4289,7 +4289,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP11") (unit 1)
+          (reference "TP9") (unit 1)
         )
       )
     )
@@ -4298,7 +4298,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 71.12 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec1a541)
-    (property "Reference" "TP10" (at 72.5932 188.4172 0)
+    (property "Reference" "TP8" (at 72.5932 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_RXP" (at 71.12 190.5 90)
@@ -4314,7 +4314,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP10") (unit 1)
+          (reference "TP8") (unit 1)
         )
       )
     )
@@ -4323,7 +4323,7 @@
   (symbol (lib_id "power:GND") (at 66.04 180.34 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec1a54a)
-    (property "Reference" "#PWR0116" (at 66.04 173.99 0)
+    (property "Reference" "#PWR046" (at 66.04 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.167 175.9458 0)
@@ -4339,7 +4339,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0116") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -4348,7 +4348,7 @@
   (symbol (lib_id "power:+5F") (at 81.28 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec1a551)
-    (property "Reference" "#PWR0117" (at 81.28 184.15 0)
+    (property "Reference" "#PWR047" (at 81.28 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 81.661 175.9458 0)
@@ -4364,7 +4364,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0117") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -4373,7 +4373,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 81.28 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec1a558)
-    (property "Reference" "TP12" (at 82.7532 188.4172 0)
+    (property "Reference" "TP10" (at 82.7532 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_5P" (at 81.28 190.5 90)
@@ -4389,7 +4389,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP12") (unit 1)
+          (reference "TP10") (unit 1)
         )
       )
     )
@@ -4398,7 +4398,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 114.3 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec3df70)
-    (property "Reference" "TP15" (at 115.7732 188.4172 0)
+    (property "Reference" "TP13" (at 115.7732 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_TXP" (at 114.3 190.5 90)
@@ -4414,7 +4414,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP15") (unit 1)
+          (reference "TP13") (unit 1)
         )
       )
     )
@@ -4423,7 +4423,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 109.22 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec3df77)
-    (property "Reference" "TP14" (at 110.6932 188.4172 0)
+    (property "Reference" "TP12" (at 110.6932 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_S1P" (at 109.22 190.5 90)
@@ -4439,7 +4439,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP14") (unit 1)
+          (reference "TP12") (unit 1)
         )
       )
     )
@@ -4448,7 +4448,7 @@
   (symbol (lib_id "power:+5F") (at 104.14 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec3df81)
-    (property "Reference" "#PWR0118" (at 104.14 184.15 0)
+    (property "Reference" "#PWR048" (at 104.14 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5F" (at 104.521 175.9458 0)
@@ -4464,7 +4464,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0118") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -4473,7 +4473,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 104.14 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec3df87)
-    (property "Reference" "TP13" (at 105.6132 188.4172 0)
+    (property "Reference" "TP11" (at 105.6132 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_5P" (at 104.14 190.5 90)
@@ -4489,7 +4489,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP13") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -4498,7 +4498,7 @@
   (symbol (lib_id "power:GND") (at 119.38 180.34 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec3df8d)
-    (property "Reference" "#PWR0119" (at 119.38 173.99 0)
+    (property "Reference" "#PWR049" (at 119.38 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.507 175.9458 0)
@@ -4514,7 +4514,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0119") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -4523,7 +4523,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 119.38 185.42 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ec3df94)
-    (property "Reference" "TP16" (at 120.8532 188.4172 0)
+    (property "Reference" "TP14" (at 120.8532 188.4172 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "TP_GND" (at 119.38 190.5 90)
@@ -4539,7 +4539,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP16") (unit 1)
+          (reference "TP14") (unit 1)
         )
       )
     )
@@ -4548,7 +4548,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 248.92 127 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03797ec2-5c3b-420c-9ad0-61bb240e185a)
-    (property "Reference" "TP18" (at 250.3932 129.9972 0)
+    (property "Reference" "TP2" (at 250.3932 129.9972 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "HALL" (at 248.92 132.08 90)
@@ -4564,7 +4564,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP18") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
     )
@@ -4573,7 +4573,7 @@
   (symbol (lib_id "power:GND") (at 93.98 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 06387535-6a8f-49bb-af77-5b02d95f518d)
-    (property "Reference" "#PWR0120" (at 93.98 123.19 0)
+    (property "Reference" "#PWR031" (at 93.98 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 116.84 0)
@@ -4589,7 +4589,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0120") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -4598,7 +4598,7 @@
   (symbol (lib_id "suku_basics:BL1551B") (at 73.66 109.22 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1cf1695e-5779-4055-b930-abb425dfaa3a)
-    (property "Reference" "U8" (at 73.66 100.33 0)
+    (property "Reference" "U4" (at 73.66 100.33 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BL1551B" (at 73.66 102.87 0)
@@ -4619,7 +4619,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U8") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -4658,7 +4658,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 248.92 96.52 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23c7ea34-f446-4468-968a-0fac7272dee0)
-    (property "Reference" "TP17" (at 247.4468 93.5228 0)
+    (property "Reference" "TP1" (at 247.4468 93.5228 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "REF" (at 248.92 91.44 90)
@@ -4674,7 +4674,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "TP17") (unit 1)
+          (reference "TP1") (unit 1)
         )
       )
     )
@@ -4683,7 +4683,7 @@
   (symbol (lib_id "power:GND") (at 83.82 129.54 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 26544429-ee9f-489b-b34c-04fd19deed11)
-    (property "Reference" "#PWR0107" (at 83.82 135.89 0)
+    (property "Reference" "#PWR034" (at 83.82 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.693 133.9342 0)
@@ -4699,7 +4699,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -4708,7 +4708,7 @@
   (symbol (lib_id "suku_basics:BL1551B") (at 73.66 86.36 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 294426fa-8a12-46f7-b4cc-3c64fe0de651)
-    (property "Reference" "U5" (at 73.66 77.47 0)
+    (property "Reference" "U3" (at 73.66 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BL1551B" (at 73.66 80.01 0)
@@ -4729,7 +4729,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U5") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -4738,7 +4738,7 @@
   (symbol (lib_id "power:+5P") (at 109.22 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 31042091-ada7-4c91-8101-c8ae9a15685f)
-    (property "Reference" "#PWR0124" (at 109.22 115.57 0)
+    (property "Reference" "#PWR028" (at 109.22 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5P" (at 111.76 109.22 0)
@@ -4754,7 +4754,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0124") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -4763,7 +4763,7 @@
   (symbol (lib_id "power:+5V") (at 63.5 119.38 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 467d4374-18a5-4724-bf0b-4e13d5e9671e)
-    (property "Reference" "#PWR0108" (at 63.5 123.19 0)
+    (property "Reference" "#PWR032" (at 63.5 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 63.119 114.9858 0)
@@ -4779,7 +4779,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -4788,7 +4788,7 @@
   (symbol (lib_id "suku_basics:RES") (at 91.44 121.92 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4b9aee97-dd01-4d5b-a571-700d3c45bab0)
-    (property "Reference" "R4" (at 92.6084 123.4186 0)
+    (property "Reference" "R6" (at 92.6084 123.4186 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 90.297 123.4186 0)
@@ -4805,7 +4805,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R4") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -4814,7 +4814,7 @@
   (symbol (lib_id "suku_basics:RES") (at 91.44 83.82 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6322ad00-ab58-4510-af54-d510f483b1f5)
-    (property "Reference" "R1" (at 92.6084 85.3186 0)
+    (property "Reference" "R2" (at 92.6084 85.3186 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 90.297 85.3186 0)
@@ -4831,7 +4831,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4840,7 +4840,7 @@
   (symbol (lib_id "power:GND") (at 83.82 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7bf0b281-dcaf-494b-8f7f-a2568dccb240)
-    (property "Reference" "#PWR0109" (at 83.82 120.65 0)
+    (property "Reference" "#PWR030" (at 83.82 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.947 118.6942 0)
@@ -4856,7 +4856,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0109") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -4865,7 +4865,7 @@
   (symbol (lib_id "power:GND") (at 83.82 91.44 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96d23aa2-1874-47dd-9b0f-3ed18bcd6de6)
-    (property "Reference" "#PWR0121" (at 83.82 97.79 0)
+    (property "Reference" "#PWR022" (at 83.82 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.693 95.8342 0)
@@ -4881,7 +4881,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0121") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -4890,7 +4890,7 @@
   (symbol (lib_id "power:GND") (at 83.82 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b349011f-e936-4a35-8340-afa7a2665c6d)
-    (property "Reference" "#PWR0122" (at 83.82 82.55 0)
+    (property "Reference" "#PWR013" (at 83.82 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.947 80.5942 0)
@@ -4906,7 +4906,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0122") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -4915,7 +4915,7 @@
   (symbol (lib_id "suku_basics:RES") (at 91.44 106.68 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9a836de-f366-4e03-aa70-e514a6648e94)
-    (property "Reference" "R3" (at 92.6084 108.1786 0)
+    (property "Reference" "R5" (at 92.6084 108.1786 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470R" (at 90.297 108.1786 0)
@@ -4932,7 +4932,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "R3") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -4941,7 +4941,7 @@
   (symbol (lib_id "power:+5V") (at 63.5 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de686e4d-c7b0-4682-b507-bd033e14bf1d)
-    (property "Reference" "#PWR0123" (at 63.5 107.95 0)
+    (property "Reference" "#PWR025" (at 63.5 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 63.881 99.7458 0)
@@ -4957,7 +4957,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "#PWR0123") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -4966,7 +4966,7 @@
   (symbol (lib_id "suku_basics:BL1551B") (at 73.66 71.12 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e776eb70-5879-4862-805f-11173f1c69e7)
-    (property "Reference" "U6" (at 73.66 62.23 0)
+    (property "Reference" "U1" (at 73.66 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BL1551B" (at 73.66 64.77 0)
@@ -4987,7 +4987,7 @@
     (instances
       (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
-          (reference "U6") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
