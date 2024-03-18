@@ -842,83 +842,6 @@
         )
       )
     )
-    (symbol "suku_basics:FFC_Conn_01x08_combine_pins2" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 10.16 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "FFC_Conn_01x08_combine_pins2" (at 0 -12.7 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "suku_basics:J_FFC_1x8_Solder_2common" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "FFC_Conn_01x08_combine_pins2_1_1"
-        (rectangle (start -1.27 -10.033) (end 0 -10.287)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -7.493) (end 0 -7.747)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 5.207) (end 0 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 7.747) (end 0 7.493)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 8.89) (end 1.27 -11.43)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 7.62 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -10.16 0) (length 3.81)
-          (name "Pin_8" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "suku_basics:RES" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 0.762 0.508 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1605,6 +1528,10 @@
     (stroke (width 0) (type default))
     (uuid 1427bb3f-0689-4b41-a816-cd79a5202fd0)
   )
+  (wire (pts (xy 48.26 147.32) (xy 48.26 149.86))
+    (stroke (width 0) (type default))
+    (uuid 1634214a-00d4-4b43-b314-fb668ab786f1)
+  )
   (wire (pts (xy 129.54 25.4) (xy 129.54 27.94))
     (stroke (width 0) (type default))
     (uuid 16a9ae8c-3ad2-439b-8efe-377c994670c7)
@@ -1616,10 +1543,6 @@
   (wire (pts (xy 208.28 111.76) (xy 208.28 114.3))
     (stroke (width 0) (type default))
     (uuid 180245d9-4a3f-4d1b-adcc-b4eafac722e0)
-  )
-  (wire (pts (xy 142.24 149.86) (xy 142.24 147.32))
-    (stroke (width 0) (type default))
-    (uuid 18b7e157-ae67-48ad-bd7c-9fef6fe45b22)
   )
   (wire (pts (xy 248.92 96.52) (xy 248.92 99.06))
     (stroke (width 0) (type default))
@@ -1665,6 +1588,10 @@
     (stroke (width 0) (type default))
     (uuid 2a6075ae-c7fa-41db-86b8-3f996740bdc2)
   )
+  (wire (pts (xy 137.16 147.32) (xy 137.16 149.86))
+    (stroke (width 0) (type default))
+    (uuid 2ae8f7a9-ef67-48a3-8a26-d29e56bd173a)
+  )
   (wire (pts (xy 86.36 68.58) (xy 88.9 68.58))
     (stroke (width 0) (type default))
     (uuid 2c070f20-9200-4361-b6f4-28d7c9124265)
@@ -1692,6 +1619,10 @@
   (wire (pts (xy 106.68 73.66) (xy 106.68 68.58))
     (stroke (width 0) (type default))
     (uuid 34a74736-156e-4bf3-9200-cd137cfa59da)
+  )
+  (wire (pts (xy 129.54 147.32) (xy 129.54 149.86))
+    (stroke (width 0) (type default))
+    (uuid 34ad91a5-9947-4324-88ee-32ede9b4d4b9)
   )
   (wire (pts (xy 132.08 180.34) (xy 132.08 185.42))
     (stroke (width 0) (type default))
@@ -1721,7 +1652,7 @@
     (stroke (width 0) (type default))
     (uuid 3a41d37a-5d5f-4b9e-918c-04dd85080f87)
   )
-  (wire (pts (xy 35.56 147.32) (xy 30.48 147.32))
+  (wire (pts (xy 30.48 147.32) (xy 40.64 147.32))
     (stroke (width 0) (type default))
     (uuid 40b14a16-fb82-4b9d-89dd-55cd98abb5cc)
   )
@@ -1785,10 +1716,6 @@
     (stroke (width 0) (type default))
     (uuid 56f8d380-1672-41fc-948f-bed2112e4b62)
   )
-  (wire (pts (xy 53.34 149.86) (xy 53.34 147.32))
-    (stroke (width 0) (type default))
-    (uuid 597a11f2-5d2c-4a65-ac95-38ad106e1367)
-  )
   (wire (pts (xy 58.42 149.86) (xy 58.42 147.32))
     (stroke (width 0) (type default))
     (uuid 59ec3156-036e-4049-89db-91a9dd07095f)
@@ -1825,10 +1752,6 @@
   (wire (pts (xy 93.98 68.58) (xy 96.52 68.58))
     (stroke (width 0) (type default))
     (uuid 644ae9fc-3c8e-4089-866e-a12bf371c3e9)
-  )
-  (wire (pts (xy 35.56 149.86) (xy 35.56 147.32))
-    (stroke (width 0) (type default))
-    (uuid 658dad07-97fd-466c-8b49-21892ac96ea4)
   )
   (wire (pts (xy 96.52 121.92) (xy 106.68 121.92))
     (stroke (width 0) (type default))
@@ -2018,21 +1941,13 @@
     (stroke (width 0) (type default))
     (uuid a24ddb4f-c217-42ca-b6cb-d12da84fb2b9)
   )
-  (wire (pts (xy 58.42 147.32) (xy 53.34 147.32))
+  (wire (pts (xy 48.26 147.32) (xy 58.42 147.32))
     (stroke (width 0) (type default))
     (uuid a29f8df0-3fae-4edf-8d9c-bd5a875b13e3)
   )
   (wire (pts (xy 45.72 144.78) (xy 45.72 149.86))
     (stroke (width 0) (type default))
     (uuid a35f42ad-6ef6-4e22-b9ae-2235a19e6de1)
-  )
-  (wire (pts (xy 147.32 147.32) (xy 142.24 147.32))
-    (stroke (width 0) (type default))
-    (uuid a53767ed-bb28-4f90-abe0-e0ea734812a4)
-  )
-  (wire (pts (xy 124.46 149.86) (xy 124.46 147.32))
-    (stroke (width 0) (type default))
-    (uuid a6ccc556-da88-4006-ae1a-cc35733efef3)
   )
   (wire (pts (xy 43.18 144.78) (xy 43.18 149.86))
     (stroke (width 0) (type default))
@@ -2066,7 +1981,7 @@
     (stroke (width 0) (type default))
     (uuid aef6e899-7f3d-4eba-85a0-f4cc60a3d105)
   )
-  (wire (pts (xy 119.38 147.32) (xy 124.46 147.32))
+  (wire (pts (xy 119.38 147.32) (xy 129.54 147.32))
     (stroke (width 0) (type default))
     (uuid b7867831-ef82-4f33-a926-59e5c1c09b91)
   )
@@ -2081,6 +1996,10 @@
   (wire (pts (xy 93.98 121.92) (xy 96.52 121.92))
     (stroke (width 0) (type default))
     (uuid ba3b8af0-dfda-42cb-be8a-e58fd9ac633e)
+  )
+  (wire (pts (xy 40.64 147.32) (xy 40.64 149.86))
+    (stroke (width 0) (type default))
+    (uuid c04beae8-5aa9-4809-8877-d930d5006e2d)
   )
   (wire (pts (xy 33.02 25.4) (xy 33.02 40.64))
     (stroke (width 0) (type default))
@@ -2239,6 +2158,10 @@
   (wire (pts (xy 81.28 27.94) (xy 78.74 27.94))
     (stroke (width 0) (type default))
     (uuid f7667b23-296e-4362-a7e3-949632c8954b)
+  )
+  (wire (pts (xy 137.16 147.32) (xy 147.32 147.32))
+    (stroke (width 0) (type default))
+    (uuid f8b72890-56a1-450b-a491-9622ac8d847a)
   )
   (wire (pts (xy 147.32 157.48) (xy 147.32 147.32))
     (stroke (width 0) (type default))
@@ -2404,7 +2327,7 @@
     (pin "5" (uuid d2039695-a601-47d7-8bd7-67547ab761c4))
     (pin "6" (uuid 8717d147-3d81-4932-954b-20308fac5114))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U1") (unit 1)
         )
@@ -2430,7 +2353,7 @@
     (pin "1" (uuid 0e655ed9-6313-4d82-a2ff-7c1973502007))
     (pin "2" (uuid a4ecebc3-d108-449e-87fe-1d5b1ca92079))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R2") (unit 1)
         )
@@ -2461,7 +2384,7 @@
     (pin "3" (uuid 65aa6202-da7a-446f-9e7d-a37518ee9c1b))
     (pin "4" (uuid ba6adeec-6997-4692-bab7-de50ddf075bb))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "J1") (unit 1)
         )
@@ -2492,7 +2415,7 @@
     (pin "3" (uuid 7404059b-5ca4-4604-a47d-1a6af772c561))
     (pin "4" (uuid e58b36aa-5e35-443e-9f48-96a6a0eb9850))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "J3") (unit 1)
         )
@@ -2517,7 +2440,7 @@
     )
     (pin "1" (uuid f5b09901-603a-4108-bb6e-f28d7a5e38f6))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR04") (unit 1)
         )
@@ -2542,7 +2465,7 @@
     )
     (pin "1" (uuid 7227d1cd-4f33-4da9-9b6b-4338573a16c2))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR012") (unit 1)
         )
@@ -2567,7 +2490,7 @@
     )
     (pin "1" (uuid 7ae5f7af-3810-4451-93f7-09cb825eff8d))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR02") (unit 1)
         )
@@ -2592,7 +2515,7 @@
     )
     (pin "1" (uuid 7e23f6c7-56c3-45dd-9e44-6b0c820388a4))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR05") (unit 1)
         )
@@ -2617,7 +2540,7 @@
     )
     (pin "1" (uuid ea80bedf-fac8-43e4-983c-f1606bc1b426))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR015") (unit 1)
         )
@@ -2650,7 +2573,7 @@
     (pin "3" (uuid 6cd6a6f1-0193-4282-8be8-5424a1ac8f04))
     (pin "4" (uuid 044fe1d1-6bd8-4ab6-91f7-da285194c51c))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "Q3") (unit 1)
         )
@@ -2683,7 +2606,7 @@
     (pin "3" (uuid 60b2ef04-ed45-42f0-b0bd-f7b245a1eec9))
     (pin "4" (uuid 94de3ec5-f7ac-4d2a-b244-8f3a0c131dfe))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "Q3") (unit 2)
         )
@@ -2708,7 +2631,7 @@
     )
     (pin "1" (uuid 4a376a57-bdad-4fb0-a9d8-57fe0e7fb1cc))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR08") (unit 1)
         )
@@ -2733,7 +2656,7 @@
     )
     (pin "1" (uuid 2c68ca19-6a72-4c57-8ae1-9f967ea26ca1))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR09") (unit 1)
         )
@@ -2766,7 +2689,7 @@
     (pin "3" (uuid 620a1892-1ee4-40db-a9e6-a48ff68eebc3))
     (pin "4" (uuid a15c2aab-19b6-4273-9aea-975cbe20ecd7))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "Q4") (unit 2)
         )
@@ -2799,7 +2722,7 @@
     (pin "3" (uuid 253d01fc-0040-4948-ae39-949824a83cfa))
     (pin "4" (uuid 5b718b64-a22a-453b-bab7-6a8e67d0d130))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "Q4") (unit 1)
         )
@@ -2824,7 +2747,7 @@
     )
     (pin "1" (uuid cd701b96-2cfd-49c2-bff2-b64edea9ab43))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR010") (unit 1)
         )
@@ -2849,7 +2772,7 @@
     )
     (pin "1" (uuid ee71720d-31c1-43f8-8519-a7946e30bfd8))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR011") (unit 1)
         )
@@ -2874,7 +2797,7 @@
     )
     (pin "1" (uuid c150c4f7-798b-4146-81c6-bb613894a02a))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR03") (unit 1)
         )
@@ -2907,7 +2830,7 @@
     (pin "5" (uuid c616c307-11b3-4484-aae7-e92f9aa2bd6e))
     (pin "6" (uuid 5ef4d21c-73b2-4ec8-b850-60e6ed1d0095))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U2") (unit 1)
         )
@@ -2933,7 +2856,7 @@
     (pin "1" (uuid 0a913d4b-278f-4a75-8f1a-63a579a00bb7))
     (pin "2" (uuid c1c6742a-c1f8-4d71-b7e8-991f5833de3c))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "C1") (unit 1)
         )
@@ -2958,7 +2881,7 @@
     )
     (pin "1" (uuid da9acdf8-61f1-4edb-82f5-c4cb6038e89c))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR01") (unit 1)
         )
@@ -2983,7 +2906,7 @@
     )
     (pin "1" (uuid 25802f6b-6e02-4d39-ad78-26be0554a620))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR06") (unit 1)
         )
@@ -3008,7 +2931,7 @@
     )
     (pin "1" (uuid 9fe908e0-e3d7-4b23-be00-d02a1c4e5960))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR07") (unit 1)
         )
@@ -3034,7 +2957,7 @@
     (pin "1" (uuid 38786210-3a67-4c17-8d97-76709615639c))
     (pin "2" (uuid 31a0bd8f-8aaf-49dc-9ae2-1eac5b71ffef))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "C2") (unit 1)
         )
@@ -3059,7 +2982,7 @@
     )
     (pin "1" (uuid a6febf37-b656-4569-9bb8-b058dd0cb24a))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR013") (unit 1)
         )
@@ -3084,7 +3007,7 @@
     )
     (pin "1" (uuid 2e26458e-061b-4e4f-b741-19239e520fb7))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR014") (unit 1)
         )
@@ -3109,7 +3032,7 @@
     )
     (pin "1" (uuid c728bbc6-0f38-4b98-9753-c0da9c4a1d9b))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR016") (unit 1)
         )
@@ -3139,7 +3062,7 @@
     (pin "2" (uuid a0d2b662-e698-4ef4-8caa-9df8121eeba0))
     (pin "3" (uuid eca4b10f-9468-4075-8078-e7ef35b1af50))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "D1") (unit 1)
         )
@@ -3164,7 +3087,7 @@
     )
     (pin "1" (uuid 863733ec-439c-4787-a366-4fe9d8cc7708))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR019") (unit 1)
         )
@@ -3189,7 +3112,7 @@
     )
     (pin "1" (uuid c3b71cb1-ad5a-4b20-a2fa-26b716683b0d))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR020") (unit 1)
         )
@@ -3214,7 +3137,7 @@
     )
     (pin "1" (uuid e96b3bc6-53e9-4285-aaf5-70ccbb9b91ca))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR021") (unit 1)
         )
@@ -3239,7 +3162,7 @@
     )
     (pin "1" (uuid b3a100a8-44d7-44be-9078-f56aefaa19d8))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR022") (unit 1)
         )
@@ -3269,7 +3192,7 @@
     (pin "2" (uuid af800419-e785-4110-9701-e4834e99be86))
     (pin "3" (uuid dbdd9800-7499-4d8f-9155-17bf860febb0))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U3") (unit 1)
         )
@@ -3294,7 +3217,7 @@
     )
     (pin "1" (uuid d2e80b11-0333-4f93-8def-a483c2df2613))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0105") (unit 1)
         )
@@ -3319,7 +3242,7 @@
     )
     (pin "1" (uuid c1a54d4e-71af-459b-98f4-23c2d0245ec4))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0106") (unit 1)
         )
@@ -3344,7 +3267,7 @@
     )
     (pin "1" (uuid 785fe102-6080-4f51-a827-78f4446345c9))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#FLG0101") (unit 1)
         )
@@ -3370,7 +3293,7 @@
     (pin "1" (uuid 38835a3c-475b-4723-aa94-c2043afd2a70))
     (pin "2" (uuid 12a5a766-ed64-4bfb-be19-430611e15967))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R6") (unit 1)
         )
@@ -3395,7 +3318,7 @@
     )
     (pin "1" (uuid dcf30405-bc35-4bfa-88d2-5589b13a7995))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0101") (unit 1)
         )
@@ -3420,7 +3343,7 @@
     )
     (pin "1" (uuid 78c54b8a-6797-42d0-be1a-79162f5748e3))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#FLG0102") (unit 1)
         )
@@ -3446,7 +3369,7 @@
     (pin "1" (uuid 91bc7b40-4feb-4e50-94e7-09d95b484abe))
     (pin "2" (uuid f294b40b-93cb-4638-be80-db3d4d633ba9))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R8") (unit 1)
         )
@@ -3471,7 +3394,7 @@
     )
     (pin "1" (uuid 0447bbe6-4fa9-411c-88b7-973f3daa9469))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR027") (unit 1)
         )
@@ -3497,7 +3420,7 @@
     (pin "1" (uuid 14e92e23-9480-4253-88ac-1d40203b6dd8))
     (pin "2" (uuid bd4eb3ef-0ff7-45b5-a953-1ce208691170))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "C5") (unit 1)
         )
@@ -3522,7 +3445,7 @@
     )
     (pin "1" (uuid 40ad3a76-bbd5-4d54-84d2-39d6cda48f0c))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR029") (unit 1)
         )
@@ -3547,7 +3470,7 @@
     )
     (pin "1" (uuid 2604de0b-4863-427d-ae66-515793f5488e))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR024") (unit 1)
         )
@@ -3573,7 +3496,7 @@
     (pin "1" (uuid 9c19d64d-f91d-49f2-b7f4-56bb8a4beb10))
     (pin "2" (uuid b63ada20-defe-45f2-8024-4100cc35ed75))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R5") (unit 1)
         )
@@ -3599,7 +3522,7 @@
     (pin "1" (uuid cc0eb0ba-33a8-4fe6-9590-65bf8c1373b3))
     (pin "2" (uuid eae29d76-b606-4232-839a-e324a5e8fb9b))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R7") (unit 1)
         )
@@ -3624,7 +3547,7 @@
     )
     (pin "1" (uuid f28ba176-8b48-4504-a317-f1ff26025167))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR026") (unit 1)
         )
@@ -3650,7 +3573,7 @@
     (pin "1" (uuid 045967b4-3f05-444d-a7ff-f0785b2fac49))
     (pin "2" (uuid ce738b1e-8f8b-4ead-9195-642a9471aea6))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "C4") (unit 1)
         )
@@ -3675,7 +3598,7 @@
     )
     (pin "1" (uuid 0ea700ff-bd6a-4209-8496-388aa1246fbd))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR028") (unit 1)
         )
@@ -3700,7 +3623,7 @@
     )
     (pin "1" (uuid e7464dd6-7f68-4ad3-b92c-100918c8d294))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0102") (unit 1)
         )
@@ -3725,7 +3648,7 @@
     )
     (pin "1" (uuid cb326a2a-061e-46eb-aaeb-5e4f5de84f4b))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR025") (unit 1)
         )
@@ -3750,7 +3673,7 @@
     )
     (pin "1" (uuid f97a1075-229b-4b32-9043-0b568b13a284))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#FLG0103") (unit 1)
         )
@@ -3775,7 +3698,7 @@
     )
     (pin "1" (uuid 4f996465-fa7d-4813-ba88-475632bb7a03))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0103") (unit 1)
         )
@@ -3800,7 +3723,7 @@
     )
     (pin "1" (uuid 28ca1462-39c5-4747-ad66-44764cfbfefe))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#FLG0104") (unit 1)
         )
@@ -3825,7 +3748,7 @@
     )
     (pin "1" (uuid 9d728eb6-5f13-43db-83b1-64a5abe0d865))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0104") (unit 1)
         )
@@ -3851,7 +3774,7 @@
     (pin "1" (uuid 2c3f48da-b99d-415e-b9f9-dababdfb78e8))
     (pin "2" (uuid 2bcc020c-db21-48b2-a655-ff5a125a4526))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "C3") (unit 1)
         )
@@ -3876,7 +3799,7 @@
     )
     (pin "1" (uuid ef205e60-ffeb-4070-ae2b-0672f13cd9ec))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR023") (unit 1)
         )
@@ -3908,7 +3831,7 @@
     (pin "4" (uuid fba6a8dd-8141-4a80-a59b-519763a00cee))
     (pin "5" (uuid 66c7b7d6-7879-4066-ad66-347c4741ae9f))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U4") (unit 1)
         )
@@ -3933,7 +3856,7 @@
     )
     (pin "1" (uuid 67f2443e-cce9-48af-a1ab-1d8234954326))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR031") (unit 1)
         )
@@ -3958,7 +3881,7 @@
     )
     (pin "1" (uuid de0c5418-a3fd-44ec-b714-98a3b092f8b8))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR030") (unit 1)
         )
@@ -3966,7 +3889,7 @@
     )
   )
 
-  (symbol (lib_id "suku_basics:FFC_Conn_01x08_combine_pins2") (at 43.18 154.94 90) (mirror x) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 43.18 154.94 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eaac63d)
     (property "Reference" "J5" (at 33.02 157.48 90)
@@ -3982,11 +3905,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5a9013a3-04df-4a2f-bff7-c93eba59a902))
+    (pin "2" (uuid 56734917-0788-4970-9020-2f20d110e522))
+    (pin "3" (uuid 1eff1036-0ba4-49aa-a10d-f08163e9aac2))
     (pin "4" (uuid 01875c75-d232-4a0b-9c8a-2eb340214813))
-    (pin "5" (uuid db3bb783-bb22-488c-a63e-a3297c39c275))
-    (pin "8" (uuid 75fa5c73-d294-4348-83c7-f9c5e1fa8342))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "J5") (unit 1)
         )
@@ -3994,7 +3917,7 @@
     )
   )
 
-  (symbol (lib_id "suku_basics:FFC_Conn_01x08_combine_pins2") (at 132.08 154.94 90) (mirror x) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 132.08 154.94 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eaadf8d)
     (property "Reference" "J6" (at 121.92 157.48 90)
@@ -4010,11 +3933,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5d6def5c-821c-4885-a01a-4879a37ace2b))
+    (pin "2" (uuid 10e4dbac-d038-45c1-89d4-ee729dc11c72))
+    (pin "3" (uuid 4d9e7fad-d16e-4f66-9a4c-9949f125418e))
     (pin "4" (uuid 6a350fa0-228e-4ab4-baeb-840cc9b843ba))
-    (pin "5" (uuid 8e5d7f2f-2271-499f-bb1d-6541cdd318b9))
-    (pin "8" (uuid 42debff9-8933-44aa-9f59-69dcaf6ea4eb))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "J6") (unit 1)
         )
@@ -4039,7 +3962,7 @@
     )
     (pin "1" (uuid 3de5e82a-8f24-4615-acdd-451d140f4fac))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP1") (unit 1)
         )
@@ -4064,7 +3987,7 @@
     )
     (pin "1" (uuid d7422ed8-7b09-47e1-b34f-5471a59ec75f))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0112") (unit 1)
         )
@@ -4089,7 +4012,7 @@
     )
     (pin "1" (uuid c47b14b4-f220-4f97-89fd-9fdf20465ce0))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP2") (unit 1)
         )
@@ -4114,7 +4037,7 @@
     )
     (pin "1" (uuid 2a7da631-3fda-4cb6-9fbd-10d708f8b6a6))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP3") (unit 1)
         )
@@ -4139,7 +4062,7 @@
     )
     (pin "1" (uuid e2477929-8619-47c8-b625-9e27cfdb0991))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP4") (unit 1)
         )
@@ -4164,7 +4087,7 @@
     )
     (pin "1" (uuid dc212a3f-238f-417d-8743-f1e06e04a55b))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0115") (unit 1)
         )
@@ -4189,7 +4112,7 @@
     )
     (pin "1" (uuid 859b0947-ef0a-47e4-baa2-25eb2eae4299))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP5") (unit 1)
         )
@@ -4214,7 +4137,7 @@
     )
     (pin "1" (uuid 742ac10a-f08b-4c1b-8a4e-59b674d959a0))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP6") (unit 1)
         )
@@ -4239,7 +4162,7 @@
     )
     (pin "1" (uuid 765dda73-b146-463c-9f94-f465483419d5))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP7") (unit 1)
         )
@@ -4264,7 +4187,7 @@
     )
     (pin "1" (uuid ea37bdd5-b42f-4000-b9b2-da7945e5f290))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP8") (unit 1)
         )
@@ -4289,7 +4212,7 @@
     )
     (pin "1" (uuid 5a2313ce-0efa-45a9-99a1-d353d2f2a59c))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0113") (unit 1)
         )
@@ -4314,7 +4237,7 @@
     )
     (pin "1" (uuid b187e5ef-1abc-4b3f-8267-57c84f798790))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0114") (unit 1)
         )
@@ -4339,7 +4262,7 @@
     )
     (pin "1" (uuid bd43308e-4eed-4699-9a91-304cb56befdd))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP9") (unit 1)
         )
@@ -4364,7 +4287,7 @@
     )
     (pin "1" (uuid f8749af3-fb5d-4022-aa52-990c3f42c796))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP11") (unit 1)
         )
@@ -4389,7 +4312,7 @@
     )
     (pin "1" (uuid 5b780338-2ebd-4bcb-96ef-08fd321027a9))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP10") (unit 1)
         )
@@ -4414,7 +4337,7 @@
     )
     (pin "1" (uuid 8997cf99-8749-44a3-a1ae-a79b697a91cc))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0116") (unit 1)
         )
@@ -4439,7 +4362,7 @@
     )
     (pin "1" (uuid c59a1fcc-b8b6-4087-b85e-c4739d1cf78e))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0117") (unit 1)
         )
@@ -4464,7 +4387,7 @@
     )
     (pin "1" (uuid b2b03f76-bce3-4f0c-b447-675d2b1bab79))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP12") (unit 1)
         )
@@ -4489,7 +4412,7 @@
     )
     (pin "1" (uuid 66be1624-724e-49bc-b129-2498e7f252d3))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP15") (unit 1)
         )
@@ -4514,7 +4437,7 @@
     )
     (pin "1" (uuid e73d5cff-eaf0-4767-b7c2-fda165aced8e))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP14") (unit 1)
         )
@@ -4539,7 +4462,7 @@
     )
     (pin "1" (uuid 951b582b-7456-40fb-b9f5-8a174cd1e973))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0118") (unit 1)
         )
@@ -4564,7 +4487,7 @@
     )
     (pin "1" (uuid 95328d65-2bb0-4a7a-87a4-810f6ab0a0bb))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP13") (unit 1)
         )
@@ -4589,7 +4512,7 @@
     )
     (pin "1" (uuid 9ea9e82c-5a19-4888-a78a-65fc6427a7f1))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0119") (unit 1)
         )
@@ -4614,7 +4537,7 @@
     )
     (pin "1" (uuid edabe4ca-6149-4c25-bdb0-da9f4c84fcce))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP16") (unit 1)
         )
@@ -4639,7 +4562,7 @@
     )
     (pin "1" (uuid 719baf9f-6e6c-47bb-8f2c-9de7ee1a9242))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP18") (unit 1)
         )
@@ -4664,7 +4587,7 @@
     )
     (pin "1" (uuid 59e1ff79-54b1-4f43-88c8-a5e4116dd3d5))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0120") (unit 1)
         )
@@ -4694,7 +4617,7 @@
     (pin "5" (uuid fad57d3d-e3b9-4e3c-bf60-4173ad045544))
     (pin "6" (uuid 746945d0-f32d-4b63-b357-2e819b78cb01))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U8") (unit 1)
         )
@@ -4724,7 +4647,7 @@
     (pin "5" (uuid 89fe2537-a9db-4d8b-b12d-af25cdf3c415))
     (pin "6" (uuid 54433535-05a2-4e6f-b167-381652cd19a4))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U7") (unit 1)
         )
@@ -4749,7 +4672,7 @@
     )
     (pin "1" (uuid e3217b7c-f5e7-4356-96d2-f0aab1db2e3f))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "TP17") (unit 1)
         )
@@ -4774,7 +4697,7 @@
     )
     (pin "1" (uuid a6192c74-78b3-4e7a-8209-8051c5f74eb6))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0107") (unit 1)
         )
@@ -4804,7 +4727,7 @@
     (pin "5" (uuid 6be29b27-e485-48e6-89dc-62d0d4a390fe))
     (pin "6" (uuid 31532d2d-ff82-4255-ad3d-055b479e21b9))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U5") (unit 1)
         )
@@ -4829,7 +4752,7 @@
     )
     (pin "1" (uuid 0a72eb77-53c2-49bc-961b-0baaa030a2f7))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0124") (unit 1)
         )
@@ -4854,7 +4777,7 @@
     )
     (pin "1" (uuid 3b680785-0465-4752-80ee-310485455075))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0108") (unit 1)
         )
@@ -4880,7 +4803,7 @@
     (pin "1" (uuid eee86e33-c78c-4fa0-ae74-254cf7423f1a))
     (pin "2" (uuid b64ee7a6-429c-43e0-a0db-74567fd30e81))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R4") (unit 1)
         )
@@ -4906,7 +4829,7 @@
     (pin "1" (uuid fc632144-39ec-41bc-af1d-6e9ffb1705c6))
     (pin "2" (uuid e165382d-7abe-43d2-a070-207e6d439a1f))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R1") (unit 1)
         )
@@ -4931,7 +4854,7 @@
     )
     (pin "1" (uuid 0d42da38-7bf3-4407-a8a1-4c2fb104c5af))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0109") (unit 1)
         )
@@ -4956,7 +4879,7 @@
     )
     (pin "1" (uuid deb0a60e-55a0-4929-a7ca-98e0e41460c3))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0121") (unit 1)
         )
@@ -4981,7 +4904,7 @@
     )
     (pin "1" (uuid 277d9c31-6025-4b8f-abaa-d04360e5189e))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0122") (unit 1)
         )
@@ -5007,7 +4930,7 @@
     (pin "1" (uuid 77e2d680-8e74-4475-9dd4-50cf1b88cec3))
     (pin "2" (uuid 0ad0ee62-f479-4050-a230-bbe600f83ca9))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "R3") (unit 1)
         )
@@ -5032,7 +4955,7 @@
     )
     (pin "1" (uuid 0faa2b85-4196-4371-b04b-2555f1ef1d81))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "#PWR0123") (unit 1)
         )
@@ -5062,7 +4985,7 @@
     (pin "5" (uuid 246aca11-60d8-4a0c-bbfd-60d57f1b5249))
     (pin "6" (uuid b2f76822-132f-4e74-841e-f1036c3e1ae9))
     (instances
-      (project "INTERFACE"
+      (project "PCBA-INTERFACE"
         (path "/3a7648d8-121a-4921-9b92-9b35b76ce39b"
           (reference "U6") (unit 1)
         )
