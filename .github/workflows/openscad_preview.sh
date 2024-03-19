@@ -14,7 +14,10 @@ for stl_file in *.stl; do
     cat "$tmp_script"
 
     # Generate PNG preview using OpenSCAD
-    xvfb-run -a openscad -o "$filename_no_ext.png" --colorscheme=Tomorrow --imgsize=3200,2400 "$tmp_script"
+    # xvfb-run -a openscad -o "$filename_no_ext.png" --colorscheme=Tomorrow --imgsize=3200,2400 "$tmp_script"
+
+    xvfb-run -a openscad -o "$filename_no_ext.png" --camera=1,-2,1.5,0,0,0 --viewall --colorscheme=Tomorrow --imgsize=3200,2400 "$tmp_script"
+    xvfb-run -a openscad -o $filename_no_ext"_reverse.png" --camera=-1,2,-1.5,0,0,0 --viewall --colorscheme=Tomorrow --imgsize=3200,2400 "$tmp_script"
 
     # Remove the temporary OpenSCAD script
     rm "$tmp_script"
