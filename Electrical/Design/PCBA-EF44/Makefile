@@ -1,7 +1,7 @@
 #!/usr/bin/make
 DEBUG=
 MAK=kibot.mak
-CONFIG=PCBA-EF44.kibot.yaml
+CONFIG=../PCBA-MOTHERBOARD.kibot.yaml
 SCH=PCBA-EF44.kicad_sch
 PCB=PCBA-EF44.kicad_pcb
 DEST=mfg-bot
