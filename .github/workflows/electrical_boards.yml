@@ -36,7 +36,12 @@ jobs:
     - name: Print errors
       if: ${{ always() }}
       run: |
-        cat Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt
+        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt
+        if [ -f "$FILE" ]; then
+          cat "$FILE"
+        else
+          echo "DRC file for ${{ matrix.board }} does not exist."
+        fi
         cat Electrical/Design/${{ matrix.board }}/kibot_error.log
 
     - name: Set Date
