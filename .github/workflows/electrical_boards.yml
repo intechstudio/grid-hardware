@@ -61,7 +61,12 @@ jobs:
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-erc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_erc.txt
-        mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_drc.txt
+        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt
+        if [ -f "$FILE" ]; then
+          mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_drc.txt
+        else
+          echo "DRC file for ${{ matrix.board }} does not exist."
+        fi
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/Schematic.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_Schematic.pdf
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Top.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Top.pdf
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Bottom.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Bottom.pdf
