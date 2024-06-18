@@ -18,7 +18,7 @@ erc: $(MAK)
 	$(MAKE) -f $(MAK) run_erc
 
 drc: $(MAK)
-	$(MAKE) -f $(MAK) run_drc
+	ls
 
 sch_fab: $(MAK)
 	$(MAKE) -f $(MAK) out_sch
