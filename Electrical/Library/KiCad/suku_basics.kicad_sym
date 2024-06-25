@@ -1,4 +1,106 @@
-(kicad_symbol_lib (version 20220914) (generator https://github.com/uPesy/easyeda2kicad.py)
+(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
+  (symbol "CPG135001D02" (in_bom yes) (on_board yes)
+    (property "Reference" "SW" (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CPG135001D02" (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C400230" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "CPG135001D02_0_1"
+      (circle (center -2.03 -2.54) (radius 0.51)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -5.08 -2.54)
+          (xy -2.54 -2.54)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.29 -0.76)
+          (xy 2.29 -0.76)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -0.76)
+          (xy 0 1.02)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.08 -2.54)
+          (xy 2.54 -2.54)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (circle (center 2.03 -2.54) (radius 0.51)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line (at -7.62 -2.54 0) (length 3.81)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 7.62 -2.54 180) (length 3.81)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "CPG135001S30" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CPG135001S30" (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "suku_basics:CONN-SMD_HOTPLUGPAKAGE__C9900010116" (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C5333465" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "CPG135001S30_0_1"
+      (rectangle (start -2.54 2.54) (end 2.54 -2.54)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (circle (center -1.27 1.27) (radius 0.38)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line (at -5.08 0 0) (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 5.08 0 180) (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
   (symbol "DISPLAY_TEK1" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
     (property "Reference" "U" (at -17.78 20.32 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -95,336 +197,185 @@
       )
     )
   )
-
-  (symbol "USB-CON-AF-APPLE"
-    (in_bom yes)
-    (on_board yes)
-    (property
-      "Reference"
-      "USB"
-      (id 0)
-      (at 0 17.78 0)
-      (effects (font (size 1.27 1.27) ) )
+  (symbol "ESP-PSRAM" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 3.81 11.43 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property
-      "Value"
-      "USB-CON-AF-APPLE"
-      (id 1)
-      (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27) ) )
+    (property "Value" "ESP-PSRAM32" (at -1.27 -11.43 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property
-      "Footprint"
-      "suku_basics:USB-A-SMD_AF-APPLE-10.6"
-      (id 2)
-      (at 0 -17.78 0)
-      (effects (font (size 1.27 1.27) ) hide)
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property
-      "Datasheet"
-      "https://lcsc.com/product-detail/USB-Connectors_A-FApple-board-models10-6-LCPVinyl-High-temperature_C42567.html"
-      (id 3)
-      (at 0 -20.32 0)
-      (effects (font (size 1.27 1.27) ) hide)
+    (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp-psram32_datasheet_en.pdf" (at -10.16 12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property
-      "LCSC Part"
-      "C42567"
-      (id 5)
-      (at 0 -22.86 0)
-      (effects (font (size 1.27 1.27) ) hide)
+    (property "ki_keywords" "32 Mbit serial pseudo SRAM MEMORY" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "USB-CON-AF-APPLE_0_1"
-      (rectangle
-        (start -6.35 7.62)
-        (end 2.54 -5.08)
-        (stroke (width 0) (type default) (color 0 0 0 0))
+    (property "ki_description" "32 Mbit serial pseudo SRAM device organized as 4Mx8 bits, 1.8 VCC, SOIC8 (SOP8)" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "SOIC*3.9x4.9mm?P1.27mm*" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "ESP-PSRAM_0_1"
+      (rectangle (start -7.62 10.16) (end 7.62 -10.16)
+        (stroke (width 0.254) (type default))
         (fill (type background))
       )
-      (pin input line
-        (at 7.62 5.08 180)
-        (length 5.08)
+    )
+    (symbol "ESP-PSRAM_1_1"
+      (pin input line (at 10.16 7.62 180) (length 2.54)
+        (name "~{CE}" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 10.16 -5.08 180) (length 2.54)
+        (name "SO/SIO" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 10.16 0 180) (length 2.54)
+        (name "SIO2" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -2.54 -12.7 90) (length 2.54)
+        (name "VSS" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 -2.54 180) (length 2.54)
+        (name "SI/SIO" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 10.16 5.08 180) (length 2.54)
+        (name "SCLK" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 10.16 2.54 180) (length 2.54)
+        (name "SIO3" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -2.54 12.7 270) (length 2.54)
+        (name "VCC" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "PJ-320B" (in_bom yes) (on_board yes)
+    (property "Reference" "Audio" (at 0 7.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PJ-320B" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "suku_basics:AUDIO-SMD_PJ-320B" (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://lcsc.com/product-detail/Audio-Connectors_3-5mmCloth-headphone-jack_C18594.html" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C18594" (at 0 -17.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "PJ-320B_0_1"
+      (rectangle (start -7.11 0) (end -5.59 -5.33)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (polyline
+        (pts
+          (xy 1.27 2.54)
+          (xy -6.35 2.54)
+          (xy -6.35 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -5.08)
+          (xy -1.52 -5.08)
+          (xy -2.03 -4.32)
+          (xy -2.54 -5.08)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -2.54)
+          (xy -3.05 -2.54)
+          (xy -3.56 -3.56)
+          (xy -4.06 -2.54)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line (at 6.35 2.54 180) (length 5.08)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 6.35 -2.54 180) (length 5.08)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 6.35 -5.08 180) (length 5.08)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "USB-CON-AF-APPLE" (in_bom yes) (on_board yes)
+    (property "Reference" "USB" (at 0 17.78 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "USB-CON-AF-APPLE" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "suku_basics:USB-A-SMD_AF-APPLE-10.6" (at 0 -17.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://lcsc.com/product-detail/USB-Connectors_A-FApple-board-models10-6-LCPVinyl-High-temperature_C42567.html" (at 0 -20.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C42567" (at 0 -22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "USB-CON-AF-APPLE_0_1"
+      (rectangle (start -6.35 7.62) (end 2.54 -5.08)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (pin input line (at 7.62 5.08 180) (length 5.08)
         (name "VCC" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
-      (pin input line
-        (at 7.62 2.54 180)
-        (length 5.08)
+      (pin input line (at 7.62 2.54 180) (length 5.08)
         (name "D-" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
       )
-      (pin input line
-        (at 7.62 -0.00 180)
-        (length 5.08)
+      (pin input line (at 7.62 0 180) (length 5.08)
         (name "D+" (effects (font (size 1.27 1.27))))
         (number "3" (effects (font (size 1.27 1.27))))
       )
-      (pin input line
-        (at 7.62 -2.54 180)
-        (length 5.08)
+      (pin input line (at 7.62 -2.54 180) (length 5.08)
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "4" (effects (font (size 1.27 1.27))))
       )
-      (pin unspecified line
-        (at 0.00 12.70 270)
-        (length 5.08)
+      (pin unspecified line (at 0 12.7 270) (length 5.08)
         (name "SH1" (effects (font (size 1.27 1.27))))
         (number "SH1" (effects (font (size 1.27 1.27))))
       )
-      (pin unspecified line
-        (at -2.54 12.70 270)
-        (length 5.08)
+      (pin unspecified line (at -2.54 12.7 270) (length 5.08)
         (name "SH2" (effects (font (size 1.27 1.27))))
         (number "SH2" (effects (font (size 1.27 1.27))))
       )
-      (pin unspecified line
-        (at -2.54 -10.16 90)
-        (length 5.08)
-        (name "SH4" (effects (font (size 1.27 1.27))))
-        (number "SH4" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 0.00 -10.16 90)
-        (length 5.08)
+      (pin unspecified line (at 0 -10.16 90) (length 5.08)
         (name "SH3" (effects (font (size 1.27 1.27))))
         (number "SH3" (effects (font (size 1.27 1.27))))
       )
-    )
-  )
-  (symbol "CPG135001D02"
-    (in_bom yes)
-    (on_board yes)
-    (property
-      "Reference"
-      "SW"
-      (id 0)
-      (at 0 2.54 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Value"
-      "CPG135001D02"
-      (id 1)
-      (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Footprint"
-      "suku_basics:KEY-TH_CPG135001D0X"
-      (id 2)
-      (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "Datasheet"
-      "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
-      (id 3)
-      (at 0 -12.70 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "LCSC Part"
-      "C400230"
-      (id 5)
-      (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (symbol "CPG135001D02_0_1"
-      (circle
-        (center -2.03 -2.54)
-        (radius 0.51)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (circle
-        (center 2.03 -2.54)
-        (radius 0.51)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 -2.54) (xy -2.54 -2.54)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 -2.54) (xy 2.54 -2.54)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.29 -0.76) (xy 2.29 -0.76)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 -0.76) (xy 0.00 1.02)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (pin unspecified line
-        (at 7.62 -2.54 180)
-        (length 3.81)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at -7.62 -2.54 0)
-        (length 3.81)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "CPG135001S30"
-    (in_bom yes)
-    (on_board yes)
-    (property
-      "Reference"
-      "U"
-      (id 0)
-      (at 0 5.08 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Value"
-      "CPG135001S30"
-      (id 1)
-      (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Footprint"
-      "suku_basics:CONN-SMD_HOTPLUGPAKAGE__C9900010116"
-      (id 2)
-      (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "LCSC Part"
-      "C5333465"
-      (id 5)
-      (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (symbol "CPG135001S30_0_1"
-      (rectangle
-        (start -2.54 2.54)
-        (end 2.54 -2.54)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type background))
-      )
-      (circle
-        (center -1.27 1.27)
-        (radius 0.38)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (pin unspecified line
-        (at -5.08 -0.00 0)
-        (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 5.08 -0.00 180)
-        (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "PJ-320B"
-    (in_bom yes)
-    (on_board yes)
-    (property
-      "Reference"
-      "Audio"
-      (id 0)
-      (at 0 7.62 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Value"
-      "PJ-320B"
-      (id 1)
-      (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Footprint"
-      "suku_basics:AUDIO-SMD_PJ-320B"
-      (id 2)
-      (at 0 -12.70 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "Datasheet"
-      "https://lcsc.com/product-detail/Audio-Connectors_3-5mmCloth-headphone-jack_C18594.html"
-      (id 3)
-      (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "LCSC Part"
-      "C18594"
-      (id 5)
-      (at 0 -17.78 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (symbol "PJ-320B_0_1"
-      (rectangle
-        (start -7.11 -0.00)
-        (end -5.59 -5.33)
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 1.27 2.54) (xy -6.35 2.54) (xy -6.35 -0.00)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 -2.54) (xy -3.05 -2.54) (xy -3.56 -3.56) (xy -4.06 -2.54)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 -5.08) (xy -1.52 -5.08) (xy -2.03 -4.32) (xy -2.54 -5.08)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (pin unspecified line
-        (at 6.35 2.54 180)
-        (length 5.08)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 6.35 -2.54 180)
-        (length 5.08)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 6.35 -5.08 180)
-        (length 5.08)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
+      (pin unspecified line (at -2.54 -10.16 90) (length 5.08)
+        (name "SH4" (effects (font (size 1.27 1.27))))
+        (number "SH4" (effects (font (size 1.27 1.27))))
       )
     )
   )
