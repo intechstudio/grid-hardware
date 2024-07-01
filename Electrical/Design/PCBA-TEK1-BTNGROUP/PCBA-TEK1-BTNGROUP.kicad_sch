@@ -1,1009 +1,2618 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid e5217a0c-7f55-4c30-adda-7f8d95709d1b)
-
-  (paper "A3")
-
-  (lib_symbols
-    (symbol "Connector_Generic:Conn_01x05" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x05" (at 0 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x05_1_1"
-        (rectangle (start -1.27 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 5.207) (end 0 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 6.35) (end 1.27 -6.35)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 5.08 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#FLG" (at 0 1.905 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "PWR_FLAG" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "flag power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PWR_FLAG_0_0"
-        (pin power_out line (at 0 0 90) (length 0)
-          (name "pwr" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "PWR_FLAG_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 1.27)
-            (xy -1.016 1.905)
-            (xy 0 2.54)
-            (xy 1.016 1.905)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "suku_basics:CPG135001D02" (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "CPG135001D02" (at 0 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 0 -10.16 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 0 -12.7 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "LCSC Part" "C400230" (at 0 -15.24 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "CPG135001D02_0_1"
-        (circle (center -2.03 -2.54) (radius 0.51)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 -2.54)
-            (xy -2.54 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.29 -0.76)
-            (xy 2.29 -0.76)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -0.76)
-            (xy 0 1.02)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.54)
-            (xy 2.54 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.03 -2.54) (radius 0.51)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin unspecified line (at -7.62 -2.54 0) (length 3.81)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin unspecified line (at 7.62 -2.54 180) (length 3.81)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (wire (pts (xy 251.46 142.24) (xy 264.16 142.24))
-    (stroke (width 0) (type default))
-    (uuid 12b54dee-fc70-4463-9a2c-ac1eebfb7ec6)
-  )
-  (wire (pts (xy 251.46 116.84) (xy 264.16 116.84))
-    (stroke (width 0) (type default))
-    (uuid 17fa2767-57eb-46e2-95ee-af3200cd76f4)
-  )
-  (wire (pts (xy 220.98 93.98) (xy 220.98 144.78))
-    (stroke (width 0) (type default))
-    (uuid 1a8b62fb-15f8-41bb-aaa1-3e61ecd83fdd)
-  )
-  (wire (pts (xy 114.3 116.84) (xy 114.3 93.98))
-    (stroke (width 0) (type default))
-    (uuid 22915e86-1470-413d-98a7-c98ebea0dcc0)
-  )
-  (wire (pts (xy 81.28 116.84) (xy 81.28 119.38))
-    (stroke (width 0) (type default))
-    (uuid 2af1e67d-63d9-430d-af6a-3adbb301dabb)
-  )
-  (wire (pts (xy 116.84 142.24) (xy 116.84 93.98))
-    (stroke (width 0) (type default))
-    (uuid 30116df7-8291-4d42-93f5-342e82671917)
-  )
-  (wire (pts (xy 182.88 116.84) (xy 182.88 119.38))
-    (stroke (width 0) (type default))
-    (uuid 34fe7886-c76c-4c1a-86e8-e4c34ea308fc)
-  )
-  (wire (pts (xy 121.92 129.54) (xy 121.92 93.98))
-    (stroke (width 0) (type default))
-    (uuid 36af8bd4-0f11-43f3-9524-5fd82216c0e7)
-  )
-  (wire (pts (xy 149.86 116.84) (xy 162.56 116.84))
-    (stroke (width 0) (type default))
-    (uuid 3af5fb6a-12cb-49bb-932f-954e9d6c19a3)
-  )
-  (wire (pts (xy 66.04 111.76) (xy 66.04 119.38))
-    (stroke (width 0) (type default))
-    (uuid 4a0dda97-32b0-45b4-acaf-8f4576fe0421)
-  )
-  (wire (pts (xy 124.46 96.52) (xy 124.46 93.98))
-    (stroke (width 0) (type default))
-    (uuid 4c5c5abb-b80d-402f-b385-0a8866648e6e)
-  )
-  (wire (pts (xy 223.52 129.54) (xy 223.52 93.98))
-    (stroke (width 0) (type default))
-    (uuid 5c9cd714-53ac-4c11-b047-68eae5d7eb85)
-  )
-  (wire (pts (xy 132.08 116.84) (xy 132.08 119.38))
-    (stroke (width 0) (type default))
-    (uuid 63a05234-a714-4604-bc07-5ca1c1e24585)
-  )
-  (wire (pts (xy 149.86 142.24) (xy 162.56 142.24))
-    (stroke (width 0) (type default))
-    (uuid 646ba602-f3d5-41b9-a66c-d18b2f658914)
-  )
-  (wire (pts (xy 264.16 142.24) (xy 264.16 121.92))
-    (stroke (width 0) (type default))
-    (uuid 66a6967c-8d59-4af5-812b-2b466a99f537)
-  )
-  (wire (pts (xy 226.06 96.52) (xy 226.06 93.98))
-    (stroke (width 0) (type default))
-    (uuid 69fb8850-e843-4d0e-931d-0ce88c25afbc)
-  )
-  (wire (pts (xy 132.08 142.24) (xy 132.08 144.78))
-    (stroke (width 0) (type default))
-    (uuid 6ce86143-cdb2-4b5d-bd75-3342400eb2a7)
-  )
-  (wire (pts (xy 185.42 142.24) (xy 182.88 142.24))
-    (stroke (width 0) (type default))
-    (uuid 6fb4ae3a-440c-4cab-9b53-cd19f2a068b5)
-  )
-  (wire (pts (xy 142.24 129.54) (xy 121.92 129.54))
-    (stroke (width 0) (type default))
-    (uuid 70036aba-9e21-48b7-a553-728bcba126c9)
-  )
-  (wire (pts (xy 83.82 116.84) (xy 81.28 116.84))
-    (stroke (width 0) (type default))
-    (uuid 73eb0cd1-501c-444e-8740-b481342a78cd)
-  )
-  (wire (pts (xy 99.06 142.24) (xy 116.84 142.24))
-    (stroke (width 0) (type default))
-    (uuid 7c00f86f-19cd-4383-8ca2-d3533fadad0f)
-  )
-  (wire (pts (xy 236.22 142.24) (xy 233.68 142.24))
-    (stroke (width 0) (type default))
-    (uuid 7ca22db9-2f9e-4273-9ef6-cc3c860efa57)
-  )
-  (wire (pts (xy 182.88 142.24) (xy 182.88 144.78))
-    (stroke (width 0) (type default))
-    (uuid 8b55a512-39e1-43b1-9752-3b779ba3c056)
-  )
-  (wire (pts (xy 99.06 116.84) (xy 114.3 116.84))
-    (stroke (width 0) (type default))
-    (uuid 8d3e0214-48c7-43c9-914d-bc3737b23f12)
-  )
-  (wire (pts (xy 142.24 121.92) (xy 142.24 129.54))
-    (stroke (width 0) (type default))
-    (uuid 9c428b45-7ce8-4045-81ae-cedf9f0c0dd7)
-  )
-  (wire (pts (xy 162.56 96.52) (xy 124.46 96.52))
-    (stroke (width 0) (type default))
-    (uuid 9c6dfe13-bcd7-465f-aafd-685326bd2142)
-  )
-  (wire (pts (xy 83.82 142.24) (xy 81.28 142.24))
-    (stroke (width 0) (type default))
-    (uuid 9d3e5383-af15-4f17-b123-345281c339f7)
-  )
-  (wire (pts (xy 162.56 142.24) (xy 162.56 121.92))
-    (stroke (width 0) (type default))
-    (uuid a3154938-d542-49b6-b529-7d3a483b8b20)
-  )
-  (wire (pts (xy 162.56 121.92) (xy 142.24 121.92))
-    (stroke (width 0) (type default))
-    (uuid af4e8d2f-f886-4384-a56a-30f0730ab7b0)
-  )
-  (wire (pts (xy 243.84 129.54) (xy 223.52 129.54))
-    (stroke (width 0) (type default))
-    (uuid b23120e2-967f-40c5-bc42-7e04368fdc0a)
-  )
-  (wire (pts (xy 236.22 116.84) (xy 233.68 116.84))
-    (stroke (width 0) (type default))
-    (uuid b4ca560e-2a84-46a1-b8ec-c45d3ba0c06b)
-  )
-  (wire (pts (xy 233.68 142.24) (xy 233.68 144.78))
-    (stroke (width 0) (type default))
-    (uuid b621020a-6af1-4e9f-9a1d-cb0a8578b55b)
-  )
-  (wire (pts (xy 218.44 142.24) (xy 218.44 93.98))
-    (stroke (width 0) (type default))
-    (uuid b8d23ac0-e5d5-47a9-88e3-79dde6bfda4c)
-  )
-  (wire (pts (xy 200.66 142.24) (xy 218.44 142.24))
-    (stroke (width 0) (type default))
-    (uuid bb53359d-695f-4044-94d9-1325f329a69f)
-  )
-  (wire (pts (xy 233.68 116.84) (xy 233.68 119.38))
-    (stroke (width 0) (type default))
-    (uuid bcbf9856-8b68-4864-bc63-81ddd32eb599)
-  )
-  (wire (pts (xy 119.38 93.98) (xy 119.38 144.78))
-    (stroke (width 0) (type default))
-    (uuid bdf6b1fb-8211-4e5d-afc4-d2304eb91abe)
-  )
-  (wire (pts (xy 264.16 116.84) (xy 264.16 96.52))
-    (stroke (width 0) (type default))
-    (uuid c1f4716a-b9f7-49b3-90cd-3548b134cefa)
-  )
-  (wire (pts (xy 185.42 116.84) (xy 182.88 116.84))
-    (stroke (width 0) (type default))
-    (uuid c35a7979-6de5-4f06-bbd8-63997bffb9aa)
-  )
-  (wire (pts (xy 134.62 142.24) (xy 132.08 142.24))
-    (stroke (width 0) (type default))
-    (uuid ca238e37-42f2-472f-ac69-f452329da3b5)
-  )
-  (wire (pts (xy 134.62 116.84) (xy 132.08 116.84))
-    (stroke (width 0) (type default))
-    (uuid cc1992e3-d5f3-4b65-acbd-bd598828962e)
-  )
-  (wire (pts (xy 264.16 121.92) (xy 243.84 121.92))
-    (stroke (width 0) (type default))
-    (uuid cd7764c4-35ee-49cc-9296-e74b5872b535)
-  )
-  (wire (pts (xy 264.16 96.52) (xy 226.06 96.52))
-    (stroke (width 0) (type default))
-    (uuid d2dd11e1-bfb2-4190-9fd6-5e020a3454f4)
-  )
-  (wire (pts (xy 81.28 142.24) (xy 81.28 144.78))
-    (stroke (width 0) (type default))
-    (uuid d3a168da-bc4f-461d-8baa-42b810ee6f55)
-  )
-  (wire (pts (xy 162.56 116.84) (xy 162.56 96.52))
-    (stroke (width 0) (type default))
-    (uuid d7c16498-5fb9-48c1-8ecb-5a96a3327f6c)
-  )
-  (wire (pts (xy 243.84 121.92) (xy 243.84 129.54))
-    (stroke (width 0) (type default))
-    (uuid db12440f-a347-4165-927a-96bacf50b0f3)
-  )
-  (wire (pts (xy 200.66 116.84) (xy 215.9 116.84))
-    (stroke (width 0) (type default))
-    (uuid e3418136-8c07-46ed-aac0-8bf26f89765e)
-  )
-  (wire (pts (xy 215.9 116.84) (xy 215.9 93.98))
-    (stroke (width 0) (type default))
-    (uuid e85898a2-e773-48e0-8ca9-7eba1a5d05fb)
-  )
-
-  (symbol (lib_id "power:GND") (at 233.68 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 03349b75-c924-4dee-97f8-24d62d853795)
-    (property "Reference" "#PWR01059" (at 233.68 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 233.807 149.1742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 233.68 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 233.68 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0c866afb-8ec7-413d-ae89-cae1d97c866d))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01016") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 142.24 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 037058ce-fb66-4979-8a3f-27c42af6765d)
-    (property "Reference" "SW1006" (at 142.24 107.95 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 142.24 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 142.24 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 142.24 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 142.24 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e703044f-42ca-4d58-977f-0156e80d1691))
-    (pin "2" (uuid 1cd37a60-78bf-4d87-9ee4-6d946dde9f5f))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1002") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 182.88 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 049f1a01-cfd9-4efb-9a64-e4e130c1e801)
-    (property "Reference" "#PWR01058" (at 182.88 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 183.007 149.1742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 182.88 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 182.88 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2f563592-240a-4f05-ba7c-63ae113559d5))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01015") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 243.84 139.7 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 063ac8c4-0cd8-4589-a34c-400282ece57a)
-    (property "Reference" "SW1012" (at 243.84 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 243.84 135.89 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 243.84 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 243.84 152.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 243.84 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6b4011c9-703e-4611-88d8-5f55a5440482))
-    (pin "2" (uuid 778866ea-c917-41d1-907a-648517fe2f72))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1008") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 66.04 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1a00c336-5766-4f03-bd76-2194552349d1)
-    (property "Reference" "#PWR01048" (at 66.04 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 66.167 123.7742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 66.04 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 66.04 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 89f040a5-3a7e-4143-946b-076b24f59aa2))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01001") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 81.28 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 21c6be1f-ec84-467d-8bf2-41a49721f1b8)
-    (property "Reference" "#PWR01056" (at 81.28 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 81.407 149.1742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 81.28 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 81.28 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1a355de0-5d5a-4d5e-895b-de9612f939fa))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01013") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 142.24 139.7 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3a88d837-1989-47f7-8424-734032b0795a)
-    (property "Reference" "SW1010" (at 142.24 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 142.24 135.89 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 142.24 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 142.24 152.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 142.24 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 875c04ef-8f7d-48ca-81a1-71606cfb382e))
-    (pin "2" (uuid 5f829c46-aad0-423f-94f2-6b4fa42f8902))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1006") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 220.98 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 452b1288-be0e-4123-810c-0e2a2861956d)
-    (property "Reference" "#PWR01048" (at 220.98 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 221.107 149.1742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 220.98 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 220.98 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a98f12ea-903a-4887-81d0-1d443707e6cd))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01018") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 91.44 139.7 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 58f08904-c7e0-40d7-9778-0c22f2d10588)
-    (property "Reference" "SW1009" (at 91.44 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 91.44 135.89 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 91.44 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 91.44 152.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 91.44 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5f06b184-79c1-43d2-a415-f2bfac6d9daf))
-    (pin "2" (uuid bf298ade-e130-4fa9-9fed-3bb71ababf35))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1005") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 233.68 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5b1c57e7-7e65-4e61-8ba0-10d99a3d25e8)
-    (property "Reference" "#PWR01051" (at 233.68 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 233.807 123.7742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 233.68 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 233.68 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e29a612d-2bfb-4ba9-a6dc-94162e0d5d73))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01008") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 132.08 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6cafba80-2286-4f03-99cd-3116175e5f2a)
-    (property "Reference" "#PWR01057" (at 132.08 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 132.207 149.1742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 132.08 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e4403c75-06f0-4b01-9c23-684085f12296))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01014") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 182.88 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 707da64b-ea96-47d0-b953-34c9f8d9ea00)
-    (property "Reference" "#PWR01050" (at 182.88 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 183.007 123.7742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 182.88 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 182.88 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 53266859-4576-4f57-bdf5-995332001446))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01007") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 132.08 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7c3136d5-64bd-42ba-8a5f-e0662c8a27fd)
-    (property "Reference" "#PWR01049" (at 132.08 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 132.207 123.7742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 132.08 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2edb9009-6d45-4a1b-a049-a06c5575685a))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01006") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 66.04 111.76 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bf51885c-1438-4cac-82f5-13d1468045ff)
-    (property "Reference" "#FLG01001" (at 66.04 109.855 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 66.04 106.68 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 66.04 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 66.04 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 73577d62-95db-48bd-ac8f-490ae1c5f265))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#FLG01001") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 91.44 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c4388b67-bcd2-46fd-ae0e-d1184d705f24)
-    (property "Reference" "SW1005" (at 91.44 107.95 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 91.44 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 91.44 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 91.44 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 91.44 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bddadff0-6641-417a-8421-f6932c540d40))
-    (pin "2" (uuid 3f0b083b-1b6d-4ddb-9c4f-2f3dcea21e04))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1001") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 193.04 139.7 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d3e1a8d5-357d-4f9d-bae1-47bac17f5cd3)
-    (property "Reference" "SW1011" (at 193.04 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 193.04 135.89 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 193.04 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 193.04 152.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 193.04 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 10796123-e2b4-4d4f-be1d-4a4a715b8002))
-    (pin "2" (uuid 7988cb66-5712-46ec-ac9b-e4a0c84477c7))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1007") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 81.28 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid df511b16-8dd3-402e-a913-b9460b14146d)
-    (property "Reference" "#PWR01048" (at 81.28 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 81.407 123.7742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 81.28 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 81.28 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c21af1c9-41a3-4216-9a2c-6f2cfea58c44))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01005") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 119.38 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e0c69042-77ba-4fe3-8aee-696aeb7a213c)
-    (property "Reference" "#PWR01048" (at 119.38 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 119.507 149.1742 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 119.38 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 119.38 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8b0129af-8c68-4b29-9f03-d6b8a52b3ef3))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "#PWR01017") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x05") (at 220.98 88.9 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
-    (uuid eeb73d4c-3f4f-4957-89af-72f881c67f12)
-    (property "Reference" "J1002" (at 220.98 82.55 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x05" (at 220.98 85.09 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 220.98 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 220.98 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 18e5356f-8872-4a1d-84c6-7caa3290a5d4))
-    (pin "2" (uuid 50111d61-4297-4037-bf1f-41c2f07c44eb))
-    (pin "3" (uuid 405db5a6-38b2-4a8c-8a00-32f22e336b22))
-    (pin "4" (uuid 1899710a-76f9-4a9c-bd4f-370644bf05bc))
-    (pin "5" (uuid c9898c92-0382-4b94-90ec-86e1af26abfd))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "J1002") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 193.04 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ef082b6a-a07b-4d7d-b5ea-e15fdfa3d4c5)
-    (property "Reference" "SW1007" (at 193.04 107.95 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 193.04 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 193.04 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 193.04 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 193.04 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0c1b0b11-ad08-4cc6-8e4d-f9ed7ee65e63))
-    (pin "2" (uuid 01f15725-0198-4a56-aaaf-c78b2ed32151))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1003") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x05") (at 119.38 88.9 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
-    (uuid efa0e83e-9d7a-4ec9-8124-4c8f375bdeef)
-    (property "Reference" "J1001" (at 119.38 82.55 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x05" (at 119.38 85.09 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 119.38 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 119.38 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4c6e22c4-e4cb-4457-9a07-786867251137))
-    (pin "2" (uuid 0b170f49-a67d-4ee1-b0a0-46855fa20d56))
-    (pin "3" (uuid cbe38ee0-c343-4707-ac43-d49227b022de))
-    (pin "4" (uuid a58eefe4-7d75-4fba-bd47-bf0c83967b67))
-    (pin "5" (uuid 623ba25c-9f97-45cd-96f3-7577fcc4a8c0))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "J1001") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "suku_basics:CPG135001D02") (at 243.84 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f0a26091-504f-4823-9b6d-e22ac4fcf2c8)
-    (property "Reference" "SW1008" (at 243.84 107.95 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CPG135001D02" (at 243.84 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "suku_basics:KEY-TH_CPG135001D0X" (at 243.84 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html" (at 243.84 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part" "C400230" (at 243.84 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 639b6da5-58b4-4fec-90d8-84681403434e))
-    (pin "2" (uuid e30cfe52-8f88-43e9-a28a-b0a4e0d7e529))
-    (instances
-      (project "PCBA-TEK1-BTNGROUP"
-        (path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-          (reference "SW1004") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e5217a0c-7f55-4c30-adda-7f8d95709d1b")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x05"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x05_1_1"
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "suku_basics:CPG135001D02"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CPG135001D02"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C400230"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CPG135001D02_0_1"
+				(circle
+					(center -2.03 -2.54)
+					(radius 0.51)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.29 -0.76) (xy 2.29 -0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.76) (xy 0 1.02)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.03 -2.54)
+					(radius 0.51)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -2.54 0)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 251.46 142.24) (xy 264.16 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b54dee-fc70-4463-9a2c-ac1eebfb7ec6")
+	)
+	(wire
+		(pts
+			(xy 251.46 116.84) (xy 264.16 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17fa2767-57eb-46e2-95ee-af3200cd76f4")
+	)
+	(wire
+		(pts
+			(xy 220.98 93.98) (xy 220.98 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a8b62fb-15f8-41bb-aaa1-3e61ecd83fdd")
+	)
+	(wire
+		(pts
+			(xy 114.3 116.84) (xy 114.3 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22915e86-1470-413d-98a7-c98ebea0dcc0")
+	)
+	(wire
+		(pts
+			(xy 81.28 116.84) (xy 81.28 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af1e67d-63d9-430d-af6a-3adbb301dabb")
+	)
+	(wire
+		(pts
+			(xy 116.84 142.24) (xy 116.84 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30116df7-8291-4d42-93f5-342e82671917")
+	)
+	(wire
+		(pts
+			(xy 182.88 116.84) (xy 182.88 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34fe7886-c76c-4c1a-86e8-e4c34ea308fc")
+	)
+	(wire
+		(pts
+			(xy 121.92 129.54) (xy 121.92 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36af8bd4-0f11-43f3-9524-5fd82216c0e7")
+	)
+	(wire
+		(pts
+			(xy 149.86 116.84) (xy 162.56 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af5fb6a-12cb-49bb-932f-954e9d6c19a3")
+	)
+	(wire
+		(pts
+			(xy 66.04 111.76) (xy 66.04 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a0dda97-32b0-45b4-acaf-8f4576fe0421")
+	)
+	(wire
+		(pts
+			(xy 124.46 96.52) (xy 124.46 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c5c5abb-b80d-402f-b385-0a8866648e6e")
+	)
+	(wire
+		(pts
+			(xy 223.52 129.54) (xy 223.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c9cd714-53ac-4c11-b047-68eae5d7eb85")
+	)
+	(wire
+		(pts
+			(xy 132.08 116.84) (xy 132.08 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a05234-a714-4604-bc07-5ca1c1e24585")
+	)
+	(wire
+		(pts
+			(xy 149.86 142.24) (xy 162.56 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "646ba602-f3d5-41b9-a66c-d18b2f658914")
+	)
+	(wire
+		(pts
+			(xy 264.16 142.24) (xy 264.16 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a6967c-8d59-4af5-812b-2b466a99f537")
+	)
+	(wire
+		(pts
+			(xy 226.06 96.52) (xy 226.06 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69fb8850-e843-4d0e-931d-0ce88c25afbc")
+	)
+	(wire
+		(pts
+			(xy 132.08 142.24) (xy 132.08 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ce86143-cdb2-4b5d-bd75-3342400eb2a7")
+	)
+	(wire
+		(pts
+			(xy 185.42 142.24) (xy 182.88 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb4ae3a-440c-4cab-9b53-cd19f2a068b5")
+	)
+	(wire
+		(pts
+			(xy 142.24 129.54) (xy 121.92 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70036aba-9e21-48b7-a553-728bcba126c9")
+	)
+	(wire
+		(pts
+			(xy 83.82 116.84) (xy 81.28 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73eb0cd1-501c-444e-8740-b481342a78cd")
+	)
+	(wire
+		(pts
+			(xy 99.06 142.24) (xy 116.84 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c00f86f-19cd-4383-8ca2-d3533fadad0f")
+	)
+	(wire
+		(pts
+			(xy 236.22 142.24) (xy 233.68 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca22db9-2f9e-4273-9ef6-cc3c860efa57")
+	)
+	(wire
+		(pts
+			(xy 182.88 142.24) (xy 182.88 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b55a512-39e1-43b1-9752-3b779ba3c056")
+	)
+	(wire
+		(pts
+			(xy 99.06 116.84) (xy 114.3 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d3e0214-48c7-43c9-914d-bc3737b23f12")
+	)
+	(wire
+		(pts
+			(xy 142.24 121.92) (xy 142.24 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c428b45-7ce8-4045-81ae-cedf9f0c0dd7")
+	)
+	(wire
+		(pts
+			(xy 162.56 96.52) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c6dfe13-bcd7-465f-aafd-685326bd2142")
+	)
+	(wire
+		(pts
+			(xy 83.82 142.24) (xy 81.28 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d3e5383-af15-4f17-b123-345281c339f7")
+	)
+	(wire
+		(pts
+			(xy 162.56 142.24) (xy 162.56 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3154938-d542-49b6-b529-7d3a483b8b20")
+	)
+	(wire
+		(pts
+			(xy 162.56 121.92) (xy 142.24 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af4e8d2f-f886-4384-a56a-30f0730ab7b0")
+	)
+	(wire
+		(pts
+			(xy 243.84 129.54) (xy 223.52 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b23120e2-967f-40c5-bc42-7e04368fdc0a")
+	)
+	(wire
+		(pts
+			(xy 236.22 116.84) (xy 233.68 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ca560e-2a84-46a1-b8ec-c45d3ba0c06b")
+	)
+	(wire
+		(pts
+			(xy 233.68 142.24) (xy 233.68 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b621020a-6af1-4e9f-9a1d-cb0a8578b55b")
+	)
+	(wire
+		(pts
+			(xy 218.44 142.24) (xy 218.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8d23ac0-e5d5-47a9-88e3-79dde6bfda4c")
+	)
+	(wire
+		(pts
+			(xy 200.66 142.24) (xy 218.44 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb53359d-695f-4044-94d9-1325f329a69f")
+	)
+	(wire
+		(pts
+			(xy 233.68 116.84) (xy 233.68 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcbf9856-8b68-4864-bc63-81ddd32eb599")
+	)
+	(wire
+		(pts
+			(xy 119.38 93.98) (xy 119.38 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdf6b1fb-8211-4e5d-afc4-d2304eb91abe")
+	)
+	(wire
+		(pts
+			(xy 264.16 116.84) (xy 264.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1f4716a-b9f7-49b3-90cd-3548b134cefa")
+	)
+	(wire
+		(pts
+			(xy 185.42 116.84) (xy 182.88 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c35a7979-6de5-4f06-bbd8-63997bffb9aa")
+	)
+	(wire
+		(pts
+			(xy 134.62 142.24) (xy 132.08 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca238e37-42f2-472f-ac69-f452329da3b5")
+	)
+	(wire
+		(pts
+			(xy 134.62 116.84) (xy 132.08 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc1992e3-d5f3-4b65-acbd-bd598828962e")
+	)
+	(wire
+		(pts
+			(xy 264.16 121.92) (xy 243.84 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd7764c4-35ee-49cc-9296-e74b5872b535")
+	)
+	(wire
+		(pts
+			(xy 264.16 96.52) (xy 226.06 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2dd11e1-bfb2-4190-9fd6-5e020a3454f4")
+	)
+	(wire
+		(pts
+			(xy 81.28 142.24) (xy 81.28 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3a168da-bc4f-461d-8baa-42b810ee6f55")
+	)
+	(wire
+		(pts
+			(xy 162.56 116.84) (xy 162.56 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c16498-5fb9-48c1-8ecb-5a96a3327f6c")
+	)
+	(wire
+		(pts
+			(xy 243.84 121.92) (xy 243.84 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db12440f-a347-4165-927a-96bacf50b0f3")
+	)
+	(wire
+		(pts
+			(xy 200.66 116.84) (xy 215.9 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3418136-8c07-46ed-aac0-8bf26f89765e")
+	)
+	(wire
+		(pts
+			(xy 215.9 116.84) (xy 215.9 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85898a2-e773-48e0-8ca9-7eba1a5d05fb")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233.68 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03349b75-c924-4dee-97f8-24d62d853795")
+		(property "Reference" "#PWR01016"
+			(at 233.68 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.807 149.1742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c866afb-8ec7-413d-ae89-cae1d97c866d")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 142.24 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "037058ce-fb66-4979-8a3f-27c42af6765d")
+		(property "Reference" "SW1002"
+			(at 142.24 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 142.24 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 142.24 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 142.24 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e703044f-42ca-4d58-977f-0156e80d1691")
+		)
+		(pin "2"
+			(uuid "1cd37a60-78bf-4d87-9ee4-6d946dde9f5f")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "049f1a01-cfd9-4efb-9a64-e4e130c1e801")
+		(property "Reference" "#PWR01015"
+			(at 182.88 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 183.007 149.1742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f563592-240a-4f05-ba7c-63ae113559d5")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 243.84 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "063ac8c4-0cd8-4589-a34c-400282ece57a")
+		(property "Reference" "SW1008"
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 243.84 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 243.84 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 243.84 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 243.84 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 243.84 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b4011c9-703e-4611-88d8-5f55a5440482")
+		)
+		(pin "2"
+			(uuid "778866ea-c917-41d1-907a-648517fe2f72")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a00c336-5766-4f03-bd76-2194552349d1")
+		(property "Reference" "#PWR01001"
+			(at 66.04 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.167 123.7742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89f040a5-3a7e-4143-946b-076b24f59aa2")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21c6be1f-ec84-467d-8bf2-41a49721f1b8")
+		(property "Reference" "#PWR01013"
+			(at 81.28 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.407 149.1742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a355de0-5d5a-4d5e-895b-de9612f939fa")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 142.24 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a88d837-1989-47f7-8424-734032b0795a")
+		(property "Reference" "SW1006"
+			(at 142.24 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 142.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 142.24 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 142.24 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "875c04ef-8f7d-48ca-81a1-71606cfb382e")
+		)
+		(pin "2"
+			(uuid "5f829c46-aad0-423f-94f2-6b4fa42f8902")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "452b1288-be0e-4123-810c-0e2a2861956d")
+		(property "Reference" "#PWR01018"
+			(at 220.98 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 221.107 149.1742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a98f12ea-903a-4887-81d0-1d443707e6cd")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 91.44 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58f08904-c7e0-40d7-9778-0c22f2d10588")
+		(property "Reference" "SW1005"
+			(at 91.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 91.44 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 91.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 91.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 91.44 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f06b184-79c1-43d2-a415-f2bfac6d9daf")
+		)
+		(pin "2"
+			(uuid "bf298ade-e130-4fa9-9fed-3bb71ababf35")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233.68 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b1c57e7-7e65-4e61-8ba0-10d99a3d25e8")
+		(property "Reference" "#PWR01008"
+			(at 233.68 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.807 123.7742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e29a612d-2bfb-4ba9-a6dc-94162e0d5d73")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6cafba80-2286-4f03-99cd-3116175e5f2a")
+		(property "Reference" "#PWR01014"
+			(at 132.08 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.207 149.1742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4403c75-06f0-4b01-9c23-684085f12296")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "707da64b-ea96-47d0-b953-34c9f8d9ea00")
+		(property "Reference" "#PWR01007"
+			(at 182.88 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 183.007 123.7742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53266859-4576-4f57-bdf5-995332001446")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c3136d5-64bd-42ba-8a5f-e0662c8a27fd")
+		(property "Reference" "#PWR01006"
+			(at 132.08 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.207 123.7742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2edb9009-6d45-4a1b-a049-a06c5575685a")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf51885c-1438-4cac-82f5-13d1468045ff")
+		(property "Reference" "#FLG01001"
+			(at 66.04 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73577d62-95db-48bd-ac8f-490ae1c5f265")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#FLG01001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 91.44 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4388b67-bcd2-46fd-ae0e-d1184d705f24")
+		(property "Reference" "SW1001"
+			(at 91.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 91.44 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 91.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 91.44 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bddadff0-6641-417a-8421-f6932c540d40")
+		)
+		(pin "2"
+			(uuid "3f0b083b-1b6d-4ddb-9c4f-2f3dcea21e04")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 193.04 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3e1a8d5-357d-4f9d-bae1-47bac17f5cd3")
+		(property "Reference" "SW1007"
+			(at 193.04 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 193.04 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 193.04 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 193.04 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 193.04 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10796123-e2b4-4d4f-be1d-4a4a715b8002")
+		)
+		(pin "2"
+			(uuid "7988cb66-5712-46ec-ac9b-e4a0c84477c7")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df511b16-8dd3-402e-a913-b9460b14146d")
+		(property "Reference" "#PWR01005"
+			(at 81.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.407 123.7742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c21af1c9-41a3-4216-9a2c-6f2cfea58c44")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 119.38 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0c69042-77ba-4fe3-8aee-696aeb7a213c")
+		(property "Reference" "#PWR01017"
+			(at 119.38 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.507 149.1742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b0129af-8c68-4b29-9f03-d6b8a52b3ef3")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 220.98 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "eeb73d4c-3f4f-4957-89af-72f881c67f12")
+		(property "Reference" "J1002"
+			(at 220.98 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 220.98 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18e5356f-8872-4a1d-84c6-7caa3290a5d4")
+		)
+		(pin "2"
+			(uuid "50111d61-4297-4037-bf1f-41c2f07c44eb")
+		)
+		(pin "3"
+			(uuid "405db5a6-38b2-4a8c-8a00-32f22e336b22")
+		)
+		(pin "4"
+			(uuid "1899710a-76f9-4a9c-bd4f-370644bf05bc")
+		)
+		(pin "5"
+			(uuid "c9898c92-0382-4b94-90ec-86e1af26abfd")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "J1002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 193.04 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef082b6a-a07b-4d7d-b5ea-e15fdfa3d4c5")
+		(property "Reference" "SW1003"
+			(at 193.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 193.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 193.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 193.04 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 193.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c1b0b11-ad08-4cc6-8e4d-f9ed7ee65e63")
+		)
+		(pin "2"
+			(uuid "01f15725-0198-4a56-aaaf-c78b2ed32151")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 119.38 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "efa0e83e-9d7a-4ec9-8124-4c8f375bdeef")
+		(property "Reference" "J1001"
+			(at 119.38 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 119.38 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 119.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c6e22c4-e4cb-4457-9a07-786867251137")
+		)
+		(pin "2"
+			(uuid "0b170f49-a67d-4ee1-b0a0-46855fa20d56")
+		)
+		(pin "3"
+			(uuid "cbe38ee0-c343-4707-ac43-d49227b022de")
+		)
+		(pin "4"
+			(uuid "a58eefe4-7d75-4fba-bd47-bf0c83967b67")
+		)
+		(pin "5"
+			(uuid "623ba25c-9f97-45cd-96f3-7577fcc4a8c0")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "J1001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:CPG135001D02")
+		(at 243.84 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0a26091-504f-4823-9b6d-e22ac4fcf2c8")
+		(property "Reference" "SW1004"
+			(at 243.84 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CPG135001D02"
+			(at 243.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:KEY-TH_CPG135001D0X"
+			(at 243.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Kailh-CPG135001D02_C400230.html"
+			(at 243.84 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 243.84 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C400230"
+			(at 243.84 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "639b6da5-58b4-4fec-90d8-84681403434e")
+		)
+		(pin "2"
+			(uuid "e30cfe52-8f88-43e9-a28a-b0a4e0d7e529")
+		)
+		(instances
+			(project "PCBA-TEK1-BTNGROUP"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "SW1004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
