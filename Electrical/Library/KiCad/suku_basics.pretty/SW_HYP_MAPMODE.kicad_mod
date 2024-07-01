@@ -1,31 +1,151 @@
-(footprint "SW_HYP_MAPMODE" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (descr "Light Touch Switch")
-  (fp_text reference "REF**" (at 0 3.5) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp 8577fc52-fa0b-4221-91b8-07dfa3ffdaef)
-  )
-  (fp_text value "SW_HYP_MAPMODE" (at 0 -3) (layer "F.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp c1b3dfe3-f02f-4b2e-898f-20561f10c112)
-  )
-  (fp_text user "${REFERENCE}" (at 0 3.5) (layer "F.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp a76f2fda-29fa-4ebb-a50e-b6f0c502feb8)
-  )
-  (pad "" thru_hole roundrect (at -2.15 -0.3 270) (size 1.4 1) (drill 0.75 (offset -0.2 0)) (layers "*.Cu" "*.Mask" "F.Paste") (roundrect_rratio 0.25) (tstamp 072ded8a-0fe5-4fde-804e-c98b5e9fd52d))
-  (pad "" smd rect (at 0 1.4) (size 1.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp dfb6edf1-4465-4946-b684-b91c7586018b))
-  (pad "" thru_hole roundrect (at 2.15 -0.3 270) (size 1.4 1) (drill 0.75 (offset -0.2 0)) (layers "*.Cu" "*.Mask" "F.Paste") (roundrect_rratio 0.25) (tstamp 7127d8d9-1cc2-468f-8eac-b91c95e881ba))
-  (pad "1" smd rect (at -1.7 1.1 90) (size 1.4 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 66afeefe-d0ba-4eb0-9aff-da9d06552d88))
-  (pad "2" smd rect (at 1.7 1.1 270) (size 1.4 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a3349dad-dbd5-4ef5-be6f-04a22319ee58))
-  (model "${INTECH_3D}/hyp_mapmode.step" hide
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model "${KIPRJMOD}/../../Library/3D/hyp_mapmode.step"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "SW_HYP_MAPMODE"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Light Touch Switch")
+	(property "Reference" "REF**"
+		(at 0 3.5 0)
+		(layer "F.SilkS")
+		(uuid "8577fc52-fa0b-4221-91b8-07dfa3ffdaef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_HYP_MAPMODE"
+		(at 0 -3 0)
+		(layer "F.Fab")
+		(uuid "c1b3dfe3-f02f-4b2e-898f-20561f10c112")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a30ccda-b5bd-4045-affd-6f6388b57800")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ae8db99-8457-4271-b053-d21166c72d99")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f80b0312-bb21-4e00-beb4-f59cb92d1830")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.5 0)
+		(layer "F.Fab")
+		(uuid "a76f2fda-29fa-4ebb-a50e-b6f0c502feb8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" thru_hole roundrect
+		(at -2.15 -0.3)
+		(size 1.2 1.2)
+		(drill 0.75
+			(offset -0.1 0)
+		)
+		(layers "*.Cu" "*.Mask" "F.Paste")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "072ded8a-0fe5-4fde-804e-c98b5e9fd52d")
+	)
+	(pad "" smd rect
+		(at 0 1.4)
+		(size 1.7 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dfb6edf1-4465-4946-b684-b91c7586018b")
+	)
+	(pad "" thru_hole roundrect
+		(at 2.15 -0.3 180)
+		(size 1.2 1.2)
+		(drill 0.75
+			(offset -0.1 0)
+		)
+		(layers "*.Cu" "*.Mask" "F.Paste")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "7127d8d9-1cc2-468f-8eac-b91c95e881ba")
+	)
+	(pad "1" smd rect
+		(at -1.7 1.1 90)
+		(size 1.4 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "66afeefe-d0ba-4eb0-9aff-da9d06552d88")
+	)
+	(pad "2" smd rect
+		(at 1.7 1.1 270)
+		(size 1.4 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a3349dad-dbd5-4ef5-be6f-04a22319ee58")
+	)
+	(model "${INTECH_3D}/hyp_mapmode.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/../../Library/3D/hyp_mapmode.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${INTECH_3D}/SW-SMD_L4.6-W3.5-H1.8-P4.3.step"
+		(offset
+			(xyz 0 0.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
 )
