@@ -1,0 +1,1 @@
+easyeda2kicad --symbol --footprint --3d --lcsc_id=$1 --output ./suku_basics.kicad_sym
