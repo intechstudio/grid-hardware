@@ -8,7 +8,7 @@ Licence: GPL3
 
 | Component                 | Part number          | Type       | Preview | Links        |
 |---------------------------|----------------------|------------|---------|--------------|
-| Lower housing             | PLASTIC-HOUSING      | Fabricated | <img src="../preview/Preview/Mechanical/Canvas/PLASTIC-HOUSING.png?raw=true" width="100"> | [[Model tree]](CANVAS.md) |
+| Lower housing             | PLASTIC-CANVAS      | Fabricated | <img src="../preview/Preview/Mechanical/Canvas/PLASTIC-CANVAS.png?raw=true" width="100"> | [[Model tree]](CANVAS.md) |
 | Mapmode button            | PLASTIC-MAPMODE      | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-MAPMODE.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-MAPMODE.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-MAPMODE.stl) |       
 | Magnet cover            | PLASTIC-MAGNET-COVER | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-MAGNET-COVER.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-MAPMODE.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-MAGNET-COVER.stl) |  
 | Rubber foot               | RUBBER-FOOT          | Fabricated | <img src="../preview/Preview/Mechanical/RUBBER-FOOT.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/RUBBER-FOOT.step) [[stl]](../preview/Preview/Mechanical/RUBBER-FOOT.stl) [[pdf]](../preview/Preview/Mechanical/RUBBER-FOOT_Drawing.pdf) |
