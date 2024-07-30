@@ -41,6 +41,9 @@ Licence: GPL3
 | Button                    | PCBA-BUTTON          | Purchased  | <img src="../preview/Preview/Mechanical/PCBA-BUTTON.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PCBA-BUTTON.step) [[stl]](../preview/Preview/Mechanical/PCBA-BUTTON.stl) |
 | Button Cap                | PLASTIC-CAP-BUTTON   | Purchased  | <img src="../preview/Preview/Mechanical/PLASTIC-CAP-BUTTON.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-CAP-BUTTON.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-CAP-BUTTON.stl) |
 | Low Profile Keycap                | PLASTIC-LOW-PROFILE-KEYCAP   | Purchased  | <img src="../preview/Preview/Mechanical/PLASTIC-LOW-PROFILE-KEYCAP.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-LOW-PROFILE-KEYCAP.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-LOW-PROFILE-KEYCAP.stl) |
+| Battery Connector         | PCBA-CONN-BATTERY    | Purchased  | <img src="../preview/Preview/Mechanical/PCBA-CONN-BATTERY.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PCBA-CONN-BATTERY.step)|
+| Pogo Connector            | PCBA-CONN-POGO       | Purchased  | <img src="../preview/Preview/Mechanical/PCBA-CONN-POGO.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PCBA-CONN-POGO.step) [[pdf]](../preview/Preview/Mechanical/PCBA-CONN-POGO_Drawing.pdf) |
+
 
 # TEK2 specific components
 | Component                 | Part number          | Type       | Preview | Links        |
