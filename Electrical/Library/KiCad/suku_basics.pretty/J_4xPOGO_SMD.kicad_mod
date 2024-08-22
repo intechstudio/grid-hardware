@@ -1,81 +1,305 @@
-(footprint "J_4xPOGO_SMD" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (descr "Through hole straight pin header, 1x04, 1.27mm pitch, single row")
-  (tags "Through hole pin header THT 1x04 1.27mm single row")
-  (fp_text reference "REF**" (at -2.54 2.54 180) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp bf9b755d-43fa-465f-907d-280b43cc9e60)
-  )
-  (fp_text value "J_4xPOGO_SMD" (at -1.27 -2.54 180) (layer "F.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp e6dea8a6-66b5-42a1-a908-8e66e9500f0d)
-  )
-  (fp_text user "${REFERENCE}" (at 0 0 180) (layer "F.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp 546f05f5-ae4a-473c-828b-d796b3388af5)
-  )
-  (fp_line (start -5.08 -1.27) (end 5.08 -1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.CrtYd") (tstamp 93f40178-ef8e-46fa-b768-02b06c91f8bd))
-  (fp_line (start -5.08 1.27) (end -5.08 -1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.CrtYd") (tstamp 1c0f8b3d-9a01-48d9-8041-345b81fb02da))
-  (fp_line (start 5.08 -1.27) (end 5.08 1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.CrtYd") (tstamp 87aeb856-a340-404e-9490-52748c10bd71))
-  (fp_line (start 5.08 1.27) (end -5.08 1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.CrtYd") (tstamp 8f7e941c-cba3-4eba-8939-cb84d3a0f97c))
-  (fp_line (start -5.08 -1.27) (end 5.08 -1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp c7a86e5a-0797-41e1-b007-98e9d3c34fae))
-  (fp_line (start -5.08 1.27) (end -5.08 -1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp f375c8fd-bf57-4fbd-8fef-eee227049da8))
-  (fp_line (start 5.08 -1.27) (end 5.08 1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp 594fe33c-e2b5-4e8f-b3fe-93c5960a1540))
-  (fp_line (start 5.08 1.27) (end -5.08 1.27)
-    (stroke (width 0.12) (type solid)) (layer "F.Fab") (tstamp 2140d966-de3f-4047-b5cd-03a3e8b3c98e))
-  (pad "1" thru_hole circle (at -3.81 0 90) (size 1.2 1.2) (drill 0.7) (layers "*.Cu" "*.Mask") (tstamp a2f2e64f-feb5-4346-8d28-a4e3adedace6))
-  (pad "1" smd circle (at -3.81 0 90) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 638d3cdd-599c-491e-9599-21c25e2b2c49))
-  (pad "2" thru_hole circle (at -1.27 0 90) (size 1.2 1.2) (drill 0.7) (layers "*.Cu" "*.Mask") (tstamp 8734ed7a-0488-42f9-aecd-efce09d45212))
-  (pad "2" smd circle (at -1.27 0 90) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d32a79d2-6c24-4b03-be30-83bae7bd7535))
-  (pad "3" thru_hole circle (at 1.27 0 90) (size 1.2 1.2) (drill 0.7) (layers "*.Cu" "*.Mask") (tstamp 918fc96c-3e13-49a7-b3f7-8d4f21da7815))
-  (pad "3" smd circle (at 1.27 0 90) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 59a3caa5-82f3-4e22-b58d-584448f0c257))
-  (pad "4" thru_hole circle (at 3.81 0 90) (size 1.2 1.2) (drill 0.7) (layers "*.Cu" "*.Mask") (tstamp c3c4a2a8-a3e0-428f-81c7-51269f59aadd))
-  (pad "4" smd circle (at 3.81 0 90) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8b844470-6707-4e9e-b32f-b80f07087d7b))
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step" hide
-    (offset (xyz 1.27 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step" hide
-    (offset (xyz -1.27 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step" hide
-    (offset (xyz -3.81 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
-    (offset (xyz 3.81 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
-    (offset (xyz 1.27 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
-    (offset (xyz -1.27 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
-    (offset (xyz -3.81 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
-  (model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
-    (offset (xyz 3.81 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 -90 0))
-  )
+(footprint "J_4xPOGO_SMD"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Through hole straight pin header, 1x04, 1.27mm pitch, single row")
+	(tags "Through hole pin header THT 1x04 1.27mm single row")
+	(property "Reference" "REF**"
+		(at -2.54 2.54 180)
+		(layer "F.SilkS")
+		(uuid "bf9b755d-43fa-465f-907d-280b43cc9e60")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "J_4xPOGO_SMD"
+		(at -1.27 -2.54 180)
+		(layer "F.Fab")
+		(uuid "e6dea8a6-66b5-42a1-a908-8e66e9500f0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9a6ef92c-d875-4806-8398-41258fa8282c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7f83d388-8b70-48f6-9064-b59ffdc6b358")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1f3210b-547f-4045-9246-381fbe2af970")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.08 -1.27)
+		(end 5.08 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "93f40178-ef8e-46fa-b768-02b06c91f8bd")
+	)
+	(fp_line
+		(start -5.08 1.27)
+		(end -5.08 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1c0f8b3d-9a01-48d9-8041-345b81fb02da")
+	)
+	(fp_line
+		(start 5.08 -1.27)
+		(end 5.08 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "87aeb856-a340-404e-9490-52748c10bd71")
+	)
+	(fp_line
+		(start 5.08 1.27)
+		(end -5.08 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8f7e941c-cba3-4eba-8939-cb84d3a0f97c")
+	)
+	(fp_line
+		(start -5.08 -1.27)
+		(end 5.08 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c7a86e5a-0797-41e1-b007-98e9d3c34fae")
+	)
+	(fp_line
+		(start -5.08 1.27)
+		(end -5.08 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f375c8fd-bf57-4fbd-8fef-eee227049da8")
+	)
+	(fp_line
+		(start 5.08 -1.27)
+		(end 5.08 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "594fe33c-e2b5-4e8f-b3fe-93c5960a1540")
+	)
+	(fp_line
+		(start 5.08 1.27)
+		(end -5.08 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2140d966-de3f-4047-b5cd-03a3e8b3c98e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "546f05f5-ae4a-473c-828b-d796b3388af5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -3.81 0 90)
+		(size 1.2 1.2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a2f2e64f-feb5-4346-8d28-a4e3adedace6")
+	)
+	(pad "1" smd circle
+		(at -3.81 0 90)
+		(size 2 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "638d3cdd-599c-491e-9599-21c25e2b2c49")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 0 90)
+		(size 1.2 1.2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8734ed7a-0488-42f9-aecd-efce09d45212")
+	)
+	(pad "2" smd circle
+		(at -1.27 0 90)
+		(size 2 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d32a79d2-6c24-4b03-be30-83bae7bd7535")
+	)
+	(pad "3" thru_hole circle
+		(at 1.27 0 90)
+		(size 1.2 1.2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "918fc96c-3e13-49a7-b3f7-8d4f21da7815")
+	)
+	(pad "3" smd circle
+		(at 1.27 0 90)
+		(size 2 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "59a3caa5-82f3-4e22-b58d-584448f0c257")
+	)
+	(pad "4" thru_hole circle
+		(at 3.81 0 90)
+		(size 1.2 1.2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c3c4a2a8-a3e0-428f-81c7-51269f59aadd")
+	)
+	(pad "4" smd circle
+		(at 3.81 0 90)
+		(size 2 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8b844470-6707-4e9e-b32f-b80f07087d7b")
+	)
+	(model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+		(hide yes)
+		(offset
+			(xyz 1.27 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+		(hide yes)
+		(offset
+			(xyz -1.27 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+		(hide yes)
+		(offset
+			(xyz -3.81 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${INTECH_3D}/IS_POGO_Rev2_THT.step"
+		(offset
+			(xyz 3.81 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+		(offset
+			(xyz 1.27 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+		(offset
+			(xyz -1.27 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+		(offset
+			(xyz -3.81 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${KIPRJMOD}/../../Library/3D/IS_POGO_Rev2_THT.step"
+		(offset
+			(xyz 3.81 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
 )
