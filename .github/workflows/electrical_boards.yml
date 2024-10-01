@@ -13,7 +13,7 @@ jobs:
   generate-artifacts:
     name: kicad export
     runs-on: ubuntu-latest
-    container: "setsoft/kicad_auto:ki8"    
+    container: "ghcr.io/inti-cmnb/kicad8_auto_full:latest"    
     strategy:
       fail-fast: false
       matrix:
