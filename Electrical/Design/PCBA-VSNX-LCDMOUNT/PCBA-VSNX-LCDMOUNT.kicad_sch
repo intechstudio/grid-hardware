@@ -1851,6 +1851,12 @@
 		(uuid "23b62e73-3726-4027-8dd3-d0ead62d1e97")
 	)
 	(junction
+		(at 203.2 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36bd76ee-623b-41b7-857d-cc964530136f")
+	)
+	(junction
 		(at 271.78 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1909,7 +1915,7 @@
 		(uuid "42bf6dc6-2344-4321-acf9-ec8d76d99a92")
 	)
 	(no_connect
-		(at 187.96 71.12)
+		(at 193.04 71.12)
 		(uuid "49894e6c-f56d-42dd-ad57-e4a373534749")
 	)
 	(no_connect
@@ -1938,7 +1944,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 71.12) (xy 193.04 68.58)
+			(xy 198.12 71.12) (xy 198.12 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1965,6 +1971,16 @@
 			(type default)
 		)
 		(uuid "0a183d02-c3f5-43b0-b832-a88def378f81")
+	)
+	(wire
+		(pts
+			(xy 203.2 71.12) (xy 210.82 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ad0ce24-6e83-4d8b-9342-5fc6d5054683")
 	)
 	(wire
 		(pts
@@ -2068,7 +2084,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 71.12) (xy 193.04 71.12)
+			(xy 203.2 71.12) (xy 198.12 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2348,7 +2364,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 71.12) (xy 198.12 76.2)
+			(xy 203.2 71.12) (xy 203.2 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2378,7 +2394,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 60.96) (xy 177.8 71.12)
+			(xy 182.88 60.96) (xy 182.88 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2538,7 +2554,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 68.58) (xy 190.5 71.12)
+			(xy 195.58 68.58) (xy 195.58 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2618,7 +2634,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 71.12) (xy 185.42 71.12)
+			(xy 182.88 71.12) (xy 190.5 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2778,7 +2794,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 71.12) (xy 185.42 68.58)
+			(xy 190.5 71.12) (xy 190.5 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3388,7 +3404,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 68.58) (xy 187.96 71.12)
+			(xy 193.04 68.58) (xy 193.04 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3472,7 +3488,7 @@
 		(uuid "34833f8d-b8b4-4277-a2ec-c6c27f773061")
 	)
 	(label "BACKLIGHT_PWM"
-		(at 190.5 71.12 270)
+		(at 195.58 71.12 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6303,7 +6319,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 198.12 76.2 0)
+		(at 203.2 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6311,7 +6327,7 @@
 		(dnp no)
 		(uuid "7e730959-b5bf-49a5-a4c3-87f68866eabe")
 		(property "Reference" "#PWR01005"
-			(at 198.12 82.55 0)
+			(at 203.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6320,7 +6336,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.247 80.5942 0)
+			(at 203.327 80.5942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6328,7 +6344,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 76.2 0)
+			(at 203.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6337,7 +6353,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 76.2 0)
+			(at 203.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6346,7 +6362,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.12 76.2 0)
+			(at 203.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6444,7 +6460,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 187.96 63.5 90)
+		(at 193.04 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6453,7 +6469,7 @@
 		(fields_autoplaced yes)
 		(uuid "85c3f17b-9070-40ce-8f3c-9b29c9e9319f")
 		(property "Reference" "J1005"
-			(at 189.23 59.69 90)
+			(at 194.31 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6461,7 +6477,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 189.23 57.15 90)
+			(at 194.31 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6469,7 +6485,7 @@
 			)
 		)
 		(property "Footprint" "suku_basics:J_BATTERY_CONN"
-			(at 187.96 63.5 0)
+			(at 193.04 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6478,7 +6494,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 63.5 0)
+			(at 193.04 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6487,7 +6503,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 187.96 63.5 0)
+			(at 193.04 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8723,7 +8739,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 177.8 60.96 0)
+		(at 182.88 60.96 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8733,7 +8749,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4068f82-e6f2-4c7b-9159-541352a1aa4b")
 		(property "Reference" "#PWR01021"
-			(at 177.8 64.77 0)
+			(at 182.88 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8742,7 +8758,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 177.8 55.88 0)
+			(at 182.88 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8750,7 +8766,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 60.96 0)
+			(at 182.88 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8759,7 +8775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 60.96 0)
+			(at 182.88 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8768,7 +8784,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.8 60.96 0)
+			(at 182.88 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
