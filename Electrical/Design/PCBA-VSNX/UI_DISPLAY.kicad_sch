@@ -5,36 +5,29 @@
 	(uuid "568f171f-8a35-4e00-86e0-fcb01f8e9caa")
 	(paper "A4")
 	(lib_symbols
-		(symbol "74xGxx:SN74LVC1G14DBV"
+		(symbol "Connector_Generic:Conn_01x04"
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 10.16 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SN74LVC1G14DBV"
-				(at 20.32 10.16 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -43,7 +36,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Single Schmitt-Trigger Inverter, SOT-23"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Inverter Schmitt Trigger"
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -70,60 +63,75 @@
 					(hide yes)
 				)
 			)
-			(symbol "SN74LVC1G14DBV_0_1"
-				(polyline
-					(pts
-						(xy -2.032 1.016) (xy -1.016 1.016)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
+					(hide yes)
 				)
-				(polyline
-					(pts
-						(xy -5.08 7.62) (xy -5.08 -7.62) (xy 10.16 0) (xy -5.08 7.62)
-					)
+			)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.048 -1.016) (xy -3.048 1.016) (xy -2.032 1.016) (xy -2.032 -1.016) (xy -4.064 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 11.43 0)
-					(radius 1.27)
-					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "SN74LVC1G14DBV_1_1"
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 5.08) hide
-					(name "NC"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -138,10 +146,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "~"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -156,10 +164,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 5.08)
-					(name "GND"
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -174,10 +182,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "~"
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -192,17 +200,101 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 5.08)
-					(name "VCC"
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -428,1203 +520,410 @@
 				)
 			)
 		)
-		(symbol "suku_basics:CAP"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" ""
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "suku_basics:CAP_0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CAP_0_1"
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CAP_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "suku_basics:DISPLAY_TEK1"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -17.78 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "DISPLAY_TEK1"
-				(at -10.16 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "suku_basics:Display_TEK1"
-				(at -10.16 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.buydisplay.com/2-inch-ips-tft-lcd-display-ips-panel-screen-240x320-for-smart-watch"
-				(at 27.94 17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "ST7789 controller, SPI TFT LCD Display"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "driver display"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*CR2013*MI2120*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DISPLAY_TEK1_0_0"
-				(text "320x240 LCD"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-							(italic yes)
-						)
-					)
-				)
-			)
-			(symbol "DISPLAY_TEK1_0_1"
-				(rectangle
-					(start -17.78 15.24)
-					(end 17.78 -17.78)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DISPLAY_TEK1_1_0"
-				(text "SPI Interface"
-					(at 0 -2.54 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-							(italic yes)
-						)
-					)
-				)
-				(text "ST7789"
-					(at 0 2.54 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-							(italic yes)
-						)
-					)
-				)
-			)
-			(symbol "DISPLAY_TEK1_1_1"
-				(pin power_in line
-					(at 20.32 12.7 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 20.32 -10.16 180)
-					(length 2.54)
-					(name "SDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 20.32 -12.7 180)
-					(length 2.54)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 -15.24 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 10.16 180)
-					(length 2.54)
-					(name "LEDK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 7.62 180)
-					(length 2.54)
-					(name "LEDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 5.08 180)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 2.54 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 0 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 20.32 -2.54 180)
-					(length 2.54)
-					(name "D/~{C}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 20.32 -5.08 180)
-					(length 2.54)
-					(name "~{CS}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 20.32 -7.62 180)
-					(length 2.54)
-					(name "SCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "suku_basics:RES"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" ""
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "suku_basics:RES_0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RES_1_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
-		(at 154.94 71.12)
+		(at 198.12 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0ff2f0b4-18e5-4561-b9f9-9a7b0f02f5ce")
+		(uuid "479105c0-4600-47fa-a634-d91e585629a7")
 	)
 	(junction
-		(at 111.76 78.74)
+		(at 198.12 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "124b2fdf-871b-4915-9664-8411a6275e76")
+		(uuid "76558ce5-628a-4152-800c-623d83a98a9a")
 	)
-	(junction
-		(at 154.94 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "252a55c8-8c97-4bf4-974b-447d3c86cd10")
+	(no_connect
+		(at 187.96 50.8)
+		(uuid "27dd5267-bebc-402a-9073-ddbdc15a2f68")
 	)
-	(junction
-		(at 154.94 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97c281ab-973b-4c6e-974b-5bb4e8a9271a")
+	(no_connect
+		(at 210.82 50.8)
+		(uuid "3149f406-b6fc-456e-acdf-0596c5fc8d42")
 	)
-	(junction
-		(at 154.94 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e480f01-2885-48fe-b8ea-b6b22c8a9506")
-	)
-	(junction
-		(at 154.94 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e3039ef8-510f-41b4-9f01-f83f83efde17")
-	)
-	(junction
-		(at 124.46 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2b0d526-d0b8-4b23-bc48-6c342bb98636")
-	)
-	(junction
-		(at 154.94 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa2f5adc-afce-4461-8c21-d7b5deae31ca")
+	(no_connect
+		(at 208.28 50.8)
+		(uuid "a1dc84a9-8cc4-494a-b84f-3e44051bb481")
 	)
 	(wire
 		(pts
-			(xy 157.48 78.74) (xy 111.76 78.74)
+			(xy 185.42 73.66) (xy 185.42 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "014898bf-b25f-4ac0-a655-863aff56f50b")
+		(uuid "000bc021-4f90-4294-9967-c8d6a4137707")
 	)
 	(wire
 		(pts
-			(xy 111.76 53.34) (xy 111.76 55.88)
+			(xy 193.04 50.8) (xy 193.04 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0971c7da-7869-4f79-9aa9-c6bad6730644")
+		(uuid "067fe4ad-5bf7-47d1-8e02-4ab3c0bfe482")
 	)
 	(wire
 		(pts
-			(xy 220.98 129.54) (xy 220.98 132.08)
+			(xy 193.04 76.2) (xy 193.04 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0c1c561a-26c0-47ef-8873-edf7068793d3")
+		(uuid "08519014-472d-4c1b-93cf-98d999c2492a")
 	)
 	(wire
 		(pts
-			(xy 220.98 137.16) (xy 220.98 139.7)
+			(xy 96.52 68.58) (xy 104.14 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10002ee3-fa14-4abc-8df9-1d4a0a0be072")
+		(uuid "1ae816a5-3f17-47a4-827d-59df2b1f4185")
 	)
 	(wire
 		(pts
-			(xy 55.88 124.46) (xy 55.88 129.54)
+			(xy 208.28 73.66) (xy 208.28 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "146a4bc9-1516-4418-aca4-1c0253d516b6")
+		(uuid "1aeb259e-96d0-49bb-909f-a3ee523bac93")
 	)
 	(wire
 		(pts
-			(xy 142.24 68.58) (xy 157.48 68.58)
+			(xy 190.5 48.26) (xy 190.5 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c8d5172-bb1c-4ad0-8dcc-c5a913d5ca76")
+		(uuid "1c1f3588-131a-45b9-a8d3-69f61c163424")
 	)
 	(wire
 		(pts
-			(xy 30.48 139.7) (xy 45.72 139.7)
+			(xy 233.68 82.55) (xy 233.68 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "28424e3b-df6d-4e81-b4a8-4434ab9291c2")
+		(uuid "1d29e711-0fe0-4968-8c15-93ecc3b229e4")
 	)
 	(wire
 		(pts
-			(xy 208.28 68.58) (xy 208.28 71.12)
+			(xy 198.12 76.2) (xy 205.74 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37cb7c1b-aa11-4509-bcc7-364e7ab0a42d")
+		(uuid "2264d43a-54ef-463a-b577-e6f2811803c6")
 	)
 	(wire
 		(pts
-			(xy 111.76 60.96) (xy 111.76 78.74)
+			(xy 96.52 76.2) (xy 104.14 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3817538d-3e43-45e2-b988-cd81273b46d7")
+		(uuid "2a0884d3-570e-47b5-9973-a7c274be2c49")
 	)
 	(wire
 		(pts
-			(xy 220.98 76.2) (xy 220.98 78.74)
+			(xy 190.5 73.66) (xy 190.5 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "389bd1b8-a42c-42cb-99b1-e1644b11c661")
+		(uuid "3552c4a6-63e0-4d72-a0db-ae9ab2f89607")
 	)
 	(wire
 		(pts
-			(xy 157.48 63.5) (xy 96.52 63.5)
+			(xy 177.8 40.64) (xy 177.8 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c7b2e3e-10a3-42cb-9eee-45cd4b21e23d")
+		(uuid "35a814bd-4edc-43e1-ba9f-09c040b34598")
 	)
 	(wire
 		(pts
-			(xy 111.76 78.74) (xy 96.52 78.74)
+			(xy 198.12 50.8) (xy 198.12 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3eef8a6e-30a1-4888-9e09-011c50b886c6")
+		(uuid "413e3f19-8e41-419c-9960-6e4a848ec8d8")
 	)
 	(wire
 		(pts
-			(xy 147.32 45.72) (xy 147.32 48.26)
+			(xy 187.96 73.66) (xy 187.96 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b7fd7b6-9813-4362-bf22-2526ddff54b7")
+		(uuid "44c2e484-e7f9-4449-b30d-fa21feaedb9b")
 	)
 	(wire
 		(pts
-			(xy 142.24 106.68) (xy 142.24 129.54)
+			(xy 213.36 53.34) (xy 220.98 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d786927-4084-45e8-a1ea-0005e6975f5c")
+		(uuid "48be66ea-0faa-469a-b08c-91e28ee60c91")
 	)
 	(wire
 		(pts
-			(xy 157.48 124.46) (xy 96.52 124.46)
+			(xy 96.52 81.28) (xy 104.14 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f164f90-97d0-44ca-9a33-a19270083f11")
+		(uuid "503ee7a3-837f-423a-9876-eae2f0661429")
 	)
 	(wire
 		(pts
-			(xy 142.24 129.54) (xy 157.48 129.54)
+			(xy 96.52 55.88) (xy 104.14 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5088fead-09b2-4b0a-828b-b2ded9293b6b")
+		(uuid "547afb88-2784-4318-8bb7-ab8d0cce31c9")
 	)
 	(wire
 		(pts
-			(xy 157.48 132.08) (xy 154.94 132.08)
+			(xy 193.04 50.8) (xy 198.12 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5283f4fd-8bed-4d0e-b967-e08e098c50c9")
+		(uuid "58ba27f8-0615-430c-945a-76e4fb9452c0")
 	)
 	(wire
 		(pts
-			(xy 208.28 76.2) (xy 208.28 78.74)
+			(xy 96.52 66.04) (xy 104.14 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6017367e-922c-440f-a64e-7a62898204a7")
+		(uuid "5a03c6a1-d3a9-444c-a785-73e4ff3a8a52")
 	)
 	(wire
 		(pts
-			(xy 154.94 60.96) (xy 157.48 60.96)
+			(xy 208.28 48.26) (xy 208.28 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66103090-3fff-4422-97b1-be8eec1b4e46")
+		(uuid "5c91f93d-dd2e-4228-a996-c1808fe53855")
 	)
 	(wire
 		(pts
-			(xy 154.94 71.12) (xy 154.94 73.66)
+			(xy 96.52 73.66) (xy 104.14 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c838ef5-ee6e-4c5a-a736-888264f6cf52")
+		(uuid "69f2038b-033b-4dd0-9542-30b42fd1716a")
 	)
 	(wire
 		(pts
-			(xy 124.46 53.34) (xy 124.46 55.88)
+			(xy 185.42 50.8) (xy 185.42 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71d8d0b4-fe7d-4e3a-ae17-8633567da997")
+		(uuid "6a935090-273d-4fe2-bdc2-153c30ebb874")
 	)
 	(wire
 		(pts
-			(xy 157.48 71.12) (xy 154.94 71.12)
+			(xy 220.98 43.18) (xy 220.98 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7479e2b6-3ed1-4969-af6f-7ba6de0b2f32")
+		(uuid "87e6f647-d910-44dc-b25f-595e3d65a157")
 	)
 	(wire
 		(pts
-			(xy 154.94 60.96) (xy 154.94 71.12)
+			(xy 213.36 73.66) (xy 213.36 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7533982f-ed6d-48ad-90f1-73e929bec288")
+		(uuid "8adea7ae-df96-41d8-b973-77723ddd970a")
 	)
 	(wire
 		(pts
-			(xy 157.48 142.24) (xy 96.52 142.24)
+			(xy 210.82 48.26) (xy 210.82 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "779585dd-b948-445d-99ad-0650c9ba4e82")
+		(uuid "8cc53688-875b-40de-8dc8-d118a6971deb")
 	)
 	(wire
 		(pts
-			(xy 147.32 66.04) (xy 157.48 66.04)
+			(xy 96.52 71.12) (xy 104.14 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "792270ac-ccce-485a-ad5c-f8ec038535ef")
+		(uuid "8dd3fd9e-1632-4c14-810e-8df152047c6d")
 	)
 	(wire
 		(pts
-			(xy 147.32 127) (xy 157.48 127)
+			(xy 160.02 55.88) (xy 160.02 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "795da08b-9d85-4f73-816d-c72a6265120e")
+		(uuid "8e62200b-aa78-4936-ae41-ae334ba2e2b0")
 	)
 	(wire
 		(pts
-			(xy 154.94 121.92) (xy 154.94 132.08)
+			(xy 187.96 48.26) (xy 187.96 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "797a3087-efda-4c2c-8d44-75872d98067f")
+		(uuid "9fbb1403-8b76-4140-8073-f5a04161d547")
 	)
 	(wire
 		(pts
-			(xy 147.32 106.68) (xy 147.32 109.22)
+			(xy 233.68 57.15) (xy 233.68 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79875032-c8d3-40cf-bcda-ab30db19a9b6")
+		(uuid "a2832331-64a1-41df-a2bb-7528541e9849")
 	)
 	(wire
 		(pts
-			(xy 147.32 53.34) (xy 147.32 66.04)
+			(xy 205.74 50.8) (xy 205.74 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83f4d861-33bc-451d-862d-c702d7077539")
+		(uuid "acedd7b6-ad69-4646-b683-bd2009788dd6")
 	)
 	(wire
 		(pts
-			(xy 157.48 73.66) (xy 154.94 73.66)
+			(xy 177.8 50.8) (xy 185.42 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8552a5ee-1842-4ba3-91a8-89268b4ed59a")
+		(uuid "b1be28fc-490a-420c-91d7-1571e2b0c5b8")
 	)
 	(wire
 		(pts
-			(xy 142.24 45.72) (xy 142.24 68.58)
+			(xy 213.36 53.34) (xy 213.36 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "88a89905-2ad5-4ccf-8b29-b76c1a3ceec3")
+		(uuid "bb304eb7-66a8-42e3-899c-4f560ec2b51a")
 	)
 	(wire
 		(pts
-			(xy 147.32 114.3) (xy 147.32 127)
+			(xy 198.12 50.8) (xy 205.74 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ab80dda-7f6b-4016-8deb-ea8c41e40e2a")
+		(uuid "c92ee20f-7188-46af-b372-5f0b5eff7422")
 	)
 	(wire
 		(pts
-			(xy 154.94 149.86) (xy 157.48 149.86)
+			(xy 160.02 81.28) (xy 160.02 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8abb7741-a08c-4158-b16c-9f75781a718d")
+		(uuid "d55a9bcd-2109-47aa-b76d-65f17ed8a025")
 	)
 	(wire
 		(pts
-			(xy 55.88 149.86) (xy 55.88 154.94)
+			(xy 193.04 76.2) (xy 198.12 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b14b16e-083e-467c-8c77-c474acbb85b2")
+		(uuid "d5f97268-5a33-4b39-a274-21cfbe604bd8")
 	)
 	(wire
 		(pts
-			(xy 157.48 134.62) (xy 154.94 134.62)
+			(xy 205.74 78.74) (xy 205.74 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c360b32-457b-41bc-8daf-566b3a69c9c1")
+		(uuid "db6714f0-4c02-45a2-b569-127c9139c270")
 	)
 	(wire
 		(pts
-			(xy 208.28 129.54) (xy 208.28 132.08)
+			(xy 199.39 137.16) (xy 199.39 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9197b0ee-a973-4857-8268-7e0aeb77e323")
+		(uuid "e0743ba8-1b24-494f-95ff-6f90f7e42725")
 	)
 	(wire
 		(pts
-			(xy 154.94 134.62) (xy 154.94 149.86)
+			(xy 210.82 73.66) (xy 210.82 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "93085699-0150-4754-9969-088994db4fee")
+		(uuid "e547ca2f-a141-4666-b031-44fe95178855")
 	)
 	(wire
 		(pts
-			(xy 157.48 147.32) (xy 96.52 147.32)
+			(xy 198.12 81.28) (xy 198.12 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9797d668-dc65-4341-b6f6-ebffa0ff26a3")
-	)
-	(wire
-		(pts
-			(xy 157.48 137.16) (xy 96.52 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aed2c8f-792c-4748-b434-2117c5000525")
-	)
-	(wire
-		(pts
-			(xy 208.28 137.16) (xy 208.28 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a168d6cd-6de2-4a7d-bece-5ceda4e294c5")
-	)
-	(wire
-		(pts
-			(xy 154.94 121.92) (xy 157.48 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a798ab84-ef37-4a44-847d-59a0c3d84d02")
-	)
-	(wire
-		(pts
-			(xy 220.98 68.58) (xy 220.98 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab0f8155-d902-4e3c-a5ed-80e132dcc2f4")
-	)
-	(wire
-		(pts
-			(xy 154.94 73.66) (xy 154.94 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0ac5bfc-d642-445a-a13c-d4d2d8699eb1")
-	)
-	(wire
-		(pts
-			(xy 154.94 132.08) (xy 154.94 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c05e50db-993e-48f9-9731-05f942fa85b7")
-	)
-	(wire
-		(pts
-			(xy 124.46 60.96) (xy 124.46 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7ff4cb2-4a6c-463f-93bc-fda79569407c")
-	)
-	(wire
-		(pts
-			(xy 154.94 160.02) (xy 154.94 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc3844a0-3476-473d-a41f-fd8caac3da6a")
-	)
-	(wire
-		(pts
-			(xy 157.48 76.2) (xy 96.52 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d57448d9-10d1-424e-a652-60c9e9974600")
-	)
-	(wire
-		(pts
-			(xy 157.48 144.78) (xy 96.52 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df66a341-1375-4d87-9ab2-793c589ff624")
-	)
-	(wire
-		(pts
-			(xy 124.46 86.36) (xy 96.52 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0d4f19e-99f2-4db0-a4c2-0163f703fd4b")
-	)
-	(wire
-		(pts
-			(xy 154.94 99.06) (xy 154.94 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6a9f2fc-b2c1-4c85-b630-79f710bf2723")
-	)
-	(wire
-		(pts
-			(xy 157.48 81.28) (xy 96.52 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb71aa6d-4cc1-4f23-9a4e-047efb60ca7a")
-	)
-	(wire
-		(pts
-			(xy 157.48 83.82) (xy 96.52 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eced565e-0a8f-42dc-813d-b29b72fdc1e7")
-	)
-	(wire
-		(pts
-			(xy 73.66 139.7) (xy 157.48 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f12d87af-e8cc-447a-8db2-44dbba928845")
-	)
-	(wire
-		(pts
-			(xy 157.48 86.36) (xy 124.46 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f22cba8b-0389-4d93-a1f3-5a9292b665da")
-	)
-	(wire
-		(pts
-			(xy 154.94 88.9) (xy 157.48 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3eae1a3-d529-4337-99a3-17c7d8fdd696")
+		(uuid "f0f39b62-a34d-49a2-a97b-cb34c8fc8c2f")
 	)
 	(text "1000"
 		(exclude_from_sim no)
@@ -1639,9 +938,163 @@
 		)
 		(uuid "b79a006a-a6ce-4edc-ba7f-dc5474ca4b1f")
 	)
+	(label "D{slash}~{C}"
+		(at 104.14 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "08b6f811-2262-4a24-b5cf-555d6ce747be")
+	)
+	(label "BACKLIGHT_PWM"
+		(at 190.5 50.8 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0acb9fb5-6a3b-47f1-a788-7b16ed307e99")
+	)
+	(label "~{CS1}"
+		(at 104.14 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c49a775-e89b-4daf-acb9-005d11d4f5ac")
+	)
+	(label "~{CS0}"
+		(at 104.14 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36654687-a066-4f79-b1aa-3e6561d0b3e7")
+	)
+	(label "SDIO"
+		(at 104.14 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3736f4a5-8d06-4712-8734-0a22411f716e")
+	)
+	(label "~{CS0}"
+		(at 210.82 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3749942c-da54-4c36-976f-b4fd093a2927")
+	)
+	(label "~{CS1}"
+		(at 213.36 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46662712-a01d-4559-a00f-a9f6a3c772d4")
+	)
+	(label "~{RESET}"
+		(at 208.28 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60f5ce7d-62e2-450a-9e7d-3350d85d922d")
+	)
+	(label "BACKLIGHT_PWM"
+		(at 104.14 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7108f8b1-1504-4186-be1f-8b2bf3fd43ed")
+	)
+	(label "SDIO"
+		(at 190.5 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f07fcc4-2384-4230-83c3-9033894e5665")
+	)
+	(label "~{RESET}"
+		(at 104.14 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7faceec9-a6f9-408e-b21b-e57a10f7c6c3")
+	)
+	(label "SCLK"
+		(at 104.14 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "867deb1e-3ee6-4fce-ac38-ee3f84a74fdc")
+	)
+	(label "SCLK"
+		(at 187.96 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bd2caef-c1fc-48e6-9536-15b8b8d3ab60")
+	)
+	(label "D{slash}~{C}"
+		(at 185.42 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "934b53c2-4edd-439a-89fc-f5a16eefe8e5")
+	)
 	(hierarchical_label "D{slash}~{C}"
 		(shape input)
-		(at 96.52 76.2 180)
+		(at 96.52 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1653,7 +1106,7 @@
 	)
 	(hierarchical_label "SCLK"
 		(shape input)
-		(at 96.52 81.28 180)
+		(at 96.52 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1665,7 +1118,7 @@
 	)
 	(hierarchical_label "SDIO"
 		(shape input)
-		(at 96.52 83.82 180)
+		(at 96.52 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1675,21 +1128,9 @@
 		)
 		(uuid "220358fc-abe9-44c7-8c2a-939c756e9a07")
 	)
-	(hierarchical_label "~{RESET}"
+	(hierarchical_label "~{CS0}"
 		(shape input)
-		(at 96.52 147.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "231a2b0b-e52a-4a0e-81a6-cd6412690add")
-	)
-	(hierarchical_label "~{CS}"
-		(shape input)
-		(at 96.52 78.74 180)
+		(at 96.52 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1699,57 +1140,9 @@
 		)
 		(uuid "41ecee12-bcb3-455c-8223-88ac74a3ed95")
 	)
-	(hierarchical_label "SDIO"
-		(shape input)
-		(at 96.52 144.78 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "498b6ec8-c666-44b8-b553-740b84fd8ec7")
-	)
-	(hierarchical_label "~{CS}"
-		(shape input)
-		(at 30.48 139.7 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8bd51832-cb83-4ff1-bb9b-102f1469cbc6")
-	)
-	(hierarchical_label "SCLK"
-		(shape input)
-		(at 96.52 142.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8ec0c35c-9622-4764-b933-160dae83d9b3")
-	)
-	(hierarchical_label "~{BACKLIGHT}"
-		(shape passive)
-		(at 96.52 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a4ea6d37-347e-4862-95a2-0089b2be44a2")
-	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
-		(at 96.52 86.36 180)
+		(at 96.52 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1759,21 +1152,9 @@
 		)
 		(uuid "b172434e-cfb8-4e1b-8276-9b63ba4810f8")
 	)
-	(hierarchical_label "D{slash}~{C}"
-		(shape input)
-		(at 96.52 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dcb7ad34-5955-472d-b82b-608ab2aed4f6")
-	)
-	(hierarchical_label "~{BACKLIGHT}"
+	(hierarchical_label "BACKLIGHT"
 		(shape passive)
-		(at 96.52 63.5 180)
+		(at 96.52 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1783,19 +1164,48 @@
 		)
 		(uuid "e256fa46-4918-4f9a-a817-c3ad4c4b1e0d")
 	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 111.76 53.34 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(hierarchical_label "~{CS1}"
+		(shape input)
+		(at 96.52 66.04 180)
 		(fields_autoplaced yes)
-		(uuid "01f31cb7-155e-4d77-943b-0451fd19083b")
-		(property "Reference" "#PWR01028"
-			(at 111.76 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fbd1c1eb-2fb7-4d5b-91ce-7f8374e8a1fa")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 233.68 80.01 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "0265fb8c-32ee-41c4-af75-057336075644")
+		(property "Reference" "H904"
+			(at 236.22 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 236.22 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5_FEMALE"
+			(at 233.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1803,16 +1213,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 111.76 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 53.34 0)
+		(property "Datasheet" "~"
+			(at 233.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1820,17 +1222,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 111.76 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 53.34 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 233.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1839,12 +1232,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a6386a5c-cf4f-4a8f-82d8-c84cbc27e173")
+			(uuid "6eb1be31-8d95-41e4-8874-a7936df65137")
 		)
 		(instances
-			(project "PCBA-TEK1"
+			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01028")
+					(reference "H904")
 					(unit 1)
 				)
 			)
@@ -1852,16 +1245,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 139.7 0)
+		(at 199.39 139.7 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0284b8b6-5e48-4b82-b66f-21296ff813ed")
-		(property "Reference" "#PWR0966"
-			(at 220.98 146.05 0)
+		(uuid "0953e416-8994-439e-b026-95e986fe4b05")
+		(property "Reference" "#PWR0977"
+			(at 199.39 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1870,7 +1263,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 220.853 144.0942 0)
+			(at 199.263 144.0942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1878,7 +1271,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 139.7 0)
+			(at 199.39 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1887,7 +1280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 139.7 0)
+			(at 199.39 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1896,7 +1289,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 139.7 0)
+			(at 199.39 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1905,10 +1298,275 @@
 			)
 		)
 		(pin "1"
-			(uuid "51f6f65a-7ac0-4297-9bd8-8b52db155cc1")
+			(uuid "f47989df-17bb-4eab-9300-9637b2f0ae59")
 		)
 		(instances
-			(project "PCBA-TEK1"
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "#PWR0977")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 160.02 53.34 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "1fd1a730-b97b-4fdb-8651-5efc18124c09")
+		(property "Reference" "H901"
+			(at 162.56 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 162.56 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5_FEMALE"
+			(at 160.02 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 160.02 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a618105-f2da-4f1b-aa67-8b816484a693")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "H901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233.68 85.09 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "36882bc6-dd7a-4466-a973-9a6334bf3753")
+		(property "Reference" "#PWR0976"
+			(at 233.68 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.553 89.4842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f8b70b6-1a3c-4902-9e1f-128105ab22b1")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "#PWR0976")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233.68 59.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "54d559a7-25ae-4bf7-944c-977a33a9d08c")
+		(property "Reference" "#PWR0965"
+			(at 233.68 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.553 64.0842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eca04f3c-7807-40e9-9522-5d92d3689bbc")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "#PWR0965")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 83.82 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71e2b408-7d52-4ed0-9361-928654d78a3c")
+		(property "Reference" "#PWR0966"
+			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 159.893 88.2142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fd6fb9b-a96c-4fdf-83fc-ee6f19775cea")
+		)
+		(instances
+			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
 					(reference "#PWR0966")
 					(unit 1)
@@ -1918,1139 +1576,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 154.94 99.06 0)
-		(mirror y)
+		(at 198.12 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "09d91907-7e65-4019-8488-170e7ef70053")
-		(property "Reference" "#PWR01027"
-			(at 154.94 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.813 103.4542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7ef1bae-7ad6-47ec-822e-b17c9f83f9fd")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 147.32 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1ba1a0f4-e91a-4b38-866a-1fb5e25226dc")
-		(property "Reference" "R903"
-			(at 148.8186 110.5916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470R"
-			(at 148.8186 112.903 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 147.32 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 147.32 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e51ac282-c564-4032-9b7e-ffaa3dad669a")
-		)
-		(pin "2"
-			(uuid "181c16c8-8134-45a8-b145-8c743bf577c4")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "R903")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 208.28 78.74 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1c164c4b-dad1-46f0-9837-06e01a7fddf5")
-		(property "Reference" "#PWR01032"
-			(at 208.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 208.153 83.1342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46a116ef-d39b-4d61-a1ef-4cab00780a72")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xGxx:SN74LVC1G14DBV")
-		(at 55.88 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29e64f1f-0acf-4acf-be8a-31729341cf1e")
-		(property "Reference" "U902"
-			(at 76.2 135.5091 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC1G14GV"
-			(at 76.2 138.0491 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 55.88 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf"
-			(at 55.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "112a73d3-c48b-4e8c-b9b9-0e58d118a6f4")
-		)
-		(pin "2"
-			(uuid "477feb1d-78e4-46b6-88a9-913222d72189")
-		)
-		(pin "3"
-			(uuid "95270f32-7f24-410b-9f56-115a49397db3")
-		)
-		(pin "4"
-			(uuid "898de08d-77bf-4e62-9dc2-a0388b89f7d6")
-		)
-		(pin "5"
-			(uuid "bf63a6d8-0c86-44d2-9baf-aa7c4d608fc9")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "U902")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:CAP")
-		(at 220.98 73.66 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "436c8cc3-0af1-4dac-b6af-7aaabf0475e1")
-		(property "Reference" "C1019"
-			(at 218.6432 72.4916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 218.6432 74.803 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:CAP_0402"
-			(at 220.98 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7da594ab-14a2-4425-a54d-b80c8985dce5")
-		)
-		(pin "2"
-			(uuid "188e4074-3f1b-413a-8753-eac3eed4002e")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "C1019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ae2b8bc-4194-473b-ae13-07facb6b885e")
-		(property "Reference" "#PWR0977"
-			(at 55.88 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 56.007 159.3342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "daac4c9f-8159-4e14-81f5-0da0b385ea66")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR0977")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 124.46 53.34 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cf6075e-88af-4477-8c24-04ea00bd217e")
-		(property "Reference" "#PWR01042"
-			(at 124.46 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 124.46 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "831fa7dd-903f-4673-894a-8aaa56c27b62")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 154.94 160.02 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "537dd96d-7f31-4bb4-9577-1a18d882f952")
-		(property "Reference" "#PWR0976"
-			(at 154.94 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.813 164.4142 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5803cdf6-9de1-4970-a420-86b82cf62ec2")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR0976")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:CAP")
-		(at 208.28 134.62 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6267505a-06d6-46be-a378-d8f51d275ab1")
-		(property "Reference" "C920"
-			(at 205.9432 133.4516 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 205.9432 135.763 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:CAP_0402"
-			(at 208.28 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "884abadd-b439-4fa0-887c-840c1e0b8fba")
-		)
-		(pin "2"
-			(uuid "b9d4a186-2c9f-4d3d-a874-ba7b1fb4f7c1")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "C920")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:CAP")
-		(at 208.28 73.66 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "66e89bc0-7ee5-42b9-8254-211038088387")
-		(property "Reference" "C1020"
-			(at 205.9432 72.4916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 205.9432 74.803 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:CAP_0402"
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65c4a7e0-580e-451f-884b-ca854d54ba24")
-		)
-		(pin "2"
-			(uuid "54e46018-adf5-4cc6-9380-4032e9c53618")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "C1020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 142.24 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6850b08a-1fb4-4bcf-a83e-d1db15e6831f")
-		(property "Reference" "#PWR01026"
-			(at 142.24 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 142.24 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "74d86c89-ce39-4bac-86c2-249d6d33799b")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:DISPLAY_TEK1")
-		(at 177.8 134.62 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "69bdd56e-dbff-4488-9b61-6ca36bd319f1")
-		(property "Reference" "U901"
-			(at 177.8 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DISPLAY_TEK1 (NF)"
-			(at 177.8 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:Display_TEK1_reversed"
-			(at 187.96 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.buydisplay.com/2-inch-ips-tft-lcd-display-ips-panel-screen-240x320-for-smart-watch"
-			(at 149.86 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8cdb71c-117b-496e-be01-b43d7feaed8e")
-		)
-		(pin "10"
-			(uuid "3d44ac6b-9b83-4525-b9b4-b088a49b4c8c")
-		)
-		(pin "11"
-			(uuid "6217d32c-6b54-4def-824b-2c5887b28862")
-		)
-		(pin "12"
-			(uuid "5d670424-93ba-412f-8afb-c1f4456666b4")
-		)
-		(pin "2"
-			(uuid "33c23bc3-ec2c-4484-855f-69659efea402")
-		)
-		(pin "3"
-			(uuid "50aa006e-9442-4bf5-bc8a-ff543408d906")
-		)
-		(pin "4"
-			(uuid "57f1ef47-82e0-42c8-bf96-2dd9b2a72da3")
-		)
-		(pin "5"
-			(uuid "ff720026-277f-4ba9-ba1d-8ac4805db328")
-		)
-		(pin "6"
-			(uuid "b5eb3ec1-f061-465b-baf1-cd74075466cc")
-		)
-		(pin "7"
-			(uuid "b47178cb-09fb-4165-beed-d41175cf6abc")
-		)
-		(pin "8"
-			(uuid "9afceebb-ce6f-41ce-a919-71636c3acd04")
-		)
-		(pin "9"
-			(uuid "e8fbb055-1032-485c-b980-e8f4f0e4bbfc")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "U901")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 208.28 129.54 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83a37ec5-7b7f-4e67-8395-24944ac469d9")
-		(property "Reference" "#PWR0965"
-			(at 208.28 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 208.28 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "84762e78-c6ba-495e-b6dc-32fca645c263")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR0965")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 124.46 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8af3b964-9614-48d1-b781-f0bc4307a6f1")
-		(property "Reference" "R1026"
-			(at 122.9614 59.5884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5k1"
-			(at 122.9614 57.277 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 124.46 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4aa1a05b-d539-4be1-9891-0dfa63c4cfd0")
-		)
-		(pin "2"
-			(uuid "e476540d-4e85-4a2f-aa2d-cfc68dfcd303")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "R1026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 111.76 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9090dcb4-0b9b-4b86-998d-3813e3862969")
-		(property "Reference" "R1018"
-			(at 110.2614 59.5884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5k1"
-			(at 110.2614 57.277 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 111.76 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ba6de6c-fac0-4f4a-92dc-47a29e339f3c")
-		)
-		(pin "2"
-			(uuid "ac12a7e2-cf7b-4484-b4e3-52701e734a66")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "R1018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 55.88 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9f8ac909-83a2-4e57-b13e-d0084f0b00f9")
-		(property "Reference" "#PWR0962"
-			(at 55.88 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 55.88 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c969ff6-8cf7-4aeb-9c59-8e92eac7d70c")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR0962")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 208.28 139.7 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9fe04cf-c43d-472c-9753-5ca94180f7ab")
+		(uuid "8106e82d-e10e-4b5d-ba44-46fed730f324")
 		(property "Reference" "#PWR0967"
-			(at 208.28 146.05 0)
+			(at 198.12 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +1593,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 208.153 144.0942 0)
+			(at 198.247 85.6742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,7 +1601,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 139.7 0)
+			(at 198.12 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,7 +1610,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 139.7 0)
+			(at 198.12 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +1619,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.28 139.7 0)
+			(at 198.12 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,10 +1628,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4a1a2b42-091e-44bf-8a06-044db8e16c6a")
+			(uuid "049c7f96-c86c-4a76-b55c-a4e8dd03330c")
 		)
 		(instances
-			(project "PCBA-TEK1"
+			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
 					(reference "#PWR0967")
 					(unit 1)
@@ -3107,16 +1641,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 78.74 0)
+		(at 160.02 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b3b58022-9e32-425a-93c2-92263b7ef78f")
-		(property "Reference" "#PWR01031"
-			(at 220.98 85.09 0)
+		(uuid "8c5f4316-8694-4cf1-8c24-34541ce1c25e")
+		(property "Reference" "#PWR0962"
+			(at 160.02 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3125,7 +1659,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 220.853 83.1342 0)
+			(at 159.893 62.8142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3133,7 +1667,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 78.74 0)
+			(at 160.02 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3142,7 +1676,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 78.74 0)
+			(at 160.02 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3151,7 +1685,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 78.74 0)
+			(at 160.02 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3160,12 +1694,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e70e57f0-5433-4016-8792-748f33f0ccfd")
+			(uuid "419f2360-675c-4c55-8f02-7565bdaebd75")
 		)
 		(instances
-			(project "PCBA-TEK1"
+			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01031")
+					(reference "#PWR0962")
 					(unit 1)
 				)
 			)
@@ -3173,7 +1707,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 142.24 106.68 0)
+		(at 177.8 40.64 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3181,212 +1715,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b88aeb24-6aea-43e9-8569-24ed5705d885")
-		(property "Reference" "#PWR0961"
-			(at 142.24 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 142.24 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9babb4af-56cc-47ff-9e20-864d2ae4376c")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR0961")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 220.98 129.54 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c390fad5-dd7e-49d4-bc18-40a8af8b304e")
-		(property "Reference" "#PWR0964"
-			(at 220.98 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 220.98 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b5028075-d9b3-4a6d-82ff-3cf6d981f317")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR0964")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 147.32 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c411727d-b4a5-4f48-a3d8-9671066e649a")
-		(property "Reference" "R1017"
-			(at 148.8186 49.6316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470R"
-			(at 148.8186 51.943 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 147.32 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 147.32 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cac677b5-abad-476a-b356-7532d34b019f")
-		)
-		(pin "2"
-			(uuid "ed869944-3a4d-42f6-94d2-ccc523f8437a")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "R1017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 147.32 106.68 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd97a454-40a0-4071-86d1-c2f203bbc235")
+		(uuid "964a7998-1d12-441c-bebe-1a901adfe91f")
 		(property "Reference" "#PWR0960"
-			(at 147.32 110.49 0)
+			(at 177.8 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3395,7 +1726,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 147.32 101.6 0)
+			(at 177.8 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +1734,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 106.68 0)
+			(at 177.8 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3412,7 +1743,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 106.68 0)
+			(at 177.8 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3421,7 +1752,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 106.68 0)
+			(at 177.8 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3430,10 +1761,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6cf691de-7ffc-495c-a6c3-8a4fcb0569f4")
+			(uuid "7a3fbbce-e9e4-497a-b129-88185e8ecf6c")
 		)
 		(instances
-			(project "PCBA-TEK1"
+			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
 					(reference "#PWR0960")
 					(unit 1)
@@ -3442,317 +1773,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 147.32 45.72 0)
-		(mirror y)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 199.39 134.62 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
-		(uuid "cf9cf266-7baa-4984-b48d-afb384fd61ec")
-		(property "Reference" "#PWR01025"
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 147.32 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 147.32 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56edf3f7-b0f3-45d9-afa4-5d724d5e476b")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 220.98 68.58 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7a5775e-8ab0-47d6-a319-7f9bd4df2633")
-		(property "Reference" "#PWR01029"
-			(at 220.98 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 220.98 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba92be10-7c19-4235-a2c1-8d40359aaff8")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 208.28 68.58 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db9fe227-3fb4-4f5a-bcd0-7ab18209a6a1")
-		(property "Reference" "#PWR01030"
-			(at 208.28 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.28 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "123666f6-0d12-4b2e-a31b-f4137a2b10db")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "#PWR01030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:DISPLAY_TEK1")
-		(at 177.8 73.66 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e4e83025-aacd-4671-82af-d5c26bd94582")
-		(property "Reference" "U1003"
-			(at 177.8 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DISPLAY_TEK1 (NF)"
-			(at 177.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:Display_TEK1"
-			(at 187.96 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.buydisplay.com/2-inch-ips-tft-lcd-display-ips-panel-screen-240x320-for-smart-watch"
-			(at 149.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a558a5e2-711a-48f5-82cd-956200bac9f7")
-		)
-		(pin "10"
-			(uuid "5029b4fe-481c-4894-a3a8-509c6cdd2900")
-		)
-		(pin "11"
-			(uuid "8690d25c-81ca-4158-a317-104d71623662")
-		)
-		(pin "12"
-			(uuid "a11a1cdb-ec30-4f63-a5b7-87c572abd983")
-		)
-		(pin "2"
-			(uuid "1eca2874-1f0e-4838-8e8c-ab323655ad96")
-		)
-		(pin "3"
-			(uuid "cf04c0ce-a540-4454-a2e0-b35b454ad13a")
-		)
-		(pin "4"
-			(uuid "cedb04f8-28d4-45ff-9e4e-1fbc58a7a783")
-		)
-		(pin "5"
-			(uuid "aa8926b5-3238-4b75-8950-89a36974976b")
-		)
-		(pin "6"
-			(uuid "b4e1d2ad-6c99-41e5-8eb6-0fca78d224b5")
-		)
-		(pin "7"
-			(uuid "c252960f-051e-469e-834a-ce1ab703ace6")
-		)
-		(pin "8"
-			(uuid "3797ceab-d2c0-4ae5-9376-707d90f78d1f")
-		)
-		(pin "9"
-			(uuid "65ffa4cc-1c30-4f8d-90f9-b4fba70c8af1")
-		)
-		(instances
-			(project "PCBA-TEK1"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "U1003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:CAP")
-		(at 220.98 134.62 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f26a9d81-ffc8-4e27-b3b8-fae597fb2372")
-		(property "Reference" "C919"
-			(at 218.6432 133.4516 0)
+		(uuid "a0f0e06c-709a-4851-b1a0-875094907bc6")
+		(property "Reference" "H905"
+			(at 201.93 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,8 +1791,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 218.6432 135.763 0)
+		(property "Value" "MountingHole_Pad"
+			(at 201.93 134.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,8 +1800,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:CAP_0402"
-			(at 220.98 134.62 0)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5_FEMALE"
+			(at 199.39 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3779,7 +1810,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.98 134.62 0)
+			(at 199.39 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,8 +1818,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 220.98 134.62 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 199.39 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3797,15 +1828,573 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9e5276f-f599-4212-a48d-92d4b6230d08")
-		)
-		(pin "2"
-			(uuid "dc26b199-4a89-4d09-9abf-c9e7d49b69f0")
+			(uuid "505670a8-b88c-4cba-980a-b3c8b38076a8")
 		)
 		(instances
-			(project "PCBA-TEK1"
+			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
-					(reference "C919")
+					(reference "H905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 220.98 43.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a26da1fc-462d-4482-91c9-062c13358892")
+		(property "Reference" "#PWR0961"
+			(at 220.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 220.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6935274-3d74-407e-83ee-aa528ace962a")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "#PWR0961")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 187.96 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "ac48ef5c-ce84-4533-bc1e-308100618620")
+		(property "Reference" "J901"
+			(at 189.23 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 189.23 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:J_BATTERY_CONN_FEMALE"
+			(at 187.96 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 187.96 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9705c03-6c25-493a-a361-e7c1fa4a354d")
+		)
+		(pin "2"
+			(uuid "38dee646-8fd9-4a8c-a3d4-c51533ac806c")
+		)
+		(pin "3"
+			(uuid "84729dc6-e86a-430b-bb95-96fcfcbd158c")
+		)
+		(pin "4"
+			(uuid "f25aa67f-7e7d-43a7-ad3e-c81b26a45aac")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "J901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 160.02 78.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d6ede8a8-1544-4f83-9dc2-571dc93ea507")
+		(property "Reference" "H903"
+			(at 162.56 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 162.56 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5_FEMALE"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b9991bd-50a2-4145-bf77-19f3038e2abb")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "H903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ead47391-c1c8-450f-8d55-84fc18ff4f1e")
+		(property "Reference" "#PWR0964"
+			(at 198.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.247 60.2742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a743f3f7-3a0b-4307-8489-3a3ec7f270a9")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "#PWR0964")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 210.82 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "ebd7afda-39cc-4232-ac28-1bc369973806")
+		(property "Reference" "J908"
+			(at 209.55 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 209.55 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:J_BATTERY_CONN_FEMALE"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76902170-a7ab-4013-bdee-a1b781619ea7")
+		)
+		(pin "2"
+			(uuid "ee915efb-925a-4644-b0ad-406e14c46de6")
+		)
+		(pin "3"
+			(uuid "70bad90d-4789-42b4-8215-e1a013788104")
+		)
+		(pin "4"
+			(uuid "d84f1acc-1542-466c-9996-cd5f12119e47")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "J908")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 233.68 54.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "ecdeb941-6414-4d06-a77a-8d3b024e034a")
+		(property "Reference" "H902"
+			(at 236.22 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 236.22 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5_FEMALE"
+			(at 233.68 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 233.68 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ace9a08-c53b-4f5b-9eb8-7dac2a94da0e")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "H902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 190.5 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f93afb26-a2db-4d72-8053-80dd8929ca7d")
+		(property "Reference" "J907"
+			(at 189.23 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 189.23 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:J_BATTERY_CONN_FEMALE"
+			(at 190.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 190.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f69c72d-e5d1-430d-9cae-93b684d7c4f8")
+		)
+		(pin "2"
+			(uuid "f0a3c230-f495-4ac7-b4b8-805ef0d94ffb")
+		)
+		(pin "3"
+			(uuid "554c9e19-ae07-4a49-a122-0da259f3bca9")
+		)
+		(pin "4"
+			(uuid "00a4f8b9-6cea-4ee1-8005-8825120d0a32")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "J907")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 208.28 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "faeccf15-1f71-4501-b61b-0f8d08bfda8c")
+		(property "Reference" "J902"
+			(at 209.55 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 209.55 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:J_BATTERY_CONN_FEMALE"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5da87fc-d4fc-4e91-9ad5-b1c8dd8ec535")
+		)
+		(pin "2"
+			(uuid "575a0b4f-462d-4b97-bc4e-fe4960d6912a")
+		)
+		(pin "3"
+			(uuid "8233532e-ae2a-4dd5-bfea-bb73bc7ff1ac")
+		)
+		(pin "4"
+			(uuid "0ac82886-b04d-4129-98b0-01460e5684cc")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cee77759-e3a7-40c4-9e57-a336a0077d12"
+					(reference "J902")
 					(unit 1)
 				)
 			)
