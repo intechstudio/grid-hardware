@@ -1621,108 +1621,6 @@
 				)
 			)
 		)
-		(symbol "suku_basics:MountingHole_Pad"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "suku_basics:RES"
 			(pin_numbers hide)
 			(pin_names
@@ -1834,6 +1732,99 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "suku_basics:SMD_NUT"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMD_NUT"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SMD Nut"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMD_NUT_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMD_NUT_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4103,7 +4094,7 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:MountingHole_Pad")
+		(lib_id "suku_basics:SMD_NUT")
 		(at 22.86 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4148,7 +4139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD Nut"
 			(at 22.86 68.58 0)
 			(effects
 				(font
@@ -5038,7 +5029,7 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:MountingHole_Pad")
+		(lib_id "suku_basics:SMD_NUT")
 		(at 203.2 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5083,7 +5074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD Nut"
 			(at 203.2 154.94 0)
 			(effects
 				(font
@@ -5653,7 +5644,7 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:MountingHole_Pad")
+		(lib_id "suku_basics:SMD_NUT")
 		(at 360.68 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5698,7 +5689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD Nut"
 			(at 360.68 99.06 0)
 			(effects
 				(font
@@ -5915,7 +5906,7 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:MountingHole_Pad")
+		(lib_id "suku_basics:SMD_NUT")
 		(at 22.86 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5960,7 +5951,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD Nut"
 			(at 22.86 93.98 0)
 			(effects
 				(font
@@ -8805,7 +8796,7 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:MountingHole_Pad")
+		(lib_id "suku_basics:SMD_NUT")
 		(at 360.68 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8850,7 +8841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "SMD Nut"
 			(at 360.68 73.66 0)
 			(effects
 				(font
