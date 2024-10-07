@@ -370,108 +370,6 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Transistor_FET:2N7002"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -1714,6 +1612,108 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "suku_basics:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3740,7 +3740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05543f70-1db8-460e-8320-a10eb7930245")
-		(property "Reference" "#PWR01013"
+		(property "Reference" "#PWR01015"
 			(at 78.74 87.63 0)
 			(effects
 				(font
@@ -3790,7 +3790,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01013")
+					(reference "#PWR01015")
 					(unit 1)
 				)
 			)
@@ -3805,7 +3805,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "0867d9ce-14b6-4ff1-900c-7bcececfdb3d")
-		(property "Reference" "J1002"
+		(property "Reference" "J1011"
 			(at 139.7 196.8499 90)
 			(effects
 				(font
@@ -3862,7 +3862,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1002")
+					(reference "J1011")
 					(unit 1)
 				)
 			)
@@ -3879,7 +3879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09266665-0446-4fe0-9974-5178d5bb20a6")
-		(property "Reference" "#PWR01023"
+		(property "Reference" "#PWR01017"
 			(at 337.82 87.63 0)
 			(effects
 				(font
@@ -3929,7 +3929,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01023")
+					(reference "#PWR01017")
 					(unit 1)
 				)
 			)
@@ -4042,7 +4042,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f009d14-f913-49ed-841d-2e014282d00c")
-		(property "Reference" "R1001"
+		(property "Reference" "R1002"
 			(at 141.1986 67.4116 0)
 			(effects
 				(font
@@ -4096,23 +4096,23 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "R1001")
+					(reference "R1002")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "suku_basics:MountingHole_Pad")
 		(at 22.86 68.58 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "115934d7-dc93-4f19-8793-a23ae4547774")
-		(property "Reference" "H1001"
+		(property "Reference" "J1003"
 			(at 25.4 66.0399 0)
 			(effects
 				(font
@@ -4163,7 +4163,7 @@
 		(instances
 			(project ""
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "H1001")
+					(reference "J1003")
 					(unit 1)
 				)
 			)
@@ -4346,7 +4346,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15bed44e-48d3-459e-9ef4-8fdaaaa77dcd")
-		(property "Reference" "#PWR01024"
+		(property "Reference" "#PWR01020"
 			(at 325.12 100.33 0)
 			(effects
 				(font
@@ -4396,7 +4396,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01024")
+					(reference "#PWR01020")
 					(unit 1)
 				)
 			)
@@ -4412,7 +4412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16c89160-4224-431e-9e00-bcaa87cc690a")
-		(property "Reference" "SW1003"
+		(property "Reference" "SW1002"
 			(at 149.86 232.41 0)
 			(effects
 				(font
@@ -4473,7 +4473,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "SW1003")
+					(reference "SW1002")
 					(unit 1)
 				)
 			)
@@ -4488,7 +4488,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1b32636c-cd68-467b-827e-1f917ee2b48c")
-		(property "Reference" "#PWR01026"
+		(property "Reference" "#PWR01004"
 			(at 182.88 46.99 0)
 			(effects
 				(font
@@ -4538,7 +4538,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01026")
+					(reference "#PWR01004")
 					(unit 1)
 				)
 			)
@@ -4554,7 +4554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25c783f5-7034-470f-aa44-d0bb1cb04f23")
-		(property "Reference" "J1003"
+		(property "Reference" "J1007"
 			(at 194.31 107.95 90)
 			(effects
 				(font
@@ -4562,7 +4562,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04"
+		(property "Value" "BC-12-4PD170-08"
 			(at 194.31 110.49 90)
 			(effects
 				(font
@@ -4612,7 +4612,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1003")
+					(reference "J1007")
 					(unit 1)
 				)
 			)
@@ -4629,7 +4629,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c3bacf6-2467-42f3-9009-613fe41e3e59")
-		(property "Reference" "#PWR01010"
+		(property "Reference" "#PWR01009"
 			(at 132.08 74.93 0)
 			(effects
 				(font
@@ -4679,7 +4679,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01010")
+					(reference "#PWR01009")
 					(unit 1)
 				)
 			)
@@ -4772,7 +4772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34745c7b-8fee-4710-a35d-77e1ec22d56a")
-		(property "Reference" "SW1004"
+		(property "Reference" "SW1006"
 			(at 149.86 257.81 0)
 			(effects
 				(font
@@ -4833,7 +4833,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "SW1004")
+					(reference "SW1006")
 					(unit 1)
 				)
 			)
@@ -4850,7 +4850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "359b762c-7a8f-4d41-9301-5e84e2c97bd0")
-		(property "Reference" "#PWR01038"
+		(property "Reference" "#PWR01028"
 			(at 187.96 130.81 0)
 			(effects
 				(font
@@ -4900,7 +4900,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01038")
+					(reference "#PWR01028")
 					(unit 1)
 				)
 			)
@@ -4915,7 +4915,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35c0921e-db08-42f6-9199-ff98ad8a2689")
-		(property "Reference" "#PWR01035"
+		(property "Reference" "#PWR01037"
 			(at 241.3 250.19 0)
 			(effects
 				(font
@@ -4965,7 +4965,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01035")
+					(reference "#PWR01037")
 					(unit 1)
 				)
 			)
@@ -4981,7 +4981,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41ec3b23-ee0b-41be-9d93-4fa850a4a07b")
-		(property "Reference" "#PWR01039"
+		(property "Reference" "#PWR01013"
 			(at 360.68 85.09 0)
 			(effects
 				(font
@@ -5031,23 +5031,23 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01039")
+					(reference "#PWR01013")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "suku_basics:MountingHole_Pad")
 		(at 203.2 154.94 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4209e35b-5b24-42ee-bc96-6938f44da0d0")
-		(property "Reference" "H1002"
+		(property "Reference" "J1009"
 			(at 205.74 152.3999 0)
 			(effects
 				(font
@@ -5098,7 +5098,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "H1002")
+					(reference "J1009")
 					(unit 1)
 				)
 			)
@@ -5114,7 +5114,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "484baf84-b1d8-42a5-9bbd-536990b1ccaa")
-		(property "Reference" "#PWR01025"
+		(property "Reference" "#PWR01021"
 			(at 337.82 100.33 0)
 			(effects
 				(font
@@ -5164,7 +5164,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01025")
+					(reference "#PWR01021")
 					(unit 1)
 				)
 			)
@@ -5180,7 +5180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "485846d3-bfa7-498a-8c3d-d3e6338ed75a")
-		(property "Reference" "SW1005"
+		(property "Reference" "SW1003"
 			(at 200.66 232.41 0)
 			(effects
 				(font
@@ -5241,7 +5241,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "SW1005")
+					(reference "SW1003")
 					(unit 1)
 				)
 			)
@@ -5256,7 +5256,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4982d7b7-4c5d-4f51-b0f6-235e85dbf7e3")
-		(property "Reference" "#PWR01042"
+		(property "Reference" "#PWR01030"
 			(at 208.28 120.65 0)
 			(effects
 				(font
@@ -5306,7 +5306,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01042")
+					(reference "#PWR01030")
 					(unit 1)
 				)
 			)
@@ -5321,7 +5321,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "54b12eb4-faac-4355-a9be-5e1a0630946a")
-		(property "Reference" "#PWR01031"
+		(property "Reference" "#PWR01040"
 			(at 139.7 275.59 0)
 			(effects
 				(font
@@ -5371,7 +5371,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01031")
+					(reference "#PWR01040")
 					(unit 1)
 				)
 			)
@@ -5387,7 +5387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "557f421c-0bc0-4bfe-84dd-5116af0ffb20")
-		(property "Reference" "#PWR01019"
+		(property "Reference" "#PWR01022"
 			(at 22.86 105.41 0)
 			(effects
 				(font
@@ -5437,7 +5437,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01019")
+					(reference "#PWR01022")
 					(unit 1)
 				)
 			)
@@ -5452,7 +5452,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d5d8278-67e5-4252-b5d3-468b9641033a")
-		(property "Reference" "#PWR01030"
+		(property "Reference" "#PWR01035"
 			(at 139.7 250.19 0)
 			(effects
 				(font
@@ -5502,7 +5502,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01030")
+					(reference "#PWR01035")
 					(unit 1)
 				)
 			)
@@ -5519,7 +5519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63150c0f-7920-4d0c-8da5-0ae17f4ba41a")
-		(property "Reference" "#PWR01022"
+		(property "Reference" "#PWR01016"
 			(at 325.12 87.63 0)
 			(effects
 				(font
@@ -5569,7 +5569,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01022")
+					(reference "#PWR01016")
 					(unit 1)
 				)
 			)
@@ -5585,7 +5585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6759d66f-ff8c-4084-955d-9308ca63ece3")
-		(property "Reference" "SW1002"
+		(property "Reference" "SW1005"
 			(at 99.06 257.81 0)
 			(effects
 				(font
@@ -5646,23 +5646,23 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "SW1002")
+					(reference "SW1005")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "suku_basics:MountingHole_Pad")
 		(at 360.68 99.06 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a09e455-946b-47dc-8732-39ff3c461782")
-		(property "Reference" "H1008"
+		(property "Reference" "J1006"
 			(at 363.22 96.5199 0)
 			(effects
 				(font
@@ -5713,7 +5713,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "H1008")
+					(reference "J1006")
 					(unit 1)
 				)
 			)
@@ -5728,7 +5728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6da7d78e-3d56-4b5d-8b31-7535a2119522")
-		(property "Reference" "#PWR01028"
+		(property "Reference" "#PWR01038"
 			(at 88.9 275.59 0)
 			(effects
 				(font
@@ -5778,7 +5778,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01028")
+					(reference "#PWR01038")
 					(unit 1)
 				)
 			)
@@ -5793,7 +5793,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f4d234b-c8b2-4021-afc1-bcb966a9ab95")
-		(property "Reference" "#PWR01007"
+		(property "Reference" "#PWR01001"
 			(at 200.66 44.45 0)
 			(effects
 				(font
@@ -5843,7 +5843,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01007")
+					(reference "#PWR01001")
 					(unit 1)
 				)
 			)
@@ -5858,7 +5858,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70f85b24-de06-4580-b998-890f6a46a02f")
-		(property "Reference" "#PWR01003"
+		(property "Reference" "#PWR01026"
 			(at 271.78 113.03 0)
 			(effects
 				(font
@@ -5908,23 +5908,23 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01003")
+					(reference "#PWR01026")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "suku_basics:MountingHole_Pad")
 		(at 22.86 93.98 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71fd5077-5df2-44e8-91f5-47bfe788d00e")
-		(property "Reference" "H1003"
+		(property "Reference" "J1005"
 			(at 25.4 91.4399 0)
 			(effects
 				(font
@@ -5975,7 +5975,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "H1003")
+					(reference "J1005")
 					(unit 1)
 				)
 			)
@@ -5991,7 +5991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7870d657-7218-44b9-9d71-ab039f019495")
-		(property "Reference" "J1007"
+		(property "Reference" "J1008"
 			(at 214.63 107.95 90)
 			(effects
 				(font
@@ -5999,7 +5999,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04"
+		(property "Value" "BC-12-4PD170-08"
 			(at 214.63 110.49 90)
 			(effects
 				(font
@@ -6049,7 +6049,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1007")
+					(reference "J1008")
 					(unit 1)
 				)
 			)
@@ -6066,7 +6066,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79cc0676-94d6-4ad3-af3f-7ecb43a50424")
-		(property "Reference" "#PWR01016"
+		(property "Reference" "#PWR01007"
 			(at 226.06 67.31 0)
 			(effects
 				(font
@@ -6116,7 +6116,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01016")
+					(reference "#PWR01007")
 					(unit 1)
 				)
 			)
@@ -6131,7 +6131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d171aaa-4e40-4727-abdc-98d349498049")
-		(property "Reference" "#PWR01029"
+		(property "Reference" "#PWR01039"
 			(at 127 275.59 0)
 			(effects
 				(font
@@ -6181,7 +6181,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01029")
+					(reference "#PWR01039")
 					(unit 1)
 				)
 			)
@@ -6196,7 +6196,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d5a34bd-509c-415d-8302-3e96f943c7a7")
-		(property "Reference" "#PWR01004"
+		(property "Reference" "#PWR01023"
 			(at 203.2 107.95 0)
 			(effects
 				(font
@@ -6246,7 +6246,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01004")
+					(reference "#PWR01023")
 					(unit 1)
 				)
 			)
@@ -6261,7 +6261,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d92caa3-beec-4552-812a-ce64a300db8f")
-		(property "Reference" "#PWR01008"
+		(property "Reference" "#PWR01002"
 			(at 269.24 44.45 0)
 			(effects
 				(font
@@ -6311,7 +6311,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01008")
+					(reference "#PWR01002")
 					(unit 1)
 				)
 			)
@@ -6326,7 +6326,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e730959-b5bf-49a5-a4c3-87f68866eabe")
-		(property "Reference" "#PWR01005"
+		(property "Reference" "#PWR01012"
 			(at 203.2 82.55 0)
 			(effects
 				(font
@@ -6376,7 +6376,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01005")
+					(reference "#PWR01012")
 					(unit 1)
 				)
 			)
@@ -6468,7 +6468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85c3f17b-9070-40ce-8f3c-9b29c9e9319f")
-		(property "Reference" "J1005"
+		(property "Reference" "J1001"
 			(at 194.31 59.69 90)
 			(effects
 				(font
@@ -6476,7 +6476,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04"
+		(property "Value" "BC-12-4PD170-08"
 			(at 194.31 57.15 90)
 			(effects
 				(font
@@ -6526,7 +6526,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1005")
+					(reference "J1001")
 					(unit 1)
 				)
 			)
@@ -6541,7 +6541,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "869ced77-97ab-4d43-ae5c-e2e354342e68")
-		(property "Reference" "R1002"
+		(property "Reference" "R1003"
 			(at 250.4186 69.9516 0)
 			(effects
 				(font
@@ -6595,7 +6595,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "R1002")
+					(reference "R1003")
 					(unit 1)
 				)
 			)
@@ -6611,7 +6611,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86e0d272-a393-4d05-b2e6-cc0cef42678f")
-		(property "Reference" "#PWR01017"
+		(property "Reference" "#PWR01010"
 			(at 22.86 80.01 0)
 			(effects
 				(font
@@ -6661,7 +6661,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01017")
+					(reference "#PWR01010")
 					(unit 1)
 				)
 			)
@@ -6676,7 +6676,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a6eb4c4-c931-4b4a-9224-dc3d6bd8470f")
-		(property "Reference" "#PWR01036"
+		(property "Reference" "#PWR01043"
 			(at 241.3 275.59 0)
 			(effects
 				(font
@@ -6726,7 +6726,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01036")
+					(reference "#PWR01043")
 					(unit 1)
 				)
 			)
@@ -6890,7 +6890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95b41fc3-6697-4c48-9aa8-3d7da3834eaa")
-		(property "Reference" "#PWR01001"
+		(property "Reference" "#PWR01014"
 			(at 66.04 87.63 0)
 			(effects
 				(font
@@ -6940,7 +6940,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01001")
+					(reference "#PWR01014")
 					(unit 1)
 				)
 			)
@@ -6956,7 +6956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7440fcb-5fae-4aec-84f3-be57839bba63")
-		(property "Reference" "J1004"
+		(property "Reference" "J1002"
 			(at 214.63 59.69 90)
 			(effects
 				(font
@@ -6964,7 +6964,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04"
+		(property "Value" "BC-12-4PD170-08"
 			(at 214.63 57.15 90)
 			(effects
 				(font
@@ -7014,7 +7014,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1004")
+					(reference "J1002")
 					(unit 1)
 				)
 			)
@@ -7029,7 +7029,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7ee51ed-b0b9-4099-9b9e-4a627265b556")
-		(property "Reference" "R1003"
+		(property "Reference" "R1001"
 			(at 184.3786 34.3916 0)
 			(effects
 				(font
@@ -7083,7 +7083,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "R1003")
+					(reference "R1001")
 					(unit 1)
 				)
 			)
@@ -7100,7 +7100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aac16b1b-12fa-41f1-a7bd-c04b2c44a273")
-		(property "Reference" "#PWR01037"
+		(property "Reference" "#PWR01027"
 			(at 177.8 130.81 0)
 			(effects
 				(font
@@ -7150,7 +7150,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01037")
+					(reference "#PWR01027")
 					(unit 1)
 				)
 			)
@@ -7166,7 +7166,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "acdbe909-566b-44a6-98c0-127d7de771e8")
-		(property "Reference" "J1001"
+		(property "Reference" "J1010"
 			(at 114.3 196.8499 90)
 			(effects
 				(font
@@ -7223,7 +7223,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1001")
+					(reference "J1010")
 					(unit 1)
 				)
 			)
@@ -7446,7 +7446,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "b6834a69-1848-466e-bd6f-6197f48fa24a")
-		(property "Reference" "J1008"
+		(property "Reference" "J1013"
 			(at 241.3 196.8499 90)
 			(effects
 				(font
@@ -7503,7 +7503,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1008")
+					(reference "J1013")
 					(unit 1)
 				)
 			)
@@ -7520,7 +7520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7c73498-5678-450b-ba29-84ab6f072e4f")
-		(property "Reference" "#PWR01044"
+		(property "Reference" "#PWR01032"
 			(at 228.6 130.81 0)
 			(effects
 				(font
@@ -7570,7 +7570,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01044")
+					(reference "#PWR01032")
 					(unit 1)
 				)
 			)
@@ -7586,7 +7586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bff5c1a5-6626-4eb7-aac4-f6d91143a86d")
-		(property "Reference" "SW1006"
+		(property "Reference" "SW1007"
 			(at 200.66 257.81 0)
 			(effects
 				(font
@@ -7647,7 +7647,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "SW1006")
+					(reference "SW1007")
 					(unit 1)
 				)
 			)
@@ -7662,7 +7662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c345bad2-149d-461b-a8ae-c942e009034d")
-		(property "Reference" "#PWR01002"
+		(property "Reference" "#PWR01024"
 			(at 127 110.49 0)
 			(effects
 				(font
@@ -7712,7 +7712,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01002")
+					(reference "#PWR01024")
 					(unit 1)
 				)
 			)
@@ -7729,7 +7729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c55eae30-9320-4d22-b172-c99f80e83204")
-		(property "Reference" "#PWR01041"
+		(property "Reference" "#PWR01029"
 			(at 198.12 130.81 0)
 			(effects
 				(font
@@ -7779,7 +7779,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01041")
+					(reference "#PWR01029")
 					(unit 1)
 				)
 			)
@@ -7795,7 +7795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c628426e-2649-4035-8c70-92d257db1d8c")
-		(property "Reference" "#FLG01003"
+		(property "Reference" "#FLG01002"
 			(at 284.48 31.115 0)
 			(effects
 				(font
@@ -7845,7 +7845,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#FLG01003")
+					(reference "#FLG01002")
 					(unit 1)
 				)
 			)
@@ -7860,7 +7860,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c92163c7-2de1-43ab-b038-5ba26b717548")
-		(property "Reference" "#PWR01032"
+		(property "Reference" "#PWR01036"
 			(at 190.5 250.19 0)
 			(effects
 				(font
@@ -7910,7 +7910,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01032")
+					(reference "#PWR01036")
 					(unit 1)
 				)
 			)
@@ -7926,7 +7926,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "ca099b4e-6bc0-4161-8556-529aeb376554")
-		(property "Reference" "J1006"
+		(property "Reference" "J1012"
 			(at 215.9 196.8499 90)
 			(effects
 				(font
@@ -7983,7 +7983,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1006")
+					(reference "J1012")
 					(unit 1)
 				)
 			)
@@ -8000,7 +8000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd5d8b98-62b5-434e-8f5b-245e1ab59113")
-		(property "Reference" "#PWR01020"
+		(property "Reference" "#PWR01006"
 			(at 139.7 67.31 0)
 			(effects
 				(font
@@ -8050,7 +8050,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01020")
+					(reference "#PWR01006")
 					(unit 1)
 				)
 			)
@@ -8206,7 +8206,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d28ff12d-e949-4b11-89af-71bbd87c5b78")
-		(property "Reference" "#PWR01014"
+		(property "Reference" "#PWR01018"
 			(at 66.04 100.33 0)
 			(effects
 				(font
@@ -8256,7 +8256,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01014")
+					(reference "#PWR01018")
 					(unit 1)
 				)
 			)
@@ -8341,7 +8341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7af6bd8-8ecd-435b-85d0-54dcfb2e47ea")
-		(property "Reference" "SW1007"
+		(property "Reference" "SW1004"
 			(at 251.46 232.41 0)
 			(effects
 				(font
@@ -8402,7 +8402,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "SW1007")
+					(reference "SW1004")
 					(unit 1)
 				)
 			)
@@ -8419,7 +8419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8afba03-39c4-4a89-9a7b-3a8b5d69e478")
-		(property "Reference" "#PWR01043"
+		(property "Reference" "#PWR01031"
 			(at 218.44 130.81 0)
 			(effects
 				(font
@@ -8469,7 +8469,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01043")
+					(reference "#PWR01031")
 					(unit 1)
 				)
 			)
@@ -8484,7 +8484,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9eaaf24-67af-4a87-a13f-79fdb9c3d4e9")
-		(property "Reference" "#PWR01027"
+		(property "Reference" "#PWR01034"
 			(at 88.9 250.19 0)
 			(effects
 				(font
@@ -8534,7 +8534,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01027")
+					(reference "#PWR01034")
 					(unit 1)
 				)
 			)
@@ -8549,7 +8549,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd8fd6cd-ef34-47bb-ac19-3138f39abaed")
-		(property "Reference" "#PWR01033"
+		(property "Reference" "#PWR01041"
 			(at 190.5 275.59 0)
 			(effects
 				(font
@@ -8599,7 +8599,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01033")
+					(reference "#PWR01041")
 					(unit 1)
 				)
 			)
@@ -8615,7 +8615,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2b93835-ee41-4f89-818f-ed6520b7fde3")
-		(property "Reference" "#PWR01015"
+		(property "Reference" "#PWR01019"
 			(at 78.74 100.33 0)
 			(effects
 				(font
@@ -8665,7 +8665,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01015")
+					(reference "#PWR01019")
 					(unit 1)
 				)
 			)
@@ -8681,7 +8681,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2f7b0cf-13fe-496e-84f9-0cd0c4883734")
-		(property "Reference" "#PWR01018"
+		(property "Reference" "#PWR01033"
 			(at 203.2 166.37 0)
 			(effects
 				(font
@@ -8731,7 +8731,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01018")
+					(reference "#PWR01033")
 					(unit 1)
 				)
 			)
@@ -8748,7 +8748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4068f82-e6f2-4c7b-9159-541352a1aa4b")
-		(property "Reference" "#PWR01021"
+		(property "Reference" "#PWR01005"
 			(at 182.88 64.77 0)
 			(effects
 				(font
@@ -8798,23 +8798,23 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01021")
+					(reference "#PWR01005")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "suku_basics:MountingHole_Pad")
 		(at 360.68 73.66 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e89165f3-986d-43c6-94fa-c4cb58b7a8b0")
-		(property "Reference" "H1007"
+		(property "Reference" "J1004"
 			(at 363.22 71.1199 0)
 			(effects
 				(font
@@ -8865,7 +8865,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "H1007")
+					(reference "J1004")
 					(unit 1)
 				)
 			)
@@ -8950,7 +8950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb5c1ef2-c68a-4986-8285-6e3337d4b176")
-		(property "Reference" "#FLG01002"
+		(property "Reference" "#FLG01001"
 			(at 269.24 31.115 0)
 			(effects
 				(font
@@ -9000,7 +9000,7 @@
 		(instances
 			(project ""
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#FLG01002")
+					(reference "#FLG01001")
 					(unit 1)
 				)
 			)
@@ -9086,7 +9086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f29f6c63-6826-470a-b981-bbb0d72de6f8")
-		(property "Reference" "#PWR01012"
+		(property "Reference" "#PWR01008"
 			(at 248.92 69.85 0)
 			(effects
 				(font
@@ -9136,7 +9136,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01012")
+					(reference "#PWR01008")
 					(unit 1)
 				)
 			)
@@ -9153,7 +9153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9506b09-edc6-4c2e-96f8-7326d81646f8")
-		(property "Reference" "#PWR01009"
+		(property "Reference" "#PWR01003"
 			(at 284.48 34.29 0)
 			(effects
 				(font
@@ -9203,7 +9203,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01009")
+					(reference "#PWR01003")
 					(unit 1)
 				)
 			)
@@ -9219,7 +9219,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb2bcb33-aa31-4de2-800f-6ffbfe2cb232")
-		(property "Reference" "#PWR01040"
+		(property "Reference" "#PWR01025"
 			(at 360.68 110.49 0)
 			(effects
 				(font
@@ -9269,7 +9269,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01040")
+					(reference "#PWR01025")
 					(unit 1)
 				)
 			)
@@ -9284,7 +9284,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fbb46a76-6f53-4aaa-b308-f6a7521e8336")
-		(property "Reference" "#PWR01034"
+		(property "Reference" "#PWR01042"
 			(at 228.6 275.59 0)
 			(effects
 				(font
@@ -9334,7 +9334,7 @@
 		(instances
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01034")
+					(reference "#PWR01042")
 					(unit 1)
 				)
 			)
