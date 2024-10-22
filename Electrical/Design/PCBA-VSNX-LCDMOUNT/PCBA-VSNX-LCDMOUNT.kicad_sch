@@ -2125,6 +2125,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 96.52) (xy 52.07 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b7d6149-9381-41cd-819d-dbe1322d469f")
+	)
+	(wire
+		(pts
 			(xy 243.84 266.7) (xy 241.3 266.7)
 		)
 		(stroke
@@ -3255,7 +3265,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 76.2) (xy 360.68 78.74)
+			(xy 375.92 76.2) (xy 375.92 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3265,7 +3275,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 101.6) (xy 360.68 104.14)
+			(xy 375.92 101.6) (xy 375.92 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3362,6 +3372,16 @@
 			(type default)
 		)
 		(uuid "f2781716-94c3-4d27-888e-2c25222d9a0a")
+	)
+	(wire
+		(pts
+			(xy 360.68 76.2) (xy 360.68 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f46bbb53-f233-4965-97e4-91a1051debba")
 	)
 	(wire
 		(pts
@@ -4536,6 +4556,73 @@
 		)
 	)
 	(symbol
+		(lib_id "suku_basics:SMD_NUT")
+		(at 52.07 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25aa93fe-82b0-450d-92ff-ca4cfda7e38c")
+		(property "Reference" "J1015"
+			(at 54.61 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMTSO1625MTJ"
+			(at 54.61 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
+			(at 52.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD Nut"
+			(at 52.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dcd270c1-2966-48d4-b5c2-b419887bcf91")
+		)
+		(instances
+			(project "PCBA-VSNX-LCDMOUNT"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "J1015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 195.58 104.14 270)
 		(unit 1)
@@ -4964,7 +5051,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 360.68 78.74 0)
+		(at 375.92 78.74 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4973,7 +5060,7 @@
 		(dnp no)
 		(uuid "41ec3b23-ee0b-41be-9d93-4fa850a4a07b")
 		(property "Reference" "#PWR01013"
-			(at 360.68 85.09 0)
+			(at 375.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,7 +5069,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 360.553 83.1342 0)
+			(at 375.793 83.1342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4990,7 +5077,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 360.68 78.74 0)
+			(at 375.92 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4999,7 +5086,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 360.68 78.74 0)
+			(at 375.92 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,7 +5095,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 360.68 78.74 0)
+			(at 375.92 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5435,6 +5522,139 @@
 		)
 	)
 	(symbol
+		(lib_id "suku_basics:SMD_NUT")
+		(at 360.68 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57f39dda-1348-4159-a8eb-daf529490720")
+		(property "Reference" "J1016"
+			(at 363.22 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMTSO1625MTJ"
+			(at 363.22 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
+			(at 360.68 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 360.68 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD Nut"
+			(at 360.68 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65330fb1-6c63-4b46-8d8e-5d3d197d52ea")
+		)
+		(instances
+			(project "PCBA-VSNX-LCDMOUNT"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "J1016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 360.68 78.74 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5aefdc4a-e890-4868-a5d9-01bf1d8aa1f0")
+		(property "Reference" "#PWR01046"
+			(at 360.68 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 360.553 83.1342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 360.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 360.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 360.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "686e1cad-49ef-4641-b1c3-de323ff77ab3")
+		)
+		(instances
+			(project "PCBA-VSNX-LCDMOUNT"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 139.7 243.84 0)
 		(unit 1)
@@ -5645,7 +5865,7 @@
 	)
 	(symbol
 		(lib_id "suku_basics:SMD_NUT")
-		(at 360.68 99.06 0)
+		(at 375.92 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5654,7 +5874,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a09e455-946b-47dc-8732-39ff3c461782")
 		(property "Reference" "J1006"
-			(at 363.22 96.5199 0)
+			(at 378.46 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5663,7 +5883,7 @@
 			)
 		)
 		(property "Value" "SMTSO1625MTJ"
-			(at 363.22 99.0599 0)
+			(at 378.46 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5672,7 +5892,7 @@
 			)
 		)
 		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
-			(at 360.68 99.06 0)
+			(at 375.92 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,7 +5901,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 360.68 99.06 0)
+			(at 375.92 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5690,7 +5910,7 @@
 			)
 		)
 		(property "Description" "SMD Nut"
-			(at 360.68 99.06 0)
+			(at 375.92 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5967,6 +6187,72 @@
 			(project "PCBA-VSNX-LCDMOUNT"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "J1005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 99.06 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "77d25855-73ac-4216-87cf-d8aec7e12ca6")
+		(property "Reference" "#PWR01045"
+			(at 52.07 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 51.943 103.4542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3040e55-5725-4ff7-89d3-5c8a0c2e59cd")
+		)
+		(instances
+			(project "PCBA-VSNX-LCDMOUNT"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR01045")
 					(unit 1)
 				)
 			)
@@ -8797,7 +9083,7 @@
 	)
 	(symbol
 		(lib_id "suku_basics:SMD_NUT")
-		(at 360.68 73.66 0)
+		(at 375.92 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8806,7 +9092,7 @@
 		(fields_autoplaced yes)
 		(uuid "e89165f3-986d-43c6-94fa-c4cb58b7a8b0")
 		(property "Reference" "J1004"
-			(at 363.22 71.1199 0)
+			(at 378.46 71.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8815,7 +9101,7 @@
 			)
 		)
 		(property "Value" "SMTSO1625MTJ"
-			(at 363.22 73.6599 0)
+			(at 378.46 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8824,7 +9110,7 @@
 			)
 		)
 		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
-			(at 360.68 73.66 0)
+			(at 375.92 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8833,7 +9119,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 360.68 73.66 0)
+			(at 375.92 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8842,7 +9128,7 @@
 			)
 		)
 		(property "Description" "SMD Nut"
-			(at 360.68 73.66 0)
+			(at 375.92 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9202,7 +9488,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 360.68 104.14 0)
+		(at 375.92 104.14 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9211,7 +9497,7 @@
 		(dnp no)
 		(uuid "fb2bcb33-aa31-4de2-800f-6ffbfe2cb232")
 		(property "Reference" "#PWR01025"
-			(at 360.68 110.49 0)
+			(at 375.92 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9220,7 +9506,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 360.553 108.5342 0)
+			(at 375.793 108.5342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9228,7 +9514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 360.68 104.14 0)
+			(at 375.92 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9237,7 +9523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 360.68 104.14 0)
+			(at 375.92 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9246,7 +9532,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 360.68 104.14 0)
+			(at 375.92 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
