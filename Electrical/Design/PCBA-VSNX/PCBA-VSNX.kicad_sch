@@ -5,12 +5,6 @@
 	(uuid "e5217a0c-7f55-4c30-adda-7f8d95709d1b")
 	(paper "A3")
 	(lib_symbols)
-	(junction
-		(at 213.36 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "209c73f9-de16-400b-b152-86e236d8b759")
-	)
 	(no_connect
 		(at 208.28 111.76)
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
@@ -167,7 +161,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 185.42) (xy 213.36 185.42)
+			(xy 200.66 185.42) (xy 215.9 185.42)
 		)
 		(stroke
 			(width 0)
@@ -214,16 +208,6 @@
 			(type default)
 		)
 		(uuid "7724cf8a-d269-4bb5-b657-e3539d59930d")
-	)
-	(wire
-		(pts
-			(xy 213.36 187.96) (xy 213.36 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dfc8c56-f50f-4108-b30e-7ac1268dc5d5")
 	)
 	(wire
 		(pts
@@ -297,6 +281,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 132.08) (xy 208.28 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9541b9e5-cab6-4144-9fc0-824ec076d809")
+	)
+	(wire
+		(pts
 			(xy 132.08 111.76) (xy 127 111.76)
 		)
 		(stroke
@@ -304,16 +298,6 @@
 			(type default)
 		)
 		(uuid "96db52e2-6336-4f5e-846e-528c594d0509")
-	)
-	(wire
-		(pts
-			(xy 213.36 185.42) (xy 215.9 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ecf6fb6-8a32-481f-9d62-47a91889f1a3")
 	)
 	(wire
 		(pts
@@ -344,16 +328,6 @@
 			(type default)
 		)
 		(uuid "a1a4bc93-9a1c-489e-a13c-138ed06f257a")
-	)
-	(wire
-		(pts
-			(xy 215.9 187.96) (xy 213.36 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a33c7f18-872e-49fd-b22b-a6b5171af46c")
 	)
 	(wire
 		(pts
@@ -964,6 +938,28 @@
 			)
 		)
 	)
+	(global_label "ESP_GPIO_16"
+		(shape bidirectional)
+		(at 208.28 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5634e1e0-2fcc-425a-b046-3fc5ddc31578")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.0215 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ESP_GPIO_5"
 		(shape bidirectional)
 		(at 215.9 228.6 0)
@@ -977,6 +973,28 @@
 		(uuid "584215e2-8167-434e-9f90-2898ac8adc92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 229.4728 228.5206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_18"
+		(shape bidirectional)
+		(at 208.28 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "58b18249-e637-4e74-a905-8fbdb771b931")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 223.0623 134.5406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1065,28 +1083,6 @@
 		(uuid "7f1e6e46-136c-4672-ad21-f1654f1c669a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 224.0215 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_18"
-		(shape bidirectional)
-		(at 215.9 187.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "899ad0c5-7905-44e1-9751-dc028eceb340")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 187.8806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1219,28 +1215,6 @@
 		(uuid "e6d0cb41-158d-4a1d-98b1-2c2404cd8edc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 230.6823 203.1206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_33"
-		(shape bidirectional)
-		(at 208.28 134.62 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ebd7a81d-941e-4e28-9b43-5cd4890b3c76")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 224.0215 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,7 +2020,7 @@
 			)
 			(uuid "e58a5bc3-f50f-4237-a421-47413c558e2e")
 		)
-		(pin "~{BACKLIGHT}" passive
+		(pin "BACKLIGHT" passive
 			(at 203.2 129.54 0)
 			(effects
 				(font
@@ -2056,7 +2030,7 @@
 			)
 			(uuid "3af58c8e-103c-4fb7-82e6-ba4c71e38825")
 		)
-		(pin "~{CS}" input
+		(pin "~{CS0}" input
 			(at 203.2 134.62 0)
 			(effects
 				(font
@@ -2095,6 +2069,16 @@
 				(justify right)
 			)
 			(uuid "717c7ffb-eefd-4f91-8af8-6e792fe6af1b")
+		)
+		(pin "~{CS1}" input
+			(at 203.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bc474a79-7582-42c1-9906-b0f04934bb82")
 		)
 		(instances
 			(project "PCBA-VSNX"
