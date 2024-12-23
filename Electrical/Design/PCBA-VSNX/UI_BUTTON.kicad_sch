@@ -144,6 +144,139 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_names
@@ -496,6 +629,74 @@
 			)
 		)
 	)
+	(junction
+		(at 119.38 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0df5b0bc-0428-4a97-8ba1-6c26d52bab4a")
+	)
+	(junction
+		(at 119.38 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25859a62-759e-44b5-9f0d-da9921a0a27f")
+	)
+	(junction
+		(at 220.98 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e5b533e-08fe-4691-985e-76e457d5ac24")
+	)
+	(junction
+		(at 162.56 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30ddcf2d-4bd7-49a2-98cb-f98f8a5ef6f3")
+	)
+	(junction
+		(at 162.56 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75437439-32bf-4c79-8795-3aed693499d1")
+	)
+	(junction
+		(at 60.96 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8237dfde-b96b-4434-a5fb-d163111fd6ae")
+	)
+	(junction
+		(at 220.98 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfde38d4-e406-4702-bdd6-9b928e88f90d")
+	)
+	(junction
+		(at 60.96 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3ad04d3-cd1d-4c16-9f6a-dbd0fa509636")
+	)
+	(wire
+		(pts
+			(xy 220.98 142.24) (xy 220.98 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02339e71-9fd8-40d1-adc0-833554d0b90e")
+	)
+	(wire
+		(pts
+			(xy 162.56 88.9) (xy 162.56 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06a6a5c6-30cb-4c44-9632-d02bed30ba2b")
+	)
 	(wire
 		(pts
 			(xy 160.02 144.78) (xy 162.56 144.78)
@@ -548,6 +749,26 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 88.9) (xy 119.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21ac16fc-e50f-47b3-9a34-cde07a44d2d3")
+	)
+	(wire
+		(pts
+			(xy 162.56 104.14) (xy 165.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "302bf909-2155-4b4e-9205-5fca94751adf")
+	)
+	(wire
+		(pts
 			(xy 208.28 114.3) (xy 208.28 116.84)
 		)
 		(stroke
@@ -565,6 +786,16 @@
 			(type default)
 		)
 		(uuid "312ab137-f08c-418c-bb6d-b45108dea4a2")
+	)
+	(wire
+		(pts
+			(xy 60.96 144.78) (xy 63.5 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "365aa922-1544-4b26-b1bf-4c74cbd1a798")
 	)
 	(wire
 		(pts
@@ -628,6 +859,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 144.78) (xy 223.52 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64e07ea3-a5d3-420b-89e6-c564af29fb89")
+	)
+	(wire
+		(pts
 			(xy 48.26 114.3) (xy 48.26 116.84)
 		)
 		(stroke
@@ -638,6 +879,36 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 129.54) (xy 119.38 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbbf1e9-261f-452c-b09d-76b03afa1b43")
+	)
+	(wire
+		(pts
+			(xy 60.96 88.9) (xy 60.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72642596-f4a8-419a-83c5-24dc8086865e")
+	)
+	(wire
+		(pts
+			(xy 220.98 88.9) (xy 220.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "728df55b-48f3-46f8-9ad3-6beab1c4e04b")
+	)
+	(wire
+		(pts
 			(xy 40.64 149.86) (xy 40.64 147.32)
 		)
 		(stroke
@@ -645,6 +916,36 @@
 			(type default)
 		)
 		(uuid "750d5cdf-c7c5-46d6-83f0-c18bd9f03083")
+	)
+	(wire
+		(pts
+			(xy 220.98 101.6) (xy 220.98 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "757d590d-a2b7-4b8b-afc7-caa4a860c973")
+	)
+	(wire
+		(pts
+			(xy 60.96 101.6) (xy 60.96 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cb11d83-23d7-4edb-9443-75d25a45ba90")
+	)
+	(wire
+		(pts
+			(xy 119.38 101.6) (xy 119.38 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87b2f2b6-8551-4f02-80f2-7c365b9cfc4a")
 	)
 	(wire
 		(pts
@@ -678,6 +979,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 129.54) (xy 60.96 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0304da-37e5-494d-8bef-e1e1b23d09b1")
+	)
+	(wire
+		(pts
 			(xy 142.24 99.06) (xy 142.24 101.6)
 		)
 		(stroke
@@ -685,6 +996,16 @@
 			(type default)
 		)
 		(uuid "a16906cb-73c1-41fe-99de-2ca7fab26374")
+	)
+	(wire
+		(pts
+			(xy 119.38 144.78) (xy 121.92 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a671aa66-33d1-47a7-b467-99790e701308")
 	)
 	(wire
 		(pts
@@ -705,6 +1026,16 @@
 			(type default)
 		)
 		(uuid "aa3257b5-7c11-4a53-a36f-8ae010ad1e59")
+	)
+	(wire
+		(pts
+			(xy 119.38 142.24) (xy 119.38 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab2cc5c-e8ba-497e-a4d1-4d2693d69bff")
 	)
 	(wire
 		(pts
@@ -748,6 +1079,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 104.14) (xy 63.5 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b13f8100-be89-45e2-9e09-74de91df9f4f")
+	)
+	(wire
+		(pts
 			(xy 200.66 139.7) (xy 200.66 142.24)
 		)
 		(stroke
@@ -768,6 +1109,26 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 142.24) (xy 162.56 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7117ccc-0912-4ac4-89d3-d1422c3c9614")
+	)
+	(wire
+		(pts
+			(xy 162.56 144.78) (xy 165.1 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b89413fe-0a22-4cdb-b763-7ed72bb64d25")
+	)
+	(wire
+		(pts
 			(xy 40.64 99.06) (xy 40.64 101.6)
 		)
 		(stroke
@@ -785,6 +1146,26 @@
 			(type default)
 		)
 		(uuid "b9aa9baf-709b-4628-b6d2-210a2d4490d9")
+	)
+	(wire
+		(pts
+			(xy 60.96 142.24) (xy 60.96 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc89048a-699b-4adf-9327-a09a4d084ffc")
+	)
+	(wire
+		(pts
+			(xy 220.98 104.14) (xy 223.52 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcd37f2a-85dd-484f-8134-fb940d343ad9")
 	)
 	(wire
 		(pts
@@ -838,6 +1219,26 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 129.54) (xy 220.98 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bb2fb5-ede4-4856-acbb-10ba73a65729")
+	)
+	(wire
+		(pts
+			(xy 162.56 101.6) (xy 162.56 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7739722-9be1-4817-8fb5-d432766ac41d")
+	)
+	(wire
+		(pts
 			(xy 106.68 91.44) (xy 106.68 93.98)
 		)
 		(stroke
@@ -845,6 +1246,16 @@
 			(type default)
 		)
 		(uuid "dd7caa85-4601-460f-99c3-45ac8602066e")
+	)
+	(wire
+		(pts
+			(xy 162.56 129.54) (xy 162.56 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde3f1c7-e1e9-4527-a693-fd3d6714d172")
 	)
 	(wire
 		(pts
@@ -875,6 +1286,16 @@
 			(type default)
 		)
 		(uuid "ef51cf7f-2786-437b-8e1c-c5554fc6e1fe")
+	)
+	(wire
+		(pts
+			(xy 119.38 104.14) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4787ff3-99d8-4196-aed4-62f96153af27")
 	)
 	(wire
 		(pts
@@ -922,7 +1343,7 @@
 	)
 	(hierarchical_label "OUT_13"
 		(shape passive)
-		(at 119.38 144.78 0)
+		(at 121.92 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -934,7 +1355,7 @@
 	)
 	(hierarchical_label "OUT_12"
 		(shape passive)
-		(at 60.96 144.78 0)
+		(at 63.5 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -946,7 +1367,7 @@
 	)
 	(hierarchical_label "OUT_11"
 		(shape passive)
-		(at 220.98 104.14 0)
+		(at 223.52 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -958,7 +1379,7 @@
 	)
 	(hierarchical_label "OUT_10"
 		(shape passive)
-		(at 162.56 104.14 0)
+		(at 165.1 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -970,7 +1391,7 @@
 	)
 	(hierarchical_label "OUT_9"
 		(shape passive)
-		(at 119.38 104.14 0)
+		(at 121.92 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -982,7 +1403,7 @@
 	)
 	(hierarchical_label "OUT_8"
 		(shape passive)
-		(at 60.96 104.14 0)
+		(at 63.5 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -994,7 +1415,7 @@
 	)
 	(hierarchical_label "OUT_14"
 		(shape passive)
-		(at 162.56 144.78 0)
+		(at 165.1 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1006,7 +1427,7 @@
 	)
 	(hierarchical_label "OUT_15"
 		(shape passive)
-		(at 220.98 144.78 0)
+		(at 223.52 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1148,6 +1569,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 119.38 137.16 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "09b5c436-a51d-444b-8191-d6cde5568f66")
+		(property "Reference" "SW904"
+			(at 121.92 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 121.92 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbb26376-264c-4722-bebc-93208eeebc6c")
+		)
+		(pin "2"
+			(uuid "af07a33c-8e9a-4934-90e3-28f2f948b634")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 149.86 132.08 0)
 		(unit 1)
@@ -1208,6 +1700,72 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "#PWR01031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 60.96 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d4e2167-e234-4145-bbd4-48a838cf287f")
+		(property "Reference" "#PWR0978"
+			(at 60.96 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 60.96 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7544ae92-7c83-4193-b705-b390d5611404")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR0978")
 					(unit 1)
 				)
 			)
@@ -1344,6 +1902,72 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "#PWR0999")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 60.96 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15ea7b51-58eb-4af5-b109-26a509113162")
+		(property "Reference" "#PWR0963"
+			(at 60.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 60.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97704923-8834-4ec9-9c8b-83e3d7b69e57")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR0963")
 					(unit 1)
 				)
 			)
@@ -2047,6 +2671,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 60.96 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "389ad17b-e215-45fe-af01-3fecb25e2192")
+		(property "Reference" "SW901"
+			(at 63.5 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 63.5 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 60.96 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d44df068-d532-4a43-99da-8462a57a454a")
+		)
+		(pin "2"
+			(uuid "45cdf455-b8f6-4ea0-8064-5e0dc79cdfb1")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Sensor_Magnetic:A1301KLHLT-T")
 		(at 152.4 104.14 0)
 		(unit 1)
@@ -2124,6 +2819,72 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "U907")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 162.56 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41adbec4-f194-426c-a9e9-9f06eed832b9")
+		(property "Reference" "#PWR01050"
+			(at 162.56 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe51cecd-0b51-4ac7-b87f-828d1f399a50")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR01050")
 					(unit 1)
 				)
 			)
@@ -2266,6 +3027,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 119.38 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4959febe-35c3-40d8-b07e-eebe0be28ed3")
+		(property "Reference" "#PWR01049"
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 119.38 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c03eaf8-2f5e-4ff0-9725-c1e5b9c09358")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR01049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "suku_basics:CAP")
 		(at 40.64 104.14 0)
 		(mirror y)
@@ -2396,6 +3223,72 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "#PWR0986")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 220.98 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "564ca1a6-c64a-40da-8c51-45abad4aacfb")
+		(property "Reference" "#PWR01053"
+			(at 220.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 220.98 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52f684f4-78c3-4f5d-90af-a05c11bbba26")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR01053")
 					(unit 1)
 				)
 			)
@@ -2835,6 +3728,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 162.56 137.16 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "65bbca6a-5bbc-41f6-b23c-35ccf9262821")
+		(property "Reference" "SW909"
+			(at 165.1 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 165.1 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 162.56 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "575e9271-d40f-4693-9b8e-da6b13e09d47")
+		)
+		(pin "2"
+			(uuid "b3efdcd7-a26c-4212-a992-7df4e3c29623")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 162.56 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "664f087c-e68f-4b9f-8b2e-77b0d533fd66")
+		(property "Reference" "SW910"
+			(at 165.1 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 165.1 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 162.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdf5af9e-4960-4db7-95d0-a41a4bf0387b")
+		)
+		(pin "2"
+			(uuid "844f97c1-5a12-4c67-950d-e5151d22955e")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW910")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 48.26 91.44 0)
 		(unit 1)
@@ -2961,6 +3996,209 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "#PWR01032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 119.38 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "6f496285-1251-4c71-ac0f-ea806b6935e0")
+		(property "Reference" "SW903"
+			(at 121.92 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 121.92 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebceaa27-dbe9-4009-882e-2399d4972cdb")
+		)
+		(pin "2"
+			(uuid "1e16fcfe-f359-460b-a821-1599af0a7b2f")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 119.38 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a53c949-4ffa-44cb-98db-f6cde06ddc5a")
+		(property "Reference" "#PWR01048"
+			(at 119.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "609dd96f-1047-47ce-b050-9c0ae6304971")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR01048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 220.98 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "809c829b-95d7-48b2-b73c-2694f4a1b83e")
+		(property "Reference" "#PWR01052"
+			(at 220.98 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 220.98 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d311064-371e-427f-abfe-8c56a15f0f30")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR01052")
 					(unit 1)
 				)
 			)
@@ -3384,6 +4622,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 220.98 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b267275e-d0cb-40c4-933c-340bd71483e2")
+		(property "Reference" "SW911"
+			(at 223.52 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 223.52 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 220.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c7072be-ae12-475e-8e41-8ab7fed700a6")
+		)
+		(pin "2"
+			(uuid "2b627b6b-b3ee-4732-81f7-d82aa066f7f5")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW911")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "suku_basics:CAP")
 		(at 99.06 144.78 0)
 		(mirror y)
@@ -3448,6 +4757,77 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "C925")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 60.96 137.16 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b7a49458-2a38-4671-a203-513a97ac3294")
+		(property "Reference" "SW902"
+			(at 63.5 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 63.5 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 60.96 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14b239c1-0a91-4d87-a337-fd44a401db8f")
+		)
+		(pin "2"
+			(uuid "a697557b-fa29-4f6a-8b98-8ec3afbc7ebd")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW902")
 					(unit 1)
 				)
 			)
@@ -4214,6 +5594,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 162.56 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3692949-94ca-4f5e-a7d7-4e6589cf5f3e")
+		(property "Reference" "#PWR01051"
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 162.56 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f18dcb00-4b21-44d0-8ac3-6656b339ec55")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "#PWR01051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 149.86 116.84 0)
 		(unit 1)
@@ -4339,6 +5785,77 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
 					(reference "#PWR01025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 220.98 137.16 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f78d75ff-5d83-40c1-88c1-9591f7e3a458")
+		(property "Reference" "SW912"
+			(at 223.52 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C2905169"
+			(at 223.52 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:gateron-low-profile"
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fc55833-1f01-459f-a8bd-3e9efb81a9cf")
+		)
+		(pin "2"
+			(uuid "547f1a62-d815-42d3-a130-cd2eedec395f")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d74bbf2"
+					(reference "SW912")
 					(unit 1)
 				)
 			)
