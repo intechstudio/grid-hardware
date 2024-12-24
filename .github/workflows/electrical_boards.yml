@@ -36,13 +36,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Update the PCBs with the git hash and BETA.
-      if: steps.extract_branch.outputs.branch != env.main_branch
-      run: |
-        export COMMIT=$(git rev-parse --short HEAD)
-        echo "COMMIT = ${COMMIT}"
-        sed -i "s!<<hash>>!{COMMIT}!" Electrical/Design/${{ matrix.board }}/${{ matrix.board }}.kicad_pcb
-
     - name: Run PCB stuff
       run: |
         make -C Electrical/Design/${{ matrix.board }}

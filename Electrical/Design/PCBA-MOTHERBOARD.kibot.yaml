@@ -10,6 +10,8 @@ preflight:
   set_text_variables:
     - name: HASH
       command: "git rev-parse --short HEAD"
+    - name: DATE
+      command: "date +\"%Y/%m\""
   filters:
     - filter: 'Filter to ignore courtyards_overlap'
       error: 'courtyards_overlap'
