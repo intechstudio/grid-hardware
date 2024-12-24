@@ -6,7 +6,10 @@ preflight:
   run_erc: true
   run_drc: true
   check_zone_fills: false
-  ignore_unconnected: true  
+  ignore_unconnected: true
+  set_text_variables:
+    - name: HASH
+      command: "git rev-parse --short HEAD"
   filters:
     - filter: 'Filter to ignore courtyards_overlap'
       error: 'courtyards_overlap'
