@@ -2,8 +2,8 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=../PCBA-MOTHERBOARD.kibot.yaml
-SCH=PCBA-VSN0-FRONTPANEL.kicad_sch
-PCB=PCBA-VSN0-FRONTPANEL.kicad_pcb
+SCH=FP-VSN1R.kicad_sch
+PCB=FP-VSN1R.kicad_pcb
 DEST=mfg-bot
 
 all: erc_and_fab drc_and_fab
