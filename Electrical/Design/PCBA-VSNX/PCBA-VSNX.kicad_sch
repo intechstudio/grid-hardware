@@ -5,6 +5,24 @@
 	(uuid "e5217a0c-7f55-4c30-adda-7f8d95709d1b")
 	(paper "A3")
 	(lib_symbols)
+	(junction
+		(at 203.2 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83800861-aece-414c-9feb-a5ec23ce7e90")
+	)
+	(junction
+		(at 208.28 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab268886-6ac2-415a-997d-c3e7767f67fb")
+	)
+	(junction
+		(at 205.74 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1d481f9-b865-400d-87a1-274ec8202412")
+	)
 	(no_connect
 		(at 208.28 111.76)
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
@@ -161,7 +179,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 228.6) (xy 215.9 228.6)
+			(xy 200.66 228.6) (xy 203.2 228.6)
 		)
 		(stroke
 			(width 0)
@@ -241,7 +259,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 200.66) (xy 215.9 200.66)
+			(xy 200.66 200.66) (xy 205.74 200.66)
 		)
 		(stroke
 			(width 0)
@@ -251,7 +269,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 233.68) (xy 215.9 233.68)
+			(xy 208.28 233.68) (xy 215.9 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c7ea60-0aed-4aea-bc7a-1f99c21ecaff")
+	)
+	(wire
+		(pts
+			(xy 200.66 233.68) (xy 208.28 233.68)
 		)
 		(stroke
 			(width 0)
@@ -271,7 +299,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 231.14) (xy 215.9 231.14)
+			(xy 200.66 231.14) (xy 205.74 231.14)
 		)
 		(stroke
 			(width 0)
@@ -298,6 +326,16 @@
 			(type default)
 		)
 		(uuid "8b51480c-0a8e-467b-9cef-7f6ba4924bb4")
+	)
+	(wire
+		(pts
+			(xy 205.74 200.66) (xy 205.74 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d88bc2a-a8bf-4219-832f-4471260ec620")
 	)
 	(wire
 		(pts
@@ -431,7 +469,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 198.12) (xy 215.9 198.12)
+			(xy 200.66 198.12) (xy 203.2 198.12)
 		)
 		(stroke
 			(width 0)
@@ -448,6 +486,26 @@
 			(type default)
 		)
 		(uuid "b60ae2d8-d051-4018-b632-48f241d7fd5c")
+	)
+	(wire
+		(pts
+			(xy 205.74 231.14) (xy 215.9 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c9b8a1-b151-4a73-a24f-25b4d1f71877")
+	)
+	(wire
+		(pts
+			(xy 203.2 228.6) (xy 215.9 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0ca8d0d-f8e8-4be3-9b09-5e9485d130b4")
 	)
 	(wire
 		(pts
@@ -481,6 +539,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 198.12) (xy 203.2 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c05011-f930-4813-a26f-24193caf224d")
+	)
+	(wire
+		(pts
 			(xy 175.26 231.14) (xy 170.18 231.14)
 		)
 		(stroke
@@ -498,6 +566,16 @@
 			(type default)
 		)
 		(uuid "df0402ac-4338-4697-9769-288f361b5289")
+	)
+	(wire
+		(pts
+			(xy 208.28 203.2) (xy 208.28 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7985023-d571-40af-9b97-abd9c00c7367")
 	)
 	(wire
 		(pts
@@ -581,7 +659,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 203.2) (xy 215.9 203.2)
+			(xy 200.66 203.2) (xy 208.28 203.2)
 		)
 		(stroke
 			(width 0)
@@ -974,50 +1052,6 @@
 		)
 		(uuid "ffa4199c-009a-481d-865e-1b3c06a659a8")
 	)
-	(global_label "ESP_GPIO_36"
-		(shape bidirectional)
-		(at 215.9 200.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "01383e8f-3b83-4fa7-90bb-cfca910d3918")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 200.5806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_37"
-		(shape bidirectional)
-		(at 215.9 198.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "32f6c133-3086-44f8-b4c8-1da30894b2c3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 198.0406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ESP_GPIO_16"
 		(shape bidirectional)
 		(at 208.28 132.08 0)
@@ -1273,28 +1307,6 @@
 		(uuid "dec5656e-d83e-434b-b866-7a6cae7b497c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 229.4728 215.8206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_35"
-		(shape bidirectional)
-		(at 215.9 203.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e6d0cb41-158d-4a1d-98b1-2c2404cd8edc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 203.1206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
