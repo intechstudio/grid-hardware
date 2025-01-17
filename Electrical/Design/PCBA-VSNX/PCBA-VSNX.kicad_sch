@@ -5,6 +5,108 @@
 	(uuid "e5217a0c-7f55-4c30-adda-7f8d95709d1b")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -217,6 +319,10 @@
 		(at 208.28 111.76)
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
 	)
+	(no_connect
+		(at 171.45 264.16)
+		(uuid "76ca6453-d1a9-498b-9b54-6a01d7e46aff")
+	)
 	(wire
 		(pts
 			(xy 175.26 203.2) (xy 170.18 203.2)
@@ -339,6 +445,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 261.62) (xy 177.8 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dcd2529-3e09-4df1-86a6-a99e17c51065")
+	)
+	(wire
+		(pts
 			(xy 76.2 193.04) (xy 101.6 193.04)
 		)
 		(stroke
@@ -356,6 +472,16 @@
 			(type default)
 		)
 		(uuid "337e8520-cbd2-42c0-8d17-743bab17cbbd")
+	)
+	(wire
+		(pts
+			(xy 132.08 238.76) (xy 134.62 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c8d420-95ed-49e1-99c2-65fcb199b0fa")
 	)
 	(wire
 		(pts
@@ -419,6 +545,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 233.68) (xy 134.62 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59351e85-f28a-45ea-9fde-ec9a11b307e2")
+	)
+	(wire
+		(pts
 			(xy 127 109.22) (xy 132.08 109.22)
 		)
 		(stroke
@@ -426,6 +562,16 @@
 			(type default)
 		)
 		(uuid "59fc765e-1357-4c94-9529-5635418c7d73")
+	)
+	(wire
+		(pts
+			(xy 167.64 256.54) (xy 177.8 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60df7962-e666-4500-b5a3-c79eb6cedf8a")
 	)
 	(wire
 		(pts
@@ -466,6 +612,16 @@
 			(type default)
 		)
 		(uuid "713e0777-58b2-4487-baca-60d0ebed27c3")
+	)
+	(wire
+		(pts
+			(xy 167.64 259.08) (xy 177.8 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71a30b64-c7d7-472e-b16b-7255e98ae657")
 	)
 	(wire
 		(pts
@@ -609,6 +765,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 228.6) (xy 134.62 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8f0dbf-15f2-42f2-93e1-d6f9ecffaa3c")
+	)
+	(wire
+		(pts
 			(xy 175.26 187.96) (xy 170.18 187.96)
 		)
 		(stroke
@@ -696,6 +862,16 @@
 			(type default)
 		)
 		(uuid "ae446bb3-02aa-442c-98ee-5ab9edddc5bc")
+	)
+	(wire
+		(pts
+			(xy 167.64 264.16) (xy 171.45 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e1b4b7-143e-4a41-a4ed-61bc5e00a3bd")
 	)
 	(wire
 		(pts
@@ -1282,6 +1458,50 @@
 		)
 		(uuid "ffa4199c-009a-481d-865e-1b3c06a659a8")
 	)
+	(global_label "ESP_GPIO_40"
+		(shape bidirectional)
+		(at 167.64 261.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2bd12219-a9e5-4fd0-af89-cf9ebd898ab4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.8985 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_39"
+		(shape bidirectional)
+		(at 167.64 264.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "46c17778-75ad-4ff1-98f1-e9974c025530")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.8985 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ESP_GPIO_16"
 		(shape bidirectional)
 		(at 208.28 132.08 0)
@@ -1414,6 +1634,28 @@
 			)
 		)
 	)
+	(global_label "ESP_GPIO_35"
+		(shape bidirectional)
+		(at 132.08 238.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b05f05c-d49b-4908-8677-94970158560a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.3385 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ESP_GPIO_47"
 		(shape bidirectional)
 		(at 208.28 142.24 0)
@@ -1432,6 +1674,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_42"
+		(shape bidirectional)
+		(at 167.64 256.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86ee726d-857c-4552-afe5-ac08e418e380")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.8985 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_37"
+		(shape bidirectional)
+		(at 132.08 228.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89660018-bc5e-4815-a045-1850ec3e388b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.3385 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1543,6 +1829,116 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_41"
+		(shape bidirectional)
+		(at 167.64 259.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fae59672-07f2-425f-987a-70213f618b8a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.8985 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_36"
+		(shape bidirectional)
+		(at 132.08 233.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffbd81cc-9b2f-409c-a952-048975dd60e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.3385 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 134.62 233.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1120a191-d374-42f2-8e1f-d5176bf03462")
+		(property "Reference" "TP904"
+			(at 139.7 233.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 147.32 233.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 134.62 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "270a9877-cdcf-42d4-917e-140c4919ba13")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "TP904")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1740,6 +2136,138 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "#PWR01090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 134.62 238.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c25f2b7-819c-4085-b206-ea99e0233768")
+		(property "Reference" "TP905"
+			(at 139.7 238.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 147.32 238.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 134.62 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bf5be4e-5f20-4037-ad2e-7941e12fd656")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "TP905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 134.62 228.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c504ff9-ed93-4327-b7be-3de7d8a99ba0")
+		(property "Reference" "TP906"
+			(at 139.7 228.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 147.32 228.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 134.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05064b63-eb81-48f5-8af7-aab63cb5ca51")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "TP906")
 					(unit 1)
 				)
 			)
@@ -2863,6 +3391,36 @@
 				)
 				(justify left top)
 			)
+		)
+		(pin "SDATA" input
+			(at 177.8 256.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "93b55bf4-35a7-4a73-9fe6-658f9a2de9dd")
+		)
+		(pin "BCLK" input
+			(at 177.8 259.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b4a208ac-9e05-4264-aedf-77ea6df72494")
+		)
+		(pin "LRCLK" input
+			(at 177.8 261.62 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "65c23dfd-0f44-4a40-a0c8-6c1fdb616bb7")
 		)
 		(instances
 			(project "PCBA-VSNX"
