@@ -756,7 +756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_OUTLINE"
+		(property "Footprint" "suku_basics:FP_OUTLINE_2"
 			(at 152.4 254 0)
 			(effects
 				(font
@@ -1043,6 +1043,70 @@
 			(project "PCBA-BU16-FRONTPANEL"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "H523")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 177.8 254 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d16d66ed-af5f-4a56-860c-9f5897cbb708")
+		(property "Reference" "H501"
+			(at 180.34 252.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Outline"
+			(at 180.34 255.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:OSHWA"
+			(at 177.8 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 177.8 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "FP-BU16"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "H501")
 					(unit 1)
 				)
 			)
