@@ -143,8 +143,7 @@ jobs:
 
   deploy-assets:
     if: github.ref == 'refs/heads/master'
-    needs: generate-artifacts 
-    after: deploy-results
+    needs: deploy-results 
     environment:
       name: electrical_deployment
       url: ${{ steps.deployment.outputs.page_url }}
