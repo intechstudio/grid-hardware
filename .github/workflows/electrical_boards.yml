@@ -145,6 +145,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: electrical_deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: electrical_deployment
 
   deploy-results:
     runs-on: ubuntu-latest
