@@ -140,10 +140,11 @@ jobs:
         with:
           # Upload entire repository
           path: './temp/'
+          name: 'Electrical'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
+
   deploy-results:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
