@@ -140,9 +140,10 @@ jobs:
         with:
           # Upload entire repository
           path: './temp/'
-          name: 'Electrical'
+          name: electrical_deployment
+
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: electrical_deployment
         uses: actions/deploy-pages@v4
 
   deploy-results:
