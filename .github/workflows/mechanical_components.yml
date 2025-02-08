@@ -9,6 +9,11 @@ on:
       - '.github/workflows/openscad_preview.sh'
       - 'Mechanical/Design/**'
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   generate-artifacts:
@@ -167,7 +172,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
+
   deploy-results:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
