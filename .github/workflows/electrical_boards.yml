@@ -104,9 +104,47 @@ jobs:
           Electrical/Design/${{ matrix.board }}/mfg-bot/
         if-no-files-found: warn
 
+  deploy-results:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    needs: generate-artifacts    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: preview
+
+      - name: Download reports' artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: download
+
+      - name: Collecting files
+        run: |
+
+          # Create the temp folder if it doesn't exist
+          mkdir -p Preview/Electrical
+
+          # Loop through each subdirectory in the download folder
+          for subdirectory in download/*; do
+              # Check if it is a directory
+              if [ -d "$subdirectory" ]; then
+                  # Copy the contents of the subdirectory to the temp folder
+                  cp -r "$subdirectory"/* "Preview/Electrical/"
+              fi
+          done
+
+      - name: Commit the files
+        run: |        
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com  
+          git add Preview/*
+          git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
+          git push
+
   deploy-assets:
     if: github.ref == 'refs/heads/master'
     needs: generate-artifacts 
+    after: deploy-results
     environment:
       name: electrical_deployment
       url: ${{ steps.deployment.outputs.page_url }}
@@ -147,41 +185,3 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: electrical_deployment
-
-  deploy-results:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-    needs: generate-artifacts    
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: preview
-
-      - name: Download reports' artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: download
-
-      - name: Collecting files
-        run: |
-
-          # Create the temp folder if it doesn't exist
-          mkdir -p Preview/Electrical
-
-          # Loop through each subdirectory in the download folder
-          for subdirectory in download/*; do
-              # Check if it is a directory
-              if [ -d "$subdirectory" ]; then
-                  # Copy the contents of the subdirectory to the temp folder
-                  cp -r "$subdirectory"/* "Preview/Electrical/"
-              fi
-          done
-
-      - name: Commit the files
-        run: |        
-          git config --global user.name ${{ github.actor }}
-          git config --global user.email ${{ github.actor }}@users.noreply.github.com  
-          git add Preview/*
-          git commit -m "BOT ${{ github.workflow }} ${{ github.sha }}"
-          git push
-
