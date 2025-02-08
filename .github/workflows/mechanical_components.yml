@@ -118,6 +118,10 @@ jobs:
     - name: Set Date
       run: echo "action_date=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
         
+    - name: Copy reference files
+      run: |
+        cp Mechanical/Design/${{ matrix.component }}/reference_* temp/
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
