@@ -120,12 +120,7 @@ jobs:
         
     - name: Copy reference files
       run: |
-        FILE=Mechanical/Design/${{ matrix.component }}/reference_*.png
-        if [ -f "$FILE" ]; then
-            cp "$FILE" temp/
-        else
-            echo "Reference file for ${{ matrix.component }} does not exist."
-        fi
+        cp Mechanical/Design/${{ matrix.component }}/reference_* temp/ || true
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
