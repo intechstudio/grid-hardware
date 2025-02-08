@@ -8,6 +8,11 @@ on:
       - '.github/workflows/convert_bottom_position.py'
       - 'Electrical/Design/**'
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   generate-artifacts:
@@ -99,6 +104,46 @@ jobs:
           Electrical/Design/${{ matrix.board }}/mfg-bot/
         if-no-files-found: warn
 
+  deploy-assets:
+    if: github.ref == 'refs/heads/master'
+    needs: generate-artifacts 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Download reports' artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: download
+
+      - name: Collecting files
+        run: |
+
+          # Create the temp folder if it doesn't exist
+          mkdir -p temp
+
+          # Loop through each subdirectory in the download folder
+          for subdirectory in download/*; do
+              # Check if it is a directory
+              if [ -d "$subdirectory" ]; then
+                  # Copy the contents of the subdirectory to the temp folder
+                  cp -r "$subdirectory"/* "temp/"
+              fi
+          done
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: './temp/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
   deploy-results:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
