@@ -108,7 +108,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: generate-artifacts 
     environment:
-      name: github-pages
+      name: electrical_deployment
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
