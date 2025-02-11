@@ -513,7 +513,7 @@
         "name": "USB2.0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
+        "track_width": 0.191516,
         "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
@@ -527,11 +527,15 @@
     "netclass_patterns": [
       {
         "netclass": "USB2.0",
-        "pattern": "/MCU/USB_DN"
+        "pattern": "/MCU/USB_D*"
       },
       {
         "netclass": "USB2.0",
-        "pattern": "/MCU/USB_DP"
+        "pattern": "/MCU/USB_POWER/A*"
+      },
+      {
+        "netclass": "USB2.0",
+        "pattern": "/MCU/USB_POWER/A6"
       }
     ]
   },
@@ -693,7 +697,7 @@
     ],
     [
       "00000000-0000-0000-0000-000060f06fe2",
-      "Sheet60F06FE1"
+      "USB_POWER"
     ],
     [
       "00000000-0000-0000-0000-00005dc2dc06",

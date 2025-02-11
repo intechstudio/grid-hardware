@@ -6185,6 +6185,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 48.26) (xy 38.1 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cb0614e-e70f-499e-ab7c-20ed3e0bdc98")
+	)
+	(wire
+		(pts
 			(xy 147.32 114.3) (xy 147.32 116.84)
 		)
 		(stroke
@@ -6212,6 +6222,16 @@
 			(type default)
 		)
 		(uuid "4d80d684-c92c-4829-ad71-8a2f55d93347")
+	)
+	(wire
+		(pts
+			(xy 30.48 45.72) (xy 38.1 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d96441a-0525-4839-a4f4-5a3bdf318fee")
 	)
 	(wire
 		(pts
@@ -7125,6 +7145,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 43.18) (xy 38.1 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a44c1192-e148-48fb-ab99-cd26dc4acd1c")
+	)
+	(wire
+		(pts
 			(xy 185.42 33.02) (xy 185.42 35.56)
 		)
 		(stroke
@@ -7322,6 +7352,16 @@
 			(type default)
 		)
 		(uuid "b7db87b2-b065-46dc-a875-97280a09f462")
+	)
+	(wire
+		(pts
+			(xy 30.48 40.64) (xy 38.1 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8715c62-7a64-45a3-9fd9-2d73084372ce")
 	)
 	(wire
 		(pts
@@ -8734,6 +8774,16 @@
 		)
 		(uuid "89df70f4-3579-42b9-861e-6beb04a3b25e")
 	)
+	(label "U0TXD"
+		(at 30.48 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c121e3f-d826-4b99-83e3-cb9f6dcb1fb2")
+	)
 	(label "SPIHD"
 		(at 165.1 81.28 180)
 		(effects
@@ -8773,6 +8823,16 @@
 			(justify left bottom)
 		)
 		(uuid "93ac15d8-5f91-4361-acff-be4992b93b51")
+	)
+	(label "U0RXD"
+		(at 30.48 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d4c3fc8-a491-49f9-b398-8757fae26774")
 	)
 	(label "ESP_LNA"
 		(at 139.7 66.04 0)
@@ -8974,6 +9034,16 @@
 		)
 		(uuid "d1cd5391-31d2-459f-8adb-4ae3f304a833")
 	)
+	(label "ESP_BOOT0"
+		(at 30.48 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d7e41c06-a15a-4882-8186-268c5d9df06a")
+	)
 	(label "USB_DP"
 		(at 30.48 33.02 180)
 		(effects
@@ -9023,6 +9093,16 @@
 			(justify left bottom)
 		)
 		(uuid "e48d5abe-db95-4ae9-81a3-03053a69b1c9")
+	)
+	(label "ESP_RESET"
+		(at 30.48 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eb5a8f21-38b1-401c-841b-9d2c71668cb3")
 	)
 	(label "SPIWP"
 		(at 381 218.44 0)
@@ -17733,7 +17813,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "00000000-0000-0000-0000-000060f06fe2")
-		(property "Sheetname" "Sheet60F06FE1"
+		(property "Sheetname" "USB_POWER"
 			(at 38.1 24.6884 0)
 			(effects
 				(font
@@ -17770,6 +17850,46 @@
 				(justify left)
 			)
 			(uuid "2d0d333a-99a0-4575-9433-710c8cc7ac0b")
+		)
+		(pin "DEBUG_TX" input
+			(at 38.1 40.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4433fdc4-3eb1-4373-8256-48b477abee63")
+		)
+		(pin "DEBUG_RX" output
+			(at 38.1 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ee0fe91d-077c-4210-8c73-b9f01644c627")
+		)
+		(pin "DEBUG_RESET" output
+			(at 38.1 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fb21076b-3448-43b2-b5e3-47fedd896f27")
+		)
+		(pin "DEBUG_BOOT0" output
+			(at 38.1 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fbd77217-ad1c-43d3-a490-d7c308eca9fa")
 		)
 		(instances
 			(project "PCBA-EN16"
