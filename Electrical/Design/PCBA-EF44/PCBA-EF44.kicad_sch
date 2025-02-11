@@ -12,6 +12,12 @@
 		(uuid "160183f1-48d2-4a7c-9c32-ec12dfeedcf8")
 	)
 	(junction
+		(at 205.74 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "613c435a-bb9e-4c31-a570-76f77c17fb32")
+	)
+	(junction
 		(at 215.9 218.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -26,16 +32,6 @@
 	(no_connect
 		(at 208.28 111.76)
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
-	)
-	(wire
-		(pts
-			(xy 203.2 205.74) (xy 218.44 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0263bd69-2a65-44cd-8b0f-bdfd1ce70556")
 	)
 	(wire
 		(pts
@@ -169,6 +165,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 205.74) (xy 205.74 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86e44917-7ed6-4461-8a10-d9f3f0d7b39a")
+	)
+	(wire
+		(pts
 			(xy 213.36 226.06) (xy 213.36 220.98)
 		)
 		(stroke
@@ -239,7 +245,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 208.28) (xy 218.44 208.28)
+			(xy 203.2 208.28) (xy 205.74 208.28)
 		)
 		(stroke
 			(width 0)
@@ -256,6 +262,26 @@
 			(type default)
 		)
 		(uuid "d451590e-4210-42a2-8fae-0fb699907ee0")
+	)
+	(wire
+		(pts
+			(xy 205.74 205.74) (xy 205.74 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc22ed1f-ec5e-4d0b-9949-8e5cb53414fa")
+	)
+	(wire
+		(pts
+			(xy 205.74 208.28) (xy 218.44 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6531bc-8f31-46b5-a2f4-1a77917d2e86")
 	)
 	(text "Common Sheets:\n500 GRID\n600 USB_POWER\n700 MCU\n\nModule Specific:\n800 HWCFG\n900 LED\n1000 UI"
 		(exclude_from_sim no)
@@ -349,28 +375,6 @@
 		(uuid "a6719264-b348-451f-ad62-487f79677eb3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 232.0128 225.9806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_37"
-		(shape bidirectional)
-		(at 218.44 205.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d1c1704a-6a78-49f3-8635-8c760ade1a71")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.2223 205.6606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
