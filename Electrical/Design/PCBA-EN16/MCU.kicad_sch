@@ -5275,6 +5275,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 142.24) (xy 162.56 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "023e2e2b-9475-4a7a-a465-8ac6a91f66d5")
+	)
+	(wire
+		(pts
 			(xy 35.56 198.12) (xy 38.1 198.12)
 		)
 		(stroke
@@ -5535,7 +5545,7 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 53.34) (xy 342.9 53.34)
+			(xy 342.9 53.34) (xy 355.6 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6025,6 +6035,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 142.24) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a50b0c9-23fa-4d9f-a6f2-7073398ed9be")
+	)
+	(wire
+		(pts
 			(xy 187.96 53.34) (xy 187.96 50.8)
 		)
 		(stroke
@@ -6092,16 +6112,6 @@
 			(type default)
 		)
 		(uuid "41485de5-6ed3-4c83-b69e-ef83ae18093c")
-	)
-	(wire
-		(pts
-			(xy 165.1 142.24) (xy 170.18 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4245ba0f-010a-499a-9cb2-04f55093e675")
 	)
 	(wire
 		(pts
@@ -6245,7 +6255,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 144.78) (xy 170.18 144.78)
+			(xy 160.02 144.78) (xy 170.18 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6622,16 +6632,6 @@
 			(type default)
 		)
 		(uuid "760712e4-0a0b-4ad9-ba61-b00a41970440")
-	)
-	(wire
-		(pts
-			(xy 355.6 53.34) (xy 350.52 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78e5e00c-6d59-47f4-bcea-ff66ef8f6f5d")
 	)
 	(wire
 		(pts
@@ -8395,7 +8395,7 @@
 		(uuid "21492bcd-343a-4b2b-b55a-b4586c11bdeb")
 	)
 	(label "U0TXD"
-		(at 165.1 142.24 180)
+		(at 160.02 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8505,7 +8505,7 @@
 		(uuid "35c09d1f-2914-4d1e-a002-df30af772f3b")
 	)
 	(label "U0RXD"
-		(at 165.1 144.78 180)
+		(at 160.02 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15789,6 +15789,73 @@
 		)
 	)
 	(symbol
+		(lib_id "suku_basics:RES")
+		(at 165.1 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd67a169-ed6a-4efc-9b88-4860a2b6895e")
+		(property "Reference" "R501"
+			(at 146.304 141.224 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 151.13 141.224 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:RES_0402"
+			(at 165.1 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca84c5b6-b77c-465a-b0f7-96ee6067ddce")
+		)
+		(pin "2"
+			(uuid "45c68bf1-2057-46ca-8695-8b0368fdaeab")
+		)
+		(instances
+			(project "PCBA-EN16"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
+					(reference "R501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "suku_basics:CAP")
 		(at 340.36 236.22 0)
 		(unit 1)
@@ -17462,73 +17529,6 @@
 			(project "PCBA-EN16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
 					(reference "C754")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 347.98 53.34 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f96e6ede-7e9a-42d5-a598-674a1b996661")
-		(property "Reference" "R733"
-			(at 350.52 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 345.44 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 347.98 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 347.98 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 347.98 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "335ab8dc-ff45-4b30-974a-0804b46ccf8b")
-		)
-		(pin "2"
-			(uuid "9e2a6b5b-4506-4a47-8e03-b58f861f2485")
-		)
-		(instances
-			(project "PCBA-EN16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
-					(reference "R733")
 					(unit 1)
 				)
 			)
