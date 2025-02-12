@@ -3,15 +3,15 @@ kibot:
   version: 1
 
 preflight:
-  run_erc: true
-  run_drc: true
+  erc: true
+  drc: 
+    ignore_unconnected: false
   check_zone_fills: false
   set_text_variables:
     - name: HASH
       command: "git rev-parse --short HEAD"
     - name: DATE
       command: "date +\"%Y-%m-%d\""
-  ignore_unconnected: true  
   filters:
     - filter: 'Filter to ignore courtyards_overlap'
       error: 'courtyards_overlap'

@@ -56,7 +56,7 @@ jobs:
     - name: Print errors
       if: ${{ always() }}
       run: |
-        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt
+        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.html
         if [ -f "$FILE" ]; then
           cat "$FILE"
         else
@@ -80,10 +80,10 @@ jobs:
 
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
-        mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-erc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_erc.txt
-        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt
+        mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-erc.html Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_erc.html
+        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.html
         if [ -f "$FILE" ]; then
-          mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.txt Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_drc.txt
+          mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-drc.html Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_drc.html
         else
           echo "DRC file for ${{ matrix.board }} does not exist."
         fi
