@@ -3026,12 +3026,6 @@
 		(uuid "55cff608-ab38-48d9-ac09-2d0a877ceca1")
 	)
 	(junction
-		(at 213.36 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "750e60a2-e808-4253-8275-b79930fb2714")
-	)
-	(junction
 		(at 66.04 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3135,7 +3129,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 73.66) (xy 213.36 73.66)
+			(xy 190.5 73.66) (xy 218.44 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3795,16 +3789,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 73.66) (xy 213.36 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89b13f1b-5bbb-4d92-b270-35289354e837")
-	)
-	(wire
-		(pts
 			(xy 259.08 144.78) (xy 259.08 147.32)
 		)
 		(stroke
@@ -4215,16 +4199,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 73.66) (xy 213.36 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7376da1-2f59-4570-81e8-46fca0289df0")
-	)
-	(wire
-		(pts
 			(xy 182.88 119.38) (xy 187.96 119.38)
 		)
 		(stroke
@@ -4384,9 +4358,9 @@
 		)
 		(uuid "41524d81-a7f7-45af-a8c6-15609b68d1fd")
 	)
-	(text "+3V3 LDO Regulators\n\nRegulators for generating independent power rails for the\nmicrocontroller and the user interface."
+	(text "+3V3 LDO Regulator\n\nRegulator for generating power rail for the\nmicrocontroller!"
 		(exclude_from_sim no)
-		(at 185.42 60.96 0)
+		(at 204.47 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5651,71 +5625,6 @@
 			(project "PCBA-EN16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-000060f06fe2"
 					(reference "#PWR0606")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 213.36 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060ff0277")
-		(property "Reference" "#FLG0601"
-			(at 213.36 66.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 213.36 64.1858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 213.36 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e72579b7-5c83-4b0f-93cd-e085ce3481e6")
-		)
-		(instances
-			(project "PCBA-EN16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/00000000-0000-0000-0000-000060f06fe2"
-					(reference "#FLG0601")
 					(unit 1)
 				)
 			)
