@@ -64,6 +64,10 @@ Licence: GPL3
 | VSN1-R Frontpanel     | FP-VSN1-R       | <img src="../preview/Preview/Electrical/FP-VSN1-R-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-VSN1-R-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-VSN1-R-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-VSN1-R-blender_export.pcb3d?raw=true)  |
 | VSN2 Frontpanel     | FP-VSN2       | <img src="../preview/Preview/Electrical/FP-VSN2-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-VSN2-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-VSN2-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-VSN2-blender_export.pcb3d?raw=true)  |
 
+## PCB Frontpanel Collaborations
+| BU16 MIDIGrade Frontpanel     | FP-BU16-MIDIGRADE       | <img src="../preview/Preview/Electrical/FP-BU16-MIDIGRADE-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-BU16-MIDIGRADE-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-BU16-MIDIGRADE-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-BU16-MIDIGRADE-blender_export.pcb3d?raw=true)  |
+| BU16 MIDIGrade Frontpanel     | FP-EN16-MIDIGRADE       | <img src="../preview/Preview/Electrical/FP-EN16-MIDIGRADE-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-EN16-MIDIGRADE-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-EN16-MIDIGRADE-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-EN16-MIDIGRADE-blender_export.pcb3d?raw=true)  |
+
 
 ## Electrical components
 
