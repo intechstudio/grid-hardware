@@ -1,4 +1,4 @@
-name: "electrical_boards"
+-name: "electrical_boards"
 
 on:
   workflow_dispatch:
@@ -23,6 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         board:
+        - 'PCBA-DEBUG-ACCESSORY'
         - 'PCBA-INTERFACE'
         - 'PCBA-BU16'
         - 'PCBA-BU16-SPACER'
