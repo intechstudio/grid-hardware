@@ -402,8 +402,8 @@
 	(net 264 "/UI_ENC/ENCODER_0/B")
 	(net 265 "/UI_ENC/ENCODER_0/A")
 	(net 266 "/UI_ENC/DATA")
-	(net 267 "unconnected-(U501-A2-Pad3)")
-	(net 268 "unconnected-(U503-A2-Pad3)")
+	(net 267 "Net-(C601-Pad1)")
+	(net 268 "unconnected-(U604-A2-Pad3)")
 	(net 269 "/MCU/USB_POWER/CC2")
 	(net 270 "/MCU/USB_POWER/A6")
 	(net 271 "/MCU/USB_POWER/CC1")
@@ -412,8 +412,8 @@
 	(net 274 "/MCU/USB_POWER/SBU1")
 	(net 275 "/MCU/USB_POWER/DEBUG")
 	(net 276 "Net-(U704-GPIO43)")
-	(net 277 "Net-(C603-Pad1)")
-	(net 278 "unconnected-(U602-NC-Pad4)")
+	(net 277 "unconnected-(U605-A2-Pad3)")
+	(net 278 "unconnected-(U608-NC-Pad4)")
 	(net 279 "unconnected-(M501-Pin_7-Pad7)_1")
 	(net 280 "unconnected-(M501-Pin_6-Pad6)_1")
 	(net 281 "unconnected-(M501-Pin_8-Pad8)_1")
@@ -9514,7 +9514,7 @@
 			(drill oval 0.5 1.2)
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
-			(net 277 "Net-(C603-Pad1)")
+			(net 267 "Net-(C601-Pad1)")
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(uuid "38a12db6-f5ec-4cc7-a10f-3eb7f507b29c")
@@ -16280,7 +16280,7 @@
 		(at 104 62.5 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C504"
+		(property "Reference" "C607"
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -18796,7 +18796,7 @@
 		(at 102 59.75)
 		(descr "SOT-363, SC-70-6")
 		(tags "SOT-363 SC-70-6")
-		(property "Reference" "U503"
+		(property "Reference" "U605"
 			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -19003,7 +19003,7 @@
 			(at -0.95 0.65)
 			(size 0.65 0.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 268 "unconnected-(U503-A2-Pad3)")
+			(net 277 "unconnected-(U605-A2-Pad3)")
 			(pinfunction "A2")
 			(pintype "bidirectional+no_connect")
 			(uuid "4187dc40-5a8e-4097-a9b6-f6f7ae51a5f4")
@@ -20319,7 +20319,7 @@
 		(at 104 59.75 -90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C501"
+		(property "Reference" "C603"
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -28170,7 +28170,7 @@
 		(at 102 62.5 180)
 		(descr "SOT-363, SC-70-6")
 		(tags "SOT-363 SC-70-6")
-		(property "Reference" "U501"
+		(property "Reference" "U604"
 			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -28377,7 +28377,7 @@
 			(at -0.95 0.65 180)
 			(size 0.65 0.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 267 "unconnected-(U501-A2-Pad3)")
+			(net 268 "unconnected-(U604-A2-Pad3)")
 			(pinfunction "A2")
 			(pintype "bidirectional+no_connect")
 			(uuid "bad568ac-e95a-4e96-9177-df34e5861a44")
@@ -28427,7 +28427,7 @@
 		(at 96 59.75 -90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C502"
+		(property "Reference" "C604"
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -32432,7 +32432,7 @@
 		(at 98 59.75)
 		(descr "SOT-363, SC-70-6")
 		(tags "SOT-363 SC-70-6")
-		(property "Reference" "U506"
+		(property "Reference" "U607"
 			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -45644,7 +45644,7 @@
 		(at 98 62.5 180)
 		(descr "SOT-363, SC-70-6")
 		(tags "SOT-363 SC-70-6")
-		(property "Reference" "U505"
+		(property "Reference" "U606"
 			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -47945,7 +47945,7 @@
 		(at 96 62.5 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C503"
+		(property "Reference" "C605"
 			(at 0 -1.16 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -64845,7 +64845,7 @@
 		(at 102 63 180)
 		(descr "5-pin SOT23 package")
 		(tags "SOT-23-5")
-		(property "Reference" "U502"
+		(property "Reference" "U603"
 			(at 0 2.9 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -65480,7 +65480,7 @@
 		(at 98 59.25)
 		(descr "6-pin SOT-23 package")
 		(tags "SOT-23-6")
-		(property "Reference" "U507"
+		(property "Reference" "U602"
 			(at 0 2.9 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -66301,7 +66301,7 @@
 		(at 99 65)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C602"
+		(property "Reference" "C606"
 			(at 0 1.16 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -66519,8 +66519,8 @@
 		(at 103 56.5 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C603"
-			(at 0 1.16 360)
+		(property "Reference" "C601"
+			(at 0 1.16 0)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "4810b38b-b0fb-4273-93f5-2d4e32ab2ba5")
@@ -66533,7 +66533,7 @@
 			)
 		)
 		(property "Value" "4n7"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "856edd34-7c3f-42f1-9a1e-874d1823a434")
@@ -66546,7 +66546,7 @@
 			)
 		)
 		(property "Footprint" "suku_basics:CAP_0402"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "5cdea4d8-ab89-4bc0-8e49-1911c0ca63ac")
@@ -66559,7 +66559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "2507096a-6612-4e8f-921a-c3cea55f0c81")
@@ -66572,7 +66572,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "bf11c39d-ff4b-4a4d-b496-fe86f88bb1f0")
@@ -66690,7 +66690,7 @@
 			(uuid "c3f29171-30c9-4cd0-a201-11fceb9c5ed8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "78e71b29-b801-4fc9-8abb-3568bc10ea56")
 			(effects
@@ -66706,7 +66706,7 @@
 			(size 0.56 0.62)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 277 "Net-(C603-Pad1)")
+			(net 267 "Net-(C601-Pad1)")
 			(pintype "passive")
 			(uuid "ead5c627-7dfa-499c-9e3b-3f3175ad90cf")
 		)
@@ -66971,7 +66971,7 @@
 		(at 97 65)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C601"
+		(property "Reference" "C602"
 			(at 0 1.16 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -67189,7 +67189,7 @@
 		(at 102 59.25)
 		(descr "6-pin SOT-23 package")
 		(tags "SOT-23-6")
-		(property "Reference" "U504"
+		(property "Reference" "U601"
 			(at 0 2.9 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -67678,7 +67678,7 @@
 		(at 101 56.5 180)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R601"
+		(property "Reference" "R602"
 			(at 0 1.17 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -67896,7 +67896,7 @@
 		(at 99 56.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R602"
+		(property "Reference" "R603"
 			(at 0 1.17 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -68759,7 +68759,7 @@
 		(at 98 63 180)
 		(descr "5-pin SOT23 package")
 		(tags "SOT-23-5")
-		(property "Reference" "U602"
+		(property "Reference" "U608"
 			(at 0 2.9 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -68997,7 +68997,7 @@
 			(size 1.06 0.65)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 278 "unconnected-(U602-NC-Pad4)")
+			(net 278 "unconnected-(U608-NC-Pad4)")
 			(pinfunction "NC")
 			(pintype "no_connect")
 			(uuid "2bec7f27-7087-4bd6-b9a3-408dfdf77595")
@@ -71176,7 +71176,7 @@
 		(at 97 56.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R603"
+		(property "Reference" "R601"
 			(at 0 1.17 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -99032,6 +99032,22 @@
 		(uuid "ff98e7cb-016a-4961-932f-65560bef249f")
 	)
 	(segment
+		(start 104.32 55.66)
+		(end 104.32 55.38)
+		(width 0.254)
+		(layer "B.Cu")
+		(net 267)
+		(uuid "36b623ae-adcb-40a0-a73b-0b002ff633b4")
+	)
+	(segment
+		(start 103.48 56.5)
+		(end 104.32 55.66)
+		(width 0.254)
+		(layer "B.Cu")
+		(net 267)
+		(uuid "c462b0a6-629a-4b13-81b5-279f1a2b385f")
+	)
+	(segment
 		(start 98.25 57)
 		(end 98.25 56.295)
 		(width 0.254)
@@ -100238,22 +100254,6 @@
 		(layer "F.Cu")
 		(net 276)
 		(uuid "8e6d53d1-b570-4c83-9e4e-8a571cb4aa67")
-	)
-	(segment
-		(start 104.32 55.66)
-		(end 104.32 55.38)
-		(width 0.254)
-		(layer "B.Cu")
-		(net 277)
-		(uuid "36b623ae-adcb-40a0-a73b-0b002ff633b4")
-	)
-	(segment
-		(start 103.48 56.5)
-		(end 104.32 55.66)
-		(width 0.254)
-		(layer "B.Cu")
-		(net 277)
-		(uuid "c462b0a6-629a-4b13-81b5-279f1a2b385f")
 	)
 	(zone
 		(net 1)
