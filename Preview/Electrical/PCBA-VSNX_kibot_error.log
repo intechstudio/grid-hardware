@@ -1784,7 +1784,6 @@ WARNING:(W135) Part field mismatch for `U908` (SCH: `A1301KLHLT-T` PCB: `C85573`
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U912` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U914` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
-WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W135) Part field mismatch for `U905` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U901` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L601) (kibot - units.py:239)
@@ -1793,18 +1792,18 @@ WARNING:(W020) Malformed value: `BLM15AG102SN1D` (no match in L902) (kibot - uni
 WARNING:(W020) Malformed value: `BLM15AG102SN1D` (no match in L903) (kibot - units.py:239)
 WARNING:(W020) Malformed value: `BLM15PD121SN1D` (no match in L904) (kibot - units.py:239)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 264 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) 265 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (isolated_copper) Isolated copper fill
     @(50.0 mm, 50.0 mm): Zone [+5V] on F.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (isolated_copper) Isolated copper fill
-    @(50.0 mm, 50.0 mm): Zone [+5V] on B.Cu
-    Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (connection_width) Copper connection too narrow (board setup constraints minimum connection width 0.1000 mm; actual 0.0407 mm) (B.Cu)
     @(50.0 mm, 50.0 mm): Zone [+5V] on B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (connection_width) Copper connection too narrow (board setup constraints minimum connection width 0.1000 mm; actual 0.0757 mm) (F.Cu)
     @(50.0 mm, 50.0 mm): Zone [+5V] on F.Cu
+    Check: Violations (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (connection_width) Copper connection too narrow (board setup constraints minimum connection width 0.1000 mm; actual 0.0407 mm) (B.Cu)
+    @(50.0 mm, 50.0 mm): Zone [+5V] on B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(51.5 mm, 69.33 mm): Arc on Edge.Cuts
@@ -1988,16 +1987,16 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(110.652125 mm, 134.115375 mm): Footprint C917
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(60.75 mm, 98.5 mm): Footprint C1001
+    @(60.75 mm, 99.0 mm): Footprint C1001
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(80.75 mm, 98.5 mm): Footprint C1002
+    @(80.75 mm, 99.0 mm): Footprint C1002
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(65.75 mm, 98.5 mm): Footprint C1005
+    @(65.75 mm, 99.0 mm): Footprint C1005
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(85.75 mm, 98.5 mm): Footprint C1006
+    @(85.75 mm, 99.0 mm): Footprint C1006
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(50.0 mm, 73.33 mm): Footprint J504
@@ -2021,16 +2020,16 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(150.0 mm, 73.33 mm): Footprint J503
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(61.75 mm, 98.5 mm): Footprint R1001
+    @(61.75 mm, 99.0 mm): Footprint R1001
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(81.75 mm, 98.5 mm): Footprint R1002
+    @(81.75 mm, 99.0 mm): Footprint R1002
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(64.75 mm, 98.5 mm): Footprint R1005
+    @(64.75 mm, 99.0 mm): Footprint R1005
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(84.75 mm, 98.5 mm): Footprint R1006
+    @(84.75 mm, 99.0 mm): Footprint R1006
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(101.0 mm, 142.5 mm): Footprint R736
@@ -2105,7 +2104,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(126.035 mm, 109.5184 mm): Footprint R1016
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(97.25 mm, 77.0 mm): Footprint C801
+    @(97.5 mm, 78.75 mm): Footprint C801
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(120.75 mm, 100.0 mm): Footprint C1018
@@ -2117,7 +2116,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(100.0 mm, 146.2 mm): Footprint SW701
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(101.5 mm, 73.0 mm): Footprint U801
+    @(100.0 mm, 73.0 mm): Footprint U801
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(100.0 mm, 53.4 mm): Footprint J601
@@ -2129,7 +2128,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(84.775875 mm, 108.239125 mm): Footprint C912
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(136.0 mm, 98.5 mm): Footprint R901
+    @(136.0 mm, 99.0 mm): Footprint R901
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(110.398125 mm, 117.238125 mm): Footprint C922
@@ -2144,7 +2143,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(98.83 mm, 62.83 mm): Footprint L601
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(117.0 mm, 98.5 mm): Footprint R909
+    @(117.0 mm, 99.0 mm): Footprint R909
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(135.25 mm, 127.0 mm): Footprint R936
@@ -2174,13 +2173,13 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(112.938125 mm, 138.814375 mm): Footprint SW909
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(138.0 mm, 98.5 mm): Footprint R1013
+    @(138.0 mm, 99.0 mm): Footprint R1013
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(83.75 mm, 98.5 mm): Footprint R1024
+    @(83.75 mm, 99.0 mm): Footprint R1024
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(82.75 mm, 98.5 mm): Footprint R1023
+    @(82.75 mm, 99.0 mm): Footprint R1023
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(89.5 mm, 122.75 mm): Footprint R903
@@ -2189,7 +2188,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(56.537383 mm, 61.571683 mm): Footprint C902
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(97.25 mm, 72.0 mm): Footprint R801
+    @(140.0 mm, 99.0 mm): Footprint R801
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(110.398125 mm, 143.114375 mm): Footprint C926
@@ -2210,7 +2209,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(74.12375 mm, 112.938125 mm): Footprint J904
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(139.0 mm, 98.5 mm): Footprint C1014
+    @(139.0 mm, 99.0 mm): Footprint C1014
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(58.75 mm, 127.02 mm): Footprint C932
@@ -2231,7 +2230,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(115.5 mm, 122.75 mm): Footprint R915
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(63.75 mm, 98.5 mm): Footprint R1022
+    @(63.75 mm, 99.0 mm): Footprint R1022
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(100.5 mm, 113.75 mm): Footprint R735
@@ -2294,7 +2293,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(58.75 mm, 129.0 mm): Footprint R926
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(114.0 mm, 98.5 mm): Footprint C1011
+    @(114.0 mm, 99.0 mm): Footprint C1011
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(105.25 mm, 57.5 mm): Footprint C603
@@ -2312,13 +2311,13 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(136.25 mm, 124.75 mm): Footprint R922
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(118.0 mm, 98.5 mm): Footprint R1014
+    @(118.0 mm, 99.0 mm): Footprint R1014
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(135.0 mm, 98.5 mm): Footprint R1009
+    @(135.0 mm, 99.0 mm): Footprint R1009
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(134.0 mm, 98.5 mm): Footprint C1010
+    @(134.0 mm, 99.0 mm): Footprint C1010
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(135.25 mm, 122.75 mm): Footprint R920
@@ -2348,7 +2347,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(125.87625 mm, 112.938125 mm): Footprint J906
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(62.75 mm, 98.5 mm): Footprint R1021
+    @(62.75 mm, 99.0 mm): Footprint R1021
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(138.75 mm, 123.75 mm): Footprint U913
@@ -2363,7 +2362,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(52.484921 mm, 63.60978 mm): Footprint D901
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(116.0 mm, 98.5 mm): Footprint R908
+    @(116.0 mm, 99.0 mm): Footprint R908
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(100.83 mm, 60.58 mm): Footprint C601
@@ -2417,7 +2416,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(113.0 mm, 73.25 mm): Footprint R1025
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(115.0 mm, 98.5 mm): Footprint R1010
+    @(115.0 mm, 99.0 mm): Footprint R1010
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(87.061875 mm, 117.238125 mm): Footprint U904
@@ -2528,7 +2527,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(138.17 mm, 83.33 mm): Footprint J911
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(97.25 mm, 74.0 mm): Footprint R802
+    @(59.75 mm, 99.0 mm): Footprint R802
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(104.75 mm, 104.25 mm): Footprint L701
@@ -2543,7 +2542,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(110.5 mm, 122.75 mm): Footprint C930
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
-    @(137.0 mm, 98.5 mm): Footprint R907
+    @(137.0 mm, 99.0 mm): Footprint R907
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(112.174311 mm, 58.834311 mm): Footprint C908
@@ -2566,9 +2565,6 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the library 'suku_basics'.
     @(110.652125 mm, 108.239125 mm): Footprint C913
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (footprint_symbol_mismatch) Footprint LOGO701 value (LOGO) doesn't match symbol value (OSHWA).
-    @(74.25 mm, 132.75 mm): Footprint LOGO701
-    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W015) Unknown option `exclude_filter` (kibot - optionable.py:225)
@@ -2588,7 +2584,6 @@ WARNING:(W135) Part field mismatch for `U908` (SCH: `A1301KLHLT-T` PCB: `C85573`
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U912` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U914` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
-WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W135) Part field mismatch for `U905` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U901` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W049) Layer "Inner layer 3" (In3_Cu) isn't used (kibot - out_any_layer.py:188)
@@ -2611,7 +2606,6 @@ WARNING:(W135) Part field mismatch for `U908` (SCH: `A1301KLHLT-T` PCB: `C85573`
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U912` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U914` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
-WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W135) Part field mismatch for `U905` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U901` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
