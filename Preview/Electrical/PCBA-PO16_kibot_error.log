@@ -1308,33 +1308,15 @@ WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'p
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
     @(2.0066 mm, 0.7366 mm): Symbol L601 [FERRIT]
     Sheet: /MCU/Sheet60F06FE1/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'power'
-    @(0.3302 mm, 0.8382 mm): Symbol #PWR0701 [+3V3]
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.3302 mm, 0.889 mm): Symbol JP701 [JP_SolderJumper_2_Open]
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(0.5588 mm, 0.7366 mm): Symbol #PWR0880 [GND]
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.5588 mm, 0.6858 mm): Symbol JP801 [JP_SolderJumper_2_Open]
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'power'
-    @(0.5588 mm, 0.5334 mm): Symbol #PWR0879 [+3V3]
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(0.3302 mm, 1.0414 mm): Symbol #PWR0702 [GND]
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.3302 mm, 0.9906 mm): Symbol R702 [RES]
+    @(0.5588 mm, 0.6858 mm): Symbol R801 [RES]
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (multiple_net_names) Both +3V3 and HWCFG_HIGH are attached to the same items; +3V3 will be used in the netlist
     @(1.0414 mm, 0.635 mm): Symbol #PWR0881 Hidden pin 1 [+3V3, Power input, Line]
     @(0.7874 mm, 0.889 mm): Label 'HWCFG_HIGH'
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.5588 mm, 0.5842 mm): Symbol R801 [RES]
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(1.0414 mm, 1.143 mm): Symbol #PWR0882 [GND]
@@ -1358,21 +1340,36 @@ WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'p
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
     @(1.2192 mm, 0.9398 mm): Symbol C801 [CAP]
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'power'
+    @(0.3302 mm, 0.8382 mm): Symbol #PWR0701 [+3V3]
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.3302 mm, 0.889 mm): Symbol JP701 [JP_SolderJumper_2_Open]
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.5588 mm, 0.5842 mm): Symbol JP801 [JP_SolderJumper_2_Open]
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(0.3302 mm, 1.0414 mm): Symbol #PWR0702 [GND]
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.3302 mm, 0.9906 mm): Symbol R702 [RES]
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'power'
+    @(0.5588 mm, 0.5334 mm): Symbol #PWR0879 [+3V3]
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L601) (kibot - units.py:239)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L702) (kibot - units.py:239)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 49 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) 51 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (via_dangling) Via is not connected or connected on only one layer
     @(104.25 mm, 108.5 mm): Via [GND] on F.Cu - B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (via_dangling) Via is not connected or connected on only one layer
     @(105.75 mm, 108.5 mm): Via [GND] on F.Cu - B.Cu
-    Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (via_dangling) Via is not connected or connected on only one layer
-    @(100.484 mm, 74.905 mm): Via [Net-(JP701-B)] on F.Cu - B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (isolated_copper) Isolated copper fill
     @(50.0 mm, 50.0 mm): Zone [+5V] on F.Cu
@@ -1516,9 +1513,6 @@ WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(77.83 mm, 50.0 mm): Segment on Edge.Cuts
     @(104.75 mm, 56.57 mm): Segment on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (lib_footprint_mismatch) Footprint 'U.FL_Molex_MCRF_73412-0110_Vertical' does not match copy in library 'Connector_Coaxial'.
-    @(105.0 mm, 107.25 mm): Footprint J701
-    Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
     @(94.8692 mm, 110.668 mm): PCB Text 'R_TX R_RX GND E_TX       E_RX' on B.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
@@ -1534,6 +1528,21 @@ WARNING:(W145) (text_height) Text height out of range (board setup constraints s
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(94.0 mm, 119.75 mm): PCB Text 'BOOT 0' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (net_conflict) Pad net (Net-(JP801-A)) doesn't match net given by schematic (+3V3).
+    @(105.25 mm, 71.261 mm): Pad 1 [Net-(JP801-A)] of JP801 on F.Cu
+    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (net_conflict) Pad net (GND) doesn't match net given by schematic (Net-(JP801-B)).
+    @(105.25 mm, 69.811 mm): Pad 2 [GND] of JP801 on F.Cu
+    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (net_conflict) Pad net (+3V3) doesn't match net given by schematic (Net-(JP801-B)).
+    @(104.669 mm, 72.75 mm): Pad 1 [+3V3] of R801 on F.Cu
+    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (net_conflict) Pad net (Net-(JP801-A)) doesn't match net given by schematic (GND).
+    @(105.689 mm, 72.75 mm): Pad 2 [Net-(JP801-A)] of R801 on F.Cu
+    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (net_conflict) Pad net (Net-(JP801-A)) doesn't match net given by schematic (Net-(JP801-B)).
+    @(97.525 mm, 71.095 mm): Pad 11 [Net-(JP801-A)] of U801 on F.Cu
+    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W015) Unknown option `exclude_filter` (kibot - optionable.py:225)
@@ -1559,50 +1568,19 @@ ERROR:Unable to expand `KICAD6_3DMODEL_DIR` in `${KICAD6_3DMODEL_DIR}/Capacitor_
 WARNING:(W047) Missing 3D model for D901: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D906: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D913: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1005: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1009: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1013: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1024: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1028: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1032: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1020: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1001: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for U705: `${INTECH_3D}/SOIC-8-1_wide.STEP` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/SW-SMD_L4.6-W3.5-H1.8-P4.3.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1030: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1007: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1015: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1006: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1003: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1031: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1025: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1018: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1014: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1017: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1019: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1008: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1026: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1002: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1023: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1027: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1012: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1010: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1022: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1016: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1011: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1004: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1021: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1029: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  10 3D models downloaded or cached (kibot - out_base_3d.py:527)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
@@ -1618,50 +1596,19 @@ ERROR:Unable to expand `KICAD6_3DMODEL_DIR` in `${KICAD6_3DMODEL_DIR}/Capacitor_
 WARNING:(W047) Missing 3D model for D901: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D906: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D913: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1005: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1009: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1013: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1024: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1028: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1032: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1020: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1001: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for U705: `${INTECH_3D}/SOIC-8-1_wide.STEP` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/SW-SMD_L4.6-W3.5-H1.8-P4.3.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1030: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1007: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1015: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1006: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1003: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1031: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1025: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1018: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1014: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1017: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1019: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1008: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1026: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1002: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1023: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1027: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1012: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1010: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1022: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1016: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1011: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1004: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1021: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1029: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  10 3D models downloaded or cached (kibot - out_base_3d.py:527)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/ws2812-2020.step` (kibot - config.py:114)
@@ -1676,50 +1623,19 @@ ERROR:Unable to expand `KICAD6_3DMODEL_DIR` in `${KICAD6_3DMODEL_DIR}/Capacitor_
 WARNING:(W047) Missing 3D model for D901: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D906: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D913: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1005: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1009: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1013: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1024: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1028: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1032: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1020: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1001: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for U705: `${INTECH_3D}/SOIC-8-1_wide.STEP` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/SW-SMD_L4.6-W3.5-H1.8-P4.3.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1030: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1007: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1015: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1006: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1003: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1031: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1025: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1018: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1014: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1017: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1019: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1008: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1026: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1002: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1023: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1027: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1012: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1010: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1022: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1016: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1011: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1004: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1021: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1029: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  10 3D models downloaded or cached (kibot - out_base_3d.py:527)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/ws2812-2020.step` (kibot - config.py:114)
@@ -1734,48 +1650,17 @@ ERROR:Unable to expand `KICAD6_3DMODEL_DIR` in `${KICAD6_3DMODEL_DIR}/Capacitor_
 WARNING:(W047) Missing 3D model for D901: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D906: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D913: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1005: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1009: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1013: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1024: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1028: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1032: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1020: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1001: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for U705: `${INTECH_3D}/SOIC-8-1_wide.STEP` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/SW-SMD_L4.6-W3.5-H1.8-P4.3.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1030: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1007: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1015: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1006: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1003: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1031: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1025: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1018: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1014: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1017: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1019: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1008: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1026: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1002: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1023: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1027: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1012: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1010: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1022: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1016: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1011: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1004: `${INTECH_3D}/ptv09a-4x20f-xxxx.stp` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1021: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
-WARNING:(W047) Missing 3D model for UI1029: `${INTECH_3D}/B3F_4050.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  10 3D models downloaded or cached (kibot - out_base_3d.py:527)
