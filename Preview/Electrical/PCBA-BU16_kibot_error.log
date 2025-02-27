@@ -1684,11 +1684,12 @@ WARNING:(W135) Part field mismatch for `U1020` (SCH: `LM321` PCB: `C90297`) (kib
 WARNING:(W135) Part field mismatch for `U1011` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U1031` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
+WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W135) Part field mismatch for `U1004` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L601) (kibot - units.py:239)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L702) (kibot - units.py:239)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 74 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) 73 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (via_dangling) Via is not connected or connected on only one layer
     @(104.25 mm, 108.5 mm): Via [GND] on F.Cu - B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
@@ -1872,17 +1873,11 @@ WARNING:(W145) (footprint_type_mismatch) Footprint component type doesn't match 
 WARNING:(W145) (footprint_type_mismatch) Footprint component type doesn't match footprint pads (expected 'Through hole'; actual 'SMD')
     @(125.87625 mm, 138.814375 mm): Footprint J1008
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (lib_footprint_mismatch) Footprint 'grid_outline' does not match copy in library 'suku_basics'.
-    @(100.0 mm, 100.0 mm): Footprint M501
-    Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (lib_footprint_mismatch) Footprint 'U.FL_Molex_MCRF_73412-0110_Vertical' does not match copy in library 'Connector_Coaxial'.
-    @(105.0 mm, 107.25 mm): Footprint J701
-    Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
     @(94.8692 mm, 110.668 mm): PCB Text 'R_TX R_RX GND E_TX E_RX' on B.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
-    @(125.75 mm, 133.0 mm): PCB Text 'Intech Studio ${PROJECTNAME} ${HAS...' on F.Silkscreen
+    @(113.335 mm, 100.0 mm): PCB Text 'Intech Studio ${PROJECTNAME} ${HAS...' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(100.0 mm, 122.75 mm): PCB Text 'GND' on F.Silkscreen
@@ -1893,6 +1888,9 @@ WARNING:(W145) (text_height) Text height out of range (board setup constraints s
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(94.0 mm, 119.75 mm): PCB Text 'BOOT 0' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) (footprint_symbol_mismatch) Footprint LOGO701 value (LOGO) doesn't match symbol value (OSHWA).
+    @(86.665 mm, 100.0 mm): Footprint LOGO701
+    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (extra_footprint) Extra footprint
     @(74.12375 mm, 61.185625 mm): Footprint J1001
     Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
@@ -1945,6 +1943,7 @@ WARNING:(W135) Part field mismatch for `U1020` (SCH: `LM321` PCB: `C90297`) (kib
 WARNING:(W135) Part field mismatch for `U1011` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U1031` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
+WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W135) Part field mismatch for `U1004` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W049) Layer "Inner layer 3" (In3_Cu) isn't used (kibot - out_any_layer.py:188)
 WARNING:(W049) Layer "Inner layer 4" (In4_Cu) isn't used (kibot - out_any_layer.py:188)
@@ -1987,6 +1986,7 @@ WARNING:(W135) Part field mismatch for `U1020` (SCH: `LM321` PCB: `C90297`) (kib
 WARNING:(W135) Part field mismatch for `U1011` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
 WARNING:(W135) Part field mismatch for `U1031` (SCH: `LM321` PCB: `C90297`) (kibot - kiplot.py:349)
+WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W135) Part field mismatch for `U1004` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:349)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
@@ -2008,11 +2008,12 @@ WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibo
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  11 3D models downloaded or cached (kibot - out_base_3d.py:527)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
@@ -2035,11 +2036,12 @@ WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibo
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  11 3D models downloaded or cached (kibot - out_base_3d.py:527)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
@@ -2061,11 +2063,12 @@ WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibo
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  11 3D models downloaded or cached (kibot - out_base_3d.py:527)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
@@ -2087,10 +2090,11 @@ WARNING:(W047) Missing 3D model for SW701: `${INTECH_3D}/hyp_mapmode.step` (kibo
 WARNING:(W047) Missing 3D model for D902: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D910: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for J601: `${INTECH_3D}/HRO_TYPE-C-31-M-12.step` (kibot - out_base_3d.py:514)
+ERROR:Unable to expand `KICAD8_3DMODEL_DIR` in `${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl` (kibot - config.py:114)
 WARNING:(W047) Missing 3D model for D903: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D915: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D911: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W048) Failed to download `https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_Coaxial.3dshapes%2FU.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:174)
-WARNING:(W047) Missing 3D model for J701: `${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
+WARNING:(W047) Missing 3D model for J701: `${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/U.FL_Molex_MCRF_73412-0110_Vertical.wrl` (kibot - out_base_3d.py:514)
 WARNING:(W047) Missing 3D model for D907: `${INTECH_3D}/ws2812-2020.step` (kibot - out_base_3d.py:514)
 WARNING:(W098)  11 3D models downloaded or cached (kibot - out_base_3d.py:527)
