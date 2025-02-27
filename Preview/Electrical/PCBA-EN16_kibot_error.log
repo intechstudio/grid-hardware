@@ -1,6 +1,6 @@
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `erc` (kibot.pre_erc - pre_erc.py:38)
-WARNING:(W142) 624 ERC warnings detected (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) 626 ERC warnings detected (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(0.8382 mm, 0.6858 mm): Symbol #PWR01164 [GND]
     Sheet: /UI_ENC/ENCODER_8/ (kibot.pre_erc - pre_erc.py:142)
@@ -835,56 +835,52 @@ WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'po
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(1.143 mm, 0.7366 mm): Symbol #PWR0508 [GND]
     Sheet: /MCU/sheet5D85C9EA/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(1.0668 mm, 1.6256 mm): Symbol #PWR0530 [GND]
+WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
+    @(1.397 mm, 0.6858 mm): Symbol #PWR0519 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.9906 mm, 1.3462 mm): Symbol U504 [U_ESD_4ch]
+WARNING:(W142) (multiple_net_names) Both +5V and VBUS are attached to the same items; +5V will be used in the netlist
+    @(1.905 mm, 0.7112 mm): Symbol #PWR0607 Hidden pin 1 [+5V, Power input, Line]
+    @(1.5494 mm, 0.4064 mm): Symbol #PWR0603 Hidden pin 1 [VBUS, Power input, Line]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(1.0668 mm, 1.2954 mm): Symbol #PWR0521 [VBUS]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(0.9144 mm, 1.397 mm): Symbol #PWR0522 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(0.9144 mm, 1.524 mm): Symbol #PWR0529 [VBUS]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.9906 mm, 1.5748 mm): Symbol U507 [U_ESD_4ch]
+    @(1.5494 mm, 0.4064 mm): Symbol #PWR0603 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(1.397 mm, 0.9398 mm): Symbol #PWR0518 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (multiple_net_names) Both B6_DP and USB_DATA_P are attached to the same items; B6_DP will be used in the netlist
+    @(0.5842 mm, 1.016 mm): Label 'B6_DP'
+    @(1.7272 mm, 0.381 mm): Hierarchical Label 'USB_DATA_P'
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(1.397 mm, 0.4064 mm): Symbol #PWR0602 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(1.397 mm, 0.6858 mm): Symbol #PWR0519 [VBUS]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(1.016 mm, 1.016 mm): Symbol #PWR0613 [GND]
+    @(1.0668 mm, 1.6256 mm): Symbol #PWR0530 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(0.9398 mm, 1.016 mm): Symbol #PWR0612 [GND]
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(1.016 mm, 0.9652 mm): Symbol R602 [RES]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.9398 mm, 0.9652 mm): Symbol R601 [RES]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
     @(0.762 mm, 0.7112 mm): Symbol #PWR0605 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.4064 mm, 0.9652 mm): Symbol J601 [USB_C_TYPE-C-32-M-12]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'PWR_FLAG' has been modified in library 'power'
     @(0.6604 mm, 0.7112 mm): Symbol #FLG0602 [PWR_FLAG]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.381 mm, 1.397 mm): Symbol R603 [RES]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(0.762 mm, 1.1938 mm): Symbol #PWR0614 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'PWR_FLAG' has been modified in library 'power'
     @(0.6604 mm, 1.1938 mm): Symbol #FLG0603 [PWR_FLAG]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.4064 mm, 0.9652 mm): Symbol J601 [USB_C_TYPE-C-32-M-12]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.381 mm, 1.397 mm): Symbol R603 [RES]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(0.381 mm, 1.4478 mm): Symbol #PWR0616 [GND]
@@ -896,29 +892,49 @@ WARNING:(W142) (lib_symbol_issues) The current configuration does not include th
     @(0.254 mm, 1.397 mm): Symbol C603 [CAP]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(1.016 mm, 0.9652 mm): Symbol R602 [RES]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(0.9398 mm, 0.9652 mm): Symbol R601 [RES]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (multiple_net_names) Both B7_DN and USB_DATA_N are attached to the same items; B7_DN will be used in the netlist
-    @(0.5842 mm, 0.9652 mm): Label 'B7_DN'
-    @(1.9558 mm, 1.397 mm): Hierarchical Label 'USB_DATA_N'
+    @(0.9906 mm, 1.5748 mm): Symbol U507 [U_ESD_4ch]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(1.8542 mm, 1.4478 mm): Symbol #PWR0524 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(1.7526 mm, 1.5748 mm): Symbol U506 [BL1551B]
+    @(0.9144 mm, 1.397 mm): Symbol #PWR0522 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(1.651 mm, 1.524 mm): Symbol #PWR0526 [VBUS]
+    @(0.9144 mm, 1.524 mm): Symbol #PWR0529 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(1.8542 mm, 1.2192 mm): Symbol #PWR0520 [GND]
+    @(0.9398 mm, 1.016 mm): Symbol #PWR0612 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(1.8542 mm, 1.651 mm): Symbol #PWR0525 [GND]
+    @(1.016 mm, 1.016 mm): Symbol #PWR0613 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(0.9906 mm, 1.3462 mm): Symbol U504 [U_ESD_4ch]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
+    @(1.0668 mm, 1.2954 mm): Symbol #PWR0521 [VBUS]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'power'
+    @(2.6162 mm, 0.7112 mm): Symbol #PWR0608 [+3V3]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(2.4892 mm, 0.8382 mm): Symbol #PWR0610 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(2.4892 mm, 0.7874 mm): Symbol C602 [CAP]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(2.1844 mm, 0.7874 mm): Symbol C601 [CAP]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(2.3622 mm, 0.762 mm): Symbol U602 [U_REGULATOR_SOT23-5]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(2.1844 mm, 0.8382 mm): Symbol #PWR0609 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(2.3622 mm, 0.8636 mm): Symbol #PWR0611 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(1.7526 mm, 1.1684 mm): Symbol U503 [BL1551B]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
     @(1.7526 mm, 1.3716 mm): Symbol U505 [BL1551B]
@@ -926,46 +942,48 @@ WARNING:(W142) (lib_symbol_issues) The current configuration does not include th
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
     @(1.651 mm, 1.3208 mm): Symbol #PWR0523 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(1.8542 mm, 0.7112 mm): Symbol #PWR0606 [VBUS]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(2.1844 mm, 0.7874 mm): Symbol C601 [CAP]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol '+5V' has been modified in library 'power'
-    @(1.905 mm, 0.7112 mm): Symbol #PWR0607 [+5V]
+WARNING:(W142) (multiple_net_names) Both B7_DN and USB_DATA_N are attached to the same items; B7_DN will be used in the netlist
+    @(0.5842 mm, 0.9652 mm): Label 'B7_DN'
+    @(1.9558 mm, 1.397 mm): Hierarchical Label 'USB_DATA_N'
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(2.1844 mm, 0.8382 mm): Symbol #PWR0609 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(2.1844 mm, 0.9652 mm): Symbol #PWR0531 [VBUS]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(1.7526 mm, 1.016 mm): Symbol U501 [BL1551B]
+    @(1.8542 mm, 1.2192 mm): Symbol #PWR0520 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
     @(1.651 mm, 1.1176 mm): Symbol #PWR0528 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (multiple_net_names) Both B6_DP and USB_DATA_P are attached to the same items; B6_DP will be used in the netlist
-    @(0.5842 mm, 1.016 mm): Label 'B6_DP'
-    @(1.7272 mm, 0.381 mm): Hierarchical Label 'USB_DATA_P'
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(1.8542 mm, 1.0668 mm): Symbol #PWR0527 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(1.7526 mm, 1.1684 mm): Symbol U503 [BL1551B]
+WARNING:(W142) (lib_symbol_issues) Symbol '+5V' has been modified in library 'power'
+    @(1.905 mm, 0.7112 mm): Symbol #PWR0607 [+5V]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
     @(1.651 mm, 0.9652 mm): Symbol #PWR0517 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (multiple_net_names) Both +5V and VBUS are attached to the same items; +5V will be used in the netlist
-    @(1.905 mm, 0.7112 mm): Symbol #PWR0607 Hidden pin 1 [+5V, Power input, Line]
-    @(1.5494 mm, 0.4064 mm): Symbol #PWR0603 Hidden pin 1 [VBUS, Power input, Line]
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(1.8542 mm, 1.0668 mm): Symbol #PWR0527 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(1.5494 mm, 0.4064 mm): Symbol #PWR0603 [VBUS]
+    @(1.8542 mm, 0.7112 mm): Symbol #PWR0606 [VBUS]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(1.7526 mm, 1.016 mm): Symbol U501 [BL1551B]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(1.8542 mm, 1.651 mm): Symbol #PWR0525 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(1.5494 mm, 1.4478 mm): Symbol R604 [RES]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(1.5494 mm, 1.651 mm): Symbol R605 [RES]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
+    @(1.651 mm, 1.524 mm): Symbol #PWR0526 [VBUS]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(1.8542 mm, 1.4478 mm): Symbol #PWR0524 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(1.7526 mm, 1.5748 mm): Symbol U506 [BL1551B]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(2.4638 mm, 1.3716 mm): Symbol #PWR0536 [GND]
@@ -977,15 +995,6 @@ WARNING:(W142) (lib_symbol_issues) The current configuration does not include th
     @(2.4638 mm, 1.3208 mm): Symbol C503 [CAP]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(2.3114 mm, 1.1938 mm): Symbol C502 [CAP]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
-    @(2.3114 mm, 1.143 mm): Symbol #PWR0533 [VBUS]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(2.3114 mm, 1.2446 mm): Symbol #PWR0534 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
     @(2.5908 mm, 1.4986 mm): Symbol C504 [CAP]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
@@ -994,26 +1003,23 @@ WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'po
 WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
     @(2.5908 mm, 1.4478 mm): Symbol #PWR0537 [VBUS]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
+    @(2.3114 mm, 1.1938 mm): Symbol C502 [CAP]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
+    @(2.3114 mm, 1.2446 mm): Symbol #PWR0534 [GND]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
+    @(2.3114 mm, 1.143 mm): Symbol #PWR0533 [VBUS]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
+WARNING:(W142) (lib_symbol_issues) Symbol 'VBUS' has been modified in library 'power'
+    @(2.1844 mm, 0.9652 mm): Symbol #PWR0531 [VBUS]
+    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
     @(2.1844 mm, 1.0668 mm): Symbol #PWR0532 [GND]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
     @(2.1844 mm, 1.016 mm): Symbol C501 [CAP]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(2.3622 mm, 0.8636 mm): Symbol #PWR0611 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(2.3622 mm, 0.762 mm): Symbol U602 [U_REGULATOR_SOT23-5]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol 'GND' has been modified in library 'power'
-    @(2.4892 mm, 0.8382 mm): Symbol #PWR0610 [GND]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
-    @(2.4892 mm, 0.7874 mm): Symbol C602 [CAP]
-    Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
-WARNING:(W142) (lib_symbol_issues) Symbol '+3V3' has been modified in library 'power'
-    @(2.6162 mm, 0.7112 mm): Symbol #PWR0608 [+3V3]
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:142)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the library 'suku_basics'
     @(0.4572 mm, 0.7874 mm): Symbol JP801 [JP_SolderJumper_2_Open]
@@ -1884,10 +1890,9 @@ WARNING:(W142) (lib_symbol_issues) The current configuration does not include th
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
-WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L702) (kibot - units.py:239)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 44 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
+WARNING:(W145) 43 DRC warnings detected (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W145) (via_dangling) Via is not connected or connected on only one layer
     @(105.75 mm, 108.5 mm): Via [GND] on F.Cu - B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
@@ -2048,22 +2053,17 @@ WARNING:(W145) (text_height) Text height out of range (board setup constraints s
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(94.0 mm, 118.0 mm): PCB Text 'BOOT 0' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:146)
-WARNING:(W145) (footprint_symbol_mismatch) Footprint LOGO701 value (LOGO) doesn't match symbol value (OSHWA).
-    @(73.33 mm, 100.0 mm): Footprint LOGO701
-    Check: Schematic parity (kibot.pre_drc - pre_drc.py:146)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W015) Unknown option `exclude_filter` (kibot - optionable.py:225)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
-WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W049) Layer "Inner layer 3" (In3_Cu) isn't used (kibot - out_any_layer.py:188)
 WARNING:(W049) Layer "Inner layer 4" (In4_Cu) isn't used (kibot - out_any_layer.py:188)
 WARNING:(W049) Layer "Inner layer 5" (In5_Cu) isn't used (kibot - out_any_layer.py:188)
 WARNING:(W049) Layer "Inner layer 6" (In6_Cu) isn't used (kibot - out_any_layer.py:188)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 WARNING:(W135) Datasheet field mismatch for `J701` (SCH: `~` PCB: ` ~`) (kibot - kiplot.py:349)
-WARNING:(W135) Value field mismatch for `LOGO701` (SCH: `OSHWA` PCB: `LOGO`) (kibot - kiplot.py:393)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1049)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/ws2812-2020.step` (kibot - config.py:114)
