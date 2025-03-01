@@ -11,6 +11,24 @@
 		(color 0 0 0 0)
 		(uuid "209c73f9-de16-400b-b152-86e236d8b759")
 	)
+	(junction
+		(at 203.2 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf4569af-0bff-4075-8757-cb28995312c8")
+	)
+	(junction
+		(at 205.74 231.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2b7d56d-1244-4cd8-93bd-6431378c10be")
+	)
+	(junction
+		(at 208.28 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d80f6458-498d-4278-bd64-deb44cd70bbb")
+	)
 	(no_connect
 		(at 208.28 111.76)
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
@@ -37,6 +55,26 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 231.14) (xy 215.9 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "090ca4f4-ea5e-47f8-8179-b0f20c649227")
+	)
+	(wire
+		(pts
+			(xy 205.74 200.66) (xy 205.74 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0efa6063-7094-4692-bd74-7ced738aed92")
+	)
+	(wire
+		(pts
 			(xy 127 101.6) (xy 132.08 101.6)
 		)
 		(stroke
@@ -54,6 +92,16 @@
 			(type default)
 		)
 		(uuid "10e52e95-44f3-4059-a86d-dcda603e0623")
+	)
+	(wire
+		(pts
+			(xy 203.2 228.6) (xy 215.9 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a4c70e4-935a-4b0f-8f13-80d388cd07c0")
 	)
 	(wire
 		(pts
@@ -127,7 +175,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 228.6) (xy 215.9 228.6)
+			(xy 200.66 228.6) (xy 203.2 228.6)
 		)
 		(stroke
 			(width 0)
@@ -187,7 +235,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 200.66) (xy 215.9 200.66)
+			(xy 203.2 198.12) (xy 203.2 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74c960ee-adb4-4375-b63f-111cb461615a")
+	)
+	(wire
+		(pts
+			(xy 200.66 200.66) (xy 205.74 200.66)
 		)
 		(stroke
 			(width 0)
@@ -207,7 +265,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 233.68) (xy 215.9 233.68)
+			(xy 200.66 233.68) (xy 208.28 233.68)
 		)
 		(stroke
 			(width 0)
@@ -227,7 +285,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 231.14) (xy 215.9 231.14)
+			(xy 200.66 231.14) (xy 205.74 231.14)
 		)
 		(stroke
 			(width 0)
@@ -264,6 +322,26 @@
 			(type default)
 		)
 		(uuid "901440f4-e2a6-4447-83cc-f58a2b26f5c4")
+	)
+	(wire
+		(pts
+			(xy 208.28 233.68) (xy 215.9 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90f3d8ad-4a0d-4632-bac3-60875445b903")
+	)
+	(wire
+		(pts
+			(xy 208.28 203.2) (xy 208.28 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91365c5c-75cb-4284-b49e-3adae48a9f01")
 	)
 	(wire
 		(pts
@@ -357,7 +435,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 198.12) (xy 215.9 198.12)
+			(xy 200.66 198.12) (xy 203.2 198.12)
 		)
 		(stroke
 			(width 0)
@@ -467,7 +545,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 203.2) (xy 215.9 203.2)
+			(xy 200.66 203.2) (xy 208.28 203.2)
 		)
 		(stroke
 			(width 0)
@@ -828,50 +906,6 @@
 		)
 		(uuid "f988d6ea-11c5-4837-b1d1-5c292ded50c6")
 	)
-	(global_label "ESP_GPIO_36"
-		(shape bidirectional)
-		(at 215.9 200.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "01383e8f-3b83-4fa7-90bb-cfca910d3918")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 200.5806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_37"
-		(shape bidirectional)
-		(at 215.9 198.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "32f6c133-3086-44f8-b4c8-1da30894b2c3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 198.0406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ESP_GPIO_5"
 		(shape bidirectional)
 		(at 215.9 228.6 0)
@@ -995,28 +1029,6 @@
 		(uuid "dec5656e-d83e-434b-b866-7a6cae7b497c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 229.4728 215.8206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_35"
-		(shape bidirectional)
-		(at 215.9 203.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e6d0cb41-158d-4a1d-98b1-2c2404cd8edc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6823 203.1206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
