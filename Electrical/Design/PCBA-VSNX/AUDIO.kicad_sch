@@ -107,6 +107,130 @@
 				)
 			)
 		)
+		(symbol "Device:Speaker"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LS"
+				(at 1.27 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Speaker"
+				(at 1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Speaker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "speaker sound"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Speaker_0_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 3.556 3.81) (xy 3.556 -6.35) (xy 1.016 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Speaker_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3VA"
 			(power)
 			(pin_numbers hide)
@@ -1283,6 +1407,12 @@
 		)
 	)
 	(junction
+		(at 187.96 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a24c01e-c5d3-4a2b-a17c-76d575ada7ff")
+	)
+	(junction
 		(at 88.9 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1299,6 +1429,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b83435f-e29b-4843-85fe-acabb4078473")
+	)
+	(junction
+		(at 213.36 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60afa265-5976-4a67-bcf3-201d343bce85")
+	)
+	(junction
+		(at 213.36 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7256552f-d5b2-466f-b97d-5e077cabfc53")
 	)
 	(junction
 		(at 175.26 96.52)
@@ -1347,6 +1489,22 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7f70604-590f-4574-820d-e62b12d7e0d9")
+	)
+	(junction
+		(at 187.96 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1a25d14-6d7c-43c1-b623-9049016350de")
+	)
+	(wire
+		(pts
+			(xy 218.44 106.68) (xy 218.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d63d8a-bf9b-4ebc-8fe4-7f0470f5091c")
 	)
 	(wire
 		(pts
@@ -1600,6 +1758,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 91.44) (xy 187.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b6cd23b-8c69-4aa5-8ef7-752f5cb6a01c")
+	)
+	(wire
+		(pts
 			(xy 101.6 66.04) (xy 101.6 63.5)
 		)
 		(stroke
@@ -1627,6 +1795,16 @@
 			(type default)
 		)
 		(uuid "71dd5217-6e6e-4dc2-9c4e-a62569123699")
+	)
+	(wire
+		(pts
+			(xy 187.96 104.14) (xy 187.96 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7460565f-167f-496d-9043-b4617288d148")
 	)
 	(wire
 		(pts
@@ -1700,6 +1878,26 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 91.44) (xy 187.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b576eb6-4780-4b9a-925f-30b876ec7050")
+	)
+	(wire
+		(pts
+			(xy 218.44 101.6) (xy 223.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf66666-cd06-41a4-9b40-4d4517e4334d")
+	)
+	(wire
+		(pts
 			(xy 86.36 104.14) (xy 93.98 104.14)
 		)
 		(stroke
@@ -1707,6 +1905,16 @@
 			(type default)
 		)
 		(uuid "a1622303-6912-47c6-a08a-a39879bef1f7")
+	)
+	(wire
+		(pts
+			(xy 213.36 106.68) (xy 218.44 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a14683-8b2a-4a34-9c8c-de84d8fa7134")
 	)
 	(wire
 		(pts
@@ -1750,6 +1958,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 91.44) (xy 213.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb4461fc-1e41-4926-a274-a7bece08b555")
+	)
+	(wire
+		(pts
 			(xy 81.28 53.34) (xy 81.28 50.8)
 		)
 		(stroke
@@ -1780,6 +1998,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 99.06) (xy 223.52 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1cee218-3c89-4bfa-9af3-465e6b070a60")
+	)
+	(wire
+		(pts
 			(xy 134.62 93.98) (xy 132.08 93.98)
 		)
 		(stroke
@@ -1800,6 +2028,36 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 101.6) (xy 213.36 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2abf875-39f1-48a3-92b9-97069377c4f4")
+	)
+	(wire
+		(pts
+			(xy 218.44 91.44) (xy 213.36 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48bf9f5-5ca2-48d6-acb1-b3b6e2183b60")
+	)
+	(wire
+		(pts
+			(xy 218.44 91.44) (xy 218.44 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69d950c-4659-48b4-ba19-294422d92869")
+	)
+	(wire
+		(pts
 			(xy 86.36 101.6) (xy 93.98 101.6)
 		)
 		(stroke
@@ -1817,6 +2075,16 @@
 			(type default)
 		)
 		(uuid "eca30355-ee8c-4f12-aa3d-f65970fb9623")
+	)
+	(wire
+		(pts
+			(xy 187.96 106.68) (xy 213.36 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2810909-ebd0-4ee6-b344-31a360af2ecd")
 	)
 	(wire
 		(pts
@@ -3163,6 +3431,73 @@
 	)
 	(symbol
 		(lib_id "suku_basics:RES")
+		(at 213.36 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9187b706-0847-4efa-bc3a-db1e237798da")
+		(property "Reference" "R606"
+			(at 215.9 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8R"
+			(at 210.82 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:RES_0402"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d608c2c-fb19-4d95-85e6-55ff04674524")
+		)
+		(pin "2"
+			(uuid "312391d8-aadf-4cb5-9327-444b5c28d37c")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
+					(reference "R606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:RES")
 		(at 96.52 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3697,6 +4032,74 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
 					(reference "#FLG0902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker")
+		(at 228.6 101.6 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eebef332-3f65-4df8-b08c-be6fe14316e2")
+		(property "Reference" "LS601"
+			(at 229.108 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Speaker"
+			(at 229.108 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:speaker-1609"
+			(at 228.6 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.346 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Speaker"
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ecd7574c-a377-4f6d-a745-edf96d633f53")
+		)
+		(pin "1"
+			(uuid "51dd6637-986d-4469-aab9-8e0ef3b6f80b")
+		)
+		(instances
+			(project ""
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
+					(reference "LS601")
 					(unit 1)
 				)
 			)
