@@ -33,8 +33,8 @@ Licence: GPL3
 | Button Cap                | PLASTIC-CAP-BUTTON   | Purchased  | <img src="../preview/Preview/Mechanical/PLASTIC-CAP-BUTTON.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-CAP-BUTTON.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-CAP-BUTTON.stl) |
 | Hall Switch                    | THT-HALL-SWITCH          | Purchased  | <img src="../preview/Preview/Mechanical/THT-HALL-SWITCH.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/THT-HALL-SWITCH.step) [[stl]](../preview/Preview/Mechanical/THT-HALL-SWITCH.stl) |
 | Low Profile Keycap                | PLASTIC-LOW-PROFILE-KEYCAP   | Purchased  | <img src="../preview/Preview/Mechanical/PLASTIC-LOW-PROFILE-KEYCAP.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-LOW-PROFILE-KEYCAP.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-LOW-PROFILE-KEYCAP.stl) |
-| Battery Connector         | SMTA-CONN-BATTERY    | Purchased  | <img src="../preview/Preview/Mechanical/SMTA-CONN-BATTERY.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SMTA-CONN-BATTERY.step)|
-| Pogo Connector            | SMTA-CONN-POGO       | Purchased  | <img src="../preview/Preview/Mechanical/SMTA-CONN-POGO.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SMTA-CONN-POGO.step) [[pdf]](../preview/Preview/Mechanical/SMTA-CONN-POGO_Drawing.pdf) |
+| Battery Connector         | SMT-CONN-BATTERY    | Purchased  | <img src="../preview/Preview/Mechanical/SMT-CONN-BATTERY.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SMT-CONN-BATTERY.step)|
+| Pogo Connector            | SMT-CONN-POGO       | Purchased  | <img src="../preview/Preview/Mechanical/SMT-CONN-POGO.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SMT-CONN-POGO.step) [[pdf]](../preview/Preview/Mechanical/SMT-CONN-POGO_Drawing.pdf) |
 
 
 # TEK2 specific components
@@ -49,7 +49,7 @@ Licence: GPL3
 # VSN1 specific components
 | Component                 | Part number          | Type       | Preview | Links        |
 |---------------------------|----------------------|------------|---------|--------------|
-| VSN1 Display | SMTA-VSN1-DISPLAY | Purchased | <img src="../preview/Preview/Mechanical/SMTA-VSN1-DISPLAY.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SMTA-VSN1-DISPLAY.step) [[stl]](../preview/Preview/Mechanical/SMTA-VSN1-DISPLAY.stl) |
+| VSN1 Display | SMT-VSN1-DISPLAY | Purchased | <img src="../preview/Preview/Mechanical/SMT-VSN1-DISPLAY.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SMT-VSN1-DISPLAY.step) [[stl]](../preview/Preview/Mechanical/SMT-VSN1-DISPLAY.stl) |
 | VSN1 Display interface | PLASTIC-VSN1-DISPLAY-INTERFACE | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-VSN1-DISPLAY-INTERFACE.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-VSN1-DISPLAY-INTERFACE.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-VSN1-DISPLAY-INTERFACE.stl) |
 | VSN1 Button | PLASTIC-VSN1-BUTTON | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-VSN1-BUTTON.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-VSN1-BUTTON.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-VSN1-BUTTON.stl) |
 
