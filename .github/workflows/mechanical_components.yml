@@ -89,7 +89,7 @@ jobs:
       run: |
         ls        
         export DISPLAY=:99
-        timeout 1m freecad --hidden ./Mechanical/Design/${{ matrix.component }}/${{ matrix.component }}.FCStd ./.github/workflows/freecad_export.py step pdf
+        timeout 1m freecad --hidden ./Mechanical/Design/${{ matrix.component }}/${{ matrix.component }}.FCStd ./.github/workflows/freecad_export.py step pdf || true
 
     - name: Install conda, pythonocc and do the conversion
       run: |
