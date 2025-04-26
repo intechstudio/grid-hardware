@@ -91,6 +91,18 @@ Licence: GPL3
 | VSNX SPACER       | PCBA-VSNX-SPACER | <img src="../preview/Preview/Electrical/PCBA-VSNX-SPACER-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/PCBA-VSNX-SPACER-3D_bottom.png?raw=true" width="150"> | [[schematic]](../preview/Preview/Electrical/PCBA-VSNX-SPACER_Schematic.pdf) [[STEP]](../preview/Preview/Electrical/PCBA-VSNX-SPACER-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/PCBA-VSNX-SPACER-blender_export.pcb3d?raw=true) |
 | VSNX LCD MOUNT       | PCBA-VSNX-LCDMOUNT | <img src="../preview/Preview/Electrical/PCBA-VSNX-LCDMOUNT-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/PCBA-VSNX-LCDMOUNT-3D_bottom.png?raw=true" width="150"> | [[schematic]](../preview/Preview/Electrical/PCBA-VSNX-LCDMOUNT_Schematic.pdf) [[STEP]](../preview/Preview/Electrical/PCBA-VSNX-LCDMOUNT-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/PCBA-VSNX-LCDMOUNT-blender_export.pcb3d?raw=true) |
 
+## Packaging
+| Component                 | Part number          | Preview | Links        |
+|---------------------------|----------------------|---------|--------------|
+| PO16 Sleeve     | PACKAGING-SLEEVE-PO16       | <img src="../master/Packaging/PACKAGING-SLEEVE-PO16.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-PO16.pdf?raw=true) |
+| BU16 Sleeve     | PACKAGING-SLEEVE-BU16       | <img src="../master/Packaging/PACKAGING-SLEEVE-BU16.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-BU16.pdf?raw=true) |
+| PBF4 Sleeve     | PACKAGING-SLEEVE-PBF4       | <img src="../master/Packaging/PACKAGING-SLEEVE-PBF4.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-PBF4.pdf?raw=true) |
+| EN16 Sleeve     | PACKAGING-SLEEVE-EN16       | <img src="../master/Packaging/PACKAGING-SLEEVE-EN16.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-EN16.pdf?raw=true) |
+| EF44 Sleeve     | PACKAGING-SLEEVE-EF44       | <img src="../master/Packaging/PACKAGING-SLEEVE-EF44.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-EF44.pdf?raw=true) |
+| TEK2 Sleeve     | PACKAGING-SLEEVE-TEK2       | <img src="../master/Packaging/PACKAGING-SLEEVE-TEK2.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-TEK2.pdf?raw=true) |
+| VSN1-L Sleeve     | PACKAGING-SLEEVE-VSN1-L       | <img src="../master/Packaging/PACKAGING-SLEEVE-VSN1-L.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-VSN1-L.pdf?raw=true) |
+| VSN1-R Sleeve     | PACKAGING-SLEEVE-VSN1-R       | <img src="../master/Packaging/PACKAGING-SLEEVE-VSN1-R.svg?raw=true" width="400"> | [[PDF]](../master/Packaging/PACKAGING-SLEEVE-VSN1-R.pdf?raw=true) |
+
 # Desktop Tools Used
 - FreeCAD
 - KiCAD
