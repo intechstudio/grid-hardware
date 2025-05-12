@@ -92,28 +92,26 @@ jobs:
         export DISPLAY=:99
         timeout 1m freecad --hidden ./Mechanical/Design/${{ matrix.component }}/${{ matrix.component }}.FCStd ./.github/workflows/freecad_export.py step pdf || true
 
-    - name: Install conda, pythonocc and do the conversion
+    - name: Install conda, create env with pythonocc-core
       run: |
         CONDA_INSTALL_DIR="$HOME/miniconda3"
 
-        # Download and install Miniconda
+        # Install Miniconda
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
         bash miniconda.sh -b -p "$CONDA_INSTALL_DIR"
         rm miniconda.sh
 
-        # Add Miniconda to PATH
+        # Add Conda to PATH
         export PATH="$CONDA_INSTALL_DIR/bin:$PATH"
+        source "$CONDA_INSTALL_DIR/etc/profile.d/conda.sh"
 
-        # Initialize conda
-        conda init bash
-
-        # Print Miniconda version
-        conda --version
-
-        conda install -c conda-forge pythonocc-core=7.7.2 --yes
-
-        conda --version
+        # Create environment and activate it
+        conda create -n occenv python=3.10 pythonocc-core=7.7.2 -c conda-forge --yes
+        conda activate occenv
+    
+        # Run your Python script inside the environment
         python ./.github/workflows/pythonocc_step_to_stl.py
+
 
     - name: Generate Preview PNG
       run: |
