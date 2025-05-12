@@ -1,5 +1,5 @@
 # Open-Source Hardware
-<img src="../preview/Preview/Logo/grid_oshwa.png?raw=true" width="100">
+<img src="../preview/Logo/grid_oshwa.png?raw=true" width="100">
 https://certification.oshwa.org/hu000001.html
 
 Licence: GPL3
@@ -20,7 +20,7 @@ Licence: GPL3
 | Metric PCB screw          | SCREW-M1.6x5-C         | Purchased  | <img src="../preview/Preview/Mechanical/SCREW-M1.6x5-C.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/SCREW-M1.6x5-C.step) [[stl]](../preview/Preview/Mechanical/SCREW-M1.6x5-C.stl)|
 | Brass threaded insert 3mm | INSERT-M1.6x2.5x3    | Purchased  | <img src="../preview/Preview/Mechanical/INSERT-M1.6x2.5x3.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/INSERT-M1.6x2.5x3.step) [[stl]](../preview/Preview/Mechanical/INSERT-M1.6x2.5x3.stl) |
 | Brass threaded insert 4mm | INSERT-M1.6x2.5x4    | Purchased  | <img src="../preview/Preview/Mechanical/INSERT-M1.6x2.5x4.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/INSERT-M1.6x2.5x4.step) [[stl]](../preview/Preview/Mechanical/INSERT-M1.6x2.5x4.stl) |
-| Lightpipe                 | PLASTIC-LIGHTPIPE    | Purchased  | <img src="../preview/Preview/Mechanical/LIGHTPIPE.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/LIGHTPIPE.step) [[stl]](../preview/Preview/Mechanical/LIGHTPIPE.stl)  |
+| Lightpipe                 | PLASTIC-LIGHTPIPE    | Purchased  | <img src="../preview/Preview/Mechanical/PLASTIC-LIGHTPIPE.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-LIGHTPIPE.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-LIGHTPIPE.stl)  |
 | Encoder Knob Injection    | PLASTIC-KNOB-ENC     | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-KNOB-ENC.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-KNOB-ENC.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-KNOB-ENC.stl) [[pdf]](../preview/Preview/Mechanical/PLASTIC-KNOB-ENC_Drawing.pdf) |
 | Potmeter Knob Injection   | PLASTIC-KNOB-POT     | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-KNOB-POT.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-KNOB-POT.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-KNOB-POT.stl) [[pdf]](../preview/Preview/Mechanical/PLASTIC-KNOB-POT_Drawing.pdf) |
 | Potmeter Bushing          | PLASTIC-BUSHING-POT  | Fabricated | <img src="../preview/Preview/Mechanical/PLASTIC-BUSHING-POT.png?raw=true" width="100"> | [[step]](../preview/Preview/Mechanical/PLASTIC-BUSHING-POT.step) [[stl]](../preview/Preview/Mechanical/PLASTIC-BUSHING-POT.stl) [[pdf]](../preview/Preview/Mechanical/PLASTIC-BUSHING-POT_Drawing.pdf) |
