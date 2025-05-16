@@ -71,7 +71,9 @@ Licence: GPL3
 |---------------------------|----------------------|---------|--------------|
 | BU16 MIDIGrade Frontpanel     | FP-BU16-MIDIGRADE       | <img src="../preview/Preview/Electrical/FP-BU16-MIDIGRADE-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-BU16-MIDIGRADE-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-BU16-MIDIGRADE-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-BU16-MIDIGRADE-blender_export.pcb3d?raw=true)  |
 | BU16 MIDIGrade Frontpanel     | FP-EN16-MIDIGRADE       | <img src="../preview/Preview/Electrical/FP-EN16-MIDIGRADE-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-EN16-MIDIGRADE-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-EN16-MIDIGRADE-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-EN16-MIDIGRADE-blender_export.pcb3d?raw=true)  |
-
+| PBF4 Classic Frontpanel     | FP-PBF4-CLASSIC       | <img src="../preview/Preview/Electrical/FP-PBF4-CLASSIC-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-PBF4-CLASSIC-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-PBF4-CLASSIC-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-PBF4-CLASSIC-blender_export.pcb3d?raw=true)  |
+| TEK2 Classic Frontpanel     | FP-TEK2-CLASSIC       | <img src="../preview/Preview/Electrical/FP-TEK2-CLASSIC-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-TEK2-CLASSIC-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-TEK2-CLASSIC-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-TEK2-CLASSIC-blender_export.pcb3d?raw=true)  |
+| XX16 Test Frontpanel     | FP-XX16-TEST       | <img src="../preview/Preview/Electrical/FP-XX16-TEST-3D_top.png?raw=true" width="150">  <img src="../preview/Preview/Electrical/FP-XX16-TEST-3D_bottom.png?raw=true" width="150"> | [[STEP]](../preview/Preview/Electrical/FP-XX16-TEST-3D.step?raw=true) [[PCB3D]](../preview/Preview/Electrical/FP-XX16-TEST-blender_export.pcb3d?raw=true)  |
 
 ## Electrical components
 
