@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "de3e42c5-2d27-4ddc-a089-d62fce93ec43")
 	(paper "A4")
 	(lib_symbols
 		(symbol "CAP_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -78,10 +82,10 @@
 			(symbol "CAP_1_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -90,10 +94,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -139,11 +143,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CAP_2"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -213,10 +222,10 @@
 			(symbol "CAP_2_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -225,10 +234,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -274,11 +283,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CAP_3"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -348,10 +362,10 @@
 			(symbol "CAP_3_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -360,10 +374,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -409,11 +423,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CAP_4"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -483,10 +502,10 @@
 			(symbol "CAP_4_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -495,10 +514,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -544,11 +563,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -646,10 +670,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Speaker"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -770,9 +797,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "FERRIT_1"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -845,7 +875,7 @@
 			(symbol "FERRIT_1_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
 					)
 					(stroke
 						(width 0)
@@ -869,7 +899,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+						(xy 0 -1.27) (xy 0 -0.7874)
 					)
 					(stroke
 						(width 0)
@@ -918,9 +948,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "FERRIT_2"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -993,7 +1026,7 @@
 			(symbol "FERRIT_2_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
 					)
 					(stroke
 						(width 0)
@@ -1017,7 +1050,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+						(xy 0 -1.27) (xy 0 -0.7874)
 					)
 					(stroke
 						(width 0)
@@ -1066,12 +1099,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "PWR_FLAG_1"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1162,131 +1200,16 @@
 					)
 				)
 			)
-		)
-		(symbol "RES_1"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" ""
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "suku_basics:RES_0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RES_1_1_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "RES_2"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1402,11 +1325,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "RES_3"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1522,11 +1450,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "RES_4"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1642,12 +1575,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3VA"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1719,7 +1657,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1731,7 +1669,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1762,12 +1700,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1839,7 +1782,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1851,7 +1794,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1882,12 +1825,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1978,12 +1926,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GNDA"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2074,12 +2027,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2170,11 +2128,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:CAP"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2244,10 +2207,10 @@
 			(symbol "CAP_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -2256,10 +2219,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -2305,9 +2268,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:FERRIT"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -2380,7 +2346,7 @@
 			(symbol "FERRIT_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
 					)
 					(stroke
 						(width 0)
@@ -2404,7 +2370,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+						(xy 0 -1.27) (xy 0 -0.7874)
 					)
 					(stroke
 						(width 0)
@@ -2453,6 +2419,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:NS4168_C910588"
 			(exclude_from_sim no)
@@ -2606,52 +2573,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 11.43 -5.08 180)
+					(at 11.43 5.08 180)
 					(length 2.54)
-					(name "VON"
+					(name "EP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 -2.54 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 11.43 0 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2678,16 +2609,52 @@
 					)
 				)
 				(pin unspecified line
-					(at 11.43 5.08 180)
+					(at 11.43 0 180)
 					(length 2.54)
-					(name "EP"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -2.54 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -5.08 180)
+					(length 2.54)
+					(name "VON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2696,11 +2663,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:RES"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2816,6 +2788,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -2837,10 +2810,28 @@
 		(uuid "0bdeeb26-c043-4579-8fe0-1a80c6c6c532")
 	)
 	(junction
+		(at 210.82 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23ef5e60-f608-4293-8114-5104de511ceb")
+	)
+	(junction
 		(at 91.44 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b83435f-e29b-4843-85fe-acabb4078473")
+	)
+	(junction
+		(at 208.28 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34131f13-67a1-47e6-a013-bbccbcf0a768")
+	)
+	(junction
+		(at 208.28 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5317c8e0-f31f-4cdd-b237-31310aa175da")
 	)
 	(junction
 		(at 213.36 106.68)
@@ -2883,6 +2874,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab17a8ff-796e-49d7-a26d-8ba3a171a743")
+	)
+	(junction
+		(at 210.82 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1b0c8d9-0cf4-4c77-bb8b-3f9282ce295b")
 	)
 	(junction
 		(at 81.28 63.5)
@@ -2970,6 +2967,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 91.44) (xy 187.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b03fa85-18fc-400e-b966-a833dac875f7")
+	)
+	(wire
+		(pts
 			(xy 185.42 109.22) (xy 185.42 114.3)
 		)
 		(stroke
@@ -2997,6 +3004,16 @@
 			(type default)
 		)
 		(uuid "25b87842-3a2a-4f2a-b51a-81700e2b6ab9")
+	)
+	(wire
+		(pts
+			(xy 210.82 106.68) (xy 213.36 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25c040d9-f4f7-494a-8fcf-4da39175582a")
 	)
 	(wire
 		(pts
@@ -3140,6 +3157,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 91.44) (xy 208.28 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a83d60e-64fe-4697-8164-cf19d84b8102")
+	)
+	(wire
+		(pts
 			(xy 99.06 104.14) (xy 109.22 104.14)
 		)
 		(stroke
@@ -3230,6 +3257,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 106.68) (xy 210.82 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "767f2748-d481-445d-87d0-b8e81eb0ce79")
+	)
+	(wire
+		(pts
 			(xy 86.36 99.06) (xy 93.98 99.06)
 		)
 		(stroke
@@ -3290,7 +3327,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 91.44) (xy 187.96 91.44)
+			(xy 213.36 91.44) (xy 210.82 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3327,6 +3364,16 @@
 			(type default)
 		)
 		(uuid "a2a14683-8b2a-4a34-9c8c-de84d8fa7134")
+	)
+	(wire
+		(pts
+			(xy 208.28 101.6) (xy 208.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a93c3fce-630a-41a1-9c71-33b4eef642e1")
 	)
 	(wire
 		(pts
@@ -3430,6 +3477,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 101.6) (xy 210.82 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6f7380b-6dbf-42ba-8e01-e880c15f12c4")
+	)
+	(wire
+		(pts
 			(xy 165.1 111.76) (xy 165.1 114.3)
 		)
 		(stroke
@@ -3480,6 +3537,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 91.44) (xy 208.28 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8ca5f59-5bf4-4baf-9c27-7bdf86f807b3")
+	)
+	(wire
+		(pts
 			(xy 149.86 104.14) (xy 165.1 104.14)
 		)
 		(stroke
@@ -3490,7 +3557,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 106.68) (xy 213.36 106.68)
+			(xy 187.96 106.68) (xy 208.28 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3507,6 +3574,16 @@
 			(type default)
 		)
 		(uuid "f57dfe2e-5242-4436-bb46-df2020ff4886")
+	)
+	(wire
+		(pts
+			(xy 210.82 91.44) (xy 210.82 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8c3e225-efaf-4adc-b8cb-260bbac3d04e")
 	)
 	(hierarchical_label "SDATA"
 		(shape input)
@@ -3873,6 +3950,74 @@
 		)
 	)
 	(symbol
+		(lib_name "RES_3")
+		(lib_id "suku_basics:RES")
+		(at 210.82 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f2236f4-3e8d-4484-ad3a-0c1eb18d3eb5")
+		(property "Reference" "R944"
+			(at 210.82 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 210.82 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:RES_0402"
+			(at 210.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be134d5d-d2d4-46ec-b3c7-8c555e21d60a")
+		)
+		(pin "2"
+			(uuid "ae2e13de-9714-4c93-b98f-1f0fd5386e71")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
+					(reference "R944")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "suku_basics:CAP")
 		(at 175.26 109.22 0)
 		(mirror y)
@@ -4075,6 +4220,73 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
 					(reference "R942")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:RES")
+		(at 208.28 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49518f3f-644e-4ea4-bb0e-7f4f74b5e32e")
+		(property "Reference" "R945"
+			(at 208.28 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 208.28 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:RES_0402"
+			(at 208.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1f49848-af50-466d-a2ac-16d4bd1ca2a5")
+		)
+		(pin "2"
+			(uuid "62dcb1f9-83e1-4b13-b501-621578fa2702")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
+					(reference "R945")
 					(unit 1)
 				)
 			)
@@ -4461,7 +4673,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 200.66 96.52 90)
+			(at 193.04 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,6 +4783,74 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
 					(reference "L902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "RES_2")
+		(lib_id "suku_basics:RES")
+		(at 213.36 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84fd3941-1175-4d5e-97c4-16681da166e2")
+		(property "Reference" "R943"
+			(at 213.36 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 213.36 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:RES_0402"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4be85484-a84c-47e9-9691-a53e8009191d")
+		)
+		(pin "2"
+			(uuid "cc4d3795-ed0e-49fa-9bfa-eff5583bdb23")
+		)
+		(instances
+			(project "PCBA-VSNX"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
+					(reference "R943")
 					(unit 1)
 				)
 			)
@@ -4799,7 +5079,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 200.66 104.14 90)
+			(at 193.04 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4841,74 +5121,6 @@
 			(project "PCBA-VSNX"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
 					(reference "TP902")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "RES_1")
-		(lib_id "suku_basics:RES")
-		(at 213.36 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9187b706-0847-4efa-bc3a-db1e237798da")
-		(property "Reference" "R606"
-			(at 215.9 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "8R"
-			(at 210.82 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d608c2c-fb19-4d95-85e6-55ff04674524")
-		)
-		(pin "2"
-			(uuid "312391d8-aadf-4cb5-9327-444b5c28d37c")
-		)
-		(instances
-			(project "PCBA-VSNX"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/420c75e9-bafc-4431-a4f2-45e194f0c573"
-					(reference "R606")
 					(unit 1)
 				)
 			)
@@ -5138,7 +5350,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 200.66 109.22 90)
+			(at 193.04 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
