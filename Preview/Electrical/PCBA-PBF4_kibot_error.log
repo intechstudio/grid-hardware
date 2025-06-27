@@ -1,6 +1,6 @@
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1076)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `erc` (kibot.pre_erc - pre_erc.py:38)
-WARNING:(W142) 351 ERC warnings detected (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) 355 ERC warnings detected (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (multiple_net_names) Both ESP_GPIO_1 and ESP_GPIO_18 are attached to the same items; ESP_GPIO_1 will be used in the netlist
     @(2.159 mm, 1.8542 mm): Global Label 'ESP_GPIO_1'
     @(2.159 mm, 1.8796 mm): Global Label 'ESP_GPIO_18'
@@ -1008,6 +1008,18 @@ WARNING:(W142) (lib_symbol_mismatch) Symbol '+5V' doesn't match copy in library 
     @(0.9652 mm, 1.143 mm): Symbol #PWR0516 [+5V]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (lib_symbol_mismatch) Symbol '+3V3' doesn't match copy in library 'power'
+    @(0.4572 mm, 0.7366 mm): Symbol #PWR0638 [+3V3]
+    Sheet: / (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the symbol library 'suku_basics'
+    @(0.4572 mm, 0.7874 mm): Symbol JP601 [JP_SolderJumper_2_Open]
+    Sheet: / (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (lib_symbol_issues) The current configuration does not include the symbol library 'suku_basics'
+    @(0.4572 mm, 0.889 mm): Symbol R606 [RES]
+    Sheet: / (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 'power'
+    @(0.4572 mm, 0.9398 mm): Symbol #PWR0639 [GND]
+    Sheet: / (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (lib_symbol_mismatch) Symbol '+3V3' doesn't match copy in library 'power'
     @(1.0414 mm, 0.635 mm): Symbol #PWR0832 [+3V3]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (lib_symbol_issues) The current configuration does not include the symbol library 'suku_basics'
@@ -1025,9 +1037,9 @@ WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 
 WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 'power'
     @(1.2192 mm, 1.016 mm): Symbol #PWR0881 [GND]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
-WARNING:(W142) (multiple_net_names) Both GND and OUT_8 are attached to the same items; GND will be used in the netlist
-    @(0.9144 mm, 1.143 mm): Symbol #PWR01037 Hidden pin 1 [GND, Power input, Line]
-    @(0.3556 mm, 1.397 mm): Hierarchical Label 'OUT_8'
+WARNING:(W142) (multiple_net_names) Both GND and OUT_9 are attached to the same items; GND will be used in the netlist
+    @(0.4064 mm, 1.143 mm): Symbol #PWR01027 Hidden pin 1 [GND, Power input, Line]
+    @(0.6096 mm, 1.397 mm): Hierarchical Label 'OUT_9'
     Sheet: /UI_POT/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (no_connect_dangling) Unconnected "no connection" flag
     @(1.2446 mm, 0.6858 mm): No Connect
@@ -1053,13 +1065,13 @@ WARNING:(W142) (multiple_net_names) Both B7_DN and USB_DATA_N are attached to th
     @(0.5842 mm, 0.7366 mm): Label 'B7_DN'
     @(2.3368 mm, 1.0414 mm): Hierarchical Label 'USB_DATA_N'
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (multiple_net_names) Both GND and HWCFG_LOW are attached to the same items; GND will be used in the netlist
+    @(1.2192 mm, 1.016 mm): Symbol #PWR0881 Hidden pin 1 [GND, Power input, Line]
+    @(0.7874 mm, 0.7366 mm): Label 'HWCFG_LOW'
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (multiple_net_names) Both +3V3 and HWCFG_HIGH are attached to the same items; +3V3 will be used in the netlist
     @(1.0414 mm, 0.635 mm): Symbol #PWR0832 Hidden pin 1 [+3V3, Power input, Line]
-    @(0.7874 mm, 0.889 mm): Label 'HWCFG_HIGH'
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
-WARNING:(W142) (multiple_net_names) Both GND and HWCFG_LOW are attached to the same items; GND will be used in the netlist
-    @(1.0414 mm, 1.143 mm): Symbol #PWR0879 Hidden pin 1 [GND, Power input, Line]
-    @(1.2954 mm, 0.9906 mm): Label 'HWCFG_LOW'
+    @(0.7874 mm, 0.9144 mm): Label 'HWCFG_HIGH'
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1076)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1076)
@@ -1073,7 +1085,7 @@ WARNING:(W135) Part field mismatch for `U510` (SCH: `LM321` PCB: `C90297`) (kibo
 WARNING:(W135) Part field mismatch for `U508` (SCH: `A1301KLHLT-T` PCB: `C85573`) (kibot - kiplot.py:384)
 WARNING:(W020) Malformed value: `GZ2012D601TF` (no match in L702) (kibot - units.py:239)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 50 DRC warnings detected (kibot.pre_drc - pre_drc.py:150)
+WARNING:(W145) 51 DRC warnings detected (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (via_dangling) Via is not connected or connected on only one layer
     @(105.75 mm, 108.5 mm): Via [GND] on F.Cu - B.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
@@ -1225,13 +1237,16 @@ WARNING:(W145) (footprint_type_mismatch) Footprint component type doesn't match 
 WARNING:(W145) (footprint_type_mismatch) Footprint component type doesn't match footprint pads (expected 'Through hole'; actual 'SMD')
     @(125.87625 mm, 138.814375 mm): Footprint J510
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
+WARNING:(W145) (lib_footprint_mismatch) Footprint 'SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm' does not match copy in library 'Jumper'.
+    @(105.25 mm, 76.5 mm): Footprint JP601
+    Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_mismatch) Footprint 'PinHeader_2x05_P1.27mm_Vertical' does not match copy in library 'Connector_PinHeader_1.27mm'.
     @(95.625 mm, 105.25 mm): Footprint J702
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(126.67 mm, 115.0 mm): PCB text 'Intech Studio
 PCBA-PBF4
-c9e5bb1
+859ee70
 2025-06-27
 EE: Suku' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
