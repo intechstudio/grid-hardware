@@ -1,10 +1,21 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "90e24bb9-f10f-4b83-ac24-c2b24b707dee")
 	(paper "A4")
 	(lib_symbols)
+	(text "simulation"
+		(exclude_from_sim no)
+		(at 48.006 42.164 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEAWaA2ATGNBmHmwEAOATg2RJAUipRyoFMBaMMAKAEMQW1wyQSvMPyIgc0ejTDx44aCSLwsuNAHYSyDKtFh56kgcNGDOmZDYAnbtnCreLDDrtQq08wHdrQ5zwG9zVr6CfiFS1HBsnsHRQvweIcIYtrFJ8Q5O9onJUJZeIBiQoun5hS5uEQBK1o4lRWDOBaI0NMg04pIuMAi5vo15jk3g4eYA5v1Edbw4kMidbFUs-PX2GAje-mIozdDIyEgY0GA4g11sAPYgvIOtCrQwcISYSDSiU3e09IOi9NJlbWxAA")
+		)
+		(uuid "924acfe5-0809-40bd-8d6a-c4b311b2f24d")
+	)
 	(wire
 		(pts
 			(xy 99.06 53.34) (xy 101.6 53.34)
@@ -164,17 +175,6 @@
 			(type default)
 		)
 		(uuid "fc9f8be4-53eb-4034-ab9e-05054bfec79d")
-	)
-	(text "simulation"
-		(exclude_from_sim no)
-		(at 48.006 42.164 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEAWaA2ATGNBmHmwEAOATg2RJAUipRyoFMBaMMAKAEMQW1wyQSvMPyIgc0ejTDx44aCSLwsuNAHYSyDKtFh56kgcNGDOmZDYAnbtnCreLDDrtQq08wHdrQ5zwG9zVr6CfiFS1HBsnsHRQvweIcIYtrFJ8Q5O9onJUJZeIBiQoun5hS5uEQBK1o4lRWDOBaI0NMg04pIuMAi5vo15jk3g4eYA5v1Edbw4kMidbFUs-PX2GAje-mIozdDIyEgY0GA4g11sAPYgvIOtCrQwcISYSDSiU3e09IOi9NJlbWxAA")
-		)
-		(uuid "924acfe5-0809-40bd-8d6a-c4b311b2f24d")
 	)
 	(hierarchical_label "IN_5"
 		(shape passive)
@@ -355,6 +355,10 @@
 	(sheet
 		(at 50.8 101.6)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -384,23 +388,23 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 104.14 180)
+			(uuid "93fea2bd-6179-48fa-85eb-507d00182a61")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "93fea2bd-6179-48fa-85eb-507d00182a61")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 104.14 0)
+			(uuid "a88bd593-0cca-437a-aacf-2e1491eb4149")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a88bd593-0cca-437a-aacf-2e1491eb4149")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -413,6 +417,10 @@
 	(sheet
 		(at 50.8 50.8)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -442,23 +450,23 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 53.34 180)
+			(uuid "e0587feb-0ebc-443e-aaae-5e307bb6f4b7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e0587feb-0ebc-443e-aaae-5e307bb6f4b7")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 53.34 0)
+			(uuid "97cf1147-7b9e-49c0-b47d-b73af1a431a1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "97cf1147-7b9e-49c0-b47d-b73af1a431a1")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -471,6 +479,10 @@
 	(sheet
 		(at 101.6 127)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -500,23 +512,23 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 129.54 180)
+			(uuid "98786236-cb01-4695-8e3b-26f45ae50595")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "98786236-cb01-4695-8e3b-26f45ae50595")
 		)
 		(pin "OUTPUT" passive
 			(at 127 129.54 0)
+			(uuid "a268cb26-73d8-45d8-b85d-02c7ac4a20d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a268cb26-73d8-45d8-b85d-02c7ac4a20d9")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -529,6 +541,10 @@
 	(sheet
 		(at 101.6 101.6)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -558,23 +574,23 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 104.14 180)
+			(uuid "56491306-108b-4c47-a165-a08717e47823")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "56491306-108b-4c47-a165-a08717e47823")
 		)
 		(pin "OUTPUT" passive
 			(at 127 104.14 0)
+			(uuid "738e60c8-ecf2-4100-8446-a7848648e677")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "738e60c8-ecf2-4100-8446-a7848648e677")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -587,6 +603,10 @@
 	(sheet
 		(at 101.6 50.8)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -616,23 +636,23 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 53.34 180)
+			(uuid "1168f872-bf8b-4997-a4d6-0367b180cc5e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1168f872-bf8b-4997-a4d6-0367b180cc5e")
 		)
 		(pin "OUTPUT" passive
 			(at 127 53.34 0)
+			(uuid "543eacb3-c870-4b10-880a-476d2b3f5252")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "543eacb3-c870-4b10-880a-476d2b3f5252")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -645,6 +665,10 @@
 	(sheet
 		(at 101.6 76.2)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -674,23 +698,23 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 78.74 180)
+			(uuid "3de41cbd-7e62-4b8c-9493-774853e91dc9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3de41cbd-7e62-4b8c-9493-774853e91dc9")
 		)
 		(pin "OUTPUT" passive
 			(at 127 78.74 0)
+			(uuid "0501428b-1a6a-48e5-947e-fa3c6e4d23cc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0501428b-1a6a-48e5-947e-fa3c6e4d23cc")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -703,6 +727,10 @@
 	(sheet
 		(at 50.8 127)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -732,23 +760,23 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 129.54 180)
+			(uuid "668ede5a-a6e9-4a61-9e11-c0c3f7d85eef")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "668ede5a-a6e9-4a61-9e11-c0c3f7d85eef")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 129.54 0)
+			(uuid "c9e45107-17b0-4db0-aa73-7fd06d893f7c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c9e45107-17b0-4db0-aa73-7fd06d893f7c")
 		)
 		(instances
 			(project "PCBA-VSNX"
@@ -761,6 +789,10 @@
 	(sheet
 		(at 50.8 76.2)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -790,23 +822,23 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 78.74 180)
+			(uuid "14b34e16-b0e0-42d6-bee6-9061cae44e5e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "14b34e16-b0e0-42d6-bee6-9061cae44e5e")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 78.74 0)
+			(uuid "d1eeb806-fee6-4d78-a566-1faeb0eb9c65")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d1eeb806-fee6-4d78-a566-1faeb0eb9c65")
 		)
 		(instances
 			(project "PCBA-VSNX"
