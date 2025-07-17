@@ -1037,9 +1037,9 @@ WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 
 WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 'power'
     @(1.2192 mm, 1.016 mm): Symbol #PWR0881 [GND]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
-WARNING:(W142) (multiple_net_names) Both GND and OUT_9 are attached to the same items; GND will be used in the netlist
-    @(0.4064 mm, 1.143 mm): Symbol #PWR01027 Hidden pin 1 [GND, Power input, Line]
-    @(0.6096 mm, 1.397 mm): Hierarchical Label 'OUT_9'
+WARNING:(W142) (multiple_net_names) Both GND and OUT_8 are attached to the same items; GND will be used in the netlist
+    @(0.9144 mm, 1.143 mm): Symbol #PWR01037 Hidden pin 1 [GND, Power input, Line]
+    @(0.3556 mm, 1.397 mm): Hierarchical Label 'OUT_8'
     Sheet: /UI_POT/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (no_connect_dangling) Unconnected "no connection" flag
     @(1.2446 mm, 0.6858 mm): No Connect
@@ -1065,13 +1065,13 @@ WARNING:(W142) (multiple_net_names) Both B7_DN and USB_DATA_N are attached to th
     @(0.5842 mm, 0.7366 mm): Label 'B7_DN'
     @(2.3368 mm, 1.0414 mm): Hierarchical Label 'USB_DATA_N'
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:146)
-WARNING:(W142) (multiple_net_names) Both GND and HWCFG_LOW are attached to the same items; GND will be used in the netlist
-    @(1.2192 mm, 1.016 mm): Symbol #PWR0881 Hidden pin 1 [GND, Power input, Line]
-    @(0.7874 mm, 0.7366 mm): Label 'HWCFG_LOW'
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (multiple_net_names) Both +3V3 and HWCFG_HIGH are attached to the same items; +3V3 will be used in the netlist
     @(1.0414 mm, 0.635 mm): Symbol #PWR0832 Hidden pin 1 [+3V3, Power input, Line]
-    @(0.7874 mm, 0.9144 mm): Label 'HWCFG_HIGH'
+    @(0.7874 mm, 0.889 mm): Label 'HWCFG_HIGH'
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (multiple_net_names) Both GND and HWCFG_LOW are attached to the same items; GND will be used in the netlist
+    @(1.2192 mm, 1.016 mm): Symbol #PWR0881 Hidden pin 1 [GND, Power input, Line]
+    @(1.2954 mm, 0.9906 mm): Label 'HWCFG_LOW'
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1076)
 WARNING:(W037) Field Datasheet of component J701 (Conn_Coaxial C5137195) contains extra spaces: ` ~` removing them. (kibot - v5_sch.py:1076)
@@ -1246,8 +1246,8 @@ WARNING:(W145) (lib_footprint_mismatch) Footprint 'PinHeader_2x05_P1.27mm_Vertic
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(126.67 mm, 115.0 mm): PCB text 'Intech Studio
 PCBA-PBF4
-859ee70
-2025-06-27
+b9b0ba5
+2025-07-17
 EE: Suku' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
