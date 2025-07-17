@@ -88,6 +88,511 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8 129.54) (xy 50.8 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09554f11-0e64-446c-af27-0e674f6bd92d")
+	)
+	(wire
+		(pts
+			(xy 76.2 129.54) (xy 76.2 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "097934c9-65e7-45c2-a0aa-952ed890e42d")
+	)
+	(wire
+		(pts
+			(xy 127 78.74) (xy 127 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47387f80-9c29-490e-8322-778b93b89965")
+	)
+	(wire
+		(pts
+			(xy 50.8 180.34) (xy 50.8 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "526aff90-0314-43da-9951-52ec231dc0a4")
+	)
+	(wire
+		(pts
+			(xy 152.4 198.12) (xy 152.4 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63690972-8937-42c3-a79d-c2736e119393")
+	)
+	(wire
+		(pts
+			(xy 101.6 78.74) (xy 101.6 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65cf30f8-260e-4257-9f92-68fdf2a4a900")
+	)
+	(wire
+		(pts
+			(xy 101.6 180.34) (xy 101.6 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8045b747-29a2-4a3d-b11a-a5b1dfc8113c")
+	)
+	(wire
+		(pts
+			(xy 50.8 78.74) (xy 50.8 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "988c07c6-7456-4c4f-a836-4a7763e741b2")
+	)
+	(wire
+		(pts
+			(xy 127 180.34) (xy 127 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a556cc9e-ca42-43d8-9aff-d4035b7df5a3")
+	)
+	(wire
+		(pts
+			(xy 76.2 180.34) (xy 76.2 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b64e8a7e-8acf-4bd1-b4b9-3eee4c1d393a")
+	)
+	(wire
+		(pts
+			(xy 127 129.54) (xy 127 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bee487f3-572e-4a65-afab-d108165f2ab4")
+	)
+	(wire
+		(pts
+			(xy 101.6 129.54) (xy 101.6 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd3e0f86-cdbb-4ff5-94fc-a9f4ea29dcbf")
+	)
+	(wire
+		(pts
+			(xy 76.2 78.74) (xy 76.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef46f338-4b7a-4fd8-9204-1d5be7b64946")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0082bcde-c3df-437d-9510-58a5fcd6f594")
+		(property "Reference" "#PWR0509"
+			(at 127 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58aa7a89-6596-4bac-9063-73b7c4563d74")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0509")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -154,17 +659,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 101.6 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "109cd1b7-4d04-44b4-85f7-25004061d4bf")
 		(property "Reference" "H515"
-			(at 104.14 74.9299 0)
+			(at 104.14 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -173,7 +678,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 104.14 77.4699 0)
+			(at 104.14 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -181,7 +686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 101.6 76.2 0)
 			(effects
 				(font
@@ -199,7 +704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 101.6 76.2 0)
 			(effects
 				(font
@@ -207,6 +712,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "95747be9-11fe-4d2a-9699-ffb25a0f0c00")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -218,17 +726,149 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 198.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11406a0a-d94c-452d-86d6-67168815a34a")
+		(property "Reference" "#FLG0501"
+			(at 152.4 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 152.4 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 152.4 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35c697e9-44e1-4a62-904c-dbd6c486f9f1")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#FLG0501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2181cd94-5624-4ef9-92c1-241ceec41042")
+		(property "Reference" "#PWR0510"
+			(at 50.8 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12c743e7-0625-49d6-af70-47e9266c04b3")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 76.2 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "319b7997-c713-4756-b778-6dfb8a90cc92")
 		(property "Reference" "H514"
-			(at 78.74 74.9299 0)
+			(at 78.74 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -237,7 +877,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 78.74 77.4699 0)
+			(at 78.74 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -245,7 +885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 76.2 76.2 0)
 			(effects
 				(font
@@ -263,7 +903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 76.2 76.2 0)
 			(effects
 				(font
@@ -271,6 +911,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "9690ff62-50a3-4231-98a0-3e606cdbb331")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -282,17 +925,149 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:GND")
+		(at 101.6 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34819594-abce-4dec-8565-8cc8ddae6a06")
+		(property "Reference" "#PWR0508"
+			(at 101.6 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e1042ee-9945-4b07-bd1a-75e150e614a3")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36d64ace-1867-440b-9e04-80c80655c1b4")
+		(property "Reference" "#PWR0502"
+			(at 50.8 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54846252-47cf-4b67-837e-54980412db57")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 50.8 127 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "36f6c53d-1d6c-420f-8342-c4cf81ff1ff0")
 		(property "Reference" "H517"
-			(at 53.34 125.7299 0)
+			(at 53.34 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,7 +1076,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 53.34 128.2699 0)
+			(at 53.34 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -309,7 +1084,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 50.8 127 0)
 			(effects
 				(font
@@ -327,7 +1102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 50.8 127 0)
 			(effects
 				(font
@@ -335,6 +1110,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "b8b1df1b-7b01-435d-b8d8-625e15a02b32")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -474,6 +1252,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 76.2 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48efcd3b-7ddf-49e0-a9bc-d3fe1b34c08f")
+		(property "Reference" "#PWR0507"
+			(at 76.2 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e78aeff9-90da-4973-b8bb-93a691126893")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0507")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 76.2 152.4 0)
 		(unit 1)
@@ -602,17 +1446,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 101.6 127 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4eb8f7b0-5905-42ef-b6cb-e82eb8771414")
 		(property "Reference" "H519"
-			(at 104.14 125.7299 0)
+			(at 104.14 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -621,7 +1465,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 104.14 128.2699 0)
+			(at 104.14 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -629,7 +1473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 101.6 127 0)
 			(effects
 				(font
@@ -647,7 +1491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 101.6 127 0)
 			(effects
 				(font
@@ -655,6 +1499,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "9b5d9458-3682-40f6-810d-d93d1c06d11b")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -922,17 +1769,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 127 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6ed99f2e-bc34-41b8-9e90-0a7c12d5c68f")
 		(property "Reference" "H516"
-			(at 129.54 74.9299 0)
+			(at 129.54 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -941,7 +1788,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 129.54 77.4699 0)
+			(at 129.54 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -949,7 +1796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 127 76.2 0)
 			(effects
 				(font
@@ -967,7 +1814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 127 76.2 0)
 			(effects
 				(font
@@ -976,10 +1823,145 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "92990694-a246-40af-9ae1-2d831a04712b")
+		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "H516")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "737e6cfa-5314-46ec-bfc1-9b62ec53cc58")
+		(property "Reference" "#PWR0512"
+			(at 101.6 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a55643a-f173-4158-a75f-6edacd6e3425")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0512")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75400320-8c35-4630-b687-1bc126fc4e56")
+		(property "Reference" "#PWR0511"
+			(at 76.2 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4b65005-85d8-4ee4-922b-94081039149b")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0511")
 					(unit 1)
 				)
 			)
@@ -1050,17 +2032,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 76.2 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9e42c94f-d449-4c8f-9ead-f10cc2a8df8c")
 		(property "Reference" "H524"
-			(at 78.74 176.5299 0)
+			(at 78.74 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1069,7 +2051,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 78.74 179.0699 0)
+			(at 78.74 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1077,7 +2059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 76.2 177.8 0)
 			(effects
 				(font
@@ -1095,7 +2077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 76.2 177.8 0)
 			(effects
 				(font
@@ -1103,6 +2085,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "87a21285-4c26-45fe-b5cf-50a53dbbb50e")
 		)
 		(instances
 			(project "FP-PBF4-CLASSIC"
@@ -1114,17 +2099,149 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:GND")
+		(at 127 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e471352-3b4e-4363-bce4-a7479e7d8dca")
+		(property "Reference" "#PWR0505"
+			(at 127 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c7d2e47-982a-4800-b3a8-9bc9b7cd63d9")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0505")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a38a52e9-f1fa-435b-b57d-ca95f145264e")
+		(property "Reference" "#PWR0506"
+			(at 50.8 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd5173b3-89f5-435e-9f68-b2b0cbf21828")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0506")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 127 127 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b751919c-0f6c-41ac-b4c8-ca4dd45601ef")
 		(property "Reference" "H520"
-			(at 129.54 125.7299 0)
+			(at 129.54 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1133,7 +2250,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 129.54 128.2699 0)
+			(at 129.54 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1141,7 +2258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 127 127 0)
 			(effects
 				(font
@@ -1159,7 +2276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 127 127 0)
 			(effects
 				(font
@@ -1167,6 +2284,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "7b123035-56b5-474f-92f7-7f742a9a712f")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -1178,17 +2298,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 101.6 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "bb2e5711-9a17-4527-9a01-a587e984abb1")
 		(property "Reference" "H525"
-			(at 104.14 176.5299 0)
+			(at 104.14 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1197,7 +2317,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 104.14 179.0699 0)
+			(at 104.14 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1205,7 +2325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 101.6 177.8 0)
 			(effects
 				(font
@@ -1223,7 +2343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 101.6 177.8 0)
 			(effects
 				(font
@@ -1231,6 +2351,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "f457a190-6f90-4118-bb8f-6ec83cb7ef9b")
 		)
 		(instances
 			(project "FP-PBF4-CLASSIC"
@@ -1306,17 +2429,83 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:GND")
+		(at 101.6 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c481b765-1395-427b-bcdf-4be861a3693a")
+		(property "Reference" "#PWR0504"
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "186ffb10-a33f-496c-8888-5783ea25dc27")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 76.2 127 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c6dda132-8bf1-4e91-aa7c-4d7dab73d475")
 		(property "Reference" "H518"
-			(at 78.74 125.7299 0)
+			(at 78.74 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,7 +2514,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 78.74 128.2699 0)
+			(at 78.74 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1333,7 +2522,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 76.2 127 0)
 			(effects
 				(font
@@ -1351,7 +2540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 76.2 127 0)
 			(effects
 				(font
@@ -1359,6 +2548,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "c6bb1548-1709-4179-a2b3-c1de90585ed9")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -1370,17 +2562,83 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:GND")
+		(at 152.4 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce869385-1bd9-44f3-866b-6adeda021a96")
+		(property "Reference" "#PWR0501"
+			(at 152.4 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8443b7c4-f0ca-4b82-a670-9595dc0638ec")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 127 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cf47080d-ef7b-4abe-ad3e-22346e7c68e3")
 		(property "Reference" "H526"
-			(at 129.54 176.5299 0)
+			(at 129.54 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1389,7 +2647,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 129.54 179.0699 0)
+			(at 129.54 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1397,7 +2655,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 127 177.8 0)
 			(effects
 				(font
@@ -1415,7 +2673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 127 177.8 0)
 			(effects
 				(font
@@ -1423,6 +2681,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "f3f20496-c521-4106-95e0-bb0cf1680018")
 		)
 		(instances
 			(project "FP-PBF4-CLASSIC"
@@ -1498,6 +2759,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 127 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6f50e0d-888c-42e2-9eb5-47195efa5637")
+		(property "Reference" "#PWR0513"
+			(at 127 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ede7e4bf-642b-44ef-b8e8-05bdde84fa6b")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 101.6 101.6 0)
 		(unit 1)
@@ -1562,17 +2889,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 50.8 76.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e5685a28-66bc-4fef-8465-56d37ee4aa55")
 		(property "Reference" "H513"
-			(at 53.34 74.9299 0)
+			(at 53.34 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1581,7 +2908,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 53.34 77.4699 0)
+			(at 53.34 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1589,7 +2916,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 50.8 76.2 0)
 			(effects
 				(font
@@ -1607,7 +2934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 50.8 76.2 0)
 			(effects
 				(font
@@ -1615,6 +2942,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "e75c73e5-3fdc-410c-a34f-83754e620ef2")
 		)
 		(instances
 			(project "PCBA-PBF4-FRONTPANEL"
@@ -1690,17 +3020,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 50.8 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f5bf3184-6433-42c2-9d64-ec1da3e97390")
 		(property "Reference" "H523"
-			(at 53.34 176.5299 0)
+			(at 53.34 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,7 +3039,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 53.34 179.0699 0)
+			(at 53.34 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1717,7 +3047,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "suku_basics:FP_LED"
+		(property "Footprint" "suku_basics:FP_LED_TIGHT"
 			(at 50.8 177.8 0)
 			(effects
 				(font
@@ -1735,7 +3065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 50.8 177.8 0)
 			(effects
 				(font
@@ -1744,10 +3074,79 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "1204d73b-0f31-4453-8d42-bf9965529003")
+		)
 		(instances
 			(project "FP-PBF4-CLASSIC"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "H523")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8d5e05a-4c91-4eef-b657-899ee0e0784d")
+		(property "Reference" "#PWR0503"
+			(at 76.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13d37d69-4535-4ace-a537-0eecbb95ef99")
+		)
+		(instances
+			(project "FP-PBF4-CLASSIC"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0503")
 					(unit 1)
 				)
 			)
