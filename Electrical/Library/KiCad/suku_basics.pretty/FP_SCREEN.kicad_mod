@@ -1,7 +1,7 @@
 (footprint "FP_SCREEN"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Mounting Hole 2mm, no annular")
 	(tags "mounting hole 2mm no annular")
@@ -24,18 +24,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 21.9 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c7d58073-8ffb-4f9a-b8bb-91df239585d4")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -86,8 +74,8 @@
 		(uuid "c4e201a6-3f4f-4eba-a3c9-66c428a8ca13")
 	)
 	(fp_line
-		(start -22.5 15.4)
-		(end -22.5 -15.4)
+		(start -22.55 15.4)
+		(end -22.55 -15.4)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -96,8 +84,8 @@
 		(uuid "5a33c96f-e303-4fea-a0c2-6879434e07da")
 	)
 	(fp_line
-		(start -20.5 -17.4)
-		(end 20.5 -17.4)
+		(start -20.5 -17.45)
+		(end 20.5 -17.45)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -186,8 +174,8 @@
 		(uuid "0784919d-9f9d-4361-b800-ff29d310fc55")
 	)
 	(fp_line
-		(start 20.5 17.4)
-		(end -20.5 17.4)
+		(start 20.5 17.45)
+		(end -20.5 17.45)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -196,8 +184,8 @@
 		(uuid "b4a02011-9d78-4cf0-bb09-21047b04fff7")
 	)
 	(fp_line
-		(start 22.5 -15.4)
-		(end 22.5 15.4)
+		(start 22.55 -15.4)
+		(end 22.55 15.4)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -206,26 +194,26 @@
 		(uuid "4254cbcd-4ef4-40d8-9f92-8c53a17577cd")
 	)
 	(fp_arc
-		(start -22.5 -15.4)
-		(mid -21.914214 -16.814214)
-		(end -20.5 -17.4)
+		(start -22.55 -15.4)
+		(mid -21.949569 -16.849569)
+		(end -20.5 -17.45)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "82dac298-3b82-43cd-bd3a-66ed6b0270ba")
+		(uuid "b1b7e85c-e732-429d-810d-be21b90285ed")
 	)
 	(fp_arc
-		(start -20.5 17.4)
-		(mid -21.914214 16.814214)
-		(end -22.5 15.4)
+		(start -20.5 17.45)
+		(mid -21.949569 16.849569)
+		(end -22.55 15.4)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "c73dad93-dc75-4dd3-b172-2314cd7ede2e")
+		(uuid "233aca5a-3a5f-49d1-af9a-774c076bfacc")
 	)
 	(fp_arc
 		(start -18 21.9)
@@ -404,26 +392,26 @@
 		(uuid "fa84ff60-ce6d-4472-831c-32bcaff6d718")
 	)
 	(fp_arc
-		(start 20.5 -17.4)
-		(mid 21.914214 -16.814214)
-		(end 22.5 -15.4)
+		(start 20.499999 -17.449999)
+		(mid 21.949568 -16.849568)
+		(end 22.549999 -15.399999)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "3cafa7da-3cd7-46f6-82a4-4ae1cff98517")
+		(uuid "ca9d7877-03ef-4bf5-bb71-913bc391b8f2")
 	)
 	(fp_arc
-		(start 22.5 15.4)
-		(mid 21.914214 16.814214)
-		(end 20.5 17.4)
+		(start 22.55 15.4)
+		(mid 21.949569 16.849569)
+		(end 20.5 17.45)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "31e299c7-b337-42ec-90ab-8375ad326107")
+		(uuid "04a8408a-8365-4026-9993-a493f11dd0ef")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0.3 13.7 0)
@@ -436,4 +424,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
