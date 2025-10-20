@@ -265,20 +265,12 @@ WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 
     @(3.7592 mm, 1.0414 mm): Symbol #PWR01025 [GND]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 62 DRC warnings detected (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (track_dangling) Track has unconnected end
-    @(86.92 mm, 67.83 mm): Track [/LEDK] on B.Cu, length 6.0900 mm
+WARNING:(W145) 58 DRC warnings detected (kibot.pre_drc - pre_drc.py:150)
+WARNING:(W145) (isolated_copper) Isolated copper fill
+    @(45.0 mm, 45.0 mm): Zone [GND] on F.Cu
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (isolated_copper) Isolated copper fill
     @(45.0 mm, 45.0 mm): Zone [GND] on B.Cu
-    Check: Violations (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
-    @(113.477742 mm, 54.489503 mm): Circle on Edge.Cuts
-    @(114.67 mm, 55.53 mm): Segment on F.Silkscreen
-    Check: Violations (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
-    @(113.477742 mm, 54.489503 mm): Circle on Edge.Cuts
-    @(115.17 mm, 54.53 mm): Arc on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(63.60978 mm, 52.48492 mm): Arc on Edge.Cuts
@@ -293,23 +285,15 @@ WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(115.17 mm, 54.03 mm): Segment on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
-    @(60.137742 mm, 54.489503 mm): Circle on Edge.Cuts
-    @(61.33 mm, 55.53 mm): Segment on F.Silkscreen
-    Check: Violations (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
-    @(60.137742 mm, 54.489503 mm): Circle on Edge.Cuts
-    @(61.83 mm, 54.53 mm): Arc on F.Silkscreen
-    Check: Violations (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(113.477742 mm, 54.489503 mm): Circle on Edge.Cuts
     @(115.17 mm, 55.53 mm): Arc on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
-    @(50.0 mm, 56.33 mm): Segment on Edge.Cuts
+    @(92.62 mm, 55.83 mm): Arc on Edge.Cuts
     @(50.93 mm, 56.03 mm): Rectangle of U1001 on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
-    @(54.489503 mm, 60.137742 mm): Circle on Edge.Cuts
+    @(57.066544 mm, 57.066544 mm): Circle on Edge.Cuts
     @(52.93 mm, 58.03 mm): Rectangle of U1001 on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
@@ -386,7 +370,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(87.0 mm, 125.5 mm): Footprint LOGO701
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
-    @(110.0 mm, 86.0 mm): Footprint R1009
+    @(113.25 mm, 89.0 mm): Footprint R1009
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
     @(74.12375 mm, 112.938125 mm): Footprint J1005
@@ -407,7 +391,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(124.0 mm, 77.58 mm): Footprint R1003
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
-    @(93.0 mm, 86.0 mm): Footprint R1006
+    @(86.75 mm, 86.0 mm): Footprint R1006
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
     @(74.12375 mm, 138.814375 mm): Footprint J1011
@@ -440,7 +424,7 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(61.83 mm, 83.33 mm): Footprint J1009
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
-    @(91.5 mm, 86.0 mm): Footprint R1005
+    @(86.75 mm, 87.5 mm): Footprint R1005
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
     @(61.83 mm, 63.33 mm): Footprint J1003
@@ -452,13 +436,13 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
     @(125.0 mm, 75.58 mm): Footprint C1003
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
-    @(90.0 mm, 86.0 mm): Footprint R1004
+    @(86.75 mm, 89.0 mm): Footprint R1004
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
-    @(107.0 mm, 86.0 mm): Footprint R1008
+    @(113.25 mm, 87.5 mm): Footprint R1008
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
-    @(108.5 mm, 86.0 mm): Footprint R1007
+    @(113.25 mm, 86.0 mm): Footprint R1007
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (lib_footprint_issues) The current configuration does not include the footprint library 'suku_basics'.
     @(89.5 mm, 58.5 mm): Footprint R1001
@@ -466,8 +450,8 @@ WARNING:(W145) (lib_footprint_issues) The current configuration does not include
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(113.0 mm, 126.0 mm): PCB text 'Intech Studio
 PCBA-VSNX-LCDMOUNT
-8f68071
-2025-09-02
+a5e0a03
+2025-10-20
 EE: Suku
 LAYER 3' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
