@@ -65,15 +65,38 @@ r = r.faces(">Z").workplane(offset=-up_thickness)\
 r = r.union(stud)
 
 # ===================== USER INTERFACE ======================== #
+bump0_dia = 1.5
+bump0_pos = 5
+
 
 pot_dia = 8
 led_dia = 2.9
 led_offset = 8.5
 
+slot_inner_dia = 7.5
+slot_inner_len = 12.5
+slot_inner_offset = (slot_inner_len-slot_inner_dia)/2
+slot_outter_dia = 7.5+1.5*2
+slot_outter_len = 15
+slot_outter_offset = (slot_outter_len-slot_outter_dia)/2
+bump_position =  (slot_outter_offset/2 + slot_outter_len/2 + slot_inner_offset/2 + slot_inner_len/2)/2
+bump_dia = (slot_outter_dia- slot_inner_dia)/2
+
+bump_tolerance = 0.2
+
+r = r.faces(">Z").workplane(offset=-up_thickness).center(-bump0_pos,led_offset).rarray(pattern_spacing, pattern_spacing, 4, 4).circle(bump0_dia/2+bump_tolerance)\
+    .center(2*bump0_pos, 0).rarray(pattern_spacing, pattern_spacing, 4, 4).circle(bump0_dia/2+bump_tolerance).center(-bump0_pos,-led_offset).cutBlind(-20)
+
+r = r.faces(">Z").workplane(offset=-up_thickness).center(0,led_offset-bump_position+1.5/2).rarray(pattern_spacing*2, pattern_spacing, 2, 4).circle(bump_dia/2+bump_tolerance)\
+    .center(0,-led_offset+bump_position-1.5/2).cutBlind(-20)
+    
+    
+
 r = r.faces(">Z").workplane()\
     .rarray(pattern_spacing, pattern_spacing, 4, 4).hole(pot_dia)\
     .center(0,led_offset).rarray(pattern_spacing, pattern_spacing, 4, 4).hole(led_dia)\
     .faces(">Z").workplane(offset=-up_thickness).center(0,led_dia/2 + 3*pattern_spacing/2).rarray(pattern_spacing, pattern_spacing, 4, 1).rect(led_dia*0.6, led_dia*0.6).cutBlind(-10)
+
 
 # ====================== LIGHTPIPE =========================== #
 
@@ -84,6 +107,7 @@ board_distance = 8.5 - support_tolerance
 led_y = 47.625
 ledpipe_y = 40.005+8.5
 led_diameter = 2.85
+
 
 #.faces(">Z").workplane(offset=-up_thickness-down_thickness)
 
@@ -97,7 +121,7 @@ led_body = (
     .loft()\
     .faces(">Z").workplane(offset=-up_thickness-down_thickness).rect(11.5,1.5).extrude(+down_thickness-led_distance+2.5)\
     .faces(">Z").workplane(offset=-up_thickness-down_thickness).center(5,led_y-ledpipe_y).rect(1.5,2).center(-10,0).rect(1.5,2).center(5,-led_y+ledpipe_y).extrude(+down_thickness-board_distance)\
-    .faces(">Z").workplane(offset=-up_thickness-down_thickness).center(5,0).circle(1.5/2).center(-10,0).circle(1.5/2).center(5,0).extrude(down_thickness)\
+    .faces(">Z").workplane(offset=-up_thickness-down_thickness).center(bump0_pos,0).circle(bump0_dia/2).center(-2*bump0_pos,0).circle(bump0_dia/2).center(5,0).extrude(down_thickness)\
     .faces("<Y").workplane().center(-2,-down_thickness-1+support_tolerance/2).rect(1,2.5)\
     .center(4,0).rect(1,2.5).cutBlind(-10)
 )
@@ -112,14 +136,7 @@ led_fitting = led_fitting.faces(">Z").edges().chamfer(pressfit_chamfer)
     
 led_body = led_body.union(led_fitting)
 
-slot_inner_dia = 7.5
-slot_inner_len = 12.5
-slot_inner_offset = (slot_inner_len-slot_inner_dia)/2
-slot_outter_dia = 7.5+1.5*2
-slot_outter_len = 15
-slot_outter_offset = (slot_outter_len-slot_outter_dia)/2
-bump_position =  (slot_outter_offset/2 + slot_outter_len/2 + slot_inner_offset/2 + slot_inner_len/2)/2
-bump_dia = (slot_outter_dia- slot_inner_dia)/2
+
 
 
 led_bridge = (
@@ -145,9 +162,10 @@ for p in parts[1:]:
 result = result.union(led_bridge)
 results = [result.translate((0, i * 7, 0)) for i in range(4)]
 unioned = results[0]
-for r in results[1:]:
-    unioned = unioned.union(r)
+for re in results[1:]:
+    unioned = unioned.union(re)
 
 # show_object(led_bridge)
 # show_object(led_body)
-show_object(unioned)
+# show_object(unioned)
+#show_object(r)
