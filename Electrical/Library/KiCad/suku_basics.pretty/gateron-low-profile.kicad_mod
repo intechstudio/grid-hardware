@@ -1,7 +1,7 @@
 (footprint "gateron-low-profile"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 	(tags "Cherry MX keyswitch 1.00u PCB")
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at -2.54 5.08 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "60a91189-7b2b-4619-a6b7-2b06cd4c2114")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -251,15 +239,16 @@
 		(remove_unused_layers no)
 		(uuid "9d507696-ddb2-4a94-b63a-54a69e85b238")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.wrl"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../../Library/3D/gateron_magnetic.stp"
 		(offset
-			(xyz 0 0 0)
+			(xyz 26.6 -9 -6.62)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

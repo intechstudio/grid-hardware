@@ -1,10 +1,21 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "90e24bb9-f10f-4b83-ac24-c2b24b707dee")
 	(paper "A4")
 	(lib_symbols)
+	(text "simulation"
+		(exclude_from_sim no)
+		(at 48.006 42.164 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEAWaA2ATGNBmHmwEAOATg2RJAUipRyoFMBaMMAKAEMQW1wyQSvMPyIgc0ejTDx44aCSLwsuNAHYSyDKtFh56kgcNGDOmZDYAnbtnCreLDDrtQq08wHdrQ5zwG9zVr6CfiFS1HBsnsHRQvweIcIYtrFJ8Q5O9onJUJZeIBiQoun5hS5uEQBK1o4lRWDOBaI0NMg04pIuMAi5vo15jk3g4eYA5v1Edbw4kMidbFUs-PX2GAje-mIozdDIyEgY0GA4g11sAPYgvIOtCrQwcISYSDSiU3e09IOi9NJlbWxAA")
+		)
+		(uuid "924acfe5-0809-40bd-8d6a-c4b311b2f24d")
+	)
 	(wire
 		(pts
 			(xy 99.06 53.34) (xy 101.6 53.34)
@@ -164,17 +175,6 @@
 			(type default)
 		)
 		(uuid "fc9f8be4-53eb-4034-ab9e-05054bfec79d")
-	)
-	(text "simulation"
-		(exclude_from_sim no)
-		(at 48.006 42.164 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWEAWaA2ATGNBmHmwEAOATg2RJAUipRyoFMBaMMAKAEMQW1wyQSvMPyIgc0ejTDx44aCSLwsuNAHYSyDKtFh56kgcNGDOmZDYAnbtnCreLDDrtQq08wHdrQ5zwG9zVr6CfiFS1HBsnsHRQvweIcIYtrFJ8Q5O9onJUJZeIBiQoun5hS5uEQBK1o4lRWDOBaI0NMg04pIuMAi5vo15jk3g4eYA5v1Edbw4kMidbFUs-PX2GAje-mIozdDIyEgY0GA4g11sAPYgvIOtCrQwcISYSDSiU3e09IOi9NJlbWxAA")
-		)
-		(uuid "924acfe5-0809-40bd-8d6a-c4b311b2f24d")
 	)
 	(hierarchical_label "IN_5"
 		(shape passive)
@@ -355,6 +355,10 @@
 	(sheet
 		(at 50.8 101.6)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -384,26 +388,26 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 104.14 180)
+			(uuid "31cfb0cf-9aac-4f59-9b05-2c2203d65357")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "31cfb0cf-9aac-4f59-9b05-2c2203d65357")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 104.14 0)
+			(uuid "a9eaba3b-c66a-43d4-a5b3-d682c6776f11")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a9eaba3b-c66a-43d4-a5b3-d682c6776f11")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "17")
 				)
@@ -416,6 +420,10 @@
 	(sheet
 		(at 50.8 50.8)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -445,26 +453,26 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 53.34 180)
+			(uuid "fd00eb6e-9eb1-456d-b718-226c630ecf34")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fd00eb6e-9eb1-456d-b718-226c630ecf34")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 53.34 0)
+			(uuid "732da28a-3cfa-41a3-896f-004f33f77a4f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "732da28a-3cfa-41a3-896f-004f33f77a4f")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "15")
 				)
@@ -477,6 +485,10 @@
 	(sheet
 		(at 101.6 127)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -506,26 +518,26 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 129.54 180)
+			(uuid "dc3fd4a2-b07e-4dbb-9f49-0d50ff4dcbb9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dc3fd4a2-b07e-4dbb-9f49-0d50ff4dcbb9")
 		)
 		(pin "OUTPUT" passive
 			(at 127 129.54 0)
+			(uuid "cfe5c876-aaa1-416c-93f7-60d7f72c2f06")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cfe5c876-aaa1-416c-93f7-60d7f72c2f06")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "11")
 				)
@@ -538,6 +550,10 @@
 	(sheet
 		(at 101.6 101.6)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -567,26 +583,26 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 104.14 180)
+			(uuid "4cdd7049-429a-40bf-8d7f-1b60bf3b1e94")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4cdd7049-429a-40bf-8d7f-1b60bf3b1e94")
 		)
 		(pin "OUTPUT" passive
 			(at 127 104.14 0)
+			(uuid "97528a63-0607-48cf-82f2-3144f39660f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "97528a63-0607-48cf-82f2-3144f39660f8")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "12")
 				)
@@ -599,6 +615,10 @@
 	(sheet
 		(at 101.6 50.8)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -628,26 +648,26 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 53.34 180)
+			(uuid "33a26d48-e541-4ea8-b387-9f0deef528c1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "33a26d48-e541-4ea8-b387-9f0deef528c1")
 		)
 		(pin "OUTPUT" passive
 			(at 127 53.34 0)
+			(uuid "f3e1a025-a2c6-410e-93f6-b9558001dcf9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f3e1a025-a2c6-410e-93f6-b9558001dcf9")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "13")
 				)
@@ -660,6 +680,10 @@
 	(sheet
 		(at 101.6 76.2)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -689,26 +713,26 @@
 		)
 		(pin "INPUT" passive
 			(at 101.6 78.74 180)
+			(uuid "1f011e41-5405-49e3-95e0-107b669863bd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1f011e41-5405-49e3-95e0-107b669863bd")
 		)
 		(pin "OUTPUT" passive
 			(at 127 78.74 0)
+			(uuid "40fa3d47-f7da-4139-a5ec-5f6ca6db8fa1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "40fa3d47-f7da-4139-a5ec-5f6ca6db8fa1")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "14")
 				)
@@ -721,6 +745,10 @@
 	(sheet
 		(at 50.8 127)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -750,26 +778,26 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 129.54 180)
+			(uuid "bb42a775-58e3-4e62-8f2b-8633918350b6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bb42a775-58e3-4e62-8f2b-8633918350b6")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 129.54 0)
+			(uuid "c0c6db39-e016-4585-b5dd-d440e19ff478")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c0c6db39-e016-4585-b5dd-d440e19ff478")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "18")
 				)
@@ -782,6 +810,10 @@
 	(sheet
 		(at 50.8 76.2)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -811,26 +843,26 @@
 		)
 		(pin "INPUT" passive
 			(at 50.8 78.74 180)
+			(uuid "30a242f5-ff35-4750-8106-94bc83c0ae95")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "30a242f5-ff35-4750-8106-94bc83c0ae95")
 		)
 		(pin "OUTPUT" passive
 			(at 76.2 78.74 0)
+			(uuid "1621330a-ecc1-425c-bc7f-57051692d859")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1621330a-ecc1-425c-bc7f-57051692d859")
 		)
 		(instances
-			(project "PCBA-BU16"
+			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/b17caa00-0559-4e08-a0d3-166f33326b38"
 					(page "16")
 				)
