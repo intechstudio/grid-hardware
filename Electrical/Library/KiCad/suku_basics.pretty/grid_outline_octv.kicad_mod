@@ -1,10 +1,10 @@
-(footprint "grid_outline_vsn"
+(footprint "grid_outline_octv"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 0.5 0)
+		(at 0 53.84 0)
 		(layer "F.SilkS")
 		(uuid "9d78b418-d725-42ba-a6d2-1e93cf01cb22")
 		(effects
@@ -14,8 +14,8 @@
 			)
 		)
 	)
-	(property "Value" "grid_outline_vsn"
-		(at 0 -0.5 0)
+	(property "Value" "grid_outline_octv"
+		(at 0 52.84 0)
 		(layer "F.Fab")
 		(uuid "fc6c4231-a358-4635-89c5-b67dbde0e982")
 		(effects
@@ -327,7 +327,13 @@
 		(drill 1.7)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "6b3ad7b5-8c0a-4fd5-82ff-d96194b03a9b")
+		(uuid "65717f15-6d4b-49e9-8922-892a0ea5f71f")
+	)
+	(pad "5" smd circle
+		(at -26.67 -26.67)
+		(size 12 12)
+		(layers "F.Cu" "F.Mask")
+		(uuid "5b03448f-2884-4b46-8473-556bcfca55d2")
 	)
 	(pad "6" thru_hole circle
 		(at 26.67 -26.67)
@@ -335,7 +341,13 @@
 		(drill 1.7)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "780273aa-5074-42ba-a92e-b6cd0611f794")
+		(uuid "16684fe9-6fdd-4878-83b5-d36d77050987")
+	)
+	(pad "6" smd circle
+		(at 26.67 -26.67)
+		(size 12 12)
+		(layers "F.Cu" "F.Mask")
+		(uuid "e89d3754-ca23-433b-bfef-d4aea77f768f")
 	)
 	(pad "7" thru_hole circle
 		(at 26.67 26.67)
@@ -343,13 +355,7 @@
 		(drill 1.7)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "16684fe9-6fdd-4878-83b5-d36d77050987")
-	)
-	(pad "7" smd circle
-		(at 26.67 26.67)
-		(size 12 12)
-		(layers "F.Cu" "F.Mask")
-		(uuid "e89d3754-ca23-433b-bfef-d4aea77f768f")
+		(uuid "780273aa-5074-42ba-a92e-b6cd0611f794")
 	)
 	(pad "8" thru_hole circle
 		(at -26.67 26.67)
@@ -357,13 +363,7 @@
 		(drill 1.7)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "65717f15-6d4b-49e9-8922-892a0ea5f71f")
-	)
-	(pad "8" smd circle
-		(at -26.67 26.67)
-		(size 12 12)
-		(layers "F.Cu" "F.Mask")
-		(uuid "5b03448f-2884-4b46-8473-556bcfca55d2")
+		(uuid "6b3ad7b5-8c0a-4fd5-82ff-d96194b03a9b")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/../../Library/3D/SPACER.step"
