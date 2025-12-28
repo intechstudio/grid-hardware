@@ -767,12 +767,6 @@
 		(uuid "633292d3-80c5-4986-be82-ce926e9f09f4")
 	)
 	(junction
-		(at 88.9 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71f8d568-0f23-4ff2-8e60-1600ce517a48")
-	)
-	(junction
 		(at 121.92 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -787,16 +781,6 @@
 	(no_connect
 		(at 116.84 73.66)
 		(uuid "be41ac9e-b8ba-4089-983b-b84269707f1c")
-	)
-	(wire
-		(pts
-			(xy 88.9 71.12) (xy 88.9 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13bbfffc-affb-4b43-9eb1-f2ed90a8a919")
 	)
 	(wire
 		(pts
@@ -817,6 +801,16 @@
 			(type default)
 		)
 		(uuid "1ab71a3c-340b-469a-ada5-4f87f0b7b2fa")
+	)
+	(wire
+		(pts
+			(xy 91.44 71.12) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2609320e-fd02-4206-b968-dd73d178bf17")
 	)
 	(wire
 		(pts
@@ -870,6 +864,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 60.96) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "661f82be-ed67-40ef-8f40-a1735e6fa8dd")
+	)
+	(wire
+		(pts
 			(xy 104.14 63.5) (xy 104.14 66.04)
 		)
 		(stroke
@@ -910,13 +914,13 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 71.12) (xy 88.9 71.12)
+			(xy 81.28 60.96) (xy 88.9 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "97581b9a-3f6b-4e88-8768-6fdb60e6aca6")
+		(uuid "8d3dbde6-62bb-4c8b-ab97-7b73add7989e")
 	)
 	(wire
 		(pts
@@ -1170,6 +1174,17 @@
 			(justify left)
 		)
 		(uuid "701e1517-e8cf-46f4-b538-98e721c97380")
+	)
+	(hierarchical_label "DATA_IN"
+		(shape input)
+		(at 81.28 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a9095924-71cb-4361-9765-5edb99cf2df3")
 	)
 	(symbol
 		(lib_id "suku_basics:74HC165")
