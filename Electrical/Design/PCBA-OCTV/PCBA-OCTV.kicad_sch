@@ -267,6 +267,10 @@
 		(at 78.74 172.72)
 		(uuid "c45c7e88-05f6-44b1-a2b4-4d98b222d9de")
 	)
+	(no_connect
+		(at 222.25 264.16)
+		(uuid "eb1d6f55-b000-4186-b526-b93d9211c106")
+	)
 	(wire
 		(pts
 			(xy 160.02 144.78) (xy 154.94 144.78)
@@ -919,6 +923,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 256.54) (xy 228.6 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdb1bd76-96b5-4ff8-bd6e-0e2e48fea088")
+	)
+	(wire
+		(pts
 			(xy 106.68 172.72) (xy 111.76 172.72)
 		)
 		(stroke
@@ -959,6 +973,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 261.62) (xy 228.6 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d72f16f3-d8a9-42cd-b04b-1f3277cf0d10")
+	)
+	(wire
+		(pts
 			(xy 160.02 172.72) (xy 154.94 172.72)
 		)
 		(stroke
@@ -989,6 +1013,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 259.08) (xy 228.6 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e07aa1c6-e278-476a-b138-21c346705048")
+	)
+	(wire
+		(pts
 			(xy 76.2 149.86) (xy 81.28 149.86)
 		)
 		(stroke
@@ -1016,6 +1050,16 @@
 			(type default)
 		)
 		(uuid "e6c67c2a-57bb-4aa1-b7a3-7631759c7402")
+	)
+	(wire
+		(pts
+			(xy 218.44 264.16) (xy 222.25 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7427996-6c2a-42ca-b997-52ef47025253")
 	)
 	(wire
 		(pts
@@ -1457,6 +1501,72 @@
 		)
 		(uuid "f3661864-cdef-486a-bb0a-e97f0f84328c")
 	)
+	(global_label "ESP_GPIO_41"
+		(shape bidirectional)
+		(at 218.44 259.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0966d237-4b45-4d8f-8c69-23971a0211de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.6985 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_39"
+		(shape bidirectional)
+		(at 218.44 264.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c9f9c5e-de8f-4d99-94a4-ffe4c8b882af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.6985 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_40"
+		(shape bidirectional)
+		(at 218.44 261.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "371ce65c-1f3e-451e-a897-6181734d03da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.6985 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ESP_GPIO_5"
 		(shape bidirectional)
 		(at 200.66 170.18 0)
@@ -1475,6 +1585,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESP_GPIO_42"
+		(shape bidirectional)
+		(at 218.44 256.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ce75956-02a2-4a89-b998-571ce10f17ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.6985 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3393,6 +3525,78 @@
 			(project "PCBA-OCTV"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 254)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "60d60bbf-56e5-4d0b-a0a7-56e5ec38f4a9")
+		(property "Sheetname" "AUDIO"
+			(at 228.6 253.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AUDIO.kicad_sch"
+			(at 228.6 279.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SDATA" input
+			(at 228.6 256.54 180)
+			(uuid "eee79ee8-e2d1-4ac0-987d-7ec0a33551b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BCLK" input
+			(at 228.6 259.08 180)
+			(uuid "bd577892-5c13-40b2-ac3b-573686676059")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LRCLK" input
+			(at 228.6 261.62 180)
+			(uuid "e4f9bb5b-c2ad-473c-8717-7d495d9deaf4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "PCBA-OCTV"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(page "22")
 				)
 			)
 		)
