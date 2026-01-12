@@ -1757,6 +1757,214 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "suku_basics:ESP32_XTAL"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 1.27 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "40MHz"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 3, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32_XTAL_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.762) (xy -1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 -1.524)
+					(end 0.762 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.762) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ESP32_XTAL_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.635)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.635)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "suku_basics:LED"
 			(pin_numbers
 				(hide yes)
@@ -3330,155 +3538,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "suku_basics:XTAL"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "XTAL"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "suku_basics:Crystal_SMD_3215-2Pin_3.2x1.5mm"
-				(at -0.635 -0.635 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at -0.635 -0.635 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Two pin crystal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "quartz ceramic resonator oscillator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Crystal*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XTAL_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.635 1.27)
-					(end 0.635 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "XTAL_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "Description for Auto-programming function\nhttps://scrapbox.io/fab-wiki/CH340X"
 		(exclude_from_sim no)
@@ -3603,6 +3662,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2775d9b-6d38-44d2-b8a9-eab026aa311c")
+	)
+	(junction
+		(at 142.24 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8bc23e2-7cc9-4551-8a72-d63305b9f2b8")
 	)
 	(junction
 		(at 304.8 160.02)
@@ -3828,6 +3893,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 137.16) (xy 142.24 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f58741d-ca3e-44af-a9e8-8f7b4cf22d94")
+	)
+	(wire
+		(pts
 			(xy 170.18 132.08) (xy 228.6 132.08)
 		)
 		(stroke
@@ -3915,6 +3990,16 @@
 			(type default)
 		)
 		(uuid "2ed9b3c4-9632-4697-9900-f1de51ede11b")
+	)
+	(wire
+		(pts
+			(xy 142.24 147.32) (xy 142.24 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31d2ffb9-4247-4d77-ad75-cbce9579750c")
 	)
 	(wire
 		(pts
@@ -4208,6 +4293,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 134.62) (xy 134.62 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a6eff49-e01c-4b6e-ad99-6beda5b0c961")
+	)
+	(wire
+		(pts
 			(xy 83.82 129.54) (xy 86.36 129.54)
 		)
 		(stroke
@@ -4275,6 +4370,16 @@
 			(type default)
 		)
 		(uuid "5e7e5ad7-b585-4591-8ee3-62ba53b9c864")
+	)
+	(wire
+		(pts
+			(xy 142.24 134.62) (xy 134.62 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f416be8-2a52-49af-bfdf-23f24ff1c8ba")
 	)
 	(wire
 		(pts
@@ -4518,7 +4623,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 142.24) (xy 137.16 142.24)
+			(xy 149.86 142.24) (xy 144.78 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4638,6 +4743,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 144.78) (xy 144.78 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93324ea6-3ac8-4d41-9ac7-b856cc5ac103")
+	)
+	(wire
+		(pts
 			(xy 264.16 139.7) (xy 269.24 139.7)
 		)
 		(stroke
@@ -4665,6 +4780,16 @@
 			(type default)
 		)
 		(uuid "976a8623-5141-4861-83ca-485ad25244b2")
+	)
+	(wire
+		(pts
+			(xy 142.24 142.24) (xy 142.24 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b43921-854d-42ef-9a7b-d22020af4fb5")
 	)
 	(wire
 		(pts
@@ -4945,6 +5070,16 @@
 			(type default)
 		)
 		(uuid "cd9c59bf-5435-411b-b57c-06205c4c3fbf")
+	)
+	(wire
+		(pts
+			(xy 134.62 147.32) (xy 142.24 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce38f330-3705-4501-805e-4c3e590b6073")
 	)
 	(wire
 		(pts
@@ -5238,7 +5373,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 142.24) (xy 137.16 139.7)
+			(xy 137.16 139.7) (xy 137.16 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5285,6 +5420,16 @@
 			(type default)
 		)
 		(uuid "fb1764f7-f8e5-4734-8328-589b091bbebd")
+	)
+	(wire
+		(pts
+			(xy 144.78 144.78) (xy 144.78 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd1cf7f5-ae50-4ef1-b3ec-6c8aa0b49a16")
 	)
 	(wire
 		(pts
@@ -5924,6 +6069,80 @@
 			(project "PCBA-DEBUG-ACCESSORY"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "R504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:ESP32_XTAL")
+		(at 142.24 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "247d9c64-cef6-4d38-b39a-6722df7e1430")
+		(property "Reference" "Y502"
+			(at 148.59 133.9782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12MHz"
+			(at 148.59 136.5182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
+			(at 142.24 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 3, small symbol"
+			(at 142.24 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2afded3f-5779-408e-add0-9b2798fbb6c9")
+		)
+		(pin "2"
+			(uuid "9dd42729-2766-4da6-b927-a7e0ec9c4d48")
+		)
+		(pin "4"
+			(uuid "4adc8868-d481-474b-9222-af750a347d5f")
+		)
+		(pin "1"
+			(uuid "71c801ca-6c36-4403-b815-7337f26d40a6")
+		)
+		(instances
+			(project ""
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "Y502")
 					(unit 1)
 				)
 			)
@@ -9125,6 +9344,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 142.24 149.86 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d47c7d91-fa9a-4b69-82cc-e58c179fc61a")
+		(property "Reference" "#PWR0520"
+			(at 142.24 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df6d408f-b27a-42f7-8b38-b2b8a31abe62")
+		)
+		(instances
+			(project "PCBA-DEBUG-UART"
+				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
+					(reference "#PWR0520")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 175.26 167.64 0)
 		(unit 1)
@@ -9208,7 +9494,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "LN1134A332MR-G"
 			(at 96.52 194.31 0)
 			(effects
 				(font
@@ -10006,74 +10292,6 @@
 			(project ""
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "D501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:XTAL")
-		(at 142.24 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0dc865b-6682-4ebf-8ce0-c37cb66fbfbe")
-		(property "Reference" "Y501"
-			(at 142.24 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "12MHz"
-			(at 142.24 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:Crystal_SMD_3215-2Pin_3.2x1.5mm"
-			(at 141.605 140.335 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 141.605 140.335 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 142.24 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d96b33d0-98ad-48ce-822a-59cc84371405")
-		)
-		(pin "1"
-			(uuid "25cafc90-613c-47c9-b6cf-238d414bc1f1")
-		)
-		(instances
-			(project ""
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "Y501")
 					(unit 1)
 				)
 			)
