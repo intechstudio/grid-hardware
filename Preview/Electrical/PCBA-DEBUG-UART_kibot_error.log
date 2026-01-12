@@ -1,5 +1,5 @@
 WARNING:(W144) Using filters from the `filters` preflight, move them to `erc` (kibot.pre_erc - pre_erc.py:38)
-WARNING:(W142) 72 ERC warnings detected (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) 73 ERC warnings detected (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (lib_symbol_mismatch) Symbol 'VBUS' doesn't match copy in library 'power'
     @(0.8636 mm, 1.0668 mm): Symbol #PWR0507 [VBUS]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
@@ -29,6 +29,9 @@ WARNING:(W142) (lib_symbol_issues) The current configuration does not include th
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (lib_symbol_mismatch) Symbol 'VBUS' doesn't match copy in library 'power'
     @(0.4826 mm, 1.9558 mm): Symbol #PWR0540 [VBUS]
+    Sheet: / (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (lib_symbol_mismatch) Symbol 'CH334R' doesn't match copy in library 'Interface_USB'
+    @(1.6002 mm, 1.27 mm): Symbol U503 [CH334R]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 'power'
     @(1.6002 mm, 1.4986 mm): Symbol #PWR0531 [GND]
@@ -240,12 +243,12 @@ WARNING:(W142) (lib_symbol_mismatch) Symbol 'GND' doesn't match copy in library 
     @(3.7084 mm, 1.27 mm): Symbol #PWR0518 [GND]
     Sheet: / (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W144) Using filters from the `filters` preflight, move them to `drc` (kibot.pre_drc - pre_drc.py:41)
-WARNING:(W145) 12 DRC warnings detected (kibot.pre_drc - pre_drc.py:150)
+WARNING:(W145) 10 DRC warnings detected (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (isolated_copper) Isolated copper fill
-    @(45.0 mm, 45.0 mm): Zone [+5V] on F.Cu
+    @(45.0 mm, 45.0 mm): Zone [+5V] on F.Cu, priority 0
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (isolated_copper) Isolated copper fill
-    @(45.0 mm, 45.0 mm): Zone [+5V] on B.Cu
+    @(45.0 mm, 45.0 mm): Zone [+5V] on B.Cu, priority 0
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(118.0 mm, 75.0 mm): Segment on Edge.Cuts
@@ -255,30 +258,24 @@ WARNING:(W145) (silk_edge_clearance) Silkscreen clipped by board edge
     @(118.0 mm, 75.0 mm): Segment on Edge.Cuts
     @(104.75 mm, 81.435 mm): Segment of J501 on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (lib_footprint_mismatch) Footprint 'QSOP-16_3.9x4.9mm_P0.635mm' does not match copy in library 'Package_SO'.
-    @(100.0 mm, 89.75 mm): Footprint U503
-    Check: Violations (kibot.pre_drc - pre_drc.py:150)
-WARNING:(W145) (lib_footprint_mismatch) Footprint 'MSOP-10_3x3mm_P0.5mm' does not match copy in library 'Package_SO'.
-    @(104.75 mm, 89.75 mm): Footprint U504
-    Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
 WARNING:(W143) The `pdf_pcb_print` and `svg_pcb_print` outputs are deprecated, use `pcb_print` instead (kibot - out_any_pcb_print.py:72)
-WARNING:(W049) Layer "Inner layer 3" (In3_Cu) isn't used (kibot - out_any_layer.py:195)
-WARNING:(W049) Layer "Inner layer 4" (In4_Cu) isn't used (kibot - out_any_layer.py:195)
-WARNING:(W049) Layer "Inner layer 5" (In5_Cu) isn't used (kibot - out_any_layer.py:195)
-WARNING:(W049) Layer "Inner layer 6" (In6_Cu) isn't used (kibot - out_any_layer.py:195)
+WARNING:(W049) Layer "Inner layer 3" (In3_Cu) isn't used (kibot - out_any_layer.py:197)
+WARNING:(W049) Layer "Inner layer 4" (In4_Cu) isn't used (kibot - out_any_layer.py:197)
+WARNING:(W049) Layer "Inner layer 5" (In5_Cu) isn't used (kibot - out_any_layer.py:197)
+WARNING:(W049) Layer "Inner layer 6" (In6_Cu) isn't used (kibot - out_any_layer.py:197)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - config.py:130)
-WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:529)
-WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:542)
+WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:553)
+WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:569)
 WARNING:(W143) This output depends on KiCad version, use `blender_export` instead (kibot - out_render_3d.py:307)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - config.py:130)
-WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:529)
-WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:542)
+WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:553)
+WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:569)
 WARNING:(W143) For KiCad 9 use the `export_3d` output instead of `step` (kibot - out_step.py:55)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - config.py:130)
-WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:529)
-WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:542)
+WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:553)
+WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:569)
 ERROR:Unable to expand `INTECH_3D` in `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - config.py:130)
-WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:529)
-WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:542)
+WARNING:(W047) Missing 3D model for Y501: `${INTECH_3D}/Crystal-32768-3215-2Pin.wrl` (kibot - out_base_3d.py:553)
+WARNING:(W098)  7 3D models downloaded or cached (kibot - out_base_3d.py:569)
