@@ -222,12 +222,6 @@
 		(uuid "060a80ec-1ff1-4f2b-9851-1e7351b8b3d8")
 	)
 	(junction
-		(at 198.12 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "209c73f9-de16-400b-b152-86e236d8b759")
-	)
-	(junction
 		(at 281.94 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -360,16 +354,6 @@
 			(type default)
 		)
 		(uuid "2a1de22d-6451-488d-af77-0bf8841bd695")
-	)
-	(wire
-		(pts
-			(xy 93.98 226.06) (xy 93.98 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b753c78-0753-43f5-9cc5-d7f0db0a9573")
 	)
 	(wire
 		(pts
@@ -523,7 +507,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 127) (xy 198.12 127)
+			(xy 185.42 127) (xy 200.66 127)
 		)
 		(stroke
 			(width 0)
@@ -580,16 +564,6 @@
 			(type default)
 		)
 		(uuid "7724cf8a-d269-4bb5-b657-e3539d59930d")
-	)
-	(wire
-		(pts
-			(xy 198.12 129.54) (xy 198.12 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dfc8c56-f50f-4108-b30e-7ac1268dc5d5")
 	)
 	(wire
 		(pts
@@ -763,16 +737,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 127) (xy 200.66 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ecf6fb6-8a32-481f-9d62-47a91889f1a3")
-	)
-	(wire
-		(pts
 			(xy 160.02 129.54) (xy 154.94 129.54)
 		)
 		(stroke
@@ -790,16 +754,6 @@
 			(type default)
 		)
 		(uuid "a0dee8e6-f88a-4f05-aba0-bab3aafdf2bc")
-	)
-	(wire
-		(pts
-			(xy 200.66 129.54) (xy 198.12 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a33c7f18-872e-49fd-b22b-a6b5171af46c")
 	)
 	(wire
 		(pts
@@ -850,16 +804,6 @@
 			(type default)
 		)
 		(uuid "b4a977ae-b2ae-48d8-8c15-01300b73a08b")
-	)
-	(wire
-		(pts
-			(xy 93.98 254) (xy 93.98 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b993971c-1911-48c0-94f6-28299f18f04c")
 	)
 	(wire
 		(pts
@@ -1100,16 +1044,6 @@
 			(type default)
 		)
 		(uuid "f6ef085e-4d1b-41a2-aae2-3653a29bbbc6")
-	)
-	(wire
-		(pts
-			(xy 68.58 254) (xy 68.58 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f862e2ef-b821-471a-aba6-246514734ae9")
 	)
 	(wire
 		(pts
@@ -1513,28 +1447,6 @@
 			)
 		)
 	)
-	(global_label "ESP_GPIO_18"
-		(shape bidirectional)
-		(at 200.66 129.54 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "899ad0c5-7905-44e1-9751-dc028eceb340")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.4423 129.4606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ESP_GPIO_4"
 		(shape bidirectional)
 		(at 200.66 172.72 0)
@@ -1598,72 +1510,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 93.98 228.6 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02b385fa-6828-4f47-8e01-f4d73dfe3d28")
-		(property "Reference" "#PWR0640"
-			(at 93.98 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 93.853 232.9942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7c60d3c-b7a6-4b85-b3e7-5b5e1b129add")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR0640")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -1795,72 +1641,6 @@
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "J1008")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 68.58 256.54 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1b33f154-abc5-4a1f-94f5-52c2c8575841")
-		(property "Reference" "#PWR01175"
-			(at 68.58 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.453 260.9342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b714e7ab-a87f-40f9-984b-b0e66072dfd9")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01175")
 					(unit 1)
 				)
 			)
@@ -2133,139 +1913,6 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:SMD_NUT")
-		(at 68.58 251.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6e3a5c1-64b5-48a7-ba77-61d0c6818452")
-		(property "Reference" "J1006"
-			(at 71.12 248.9199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMTSO1625MTJ"
-			(at 71.12 251.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
-			(at 68.58 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMD Nut"
-			(at 68.58 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e04b6714-70d9-46a0-9c0f-6e6e8c2e80bf")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 93.98 256.54 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bd608aa9-b648-438c-8e94-b981c7791ec7")
-		(property "Reference" "#PWR01176"
-			(at 93.98 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 93.853 260.9342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a4c5d853-b898-49da-a8b0-4d8ecdb575dd")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "#PWR01176")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 43.18 256.54 0)
 		(mirror y)
@@ -2326,73 +1973,6 @@
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "#PWR01174")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:SMD_NUT")
-		(at 93.98 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da422bdf-2c56-420d-96cb-a723af8e905b")
-		(property "Reference" "J604"
-			(at 96.52 220.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMTSO1625MTJ"
-			(at 96.52 223.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
-			(at 93.98 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMD Nut"
-			(at 93.98 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d179ba06-1304-4bde-9e0c-ba73f509f3a5")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J604")
 					(unit 1)
 				)
 			)
@@ -2527,73 +2107,6 @@
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
 					(reference "J602")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:SMD_NUT")
-		(at 93.98 251.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1f92132-3077-4a07-b377-fae1d956aa86")
-		(property "Reference" "J1007"
-			(at 96.52 248.9199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMTSO1625MTJ"
-			(at 96.52 251.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:SMD_NUT_M1.6x2.5"
-			(at 93.98 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMD Nut"
-			(at 93.98 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8cc8f5f8-9225-4ac2-a8e1-a0000e5e5a0d")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(reference "J1007")
 					(unit 1)
 				)
 			)
