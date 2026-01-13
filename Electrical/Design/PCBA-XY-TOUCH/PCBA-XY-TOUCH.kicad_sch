@@ -636,6 +636,196 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -732,6 +922,107 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -3893,15 +4184,9 @@
 		(color 0 0 0 0)
 		(uuid "ff3a16cf-a8d7-47dd-a353-e0f3ff85e835")
 	)
-	(wire
-		(pts
-			(xy 187.96 142.24) (xy 190.5 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01399c66-e16c-435e-b4aa-be8ceca7309c")
+	(no_connect
+		(at 132.08 185.42)
+		(uuid "66d8db45-4093-4370-ad2a-5dfff5f68bdf")
 	)
 	(wire
 		(pts
@@ -4022,16 +4307,6 @@
 			(type default)
 		)
 		(uuid "05b3413a-2044-4e2f-a59d-cc84b67d361c")
-	)
-	(wire
-		(pts
-			(xy 187.96 137.16) (xy 190.5 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "063c11a1-ffa6-442a-b6a2-b8667c6eb7c9")
 	)
 	(wire
 		(pts
@@ -4655,6 +4930,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 27.94) (xy 218.44 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "286a4303-52e6-4739-9faf-3220235439ca")
+	)
+	(wire
+		(pts
 			(xy 63.5 38.1) (xy 63.5 48.26)
 		)
 		(stroke
@@ -5075,16 +5360,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 139.7) (xy 187.96 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ca6d923-f60e-4a6f-8bd8-077728631705")
-	)
-	(wire
-		(pts
 			(xy 149.86 73.66) (xy 160.02 73.66)
 		)
 		(stroke
@@ -5382,6 +5657,16 @@
 			(type default)
 		)
 		(uuid "5163b1d5-d16b-4dc0-a472-c779063f201f")
+	)
+	(wire
+		(pts
+			(xy 208.28 22.86) (xy 208.28 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52227115-ff2c-4685-9243-ea9f5ff060a0")
 	)
 	(wire
 		(pts
@@ -6063,6 +6348,16 @@
 		)
 		(uuid "712b98ca-7777-4aca-a6bf-f3ce3bb30120")
 	)
+	(wire
+		(pts
+			(xy 208.28 25.4) (xy 218.44 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71769e0c-b192-47cd-9d12-741169655342")
+	)
 	(polyline
 		(pts
 			(xy 58.42 27.94) (xy 58.42 22.86)
@@ -6432,16 +6727,6 @@
 			(type default)
 		)
 		(uuid "84ded0a2-0c34-4756-9746-64af7d0cbe71")
-	)
-	(wire
-		(pts
-			(xy 187.96 144.78) (xy 190.5 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84eb8022-c36c-421f-b2d6-7ef0504bfc4a")
 	)
 	(wire
 		(pts
@@ -7005,16 +7290,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 134.62) (xy 187.96 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6594252-a763-4952-8bc7-bf8182513ff7")
-	)
-	(wire
-		(pts
 			(xy 53.34 139.7) (xy 53.34 149.86)
 		)
 		(stroke
@@ -7455,16 +7730,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 132.08) (xy 190.5 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bffa09c1-5796-4ffd-9777-3664ee87d2b0")
-	)
-	(wire
-		(pts
 			(xy 243.84 116.84) (xy 246.38 116.84)
 		)
 		(stroke
@@ -7552,6 +7817,16 @@
 			(type default)
 		)
 		(uuid "c79920f8-3a24-45bc-b334-bcbd4fd126f6")
+	)
+	(wire
+		(pts
+			(xy 132.08 182.88) (xy 132.08 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c87bfb9c-b8f6-4cad-b553-025c25288a13")
 	)
 	(wire
 		(pts
@@ -7745,6 +8020,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 25.4) (xy 218.44 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d699ab15-27b8-405e-9dad-310d8741a7c9")
+	)
+	(wire
+		(pts
 			(xy 114.3 119.38) (xy 114.3 129.54)
 		)
 		(stroke
@@ -7832,6 +8117,16 @@
 			(type default)
 		)
 		(uuid "da9e4023-bb03-4380-a605-2c5313cb91ae")
+	)
+	(wire
+		(pts
+			(xy 208.28 27.94) (xy 218.44 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf2a434-274e-4cfb-9344-c54b20af85dd")
 	)
 	(wire
 		(pts
@@ -8433,6 +8728,16 @@
 		)
 		(uuid "f6bdb701-795d-4bff-9a73-50df95bd0bc8")
 	)
+	(wire
+		(pts
+			(xy 208.28 30.48) (xy 208.28 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e12ec4-0a05-4094-a585-3e84a1fad230")
+	)
 	(polyline
 		(pts
 			(xy 27.94 22.86) (xy 149.86 22.86)
@@ -8683,16 +8988,6 @@
 		)
 		(uuid "1a2e4eca-3646-4b9f-bc9b-234d912bdcc9")
 	)
-	(label "RESET"
-		(at 190.5 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a4a0cad-8d5c-478e-8687-c7a3751bc056")
-	)
 	(label "Y1"
 		(at 271.78 81.28 0)
 		(effects
@@ -8732,16 +9027,6 @@
 			(justify left bottom)
 		)
 		(uuid "263f3635-4c13-48d4-adc8-574e8de310a4")
-	)
-	(label "GND"
-		(at 190.5 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2763741e-958c-4d48-bb3d-e070248d9868")
 	)
 	(label "GND"
 		(at 190.5 104.14 0)
@@ -9003,16 +9288,6 @@
 		)
 		(uuid "7e073aa1-30e7-4685-bc46-3cbf950ae670")
 	)
-	(label "SDA"
-		(at 190.5 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "81cdffc9-7822-418e-bfa2-5993e85ede6f")
-	)
 	(label "DBG_SS"
 		(at 213.36 63.5 180)
 		(effects
@@ -9193,16 +9468,6 @@
 		)
 		(uuid "c7d794dc-4d4a-4da4-947c-d75b78e65842")
 	)
-	(label "SCL"
-		(at 190.5 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8524871-309f-44a5-9525-e4950c55691a")
-	)
 	(label "DS0"
 		(at 228.6 154.94 270)
 		(effects
@@ -9232,16 +9497,6 @@
 			(justify left bottom)
 		)
 		(uuid "cc40b5e3-068e-40f6-bbec-0f540d5bc656")
-	)
-	(label "+3V3_UI"
-		(at 190.5 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d30f3921-ca85-4cbf-b36d-3e205f25f897")
 	)
 	(label "Y6"
 		(at 165.1 83.82 0)
@@ -9332,16 +9587,6 @@
 			(justify left bottom)
 		)
 		(uuid "fad0c7d3-0764-4737-9a2f-de050632afd8")
-	)
-	(label "CHG"
-		(at 190.5 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fbfa7287-a3dd-45ec-b937-314b2a91b581")
 	)
 	(label "Y11"
 		(at 271.78 106.68 0)
@@ -32389,6 +32634,397 @@
 			(project ""
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 208.28 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bc15fdb-e80f-40b3-a9ca-38d27b5bbbb8")
+		(property "Reference" "#FLG02"
+			(at 208.28 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 208.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 208.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb31c565-502e-4e8c-938b-a0a9a62095b6")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 208.28 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d52550b-8b7d-4283-bce2-5376ec4d177d")
+		(property "Reference" "#FLG01"
+			(at 208.28 20.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 208.28 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 208.28 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3613d27-18b0-4737-8749-dfbfe35f20b6")
+		)
+		(instances
+			(project ""
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba30bb15-c9d1-4528-b536-206e4c72e10e")
+		(property "Reference" "#PWR03"
+			(at 218.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.567 34.8742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83d560f1-daa4-4b5e-b0f9-21f6db2c4a34")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:+3V3_UI")
+		(at 218.44 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2a81e48-f14e-41e9-9dbd-a5e5d9637eeb")
+		(property "Reference" "#PWR02"
+			(at 218.44 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_UI"
+			(at 218.821 18.4658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0be6d49-251d-4aa6-9bc3-62ffe40b0476")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 114.3 180.34 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f3b4aa3a-facc-4b7d-b9fb-c93159803be4")
+		(property "Reference" "H524"
+			(at 116.84 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Outline"
+			(at 116.84 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:OSHWA"
+			(at 114.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 114.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "H524")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 132.08 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6e6e677-2708-4690-accb-0f16f4151c0c")
+		(property "Reference" "H1"
+			(at 134.62 177.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 134.62 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:FP_OUTLINE_3"
+			(at 132.08 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 132.08 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fa2ab89-d23e-4026-af47-3865fb8bc6b6")
+		)
+		(instances
+			(project ""
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "H1")
 					(unit 1)
 				)
 			)
