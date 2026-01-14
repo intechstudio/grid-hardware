@@ -1585,13 +1585,13 @@ WARNING:(W142) (multiple_net_names) Both B7_DN and USB_DATA_N are attached to th
     @(0.5842 mm, 0.7366 mm): Label 'B7_DN'
     @(2.3368 mm, 1.0414 mm): Hierarchical Label 'USB_DATA_N'
     Sheet: /MCU/USB_POWER/ (kibot.pre_erc - pre_erc.py:146)
-WARNING:(W142) (multiple_net_names) Both +3V3 and HWCFG_HIGH are attached to the same items; +3V3 will be used in the netlist
-    @(1.0414 mm, 0.635 mm): Symbol #PWR0881 Hidden pin 1 [+3V3, Power input, Line]
-    @(1.2954 mm, 0.889 mm): Label 'HWCFG_HIGH'
-    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (multiple_net_names) Both GND and HWCFG_LOW are attached to the same items; GND will be used in the netlist
     @(1.2192 mm, 1.016 mm): Symbol #PWR0943 Hidden pin 1 [GND, Power input, Line]
-    @(1.2954 mm, 0.9906 mm): Label 'HWCFG_LOW'
+    @(0.7874 mm, 0.7874 mm): Label 'HWCFG_LOW'
+    Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
+WARNING:(W142) (multiple_net_names) Both +3V3 and HWCFG_HIGH are attached to the same items; +3V3 will be used in the netlist
+    @(1.0414 mm, 0.635 mm): Symbol #PWR0881 Hidden pin 1 [+3V3, Power input, Line]
+    @(0.7874 mm, 0.8128 mm): Label 'HWCFG_HIGH'
     Sheet: /HWCFG/ (kibot.pre_erc - pre_erc.py:146)
 WARNING:(W142) (multiple_net_names) Both DATA and ENCODER_MISO are attached to the same items; DATA will be used in the netlist
     @(2.3876 mm, 0.635 mm): Label 'DATA'
@@ -1882,8 +1882,8 @@ WARNING:(W145) (footprint_type_mismatch) Footprint component type doesn't match 
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
     @(113.335 mm, 146.75 mm): PCB text 'Intech Studio
 PCBA-OCTV
-480c5ca
-2026-01-12
+3c0a876
+2026-01-14
 EE: Suku' on F.Silkscreen
     Check: Violations (kibot.pre_drc - pre_drc.py:150)
 WARNING:(W145) (text_height) Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
