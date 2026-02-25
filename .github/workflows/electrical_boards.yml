@@ -78,8 +78,11 @@ jobs:
 
     - name: Convert position file
       run: |
-        python3 .github/workflows/convert_bottom_position.py ../../Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos.csv ../../Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos_fixed.csv
-        rm Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos.csv
+        FILE=Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos.csv
+        if [ -f "$FILE" ]; then
+          python3 .github/workflows/convert_bottom_position.py ../../$FILE ../../Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-both_pos_fixed.csv
+          rm $FILE
+        fi
   
     - name: Zipping gerber      
       uses: vimtor/action-zip@v1
@@ -96,9 +99,9 @@ jobs:
         else
           echo "DRC file for ${{ matrix.board }} does not exist."
         fi
-        mv Electrical/Design/${{ matrix.board }}/mfg-bot/Schematic.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_Schematic.pdf
-        mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Top.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Top.pdf
-        mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Bottom.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Bottom.pdf
+        [ -f Electrical/Design/${{ matrix.board }}/mfg-bot/Schematic.pdf ] && mv Electrical/Design/${{ matrix.board }}/mfg-bot/Schematic.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_Schematic.pdf || true
+        [ -f Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Top.pdf ] && mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Top.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Top.pdf || true
+        [ -f Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Bottom.pdf ] && mv Electrical/Design/${{ matrix.board }}/mfg-bot/PCB_Bottom.pdf Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_PCB_Bottom.pdf || true
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/kibot_errors.filter Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_errors.filter
         mv Electrical/Design/${{ matrix.board }}/kibot_error.log Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_kibot_error.log
         
