@@ -115,7 +115,9 @@ jobs:
           !Electrical/Design/${{ matrix.board }}/mfg-bot/*_erc.html
           !Electrical/Design/${{ matrix.board }}/mfg-bot/*_kibot_error.log
           !Electrical/Design/${{ matrix.board }}/mfg-bot/*_kibot_errors.filter
-          !Electrical/Design/${{ matrix.board }}/mfg-bot/*-3D_bottom.png
+          !Electrical/Design/${{ matrix.board }}/mfg-bot/*blender*.png
+          !Electrical/Design/${{ matrix.board }}/mfg-bot/*_PCB_Top.pdf
+          !Electrical/Design/${{ matrix.board }}/mfg-bot/*_PCB_Bottom.pdf
         if-no-files-found: warn
 
   deploy-results:
