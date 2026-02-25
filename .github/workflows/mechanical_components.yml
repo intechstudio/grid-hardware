@@ -114,7 +114,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: "result_${{ matrix.component }}_${{ env.action_date }}"
-        path: temp/*.*
+        path: temp/${{ matrix.component }}*.*
 
   deploy-results:
     needs: generate-artifacts
