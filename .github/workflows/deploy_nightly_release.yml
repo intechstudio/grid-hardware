@@ -1,0 +1,59 @@
+name: "Deploy Nightly Release"
+
+on:
+  workflow_call:
+    inputs:
+      release_name:
+        description: "Display name for the release"
+        required: true
+        type: string
+      tag_name:
+        description: "Git tag for the release"
+        required: true
+        type: string
+
+jobs:
+  deploy-nightly-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-tags: true
+          fetch-depth: 0
+
+      - name: Delete existing release
+        run: |
+          releases=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases")
+          echo "$releases" | jq -c --arg release_name "${{ inputs.release_name }}" '.[] | select(.name == $release_name) | .id' | while read release_id; do
+            curl -s -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/releases/$release_id"
+          done
+
+      - name: Remove existing tag
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if git tag -l "${{ inputs.tag_name }}" | grep -q "${{ inputs.tag_name }}"; then
+            git tag -d "${{ inputs.tag_name }}"
+            git push origin ":refs/tags/${{ inputs.tag_name }}"
+          fi
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: download
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ inputs.release_name }}
+          tag_name: ${{ inputs.tag_name }}
+          files: download/**/*
+          draft: false
+          prerelease: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
