@@ -108,7 +108,7 @@ jobs:
         
     - name: Copy reference files
       run: |
-        cp Mechanical/Design/${{ matrix.component }}/reference_* temp/ || true
+        find Mechanical/Design/${{ matrix.component }}/ -maxdepth 1 -name "${{ matrix.component }}*" ! -name "*.FCStd" ! -name "*.FCBak" -exec cp {} temp/ \; || true
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
