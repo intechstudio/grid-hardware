@@ -25284,18 +25284,6 @@
 				(hide yes)
 			)
 		)
-		(symbol "USB_C_TYPE-C-32-M-12_0_0"
-			(text "SS"
-				(at -0.762 -4.445 900)
-				(effects
-					(font
-						(size 5.08 5.08)
-						(bold yes)
-						(italic yes)
-					)
-				)
-			)
-		)
 		(symbol "USB_C_TYPE-C-32-M-12_0_1"
 			(rectangle
 				(start -12.7 20.32)
@@ -25416,7 +25404,7 @@
 				)
 			)
 			(circle
-				(center -3.302 4.445)
+				(center -2.54 6.35)
 				(radius 0.635)
 				(stroke
 					(width 0.254)
@@ -25428,7 +25416,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.032 7.62) (xy -0.762 10.16) (xy 0.508 7.62) (xy -2.032 7.62)
+					(xy -1.27 9.525) (xy 0 12.065) (xy 1.27 9.525) (xy -1.27 9.525)
 				)
 				(stroke
 					(width 0.254)
@@ -25440,7 +25428,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.762 1.27) (xy 1.778 3.81) (xy 1.778 5.08)
+					(xy 0 3.175) (xy 2.54 5.715) (xy 2.54 6.985)
 				)
 				(stroke
 					(width 0.508)
@@ -25452,7 +25440,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.762 0) (xy -3.302 2.54) (xy -3.302 3.81)
+					(xy 0 1.905) (xy -2.54 4.445) (xy -2.54 5.715)
 				)
 				(stroke
 					(width 0.508)
@@ -25464,7 +25452,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.762 -1.27) (xy -0.762 7.62)
+					(xy 0 0.635) (xy 0 9.525)
 				)
 				(stroke
 					(width 0.508)
@@ -25475,8 +25463,8 @@
 				)
 			)
 			(rectangle
-				(start 1.143 5.08)
-				(end 2.413 6.35)
+				(start 1.905 6.985)
+				(end 3.175 8.255)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -25487,6 +25475,16 @@
 			)
 		)
 		(symbol "USB_C_TYPE-C-32-M-12_1_1"
+			(text "2.0"
+				(at 0 -7.62 900)
+				(effects
+					(font
+						(size 5.08 5.08)
+						(bold yes)
+						(italic yes)
+					)
+				)
+			)
 			(pin passive line
 				(at -10.16 -27.94 90)
 				(length 5.08)
