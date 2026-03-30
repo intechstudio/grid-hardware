@@ -1,15 +1,74 @@
-(module capsense_diamond_edge_bite_left (layer F.Cu) (tedit 605335C2)
-  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value capsense_diamond_edge_bite_left (at 0 -0.5) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (pad 1 smd custom (at 0 0 315) (size 0.25 0.25) (layers F.Cu)
-    (zone_connect 0)
-    (options (clearance outline) (anchor rect))
-    (primitives
-      (gr_poly (pts
-         (xy 1.9 -1.3) (xy 1.6 -1.6) (xy -1.9 1.9) (xy 1.9 1.9)) (width 0.5))
-    ))
+(footprint "capsense_diamond_edge_bite_left"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0.5 0)
+		(layer "F.SilkS")
+		(uuid "6b5c3e03-99f5-4533-a5a3-30ba65889a16")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "capsense_diamond_edge_bite_left"
+		(at 0 -0.5 0)
+		(layer "F.Fab")
+		(uuid "c5c97d25-a342-4550-8472-795366d3a3e4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cf69580-8cb8-4599-8829-664e7d49d584")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40ec301a-2055-4b33-a097-fd3c1b280ff8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(pad "1" smd custom
+		(at 0 0 315)
+		(size 0.25 0.25)
+		(layers "F.Cu")
+		(zone_connect 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 1.909188 -1.06066) (xy 1.484924 -1.484924) (xy -1.9 1.9) (xy 1.9 1.9)
+				)
+				(width 0.5)
+				(fill yes)
+			)
+		)
+		(uuid "6db5624f-55e0-4243-b4d1-b62076906c55")
+	)
+	(embedded_fonts no)
 )

@@ -1,1 +1,1 @@
-easyeda2kicad --symbol --footprint --3d --lcsc_id=$1
+easyeda2kicad --symbol --footprint --3d --lcsc_id=$1 --output $(dirname $0)/suku_basics
