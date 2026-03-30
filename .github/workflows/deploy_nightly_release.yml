@@ -48,7 +48,7 @@ jobs:
           path: download
 
       - name: Create release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b
         with:
           name: ${{ inputs.release_name }}
           tag_name: ${{ inputs.tag_name }}
