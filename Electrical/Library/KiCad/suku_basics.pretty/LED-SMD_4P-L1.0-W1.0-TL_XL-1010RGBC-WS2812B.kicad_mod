@@ -1,33 +1,162 @@
-(module easyeda2kicad:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4.42 0)
+		(layer "F.SilkS")
+		(uuid "d053def7-16aa-44dc-81d8-1fad6c419bf4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B"
+		(at 0 4.42 0)
+		(layer "F.Fab")
+		(uuid "80478814-783a-4702-a935-201b612c0826")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a97c77d-8c65-4108-8674-f1dbf391050a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b0b6dd7-c864-424b-ab51-6705fff4b5ab")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
 	(attr smd)
-	(fp_text reference REF** (at 0 -4.42) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -0.85 -0.85)
+		(end -0.85 0.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4adc4353-2485-4006-bc75-4350eff0d65b")
 	)
-	(fp_text value LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B (at 0 4.42) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -0.85 0.85)
+		(end 0.85 0.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2b4b4412-62c0-4957-bc71-a65a747f757a")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start 0.85 -0.85)
+		(end -0.85 -0.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f41df256-09ac-4537-804f-0128471abf84")
 	)
-	(fp_line (start -0.85 -0.85) (end -0.85 0.85) (layer F.SilkS) (width 0.10))
-	(fp_line (start -0.85 0.85) (end 0.85 0.85) (layer F.SilkS) (width 0.10))
-	(fp_line (start 0.85 0.85) (end 0.85 -0.85) (layer F.SilkS) (width 0.10))
-	(fp_line (start 0.85 -0.85) (end -0.85 -0.85) (layer F.SilkS) (width 0.10))
-	(pad 3 smd rect (at -0.42 0.42 0.00) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
-	(pad 4 smd rect (at 0.42 0.42 0.00) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
-	(pad 1 smd rect (at -0.42 -0.42 0.00) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
-	(pad 2 smd rect (at 0.42 -0.42 0.00) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center -0.50 -0.50) (end -0.47 -0.50) (layer F.Fab) (width 0.06))
-	(fp_circle (center -1.00 -0.70) (end -0.95 -0.70) (layer F.SilkS) (width 0.10))
-	(fp_text user DO (at -0.60 -0.28 0.00) (layer F.SilkS)
-		(effects (font (size 1.00 1.00) (thickness 0.10)) (justify left))
+	(fp_line
+		(start 0.85 0.85)
+		(end 0.85 -0.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fa62f24f-d25d-42a7-a736-71add862f291")
 	)
-	(fp_text user DI (at 0.30 0.57 0.00) (layer F.SilkS)
-		(effects (font (size 1.00 1.00) (thickness 0.10)) (justify left))
+	(fp_circle
+		(center -1 -0.7)
+		(end -0.95 -0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8c9262be-836a-4978-abf6-c71dc13a7963")
 	)
+	(fp_circle
+		(center -0.5 -0.5)
+		(end -0.47 -0.5)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "77542e8a-a009-4f6f-a7a4-2e9c8842a537")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1b079ae9-3ae9-4f16-8205-031b021734b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.42 -0.42)
+		(size 0.45 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f55f8162-75f1-4cf3-8bcb-8552b7ef4f4d")
+	)
+	(pad "2" smd rect
+		(at 0.42 -0.42)
+		(size 0.45 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "27b2735a-1149-4254-bc57-a91644bd74b0")
+	)
+	(pad "3" smd rect
+		(at -0.42 0.42)
+		(size 0.45 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "87cb5bd3-55f3-4fe9-bda3-a1f3fa973113")
+	)
+	(pad "4" smd rect
+		(at 0.42 0.42)
+		(size 0.45 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51c83aaf-97ac-4057-a7bb-f74c5ecc89ba")
+	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/../../Library/KiCad/suku_basics.3dshapes/LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B.wrl"
-		(offset (xyz 0.000 -0.000 -0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
