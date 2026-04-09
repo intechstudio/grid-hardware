@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "16d5bf81-590a-4149-97e0-64f3b3ad6f52")
 	(paper "A4")
 	(lib_symbols
@@ -72,9 +72,9 @@
 			)
 			(symbol "74LVC1G08_0_1"
 				(arc
-					(start 0 -5.08)
+					(start 0 5.08)
 					(mid 5.0579 0)
-					(end 0 5.08)
+					(end 0 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -134,6 +134,24 @@
 					)
 				)
 				(pin power_in line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 0 -10.16 90)
 					(length 5.08)
 					(name "GND"
@@ -169,30 +187,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint_Alt"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -291,6 +296,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -368,7 +374,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -380,7 +386,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -394,7 +400,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -411,6 +418,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
@@ -488,7 +496,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -500,7 +508,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -514,7 +522,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+5V"
 						(effects
 							(font
@@ -531,6 +540,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -610,7 +620,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -627,12 +638,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -723,6 +739,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VBUS"
 			(power)
@@ -800,7 +817,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -812,7 +829,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -826,7 +843,8 @@
 			(symbol "VBUS_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "VBUS"
 						(effects
 							(font
@@ -843,6 +861,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:BL1551B"
 			(pin_names
@@ -980,17 +999,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 7.62 -2.54 180)
+				(pin input line
+					(at 7.62 2.54 180)
 					(length 2.54)
-					(name "B"
+					(name "EN_A1"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1016,17 +1035,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 7.62 2.54 180)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
 					(length 2.54)
-					(name "EN_A1"
+					(name "B"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "6"
+					(number "4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1035,11 +1054,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:CAP"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1109,10 +1133,10 @@
 			(symbol "CAP_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -1121,10 +1145,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -1170,11 +1194,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:RES"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1290,6 +1319,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:USB_C_TYPE-C-32-M-12"
 			(pin_names
@@ -1367,40 +1397,16 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -8.89 -3.81)
-					(mid -6.985 -5.7067)
-					(end -5.08 -3.81)
+				(polyline
+					(pts
+						(xy -8.89 -3.81) (xy -8.89 3.81)
+					)
 					(stroke
 						(width 0.508)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(arc
-					(start -7.62 -3.81)
-					(mid -6.985 -4.4423)
-					(end -6.35 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -7.62 -3.81)
-					(mid -6.985 -4.4423)
-					(end -6.35 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
@@ -1415,9 +1421,9 @@
 					)
 				)
 				(arc
-					(start -6.35 3.81)
+					(start -7.62 3.81)
 					(mid -6.985 4.4423)
-					(end -7.62 3.81)
+					(end -6.35 3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1427,9 +1433,9 @@
 					)
 				)
 				(arc
-					(start -6.35 3.81)
+					(start -7.62 3.81)
 					(mid -6.985 4.4423)
-					(end -7.62 3.81)
+					(end -6.35 3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1439,9 +1445,57 @@
 					)
 				)
 				(arc
-					(start -5.08 3.81)
+					(start -8.89 3.81)
 					(mid -6.985 5.7067)
-					(end -8.89 3.81)
+					(end -5.08 3.81)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 -3.81)
+					(mid -6.985 -5.7067)
+					(end -8.89 -3.81)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -3.81)
+					(mid -6.985 -4.4423)
+					(end -7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -3.81)
+					(mid -6.985 -4.4423)
+					(end -7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.81) (xy -5.08 -3.81)
+					)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -1463,31 +1517,19 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -3.81) (xy -8.89 3.81)
+						(xy -2.032 7.62) (xy -0.762 10.16) (xy 0.508 7.62) (xy -2.032 7.62)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -1.27) (xy -0.762 7.62)
+						(xy -0.762 1.27) (xy 1.778 3.81) (xy 1.778 5.08)
 					)
 					(stroke
 						(width 0.508)
@@ -1511,7 +1553,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 1.778 3.81) (xy 1.778 5.08)
+						(xy -0.762 -1.27) (xy -0.762 7.62)
 					)
 					(stroke
 						(width 0.508)
@@ -1519,18 +1561,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 7.62) (xy -0.762 10.16) (xy 0.508 7.62) (xy -2.032 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
@@ -1546,222 +1576,6 @@
 				)
 			)
 			(symbol "USB_C_TYPE-C-32-M-12_1_1"
-				(pin power_in line
-					(at 15.24 -20.32 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A12B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 -17.78 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1B12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 15.24 180)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A4B9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 10.16 180)
-					(length 5.08)
-					(name "CC1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -10.16 180)
-					(length 5.08)
-					(name "SBU1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 17.78 180)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A9B4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 7.62 180)
-					(length 5.08)
-					(name "CC2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -5.08 180)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 0 180)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -12.7 180)
-					(length 5.08)
-					(name "SBU2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -10.16 -27.94 90)
 					(length 5.08)
@@ -1834,7 +1648,224 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 15.24 17.78 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A9B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 15.24 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 5.08)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -10.16 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -17.78 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1B12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -20.32 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A12B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:U_ESD_4ch"
 			(exclude_from_sim no)
@@ -1913,143 +1944,127 @@
 						(type background)
 					)
 				)
-				(circle
-					(center -3.81 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.81 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.445 -1.27) (xy -3.175 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.445 -1.27) (xy -3.175 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -4.445 1.905) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 1.27) (xy -3.175 1.27) (xy -3.81 1.905) (xy -4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -1.27) (xy -3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -1.27) (xy -3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 -1.905) (xy -3.175 -1.905) (xy -3.81 -1.27) (xy -4.445 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 0.635) (xy -3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -0.635) (xy -3.81 0.635)
 					)
 					(stroke
 						(width 0)
@@ -2085,367 +2100,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 -0.635) (xy -3.81 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0.635) (xy -3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -1.27) (xy -0.635 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -1.27) (xy -0.635 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 1.905) (xy -0.635 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -1.27 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -1.27 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy -1.27 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.889) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.889) (xy 0 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.889) (xy 0 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.016) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -1.27) (xy 1.905 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -1.27) (xy 1.905 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 1.905 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -1.27) (xy 4.445 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -1.27) (xy 4.445 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 1.905) (xy 4.445 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -2.54) (xy 3.81 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.635) (xy 3.81 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0.635) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.254) (xy -0.762 0.254) (xy -0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.445 -1.905) (xy -3.175 -1.905) (xy -3.81 -1.27) (xy -4.445 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.445 1.27) (xy -3.175 1.27) (xy -3.81 1.905) (xy -4.445 1.27)
+						(xy -2.54 3.81) (xy -2.54 0.635) (xy -3.048 0) (xy -3.937 0)
 					)
 					(stroke
 						(width 0)
@@ -2469,19 +2124,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 3.81) (xy -2.54 0.635) (xy -3.048 0) (xy -3.937 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -1.905) (xy -0.635 -1.905) (xy -1.27 -1.27) (xy -1.905 -1.905)
+						(xy -1.905 1.905) (xy -0.635 1.905)
 					)
 					(stroke
 						(width 0)
@@ -2505,7 +2148,145 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 -0.508) (xy 0.762 -0.508) (xy 0 0.254) (xy -0.762 -0.508)
+						(xy -1.905 -1.27) (xy -0.635 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -0.635 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.905) (xy -0.635 -1.905) (xy -1.27 -1.27) (xy -1.905 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy -1.27 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -1.27 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -1.27 -0.635)
 					)
 					(stroke
 						(width 0)
@@ -2529,7 +2310,111 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -1.905) (xy 1.905 -1.905) (xy 1.27 -1.27) (xy 0.635 -1.905)
+						(xy -0.762 -0.508) (xy 0.762 -0.508) (xy 0 0.254) (xy -0.762 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.016) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.889) (xy 0 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.889) (xy 0 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.889) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 1.905 1.905)
 					)
 					(stroke
 						(width 0)
@@ -2553,6 +2438,180 @@
 				)
 				(polyline
 					(pts
+						(xy 0.635 -1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -1.905) (xy 1.905 -1.905) (xy 1.27 -1.27) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.254) (xy -0.762 0.254) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.635) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.635) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -2.54)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 3.81) (xy 2.54 0.508) (xy 2.921 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 2.54 -3.81) (xy 2.54 -0.762) (xy 1.905 0) (xy 1.143 0)
 					)
 					(stroke
@@ -2565,7 +2624,43 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 3.81) (xy 2.54 0.508) (xy 2.921 0) (xy 3.81 0)
+						(xy 3.175 1.905) (xy 4.445 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 1.27) (xy 4.445 1.27) (xy 3.81 1.905) (xy 3.175 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -1.27) (xy 4.445 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -1.27) (xy 4.445 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2589,7 +2684,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.175 1.27) (xy 4.445 1.27) (xy 3.81 1.905) (xy 3.175 1.27)
+						(xy 3.81 0.635) (xy 3.81 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2599,86 +2694,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
+				(polyline
+					(pts
+						(xy 3.81 0.635) (xy 3.81 -0.635)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 2.54)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 2.54)
-					(radius 0.127)
 					(stroke
 						(width 0)
 						(type default)
@@ -2701,6 +2720,18 @@
 				(circle
 					(center 3.81 0)
 					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -2.54) (xy 3.81 -0.635)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2712,6 +2743,24 @@
 			)
 			(symbol "U_ESD_4ch_1_1"
 				(pin passive line
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at -2.54 -5.08 90)
 					(length 2.54)
 					(name "~"
@@ -2722,60 +2771,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2802,7 +2797,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 5.08 270)
+					(at 0 -5.08 90)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -2811,7 +2806,43 @@
 							)
 						)
 					)
-					(number "6"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2820,6 +2851,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:U_REGULATOR_SOT23-5"
 			(exclude_from_sim no)
@@ -2920,24 +2952,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -2956,17 +2970,17 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "NC"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2992,8 +3006,149 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Debug.mode is activated when both \nCC1 and CC2 are pulled to logic high \nexternally."
+		(exclude_from_sim no)
+		(at 142.24 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "241ef22d-e146-463b-be01-11a0d918dcc8")
+	)
+	(text "ESP protection for all 8 signals\nexternally accessable via the\nUSB C connector."
+		(exclude_from_sim no)
+		(at 93.98 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "39418415-6647-48cd-a0d2-09d290e81805")
+	)
+	(text "ESD Prot."
+		(exclude_from_sim no)
+		(at 93.98 33.02 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "59801bde-33bd-4a3f-8290-ba2980afc87c")
+	)
+	(text "Testpoints"
+		(exclude_from_sim no)
+		(at 93.98 134.62 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "70473420-901a-4134-9228-779104d0e2fa")
+	)
+	(text "LDO regulator for generating the \n+3V3 power rail for the \nmicrocontroller and UI."
+		(exclude_from_sim no)
+		(at 53.34 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "71aa3829-956e-4ff9-af3f-b06e50ab2b5a")
+	)
+	(text "USB Port"
+		(exclude_from_sim no)
+		(at 53.34 33.02 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e98dbd6-e6d3-4b12-b343-95191ee3f22c")
+	)
+	(text "3V3 LDO"
+		(exclude_from_sim no)
+		(at 53.34 134.62 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "96699449-5a92-460b-becd-dee1ada23ab6")
+	)
+	(text "USB C upstream facing port\nconfigured for 5V 3A power \nconsumption."
+		(exclude_from_sim no)
+		(at 53.34 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b27d36db-6cc3-4a2e-bf46-1eef456172a1")
+	)
+	(text "Debug-Mode Multiplexing"
+		(exclude_from_sim no)
+		(at 142.24 33.02 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6b96090-ac14-437e-bdd1-57a4a783a186")
+	)
+	(text "600"
+		(exclude_from_sim no)
+		(at 15.24 30.48 0)
+		(effects
+			(font
+				(size 10.16 10.16)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c835e600-b02b-4dcd-842e-43258738d373")
 	)
 	(junction
 		(at 228.6 129.54)
@@ -4485,128 +4640,6 @@
 		)
 		(uuid "fe44a823-173d-4c47-b44d-296752f9f24d")
 	)
-	(text "Debug.mode is activated when both \nCC1 and CC2 are pulled to logic high \nexternally."
-		(exclude_from_sim no)
-		(at 142.24 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "241ef22d-e146-463b-be01-11a0d918dcc8")
-	)
-	(text "ESP protection for all 8 signals\nexternally accessable via the\nUSB C connector."
-		(exclude_from_sim no)
-		(at 93.98 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "39418415-6647-48cd-a0d2-09d290e81805")
-	)
-	(text "ESD Prot."
-		(exclude_from_sim no)
-		(at 93.98 33.02 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "59801bde-33bd-4a3f-8290-ba2980afc87c")
-	)
-	(text "Testpoints"
-		(exclude_from_sim no)
-		(at 93.98 134.62 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "70473420-901a-4134-9228-779104d0e2fa")
-	)
-	(text "LDO regulator for generating the \n+3V3 power rail for the \nmicrocontroller and UI."
-		(exclude_from_sim no)
-		(at 53.34 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "71aa3829-956e-4ff9-af3f-b06e50ab2b5a")
-	)
-	(text "USB Port"
-		(exclude_from_sim no)
-		(at 53.34 33.02 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "7e98dbd6-e6d3-4b12-b343-95191ee3f22c")
-	)
-	(text "3V3 LDO"
-		(exclude_from_sim no)
-		(at 53.34 134.62 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "96699449-5a92-460b-becd-dee1ada23ab6")
-	)
-	(text "USB C upstream facing port\nconfigured for 5V 3A power \nconsumption."
-		(exclude_from_sim no)
-		(at 53.34 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b27d36db-6cc3-4a2e-bf46-1eef456172a1")
-	)
-	(text "Debug-Mode Multiplexing"
-		(exclude_from_sim no)
-		(at 142.24 33.02 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "b6b96090-ac14-437e-bdd1-57a4a783a186")
-	)
-	(text "600"
-		(exclude_from_sim no)
-		(at 15.24 30.48 0)
-		(effects
-			(font
-				(size 10.16 10.16)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "c835e600-b02b-4dcd-842e-43258738d373")
-	)
 	(label "DEBUG"
 		(at 200.66 50.8 180)
 		(effects
@@ -5044,6 +5077,12 @@
 			(uuid "4aa94130-0cab-4671-9c82-1e5afaf6b7e6")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "TP605")
@@ -5111,6 +5150,12 @@
 			(uuid "156a4214-fe58-4863-ac5d-896142290000")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "TP604")
@@ -5178,6 +5223,12 @@
 			(uuid "8b623c7e-01e4-44d2-b4e1-9be360f8c1c3")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "TP603")
@@ -5245,6 +5296,12 @@
 			(uuid "f5c241e0-a412-4dca-b9c1-659cda199459")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "TP601")
@@ -5311,6 +5368,12 @@
 			(uuid "b58f4c3a-cbfd-4629-b97a-636666445385")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0619")
@@ -5377,6 +5440,12 @@
 			(uuid "635d1d4b-7d76-4b7a-b8ad-7b4fd808bc21")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0613")
@@ -5454,6 +5523,12 @@
 			(uuid "7fb46a9d-b3d2-4c5b-8eb4-4fe83bcc0dc4")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U601")
@@ -5519,6 +5594,12 @@
 			(uuid "d739cd26-eb46-49e7-b094-7919113dfa4f")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0607")
@@ -5588,6 +5669,12 @@
 			(uuid "b660bf6f-d70d-4bc2-9da3-95ef7394a8dd")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C602")
@@ -5657,6 +5744,12 @@
 			(uuid "64558343-796f-4bf6-84f6-acece845e53f")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C603")
@@ -5722,6 +5815,12 @@
 			(uuid "3c3d20ed-e4d0-4f09-bb19-b42cf810a779")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0603")
@@ -5787,6 +5886,12 @@
 			(uuid "95363c5b-211b-4811-a013-e5d618877a02")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0601")
@@ -5857,6 +5962,12 @@
 			(uuid "3f6e1289-14f6-44f3-8958-e54e20587d14")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "R603")
@@ -5923,6 +6034,12 @@
 			(uuid "9b979648-1d2d-4dcf-ad7c-c099623886d1")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0612")
@@ -5993,6 +6110,12 @@
 			(uuid "02e71b5c-eff2-4ec6-8751-8fbd727efadb")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "R602")
@@ -6059,6 +6182,12 @@
 			(uuid "6fad5f1b-9569-41b3-a302-7aac61ad0634")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0609")
@@ -6168,6 +6297,12 @@
 			(uuid "b585f6a2-2af5-4d8f-913d-9a4a17f2dd04")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "J601")
@@ -6233,6 +6368,12 @@
 			(uuid "b2806380-f456-484f-8d6d-573ebbb9ac32")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0604")
@@ -6302,6 +6443,12 @@
 			(uuid "e57c149e-53eb-43ad-9d95-b15731ff13a5")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "R601")
@@ -6367,6 +6514,12 @@
 			(uuid "b8544a7f-eda8-49ca-a696-e457cca30077")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0602")
@@ -6436,6 +6589,12 @@
 			(uuid "6a75ac4d-3147-4dc5-9c37-9d01a46579fa")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C601")
@@ -6501,6 +6660,12 @@
 			(uuid "f833f046-1a08-4365-94c7-d2ea2b847dd7")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0608")
@@ -6566,6 +6731,12 @@
 			(uuid "cd544155-e64a-4242-920a-a92ca9dac087")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#FLG?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#FLG0601")
@@ -6631,6 +6802,12 @@
 			(uuid "748258b3-0c6b-4e85-a019-c8891353afde")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0610")
@@ -6696,6 +6873,12 @@
 			(uuid "29636e0f-65e4-41be-bc41-753a01e86207")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#FLG?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#FLG0602")
@@ -6776,6 +6959,12 @@
 			(uuid "24768077-e90d-4bd1-bf6a-736b6a4df07d")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U607")
@@ -6841,6 +7030,12 @@
 			(uuid "1dc0cc73-fd03-4e58-80e8-c2f63bb31b38")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0631")
@@ -6921,6 +7116,12 @@
 			(uuid "f55bae39-8b32-482f-96d3-cc4e85874b29")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U605")
@@ -6990,6 +7191,12 @@
 			(uuid "edddfbad-2240-46ae-9ff6-3aba3923a413")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C605")
@@ -7055,6 +7262,12 @@
 			(uuid "f5581d91-e355-4491-ac28-e928c3b421b8")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0627")
@@ -7120,6 +7333,12 @@
 			(uuid "e2930363-dfa7-4749-b26f-85baf887aac1")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0637")
@@ -7185,6 +7404,12 @@
 			(uuid "88203975-3930-4932-992f-2e0b0b1f8be6")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0623")
@@ -7252,6 +7477,12 @@
 			(uuid "b6499ffe-fa58-40ae-b781-42c1a0c9aac2")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0616")
@@ -7321,6 +7552,12 @@
 			(uuid "e4fd50b9-b745-4630-abfd-a16f558ccfc9")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C607")
@@ -7386,6 +7623,12 @@
 			(uuid "5ea9f09f-a203-4b87-aa04-326c10f27d14")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0629")
@@ -7451,6 +7694,12 @@
 			(uuid "a5b44523-7999-4cac-93c6-865763257b1c")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0606")
@@ -7521,6 +7770,12 @@
 			(uuid "8aac4127-84fd-4d80-aa0b-a2ab2f676368")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "R605")
@@ -7601,6 +7856,12 @@
 			(uuid "369e4253-2d74-4983-8ecb-ed5a8f19b12d")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U608")
@@ -7666,6 +7927,12 @@
 			(uuid "212a76c8-88fa-4c91-a5ab-9474fea95d3e")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0621")
@@ -7731,6 +7998,12 @@
 			(uuid "905c5945-6e1b-49d3-acba-2355d27bd037")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0605")
@@ -7796,6 +8069,12 @@
 			(uuid "a98f8284-debf-4d5c-ac2f-229b78c42d89")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0614")
@@ -7876,6 +8155,12 @@
 			(uuid "1d5fb6b5-c590-4265-8251-9ff5dc66b336")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U606")
@@ -7941,6 +8226,12 @@
 			(uuid "8627c53d-ba0a-43af-98d5-a053f0dbc95b")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0624")
@@ -8020,6 +8311,12 @@
 			(uuid "dbb6530c-5444-4575-857b-735a878b1ab6")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U602")
@@ -8085,6 +8382,12 @@
 			(uuid "a5b8af9f-8ef5-48f6-8e06-05363a55c355")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0625")
@@ -8150,6 +8453,12 @@
 			(uuid "b9a62e43-8156-46fa-85b8-187f9178d276")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0636")
@@ -8215,6 +8524,12 @@
 			(uuid "0b3408d1-09ff-4e34-956a-912e6dc10f19")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0615")
@@ -8280,6 +8595,12 @@
 			(uuid "2b522430-5e50-4c08-93aa-31d94773a727")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0617")
@@ -8345,6 +8666,12 @@
 			(uuid "b8f1a702-67f2-47ff-92d8-8f5e52d3fdb7")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0622")
@@ -8410,6 +8737,12 @@
 			(uuid "eee50862-f63a-41d2-8b6b-1bda08e0daa4")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0634")
@@ -8475,6 +8808,12 @@
 			(uuid "243f4326-5b1d-45e1-8699-d11087e5e66b")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0618")
@@ -8540,6 +8879,12 @@
 			(uuid "1ee31e87-d3df-4647-a148-10190d3f2a91")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0630")
@@ -8605,6 +8950,12 @@
 			(uuid "cfbe5816-69b7-49d4-b6b5-02c662867452")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0620")
@@ -8670,6 +9021,12 @@
 			(uuid "2f60911b-6fdf-4841-9046-2197ff3af7c5")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0632")
@@ -8735,6 +9092,12 @@
 			(uuid "66257b96-f4ad-4493-a1e5-6e6d955aad3c")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0633")
@@ -8804,6 +9167,12 @@
 			(uuid "7ed6821c-c649-40e8-be50-f780b8a9b0d5")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C604")
@@ -8870,6 +9239,12 @@
 			(uuid "e55ee14f-c044-43ee-817b-5f4d95031fee")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0611")
@@ -8935,6 +9310,12 @@
 			(uuid "3c40fcf4-00f6-4941-92e2-6f4e19270b64")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0635")
@@ -9002,6 +9383,12 @@
 			(uuid "5d62078e-dc73-417d-876a-d8816577d3cc")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "TP602")
@@ -9072,6 +9459,12 @@
 			(uuid "2089d2b0-c77f-488f-8bf1-0ae22e3e2126")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "R604")
@@ -9137,6 +9530,12 @@
 			(uuid "eb5a7df3-fc3d-45d2-8332-aa2fa345f881")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0626")
@@ -9206,6 +9605,12 @@
 			(uuid "79bedad8-7184-4121-80ee-8876cb2033e2")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "C606")
@@ -9285,6 +9690,12 @@
 			(uuid "2c5e0f1a-21f5-4461-9a6b-cefbb5c4290e")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U603")
@@ -9362,6 +9773,12 @@
 			(uuid "a5505262-f231-4580-9c4e-4989925960b8")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "U604")
@@ -9427,6 +9844,12 @@
 			(uuid "633ba22a-8140-4b47-9b3f-0eec86fcd411")
 		)
 		(instances
+			(project "MCU"
+				(path "/212bf70c-2324-47d9-8700-59771063baeb/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78/2d64293c-ba87-48d1-8ebb-1fbb3d2badc8"
 					(reference "#PWR0628")
