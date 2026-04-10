@@ -3451,12 +3451,6 @@
 		(uuid "01bca2d4-a18d-4729-8775-ea279a17774b")
 	)
 	(junction
-		(at 124.46 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "06ffce24-2b91-4069-b6fe-03619accda0c")
-	)
-	(junction
 		(at 119.38 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3998,16 +3992,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 134.62) (xy 137.16 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22ba8740-4dfc-451a-a8c7-14e368fe1d2e")
-	)
-	(wire
-		(pts
 			(xy 129.54 160.02) (xy 129.54 167.64)
 		)
 		(stroke
@@ -4348,16 +4332,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 132.08) (xy 124.46 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a290e14-5b8b-472e-8f3e-abe0a2eab4a5")
-	)
-	(wire
-		(pts
 			(xy 50.8 256.54) (xy 48.26 256.54)
 		)
 		(stroke
@@ -4565,16 +4539,6 @@
 			(type default)
 		)
 		(uuid "5d65efa5-b58b-4511-986d-b3e906a125d3")
-	)
-	(wire
-		(pts
-			(xy 132.08 132.08) (xy 134.62 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5efbc839-060c-490a-822b-4a3f95dd18e2")
 	)
 	(wire
 		(pts
@@ -5018,7 +4982,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 134.62) (xy 124.46 134.62)
+			(xy 121.92 134.62) (xy 137.16 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5698,16 +5662,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 134.62) (xy 127 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1901f3f-a5a3-43f1-b0f8-37c25a822000")
-	)
-	(wire
-		(pts
 			(xy 124.46 165.1) (xy 124.46 162.56)
 		)
 		(stroke
@@ -5885,16 +5839,6 @@
 			(type default)
 		)
 		(uuid "e1e5c12d-6241-446b-8591-5ae219319845")
-	)
-	(wire
-		(pts
-			(xy 124.46 132.08) (xy 124.46 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3abc4d7-9f4e-4503-81fe-3838d14055e8")
 	)
 	(wire
 		(pts
@@ -6686,6 +6630,16 @@
 		)
 		(uuid "8d965dfb-ebba-4067-939e-5e32809ecdb0")
 	)
+	(label "SPICS1"
+		(at 215.9 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "925c49c1-0a74-4895-91bd-c07284a56743")
+	)
 	(label "SPIHD"
 		(at 381 220.98 0)
 		(effects
@@ -6776,16 +6730,6 @@
 		)
 		(uuid "c8a6c0d1-8680-42c0-bc9a-8228fe073299")
 	)
-	(label "GPIO0"
-		(at 215.9 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8b6a589-f2f8-4201-af0e-b68a0f684f4a")
-	)
 	(label "GRID_SYNC_1"
 		(at 274.32 152.4 0)
 		(effects
@@ -6855,16 +6799,6 @@
 			(justify right bottom)
 		)
 		(uuid "f110541f-348d-4910-8765-c426e25f0abe")
-	)
-	(label "GPIO0"
-		(at 134.62 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f1a246e8-1d4c-40f2-8900-f4cc66be0878")
 	)
 	(label "SPIWP"
 		(at 381 218.44 0)
@@ -12345,79 +12279,6 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:RES")
-		(at 129.54 134.62 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f41f0d6-afd2-4aa0-a1cd-e2e8df18c526")
-		(property "Reference" "R609"
-			(at 129.54 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 129.54 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 129.54 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a968457-baaf-4a2b-80fc-3bc5e0da9c2b")
-		)
-		(pin "2"
-			(uuid "b2d2226b-1cb5-49b6-b3e2-8303f516550d")
-		)
-		(instances
-			(project "MCU"
-				(path "/212bf70c-2324-47d9-8700-59771063baeb"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
-					(reference "R609")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 142.24 71.12 0)
 		(unit 1)
@@ -13080,79 +12941,6 @@
 			(project "PCBA-BU16"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
 					(reference "C609")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 129.54 132.08 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "b422daa4-9613-41eb-80fb-50e0f9377e4d")
-		(property "Reference" "R610"
-			(at 129.54 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 129.54 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 129.54 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef67c3f4-ae3d-4a46-85e2-3c3ec4e4125b")
-		)
-		(pin "2"
-			(uuid "b376e55a-47dc-426b-82e0-84065e5460b2")
-		)
-		(instances
-			(project "MCU"
-				(path "/212bf70c-2324-47d9-8700-59771063baeb"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
-					(reference "R610")
 					(unit 1)
 				)
 			)
