@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(general
 		(thickness 1)
 		(legacy_teardrops no)
@@ -71,7 +71,20 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
-		(tenting front back)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
 		(aux_axis_origin 100 100)
 		(grid_origin 100 100)
 		(pcbplotparams
@@ -82,15 +95,12 @@
 			(usegerberattributes no)
 			(usegerberadvancedattributes no)
 			(creategerberjobfile no)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 6)
 			(plotframeref no)
 			(mode 1)
 			(useauxorigin no)
-			(hpglpennumber 1)
-			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
@@ -114,8 +124,6 @@
 			(outputdirectory "../../../../../Desktop/mfg/")
 		)
 	)
-	(net 0 "")
-	(net 1 "GND")
 	(footprint "suku_basics:FP_BUTTON"
 		(layer "F.Cu")
 		(uuid "06ba4ed9-5495-443e-9f73-58a0a69013ca")
@@ -174,6 +182,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -339,6 +348,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -504,6 +514,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -669,6 +680,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 5.9 0)
 			(layer "F.Fab")
@@ -686,7 +698,7 @@
 			(drill 2.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "input")
 			(uuid "7e8d8981-9147-4e9b-a8e6-2adfda5777ce")
@@ -751,6 +763,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 5.9 0)
 			(layer "F.Fab")
@@ -768,7 +781,7 @@
 			(drill 2.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "input")
 			(uuid "4dcc39be-b478-41f9-948c-63f32b214a94")
@@ -833,6 +846,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -998,6 +1012,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -1163,6 +1178,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -1328,6 +1344,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -1493,6 +1510,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 0)
 			(end 0 9.25)
@@ -1658,6 +1676,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 10.7 0)
 			(layer "F.Fab")
@@ -1736,6 +1755,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 5.9 0)
 			(layer "F.Fab")
@@ -1753,7 +1773,7 @@
 			(drill 2.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "input")
 			(uuid "709c42b0-c527-4f26-972c-9d8755a47ef2")
@@ -1818,6 +1838,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -52.8 -46)
 			(end -52.8 -48)
@@ -3248,6 +3269,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 5.9 0)
 			(layer "F.Fab")
@@ -3265,7 +3287,7 @@
 			(drill 2.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "input")
 			(uuid "ca67fd2e-154d-47ae-bedb-c2a8b6fdfbd0")
@@ -3330,6 +3352,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1 -1)
 			(end 0 0)
@@ -3761,6 +3784,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 5.9 0)
 			(layer "F.Fab")
@@ -3778,7 +3802,7 @@
 			(drill 2.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
+			(net "GND")
 			(pinfunction "1")
 			(pintype "input")
 			(uuid "899f8716-f3b6-4a3c-a604-94b8dbbccf9d")
@@ -3845,6 +3869,7 @@
 		(sheetname "/")
 		(sheetfile "FP-VSN1-R.kicad_sch")
 		(attr board_only exclude_from_pos_files exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
 				(xy 3.689316 -0.925456) (xy -3.689315 -0.925456) (xy -3.689315 2.488724) (xy 2.37617 2.488724) (xy 2.37617 2.176071)
@@ -4278,98 +4303,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(gr_line
-		(start 72.33 94.23)
-		(end 73.33 95.23)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "133614a1-91b7-4579-a076-80315259cf16")
-	)
-	(gr_line
-		(start 87.061875 138.814375)
-		(end 87.061875 148.064375)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "2cf59275-be36-4d51-864b-575ca62de945")
-	)
-	(gr_line
-		(start 100 100)
-		(end 112.938125 103.688125)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "2e6ea0bf-8724-4ef1-90ae-b0dea2be89b4")
-	)
-	(gr_rect
-		(start 112.938125 112.938125)
-		(end 138.814375 138.814375)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Cmts.User")
-		(uuid "370fbf0a-dfa5-4473-8132-4eacc0f4a8c1")
-	)
-	(gr_line
-		(start 61.185625 138.814375)
-		(end 61.185625 148.064375)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "3ca53f04-d959-4498-b321-1799bc00d62a")
-	)
-	(gr_line
-		(start 112.938125 112.938125)
-		(end 112.938125 103.688125)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "56c6efd5-9e32-4d2f-a2dd-5df69d2956c1")
-	)
-	(gr_line
-		(start 87.061875 112.938125)
-		(end 87.061875 103.688125)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "5b77611f-f850-4b3b-af78-c90dc47f3f39")
-	)
-	(gr_line
-		(start 112.938125 138.814375)
-		(end 112.938125 148.064375)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Cmts.User")
-		(uuid "6e6bb573-a8c2-4f8c-bea1-d46b0bcb9c3c")
-	)
-	(gr_rect
-		(start 61.185625 112.938125)
-		(end 87.061875 138.814375)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Cmts.User")
-		(uuid "74968ae0-a3ab-49da-812d-61b8a986e27c")
-	)
 	(gr_rect
 		(start 59.995 113.335)
 		(end 86.665 140.005)
@@ -4380,17 +4313,6 @@
 		(fill no)
 		(layer "Cmts.User")
 		(uuid "926dcdba-45e1-438c-a5a0-0d1de5291fc2")
-	)
-	(gr_rect
-		(start 87.061875 112.938125)
-		(end 112.938125 138.814375)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Cmts.User")
-		(uuid "a9b681e3-34ed-4d7c-89cb-9cadb1ee65db")
 	)
 	(gr_line
 		(start 61.185625 112.938125)
@@ -4403,35 +4325,35 @@
 		(uuid "ae5b7f0f-f42a-4ec4-9013-60d9c8774a67")
 	)
 	(gr_rect
-		(start 113.335 113.335)
-		(end 140.005 140.005)
+		(start 61.185625 112.938125)
+		(end 87.061875 138.814375)
 		(stroke
 			(width 0.05)
-			(type dash)
+			(type default)
 		)
 		(fill no)
 		(layer "Cmts.User")
-		(uuid "bc6cc4ea-bfd0-40f1-b05b-d4c1305055c7")
+		(uuid "74968ae0-a3ab-49da-812d-61b8a986e27c")
 	)
 	(gr_line
-		(start 100 100)
-		(end 87.061875 103.688125)
+		(start 61.185625 138.814375)
+		(end 61.185625 148.064375)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Cmts.User")
-		(uuid "c40b290a-92d8-49aa-9eea-2f467c83ed84")
+		(uuid "3ca53f04-d959-4498-b321-1799bc00d62a")
 	)
 	(gr_line
-		(start 138.814375 138.814375)
-		(end 138.814375 148.064375)
+		(start 72.33 94.23)
+		(end 73.33 95.23)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Cmts.User")
-		(uuid "cc17b989-e3ec-4c06-84eb-1445e36f5e97")
+		(uuid "133614a1-91b7-4579-a076-80315259cf16")
 	)
 	(gr_line
 		(start 73.33 95.23)
@@ -4455,6 +4377,99 @@
 		(uuid "ebd67939-8e96-4c42-bfaf-4eabf597501b")
 	)
 	(gr_line
+		(start 87.061875 112.938125)
+		(end 87.061875 103.688125)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "5b77611f-f850-4b3b-af78-c90dc47f3f39")
+	)
+	(gr_rect
+		(start 87.061875 112.938125)
+		(end 112.938125 138.814375)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "a9b681e3-34ed-4d7c-89cb-9cadb1ee65db")
+	)
+	(gr_line
+		(start 87.061875 138.814375)
+		(end 87.061875 148.064375)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "2cf59275-be36-4d51-864b-575ca62de945")
+	)
+	(gr_line
+		(start 100 100)
+		(end 87.061875 103.688125)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "c40b290a-92d8-49aa-9eea-2f467c83ed84")
+	)
+	(gr_line
+		(start 100 100)
+		(end 112.938125 103.688125)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "2e6ea0bf-8724-4ef1-90ae-b0dea2be89b4")
+	)
+	(gr_line
+		(start 112.938125 112.938125)
+		(end 112.938125 103.688125)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "56c6efd5-9e32-4d2f-a2dd-5df69d2956c1")
+	)
+	(gr_rect
+		(start 112.938125 112.938125)
+		(end 138.814375 138.814375)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "370fbf0a-dfa5-4473-8132-4eacc0f4a8c1")
+	)
+	(gr_line
+		(start 112.938125 138.814375)
+		(end 112.938125 148.064375)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "6e6bb573-a8c2-4f8c-bea1-d46b0bcb9c3c")
+	)
+	(gr_rect
+		(start 113.335 113.335)
+		(end 140.005 140.005)
+		(stroke
+			(width 0.05)
+			(type dash)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "bc6cc4ea-bfd0-40f1-b05b-d4c1305055c7")
+	)
+	(gr_line
 		(start 138.814375 112.938125)
 		(end 138.814375 103.688125)
 		(stroke
@@ -4463,6 +4478,16 @@
 		)
 		(layer "Cmts.User")
 		(uuid "ecaadc8f-8f36-4cc2-8be4-a95271410584")
+	)
+	(gr_line
+		(start 138.814375 138.814375)
+		(end 138.814375 148.064375)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "cc17b989-e3ec-4c06-84eb-1445e36f5e97")
 	)
 	(gr_text "${PROJECTNAME}\n${HASH}\n${DATE}"
 		(at 95 92.5 0)
@@ -4476,18 +4501,6 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "Hello Hacker!"
-		(at 75 87.5 0)
-		(layer "B.SilkS" knockout)
-		(uuid "1dfd9872-8969-41d1-b275-2823141eb285")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
 	(gr_text "My name is:"
 		(at 75 90 0)
 		(layer "B.SilkS")
@@ -4495,6 +4508,18 @@
 		(effects
 			(font
 				(size 1.2 1.2)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "Hello Hacker!"
+		(at 75 87.5 0)
+		(layer "B.SilkS" knockout)
+		(uuid "1dfd9872-8969-41d1-b275-2823141eb285")
+		(effects
+			(font
+				(size 1.5 1.5)
 				(thickness 0.15)
 			)
 			(justify mirror)
@@ -4538,8 +4563,7 @@
 		)
 	)
 	(zone
-		(net 1)
-		(net_name "GND")
+		(net "GND")
 		(layer "F.Cu")
 		(uuid "e40cc3c6-8a1d-4f9b-88ae-11d39fe156bc")
 		(hatch edge 0.508)
@@ -4547,13 +4571,11 @@
 			(clearance 0.254)
 		)
 		(min_thickness 0.1524)
-		(filled_areas_thickness no)
 		(fill yes
 			(mode hatch)
 			(thermal_gap 0.508)
 			(thermal_bridge_width 0.254)
 			(island_removal_mode 1)
-			(island_area_min 10)
 			(hatch_thickness 0.25)
 			(hatch_gap 0.45)
 			(hatch_orientation 45)
@@ -24155,8 +24177,7 @@
 		)
 	)
 	(zone
-		(net 1)
-		(net_name "GND")
+		(net "GND")
 		(layer "B.Cu")
 		(uuid "d9396b75-134a-4fe5-beed-4a732691240e")
 		(hatch edge 0.508)
@@ -24164,13 +24185,11 @@
 			(clearance 0.254)
 		)
 		(min_thickness 0.1524)
-		(filled_areas_thickness no)
 		(fill yes
 			(mode hatch)
 			(thermal_gap 0.508)
 			(thermal_bridge_width 0.254)
 			(island_removal_mode 1)
-			(island_area_min 10)
 			(hatch_thickness 0.25)
 			(hatch_gap 2.25)
 			(hatch_orientation 0)
