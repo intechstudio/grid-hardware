@@ -1,0 +1,80 @@
+(footprint "capsense_inner_diamond_edge"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 5.2 -1.15 180)
+		(layer "F.SilkS")
+		(uuid "d26dc8d3-6d44-4f8f-8236-2c536db84ec8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "capsense_inner_edge"
+		(at 0 0.5 180)
+		(layer "F.Fab")
+		(uuid "d6cdf18c-a2b8-40e3-a7a7-fc774d4f269f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1cb98bf6-50c0-48df-86a4-e2ae9a548c12")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "61ea6d35-99eb-4acd-abda-088ea818a485")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy 0 3) (xy -3 0) (xy -3 -0.5) (xy 3 -0.5) (xy 3 0)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ceab4946-cfe8-4ca8-bd22-983cea0112a1")
+	)
+	(point
+		(at 0 0)
+		(size 1)
+		(layer "F.Cu")
+		(uuid "fd40d645-06c4-4284-aa02-89ef3e78eb68")
+	)
+	(pad "1" thru_hole circle
+		(at -1 1.25 225)
+		(size 0.75 0.75)
+		(drill 0.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "93e65452-15da-4c08-8527-c12ce6e2bd3a")
+	)
+	(embedded_fonts no)
+)

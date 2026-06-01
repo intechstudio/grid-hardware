@@ -14,7 +14,7 @@ jobs:
   generate-artifacts:
     name: kicad export
     runs-on: ubuntu-latest
-    container: "ghcr.io/inti-cmnb/kicad9_auto_full:latest"    
+    container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
       fail-fast: false
       matrix:
@@ -40,7 +40,6 @@ jobs:
         - 'PCBA-OCTV-SPACER'
         - 'PCBA-OCTV-PLATE'
         - 'PCBA-XY-TOUCH'
-        - 'PCBA-XY-LED'
         - 'FP-XX16'
         - 'FP-BU16'
         - 'FP-PBF4'
