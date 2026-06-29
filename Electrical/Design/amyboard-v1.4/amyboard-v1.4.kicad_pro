@@ -22,9 +22,9 @@
           "arrow_length": 1270000,
           "extension_offset": 500000,
           "keep_text_aligned": true,
-          "suppress_zeroes": false,
+          "suppress_zeroes": true,
           "text_position": 0,
-          "units_format": 1
+          "units_format": 0
         },
         "fab_line_width": 0.1,
         "fab_text_italic": false,
@@ -39,28 +39,21 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.6,
-          "height": 4.2,
-          "width": 4.2
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
-        "silk_line_width": 0.12,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": false,
-          "min_clearance": 0.254
+          "min_clearance": 0.12
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -72,7 +65,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "warning",
+        "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -83,10 +76,9 @@
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "warning",
+        "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
-        "hole_near_hole": "error",
-        "hole_to_hole": "error",
+        "hole_to_hole": "warning",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -103,13 +95,13 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
-        "padstack": "error",
-        "pth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
+        "padstack": "warning",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "ignore",
+        "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -127,32 +119,28 @@
         "tracks_crossing": "error",
         "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
-        "unresolved_variable": "warning",
+        "unresolved_variable": "error",
         "via_dangling": "warning",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": false,
-      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
-        "allow_blind_buried_vias": false,
-        "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.1524,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.4,
+        "min_copper_edge_clearance": 0.2032,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.1,
+        "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 1,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.11,
-        "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.3,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.0762,
+        "min_via_diameter": 0.4572,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -200,12 +188,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.11,
-        0.1524,
-        0.381
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -232,22 +215,8 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.4,
-          "drill": 0.2
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.3
-        }
-      ],
-      "zones_allow_external_fillets": false,
-      "zones_use_no_outline": true
+      "via_dimensions": [],
+      "zones_allow_external_fillets": false
     },
     "ipc2581": {
       "bom_rev": "",
@@ -455,7 +424,6 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
-      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -466,7 +434,6 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -484,7 +451,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -506,14 +473,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PCBA-OCTV.kicad_pro",
+    "filename": "amyboard-v1.4.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -524,47 +491,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
+        "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.5,
-        "via_drill": 0.3,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.11,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Fine",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.11,
-        "tuning_profile": "",
-        "via_diameter": 0.5,
-        "via_drill": 0.3,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.1,
-        "diff_pair_gap": 0.1143,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.191516,
-        "line_style": 0,
-        "microvia_diameter": 0.6,
-        "microvia_drill": 0.1,
-        "name": "USB2.0",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
-        "tuning_profile": "",
-        "via_diameter": 0.5,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -574,38 +503,25 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "USB2.0",
-        "pattern": "/MCU/USB_DN"
-      },
-      {
-        "netclass": "USB2.0",
-        "pattern": "/MCU/USB_DP"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "PBF4.step",
-      "svg": "",
-      "vrml": "../../../../../intech-render/Source/PO16_BU16.wrl"
+      "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 1000,
+    "annotate_start_num": 0,
     "annotation": {
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -627,24 +543,6 @@
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
@@ -652,15 +550,45 @@
         },
         {
           "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -679,145 +607,39 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.25,
+      "label_size_ratio": 0.375,
       "operating_point_overlay_i_precision": 3,
       "operating_point_overlay_i_range": "~A",
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
-      "pin_symbol_size": 0.0,
-      "text_offset_ratio": 0.08
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "fix_passive_vals": false,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": ""
-    },
-    "page_layout_descr_file": "",
-    "plot_directory": "/home/suku/Desktop/",
+    "page_layout_descr_file": "empty.kicad_wks",
+    "plot_directory": "",
     "reuse_designators": true,
-    "space_save_all_events": true,
-    "spice_adjust_passive_values": false,
-    "spice_current_sheet_as_root": false,
-    "spice_external_command": "spice \"%I\"",
-    "spice_model_current_sheet_as_root": true,
-    "spice_save_all_currents": false,
-    "spice_save_all_dissipations": false,
-    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "PCBA-OCTV.kicad_sch",
-        "name": "PCBA-OCTV",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "filename": "amyboard-v1.4.kicad_sch",
+        "name": "amyboard-v1.4_1",
+        "uuid": "6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
       }
     ],
-    "used_designators": "",
+    "used_designators": "SW701-703,#+3V16-25,L2,U6-7,Card1,C54,C62,#PWR44-58,R23,R45,R48-49,R59,R68-70",
     "variants": []
   },
   "sheets": [
     [
-      "e5217a0c-7f55-4c30-adda-7f8d95709d1b",
-      "Root"
-    ],
-    [
-      "6b18e5e6-9885-40fe-8f2c-2102e3b003e8",
-      "QUAD_INVERT_AND_OFFSET"
-    ],
-    [
-      "6552bf7f-03e0-40a8-b639-7a4941f614fc",
-      "QUAD_INVERT_AND_OFFSET2"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d735388",
-      "UI_LED"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d7c8bfe",
-      "Sheet5D7C8BFD"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d8763e1",
-      "sheet5D8763D6"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d757c78",
-      "MCU"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d85c9fc",
-      "sheet5D85C9EA"
-    ],
-    [
-      "2d64293c-ba87-48d1-8ebb-1fbb3d2badc8",
-      "USB_POWER"
-    ],
-    [
-      "00000000-0000-0000-0000-00005dc2dc06",
-      "HWCFG"
-    ],
-    [
-      "a0084152-61f0-4489-b9d3-e50b6787eb94",
-      "ENCODER_0"
-    ],
-    [
-      "ad01261b-12f4-4498-98d1-266d157b68f5",
-      "ENCODER_1"
-    ],
-    [
-      "449bc692-53fa-49b1-8ae0-f316777b50e1",
-      "ENCODER_8"
-    ],
-    [
-      "1ad5bdf0-0c0f-4471-acea-085549419b25",
-      "QUAD_INVERT_AND_OFFSET1"
-    ],
-    [
-      "683cac53-6eca-4ad3-9f20-bd4d2515275b",
-      "ENCODER_2"
-    ],
-    [
-      "8efc0368-123a-4a3a-915b-9238237f4c45",
-      "ENCODER_3"
-    ],
-    [
-      "c1c535e0-3044-484b-9e21-1c82e0454ea3",
-      "ENCODER_4"
-    ],
-    [
-      "f10d6a5f-92c8-4939-9f06-24bdb5ac9cc2",
-      "ENCODER_5"
-    ],
-    [
-      "2dbffdb4-12ad-4cb0-a8cc-c91db628d5eb",
-      "ENCODER_6"
-    ],
-    [
-      "cf1797d2-1da3-4c2a-aa84-b052f9cbeef1",
-      "ENCODER_7"
-    ],
-    [
-      "60d60bbf-56e5-4d0b-a0a7-56e5ec38f4a9",
-      "AUDIO"
-    ],
-    [
-      "29c4aa6d-63e2-4a95-8972-154d33dae20f",
-      "SINGLE_INVERT_AND_OFFSET"
-    ],
-    [
-      "7114a85d-732e-4d3a-ad79-f9d262e93df6",
-      "UI_OCTAVE"
+      "6c5c5f1e-b953-464b-941a-bc9515f7d7b0",
+      "amyboard-v1.4_1"
     ]
   ],
   "text_variables": {},

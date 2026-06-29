@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 1,
@@ -16,13 +16,12 @@
       "zones": 0.6
     },
     "prototype_zone_fills": false,
-    "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -38,6 +37,8 @@
       "grid",
       "footprints_front",
       "footprints_back",
+      "footprint_values",
+      "footprint_references",
       "tracks",
       "drc_errors",
       "drawing_sheet",
@@ -45,20 +46,24 @@
       "pads",
       "zones",
       "drc_warnings",
-      "shapes"
+      "drc_exclusions",
+      "locked_item_shadows",
+      "conflict_shadows",
+      "shapes",
+      "board_outline_area",
+      "ly_points"
     ],
-    "visible_layers": "00000000_00000000_0fffffff_fff7ffff",
-    "zone_display_mode": 0
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
+    "zone_display_mode": 1
   },
   "git": {
     "integration_disabled": false,
-    "repo_password": "",
     "repo_type": "",
     "repo_username": "",
     "ssh_key": ""
   },
   "meta": {
-    "filename": "PCBA-OCTV.kicad_prl",
+    "filename": "amyboard-v1.4.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -90,20 +95,7 @@
       10,
       11
     ],
-    "col_widths": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
+    "col_widths": [],
     "custom_group_rules": [],
     "expanded_rows": [],
     "filter_by_net_name": true,
@@ -115,7 +107,7 @@
     "show_unconnected_nets": false,
     "show_zero_pad_nets": false,
     "sort_ascending": true,
-    "sorting_column": 0
+    "sorting_column": -1
   },
   "open_jobsets": [],
   "project": {
