@@ -101,6 +101,7 @@ jobs:
     - name: Process variant outputs
       run: |
         BOARD="${{ matrix.board }}"
+        apt-get update -qq && apt-get install -y -qq zip
         for dir in Electrical/Design/${BOARD}/mfg-bot-*; do
           [ -d "$dir" ] || continue
           variant="${dir##*-}"
