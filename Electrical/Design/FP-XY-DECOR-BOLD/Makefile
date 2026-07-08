@@ -6,10 +6,10 @@ SCH=FP-XY-DECOR-BOLD.kicad_sch
 PCB=FP-XY-DECOR-BOLD.kicad_pcb
 DEST=mfg-bot
 
-all: erc_and_fab drc_and_fab
+all: erc_and_fab drc_and_fab cross mix
 
 clean: 
-	rm -dr mfg-bot
+	rm -dr mfg-bot mfg-bot-cross mfg-bot-mix
 
 $(MAK): $(CONFIG)
 	kibot -e $(SCH) -b $(PCB) -c $< -d $(DEST) -m $@
@@ -32,4 +32,16 @@ erc_and_fab: $(MAK)
 drc_and_fab: $(MAK)
 	$(MAKE) -f $(MAK) all_pcb
 
-.PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab
+# Variant: Cross
+cross: MAK=kibot-cross.mak
+cross: PCB=FP-XY-DECOR-BOLD-CROSS.kicad_pcb
+cross: DEST=mfg-bot-cross
+cross: drc_and_fab
+
+# Variant: Mix
+mix: MAK=kibot-mix.mak
+mix: PCB=FP-XY-DECOR-BOLD-MIX.kicad_pcb
+mix: DEST=mfg-bot-mix
+mix: drc_and_fab
+
+.PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab all_variants cross mix
