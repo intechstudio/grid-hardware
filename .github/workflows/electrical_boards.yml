@@ -51,6 +51,11 @@ jobs:
         - 'FP-OCTV'
         - 'FP-XY'
         - 'FP-XY-SPACER'
+        - 'FP-XY-DECOR-BOLD'
+        - 'FP-XY-DECOR-BOLD-CROSS'
+        - 'FP-XY-DECOR-BOLD-DOT'
+        - 'FP-XY-DECOR-BOLD-MINICROSS'
+        - 'FP-XY-DECOR-BOLD-MIX'
         - 'FP-BU16-MIDIGRADE'
         - 'FP-EN16-MIDIGRADE'
         - 'FP-TEK2-CLASSIC'
@@ -59,6 +64,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Patch kibot ibom regression
+      run: |
+        sed -i 's/if hasattr(c, .parent_sheet.):/if hasattr(c, "parent_sheet") and c.parent_sheet is not None:/' \
+          /usr/local/lib/python3.13/dist-packages/kibot/kicad/v5_sch.py
 
     - name: Run PCB stuff
       run: |
