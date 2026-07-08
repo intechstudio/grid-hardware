@@ -52,6 +52,10 @@ jobs:
         - 'FP-XY'
         - 'FP-XY-SPACER'
         - 'FP-XY-DECOR-BOLD'
+        - 'FP-XY-DECOR-BOLD-CROSS'
+        - 'FP-XY-DECOR-BOLD-DOT'
+        - 'FP-XY-DECOR-BOLD-MINICROSS'
+        - 'FP-XY-DECOR-BOLD-MIX'
         - 'FP-BU16-MIDIGRADE'
         - 'FP-EN16-MIDIGRADE'
         - 'FP-TEK2-CLASSIC'
@@ -98,21 +102,6 @@ jobs:
         files: Electrical/Design/${{ matrix.board }}/mfg-bot/JLCPCB
         dest: Electrical/Design/${{ matrix.board }}/mfg-bot/mfg/${{ matrix.board }}-gerber.zip
 
-    - name: Process variant outputs
-      run: |
-        BOARD="${{ matrix.board }}"
-        apt-get update -qq && apt-get install -y -qq zip
-        for dir in Electrical/Design/${BOARD}/mfg-bot-*; do
-          [ -d "$dir" ] || continue
-          variant="${dir##*-}"
-          cd "$dir"
-          [ -d JLCPCB ] && { zip -r "mfg/${BOARD}-${variant}-gerber.zip" JLCPCB; rm -r JLCPCB; }
-          [ -f Schematic.pdf ] && mv Schematic.pdf "${BOARD}-${variant}_Schematic.pdf" || true
-          [ -f PCB_Top.pdf ] && mv PCB_Top.pdf "${BOARD}-${variant}_PCB_Top.pdf" || true
-          [ -f PCB_Bottom.pdf ] && mv PCB_Bottom.pdf "${BOARD}-${variant}_PCB_Bottom.pdf" || true
-          cd "$OLDPWD"
-        done
-
     - name: Rename pdf files and removing non-zipped gerber files
       run: |
         mv Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}-erc.html Electrical/Design/${{ matrix.board }}/mfg-bot/${{ matrix.board }}_erc.html
@@ -136,7 +125,7 @@ jobs:
       with:
         name: "result_${{ matrix.board }}_${{ env.action_date }}"
         path: |
-          Electrical/Design/${{ matrix.board }}/mfg-bot*/
+          Electrical/Design/${{ matrix.board }}/mfg-bot/
           !Electrical/Design/${{ matrix.board }}/mfg-bot/*_drc.html
           !Electrical/Design/${{ matrix.board }}/mfg-bot/*_erc.html
           !Electrical/Design/${{ matrix.board }}/mfg-bot/*_kibot_error.log

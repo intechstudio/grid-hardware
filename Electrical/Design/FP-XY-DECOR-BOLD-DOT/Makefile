@@ -2,8 +2,8 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=../FP-GENERIC.kibot.yaml
-SCH=FP-XY-DECOR-BOLD.kicad_sch
-PCB=FP-XY-DECOR-BOLD.kicad_pcb
+SCH=FP-XY-DECOR-BOLD-DOT.kicad_sch
+PCB=FP-XY-DECOR-BOLD-DOT.kicad_pcb
 DEST=mfg-bot
 
 all: erc_and_fab drc_and_fab
