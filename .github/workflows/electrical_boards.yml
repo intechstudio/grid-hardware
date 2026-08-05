@@ -14,7 +14,7 @@ jobs:
   generate-artifacts:
     name: kicad export
     runs-on: ubuntu-latest
-    container: "ghcr.io/inti-cmnb/kicad9_auto_full:latest"    
+    container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
       fail-fast: false
       matrix:
@@ -40,10 +40,11 @@ jobs:
         - 'PCBA-OCTV-SPACER'
         - 'PCBA-OCTV-PLATE'
         - 'PCBA-XY-TOUCH'
-        - 'PCBA-XY-LED'
         - 'FP-XX16'
+        - 'FP-XX16-DJ'
         - 'FP-BU16'
         - 'FP-PBF4'
+        - 'FP-PBF4-DJ'
         - 'FP-EF44'
         - 'FP-VSN1-L'
         - 'FP-VSN1-R'
@@ -52,6 +53,11 @@ jobs:
         - 'FP-OCTV'
         - 'FP-XY'
         - 'FP-XY-SPACER'
+        - 'FP-XY-DECOR-BOLD'
+        - 'FP-XY-DECOR-BOLD-CROSS'
+        - 'FP-XY-DECOR-BOLD-DOT'
+        - 'FP-XY-DECOR-BOLD-MINICROSS'
+        - 'FP-XY-DECOR-BOLD-MIX'
         - 'FP-BU16-MIDIGRADE'
         - 'FP-EN16-MIDIGRADE'
         - 'FP-TEK2-CLASSIC'
@@ -60,6 +66,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Patch kibot ibom regression
+      run: |
+        sed -i 's/if hasattr(c, .parent_sheet.):/if hasattr(c, "parent_sheet") and c.parent_sheet is not None:/' \
+          /usr/local/lib/python3.13/dist-packages/kibot/kicad/v5_sch.py
 
     - name: Run PCB stuff
       run: |
