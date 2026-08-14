@@ -7,8 +7,12 @@
 	(lib_symbols
 		(symbol "power:+3V3"
 			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -69,7 +73,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -122,8 +126,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+3V3"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -143,8 +146,12 @@
 		)
 		(symbol "power:GND"
 			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -205,7 +212,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -234,8 +241,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2811,7 +2817,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 88.9 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3009,7 +3015,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 190.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3167,7 +3173,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 106.68 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3325,7 +3331,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 208.28 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3402,7 +3408,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -3479,7 +3485,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 175.26 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3717,7 +3723,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 88.9 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -3875,7 +3881,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 160.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -3952,7 +3958,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 58.42 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4110,7 +4116,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 190.5 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -4187,7 +4193,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 185.42 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4264,7 +4270,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 175.26 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -4341,7 +4347,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 88.9 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -4768,7 +4774,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -4845,7 +4851,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 190.5 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5182,7 +5188,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 185.42 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5259,7 +5265,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 160.02 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5336,7 +5342,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 83.82 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5736,7 +5742,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 106.68 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5909,7 +5915,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5986,7 +5992,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 83.82 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6063,7 +6069,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 208.28 66.04 0)
 			(hide yes)
 			(show_name no)
