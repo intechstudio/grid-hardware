@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "e61e3b10-16bb-45fa-9a42-277efd2ec104")
 	(paper "A4")
 	(lib_symbols
@@ -81,7 +81,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -93,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -107,7 +107,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -124,6 +125,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -203,7 +205,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -220,11 +223,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:RES"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -340,10 +348,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "suku_basics:UI_Potentiometer"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -420,6 +431,42 @@
 						(type background)
 					)
 				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.556 2.54) (xy -3.556 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -4.318 0) (xy -4.572 0.254) (xy -4.572 -0.254) (xy -4.318 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.556 -2.54) (xy -3.556 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -4.064 2.032)
 					(end -3.048 -2.032)
@@ -431,33 +478,21 @@
 						(type none)
 					)
 				)
-				(circle
-					(center -0.381 0)
-					(radius 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.381 2.667)
-					(mid -3.0988 -0.0635)
-					(end -0.381 -2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -0.635 -1.778) (xy -0.635 1.778)
 					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -478,10 +513,10 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.127 1.778) (xy -0.127 -1.778)
-					)
+				(arc
+					(start -0.381 -2.794)
+					(mid -3.0988 -0.0635)
+					(end -0.381 2.667)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -492,7 +527,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+						(xy -0.127 1.778) (xy -0.127 -1.778)
 					)
 					(stroke
 						(width 0.254)
@@ -516,34 +551,10 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.556 -2.54) (xy -3.556 -2.032)
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.556 2.54) (xy -3.556 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -4.318 0) (xy -4.572 0.254) (xy -4.572 -0.254) (xy -4.318 0)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -608,7 +619,8 @@
 				)
 				(pin no_connect line
 					(at 0 7.62 270)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "4"
 						(effects
 							(font
@@ -626,7 +638,8 @@
 				)
 				(pin no_connect line
 					(at 0 -7.62 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "5"
 						(effects
 							(font
@@ -643,7 +656,21 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "1000"
+		(exclude_from_sim no)
+		(at 17.78 30.48 0)
+		(effects
+			(font
+				(size 10.16 10.16)
+				(thickness 2.032)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0970fde-0fe0-4d44-b331-3f240fccd8cc")
 	)
 	(wire
 		(pts
@@ -1925,23 +1952,9 @@
 		)
 		(uuid "ff319457-1f16-41c6-942a-98fb76f0d9aa")
 	)
-	(text "1000"
-		(exclude_from_sim no)
-		(at 17.78 30.48 0)
-		(effects
-			(font
-				(size 10.16 10.16)
-				(thickness 2.032)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "a0970fde-0fe0-4d44-b331-3f240fccd8cc")
-	)
 	(hierarchical_label "OUT_10"
 		(shape passive)
 		(at 101.6 132.08 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1953,7 +1966,6 @@
 	(hierarchical_label "OUT_11"
 		(shape passive)
 		(at 127 132.08 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1965,7 +1977,6 @@
 	(hierarchical_label "OUT_15"
 		(shape passive)
 		(at 127 165.1 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1977,7 +1988,6 @@
 	(hierarchical_label "OUT_4"
 		(shape passive)
 		(at 50.8 96.52 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1989,7 +1999,6 @@
 	(hierarchical_label "OUT_3"
 		(shape passive)
 		(at 127 60.96 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2001,7 +2010,6 @@
 	(hierarchical_label "OUT_9"
 		(shape passive)
 		(at 76.2 132.08 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2013,7 +2021,6 @@
 	(hierarchical_label "OUT_7"
 		(shape passive)
 		(at 127 96.52 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2025,7 +2032,6 @@
 	(hierarchical_label "OUT_8"
 		(shape passive)
 		(at 50.8 132.08 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2037,7 +2043,6 @@
 	(hierarchical_label "OUT_2"
 		(shape passive)
 		(at 101.6 60.96 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2049,7 +2054,6 @@
 	(hierarchical_label "OUT_6"
 		(shape passive)
 		(at 101.6 96.52 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2061,7 +2065,6 @@
 	(hierarchical_label "OUT_1"
 		(shape passive)
 		(at 76.2 60.96 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2073,7 +2076,6 @@
 	(hierarchical_label "OUT_12"
 		(shape passive)
 		(at 50.8 165.1 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2085,7 +2087,6 @@
 	(hierarchical_label "OUT_5"
 		(shape passive)
 		(at 76.2 96.52 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2097,7 +2098,6 @@
 	(hierarchical_label "OUT_0"
 		(shape passive)
 		(at 50.8 60.96 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2109,7 +2109,6 @@
 	(hierarchical_label "OUT_14"
 		(shape passive)
 		(at 101.6 165.1 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2121,7 +2120,6 @@
 	(hierarchical_label "OUT_13"
 		(shape passive)
 		(at 76.2 165.1 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2139,7 +2137,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d645ca5")
-		(property "Reference" "UI1001"
+		(property "Reference" "UI?"
 			(at 40.64 43.18 90)
 			(effects
 				(font
@@ -2206,6 +2204,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2217,7 +2221,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d64728d")
-		(property "Reference" "UI1005"
+		(property "Reference" "UI?"
 			(at 66.04 40.64 90)
 			(effects
 				(font
@@ -2284,6 +2288,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2295,7 +2305,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d647f6f")
-		(property "Reference" "UI1009"
+		(property "Reference" "UI?"
 			(at 91.44 43.18 90)
 			(effects
 				(font
@@ -2362,6 +2372,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2373,7 +2389,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d64871c")
-		(property "Reference" "UI1013"
+		(property "Reference" "UI?"
 			(at 116.84 40.64 90)
 			(effects
 				(font
@@ -2440,6 +2456,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2451,7 +2473,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d790490")
-		(property "Reference" "#PWR01029"
+		(property "Reference" "#PWR?"
 			(at 55.88 69.85 0)
 			(effects
 				(font
@@ -2505,6 +2527,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2516,7 +2544,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d792e76")
-		(property "Reference" "#PWR01037"
+		(property "Reference" "#PWR?"
 			(at 81.28 69.85 0)
 			(effects
 				(font
@@ -2570,6 +2598,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2581,7 +2615,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d7939af")
-		(property "Reference" "#PWR01045"
+		(property "Reference" "#PWR?"
 			(at 106.68 69.85 0)
 			(effects
 				(font
@@ -2635,6 +2669,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2646,7 +2686,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d794739")
-		(property "Reference" "#PWR01053"
+		(property "Reference" "#PWR?"
 			(at 132.08 69.85 0)
 			(effects
 				(font
@@ -2700,6 +2740,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2712,7 +2758,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02164cca-4fd7-446d-add5-69e0b662b05d")
-		(property "Reference" "#PWR01028"
+		(property "Reference" "#PWR?"
 			(at 40.64 158.75 0)
 			(effects
 				(font
@@ -2766,6 +2812,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2778,7 +2830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04e851b1-720f-4617-8d37-a5c96f5660a6")
-		(property "Reference" "#PWR01042"
+		(property "Reference" "#PWR?"
 			(at 91.44 90.17 0)
 			(effects
 				(font
@@ -2832,6 +2884,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2844,7 +2902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e8bd8b8-71d8-4a38-8990-0806fd4130e6")
-		(property "Reference" "#PWR01044"
+		(property "Reference" "#PWR?"
 			(at 91.44 158.75 0)
 			(effects
 				(font
@@ -2898,6 +2956,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2910,7 +2974,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10fe8402-3583-4187-bbab-50241babe862")
-		(property "Reference" "R1023"
+		(property "Reference" "R?"
 			(at 64.5414 125.8316 0)
 			(effects
 				(font
@@ -2968,6 +3032,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2979,7 +3049,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14b78174-1baa-4ace-aa4e-477cad4f5ab1")
-		(property "Reference" "UI1010"
+		(property "Reference" "UI?"
 			(at 91.44 78.74 90)
 			(effects
 				(font
@@ -3046,6 +3116,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3057,7 +3133,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1dfbd48e-91e4-4eb0-9e3c-dee73a81c768")
-		(property "Reference" "#PWR01030"
+		(property "Reference" "#PWR?"
 			(at 55.88 105.41 0)
 			(effects
 				(font
@@ -3111,6 +3187,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3123,7 +3205,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23e38ac1-1f16-4cb2-af85-a8542888e389")
-		(property "Reference" "R1025"
+		(property "Reference" "R?"
 			(at 89.9414 54.7116 0)
 			(effects
 				(font
@@ -3181,6 +3263,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3193,7 +3281,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "253535dd-3a25-4d56-9b29-fa75cad4a122")
-		(property "Reference" "R1031"
+		(property "Reference" "R?"
 			(at 115.3414 125.8316 0)
 			(effects
 				(font
@@ -3251,6 +3339,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3262,7 +3356,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27014f4c-8416-4e3e-b2fd-c8463f82042b")
-		(property "Reference" "#PWR01040"
+		(property "Reference" "#PWR?"
 			(at 81.28 173.99 0)
 			(effects
 				(font
@@ -3316,6 +3410,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3328,7 +3428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2767bc35-2889-4a4a-8479-9c0471244a51")
-		(property "Reference" "#PWR01049"
+		(property "Reference" "#PWR?"
 			(at 116.84 54.61 0)
 			(effects
 				(font
@@ -3382,6 +3482,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3393,7 +3499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27e510d9-e51b-4474-a119-76767d47c03b")
-		(property "Reference" "UI1012"
+		(property "Reference" "UI?"
 			(at 91.44 147.32 90)
 			(effects
 				(font
@@ -3460,6 +3566,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3471,7 +3583,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2baa8e9a-3a81-498f-8102-937674eb6a92")
-		(property "Reference" "#PWR01039"
+		(property "Reference" "#PWR?"
 			(at 81.28 140.97 0)
 			(effects
 				(font
@@ -3525,6 +3637,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3537,7 +3655,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d568af9-9cd3-4b4f-a1f2-a933c75c1987")
-		(property "Reference" "R1020"
+		(property "Reference" "R?"
 			(at 39.1414 158.8516 0)
 			(effects
 				(font
@@ -3595,6 +3713,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3607,7 +3731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3060d00d-1684-4f95-9701-ba42f35bcc15")
-		(property "Reference" "#PWR01026"
+		(property "Reference" "#PWR?"
 			(at 40.64 90.17 0)
 			(effects
 				(font
@@ -3661,6 +3785,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3673,7 +3803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3804ab31-6fec-40ba-9d03-eaa4d72dc362")
-		(property "Reference" "#PWR01027"
+		(property "Reference" "#PWR?"
 			(at 40.64 125.73 0)
 			(effects
 				(font
@@ -3727,6 +3857,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3738,7 +3874,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ad6e532-65fb-4df5-877b-18b13723dd55")
-		(property "Reference" "#PWR01048"
+		(property "Reference" "#PWR?"
 			(at 106.68 173.99 0)
 			(effects
 				(font
@@ -3792,6 +3928,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3803,7 +3945,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b567442-a8dd-489c-934a-06c845b8f70c")
-		(property "Reference" "UI1004"
+		(property "Reference" "UI?"
 			(at 40.64 147.32 90)
 			(effects
 				(font
@@ -3870,6 +4012,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3882,7 +4030,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c37aa39-e078-4858-9351-f2cd62419230")
-		(property "Reference" "R1022"
+		(property "Reference" "R?"
 			(at 64.5414 90.2716 0)
 			(effects
 				(font
@@ -3940,6 +4088,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3952,7 +4106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44d213f9-8b83-4906-9293-df04c94fdf6b")
-		(property "Reference" "#PWR01034"
+		(property "Reference" "#PWR?"
 			(at 66.04 90.17 0)
 			(effects
 				(font
@@ -4006,6 +4160,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4018,7 +4178,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "497437a2-a337-4433-a818-0b794f3dc273")
-		(property "Reference" "R1021"
+		(property "Reference" "R?"
 			(at 64.5414 54.7116 0)
 			(effects
 				(font
@@ -4076,6 +4236,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4087,7 +4253,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50b9a047-a7b1-4f45-9712-9ba69ee839e5")
-		(property "Reference" "#PWR01038"
+		(property "Reference" "#PWR?"
 			(at 81.28 105.41 0)
 			(effects
 				(font
@@ -4141,6 +4307,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4152,7 +4324,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a03d315-e550-42ff-850f-b71ebdc8c045")
-		(property "Reference" "UI1006"
+		(property "Reference" "UI?"
 			(at 66.04 76.2 90)
 			(effects
 				(font
@@ -4219,6 +4391,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4230,7 +4408,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5af43d78-8417-4e93-ae5e-156bb3a99f99")
-		(property "Reference" "#PWR01054"
+		(property "Reference" "#PWR?"
 			(at 132.08 105.41 0)
 			(effects
 				(font
@@ -4284,6 +4462,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4295,7 +4479,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62c82701-083c-471d-bfd5-98780815f674")
-		(property "Reference" "#PWR01055"
+		(property "Reference" "#PWR?"
 			(at 132.08 140.97 0)
 			(effects
 				(font
@@ -4349,6 +4533,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4360,7 +4550,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71581ce4-a408-4ea9-816d-555a4ffd5273")
-		(property "Reference" "UI1007"
+		(property "Reference" "UI?"
 			(at 66.04 111.76 90)
 			(effects
 				(font
@@ -4427,6 +4617,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4439,7 +4635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76031060-8fa3-4ff4-a16a-8028433d2825")
-		(property "Reference" "#PWR01050"
+		(property "Reference" "#PWR?"
 			(at 116.84 90.17 0)
 			(effects
 				(font
@@ -4493,6 +4689,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4504,7 +4706,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "760f40f2-623e-4103-a7bf-73079d753e7b")
-		(property "Reference" "UI1011"
+		(property "Reference" "UI?"
 			(at 91.44 114.3 90)
 			(effects
 				(font
@@ -4571,6 +4773,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4583,7 +4791,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77f702d9-498c-4c60-841a-a2a3268f2414")
-		(property "Reference" "#PWR01041"
+		(property "Reference" "#PWR?"
 			(at 91.44 54.61 0)
 			(effects
 				(font
@@ -4637,6 +4845,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4648,7 +4862,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e344f7e-f7e7-45f8-b4bf-c64326539be8")
-		(property "Reference" "UI1003"
+		(property "Reference" "UI?"
 			(at 40.64 114.3 90)
 			(effects
 				(font
@@ -4715,6 +4929,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4727,7 +4947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "801f5d94-51ed-4593-acdd-0658364a4cd0")
-		(property "Reference" "#PWR01035"
+		(property "Reference" "#PWR?"
 			(at 66.04 125.73 0)
 			(effects
 				(font
@@ -4781,6 +5001,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4793,7 +5019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88bb0558-36a9-460e-aa4a-fa0c50e8c160")
-		(property "Reference" "R1018"
+		(property "Reference" "R?"
 			(at 39.1414 90.2716 0)
 			(effects
 				(font
@@ -4851,6 +5077,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4863,7 +5095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95be47c8-90f0-43a6-a396-0be156fab4f1")
-		(property "Reference" "#PWR01052"
+		(property "Reference" "#PWR?"
 			(at 116.84 158.75 0)
 			(effects
 				(font
@@ -4917,6 +5149,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4929,7 +5167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9dc1c756-5e0b-457d-af68-1db6eca691ff")
-		(property "Reference" "R1029"
+		(property "Reference" "R?"
 			(at 115.3414 54.7116 0)
 			(effects
 				(font
@@ -4987,6 +5225,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4998,7 +5242,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4646e04-b627-409d-bbee-188ac8e645f0")
-		(property "Reference" "UI1016"
+		(property "Reference" "UI?"
 			(at 116.84 144.78 90)
 			(effects
 				(font
@@ -5065,6 +5309,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5077,7 +5327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "adbdb87a-fd09-41fd-bdde-ed9ef48a2001")
-		(property "Reference" "R1026"
+		(property "Reference" "R?"
 			(at 89.9414 90.2716 0)
 			(effects
 				(font
@@ -5135,6 +5385,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5146,7 +5402,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b00c1d39-d063-4e0e-a785-e49892457fa6")
-		(property "Reference" "#PWR01031"
+		(property "Reference" "#PWR?"
 			(at 55.88 140.97 0)
 			(effects
 				(font
@@ -5200,6 +5456,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5211,7 +5473,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1d20404-fd8b-48dc-a093-c112a611e01a")
-		(property "Reference" "UI1008"
+		(property "Reference" "UI?"
 			(at 66.04 144.78 90)
 			(effects
 				(font
@@ -5278,6 +5540,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5290,7 +5558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b286e487-5032-44b4-a1a8-50012360653a")
-		(property "Reference" "R1027"
+		(property "Reference" "R?"
 			(at 89.9414 125.8316 0)
 			(effects
 				(font
@@ -5348,6 +5616,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5359,7 +5633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5517d5a-5b9f-4f5c-9679-710f4edf8b42")
-		(property "Reference" "#PWR01032"
+		(property "Reference" "#PWR?"
 			(at 55.88 173.99 0)
 			(effects
 				(font
@@ -5413,6 +5687,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5424,7 +5704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b71dd910-2cf9-4334-85d4-23eb1f3aab65")
-		(property "Reference" "#PWR01047"
+		(property "Reference" "#PWR?"
 			(at 106.68 140.97 0)
 			(effects
 				(font
@@ -5478,6 +5758,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5489,7 +5775,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b760e32e-75ef-4a56-8f69-7a3ce8e8d246")
-		(property "Reference" "UI1015"
+		(property "Reference" "UI?"
 			(at 116.84 111.76 90)
 			(effects
 				(font
@@ -5556,6 +5842,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5568,7 +5860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb030865-770d-4e75-b7dc-d984da03ba9c")
-		(property "Reference" "#PWR01043"
+		(property "Reference" "#PWR?"
 			(at 91.44 125.73 0)
 			(effects
 				(font
@@ -5622,6 +5914,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5633,7 +5931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7c279a4-bc2c-41ab-93ea-21e1ba4a093f")
-		(property "Reference" "#PWR01056"
+		(property "Reference" "#PWR?"
 			(at 132.08 173.99 0)
 			(effects
 				(font
@@ -5687,6 +5985,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5699,7 +6003,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "caab862e-c068-4f53-b7d0-3c7a0deafa6a")
-		(property "Reference" "R1030"
+		(property "Reference" "R?"
 			(at 115.3414 90.2716 0)
 			(effects
 				(font
@@ -5757,6 +6061,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5769,7 +6079,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cadc99a8-4767-49f7-a079-2f93f197ea0a")
-		(property "Reference" "R1017"
+		(property "Reference" "R?"
 			(at 39.1414 54.7116 0)
 			(effects
 				(font
@@ -5827,6 +6137,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5839,7 +6155,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d074c4ce-c00b-43c1-bd14-44b8818d5153")
-		(property "Reference" "R1019"
+		(property "Reference" "R?"
 			(at 39.1414 125.8316 0)
 			(effects
 				(font
@@ -5897,6 +6213,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5909,7 +6231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddc83700-64ff-44c0-b3c6-15fd146220d4")
-		(property "Reference" "#PWR01033"
+		(property "Reference" "#PWR?"
 			(at 66.04 54.61 0)
 			(effects
 				(font
@@ -5963,6 +6285,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5975,7 +6303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e030330d-81f1-4ad4-8d7d-b20bce12fed0")
-		(property "Reference" "#PWR01051"
+		(property "Reference" "#PWR?"
 			(at 116.84 125.73 0)
 			(effects
 				(font
@@ -6029,6 +6357,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6041,7 +6375,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e748f638-311b-4ec7-b8bc-3b801761d3af")
-		(property "Reference" "R1028"
+		(property "Reference" "R?"
 			(at 89.9414 158.8516 0)
 			(effects
 				(font
@@ -6099,6 +6433,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6111,7 +6451,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb942f12-928e-44d9-96fb-9d92924f73d6")
-		(property "Reference" "R1024"
+		(property "Reference" "R?"
 			(at 64.5414 158.8516 0)
 			(effects
 				(font
@@ -6169,6 +6509,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6180,7 +6526,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee2c75fd-5eee-4d06-9941-be8160bd7c09")
-		(property "Reference" "#PWR01046"
+		(property "Reference" "#PWR?"
 			(at 106.68 105.41 0)
 			(effects
 				(font
@@ -6234,6 +6580,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6246,7 +6598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f45b6bcd-59f9-49fe-a1a4-e67e5320a1f5")
-		(property "Reference" "#PWR01025"
+		(property "Reference" "#PWR?"
 			(at 40.64 54.61 0)
 			(effects
 				(font
@@ -6300,6 +6652,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6311,7 +6669,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa0cfa09-24d7-4bd4-a833-72e7b09dcffa")
-		(property "Reference" "UI1014"
+		(property "Reference" "UI?"
 			(at 116.84 76.2 90)
 			(effects
 				(font
@@ -6378,6 +6736,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6389,7 +6753,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa990b44-8ff4-4a40-bac6-e7823fa16b48")
-		(property "Reference" "UI1002"
+		(property "Reference" "UI?"
 			(at 40.64 78.74 90)
 			(effects
 				(font
@@ -6456,6 +6820,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "UI?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6468,7 +6838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fabdc63d-1019-4784-84fc-c8a16dc92b90")
-		(property "Reference" "#PWR01036"
+		(property "Reference" "#PWR?"
 			(at 66.04 158.75 0)
 			(effects
 				(font
@@ -6522,6 +6892,12 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6534,7 +6910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "feea97e2-47c5-4be5-b235-4f7124ef084a")
-		(property "Reference" "R1032"
+		(property "Reference" "R?"
 			(at 115.3414 158.8516 0)
 			(effects
 				(font
@@ -6592,6 +6968,18 @@
 					(unit 1)
 				)
 			)
+			(project "UI_POT"
+				(path "/e61e3b10-16bb-45fa-9a42-277efd2ec104"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
