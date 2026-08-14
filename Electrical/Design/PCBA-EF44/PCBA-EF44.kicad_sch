@@ -1,61 +1,54 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "e5217a0c-7f55-4c30-adda-7f8d95709d1b")
 	(paper "A3")
 	(lib_symbols)
-	(junction
-		(at 281.94 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "160183f1-48d2-4a7c-9c32-ec12dfeedcf8")
+	(text "Common Sheets:\n500 GRID\n600 USB_POWER\n700 MCU\n\nModule Specific:\n800 HWCFG\n900 LED\n1000 UI"
+		(exclude_from_sim no)
+		(at 292.1 127 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ed7b52a-fa11-4e7f-ae41-1082078a3112")
 	)
 	(junction
-		(at 205.74 208.28)
+		(at 292.1 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "613c435a-bb9e-4c31-a570-76f77c17fb32")
+		(uuid "3df3eaa8-d538-485f-b57b-f3712d3ddf80")
 	)
 	(junction
-		(at 215.9 218.44)
+		(at 289.56 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8810d817-710f-496f-af46-5b23c77134c5")
+		(uuid "c9cf7f81-9007-40c8-b2dc-dbef8c64a9a3")
 	)
-	(junction
-		(at 284.48 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d3dd7a7-6d8f-4049-9773-babef80c7388")
+	(no_connect
+		(at 223.52 172.72)
+		(uuid "2780a221-695f-454e-b214-132fee89fe2b")
 	)
 	(no_connect
 		(at 208.28 111.76)
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
 	)
-	(wire
-		(pts
-			(xy 203.2 182.88) (xy 335.28 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "056559c2-16e4-45f7-90db-e33ff370809c")
+	(no_connect
+		(at 223.52 170.18)
+		(uuid "7e9aac63-0935-4f8c-a086-e34bb017ade0")
+	)
+	(no_connect
+		(at 284.48 172.72)
+		(uuid "c73a73c5-c4d5-4740-be68-c742a0ab899f")
 	)
 	(wire
 		(pts
-			(xy 215.9 220.98) (xy 215.9 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06eb2628-612b-466e-ad37-6e3190df00c9")
-	)
-	(wire
-		(pts
-			(xy 279.4 165.1) (xy 284.48 165.1)
+			(xy 279.4 165.1) (xy 292.1 165.1)
 		)
 		(stroke
 			(width 0)
@@ -75,16 +68,6 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 187.96) (xy 284.48 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c1f8782-8aac-4160-adc8-b92f83818543")
-	)
-	(wire
-		(pts
 			(xy 228.6 104.14) (xy 203.2 104.14)
 		)
 		(stroke
@@ -95,63 +78,83 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 167.64) (xy 304.8 167.64)
+			(xy 223.52 172.72) (xy 228.6 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f67f573-81bd-4f51-991f-2500d1b55161")
+		(uuid "2130d7a1-be2d-4595-925a-3b9a2cb33f02")
 	)
 	(wire
 		(pts
-			(xy 215.9 218.44) (xy 218.44 218.44)
+			(xy 203.2 157.48) (xy 228.6 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "405ac5ef-2f89-457e-9924-e98fcc811904")
+		(uuid "21536e80-d9e8-4f47-bfc3-de4c36ee3379")
 	)
 	(wire
 		(pts
-			(xy 284.48 165.1) (xy 304.8 165.1)
+			(xy 289.56 187.96) (xy 289.56 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66631f67-41bd-4a33-8df0-c546d37b4d92")
+		(uuid "2bd6c382-da5f-4a57-8613-cce45494f014")
 	)
 	(wire
 		(pts
-			(xy 335.28 182.88) (xy 335.28 175.26)
+			(xy 223.52 170.18) (xy 228.6 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "681436a6-eaa1-411e-9205-e140e4c569cd")
+		(uuid "3855a005-fbec-4cee-81ac-be72b226ee7c")
 	)
 	(wire
 		(pts
-			(xy 213.36 220.98) (xy 203.2 220.98)
+			(xy 292.1 165.1) (xy 304.8 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e64743c-922a-4b24-871b-08377e838d3d")
+		(uuid "40367187-4749-4fdb-82af-f859b89ce2d9")
 	)
 	(wire
 		(pts
-			(xy 218.44 226.06) (xy 213.36 226.06)
+			(xy 363.22 185.42) (xy 363.22 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7aca83f8-5720-438d-8856-8c94e1843b70")
+		(uuid "41adfb8b-8804-4ebe-9a78-08487529f7bd")
+	)
+	(wire
+		(pts
+			(xy 203.2 165.1) (xy 228.6 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e48b760-be4a-451b-9eb0-242d623a9f8e")
+	)
+	(wire
+		(pts
+			(xy 203.2 185.42) (xy 363.22 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b00719-4c80-48c1-b4ac-c4ad48fdf821")
 	)
 	(wire
 		(pts
@@ -165,57 +168,47 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 205.74) (xy 205.74 205.74)
+			(xy 203.2 162.56) (xy 228.6 162.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86e44917-7ed6-4461-8a10-d9f3f0d7b39a")
+		(uuid "88b430a4-4f3f-478f-a302-3d2ba764ce79")
 	)
 	(wire
 		(pts
-			(xy 213.36 226.06) (xy 213.36 220.98)
+			(xy 355.6 165.1) (xy 363.22 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8954b23b-09f1-451c-9360-b1a57c00e965")
+		(uuid "8f1774a7-6b76-465e-bbae-4b8409a2105c")
 	)
 	(wire
 		(pts
-			(xy 203.2 187.96) (xy 284.48 187.96)
+			(xy 289.56 167.64) (xy 304.8 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b3c7abb-06cf-4479-91bb-fbb8e9bf5586")
+		(uuid "a1432db0-51ee-4a8a-8e99-b13080efe421")
 	)
 	(wire
 		(pts
-			(xy 281.94 185.42) (xy 281.94 167.64)
+			(xy 203.2 160.02) (xy 228.6 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0873a55-f92f-450c-801f-34398cf69e2e")
+		(uuid "a214a845-4b15-464e-9065-1f02c76f70e2")
 	)
 	(wire
 		(pts
-			(xy 335.28 175.26) (xy 330.2 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5f99711-792f-4921-b9ba-65bfed60dcfa")
-	)
-	(wire
-		(pts
-			(xy 279.4 167.64) (xy 281.94 167.64)
+			(xy 279.4 167.64) (xy 289.56 167.64)
 		)
 		(stroke
 			(width 0)
@@ -225,179 +218,64 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 220.98) (xy 215.9 220.98)
+			(xy 292.1 190.5) (xy 292.1 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b15faff4-7357-4d2b-9f30-78a1ec7aa9ee")
+		(uuid "abaf052c-a7d7-4adb-ba87-a1c763e62812")
 	)
 	(wire
 		(pts
-			(xy 203.2 218.44) (xy 215.9 218.44)
+			(xy 203.2 190.5) (xy 292.1 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bdcc7d23-1960-4699-99d4-4e6347d467ef")
+		(uuid "d6a8be82-768b-4b06-a1c2-546093ec612d")
 	)
 	(wire
 		(pts
-			(xy 203.2 208.28) (xy 205.74 208.28)
+			(xy 203.2 187.96) (xy 289.56 187.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be7e4ed5-abf9-44eb-afc7-4a059927a7c3")
+		(uuid "e8e4c0ff-a78a-43f8-b919-635b57253794")
 	)
 	(wire
 		(pts
-			(xy 203.2 185.42) (xy 281.94 185.42)
+			(xy 279.4 172.72) (xy 284.48 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d451590e-4210-42a2-8fae-0fb699907ee0")
-	)
-	(wire
-		(pts
-			(xy 205.74 205.74) (xy 205.74 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc22ed1f-ec5e-4d0b-9949-8e5cb53414fa")
-	)
-	(wire
-		(pts
-			(xy 205.74 208.28) (xy 218.44 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff6531bc-8f31-46b5-a2f4-1a77917d2e86")
-	)
-	(text "Common Sheets:\n500 GRID\n600 USB_POWER\n700 MCU\n\nModule Specific:\n800 HWCFG\n900 LED\n1000 UI"
-		(exclude_from_sim no)
-		(at 292.1 127 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ed7b52a-fa11-4e7f-ae41-1082078a3112")
-	)
-	(global_label "ESP_GPIO_5"
-		(shape bidirectional)
-		(at 218.44 208.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "24969f6b-0941-406a-accf-e012138de8eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0128 208.2006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_18"
-		(shape bidirectional)
-		(at 218.44 220.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2e0cf04a-9007-4dc6-a1a1-02108bbc6ae8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.2223 220.9006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_1"
-		(shape bidirectional)
-		(at 218.44 218.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8a0de198-6400-4f8b-a7f8-6e7cb3363322")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0128 218.3606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ESP_GPIO_2"
-		(shape bidirectional)
-		(at 218.44 226.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a6719264-b348-451f-ad62-487f79677eb3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0128 225.9806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "f67e9276-37d4-4dd4-b373-0cbc70a3488a")
 	)
 	(sheet
 		(at 177.8 101.6)
 		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00005d735388")
 		(property "Sheetname" "UI_LED"
 			(at 177.8 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -407,6 +285,8 @@
 		)
 		(property "Sheetfile" "UI_LED.kicad_sch"
 			(at 177.8 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -416,23 +296,23 @@
 		)
 		(pin "LED_DATA_IN" input
 			(at 203.2 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
 			(uuid "f1e619ac-5067-41df-8384-776ec70a6093")
-		)
-		(pin "LED_DATA_OUT" input
-			(at 203.2 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
+		)
+		(pin "LED_DATA_OUT" output
+			(at 203.2 111.76 0)
 			(uuid "7a74c4b1-6243-4a12-85a2-bc41d346e7aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
 		(instances
 			(project "PCBA-EF44"
@@ -445,17 +325,23 @@
 	(sheet
 		(at 228.6 101.6)
 		(size 50.8 76.2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00005d757c78")
 		(property "Sheetname" "MCU"
 			(at 228.6 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -465,6 +351,8 @@
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
 			(at 228.6 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -474,43 +362,113 @@
 		)
 		(pin "LED_DATA_OUT" output
 			(at 228.6 104.14 180)
+			(uuid "9390234f-bf3f-46cd-b6a0-8a438ec76e9f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9390234f-bf3f-46cd-b6a0-8a438ec76e9f")
 		)
-		(pin "HWCFG_DATA" input
+		(pin "HWCFG_DATA_IN" input
 			(at 279.4 175.26 0)
+			(uuid "9e813ec2-d4ce-4e2e-b379-c6fedb4c45db")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9e813ec2-d4ce-4e2e-b379-c6fedb4c45db")
 		)
 		(pin "HWCFG_CLOCK" output
 			(at 279.4 167.64 0)
+			(uuid "6325c32f-c82a-4357-b022-f9c7e76f412e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6325c32f-c82a-4357-b022-f9c7e76f412e")
 		)
 		(pin "HWCFG_SHIFT" output
 			(at 279.4 165.1 0)
+			(uuid "18d11f32-e1a6-4f29-8e3c-0bfeb07299bd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "18d11f32-e1a6-4f29-8e3c-0bfeb07299bd")
+		)
+		(pin "A0" input
+			(at 228.6 170.18 180)
+			(uuid "f09e6be9-6d75-41dd-a62d-a1054bac1482")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A1" input
+			(at 228.6 172.72 180)
+			(uuid "82d2c18f-6530-4926-98db-eb3404d73187")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADC0" input
+			(at 228.6 157.48 180)
+			(uuid "9cd41272-4fca-4e5c-a582-89d1e43c4d8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADC1" input
+			(at 228.6 160.02 180)
+			(uuid "b2ad3ad1-2e9c-4dfc-af41-1d6f99e9d50f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADC2" input
+			(at 228.6 162.56 180)
+			(uuid "fc752edc-d7c5-4ae9-82ae-97926ba9a616")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADC3" input
+			(at 228.6 165.1 180)
+			(uuid "cca80631-7ff7-4be7-ad03-7a16d87cd2a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HWCFG_DATA_OUT" output
+			(at 279.4 172.72 0)
+			(uuid "96718733-2987-4e44-b649-27e94bf31ceb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
 		(instances
 			(project "PCBA-EF44"
@@ -522,18 +480,24 @@
 	)
 	(sheet
 		(at 304.8 162.56)
-		(size 25.4 15.24)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00005dc2dc06")
 		(property "Sheetname" "HWCFG"
 			(at 304.8 161.8484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -543,6 +507,8 @@
 		)
 		(property "Sheetfile" "HWCFG.kicad_sch"
 			(at 304.8 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -550,45 +516,45 @@
 				(justify left top)
 			)
 		)
-		(pin "HWCFG_DATA" output
-			(at 304.8 175.26 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9f782c92-a5e8-49db-bfda-752b35522ce4")
-		)
 		(pin "HWCFG_CLOCK" input
 			(at 304.8 167.64 180)
+			(uuid "ccc4cc25-ac17-45ef-825c-e079951ffb21")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ccc4cc25-ac17-45ef-825c-e079951ffb21")
 		)
 		(pin "HWCFG_SHIFT" input
 			(at 304.8 165.1 180)
+			(uuid "626679e8-6101-4722-ac57-5b8d9dab4c8b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "626679e8-6101-4722-ac57-5b8d9dab4c8b")
 		)
 		(pin "DATA_IN" input
-			(at 330.2 175.26 0)
+			(at 355.6 165.1 0)
+			(uuid "8550838a-22ca-4710-913d-2f1e9c87480e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d895d918-6adc-402f-9729-3ac14b312657")
+		)
+		(pin "HWCFG_DATA" output
+			(at 304.8 175.26 180)
+			(uuid "9238f20e-7a04-4aaf-9efe-8ec41ecd4797")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "PCBA-EF44"
@@ -599,19 +565,25 @@
 		)
 	)
 	(sheet
-		(at 177.8 177.8)
-		(size 25.4 50.8)
+		(at 177.8 154.94)
+		(size 25.4 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
-		(uuid "9224ab5f-20b7-45a7-aa7a-07ebd3e33cb3")
+		(uuid "cb24bf7e-66aa-46a2-a233-e193d94c518c")
 		(property "Sheetname" "UI_ENC"
-			(at 177.8 177.0884 0)
+			(at 177.8 154.2284 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -620,7 +592,9 @@
 			)
 		)
 		(property "Sheetfile" "UI_ENC.kicad_sch"
-			(at 177.8 229.1846 0)
+			(at 177.8 193.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -629,84 +603,79 @@
 			)
 		)
 		(pin "ENCODER_MISO" output
-			(at 203.2 182.88 0)
+			(at 203.2 185.42 0)
+			(uuid "f35170c0-2e53-471b-b9b6-d03f03026797")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6b561338-492d-4573-ab97-0bba1d21ee85")
 		)
 		(pin "ENCODER_SCK" input
-			(at 203.2 185.42 0)
+			(at 203.2 187.96 0)
+			(uuid "a4949339-09be-4647-96f8-be2ac76f6371")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b01fea7f-ebcd-4368-9e9c-1e0ee332d23f")
 		)
 		(pin "ENCODER_CS" input
-			(at 203.2 187.96 0)
+			(at 203.2 190.5 0)
+			(uuid "34d519ec-d7aa-4abc-aed1-dfed505e92d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0e3534f0-d8f7-4134-b5f1-cc7b7abfc74d")
 		)
-		(pin "FADER_MUX_OUT_1" output
-			(at 203.2 218.44 0)
+		(pin "FADER_OUT_0" output
+			(at 203.2 157.48 0)
+			(uuid "b17e6ceb-a7df-46c6-8e4c-eeb47ab5298a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c34eff7e-0096-4b0a-94fb-36cc71fb3465")
 		)
-		(pin "FADER_MUX_OUT_2" output
-			(at 203.2 220.98 0)
+		(pin "FADER_OUT_1" output
+			(at 203.2 160.02 0)
+			(uuid "287a4a24-2b39-40a4-8388-24828a649954")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dbfd90b9-ba30-4f30-bd80-60c43abee5c6")
 		)
-		(pin "FADER_MUX_A_1" input
-			(at 203.2 205.74 0)
+		(pin "FADER_OUT_2" output
+			(at 203.2 162.56 0)
+			(uuid "11b788d5-f82d-46db-a745-fbda22942179")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "83b74bc3-7624-43b0-aa36-cb6d84cf232f")
 		)
-		(pin "FADER_MUX_A_2" input
-			(at 203.2 208.28 0)
+		(pin "FADER_OUT_3" output
+			(at 203.2 165.1 0)
+			(uuid "88ac96e3-d473-41f2-ab05-1b0c66fe0f73")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0243a9eb-97cf-4a1d-8771-9646aa53eac6")
 		)
 		(instances
-			(project "EN16"
-				(path "/1fbb0219-551e-409b-a61b-76e8cebdfb9d"
-					(page "3")
-				)
-			)
 			(project "PCBA-EF44"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b"
-					(page "13")
+					(page "2")
 				)
 			)
 		)
@@ -716,4 +685,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
