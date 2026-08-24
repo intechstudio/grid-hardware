@@ -11,8 +11,21 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # Fast pre-flight gate: every design must have front AND back silkscreen.
+  # An empty silk layer makes the manufacturer suspect a bad gerber export and
+  # delays production, so if any board fails this the whole matrix is skipped —
+  # no gerbers are exported until the silkscreen is fixed.
+  silkscreen-check:
+    name: silkscreen gate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check silkscreen layers
+      run: ./Electrical/Design/check_silkscreen.sh
+
   generate-artifacts:
     name: kicad export
+    needs: silkscreen-check
     runs-on: ubuntu-latest
     container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
