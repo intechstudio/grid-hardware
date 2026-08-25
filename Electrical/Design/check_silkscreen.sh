@@ -18,6 +18,12 @@
 # layer still reads as empty. Variant folders whose name differs from the board
 # file (e.g. "*_jlc_order") and ".history" autosaves are skipped.
 #
+# A genuinely one-sided design documents that with a `${LAYER} layer is
+# intentionally empty...` marker text placed outside the board outline (see
+# FP-BU16). Since that marker's whole claim is "nothing else is here," it must
+# be the ONLY item on its layer — a layer carrying the marker plus real
+# silkscreen also fails, even though its item count is nonzero.
+#
 # Usage:  check_silkscreen.sh [--github] [DESIGN_ROOT]
 #   --github  also emit GitHub Actions error annotations and a run-summary table
 #             (auto-enabled when GITHUB_ACTIONS=true). Does not change stdout.
@@ -84,21 +90,55 @@ count_layer() {
   ' "$2"
 }
 
+# Does a "${LAYER} layer is intentionally empty..." marker text target this
+# layer ($1=layer name, $2=board file)? The marker is our own convention for
+# documenting a genuinely one-sided design (see FP-BU16); its whole point is
+# that the layer has NO other content, so if real silkscreen coexists with it
+# the marker's claim is false — and worse, it risks being plotted alongside
+# real artwork. The marker's `(layer ...)` line always follows within a few
+# lines of the text line itself, so a short lookahead window is enough.
+marker_layer() {
+  awk -v layer="$1" '
+    function trim(s){ gsub(/^[ \t\r]+|[ \t\r]+$/, "", s); return s }
+    {
+      line = trim($0)
+      if (line ~ /^\(gr_text "\$\{LAYER\} layer is intentionally empty/) { remaining = 8 }
+      else if (remaining > 0) {
+        remaining--
+        if (line == "(layer \"" layer "\")") { found = 1; remaining = 0 }
+      }
+    }
+    END { print found + 0 }
+  ' "$2"
+}
+
 # --- gather results once -----------------------------------------------------
 names=(); paths=(); fronts=(); backs=(); statuses=(); fail=0
 for pcb in "${BOARDS[@]}"; do
   name="$(basename "$pcb" .kicad_pcb)"
   front="$(count_layer 'F.SilkS' "$pcb")"
   back="$(count_layer 'B.SilkS' "$pcb")"
+  front_marker="$(marker_layer 'F.SilkS' "$pcb")"
+  back_marker="$(marker_layer 'B.SilkS' "$pcb")"
 
-  if [ "$front" -eq 0 ] && [ "$back" -eq 0 ]; then
-    status="FAIL: front+back empty"; fail=1
-  elif [ "$front" -eq 0 ]; then
-    status="FAIL: front empty"; fail=1
-  elif [ "$back" -eq 0 ]; then
-    status="FAIL: back empty"; fail=1
+  problems=()
+  [ "$front" -eq 0 ] && problems+=("front empty")
+  [ "$back" -eq 0 ] && problems+=("back empty")
+  [ "$front" -gt 1 ] && [ "$front_marker" -eq 1 ] && problems+=("front has real silkscreen alongside empty-marker")
+  [ "$back" -gt 1 ] && [ "$back_marker" -eq 1 ] && problems+=("back has real silkscreen alongside empty-marker")
+
+  if [ "${#problems[@]}" -eq 0 ]; then
+    notes=()
+    [ "$front" -eq 1 ] && [ "$front_marker" -eq 1 ] && notes+=("front: empty marker detected")
+    [ "$back" -eq 1 ] && [ "$back_marker" -eq 1 ] && notes+=("back: empty marker detected")
+    if [ "${#notes[@]}" -eq 0 ]; then
+      status="ok"
+    else
+      status="ok ($(IFS='; '; echo "${notes[*]}"))"
+    fi
   else
-    status="ok"
+    fail=1
+    status="FAIL: $(IFS='; '; echo "${problems[*]}")"
   fi
 
   names+=("$name"); paths+=("$pcb"); fronts+=("$front"); backs+=("$back"); statuses+=("$status")
