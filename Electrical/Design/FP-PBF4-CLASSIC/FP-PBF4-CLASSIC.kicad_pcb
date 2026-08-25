@@ -4120,7 +4120,18 @@
 		(layer "Cmts.User")
 		(uuid "ddd8b497-5e71-4232-b67e-2187ec11059d")
 	)
-	(gr_text "JLCJLCJLCJLC\n${PROJECTNAME}\n${HASH}\n${DATE}"
+	(gr_text "${LAYER} layer is intentionally empty, no printing is required on this design!"
+		(at 100 160 0)
+		(layer "F.SilkS")
+		(uuid "06bf24b8-4ca4-4863-9afc-ca0e7e4007e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "${PROJECTNAME}\n${HASH}\n${DATE}"
 		(at 100 100 0)
 		(layer "B.SilkS")
 		(uuid "89be4cdb-8933-45a0-a922-4f060890ebdf")

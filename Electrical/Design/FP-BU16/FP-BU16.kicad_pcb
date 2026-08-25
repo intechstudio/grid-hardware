@@ -85,7 +85,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(aux_axis_origin 100 100)
 		(grid_origin 100 100)
 		(pcbplotparams
@@ -5038,7 +5037,18 @@
 		(layer "Cmts.User")
 		(uuid "5bbd61ba-ffd9-4b65-8a5a-1e0c7ea56f17")
 	)
-	(gr_text "JLCJLCJLCJLC\n${PROJECTNAME}\n${HASH}\n${DATE}"
+	(gr_text "${LAYER} layer is intentionally empty, no printing is required on this design!"
+		(at 100 160 0)
+		(layer "F.SilkS")
+		(uuid "7c335e85-3c26-4f47-8b88-67a3cb056ca8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "${PROJECTNAME}\n${HASH}\n${DATE}"
 		(at 100 100 0)
 		(layer "B.SilkS")
 		(uuid "af91bece-8cc7-4b1c-a97b-377c09415137")
