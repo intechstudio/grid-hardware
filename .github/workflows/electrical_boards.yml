@@ -23,9 +23,24 @@ jobs:
     - name: Check silkscreen layers
       run: ./Electrical/Design/check_silkscreen.sh
 
+  # Fast pre-flight gate: sheets that are duplicated verbatim across design
+  # folders (instead of living in one shared location) must stay in sync.
+  # Catches the case where a schematic edit lands in one board's copy but
+  # not the other's.
+  schematic-drift-check:
+    name: schematic drift gate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check schematic drift
+      run: |
+        ./Electrical/Design/check_schematic_drift.py \
+          --designs Electrical/Design/PCBA-EF44 Electrical/Design/PCBA-BU16 \
+          --sheets USB_POWER GRID MCU
+
   generate-artifacts:
     name: kicad export
-    needs: silkscreen-check
+    needs: [silkscreen-check, schematic-drift-check]
     runs-on: ubuntu-latest
     container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
