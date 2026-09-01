@@ -33,7 +33,7 @@ were placed independently, not derived from a shared origin), not noise.
 
 Usage:  check_schematic_drift.py --designs DIR [DIR ...]
                                   --sheets NAME [NAME ...]
-                                  [--diff-out DIR]
+                                  [--diff-out DIR] [--github]
 
   --designs DIR [DIR ...]   design folders to check (e.g. PCBA-EF44
                               PCBA-BU16 PCBA-KB25). At least 2 required.
@@ -52,6 +52,9 @@ Usage:  check_schematic_drift.py --designs DIR [DIR ...]
   --diff-out DIR   write the full unified diff for each drifted copy to
                     DIR/<sheet>/<design>.diff (baseline noise-stripped too,
                     so the diff shows only real content changes)
+  --github         also emit GitHub Actions error annotations and a
+                    run-summary table (auto-enabled when
+                    GITHUB_ACTIONS=true). Does not change stdout.
 
 Output: a deterministic report on stdout, one table per sheet.
 Exit status:
@@ -140,6 +143,36 @@ def print_table(sheet, rows):
     print()
 
 
+def emit_github_annotations(results):
+    for sheet, rows in results:
+        for path, status, changed in rows:
+            if status != "DRIFTED":
+                continue
+            print(f"::error file={path},title=Schematic drift::{sheet} — {path} DRIFTED from baseline "
+                  f"({changed} changed lines). Duplicated sheets must stay in sync, or the difference "
+                  f"must be intentional.")
+
+
+def write_github_summary(results, any_drift):
+    summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+    if not summary_path:
+        return
+    with open(summary_path, 'a', encoding='utf-8') as f:
+        f.write("## Schematic drift gate\n\n")
+        if any_drift:
+            f.write("❌ **DRIFT** — one or more sheet copies differ from their baseline beyond expected per-project annotation noise.\n\n")
+        else:
+            f.write("✅ **OK** — every sheet's copies match their baseline (ignoring per-project annotation noise).\n\n")
+        for sheet, rows in results:
+            f.write(f"### {sheet}\n\n")
+            f.write("| File | Status | Changed lines |\n")
+            f.write("| --- | --- | ---: |\n")
+            for path, status, changed in rows:
+                changed_str = str(changed) if status == "DRIFTED" else ""
+                f.write(f"| {path} | {status} | {changed_str} |\n")
+            f.write("\n")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Compare a named sub-sheet's copies across N design folders for real (non-annotation) drift.")
@@ -149,7 +182,11 @@ def main():
                          help='Sub-sheet base name(s) to check, with or without .kicad_sch.')
     parser.add_argument('--diff-out', metavar='DIR',
                          help='Directory to write full unified diffs for drifted copies (DIR/<sheet>/<design>.diff).')
+    parser.add_argument('--github', action='store_true',
+                         help='Also emit GitHub Actions error annotations and a run-summary table '
+                              '(auto-enabled when GITHUB_ACTIONS=true). Does not change stdout.')
     args = parser.parse_args()
+    github_mode = args.github or os.environ.get('GITHUB_ACTIONS') == 'true'
 
     if len(args.designs) < 2:
         print("error: need at least 2 design folders to compare", file=sys.stderr)
@@ -162,6 +199,7 @@ def main():
 
     sheets = [s[:-len('.kicad_sch')] if s.endswith('.kicad_sch') else s for s in args.sheets]
 
+    results = []
     any_drift = False
     for sheet in sheets:
         rows, drifted, n_existing = check_sheet(sheet, args.designs, args.diff_out)
@@ -169,6 +207,7 @@ def main():
             print(f"error: sheet '{sheet}.kicad_sch' not found in any design folder", file=sys.stderr)
             return 2
         print_table(sheet, rows)
+        results.append((sheet, rows))
         any_drift = any_drift or drifted
 
     if any_drift:
@@ -177,6 +216,11 @@ def main():
             print(f"Full diffs written under {args.diff_out}/")
     else:
         print("RESULT: OK — every sheet's copies match their baseline (ignoring per-project annotation noise).")
+
+    if github_mode:
+        emit_github_annotations(results)
+        write_github_summary(results, any_drift)
+
     return 1 if any_drift else 0
 
 
