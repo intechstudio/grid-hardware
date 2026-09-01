@@ -2257,16 +2257,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 91.44) (xy 160.02 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d423622c-bdf1-427f-b56d-3d45abd8f2d6")
-	)
-	(wire
-		(pts
 			(xy 208.28 68.58) (xy 208.28 66.04)
 		)
 		(stroke
@@ -2297,16 +2287,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 91.44) (xy 83.82 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd8ea5b5-41a6-466d-83a7-2df97de7e567")
-	)
-	(wire
-		(pts
 			(xy 106.68 68.58) (xy 106.68 66.04)
 		)
 		(stroke
@@ -2334,16 +2314,6 @@
 			(type default)
 		)
 		(uuid "e595c6c4-f51e-40bc-a76d-c0a08bbd62be")
-	)
-	(wire
-		(pts
-			(xy 58.42 91.44) (xy 58.42 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e75b06bd-f360-4904-a2ba-a1bb5365c795")
 	)
 	(wire
 		(pts
@@ -2414,16 +2384,6 @@
 			(type default)
 		)
 		(uuid "f264def8-572a-437d-973f-6f6f2d03ba3c")
-	)
-	(wire
-		(pts
-			(xy 185.42 91.44) (xy 185.42 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2b41c87-364d-474d-9080-c8c3b39e6b8e")
 	)
 	(wire
 		(pts
@@ -3510,88 +3470,6 @@
 	)
 	(symbol
 		(lib_id "suku_basics:RES")
-		(at 185.42 104.14 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "03f83021-0161-4234-8ccd-74355576185d")
-		(property "Reference" "R1008"
-			(at 183.9214 102.9716 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 183.9214 105.283 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 185.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 185.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "63bfea87-4749-4056-aecf-55e6cf63ff2b")
-		)
-		(pin "2"
-			(uuid "62060c0d-639a-45b0-b10b-868d13aa3400")
-		)
-		(instances
-			(project "PCBA-EF44"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cb24bf7e-66aa-46a2-a233-e193d94c518c"
-					(reference "R1008")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
 		(at 68.58 139.7 270)
 		(unit 1)
 		(body_style 1)
@@ -3829,7 +3707,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 160.02 91.44 0)
+		(at 160.02 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3839,7 +3717,7 @@
 		(dnp no)
 		(uuid "17823f5e-cd3f-4de2-8984-ca2038cbdcf9")
 		(property "Reference" "#PWR01012"
-			(at 160.02 95.25 0)
+			(at 160.02 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3850,7 +3728,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 160.02 86.36 0)
+			(at 160.02 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3860,7 +3738,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 91.44 0)
+			(at 160.02 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3871,7 +3749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 91.44 0)
+			(at 160.02 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3882,7 +3760,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 160.02 91.44 0)
+			(at 160.02 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4141,7 +4019,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 185.42 91.44 0)
+		(at 185.42 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4151,7 +4029,7 @@
 		(dnp no)
 		(uuid "2fcbac8e-d4f3-46c0-97ef-31bc6cb16acd")
 		(property "Reference" "#PWR01016"
-			(at 185.42 95.25 0)
+			(at 185.42 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4162,7 +4040,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 185.42 86.36 0)
+			(at 185.42 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4172,7 +4050,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 91.44 0)
+			(at 185.42 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4183,7 +4061,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 91.44 0)
+			(at 185.42 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4194,7 +4072,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 185.42 91.44 0)
+			(at 185.42 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4875,88 +4753,6 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:RES")
-		(at 83.82 104.14 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6d28c685-fa7d-4875-a91a-954a23b9a7b6")
-		(property "Reference" "R1006"
-			(at 82.3214 102.9716 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 82.3214 105.283 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 83.82 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "833d05d6-17da-460e-91c6-9e4f4884744c")
-		)
-		(pin "2"
-			(uuid "44146040-bce4-43cc-9e98-b73ee9f2e10b")
-		)
-		(instances
-			(project "PCBA-EF44"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cb24bf7e-66aa-46a2-a233-e193d94c518c"
-					(reference "R1006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "suku_basics:UI_Fader")
 		(at 170.18 114.3 0)
 		(unit 1)
@@ -5047,88 +4843,6 @@
 			(project "PCBA-EF44"
 				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cb24bf7e-66aa-46a2-a233-e193d94c518c"
 					(reference "UI1003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "suku_basics:RES")
-		(at 58.42 104.14 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7ad5a711-cae7-4364-84e8-7fa1784e8ab9")
-		(property "Reference" "R1005"
-			(at 56.9214 102.9716 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 56.9214 105.283 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 58.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a8e9e92a-538d-4b2d-b2a1-e1ef531f01c3")
-		)
-		(pin "2"
-			(uuid "b2aa74ec-0cc1-48cf-8109-62ceb36d5abb")
-		)
-		(instances
-			(project "PCBA-EF44"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cb24bf7e-66aa-46a2-a233-e193d94c518c"
-					(reference "R1005")
 					(unit 1)
 				)
 			)
@@ -5526,88 +5240,6 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:RES")
-		(at 160.02 104.14 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "abce40e6-5bb0-45be-8354-340572b28206")
-		(property "Reference" "R1007"
-			(at 158.5214 102.9716 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 158.5214 105.283 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "suku_basics:RES_0402"
-			(at 160.02 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 160.02 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f6de222-8591-47d3-a557-681216ec228c")
-		)
-		(pin "2"
-			(uuid "786f9ae7-b897-40f6-aefd-3e8994718826")
-		)
-		(instances
-			(project "PCBA-EF44"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/cb24bf7e-66aa-46a2-a233-e193d94c518c"
-					(reference "R1007")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "suku_basics:CAP")
 		(at 190.5 144.78 0)
 		(unit 1)
@@ -5863,7 +5495,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 58.42 91.44 0)
+		(at 58.42 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5873,7 +5505,7 @@
 		(dnp no)
 		(uuid "d4092b95-0d14-446a-95f1-d10687c2606d")
 		(property "Reference" "#PWR01001"
-			(at 58.42 95.25 0)
+			(at 58.42 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5884,7 +5516,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 58.42 86.36 0)
+			(at 58.42 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5894,7 +5526,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 91.44 0)
+			(at 58.42 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5905,7 +5537,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 91.44 0)
+			(at 58.42 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +5548,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 58.42 91.44 0)
+			(at 58.42 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5940,7 +5572,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 83.82 91.44 0)
+		(at 83.82 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5950,7 +5582,7 @@
 		(dnp no)
 		(uuid "d623258c-52f7-41c6-b4c5-7f23a4d6dd93")
 		(property "Reference" "#PWR01004"
-			(at 83.82 95.25 0)
+			(at 83.82 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5961,7 +5593,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 83.82 86.36 0)
+			(at 83.82 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5971,7 +5603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 91.44 0)
+			(at 83.82 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5982,7 +5614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 91.44 0)
+			(at 83.82 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5993,7 +5625,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 83.82 91.44 0)
+			(at 83.82 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
