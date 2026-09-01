@@ -5605,16 +5605,6 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 203.2) (xy 332.74 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf5d22e8-3752-4571-82e3-09f088841576")
-	)
-	(wire
-		(pts
 			(xy 119.38 167.64) (xy 119.38 170.18)
 		)
 		(stroke
@@ -6022,16 +6012,6 @@
 			(type default)
 		)
 		(uuid "f45c2ebb-2df4-4a6f-a545-17085439a634")
-	)
-	(wire
-		(pts
-			(xy 332.74 203.2) (xy 332.74 200.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4ba18c9-b5ca-4f00-ba71-d19aaf2ef466")
 	)
 	(wire
 		(pts
@@ -9662,7 +9642,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "44a23946-c96c-44ef-b160-b83bc2003109")
 		(property "Reference" "LOGO701"
@@ -12208,83 +12188,6 @@
 		)
 	)
 	(symbol
-		(lib_id "suku_basics:VDD_SPI")
-		(at 332.74 200.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bf2a4708-5f09-4501-b03f-5ef26bd80f1d")
-		(property "Reference" "#PWR0668"
-			(at 332.74 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD_SPI"
-			(at 332.74 195.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 332.74 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 332.74 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3_UI\""
-			(at 332.74 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3cc50a31-2b4e-4a78-a82b-d7f324935fc3")
-		)
-		(instances
-			(project "PCBA-BU16"
-				(path "/e5217a0c-7f55-4c30-adda-7f8d95709d1b/00000000-0000-0000-0000-00005d757c78"
-					(reference "#PWR0668")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "suku_basics:CAP")
 		(at 340.36 236.22 0)
 		(unit 1)
@@ -13069,7 +12972,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "SPICS1"
 			(at 256.54 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
