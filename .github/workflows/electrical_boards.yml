@@ -52,9 +52,23 @@ jobs:
         ./Electrical/Design/check_design_rules_drift.py \
           --designs Electrical/Design/PCBA-EF44 Electrical/Design/PCBA-BU16
 
+  # Fast pre-flight gate: every sheet instance's reference designators must
+  # match this repo's page-number-driven annotation strategy (see
+  # check_annotation.py), and the page numbers themselves must be unique and
+  # contiguous from 1 — KiCad's GUI does not enforce either of those.
+  annotation-check:
+    name: annotation gate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check annotation
+      run: |
+        ./Electrical/Design/check_annotation.py --project Electrical/Design/PCBA-EF44
+        ./Electrical/Design/check_annotation.py --project Electrical/Design/PCBA-BU16
+
   generate-artifacts:
     name: kicad export
-    needs: [silkscreen-check, schematic-drift-check, design-rules-check]
+    needs: [silkscreen-check, schematic-drift-check, design-rules-check, annotation-check]
     runs-on: ubuntu-latest
     container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
