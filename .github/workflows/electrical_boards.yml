@@ -38,23 +38,23 @@ jobs:
           --designs Electrical/Design/PCBA-EF44 Electrical/Design/PCBA-BU16 \
           --sheets USB_POWER GRID MCU
 
-  # Fast pre-flight gate: DRC policy (constraint thresholds, per-rule
-  # severities, waived violations) must match between EF44 and BU16.
-  # Otherwise DRC can pass or fail differently on the same underlying
-  # manufacturing capability, with no visible diff anywhere obvious.
-  drc-settings-check:
-    name: DRC settings gate
+  # Fast pre-flight gate: DRC (PCB) and ERC (schematic) policy — constraint
+  # thresholds, per-rule severities, waived violations — must match between
+  # EF44 and BU16. Otherwise DRC/ERC can pass or fail differently on the
+  # same underlying design, with no visible diff anywhere obvious.
+  design-rules-check:
+    name: design rules gate
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Check DRC settings drift
+    - name: Check DRC/ERC settings drift
       run: |
-        ./Electrical/Design/check_drc_settings_drift.py \
+        ./Electrical/Design/check_design_rules_drift.py \
           --designs Electrical/Design/PCBA-EF44 Electrical/Design/PCBA-BU16
 
   generate-artifacts:
     name: kicad export
-    needs: [silkscreen-check, schematic-drift-check, drc-settings-check]
+    needs: [silkscreen-check, schematic-drift-check, design-rules-check]
     runs-on: ubuntu-latest
     container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
