@@ -77,12 +77,12 @@
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
-        "duplicate_footprints": "warning",
-        "extra_footprint": "warning",
+        "duplicate_footprints": "error",
+        "extra_footprint": "error",
         "footprint": "error",
-        "footprint_filters_mismatch": "ignore",
-        "footprint_symbol_field_mismatch": "warning",
-        "footprint_symbol_mismatch": "warning",
+        "footprint_filters_mismatch": "warning",
+        "footprint_symbol_field_mismatch": "error",
+        "footprint_symbol_mismatch": "error",
         "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
@@ -99,9 +99,9 @@
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
-        "missing_footprint": "warning",
+        "missing_footprint": "error",
         "missing_tuning_profile": "warning",
-        "net_conflict": "warning",
+        "net_conflict": "error",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "error",
@@ -460,41 +460,41 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "error",
       "extra_units": "error",
-      "field_name_whitespace": "warning",
+      "field_name_whitespace": "error",
       "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "footprint_link_issues": "error",
+      "four_way_junction": "error",
       "global_label_dangling": "warning",
-      "ground_pin_not_ground": "warning",
+      "ground_pin_not_ground": "error",
       "hier_label_mismatch": "error",
-      "isolated_pin_label": "warning",
+      "isolated_pin_label": "error",
       "label_dangling": "error",
-      "label_multiple_wires": "warning",
-      "lib_symbol_issues": "warning",
+      "label_multiple_wires": "error",
+      "lib_symbol_issues": "error",
       "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
       "multiple_net_names": "warning",
-      "net_not_bus_member": "warning",
-      "no_connect_connected": "warning",
-      "no_connect_dangling": "warning",
+      "net_not_bus_member": "error",
+      "no_connect_connected": "error",
+      "no_connect_dangling": "error",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
-      "same_local_global_label": "warning",
-      "similar_label_and_power": "warning",
-      "similar_labels": "warning",
-      "similar_power": "warning",
+      "same_local_global_label": "error",
+      "similar_label_and_power": "error",
+      "similar_labels": "error",
+      "similar_power": "error",
       "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
-      "stacked_pin_name": "warning",
+      "single_global_label": "error",
+      "stacked_pin_name": "error",
       "unannotated": "error",
-      "unconnected_wire_endpoint": "warning",
+      "unconnected_wire_endpoint": "error",
       "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -602,8 +602,8 @@
   "schematic": {
     "annotate_start_num": 600,
     "annotation": {
-      "method": 0,
-      "sort_order": 0
+      "method": 1,
+      "sort_order": 1
     },
     "bom_export_filename": "",
     "bom_fmt_presets": [],
@@ -723,7 +723,7 @@
         "uuid": "e5217a0c-7f55-4c30-adda-7f8d95709d1b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "JP201",
     "variants": []
   },
   "sheets": [
@@ -732,72 +732,28 @@
       "PCBA-BU16"
     ],
     [
-      "60227753-83ff-40b7-b437-9f886b3f32f3",
-      "UI_BUTTON"
-    ],
-    [
-      "b17caa00-0559-4e08-a0d3-166f33326b38",
-      "UI_HALL_PREAMP"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d735388",
-      "UI_LED"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d7c8bfe",
-      "Sheet5D7C8BFD"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d8763e1",
-      "sheet5D8763D6"
-    ],
-    [
       "00000000-0000-0000-0000-00005d757c78",
       "MCU"
-    ],
-    [
-      "00000000-0000-0000-0000-00005d85c9fc",
-      "sheet5D85C9EA"
     ],
     [
       "2d64293c-ba87-48d1-8ebb-1fbb3d2badc8",
       "USB_POWER"
     ],
     [
+      "00000000-0000-0000-0000-00005d85c9fc",
+      "GRID"
+    ],
+    [
       "00000000-0000-0000-0000-00005dc2dc06",
       "HWCFG"
     ],
     [
-      "63beea73-3956-4dca-969f-f58f589259e2",
-      "INVERT_AND_OFFSET7"
+      "00000000-0000-0000-0000-00005d735388",
+      "UI_LED"
     ],
     [
-      "ac59542f-d8ec-49ac-9624-6378e012c12c",
-      "INVERT_AND_OFFSET6"
-    ],
-    [
-      "b018c709-252d-466d-a4d1-cf1b9734f1dd",
-      "INVERT_AND_OFFSET4"
-    ],
-    [
-      "c1763f5e-984f-4ab9-99c4-9744f297afe3",
-      "INVERT_AND_OFFSET5"
-    ],
-    [
-      "33448a19-b58d-4ff0-94fd-9676e3eda940",
-      "INVERT_AND_OFFSET"
-    ],
-    [
-      "e031fb9f-14b0-458e-86d1-4681a59bf3f4",
-      "INVERT_AND_OFFSET1"
-    ],
-    [
-      "09f61d21-4a2b-45e2-8853-b9af0ae4824d",
-      "INVERT_AND_OFFSET2"
-    ],
-    [
-      "da263848-1d8f-422c-a8e1-20de463ca9fe",
-      "INVERT_AND_OFFSET3"
+      "60227753-83ff-40b7-b437-9f886b3f32f3",
+      "UI_BUTTON"
     ],
     [
       "0f75f067-c9af-4621-ae3e-d01593996e79",
@@ -805,23 +761,7 @@
     ],
     [
       "e92527ab-2be2-443c-a8c4-1a8bec617f2d",
-      "UI_HALL_PREAMP1"
-    ],
-    [
-      "63beea73-3956-4dca-969f-f58f589259e2",
-      "INVERT_AND_OFFSET7"
-    ],
-    [
-      "ac59542f-d8ec-49ac-9624-6378e012c12c",
-      "INVERT_AND_OFFSET6"
-    ],
-    [
-      "b018c709-252d-466d-a4d1-cf1b9734f1dd",
-      "INVERT_AND_OFFSET4"
-    ],
-    [
-      "c1763f5e-984f-4ab9-99c4-9744f297afe3",
-      "INVERT_AND_OFFSET5"
+      "UI_HALL_PREAMP"
     ],
     [
       "33448a19-b58d-4ff0-94fd-9676e3eda940",
@@ -838,6 +778,66 @@
     [
       "da263848-1d8f-422c-a8e1-20de463ca9fe",
       "INVERT_AND_OFFSET3"
+    ],
+    [
+      "b018c709-252d-466d-a4d1-cf1b9734f1dd",
+      "INVERT_AND_OFFSET4"
+    ],
+    [
+      "c1763f5e-984f-4ab9-99c4-9744f297afe3",
+      "INVERT_AND_OFFSET5"
+    ],
+    [
+      "ac59542f-d8ec-49ac-9624-6378e012c12c",
+      "INVERT_AND_OFFSET6"
+    ],
+    [
+      "63beea73-3956-4dca-969f-f58f589259e2",
+      "INVERT_AND_OFFSET7"
+    ],
+    [
+      "b17caa00-0559-4e08-a0d3-166f33326b38",
+      "UI_HALL_PREAMP1"
+    ],
+    [
+      "33448a19-b58d-4ff0-94fd-9676e3eda940",
+      "INVERT_AND_OFFSET"
+    ],
+    [
+      "e031fb9f-14b0-458e-86d1-4681a59bf3f4",
+      "INVERT_AND_OFFSET1"
+    ],
+    [
+      "09f61d21-4a2b-45e2-8853-b9af0ae4824d",
+      "INVERT_AND_OFFSET2"
+    ],
+    [
+      "da263848-1d8f-422c-a8e1-20de463ca9fe",
+      "INVERT_AND_OFFSET3"
+    ],
+    [
+      "b018c709-252d-466d-a4d1-cf1b9734f1dd",
+      "INVERT_AND_OFFSET4"
+    ],
+    [
+      "c1763f5e-984f-4ab9-99c4-9744f297afe3",
+      "INVERT_AND_OFFSET5"
+    ],
+    [
+      "ac59542f-d8ec-49ac-9624-6378e012c12c",
+      "INVERT_AND_OFFSET6"
+    ],
+    [
+      "63beea73-3956-4dca-969f-f58f589259e2",
+      "INVERT_AND_OFFSET7"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d7c8bfe",
+      "UI_MUX"
+    ],
+    [
+      "00000000-0000-0000-0000-00005d8763e1",
+      "UI_MUX1"
     ]
   ],
   "text_variables": {},

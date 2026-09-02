@@ -23,9 +23,43 @@ jobs:
     - name: Check silkscreen layers
       run: ./Electrical/Design/check_silkscreen.sh
 
+  # Fast pre-flight gate, one matrix leg per design: everything that's
+  # supposed to stay in sync with the golden-standard baseline (set once,
+  # below — not hardcoded into the checker scripts) is checked comparatively
+  # against it; annotation is the one absolute (non-comparative) check, since
+  # it validates a design's own reference-designator strategy rather than
+  # agreement with another design. Add a design to the matrix to bring it
+  # under the same gate.
+  preflight-check:
+    name: preflight (${{ matrix.design }})
+    needs: silkscreen-check
+    runs-on: ubuntu-latest
+    env:
+      BASELINE_DESIGN: PCBA-EF44
+    strategy:
+      fail-fast: false
+      matrix:
+        design:
+          - PCBA-EF44
+          - PCBA-BU16
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check schematic drift (vs baseline)
+      run: |
+        ./Electrical/Design/check_schematic_drift.py \
+          --designs "Electrical/Design/$BASELINE_DESIGN" "Electrical/Design/${{ matrix.design }}" \
+          --sheets USB_POWER GRID MCU
+    - name: Check DRC/ERC settings drift (vs baseline)
+      run: |
+        ./Electrical/Design/check_design_rules_drift.py \
+          --designs "Electrical/Design/$BASELINE_DESIGN" "Electrical/Design/${{ matrix.design }}"
+    - name: Check annotation (absolute, not comparative)
+      run: |
+        ./Electrical/Design/check_annotation.py --project "Electrical/Design/${{ matrix.design }}"
+
   generate-artifacts:
     name: kicad export
-    needs: silkscreen-check
+    needs: [silkscreen-check, preflight-check]
     runs-on: ubuntu-latest
     container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
