@@ -153,24 +153,24 @@ def emit_github_annotations(results):
                   f"must be intentional.")
 
 
-def write_github_summary(results, any_drift):
+def write_github_summary(results, any_drift, baseline_dir):
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if not summary_path:
         return
+    sheets = ", ".join(sheet for sheet, _ in results)
     with open(summary_path, 'a', encoding='utf-8') as f:
-        f.write("## Schematic drift gate\n\n")
         if any_drift:
-            f.write("❌ **DRIFT** — one or more sheet copies differ from their baseline beyond expected per-project annotation noise.\n\n")
+            f.write(f"❌ Schematic drift ({sheets}) vs baseline `{baseline_dir}`: drift found\n\n")
+            for sheet, rows in results:
+                f.write(f"### {sheet}\n\n")
+                f.write("| File | Status | Changed lines |\n")
+                f.write("| --- | --- | ---: |\n")
+                for path, status, changed in rows:
+                    changed_str = str(changed) if status == "DRIFTED" else ""
+                    f.write(f"| {path} | {status} | {changed_str} |\n")
+                f.write("\n")
         else:
-            f.write("✅ **OK** — every sheet's copies match their baseline (ignoring per-project annotation noise).\n\n")
-        for sheet, rows in results:
-            f.write(f"### {sheet}\n\n")
-            f.write("| File | Status | Changed lines |\n")
-            f.write("| --- | --- | ---: |\n")
-            for path, status, changed in rows:
-                changed_str = str(changed) if status == "DRIFTED" else ""
-                f.write(f"| {path} | {status} | {changed_str} |\n")
-            f.write("\n")
+            f.write(f"✅ Schematic drift ({sheets}) vs baseline `{baseline_dir}`: all identical\n\n")
 
 
 def main():
@@ -219,7 +219,7 @@ def main():
 
     if github_mode:
         emit_github_annotations(results)
-        write_github_summary(results, any_drift)
+        write_github_summary(results, any_drift, args.designs[0])
 
     return 1 if any_drift else 0
 

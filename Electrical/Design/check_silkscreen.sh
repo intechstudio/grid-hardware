@@ -171,19 +171,17 @@ if [ "$github_mode" -eq 1 ]; then
   done
   if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
     {
-      echo "## Silkscreen gate"
-      echo
       if [ "$fail" -ne 0 ]; then
-        echo "❌ **FAIL** — one or more designs have an empty silkscreen layer."
+        echo "❌ Silkscreen: ${#names[@]} design(s) checked — one or more have an empty silkscreen layer"
+        echo
+        echo '| Design | Front | Back | Status |'
+        echo '| --- | ---: | ---: | --- |'
+        for i in "${!names[@]}"; do
+          echo "| ${names[$i]} | ${fronts[$i]} | ${backs[$i]} | ${statuses[$i]} |"
+        done
       else
-        echo "✅ **PASS** — all designs have front and back silkscreen."
+        echo "✅ Silkscreen: ${#names[@]} design(s) checked — all have front and back silkscreen"
       fi
-      echo
-      echo '| Design | Front | Back | Status |'
-      echo '| --- | ---: | ---: | --- |'
-      for i in "${!names[@]}"; do
-        echo "| ${names[$i]} | ${fronts[$i]} | ${backs[$i]} | ${statuses[$i]} |"
-      done
     } >> "$GITHUB_STEP_SUMMARY"
   fi
 fi

@@ -415,27 +415,28 @@ def write_github_summary(project, preflight_error, orphans, reports, any_finding
     if not summary_path:
         return
     with open(summary_path, 'a', encoding='utf-8') as f:
-        f.write("## Annotation gate\n\n")
         if preflight_error:
-            f.write(f"❌ **PREFLIGHT FAILED** — {preflight_error}\n\n")
+            f.write(f"❌ Annotation: `{project}` — preflight failed: {preflight_error}\n\n")
             return
-        if any_finding:
-            extra = " and orphaned sheet(s) were found" if orphans else ""
-            f.write(f"❌ **MISANNOTATED** — one or more sheet instances don't match "
-                    f"the modeled annotation strategy{extra}.\n\n")
+        if any_finding or orphans:
+            parts = []
+            if any_finding:
+                parts.append("misannotated reference(s) found")
+            if orphans:
+                parts.append("orphaned sheet(s) found")
+            f.write(f"❌ Annotation: `{project}` — {'; '.join(parts)}\n\n")
+            if orphans:
+                f.write(f"**Orphaned sheets** (present in `{project}/` but not reachable "
+                        f"from the root): " + ", ".join(f"`{o}`" for o in orphans) + "\n\n")
+            if any_finding and reports:
+                f.write("| Sheet | Page | Status | Symbols | Mismatched |\n")
+                f.write("| --- | ---: | --- | ---: | ---: |\n")
+                for r in reports:
+                    f.write(f"| {r['file']} | {r['page']} | {r['status']} | "
+                             f"{r['symbol_count']} | {r['mismatch_count']} |\n")
+                f.write("\n")
         else:
-            f.write("✅ **OK** — every checked sheet instance matches the modeled "
-                    "annotation strategy.\n\n")
-        if orphans:
-            f.write(f"**Orphaned sheets** (present in `{project}/` but not reachable "
-                    f"from the root): " + ", ".join(f"`{o}`" for o in orphans) + "\n\n")
-        if reports:
-            f.write("| Sheet | Page | Status | Symbols | Mismatched |\n")
-            f.write("| --- | ---: | --- | ---: | ---: |\n")
-            for r in reports:
-                f.write(f"| {r['file']} | {r['page']} | {r['status']} | "
-                         f"{r['symbol_count']} | {r['mismatch_count']} |\n")
-            f.write("\n")
+            f.write(f"✅ Annotation: `{project}` — every checked sheet instance OK\n\n")
 
 
 def main():

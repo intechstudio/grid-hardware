@@ -232,24 +232,22 @@ def main():
         summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
         if summary_path:
             with open(summary_path, 'a', encoding='utf-8') as f:
-                f.write("## Design rules drift gate\n\n")
                 if any_drift:
-                    f.write("❌ **DRIFT** — one or more designs have DRC or ERC policy that differs from the baseline.\n\n")
+                    f.write(f"❌ Design rules (DRC+ERC) vs baseline `{baseline_dir}`: drift found\n\n")
+                    for section in SECTIONS:
+                        keys = all_keys(section)
+                        f.write(f"### {section['title']}\n\n")
+                        f.write("| Design | " + " | ".join(keys) + " |\n")
+                        f.write("| --- | " + " | ".join(["---"] * len(keys)) + " |\n")
+                        for d, sec, findings, drifted in reports:
+                            if sec is not section:
+                                continue
+                            cells = ["match" if findings[k] is None else f"DRIFTED ({finding_size(section, k, findings[k])})"
+                                     for k in keys]
+                            f.write(f"| {d} | " + " | ".join(cells) + " |\n")
+                        f.write("\n")
                 else:
-                    f.write("✅ **OK** — every design's DRC and ERC policy matches the baseline.\n\n")
-                f.write(f"Baseline: `{baseline_dir}`\n\n")
-                for section in SECTIONS:
-                    keys = all_keys(section)
-                    f.write(f"### {section['title']}\n\n")
-                    f.write("| Design | " + " | ".join(keys) + " |\n")
-                    f.write("| --- | " + " | ".join(["---"] * len(keys)) + " |\n")
-                    for d, sec, findings, drifted in reports:
-                        if sec is not section:
-                            continue
-                        cells = ["match" if findings[k] is None else f"DRIFTED ({finding_size(section, k, findings[k])})"
-                                 for k in keys]
-                        f.write(f"| {d} | " + " | ".join(cells) + " |\n")
-                    f.write("\n")
+                    f.write(f"✅ Design rules (DRC+ERC) vs baseline `{baseline_dir}`: all match\n\n")
 
     return 1 if any_drift else 0
 
