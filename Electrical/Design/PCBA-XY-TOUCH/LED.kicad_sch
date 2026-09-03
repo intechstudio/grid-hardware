@@ -5,6 +5,129 @@
 	(uuid "5d36f4c9-4080-4499-9625-f8a99c396110")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -947,6 +1070,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 91.44) (xy 177.8 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a987a3ba-b610-435b-a24c-66b2a8ed5d92")
+	)
+	(wire
+		(pts
 			(xy 127 40.64) (xy 127 43.18)
 		)
 		(stroke
@@ -1037,16 +1170,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 58.42) (xy 177.8 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebe16214-7ce7-497f-9dbd-6e36135aae44")
-	)
-	(wire
-		(pts
 			(xy 50.8 58.42) (xy 50.8 60.96)
 		)
 		(stroke
@@ -1064,16 +1187,6 @@
 			(type default)
 		)
 		(uuid "ee1943a3-a1b9-4052-852a-6bf07b5fa5ae")
-	)
-	(wire
-		(pts
-			(xy 177.8 93.98) (xy 177.8 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2a7f4ca-a8d4-4fdb-8a10-bf2b3adab3d7")
 	)
 	(wire
 		(pts
@@ -1291,116 +1404,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06d861db-65f0-421f-bcf4-460a61ea953b")
-		(property "Reference" "#PWR012"
-			(at 177.8 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.8 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "55f69d76-76d4-40ea-bed7-d8957745af69")
-		)
-		(instances
-			(project "PCBA-XY-TOUCH"
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
-					(reference "#PWR0102")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
-					(reference "#PWR030")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
-					(reference "#PWR0120")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
-					(reference "#PWR0156")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
-					(reference "#PWR012")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
-					(reference "#PWR0138")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
-					(reference "#PWR084")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
-					(reference "#PWR066")
-					(unit 1)
-				)
-				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 152.4 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -1502,6 +1505,114 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR0225")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0d551b42-aa82-42c7-b9c2-4132ba3ca33e")
+		(property "Reference" "#PWR0202"
+			(at 76.2 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.327 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac73518a-2c9c-4955-8a3e-d7335a548377")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0212")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0204")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0214")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0218")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0202")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0216")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0210")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0208")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -2176,6 +2287,114 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 203.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b9d60de-f547-4fe3-880d-7dcd61c92bd9")
+		(property "Reference" "#PWR0292"
+			(at 203.2 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.327 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f25d38f-8d81-409c-ac34-4fd0736ec4c8")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0294")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0304")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0308")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0292")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0306")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0300")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0298")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0296")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 50.8 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -2728,6 +2947,117 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43911280-9022-4e2a-8391-41f8b7dc8ab9")
+		(property "Reference" "TP1"
+			(at 53.34 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 53.34 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 55.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b347ca9c-d1b9-4e33-bd40-cc8da1763822")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP6")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP2")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP7")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP9")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP1")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP8")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP5")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP4")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -3287,6 +3617,225 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR0451")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 152.4 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50797096-4030-466f-b073-15d6ef8239cf")
+		(property "Reference" "TP37"
+			(at 154.94 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 154.94 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 157.48 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 152.4 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e5c442c-5ddd-4234-9501-dbfe5646eb5a")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP42")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP38")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP43")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP45")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP37")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP44")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP41")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP40")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52eaf84a-2547-494a-a6ed-5b2e2628759f")
+		(property "Reference" "#PWR0238"
+			(at 127 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 127.127 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 127 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6f717a0-e2b9-4d39-83af-a9f17db77532")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0248")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0240")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0250")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0254")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0238")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0252")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0246")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0244")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0242")
 					(unit 1)
 				)
 			)
@@ -3856,6 +4405,225 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "649b7d13-b9c1-46ad-8883-72d3c6c243d0")
+		(property "Reference" "TP10"
+			(at 78.74 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 81.28 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 76.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "673f4cd8-ded5-4107-b4f1-3ceac237b187")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP15")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP11")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP16")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP18")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP10")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP17")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP14")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP13")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6680080c-b912-447b-bddd-3ffd2daa46a7")
+		(property "Reference" "#PWR0310"
+			(at 228.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.727 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "782c41f4-a171-470e-93a5-f7bc48f61761")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0320")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0312")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0322")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0326")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0310")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0324")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0318")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0316")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0314")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 203.2 93.98 0)
 		(unit 1)
@@ -3958,6 +4726,225 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR0229")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 127 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67c1dfce-aa3e-4ebb-ac68-ffb25c80a85e")
+		(property "Reference" "TP28"
+			(at 129.54 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 129.54 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 132.08 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 127 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16b9c4c1-8b85-4542-a055-2fe030c5a94d")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP33")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP29")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP34")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP36")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP28")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP35")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP32")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP31")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72083d5e-cbdf-4bc1-8479-00233e161942")
+		(property "Reference" "#PWR0184"
+			(at 50.8 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.927 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59a344a1-29c3-4b7a-b5a5-59f21c6344be")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0194")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0186")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0196")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0184")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0198")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0192")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0190")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0188")
 					(unit 1)
 				)
 			)
@@ -4068,6 +5055,114 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR0458")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a50d56e-f54e-4bdb-bd68-23cb80fc0989")
+		(property "Reference" "#PWR0220"
+			(at 101.6 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.727 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e4b8240-4052-4f7a-8e1a-f16bdc1186f0")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0230")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0222")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0232")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0236")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0220")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0234")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0228")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0226")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0224")
 					(unit 1)
 				)
 			)
@@ -4193,6 +5288,117 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 101.6 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "843a8571-5470-418b-aed6-554e417b5b3a")
+		(property "Reference" "TP19"
+			(at 104.14 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 104.14 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 106.68 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80ae5f9f-89da-4231-a748-d3b957bf3cd8")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP24")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP20")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP25")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP27")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP19")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP26")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP23")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP22")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 203.2 40.64 0)
 		(unit 1)
@@ -4297,6 +5503,114 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR0456")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8cf3658e-a73a-4654-b5f2-d4d3bac6c8a6")
+		(property "Reference" "#PWR0256"
+			(at 152.4 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.527 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60c110cf-6ec8-49f2-a694-869310159e2b")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0266")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0258")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0268")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0272")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0256")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0270")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0264")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0262")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0260")
 					(unit 1)
 				)
 			)
@@ -4849,6 +6163,117 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f4e586d-f026-4b5f-9f5e-f5edd9b8ce3f")
+		(property "Reference" "TP55"
+			(at 205.74 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 205.74 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 208.28 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ad97bbe-dbbf-4c31-9139-201e1153def0")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP60")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP56")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP61")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP63")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP55")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP62")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP59")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP58")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "suku_basics:UI_XL-1010RGBC-2812B")
 		(at 254 50.8 0)
 		(unit 1)
@@ -5182,6 +6607,116 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR0221")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4e16daf-aa8a-46a9-8f21-5b4ad12f8548")
+		(property "Reference" "#PWR0101"
+			(at 177.8 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "190fd525-165d-4460-bc2c-a4cb403e5685")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -5954,6 +7489,117 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 177.8 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9c3c0a1-4434-4b10-854e-cea0f67f6b98")
+		(property "Reference" "TP46"
+			(at 180.34 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 180.34 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 182.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 177.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c7b6b82-95ca-4672-9f5f-07c1f93701d7")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP51")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP47")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP52")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP54")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP46")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP53")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP50")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP49")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP48")
 					(unit 1)
 				)
 			)
@@ -7074,6 +8720,444 @@
 				)
 				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
 					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ea62a58b-d603-49ce-b2d6-53bcdc90d20b")
+		(property "Reference" "#PWR0274"
+			(at 177.8 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.927 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5b51131-46b9-4e02-9298-33cf523e487d")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0284")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0276")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0286")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0290")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0274")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0288")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0282")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0280")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0278")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb4a5fad-852c-4363-b4e5-0f87e10eb3ba")
+		(property "Reference" "TP73"
+			(at 256.54 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 256.54 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 259.08 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 254 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4adfda9d-ffd7-4411-9ec2-9343d823d199")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP78")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP74")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP79")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP81")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP73")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP80")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP77")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP76")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3ea0929-d0bf-4cfa-ba79-6e022b4a791a")
+		(property "Reference" "#PWR0328"
+			(at 254 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 254.127 118.6942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13d9890d-85fe-4765-ad27-10981ee6f9d3")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "#PWR0338")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "#PWR0330")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "#PWR0340")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "#PWR0343")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "#PWR0328")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "#PWR0342")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "#PWR0336")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "#PWR0334")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "#PWR0332")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 228.6 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fccc4457-db60-432f-85f4-a64034be58c2")
+		(property "Reference" "TP64"
+			(at 231.14 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 231.14 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:pth_02mm"
+			(at 233.68 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 228.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a71747b-accb-45eb-8a5f-9d2e33cefb4c")
+		)
+		(instances
+			(project "PCBA-XY-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de"
+					(reference "TP69")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/0c5af664-f523-49ea-a844-fa962a167a09"
+					(reference "TP65")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/16fee748-4b4c-4b7a-9de2-03993bdd8ffe"
+					(reference "TP70")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9"
+					(reference "TP72")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/86eddd31-e51f-4ded-8468-421eae7a4fe4"
+					(reference "TP64")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9c885159-3311-4276-9b93-f638e63a45ec"
+					(reference "TP71")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/9dce1217-95da-4319-9598-d0392ed24d14"
+					(reference "TP68")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2"
+					(reference "TP67")
+					(unit 1)
+				)
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b/d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7"
+					(reference "TP66")
 					(unit 1)
 				)
 			)
