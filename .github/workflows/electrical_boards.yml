@@ -43,6 +43,7 @@ jobs:
           - PCBA-EF44
           - PCBA-BU16
           - PCBA-PO16
+          - PCBA-ZONA
     steps:
     - uses: actions/checkout@v4
     - name: Check schematic drift (vs baseline)
@@ -77,6 +78,7 @@ jobs:
         - 'PCBA-BU16-SPACER'
         - 'PCBA-BU16-PLATE'
         - 'PCBA-PO16'
+        - 'PCBA-ZONA'
         - 'PCBA-PBF4'
         - 'PCBA-PBF4-SPACER'
         - 'PCBA-PBF4-PLATE'
