@@ -6,7 +6,7 @@
 	(property "Reference" "REF**"
 		(at -5.2 1.15 0)
 		(layer "F.SilkS")
-		(uuid "2b3fe392-ba29-4002-bc5f-e205e14de25f")
+		(uuid "097be346-322a-4381-bb11-34c133317cec")
 		(effects
 			(font
 				(size 1 1)
@@ -17,7 +17,7 @@
 	(property "Value" "capsense_inner_diamond"
 		(at 0 -0.5 0)
 		(layer "F.Fab")
-		(uuid "3eadfb55-6dad-41b6-a2e1-f64b2f7a24ff")
+		(uuid "946d826d-c5d1-42bf-8357-65322c2cb789")
 		(effects
 			(font
 				(size 1 1)
@@ -29,7 +29,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ef799b5e-2c06-457e-aa2c-fcf6c7ce21ce")
+		(uuid "746e4e28-cd97-44c5-9eb3-ac1c4131f33a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,18 +40,18 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "08274aad-92f8-4391-bf49-d74651c578aa")
+		(uuid "844e3387-73aa-40bd-8632-ce1087f2eb6a")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
-	(attr through_hole)
+	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
-			(xy 0 -2.75) (xy 2.749991 -0.007148) (xy 0 2.75) (xy -2.749993 0.006013)
+			(xy 0 -3) (xy 3 0) (xy 0 3) (xy -3 0)
 		)
 		(stroke
 			(width 0.05)
@@ -59,22 +59,21 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "846cc07d-edac-4d19-be1b-a1f73f0148da")
+		(uuid "cd8ba556-74f6-4137-ac27-08def7995f8c")
 	)
 	(point
 		(at 0 0)
 		(size 1)
 		(layer "F.Cu")
-		(uuid "29c66e31-d885-4089-afcb-e4c0802b1ba5")
+		(uuid "8015eaa9-ccc8-4754-a643-3c80c3ddf618")
 	)
-	(pad "1" thru_hole circle
+	(pad "1" smd circle
 		(at 0 -1.75 45)
 		(size 0.35 0.35)
-		(drill 0.2)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
 		(thermal_bridge_angle 90)
-		(uuid "b647c469-dc7c-47ec-a72f-f0f51ff8e24f")
+		(uuid "1c29fd3c-325f-4758-8520-479f53939a2f")
 	)
 	(embedded_fonts no)
 )
