@@ -244,19 +244,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Common Sheets:\n500 GRID\n600 USB_POWER\n700 MCU\n\nModule Specific:\n800 HWCFG\n900 LED\n1000 UI"
-		(exclude_from_sim no)
-		(at 292.1 127 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ed7b52a-fa11-4e7f-ae41-1082078a3112")
-	)
 	(junction
 		(at 226.06 203.2)
 		(diameter 0)
@@ -274,8 +261,24 @@
 		(uuid "74f5ec08-7600-4a0b-a9e4-aae29f9ea08a")
 	)
 	(no_connect
+		(at 226.06 144.78)
+		(uuid "7dec5219-bb6f-4103-8aed-7cd7f8098e9e")
+	)
+	(no_connect
+		(at 226.06 142.24)
+		(uuid "b199222e-db79-45b8-a534-490822d6a9ef")
+	)
+	(no_connect
 		(at 284.48 172.72)
 		(uuid "c73a73c5-c4d5-4740-be68-c742a0ab899f")
+	)
+	(no_connect
+		(at 226.06 149.86)
+		(uuid "c8799995-1caf-401d-bd24-dca6ff60f0dc")
+	)
+	(no_connect
+		(at 226.06 152.4)
+		(uuid "cd194478-519a-4901-b539-6642f0675675")
 	)
 	(wire
 		(pts
@@ -326,6 +329,16 @@
 			(type default)
 		)
 		(uuid "0a5ace4a-651d-4d19-baf5-2bce01eaf534")
+	)
+	(wire
+		(pts
+			(xy 226.06 142.24) (xy 228.6 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b9be258-a116-49f6-8ade-47a22db32816")
 	)
 	(wire
 		(pts
@@ -659,6 +672,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 152.4) (xy 228.6 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65929266-287b-4270-8042-4a822ed34b05")
+	)
+	(wire
+		(pts
 			(xy 142.24 234.95) (xy 147.32 234.95)
 		)
 		(stroke
@@ -939,6 +962,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 149.86) (xy 228.6 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2cc81e-ed94-4ac8-8aaa-f4526ccdc647")
+	)
+	(wire
+		(pts
 			(xy 223.52 200.66) (xy 223.52 231.14)
 		)
 		(stroke
@@ -976,6 +1009,16 @@
 			(type default)
 		)
 		(uuid "d7e5a060-eb57-4238-9312-26bc885fc97d")
+	)
+	(wire
+		(pts
+			(xy 226.06 144.78) (xy 228.6 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d96838b4-2e8b-49f7-97ce-df0afc5b7144")
 	)
 	(wire
 		(pts
@@ -2850,6 +2893,46 @@
 		(pin "A1" input
 			(at 228.6 172.72 180)
 			(uuid "82d2c18f-6530-4926-98db-eb3404d73187")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO17" bidirectional
+			(at 228.6 142.24 180)
+			(uuid "53b0d45f-5413-4dd6-a6bf-340873c682dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO18" bidirectional
+			(at 228.6 144.78 180)
+			(uuid "d636a40e-9516-4bb5-a7da-f29c6adbc991")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 228.6 149.86 180)
+			(uuid "f1afbf21-7b5d-444b-bfaf-77c2d55d4c8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 228.6 152.4 180)
+			(uuid "9dcfddff-8fb9-4293-ac4c-57db162ef8e6")
 			(effects
 				(font
 					(size 1.27 1.27)

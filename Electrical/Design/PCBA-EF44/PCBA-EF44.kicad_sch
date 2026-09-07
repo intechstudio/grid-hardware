@@ -31,6 +31,14 @@
 		(uuid "c9cf7f81-9007-40c8-b2dc-dbef8c64a9a3")
 	)
 	(no_connect
+		(at 226.06 142.24)
+		(uuid "00073661-c282-4cdb-8634-0ad5efd8e20a")
+	)
+	(no_connect
+		(at 226.06 149.86)
+		(uuid "0f853efe-3d7c-4154-aefb-49f2500d49f7")
+	)
+	(no_connect
 		(at 223.52 172.72)
 		(uuid "2780a221-695f-454e-b214-132fee89fe2b")
 	)
@@ -43,8 +51,16 @@
 		(uuid "7e9aac63-0935-4f8c-a086-e34bb017ade0")
 	)
 	(no_connect
+		(at 226.06 152.4)
+		(uuid "aa34dcfe-f611-42e9-9407-191937b3d493")
+	)
+	(no_connect
 		(at 284.48 172.72)
 		(uuid "c73a73c5-c4d5-4740-be68-c742a0ab899f")
+	)
+	(no_connect
+		(at 226.06 144.78)
+		(uuid "cc513f26-32b8-4f2e-b67f-afbebaa197e9")
 	)
 	(wire
 		(pts
@@ -108,6 +124,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 144.78) (xy 228.6 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310943a2-221b-493b-83b9-a34884993269")
+	)
+	(wire
+		(pts
 			(xy 223.52 170.18) (xy 228.6 170.18)
 		)
 		(stroke
@@ -155,6 +181,16 @@
 			(type default)
 		)
 		(uuid "53b00719-4c80-48c1-b4ac-c4ad48fdf821")
+	)
+	(wire
+		(pts
+			(xy 226.06 149.86) (xy 228.6 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82e3b109-f273-443c-b3ab-183f6f78d4ce")
 	)
 	(wire
 		(pts
@@ -225,6 +261,26 @@
 			(type default)
 		)
 		(uuid "abaf052c-a7d7-4adb-ba87-a1c763e62812")
+	)
+	(wire
+		(pts
+			(xy 226.06 142.24) (xy 228.6 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7bbe071-c1f7-4223-865e-00e981f76494")
+	)
+	(wire
+		(pts
+			(xy 226.06 152.4) (xy 228.6 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d62efb61-5d30-4847-a694-95da59d85cfa")
 	)
 	(wire
 		(pts
@@ -413,6 +469,46 @@
 		(pin "A1" input
 			(at 228.6 172.72 180)
 			(uuid "82d2c18f-6530-4926-98db-eb3404d73187")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO17" bidirectional
+			(at 228.6 142.24 180)
+			(uuid "ada088e3-dd49-43e4-8fa9-abc6b90346d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GPIO18" bidirectional
+			(at 228.6 144.78 180)
+			(uuid "7c344c2b-bfc8-48b2-bf67-ba9cba31166d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 228.6 149.86 180)
+			(uuid "7ed359ab-76c1-42cb-9e75-66aeff44a2b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 228.6 152.4 180)
+			(uuid "a1a9cd72-c781-47fc-b6af-b9bd3f4eb0d8")
 			(effects
 				(font
 					(size 1.27 1.27)
