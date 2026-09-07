@@ -26,10 +26,10 @@ jobs:
   # Fast pre-flight gate, one matrix leg per design: everything that's
   # supposed to stay in sync with the golden-standard baseline (set once,
   # below — not hardcoded into the checker scripts) is checked comparatively
-  # against it; annotation is the one absolute (non-comparative) check, since
-  # it validates a design's own reference-designator strategy rather than
-  # agreement with another design. Add a design to the matrix to bring it
-  # under the same gate.
+  # against it; annotation and zone-outline-grid alignment are absolute
+  # (non-comparative) checks, since they validate a design's own internal
+  # consistency rather than agreement with another design. Add a design to
+  # the matrix to bring it under the same gate.
   preflight-check:
     name: preflight (${{ matrix.design }})
     needs: silkscreen-check
@@ -57,6 +57,9 @@ jobs:
     - name: Check annotation (absolute, not comparative)
       run: |
         ./Electrical/Design/check_annotation.py --project "Electrical/Design/${{ matrix.design }}"
+    - name: Check zone outline grid alignment (absolute, not comparative)
+      run: |
+        ./Electrical/Design/check_zone_grid.py --project "Electrical/Design/${{ matrix.design }}"
 
   generate-artifacts:
     name: kicad export
