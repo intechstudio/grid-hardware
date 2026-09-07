@@ -3933,24 +3933,8 @@
 		(uuid "fb68ade7-cda3-44f0-821f-91c0f12db478")
 	)
 	(no_connect
-		(at 218.44 144.78)
-		(uuid "15fa53d8-afc8-4a07-8dc1-56ff908380b4")
-	)
-	(no_connect
-		(at 218.44 139.7)
-		(uuid "3b54714e-85ae-46ba-b071-c8456a2a83ea")
-	)
-	(no_connect
 		(at 218.44 134.62)
 		(uuid "3d702c09-bfbf-46e7-95ce-429406c92b20")
-	)
-	(no_connect
-		(at 218.44 137.16)
-		(uuid "6195cebe-0091-4764-91d2-622e6eaf3f11")
-	)
-	(no_connect
-		(at 218.44 147.32)
-		(uuid "8371a9ef-f3a6-4cd5-b964-54dfb86d8449")
 	)
 	(no_connect
 		(at 218.44 132.08)
@@ -4122,7 +4106,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 144.78) (xy 218.44 144.78)
+			(xy 213.36 144.78) (xy 215.9 144.78)
 		)
 		(stroke
 			(width 0)
@@ -4392,7 +4376,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 137.16) (xy 218.44 137.16)
+			(xy 213.36 137.16) (xy 215.9 137.16)
 		)
 		(stroke
 			(width 0)
@@ -4712,7 +4696,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 147.32) (xy 218.44 147.32)
+			(xy 213.36 147.32) (xy 215.9 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4742,7 +4726,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 139.7) (xy 218.44 139.7)
+			(xy 213.36 139.7) (xy 215.9 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6682,7 +6666,7 @@
 		(uuid "305f2c2a-d06d-404c-a7fb-c81f85952a4d")
 	)
 	(hierarchical_label "A0"
-		(shape input)
+		(shape bidirectional)
 		(at 215.9 165.1 0)
 		(effects
 			(font
@@ -6724,6 +6708,17 @@
 			(justify left)
 		)
 		(uuid "65dcc438-154b-4823-b0d3-a10733998aba")
+	)
+	(hierarchical_label "SDA"
+		(shape bidirectional)
+		(at 215.9 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d71a1d8-fbf2-4bb8-9d9c-9a2be6a93be2")
 	)
 	(hierarchical_label "HWCFG_SHIFT"
 		(shape output)
@@ -6769,8 +6764,41 @@
 		)
 		(uuid "a0e7a81b-2259-4f8d-8368-ba75f2004714")
 	)
+	(hierarchical_label "GPIO17"
+		(shape bidirectional)
+		(at 215.9 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd69db9a-9f97-44d8-a4cc-875d97800d45")
+	)
+	(hierarchical_label "GPIO18"
+		(shape bidirectional)
+		(at 215.9 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef05fbe0-946d-4047-a33f-33154ee99a8d")
+	)
+	(hierarchical_label "SCL"
+		(shape bidirectional)
+		(at 215.9 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4adaa89-e55e-4727-9421-d5f6b3604fb3")
+	)
 	(hierarchical_label "A1"
-		(shape input)
+		(shape output)
 		(at 215.9 162.56 0)
 		(effects
 			(font
