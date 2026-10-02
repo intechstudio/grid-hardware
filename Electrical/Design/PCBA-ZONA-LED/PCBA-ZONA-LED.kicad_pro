@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.2,
+          "height": 0.35,
+          "width": 0.35
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -51,25 +51,31 @@
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
-          "border_hatch_pitch": 0.5,
+          "border_hatch_pitch": 0.508,
           "corner_radius": 0.0,
           "corner_smoothing": 0,
-          "fill_mode": 0,
-          "hatch_gap": 1.5,
-          "hatch_orientation": 0.0,
+          "fill_mode": 1,
+          "hatch_gap": 0.9,
+          "hatch_orientation": 45.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
-          "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "hatch_thickness": 0.1,
+          "min_clearance": 0.1,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.1,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.1,
+          "thermal_relief_spoke_width": 0.1
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -81,7 +87,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -92,9 +98,9 @@
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
-        "hole_to_hole": "warning",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -112,12 +118,12 @@
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
+        "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -135,7 +141,7 @@
         "tracks_crossing": "error",
         "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
-        "unresolved_variable": "error",
+        "unresolved_variable": "warning",
         "via_dangling": "warning",
         "zones_intersect": "error"
       },
@@ -143,21 +149,21 @@
       "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.025,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
+        "min_copper_edge_clearance": 0.1,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.1,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.7,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.1,
+        "min_via_annular_width": 0.05,
         "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -208,7 +214,9 @@
       ],
       "track_widths": [
         0.0,
-        0.1524
+        0.1524,
+        0.2,
+        0.254
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -242,7 +250,7 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.45,
+          "diameter": 0.35,
           "drill": 0.2
         }
       ],
@@ -504,7 +512,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "FP-ZONA-DECOR.kicad_pro",
+    "filename": "PCBA-ZONA-LED.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -520,7 +528,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1,
         "tuning_profile": "",
@@ -683,7 +691,7 @@
       "specctra_dsn": "",
       "step": "",
       "svg": "",
-      "vrml": "../../../../FP-XY-DECOR-BOLD.wrl"
+      "vrml": "../../../../PCBA-ZONA-LED.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -808,18 +816,58 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "FP-ZONA-DECOR.kicad_sch",
-        "name": "FP-ZONA-DECOR",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "filename": "PCBA-ZONA-LED.kicad_sch",
+        "name": "PCBA-ZONA-LED",
+        "uuid": "e3c502e7-8901-4419-990e-28ca3fa80e2b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "CN1-3",
     "variants": []
   },
   "sheets": [
     [
       "e3c502e7-8901-4419-990e-28ca3fa80e2b",
-      "Root"
+      "PCBA-ZONA-LED"
+    ],
+    [
+      "86eddd31-e51f-4ded-8468-421eae7a4fe4",
+      "LED"
+    ],
+    [
+      "0c5af664-f523-49ea-a844-fa962a167a09",
+      "LED1"
+    ],
+    [
+      "d3e56d2a-aa26-4e6d-b7e5-227e3bb302d7",
+      "LED2"
+    ],
+    [
+      "a0bff84b-b16e-4d71-bfb9-a2b98dd90aa2",
+      "LED3"
+    ],
+    [
+      "9dce1217-95da-4319-9598-d0392ed24d14",
+      "LED4"
+    ],
+    [
+      "0bfb20e3-f721-439d-9ad1-a6ac9fe1d3de",
+      "LED5"
+    ],
+    [
+      "16fee748-4b4c-4b7a-9de2-03993bdd8ffe",
+      "LED6"
+    ],
+    [
+      "9c885159-3311-4276-9b93-f638e63a45ec",
+      "LED7"
+    ],
+    [
+      "6cc8145d-fa7d-4d7e-98cd-d69b9e85cfc9",
+      "LED8"
+    ],
+    [
+      "8f1348a2-7d88-4967-a4ca-88331e546430",
+      "TOUCH"
     ]
   ],
   "text_variables": {},
