@@ -1,0 +1,6774 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e3c502e7-8901-4419-990e-28ca3fa80e2b")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "suku_basics:YXT-BB10-24P-02"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CN"
+				(at 0 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "YXT-BB10-24P-02"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "suku_basics:CONN-SMD_24P-P0.4-YXT-BB10-24P-02"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C2763973.pdf"
+				(at 0 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YXT(益鑫通)"
+				(at 0 -33.02 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "YXT-BB10-24P-02"
+				(at 0 -35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2763973"
+				(at 0 -38.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Wire To Board / Wire To Wire Connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "YXT-BB10-24P-02_0_1"
+				(rectangle
+					(start -7.62 17.78)
+					(end 7.62 -15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -7.62 15.24)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 15.24 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 12.7 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -12.7 0)
+					(length 2.54)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -12.7 180)
+					(length 2.54)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -10.16 180)
+					(length 2.54)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 12.7 180)
+					(length 2.54)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 15.24 180)
+					(length 2.54)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 20.32 270)
+					(length 2.54)
+					(name "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 2.54 20.32 270)
+					(length 2.54)
+					(name "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 -17.78 90)
+					(length 2.54)
+					(name "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 2.54 -17.78 90)
+					(length 2.54)
+					(name "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "suku_basics:capsense_diamond_edge"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CS"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "capsense_diamond_edge"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "suku_basics:capsense_diamond_edge"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point (alternative shape)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "capsense_diamond_edge_0_1"
+				(polyline
+					(pts
+						(xy -3.81 0) (xy 0 -3.81) (xy 3.81 0) (xy 3.81 1.27) (xy -3.81 1.27) (xy -3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "capsense_diamond_edge_1_1"
+				(pin passive line
+					(at 0 0 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 259.08 63.5)
+		(uuid "01c3652c-f674-46d1-84e6-ad6b814e666a")
+	)
+	(no_connect
+		(at 231.14 48.26)
+		(uuid "050273c7-3916-4f71-b08f-a540cee1557b")
+	)
+	(no_connect
+		(at 208.28 30.48)
+		(uuid "052c6e72-57b9-41f4-9d22-4bca55553c20")
+	)
+	(no_connect
+		(at 251.46 30.48)
+		(uuid "05cc5cfb-203e-4b8b-858c-b02fece278c2")
+	)
+	(no_connect
+		(at 200.66 106.68)
+		(uuid "093eaeb7-0cfc-462e-8bc0-89403fbb5f95")
+	)
+	(no_connect
+		(at 238.76 48.26)
+		(uuid "1094adc0-7b41-4151-ac82-970597987c92")
+	)
+	(no_connect
+		(at 205.74 63.5)
+		(uuid "1f927a2d-c689-4d70-8fc4-dd5848f0363d")
+	)
+	(no_connect
+		(at 243.84 48.26)
+		(uuid "36171ea9-a292-4768-bef5-15eceefbb6b2")
+	)
+	(no_connect
+		(at 208.28 35.56)
+		(uuid "39138754-0005-4a0f-96e3-713ad826e5ff")
+	)
+	(no_connect
+		(at 205.74 106.68)
+		(uuid "3f8677b0-8024-4cad-b1a4-96756002982b")
+	)
+	(no_connect
+		(at 226.06 48.26)
+		(uuid "40ad7f4d-108f-4e0c-b62c-7f4347726190")
+	)
+	(no_connect
+		(at 223.52 48.26)
+		(uuid "45f76f52-dc50-40dc-af15-8c52d6be27ff")
+	)
+	(no_connect
+		(at 254 63.5)
+		(uuid "4897cc1f-9aa4-4802-a1e5-1ac53ba839dc")
+	)
+	(no_connect
+		(at 241.3 81.28)
+		(uuid "4a131610-3c37-4028-9541-ecce4f143778")
+	)
+	(no_connect
+		(at 254 106.68)
+		(uuid "6c8794ee-eb28-4714-9b3e-c9cc70a543fa")
+	)
+	(no_connect
+		(at 241.3 76.2)
+		(uuid "6df0079d-bd87-41d6-8420-4fd62e0d1401")
+	)
+	(no_connect
+		(at 251.46 134.62)
+		(uuid "7318e55a-3b82-4cb0-9c75-4fe87261eca9")
+	)
+	(no_connect
+		(at 218.44 93.98)
+		(uuid "79e019f0-e501-4cf1-8860-cac1db478459")
+	)
+	(no_connect
+		(at 251.46 139.7)
+		(uuid "7a3daa8e-71f1-41ab-9b46-15cf413e99f2")
+	)
+	(no_connect
+		(at 241.3 73.66)
+		(uuid "8676d199-6e80-4c69-b7a8-e6d35ea450c7")
+	)
+	(no_connect
+		(at 218.44 48.26)
+		(uuid "8d7e10b9-5c15-4bff-8360-3f34e7f7883c")
+	)
+	(no_connect
+		(at 228.6 48.26)
+		(uuid "921ff24e-8cd5-459a-9c95-3ad9b728e9d7")
+	)
+	(no_connect
+		(at 233.68 48.26)
+		(uuid "936cfa15-1e3d-4b67-aaf5-aa097e9e77d7")
+	)
+	(no_connect
+		(at 218.44 86.36)
+		(uuid "9d96dc36-b429-4265-a4be-499a1105a029")
+	)
+	(no_connect
+		(at 218.44 91.44)
+		(uuid "a2f79066-904b-4ab1-93e8-d4be357c32d7")
+	)
+	(no_connect
+		(at 241.3 78.74)
+		(uuid "b6f4234a-3208-47f8-ac82-90483bb07fa9")
+	)
+	(no_connect
+		(at 218.44 99.06)
+		(uuid "bdf07bd0-12f2-455d-8b13-574de17c2a45")
+	)
+	(no_connect
+		(at 259.08 106.68)
+		(uuid "c5943631-e41a-47e9-8da7-fcf30b6f0ae2")
+	)
+	(no_connect
+		(at 251.46 35.56)
+		(uuid "c7ee7752-c453-48db-b730-2dff87cfbd46")
+	)
+	(no_connect
+		(at 241.3 83.82)
+		(uuid "c8bc1d44-8982-4f49-a438-00b6802d4fca")
+	)
+	(no_connect
+		(at 241.3 71.12)
+		(uuid "c9dd778b-e670-47fd-aa79-cbcd7ba2b262")
+	)
+	(no_connect
+		(at 218.44 96.52)
+		(uuid "cca33023-c508-476f-9d87-46de9f3e4955")
+	)
+	(no_connect
+		(at 208.28 134.62)
+		(uuid "cdae5b63-1622-4550-a9e1-8f0a10ec5a87")
+	)
+	(no_connect
+		(at 218.44 88.9)
+		(uuid "d0037530-2a42-4a5e-a458-c6c87b214c8a")
+	)
+	(no_connect
+		(at 236.22 48.26)
+		(uuid "d1c3ba0c-4d9e-4465-9990-3f38feffe9a8")
+	)
+	(no_connect
+		(at 200.66 63.5)
+		(uuid "d9e87d66-c45a-4c6c-b28f-c8fa78a98281")
+	)
+	(no_connect
+		(at 220.98 48.26)
+		(uuid "dce0d59d-9b49-4dbd-a00f-96bc6be5f126")
+	)
+	(no_connect
+		(at 215.9 48.26)
+		(uuid "f28a51bc-ca1a-4a38-8a04-4560e407a454")
+	)
+	(no_connect
+		(at 208.28 139.7)
+		(uuid "fc9378eb-c552-4861-bc51-617e066f3be8")
+	)
+	(no_connect
+		(at 241.3 48.26)
+		(uuid "fe2b61df-88bc-4e93-b7e3-7ab9f3f2a97e")
+	)
+	(wire
+		(pts
+			(xy 27.94 124.46) (xy 167.64 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01de6561-1f32-4d2c-a34a-cf5f291b3e3b")
+	)
+	(polyline
+		(pts
+			(xy 27.94 58.42) (xy 22.86 58.42)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "0361be51-91a2-4c2f-b250-260c5a28a0da")
+	)
+	(polyline
+		(pts
+			(xy 27.94 27.94) (xy 27.94 22.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "05a57d26-5cbe-4cb7-b087-c16c2f01f70b")
+	)
+	(wire
+		(pts
+			(xy 218.44 147.32) (xy 218.44 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "068b5c05-2b0d-431d-9edc-d46845d29cd4")
+	)
+	(wire
+		(pts
+			(xy 200.66 104.14) (xy 200.66 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08687a30-0782-43ac-bf21-87918ca504cd")
+	)
+	(wire
+		(pts
+			(xy 215.9 17.78) (xy 215.9 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e0bba1-358a-418e-a5f1-f30d26472650")
+	)
+	(wire
+		(pts
+			(xy 223.52 127) (xy 223.52 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b7406af-dfbd-40a4-9328-c93cccd9a604")
+	)
+	(wire
+		(pts
+			(xy 27.94 104.14) (xy 167.64 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d8f1ac0-83ce-408b-9efc-184c5c5be80e")
+	)
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 193.04 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd7e968-c48b-4ca1-9a0d-f163da2dda6c")
+	)
+	(wire
+		(pts
+			(xy 251.46 35.56) (xy 248.92 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ebd4e0b-7113-42f2-b486-a05090bb8294")
+	)
+	(wire
+		(pts
+			(xy 220.98 17.78) (xy 220.98 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fff534b-4cc4-4749-b205-23661035ae7b")
+	)
+	(wire
+		(pts
+			(xy 218.44 43.18) (xy 218.44 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1061a656-ccbe-4758-95e0-8416cba0ea21")
+	)
+	(wire
+		(pts
+			(xy 200.66 63.5) (xy 200.66 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ec196e-e3f3-41bb-ad2c-5d42db424555")
+	)
+	(wire
+		(pts
+			(xy 210.82 30.48) (xy 208.28 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13c5d253-809e-4568-8681-7a876ac98397")
+	)
+	(wire
+		(pts
+			(xy 243.84 147.32) (xy 243.84 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "144058e8-b317-46ff-be00-3fcdf5b4747b")
+	)
+	(wire
+		(pts
+			(xy 187.96 76.2) (xy 193.04 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16cd7c0c-2b43-423f-bd8d-20c7576c67b2")
+	)
+	(wire
+		(pts
+			(xy 238.76 127) (xy 238.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19418854-37b7-4cc9-b0b6-20db61cafbaf")
+	)
+	(wire
+		(pts
+			(xy 210.82 35.56) (xy 208.28 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1998bda7-6b57-4488-9edf-ada2a8a80de3")
+	)
+	(wire
+		(pts
+			(xy 228.6 43.18) (xy 228.6 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d39e91e-d32b-4ac3-935b-d83f397a9fdc")
+	)
+	(wire
+		(pts
+			(xy 187.96 93.98) (xy 193.04 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21803df9-0363-4c24-82fd-98771c055abf")
+	)
+	(wire
+		(pts
+			(xy 241.3 99.06) (xy 246.38 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22dc8445-b21d-49e4-8189-b89bd6948064")
+	)
+	(polyline
+		(pts
+			(xy 88.9 149.86) (xy 88.9 154.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "22e3b6bb-5810-4214-a7fc-f2c4db8413c7")
+	)
+	(wire
+		(pts
+			(xy 27.94 93.98) (xy 167.64 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24f2fa3f-6fb4-4f9a-b588-45b552e64c34")
+	)
+	(wire
+		(pts
+			(xy 238.76 43.18) (xy 238.76 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "270d362a-0188-4d86-94f5-db2169d42a38")
+	)
+	(wire
+		(pts
+			(xy 241.3 93.98) (xy 246.38 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "294b690b-ac52-44d0-9db3-5b13448a59e1")
+	)
+	(wire
+		(pts
+			(xy 241.3 17.78) (xy 241.3 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2984da1c-2e81-4706-a39f-9268832b425e")
+	)
+	(wire
+		(pts
+			(xy 213.36 78.74) (xy 218.44 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a33ffbc-290b-42b2-8daf-b336a6b4902b")
+	)
+	(wire
+		(pts
+			(xy 43.18 27.94) (xy 43.18 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b816dc7-836f-4237-b375-294d703cb713")
+	)
+	(wire
+		(pts
+			(xy 241.3 78.74) (xy 246.38 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ddbaa78-a911-4366-8311-77001d99f9fc")
+	)
+	(wire
+		(pts
+			(xy 266.7 76.2) (xy 271.78 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea6da4f-7c23-4a3e-ae79-29f0b3a67edf")
+	)
+	(wire
+		(pts
+			(xy 73.66 27.94) (xy 73.66 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb7ca14-6cf8-4652-8a71-67c403d85385")
+	)
+	(wire
+		(pts
+			(xy 27.94 43.18) (xy 167.64 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee336f5-6fa6-4c52-a657-5b6d0d4f4c14")
+	)
+	(wire
+		(pts
+			(xy 205.74 63.5) (xy 205.74 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f713a92-36df-4ba0-a63a-816e158cbbb5")
+	)
+	(wire
+		(pts
+			(xy 187.96 81.28) (xy 193.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30cfbea5-9944-4fac-ac35-1d4f1f17f393")
+	)
+	(wire
+		(pts
+			(xy 223.52 17.78) (xy 223.52 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30f321e4-9357-455a-96ca-529902c1ce60")
+	)
+	(polyline
+		(pts
+			(xy 149.86 149.86) (xy 149.86 154.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3160290f-4812-4e61-94c4-e2f9fc8f0d21")
+	)
+	(wire
+		(pts
+			(xy 226.06 17.78) (xy 226.06 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32017b0d-2b79-44db-b03b-470ac05547af")
+	)
+	(wire
+		(pts
+			(xy 27.94 63.5) (xy 167.64 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "324f5852-bd90-44a4-b8fd-c719360d9072")
+	)
+	(wire
+		(pts
+			(xy 93.98 27.94) (xy 93.98 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33f26e13-3e28-4801-899f-22a3a48d1f3a")
+	)
+	(wire
+		(pts
+			(xy 53.34 27.94) (xy 53.34 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "345c34e4-9c4d-4272-9ae4-84139f15ea6d")
+	)
+	(wire
+		(pts
+			(xy 236.22 17.78) (xy 236.22 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a7c005-7cbf-432b-9ec3-3aada75902de")
+	)
+	(wire
+		(pts
+			(xy 33.02 27.94) (xy 33.02 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "359e4879-4377-41a0-af24-f7cabaad7298")
+	)
+	(polyline
+		(pts
+			(xy 149.86 58.42) (xy 154.94 58.42)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3978f127-9116-499c-aa82-c164315efc9a")
+	)
+	(wire
+		(pts
+			(xy 243.84 43.18) (xy 243.84 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9e8c9a-32bd-4d40-ac8b-8b0235fdfa53")
+	)
+	(wire
+		(pts
+			(xy 266.7 78.74) (xy 271.78 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c460352-e681-4248-bc26-acf1dac3bbad")
+	)
+	(wire
+		(pts
+			(xy 208.28 134.62) (xy 210.82 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c7ea4fe-8733-4d8f-ba58-0d64555494a1")
+	)
+	(wire
+		(pts
+			(xy 104.14 27.94) (xy 104.14 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3edbe67f-97bf-4c12-8ae6-f7fb960bd49d")
+	)
+	(wire
+		(pts
+			(xy 223.52 152.4) (xy 223.52 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f8b27b-f116-425b-bd63-ff373487bd91")
+	)
+	(wire
+		(pts
+			(xy 241.3 86.36) (xy 246.38 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44a5cf8c-ea05-4a8c-9bab-1923ecb4867f")
+	)
+	(wire
+		(pts
+			(xy 213.36 88.9) (xy 218.44 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "453bf46f-270e-4de4-aae3-eeaca56a7948")
+	)
+	(wire
+		(pts
+			(xy 231.14 127) (xy 231.14 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ca1583-9833-443e-80d8-bfbfdc1f63c4")
+	)
+	(wire
+		(pts
+			(xy 27.94 53.34) (xy 167.64 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f16bd9-530a-4929-a09c-62ac626365d1")
+	)
+	(wire
+		(pts
+			(xy 266.7 91.44) (xy 271.78 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4af1cadf-1066-42d4-b9f7-01bef3710952")
+	)
+	(wire
+		(pts
+			(xy 134.62 27.94) (xy 134.62 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b89ec5f-d8b7-4a86-9826-14393cea91a3")
+	)
+	(wire
+		(pts
+			(xy 241.3 96.52) (xy 246.38 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c05438c-0e66-46f8-afc4-1d9736a2b6b7")
+	)
+	(wire
+		(pts
+			(xy 233.68 17.78) (xy 233.68 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d458891-9cb7-41a3-830c-a792003fe920")
+	)
+	(wire
+		(pts
+			(xy 241.3 73.66) (xy 246.38 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5347fca5-04c6-4c97-bdbb-9321dd8726e2")
+	)
+	(wire
+		(pts
+			(xy 27.94 83.82) (xy 167.64 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5349cf8d-45b8-4833-8c16-8e31eb5b6702")
+	)
+	(wire
+		(pts
+			(xy 226.06 43.18) (xy 226.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54037500-d3f7-4cae-8dae-c3e6269a1b3d")
+	)
+	(wire
+		(pts
+			(xy 218.44 121.92) (xy 218.44 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54dcdbab-70fd-43bf-9e48-3501a615ced7")
+	)
+	(wire
+		(pts
+			(xy 266.7 73.66) (xy 271.78 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55079d53-16a9-4edf-bf27-6d551f2df668")
+	)
+	(wire
+		(pts
+			(xy 243.84 127) (xy 243.84 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56af6a0d-0774-4541-a36d-cd59784cebe2")
+	)
+	(polyline
+		(pts
+			(xy 149.86 27.94) (xy 154.94 27.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "56c3d98c-b257-4240-b370-94c42a214172")
+	)
+	(wire
+		(pts
+			(xy 114.3 27.94) (xy 114.3 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577a938e-ed9f-47e0-951f-090e67d757de")
+	)
+	(wire
+		(pts
+			(xy 226.06 127) (xy 226.06 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59906358-9c83-4657-90e7-63a511a78fcc")
+	)
+	(wire
+		(pts
+			(xy 254 106.68) (xy 254 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a975d92-85d8-45fb-afdd-26f0c1138081")
+	)
+	(wire
+		(pts
+			(xy 215.9 147.32) (xy 215.9 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b33c811-f397-43a3-bdcd-304500e90d73")
+	)
+	(wire
+		(pts
+			(xy 233.68 127) (xy 233.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dfedffd-5e34-42d9-ae3d-60bbc8b64b30")
+	)
+	(wire
+		(pts
+			(xy 231.14 152.4) (xy 231.14 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f0585d1-deaf-48c3-ad92-c7a495e85251")
+	)
+	(polyline
+		(pts
+			(xy 154.94 149.86) (xy 149.86 149.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "62c09575-5d03-4160-a892-f12e484d03d7")
+	)
+	(wire
+		(pts
+			(xy 213.36 73.66) (xy 218.44 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6434acae-58ab-4c5b-b3a5-d646d5fe9cbe")
+	)
+	(wire
+		(pts
+			(xy 241.3 76.2) (xy 246.38 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68909355-70d5-4a5e-875d-54b0542bf878")
+	)
+	(polyline
+		(pts
+			(xy 154.94 27.94) (xy 154.94 149.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6a3bc1f9-cf5a-401c-b373-3d53b857754a")
+	)
+	(wire
+		(pts
+			(xy 215.9 43.18) (xy 215.9 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a73a467-43d4-4513-90c1-d7b0fbb1719e")
+	)
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 193.04 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b97e12b-6f2f-444f-a3f6-a3410aec6e81")
+	)
+	(wire
+		(pts
+			(xy 27.94 134.62) (xy 167.64 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cb4132c-7cbd-4652-8795-88e48731f2e5")
+	)
+	(polyline
+		(pts
+			(xy 27.94 88.9) (xy 22.86 88.9)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6eba6143-1866-44a5-9283-ba7298119d3c")
+	)
+	(polyline
+		(pts
+			(xy 58.42 27.94) (xy 58.42 22.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "71ff8467-0e07-46d3-ac94-c18df6fe27b0")
+	)
+	(wire
+		(pts
+			(xy 266.7 96.52) (xy 271.78 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74b4346a-c1cb-41d2-a48f-f6807ab70911")
+	)
+	(wire
+		(pts
+			(xy 63.5 27.94) (xy 63.5 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7513625e-d0c7-498f-ad0b-37ed1b5872b7")
+	)
+	(polyline
+		(pts
+			(xy 27.94 149.86) (xy 22.86 149.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "78ab169a-b726-43da-902d-088380d6c9a4")
+	)
+	(polyline
+		(pts
+			(xy 27.94 119.38) (xy 22.86 119.38)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "79603ffe-4833-496d-945a-ae126e5799e7")
+	)
+	(wire
+		(pts
+			(xy 213.36 93.98) (xy 218.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b0a46fb-0703-4ef2-8141-c954b2bc8faf")
+	)
+	(wire
+		(pts
+			(xy 266.7 88.9) (xy 271.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c51189b-73aa-4471-8d1f-07904c59c464")
+	)
+	(wire
+		(pts
+			(xy 241.3 147.32) (xy 241.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e486d2b-75be-458e-914b-7039c1efc550")
+	)
+	(polyline
+		(pts
+			(xy 88.9 27.94) (xy 88.9 22.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "7f2144d2-deab-40b0-a236-e9e57058ab98")
+	)
+	(wire
+		(pts
+			(xy 187.96 86.36) (xy 193.04 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7cb049-f327-4b70-aee7-4ea51f1aa1e2")
+	)
+	(wire
+		(pts
+			(xy 187.96 83.82) (xy 193.04 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8075aa83-570d-416b-af28-0718375cd8a3")
+	)
+	(wire
+		(pts
+			(xy 228.6 152.4) (xy 228.6 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8076c683-a6b7-4846-8edf-c6bd0c8cfb18")
+	)
+	(wire
+		(pts
+			(xy 144.78 27.94) (xy 144.78 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "809ea512-b1b9-41fb-a16d-b5bb415ace43")
+	)
+	(wire
+		(pts
+			(xy 231.14 17.78) (xy 231.14 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c29ed19-2adb-4b40-a432-0d97de393b87")
+	)
+	(wire
+		(pts
+			(xy 254 66.04) (xy 254 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dad8593-4bf2-4dc9-bc76-bb1e15309bbc")
+	)
+	(polyline
+		(pts
+			(xy 27.94 154.94) (xy 27.94 149.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "8dd19fc9-43b7-4844-81ff-2d75dd6ce844")
+	)
+	(wire
+		(pts
+			(xy 243.84 17.78) (xy 243.84 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "933d996c-4ba8-44c5-aa37-3a0923244cf0")
+	)
+	(wire
+		(pts
+			(xy 187.96 91.44) (xy 193.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944fc435-c622-48c4-b76d-7d84d58452e1")
+	)
+	(wire
+		(pts
+			(xy 27.94 73.66) (xy 167.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96658aab-6091-45d7-8a74-4ffcf07b859a")
+	)
+	(wire
+		(pts
+			(xy 124.46 27.94) (xy 124.46 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e18463-8833-4a59-b150-004af5779933")
+	)
+	(polyline
+		(pts
+			(xy 22.86 149.86) (xy 22.86 27.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "9a0f94dc-dec8-4919-91ff-2dac2c34c29e")
+	)
+	(polyline
+		(pts
+			(xy 149.86 22.86) (xy 149.86 27.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "9c064190-af1a-49ee-99da-805a3ebc4e7a")
+	)
+	(wire
+		(pts
+			(xy 27.94 114.3) (xy 167.64 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c635106-f4ac-48bd-a96a-6807e716cbf7")
+	)
+	(wire
+		(pts
+			(xy 187.96 99.06) (xy 193.04 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc63409-fe5d-4749-a93c-dbea12eee2eb")
+	)
+	(polyline
+		(pts
+			(xy 119.38 27.94) (xy 119.38 22.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "9d1a8d64-ff1c-4cdc-9ade-32ead1355f21")
+	)
+	(wire
+		(pts
+			(xy 238.76 152.4) (xy 238.76 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e5950b2-4dce-4b6d-85dc-906f5372c44f")
+	)
+	(wire
+		(pts
+			(xy 241.3 43.18) (xy 241.3 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0dc5c0f-63b2-4c41-be1e-a5b392f8364a")
+	)
+	(wire
+		(pts
+			(xy 213.36 99.06) (xy 218.44 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1f52526-8009-49b8-af3e-535758c76745")
+	)
+	(polyline
+		(pts
+			(xy 119.38 149.86) (xy 119.38 154.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "a2ab2526-09b2-48e5-8e64-bce78d53c0ae")
+	)
+	(wire
+		(pts
+			(xy 226.06 152.4) (xy 226.06 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ee2340-5fe8-49f5-8f24-119601a5477c")
+	)
+	(wire
+		(pts
+			(xy 251.46 30.48) (xy 248.92 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7369416-ba03-47d5-b809-27f58b1a9751")
+	)
+	(wire
+		(pts
+			(xy 213.36 83.82) (xy 218.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac4e6587-0cf4-4e8f-a465-f4f13ad99772")
+	)
+	(wire
+		(pts
+			(xy 27.94 144.78) (xy 167.64 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad541854-e6e2-4690-b74f-7898193ace02")
+	)
+	(wire
+		(pts
+			(xy 241.3 81.28) (xy 246.38 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade438ab-2f6f-4290-9e00-57679ddf60c6")
+	)
+	(wire
+		(pts
+			(xy 213.36 76.2) (xy 218.44 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af818cb9-75d8-4012-aec3-4e39f028c614")
+	)
+	(polyline
+		(pts
+			(xy 149.86 88.9) (xy 154.94 88.9)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "b52c8187-1ac1-4b27-8a15-37ba5671a4b4")
+	)
+	(wire
+		(pts
+			(xy 233.68 152.4) (xy 233.68 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b80b5491-ccc9-46c0-b497-e3759d90363c")
+	)
+	(wire
+		(pts
+			(xy 236.22 152.4) (xy 236.22 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b95f17c8-cb1b-4040-962c-029dacc54f4b")
+	)
+	(wire
+		(pts
+			(xy 241.3 83.82) (xy 246.38 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb46373c-37b7-4168-8332-262e55c82d43")
+	)
+	(wire
+		(pts
+			(xy 187.96 88.9) (xy 193.04 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0bb5f19-996d-4a71-9bd0-0323eaaf3f90")
+	)
+	(wire
+		(pts
+			(xy 236.22 127) (xy 236.22 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c241ae67-ce0f-4409-8b25-0bedf0f9a5c6")
+	)
+	(wire
+		(pts
+			(xy 231.14 43.18) (xy 231.14 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f57b64-3fa1-4e78-9aef-c950bf810fcf")
+	)
+	(wire
+		(pts
+			(xy 220.98 152.4) (xy 220.98 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c58723bc-14f5-4947-bc09-b9991255c5ba")
+	)
+	(wire
+		(pts
+			(xy 228.6 17.78) (xy 228.6 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c646f74c-b202-4727-9d63-14b96cac2e96")
+	)
+	(wire
+		(pts
+			(xy 215.9 127) (xy 215.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c64a0097-8128-463a-82fe-7c3f9ef4f309")
+	)
+	(wire
+		(pts
+			(xy 266.7 81.28) (xy 271.78 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6eaf5b9-1629-4a5b-9762-d6c3ad5d0c98")
+	)
+	(wire
+		(pts
+			(xy 266.7 93.98) (xy 271.78 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd07f7dc-2d48-40ab-aba0-f1d27ad66fed")
+	)
+	(wire
+		(pts
+			(xy 187.96 78.74) (xy 193.04 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd64afdf-0213-49ee-bbd0-3244cea8dffe")
+	)
+	(wire
+		(pts
+			(xy 27.94 33.02) (xy 167.64 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf33b741-dd13-43ee-afff-4028a2476acf")
+	)
+	(wire
+		(pts
+			(xy 205.74 104.14) (xy 205.74 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0019b04-2d97-4d3b-96cf-725a5bdc0b9a")
+	)
+	(wire
+		(pts
+			(xy 223.52 43.18) (xy 223.52 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39b2094-d679-496a-ba2f-1035c4caa345")
+	)
+	(wire
+		(pts
+			(xy 233.68 43.18) (xy 233.68 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d44e7876-10ee-410c-b105-6becf0c1e442")
+	)
+	(polyline
+		(pts
+			(xy 149.86 154.94) (xy 27.94 154.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "d4943c05-248c-4699-a50c-766e84ef11b7")
+	)
+	(wire
+		(pts
+			(xy 228.6 127) (xy 228.6 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d499aef3-e2d3-4a84-b16a-23586f091163")
+	)
+	(wire
+		(pts
+			(xy 187.96 96.52) (xy 193.04 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c0447a-485a-4576-99a3-7340ec6b5f2d")
+	)
+	(wire
+		(pts
+			(xy 220.98 43.18) (xy 220.98 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d784dcfd-1d9d-4a2a-a19f-6ea9d1eedabb")
+	)
+	(wire
+		(pts
+			(xy 259.08 106.68) (xy 259.08 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d956e03c-9378-4810-9c00-88d59d878ff3")
+	)
+	(wire
+		(pts
+			(xy 248.92 139.7) (xy 251.46 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dac1e477-1f17-4661-ac7a-f2cc27d09c29")
+	)
+	(wire
+		(pts
+			(xy 266.7 71.12) (xy 271.78 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7ef47b-d858-437e-af45-11aa307dc08f")
+	)
+	(wire
+		(pts
+			(xy 266.7 86.36) (xy 271.78 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd982ff3-43ec-42fb-b1bc-19a402d34e95")
+	)
+	(wire
+		(pts
+			(xy 213.36 91.44) (xy 218.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbcf49a-98f8-44ca-a185-f9719ad3c6b2")
+	)
+	(wire
+		(pts
+			(xy 220.98 127) (xy 220.98 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfd1b6a3-9b9d-49b0-a45d-b1151e2a0cd4")
+	)
+	(wire
+		(pts
+			(xy 218.44 17.78) (xy 218.44 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfee8275-3ede-46df-8748-37a497257162")
+	)
+	(wire
+		(pts
+			(xy 213.36 81.28) (xy 218.44 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18347c2-99a2-4dfe-b9dd-7eace43beb81")
+	)
+	(wire
+		(pts
+			(xy 208.28 139.7) (xy 210.82 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ea55c2-1d72-426c-beb7-ccd3e2e39c38")
+	)
+	(wire
+		(pts
+			(xy 236.22 43.18) (xy 236.22 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5b8c77d-c646-48d3-8050-62c9a4a74ffe")
+	)
+	(polyline
+		(pts
+			(xy 149.86 119.38) (xy 154.94 119.38)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "e62011bd-814d-4fb4-ad04-880d6eae4ddd")
+	)
+	(wire
+		(pts
+			(xy 266.7 99.06) (xy 271.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6bc98fa-8f2f-453a-9fc7-4401dd9b68de")
+	)
+	(wire
+		(pts
+			(xy 241.3 127) (xy 241.3 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6eaba75-b5e7-4089-9be2-7bd3d58244e0")
+	)
+	(wire
+		(pts
+			(xy 241.3 88.9) (xy 246.38 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e844ab6a-11a2-46d1-b610-e8400e3b7447")
+	)
+	(wire
+		(pts
+			(xy 83.82 27.94) (xy 83.82 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8fc28d5-69c2-4fdd-b835-33ec98f5782d")
+	)
+	(wire
+		(pts
+			(xy 213.36 96.52) (xy 218.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb7bc2c5-1432-4e2d-80c4-e7b71fd5adb9")
+	)
+	(wire
+		(pts
+			(xy 248.92 134.62) (xy 251.46 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebd39de7-4996-4b6e-8c0a-6fd740d3e3e8")
+	)
+	(wire
+		(pts
+			(xy 241.3 71.12) (xy 246.38 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebd51bc0-1613-4472-8696-e1a7933f82db")
+	)
+	(wire
+		(pts
+			(xy 213.36 71.12) (xy 218.44 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecd3551a-b02c-402d-b8b3-7bb40ad31f46")
+	)
+	(polyline
+		(pts
+			(xy 22.86 27.94) (xy 27.94 27.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ed540cfc-d05f-467e-bccc-38a0af6f7308")
+	)
+	(wire
+		(pts
+			(xy 266.7 83.82) (xy 271.78 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efa513f5-46af-4d47-93a2-9eb47213306e")
+	)
+	(wire
+		(pts
+			(xy 241.3 91.44) (xy 246.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3a2f29f-1def-4d01-a1cc-97af6f9f078b")
+	)
+	(polyline
+		(pts
+			(xy 58.42 149.86) (xy 58.42 154.94)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "f44b0782-c833-42be-a9f8-efa1ac3daef2")
+	)
+	(wire
+		(pts
+			(xy 213.36 86.36) (xy 218.44 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50bf3b2-fb8f-4c0e-b9ca-24462d89e4b9")
+	)
+	(polyline
+		(pts
+			(xy 27.94 22.86) (xy 149.86 22.86)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "f7bae463-9ae3-45ce-aec8-9dde2c69f5ef")
+	)
+	(wire
+		(pts
+			(xy 259.08 66.04) (xy 259.08 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f92ddbd4-f9a6-4bd5-95c7-0510840652d7")
+	)
+	(wire
+		(pts
+			(xy 238.76 17.78) (xy 238.76 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe8891f1-f766-45a2-b5f7-ec098510e8c0")
+	)
+	(label "DS0"
+		(at 271.78 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00545edf-04c6-431f-9b8d-0de1285da176")
+	)
+	(label "DS0"
+		(at 215.9 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00708eca-fe8a-4d33-b105-86149dcf5eb2")
+	)
+	(label "Y11"
+		(at 167.64 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02213418-b103-429d-8a3e-3a66d278fa86")
+	)
+	(label "DS0"
+		(at 226.06 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "057feae5-9c5b-4c92-81f4-281f94ea8d65")
+	)
+	(label "DS0"
+		(at 228.6 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "07ec9c52-7008-48c3-8551-4d253d827bff")
+	)
+	(label "DS0"
+		(at 220.98 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08cbb58c-3c40-429d-90b1-d88ac2ffd5e1")
+	)
+	(label "X3"
+		(at 114.3 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c4d0e20-6a3b-48f9-991f-04daa64dacf9")
+	)
+	(label "DS0"
+		(at 271.78 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c866a72-107c-47c0-96b7-094d1622c947")
+	)
+	(label "Y5"
+		(at 241.3 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d628953-e9fa-494e-87b7-b4356f9b0cdb")
+	)
+	(label "X4"
+		(at 233.68 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e3f85d4-eea2-48b8-b4a5-28fbe052a332")
+	)
+	(label "X11"
+		(at 215.9 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10d1dcdd-66ff-4c40-afbe-fe4d913afd54")
+	)
+	(label "DS0"
+		(at 271.78 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1404dceb-a035-45c0-91ad-d68299283d99")
+	)
+	(label "X0"
+		(at 144.78 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "144d3926-6508-407b-a457-36a44c7b618d")
+	)
+	(label "X6"
+		(at 228.6 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "157754c7-4e35-4d7c-acd6-f29577e0d421")
+	)
+	(label "Y0"
+		(at 167.64 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "166ba859-6641-4be2-9245-82967d5d5b76")
+	)
+	(label "DS0"
+		(at 223.52 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1881b868-03f3-49fe-b590-8f949da69911")
+	)
+	(label "DS0"
+		(at 231.14 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1886964c-8f95-4605-a155-d1720f07c5ec")
+	)
+	(label "Y8"
+		(at 218.44 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1dcdd56f-0240-47b4-8932-02fb9c196663")
+	)
+	(label "DS0"
+		(at 187.96 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2106b252-d604-4171-bf6a-9afe382028dd")
+	)
+	(label "DS0"
+		(at 228.6 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23d6bb17-01f8-49ad-a32e-65c041007be0")
+	)
+	(label "DS0"
+		(at 271.78 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24f5fa5c-11ac-4f19-bba5-7580fcef01a2")
+	)
+	(label "X7"
+		(at 226.06 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26066d21-05e6-44b5-8993-6fce982cfdfb")
+	)
+	(label "DS0"
+		(at 271.78 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a64d243-fc3e-490c-9f2c-6c6f9740c281")
+	)
+	(label "X2"
+		(at 238.76 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d07d0ee-8c93-4de1-992b-68087e34b1d8")
+	)
+	(label "X5"
+		(at 231.14 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34cc8f60-f60a-44e3-900e-c36f773114af")
+	)
+	(label "DS0"
+		(at 233.68 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "368b8a16-3faf-4e90-bee0-756c1bcf436d")
+	)
+	(label "DS0"
+		(at 218.44 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "374882f4-c76b-4949-91d2-978bb4515d11")
+	)
+	(label "Y10"
+		(at 167.64 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e2835b9-6a38-44bb-a9e8-187ee3c9f24a")
+	)
+	(label "DS0"
+		(at 187.96 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e7dd5b6-1d4a-41ef-ac38-fb07dcc833a9")
+	)
+	(label "Y4"
+		(at 241.3 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f35c406-b47e-42e0-8011-9a386e01ab43")
+	)
+	(label "DS0"
+		(at 241.3 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "421ec735-0cb9-4755-933d-766e3e7e252e")
+	)
+	(label "X8"
+		(at 223.52 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4268ed4d-fee5-4343-9b9b-e6c930d7e849")
+	)
+	(label "X0"
+		(at 243.84 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "426bc6d5-1bed-462b-9ad6-77c9442348bd")
+	)
+	(label "DS0"
+		(at 187.96 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "440cc177-90ef-4da9-a8a1-7e6940ac8c5b")
+	)
+	(label "X9"
+		(at 220.98 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44720712-b36d-4871-96d1-789b22d388ab")
+	)
+	(label "Y2"
+		(at 167.64 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "472e20d1-fa59-421a-83e8-52d8bb6d2a48")
+	)
+	(label "DS0"
+		(at 187.96 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52193355-75f5-4410-a828-63d008664ec6")
+	)
+	(label "Y1"
+		(at 167.64 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54a5a3c3-84a4-49eb-a0e5-8a8e7bd3b67b")
+	)
+	(label "X8"
+		(at 63.5 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c8ac35f-cc68-43f3-97d6-7e111609cb34")
+	)
+	(label "Y4"
+		(at 167.64 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f0c1754-9c4d-4416-a6e8-9b88e3665853")
+	)
+	(label "DS0"
+		(at 220.98 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fd920e6-9aa0-47e3-83ee-6ed6a04e3446")
+	)
+	(label "Y3"
+		(at 241.3 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61eaf552-2962-43be-9bc3-917a631d12a9")
+	)
+	(label "Y7"
+		(at 218.44 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "63249d50-eacd-4b66-bb3c-9ccb6bae1337")
+	)
+	(label "Y2"
+		(at 241.3 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63f7f040-6765-4a01-be41-5ac6eeacbd53")
+	)
+	(label "X1"
+		(at 134.62 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64c11121-a8c1-4253-8b67-47d1991e32b1")
+	)
+	(label "DS0"
+		(at 187.96 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6619141e-2f88-4785-bb24-4d91b3dbeb30")
+	)
+	(label "Y0"
+		(at 241.3 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6aac8bd6-41a4-45e1-9ac6-95d770fe78b0")
+	)
+	(label "DS0"
+		(at 218.44 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "77e2714f-81ce-436f-afd6-811949481c9a")
+	)
+	(label "X11"
+		(at 33.02 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7a1a0c07-1caf-458a-a784-3e6b124761af")
+	)
+	(label "Y11"
+		(at 218.44 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a726a55-fd9f-4e3f-a306-c31a8aabf095")
+	)
+	(label "DS0"
+		(at 187.96 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7bbe4a9b-d8e5-47db-a311-d21499687ea2")
+	)
+	(label "Y3"
+		(at 167.64 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e073aa1-30e7-4685-bc46-3cbf950ae670")
+	)
+	(label "X1"
+		(at 241.3 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e24f9b6-b3ef-4068-a535-93eb1e564e4a")
+	)
+	(label "DS0"
+		(at 236.22 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "833a25c9-9ddf-4306-b0c4-342376d4dda0")
+	)
+	(label "DS0"
+		(at 243.84 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "836b6443-da44-4b94-824d-caab5d62f267")
+	)
+	(label "X6"
+		(at 83.82 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "896912fe-13e0-4d9f-904a-801940524dc4")
+	)
+	(label "Y5"
+		(at 167.64 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b0ead14-e6be-4beb-a54a-dd6360c9319d")
+	)
+	(label "DS0"
+		(at 271.78 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d695f85-1c32-4cc6-972f-786192a79157")
+	)
+	(label "DS0"
+		(at 187.96 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8e6ad4f5-2706-45d9-8421-5752ffe7ba19")
+	)
+	(label "X5"
+		(at 93.98 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "902e8c27-a6b2-4050-b41e-5b6ed373d819")
+	)
+	(label "X7"
+		(at 73.66 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90548393-3a70-498a-af5d-6a07d0d0adaf")
+	)
+	(label "DS0"
+		(at 231.14 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92a82dbd-5cb6-4c72-9aa9-379538f07e9e")
+	)
+	(label "Y9"
+		(at 167.64 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93422265-edfc-481d-b451-dca73cfcf0be")
+	)
+	(label "DS0"
+		(at 271.78 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "996d647f-0779-404a-91bd-f340a0ad930c")
+	)
+	(label "DS0"
+		(at 187.96 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9aa9a0e3-6fdd-4509-8e6d-baab2f5d5d3a")
+	)
+	(label "DS0"
+		(at 226.06 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f664970-0614-40a2-8899-1f0f499f5387")
+	)
+	(label "DS0"
+		(at 241.3 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fcac968-d3be-4b3c-9303-2b7813484e18")
+	)
+	(label "DS0"
+		(at 236.22 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0614738-7e1d-4cbc-9435-fd64d7818ad1")
+	)
+	(label "DS0"
+		(at 238.76 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a08c230b-fc13-4087-ade3-02111e303d3b")
+	)
+	(label "DS0"
+		(at 187.96 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a57bd589-ad4e-4c76-9dff-fb00ef009b1a")
+	)
+	(label "X10"
+		(at 218.44 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7e68840-5496-4fc4-acc2-20701c079e40")
+	)
+	(label "X4"
+		(at 104.14 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ab6e0d27-ab4b-48b0-912b-12193a678a90")
+	)
+	(label "Y6"
+		(at 218.44 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbb4aa26-893d-4b1f-b956-8fd7fd357ceb")
+	)
+	(label "X9"
+		(at 53.34 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bdf0f3cb-7101-4580-98b9-566c6b97ad70")
+	)
+	(label "DS0"
+		(at 215.9 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf64151f-11cd-4d62-9731-1772217a7f19")
+	)
+	(label "X2"
+		(at 124.46 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1f6b028-698a-4402-8e4f-7cbf7f409163")
+	)
+	(label "DS0"
+		(at 271.78 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6769072-b427-4f6e-ad8b-109e73e2421b")
+	)
+	(label "DS0"
+		(at 187.96 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9abf744-241c-44ec-8b54-22132510ce55")
+	)
+	(label "DS0"
+		(at 187.96 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d25d2f3f-ed01-4080-b4ca-b8899fe3edb8")
+	)
+	(label "DS0"
+		(at 187.96 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d2dcc45e-26ab-4b91-9028-05b94528fd0f")
+	)
+	(label "Y6"
+		(at 167.64 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3a4409c-868d-461f-89ef-f1f1a9a3078d")
+	)
+	(label "Y7"
+		(at 167.64 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d48bb602-c24a-4e79-9910-dda987cdc5bb")
+	)
+	(label "DS0"
+		(at 238.76 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4abed51-c42c-47b0-b2dd-e4e7abcdfa4e")
+	)
+	(label "Y8"
+		(at 167.64 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6e2e5bc-4251-439d-a34f-5fdde300f36b")
+	)
+	(label "Y10"
+		(at 218.44 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dbd08fab-fbb5-4687-bf77-df9d30414440")
+	)
+	(label "DS0"
+		(at 223.52 152.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0358d55-0343-4245-9fa7-ac3c767d07b0")
+	)
+	(label "DS0"
+		(at 271.78 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e42e056c-6608-4aff-9a48-602b34a68209")
+	)
+	(label "Y9"
+		(at 218.44 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4bca011-8911-490a-a9c6-8570bc477241")
+	)
+	(label "DS0"
+		(at 271.78 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6854ba8-f5a3-419a-8907-ebf54ef1b4e6")
+	)
+	(label "X3"
+		(at 236.22 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e751e302-18b4-42db-b0cf-b506b5c11753")
+	)
+	(label "DS0"
+		(at 271.78 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9a67d46-ea8e-4450-95ce-0d37c6fdd14d")
+	)
+	(label "DS0"
+		(at 243.84 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb1cc07c-6d91-4ec9-950f-8639dabb820b")
+	)
+	(label "DS0"
+		(at 271.78 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec32a78b-73c2-4033-8db1-a462317b5882")
+	)
+	(label "X10"
+		(at 43.18 175.26 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eff182c9-4b08-481e-8ac4-ab826fbea934")
+	)
+	(label "Y1"
+		(at 241.3 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fc235aea-8522-47f2-8471-3a3f54bbe214")
+	)
+	(label "DS0"
+		(at 233.68 17.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe6be74b-baa4-4def-8895-a180be93d8eb")
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 33.02 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe61586")
+		(property "Reference" "CS13"
+			(at 33.02 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 33.02 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 38.1 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13d0f6bc-d6df-4c98-b281-83d98460c787")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 43.18 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe68c0c")
+		(property "Reference" "CS38"
+			(at 43.18 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 43.18 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 48.26 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4cffc946-5f4e-46ff-bb1a-072238f85358")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 53.34 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe6a98d")
+		(property "Reference" "CS63"
+			(at 53.34 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 53.34 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 58.42 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f544c77-d9e8-43af-b02d-517e7264fa6a")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 63.5 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe6dcd4")
+		(property "Reference" "CS88"
+			(at 63.5 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 63.5 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 68.58 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e649e17-5aeb-487d-a73c-3d9f243c75bc")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 73.66 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe70aa2")
+		(property "Reference" "CS113"
+			(at 73.66 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 73.66 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 78.74 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ca788a0-e8ab-4d42-9374-79a9088da950")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 83.82 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe73ae6")
+		(property "Reference" "CS138"
+			(at 83.82 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 83.82 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 88.9 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "111cbee3-2a7e-4302-8d5a-811175eae9da")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 93.98 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe77cd9")
+		(property "Reference" "CS163"
+			(at 93.98 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 93.98 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10ac4b11-0fed-4f45-b352-1703b4558dd2")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 104.14 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe7cb0e")
+		(property "Reference" "CS188"
+			(at 104.14 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 104.14 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 109.22 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b2e7ee1-6fd7-4d4d-becb-5b21cb8816e3")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS188")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 114.3 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe8275c")
+		(property "Reference" "CS213"
+			(at 114.3 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 114.3 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 119.38 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65e18726-5739-464c-bd7d-e847d757808c")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 124.46 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe89d8a")
+		(property "Reference" "CS238"
+			(at 124.46 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 124.46 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 129.54 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "980ac29a-eb80-4d2b-944b-fdda0b74d0d3")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS238")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 134.62 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe92495")
+		(property "Reference" "CS263"
+			(at 134.62 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 134.62 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 139.7 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f5df039-5d68-4062-a8c3-f48dc9cf9a9b")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS263")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 144.78 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fe9b45e")
+		(property "Reference" "CS288"
+			(at 144.78 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 144.78 24.7904 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 149.86 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0a2c44a-b7b1-4e72-a864-0b520bb05416")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS288")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 144.78 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005feffdbc")
+		(property "Reference" "CS12"
+			(at 22.479 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51c01c51-57f5-495e-92d6-d34b80d9db87")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 134.62 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005feffe23")
+		(property "Reference" "CS11"
+			(at 22.479 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a7b338f-b0f9-40ef-b3e1-bf29874a6f3b")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005feffe8a")
+		(property "Reference" "CS10"
+			(at 22.479 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "925cd2c8-6d03-400b-9ff9-e15a41d9d0c1")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005feffef1")
+		(property "Reference" "CS9"
+			(at 22.479 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2add14fd-4f2d-4a87-bb75-000715312a6e")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fefff58")
+		(property "Reference" "CS8"
+			(at 22.479 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c3af342-78e0-403a-8e98-4cc73d9470b0")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005fefffbf")
+		(property "Reference" "CS7"
+			(at 22.479 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c57bc2e8-8ecc-4478-865a-41c84d8aaada")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 83.82 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005ff00026")
+		(property "Reference" "CS6"
+			(at 22.479 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed094c19-dec4-4af3-b599-8a515592817f")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005ff0008d")
+		(property "Reference" "CS5"
+			(at 22.479 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "595201d4-d2e8-4cff-918f-3377d0dcb754")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005ff000f4")
+		(property "Reference" "CS4"
+			(at 22.479 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a989d5f6-51ea-4404-9d49-6ce25e362676")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005ff0015b")
+		(property "Reference" "CS3"
+			(at 22.479 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7cefd97-3293-4097-b973-5aa16cdbd8e1")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 43.18 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005ff001c2")
+		(property "Reference" "CS2"
+			(at 22.479 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51e01c8d-8915-44c3-a1aa-fd2e47599ee8")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:capsense_diamond_edge")
+		(at 27.94 33.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005ff00229")
+		(property "Reference" "CS1"
+			(at 22.479 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "capsense_diamond_edge"
+			(at 24.7904 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:capsense_column"
+			(at 27.94 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46f2a19e-b17b-4c3e-b8a0-4ca817ca387e")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 261.62 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05ed0f17-b7b3-4a91-9603-24118e011645")
+		(property "Reference" "#PWR02"
+			(at 261.62 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ac69a81-e7d8-4c3d-88de-5d2f34c49718")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:YXT-BB10-24P-02")
+		(at 256.54 83.82 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a727488-d730-4554-8247-f40e4ac2ad30")
+		(property "Reference" "CN3"
+			(at 262.1981 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "YXT-BB10-24P-02"
+			(at 262.1981 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "suku_basics:CONN-SMD_24P-P0.4-YXT-BB10-24P-02"
+			(at 256.54 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2763973.pdf"
+			(at 256.54 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YXT(益鑫通)"
+			(at 256.54 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "YXT-BB10-24P-02"
+			(at 256.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2763973"
+			(at 256.54 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "28"
+			(uuid "6d801604-bd3c-46d5-bae2-73147c5b0311")
+		)
+		(pin "27"
+			(uuid "72ff03d5-1cc4-4678-934b-1b133f1e4add")
+		)
+		(pin "26"
+			(uuid "ec945e56-6d22-4a8e-9324-bfba0f6320a3")
+		)
+		(pin "24"
+			(uuid "8af00c26-7859-4810-b5fd-378575c6f3de")
+		)
+		(pin "25"
+			(uuid "eb079142-fe07-4d3b-91fa-f702c3cb3204")
+		)
+		(pin "23"
+			(uuid "30a15bd2-2c19-4033-935f-8fda1b0106e0")
+		)
+		(pin "22"
+			(uuid "0e493a5d-5afa-4a14-a5ea-193a1ae700e6")
+		)
+		(pin "21"
+			(uuid "ff444e5b-e3ed-4acd-ae92-5f2a821e306e")
+		)
+		(pin "20"
+			(uuid "e665870c-6302-4196-88c4-4bbee7f223ff")
+		)
+		(pin "19"
+			(uuid "1c890f53-18a5-4a75-99d4-bd44af26177e")
+		)
+		(pin "18"
+			(uuid "f4ba43b2-38dd-4100-b10e-459f03435d39")
+		)
+		(pin "17"
+			(uuid "4d3b5534-b052-44d3-ac3a-a24d179d730e")
+		)
+		(pin "16"
+			(uuid "069face8-8833-48c8-87e0-8866e18852b6")
+		)
+		(pin "13"
+			(uuid "eadbaab9-5b05-48c0-b553-1400d389d087")
+		)
+		(pin "12"
+			(uuid "36d44487-2e15-43c6-a6df-27a180f96602")
+		)
+		(pin "11"
+			(uuid "7b37793f-e6a1-4262-b00d-f35c0c7ba1df")
+		)
+		(pin "10"
+			(uuid "84778b56-1372-4672-8bb0-1ab040d3f188")
+		)
+		(pin "9"
+			(uuid "5d8e3e1b-a046-417b-adb5-fad626bb7f0f")
+		)
+		(pin "8"
+			(uuid "6bbcdfd4-2a51-4d6e-b55e-6ea2a76d5ad2")
+		)
+		(pin "7"
+			(uuid "af88b7ee-f427-4098-b3e3-19f089cbec8a")
+		)
+		(pin "6"
+			(uuid "1cff91b1-6463-41d2-93af-a0ecf66e4c3a")
+		)
+		(pin "5"
+			(uuid "cf0b5bce-c378-47c2-9986-acbf6b80ede0")
+		)
+		(pin "4"
+			(uuid "c645ef04-b3fe-442e-89e5-2f2a8a4b8940")
+		)
+		(pin "3"
+			(uuid "44be72be-837c-4823-aac6-f052fd053d4f")
+		)
+		(pin "2"
+			(uuid "f130284a-9af0-48d2-8504-3759c60ee44b")
+		)
+		(pin "1"
+			(uuid "721560ca-f245-4f23-9020-4edd78f3d446")
+		)
+		(pin "15"
+			(uuid "6718a80f-e88b-40c3-8035-7b7fa1de9071")
+		)
+		(pin "14"
+			(uuid "ffe3af86-9598-4736-bd8f-2c9765fc0f6a")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CN3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:YXT-BB10-24P-02")
+		(at 203.2 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19649594-469b-47a0-8814-b9f54f335af4")
+		(property "Reference" "CN1"
+			(at 207.8833 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "YXT-BB10-24P-02"
+			(at 207.8833 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:CONN-SMD_24P-P0.4-YXT-BB10-24P-02"
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2763973.pdf"
+			(at 203.2 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YXT(益鑫通)"
+			(at 203.2 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "YXT-BB10-24P-02"
+			(at 203.2 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2763973"
+			(at 203.2 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "28"
+			(uuid "ca5c2c0b-2b60-434d-9f2e-239da440e52a")
+		)
+		(pin "27"
+			(uuid "fc19b59b-fca4-469d-b462-28f5dd0bfbe0")
+		)
+		(pin "26"
+			(uuid "07f18138-0faa-4ecb-b74c-90ab3920a790")
+		)
+		(pin "24"
+			(uuid "4eeaebd4-ac51-46a5-984f-ee5c551fd96d")
+		)
+		(pin "25"
+			(uuid "f7a638f1-579a-4032-8765-d4d37defa828")
+		)
+		(pin "23"
+			(uuid "751cd6f6-4da4-4c37-bde2-22a2d4073c2f")
+		)
+		(pin "22"
+			(uuid "3ca95fed-ad49-462b-b189-6bd5099d9db0")
+		)
+		(pin "21"
+			(uuid "255b75f0-dfd4-452d-9190-575e8b9a1c90")
+		)
+		(pin "20"
+			(uuid "91e641ef-7d4b-44be-a3a4-34d5bc7adb42")
+		)
+		(pin "19"
+			(uuid "2b069193-bf0e-46ac-a5a9-39bfa7c07b99")
+		)
+		(pin "18"
+			(uuid "32cfaf83-923f-410c-9a47-206e578b186f")
+		)
+		(pin "17"
+			(uuid "e5a2ef3e-a253-45a8-bf57-b8d7288b5cfb")
+		)
+		(pin "16"
+			(uuid "c878f791-96f9-4e61-9420-cc26daa37a7d")
+		)
+		(pin "13"
+			(uuid "a83fff79-39b9-4295-abe0-1e1970a4deef")
+		)
+		(pin "12"
+			(uuid "508601ca-f689-4859-b616-67520505ba9a")
+		)
+		(pin "11"
+			(uuid "4e23b115-1eab-4b81-9cdd-9bbeed90721b")
+		)
+		(pin "10"
+			(uuid "b278f099-7130-4296-8b53-c7365ca12d88")
+		)
+		(pin "9"
+			(uuid "10301383-4e19-4a90-8ad8-df604262089b")
+		)
+		(pin "8"
+			(uuid "8252031a-a24e-442a-8b21-343892b5884d")
+		)
+		(pin "7"
+			(uuid "788f55d6-0de6-4a6f-bba1-67362110f6e9")
+		)
+		(pin "6"
+			(uuid "186d0415-689c-4aaf-bc61-eb078efa279b")
+		)
+		(pin "5"
+			(uuid "ca932504-29ea-431b-bc8e-69313102881e")
+		)
+		(pin "4"
+			(uuid "d83fc940-3b67-4a13-9fda-b266283663dc")
+		)
+		(pin "3"
+			(uuid "36ac8ff7-bfb4-4815-b71d-f3fffda8ec26")
+		)
+		(pin "2"
+			(uuid "2b33ab93-ec0d-4813-a58b-c6843edc56e5")
+		)
+		(pin "1"
+			(uuid "fd2cb85c-b32f-49be-a839-467f45f5a10b")
+		)
+		(pin "15"
+			(uuid "b5655091-eab9-423f-bae8-8103bf9380d5")
+		)
+		(pin "14"
+			(uuid "72edceaf-574f-44c3-ad6d-e11a06360cbf")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:YXT-BB10-24P-02")
+		(at 231.14 137.16 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c505252-7b96-4106-980d-339371a5fa1a")
+		(property "Reference" "CN2"
+			(at 257.81 129.1746 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "YXT-BB10-24P-02"
+			(at 257.81 131.7146 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:CONN-SMD_24P-P0.4-YXT-BB10-24P-02"
+			(at 259.08 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2763973.pdf"
+			(at 261.62 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YXT(益鑫通)"
+			(at 264.16 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "YXT-BB10-24P-02"
+			(at 266.7 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2763973"
+			(at 269.24 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "28"
+			(uuid "0c757ec3-266f-4d24-8e44-fc2afcf927f4")
+		)
+		(pin "27"
+			(uuid "e24fffd7-901e-4716-9f28-ef70e12e2e79")
+		)
+		(pin "26"
+			(uuid "9f1beaf5-814e-47ac-a3fa-5885bf5306b1")
+		)
+		(pin "24"
+			(uuid "eb4f23f0-6245-4745-a5af-41a3f684a0b6")
+		)
+		(pin "25"
+			(uuid "1867fbd4-92de-4122-b5f0-98143e0c0210")
+		)
+		(pin "23"
+			(uuid "cd34a579-fe3c-4b4f-afe0-73bb21a7d99f")
+		)
+		(pin "22"
+			(uuid "e3d4e224-6ed8-4d1e-b02c-6f12da0ab1c0")
+		)
+		(pin "21"
+			(uuid "bb3eaa2b-5a96-4ec2-8139-d2b0abbb7b15")
+		)
+		(pin "20"
+			(uuid "d72f6eea-514c-4e0c-8535-2954f772c699")
+		)
+		(pin "19"
+			(uuid "544b0cf8-5839-4f8c-b4e7-1a2231eb7cca")
+		)
+		(pin "18"
+			(uuid "e6e204b9-978c-4690-8ca5-3a95f64de1ae")
+		)
+		(pin "17"
+			(uuid "c5b8770f-56f1-426c-a5eb-2afcc842bd01")
+		)
+		(pin "16"
+			(uuid "e356aab1-6a4b-429d-83b2-dbecad462875")
+		)
+		(pin "13"
+			(uuid "4bfbca86-06ff-48b5-9c7f-727a2fd22a61")
+		)
+		(pin "12"
+			(uuid "70af9a5c-0a55-4f87-8c04-d0e6ea5e7464")
+		)
+		(pin "11"
+			(uuid "3aa61074-5699-43a2-9605-ce9d21743591")
+		)
+		(pin "10"
+			(uuid "dfe413cc-1d6a-4174-a07a-b0909d4c7588")
+		)
+		(pin "9"
+			(uuid "61b83ebf-523f-4065-b961-5531f4dde96a")
+		)
+		(pin "8"
+			(uuid "c1f90854-544e-44ad-8018-6b9b28df9cf1")
+		)
+		(pin "7"
+			(uuid "2fcb5d4a-ff24-4c4c-bd62-94cf8bc3a106")
+		)
+		(pin "6"
+			(uuid "b4140d15-4007-484b-b5ee-63612be011d8")
+		)
+		(pin "5"
+			(uuid "ff55196a-ebef-47c7-80cb-f3fadaec3868")
+		)
+		(pin "4"
+			(uuid "c9f91eb9-5f02-46d6-9c91-e5650bc3b683")
+		)
+		(pin "3"
+			(uuid "74133ed3-44c8-4e4a-aeef-4747d9851e76")
+		)
+		(pin "2"
+			(uuid "c90821c4-1975-497f-b83f-c7a27ba29ab0")
+		)
+		(pin "1"
+			(uuid "ff394827-565e-4c5a-8da2-deb81161680f")
+		)
+		(pin "15"
+			(uuid "76954688-3c1b-471b-b689-ff768cac6f07")
+		)
+		(pin "14"
+			(uuid "83c32d10-ed26-4804-ab51-e8d624494f2a")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "suku_basics:YXT-BB10-24P-02")
+		(at 228.6 33.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e3e2057-2ee3-4d49-9281-24484d0f2c62")
+		(property "Reference" "CN4"
+			(at 257.81 24.0598 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "YXT-BB10-24P-02"
+			(at 257.81 26.5998 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "suku_basics:CONN-SMD_24P-P0.4-YXT-BB10-24P-02"
+			(at 200.66 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2763973.pdf"
+			(at 198.12 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YXT(益鑫通)"
+			(at 195.58 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "YXT-BB10-24P-02"
+			(at 193.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2763973"
+			(at 190.5 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "28"
+			(uuid "35e64d02-2698-4585-8c12-f29964492fd0")
+		)
+		(pin "27"
+			(uuid "e8c3e92a-aeb9-44a7-acf0-9d18b7c96665")
+		)
+		(pin "26"
+			(uuid "35497dcb-d9d8-4542-a859-55b213537ef6")
+		)
+		(pin "24"
+			(uuid "512d4683-560c-4c21-a97a-9583e3c11eb0")
+		)
+		(pin "25"
+			(uuid "8f5cad64-afaf-4282-b82d-95d5ac3689f4")
+		)
+		(pin "23"
+			(uuid "6e3701bc-60dd-4951-968b-86030e364f55")
+		)
+		(pin "22"
+			(uuid "a679ae03-7960-43c3-a728-9bac88f1fb6a")
+		)
+		(pin "21"
+			(uuid "ba52f5c1-4944-4a2f-b5b0-fd8d246de628")
+		)
+		(pin "20"
+			(uuid "2d9f63e2-adbb-4907-8012-e143e711b346")
+		)
+		(pin "19"
+			(uuid "e9a3b4f9-b377-4e48-a366-d59428c31025")
+		)
+		(pin "18"
+			(uuid "71197c1a-1a31-4ec4-a491-be9463eb8517")
+		)
+		(pin "17"
+			(uuid "060dbf5f-26e4-4b5e-ba74-2d9dade6151f")
+		)
+		(pin "16"
+			(uuid "ce139bf9-8d47-4cee-97dd-012c4d176a0e")
+		)
+		(pin "13"
+			(uuid "4fa30296-ae40-4a79-b305-0111231250a6")
+		)
+		(pin "12"
+			(uuid "3915dc2e-5be6-488a-aac7-e41e094a19c0")
+		)
+		(pin "11"
+			(uuid "1b1ad74e-f7ea-448a-bd2e-1396303137c7")
+		)
+		(pin "10"
+			(uuid "0d12a1e6-2fb7-4a9f-8660-cd21198dfe69")
+		)
+		(pin "9"
+			(uuid "c34ee010-e795-456c-9390-757ec17b86e6")
+		)
+		(pin "8"
+			(uuid "8172df1e-bf71-4c85-b75a-d2d01358e3bb")
+		)
+		(pin "7"
+			(uuid "9d8e2c51-ddba-4d14-90de-9c5fd017be49")
+		)
+		(pin "6"
+			(uuid "72066674-1f66-495b-9042-ff9cb1bbab19")
+		)
+		(pin "5"
+			(uuid "5c1ba0ca-985b-431b-9887-aec5841b9366")
+		)
+		(pin "4"
+			(uuid "d9c04f1e-0f29-4547-a659-d8a984ad05e0")
+		)
+		(pin "3"
+			(uuid "5b8df6cf-8f19-4d1b-8dc1-81214758bfe6")
+		)
+		(pin "2"
+			(uuid "d5dfc08f-3eea-4c5a-a2be-b27203c12b81")
+		)
+		(pin "1"
+			(uuid "714d4f1c-ca33-497f-8b4a-8d3d0da1bcd2")
+		)
+		(pin "15"
+			(uuid "24550517-9f19-4849-baca-c4d2ec9b63fa")
+		)
+		(pin "14"
+			(uuid "c6b9f07b-9977-4fae-bcfe-527c5adf3e1f")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "CN4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 266.7 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "960f1d5d-1ceb-48b4-ae19-98989a12e565")
+		(property "Reference" "#FLG01"
+			(at 266.7 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 266.7 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 266.7 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aac7d078-e372-4225-9773-a6a20b83d461")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97648264-5740-4529-9f09-e067e043a1e6")
+		(property "Reference" "#PWR01"
+			(at 266.7 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1c58581-b637-4973-b8e5-740fa9006ce3")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 261.62 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e669e475-b1fc-4af1-b44e-28e6d57fb3dd")
+		(property "Reference" "H1"
+			(at 264.16 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 264.16 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "suku_basics:zona-edgeplate-via"
+			(at 261.62 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 261.62 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e2dac49-75e7-4f29-9c62-a81df16afaed")
+		)
+		(instances
+			(project "PCBA-ZONA-TOUCH"
+				(path "/e3c502e7-8901-4419-990e-28ca3fa80e2b"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

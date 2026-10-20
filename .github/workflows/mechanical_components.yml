@@ -112,18 +112,23 @@ jobs:
       run: |
         find Mechanical/Design/${{ matrix.component }}/ -maxdepth 1 -name "${{ matrix.component }}*" ! -name "*.FCStd" ! -name "*.FCBak" -exec cp {} temp/ \; || true
 
+    - name: Zip generated artifacts
+      run: |
+        cd temp
+        zip "${{ matrix.component }}.zip" ${{ matrix.component }}*.* || true
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: "result_${{ matrix.component }}_${{ env.action_date }}"
         path: |
-          temp/${{ matrix.component }}*.*
-          !temp/${{ matrix.component }}*.stl
-          !temp/${{ matrix.component }}*_reverse.png
+          temp/${{ matrix.component }}.zip
+          temp/${{ matrix.component }}.png
+        if-no-files-found: warn
 
   deploy-results:
     needs: generate-artifacts
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     uses: ./.github/workflows/deploy_nightly_release.yml
     with:
       release_name: "Nightly Mechanical"

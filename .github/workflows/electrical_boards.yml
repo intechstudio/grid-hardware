@@ -11,8 +11,60 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # Fast pre-flight gate: every design must have front AND back silkscreen.
+  # An empty silk layer makes the manufacturer suspect a bad gerber export and
+  # delays production, so if any board fails this the whole matrix is skipped —
+  # no gerbers are exported until the silkscreen is fixed.
+  silkscreen-check:
+    name: silkscreen gate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check silkscreen layers
+      run: ./Electrical/Design/check_silkscreen.sh
+
+  # Fast pre-flight gate, one matrix leg per design: everything that's
+  # supposed to stay in sync with the golden-standard baseline (set once,
+  # below — not hardcoded into the checker scripts) is checked comparatively
+  # against it; annotation and zone-outline-grid alignment are absolute
+  # (non-comparative) checks, since they validate a design's own internal
+  # consistency rather than agreement with another design. Add a design to
+  # the matrix to bring it under the same gate.
+  preflight-check:
+    name: preflight (${{ matrix.design }})
+    needs: silkscreen-check
+    runs-on: ubuntu-latest
+    env:
+      BASELINE_DESIGN: PCBA-EF44
+    strategy:
+      fail-fast: false
+      matrix:
+        design:
+          - PCBA-EF44
+          - PCBA-BU16
+          - PCBA-PO16
+          - PCBA-ZONA
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check schematic drift (vs baseline)
+      run: |
+        ./Electrical/Design/check_schematic_drift.py \
+          --designs "Electrical/Design/$BASELINE_DESIGN" "Electrical/Design/${{ matrix.design }}" \
+          --sheets USB_POWER GRID MCU
+    - name: Check DRC/ERC settings drift (vs baseline)
+      run: |
+        ./Electrical/Design/check_design_rules_drift.py \
+          --designs "Electrical/Design/$BASELINE_DESIGN" "Electrical/Design/${{ matrix.design }}"
+    - name: Check annotation (absolute, not comparative)
+      run: |
+        ./Electrical/Design/check_annotation.py --project "Electrical/Design/${{ matrix.design }}"
+    - name: Check zone outline grid alignment (absolute, not comparative)
+      run: |
+        ./Electrical/Design/check_zone_grid.py --project "Electrical/Design/${{ matrix.design }}"
+
   generate-artifacts:
     name: kicad export
+    needs: [silkscreen-check, preflight-check]
     runs-on: ubuntu-latest
     container: "ghcr.io/inti-cmnb/kicad10_auto_full:dev"
     strategy:
@@ -26,6 +78,7 @@ jobs:
         - 'PCBA-BU16-SPACER'
         - 'PCBA-BU16-PLATE'
         - 'PCBA-PO16'
+        - 'PCBA-ZONA'
         - 'PCBA-PBF4'
         - 'PCBA-PBF4-SPACER'
         - 'PCBA-PBF4-PLATE'
@@ -39,18 +92,22 @@ jobs:
         - 'PCBA-OCTV'
         - 'PCBA-OCTV-SPACER'
         - 'PCBA-OCTV-PLATE'
-        - 'PCBA-XY-TOUCH'
+        - 'PCBA-ZONA-TOUCH'
+        - 'PCBA-ZONA-LED'
         - 'FP-XX16'
+        - 'FP-XX16-DJ'
         - 'FP-BU16'
         - 'FP-PBF4'
+        - 'FP-PBF4-DJ'
         - 'FP-EF44'
         - 'FP-VSN1-L'
         - 'FP-VSN1-R'
         - 'FP-TEK2'
         - 'FP-VSN2'
         - 'FP-OCTV'
-        - 'FP-XY'
-        - 'FP-XY-SPACER'
+        - 'FP-ZONA'
+        - 'FP-ZONA-SPACER'
+        - 'FP-ZONA-DECOR'
         - 'FP-BU16-MIDIGRADE'
         - 'FP-EN16-MIDIGRADE'
         - 'FP-TEK2-CLASSIC'
@@ -59,6 +116,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Patch kibot ibom regression
+      run: |
+        sed -i 's/if hasattr(c, .parent_sheet.):/if hasattr(c, "parent_sheet") and c.parent_sheet is not None:/' \
+          /usr/local/lib/python3.13/dist-packages/kibot/kicad/v5_sch.py
 
     - name: Run PCB stuff
       run: |
@@ -127,7 +189,7 @@ jobs:
 
   deploy-results:
     needs: generate-artifacts
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     uses: ./.github/workflows/deploy_nightly_release.yml
     with:
       release_name: "Nightly Electrical"
