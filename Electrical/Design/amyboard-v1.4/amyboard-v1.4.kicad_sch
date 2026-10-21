@@ -4768,124 +4768,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "amyboard-v1.4-eagle-import:+3V3"
-			(power global)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#+3V3"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -2.54 -5.08 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "SUPPLY SYMBOL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3V3_1_0"
-				(polyline
-					(pts
-						(xy 0 0) (xy -1.27 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.905) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "+3V3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12VA"
 			(power global)
 			(pin_numbers
@@ -5667,6 +5549,121 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -11312,6 +11309,12 @@
 		(uuid "0d264904-e341-4560-99f3-2364f18c412f")
 	)
 	(junction
+		(at 71.12 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d7d4c76-14e8-431a-944c-a77bf5e5b9ce")
+	)
+	(junction
 		(at 142.24 259.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11376,6 +11379,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29c343cb-8f2b-47ec-942a-babd67c059d8")
+	)
+	(junction
+		(at 233.68 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e66721c-322c-4ba9-9ce2-b7db43648ff8")
+	)
+	(junction
+		(at 309.88 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30e2e6cd-30bf-4596-adf8-9d544e4d6ae9")
 	)
 	(junction
 		(at 332.74 147.32)
@@ -11502,6 +11517,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51f899d6-4162-4d8c-8bfa-e51f308236e9")
+	)
+	(junction
+		(at 309.88 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "521067fe-8728-4576-a793-135f7346326a")
 	)
 	(junction
 		(at 281.94 68.58)
@@ -11666,6 +11687,12 @@
 		(uuid "7d9410a0-0af1-4d2a-89d3-62c63b033295")
 	)
 	(junction
+		(at 71.12 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e425c27-77a6-4313-9cc7-541a196afe52")
+	)
+	(junction
 		(at 269.24 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11694,6 +11721,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89ebd8f1-2d40-44a4-924c-7d7beeec05ad")
+	)
+	(junction
+		(at 226.06 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a4622ca-58d7-4862-a6d3-87c6ffd382fc")
 	)
 	(junction
 		(at 142.24 609.6)
@@ -11868,12 +11901,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8fc8633-6b38-435a-b499-c1ed9792e3b9")
-	)
-	(junction
-		(at 226.06 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a90af31f-787a-4f30-a01f-bb357bc34430")
 	)
 	(junction
 		(at 434.34 510.54)
@@ -12132,24 +12159,104 @@
 		(uuid "0e7c5532-cf11-4aa0-b31f-c6f04dd8ec54")
 	)
 	(no_connect
+		(at 477.52 513.08)
+		(uuid "12e4bbe5-539b-4707-a00d-344151f259d7")
+	)
+	(no_connect
+		(at 248.92 538.48)
+		(uuid "1a54ea34-625c-46d7-b198-0dd2a2240409")
+	)
+	(no_connect
+		(at 477.52 576.58)
+		(uuid "1dcc3b7c-60dc-42a3-9b2b-e6d50f44fbd4")
+	)
+	(no_connect
 		(at 474.98 332.74)
 		(uuid "1eb13268-a8bd-4c65-89bc-5b90451eac7f")
+	)
+	(no_connect
+		(at 477.52 523.24)
+		(uuid "239120a9-0c45-4ebf-b21d-4969e5750017")
 	)
 	(no_connect
 		(at 165.1 358.14)
 		(uuid "26832f92-aa15-4b88-9e03-0ac7e272c54b")
 	)
 	(no_connect
+		(at 477.52 566.42)
+		(uuid "28f65c64-8f74-4bf9-8c57-688a550d35be")
+	)
+	(no_connect
 		(at 205.74 335.28)
 		(uuid "3744f739-52e0-4bee-b9e2-3a94a4b8b72f")
+	)
+	(no_connect
+		(at 119.38 261.62)
+		(uuid "37c6b75b-78ca-482f-bec7-473141fca737")
 	)
 	(no_connect
 		(at 68.58 109.22)
 		(uuid "3e95dfe7-1a1f-4db4-aa41-926415bcafa2")
 	)
 	(no_connect
+		(at 243.84 314.96)
+		(uuid "42fb395f-956b-4e6d-bf27-e08ca9b84def")
+	)
+	(no_connect
+		(at 35.56 487.68)
+		(uuid "46299892-67cf-4757-819a-9ef138b7537f")
+	)
+	(no_connect
+		(at 83.82 457.2)
+		(uuid "4aee6c7e-947f-4370-8d1f-67b6897a66c9")
+	)
+	(no_connect
+		(at -30.48 459.74)
+		(uuid "4cb2ebe9-0e8e-4b3c-a503-a24d8ddc7927")
+	)
+	(no_connect
+		(at 50.8 429.26)
+		(uuid "5000f09c-1d39-488e-aad7-59983af0f6aa")
+	)
+	(no_connect
+		(at 477.52 551.18)
+		(uuid "56108c32-1f32-47aa-a95e-c0a6aa531f9e")
+	)
+	(no_connect
+		(at 243.84 309.88)
+		(uuid "57fbc5a2-e00f-47f7-aba2-ef3c31fa9bcc")
+	)
+	(no_connect
+		(at 477.52 568.96)
+		(uuid "582edcc7-6df6-497d-8a45-369246701fdc")
+	)
+	(no_connect
+		(at 50.8 431.8)
+		(uuid "5e0769e1-dd3f-4a33-9600-274e5c2936b7")
+	)
+	(no_connect
+		(at 35.56 528.32)
+		(uuid "63599d33-50b6-44e4-8089-a02ca5942595")
+	)
+	(no_connect
+		(at 124.46 594.36)
+		(uuid "64a79c90-3ab1-45f5-8860-bbd3e2c7285f")
+	)
+	(no_connect
 		(at 116.84 180.34)
 		(uuid "66b384e9-26cf-4343-b058-f181e9f14a3b")
+	)
+	(no_connect
+		(at 477.52 589.28)
+		(uuid "6cf50743-4ec0-4c56-a5e5-7c4d151da1ec")
+	)
+	(no_connect
+		(at 477.52 574.04)
+		(uuid "7460a5d7-d7ed-4fef-9c0d-3dd4f60606af")
+	)
+	(no_connect
+		(at 477.52 520.7)
+		(uuid "78fed171-fea1-420c-a3d1-dcc8aba6e229")
 	)
 	(no_connect
 		(at 50.8 124.46)
@@ -12168,12 +12275,36 @@
 		(uuid "849e2ef8-df2a-496d-860f-d15bd09cc19c")
 	)
 	(no_connect
+		(at 477.52 571.5)
+		(uuid "87de3693-6f9a-4e22-837d-7d5960ac1128")
+	)
+	(no_connect
 		(at 68.58 106.68)
 		(uuid "882852e0-a0db-48f7-be60-8cae6bd5a36c")
 	)
 	(no_connect
+		(at 35.56 492.76)
+		(uuid "8c969c63-ac13-401b-bc1a-42873c1675f6")
+	)
+	(no_connect
 		(at 474.98 360.68)
 		(uuid "8d8d7632-5478-4d7a-ab6f-691f70cab414")
+	)
+	(no_connect
+		(at 35.56 490.22)
+		(uuid "8f683c45-3374-483a-93c2-34d2e7c0a1c8")
+	)
+	(no_connect
+		(at 119.38 264.16)
+		(uuid "92691edd-b390-42e4-bada-480f3c4d11f2")
+	)
+	(no_connect
+		(at 35.56 523.24)
+		(uuid "9d38563a-d641-4b02-a750-9c5779a49f26")
+	)
+	(no_connect
+		(at 477.52 528.32)
+		(uuid "9e537a4e-04f0-43fc-bb7b-c329514d7e93")
 	)
 	(no_connect
 		(at 474.98 408.94)
@@ -12188,6 +12319,10 @@
 		(uuid "bf0a48a2-2176-437f-aa4c-5de12142b61c")
 	)
 	(no_connect
+		(at 35.56 525.78)
+		(uuid "c3f815f0-5e2c-46ab-85e9-f988686c933e")
+	)
+	(no_connect
 		(at 474.98 363.22)
 		(uuid "cf2d5dd9-7ed6-4fed-ab57-6e0288795058")
 	)
@@ -12200,6 +12335,14 @@
 		(uuid "d1306468-6bc4-4cdf-b07c-8f3f93784b55")
 	)
 	(no_connect
+		(at 248.92 535.94)
+		(uuid "d480e8fc-fcd8-4f70-9eb4-3bf52d84a2f5")
+	)
+	(no_connect
+		(at 243.84 312.42)
+		(uuid "d5027729-6ccf-405a-9186-e881e22d7f64")
+	)
+	(no_connect
 		(at 474.98 335.28)
 		(uuid "d979e7b1-2d2f-4186-9ebc-04467bf9ec8a")
 	)
@@ -12208,8 +12351,28 @@
 		(uuid "da44de38-12ff-4ee5-8735-611366ac351e")
 	)
 	(no_connect
+		(at 477.52 586.74)
+		(uuid "dcae8b44-c029-40ad-be47-d80e46ecfdd1")
+	)
+	(no_connect
+		(at 477.52 591.82)
+		(uuid "dce19755-6956-450f-81b2-0f8c0cdc7011")
+	)
+	(no_connect
 		(at 205.74 332.74)
 		(uuid "e4730dc3-9243-4d34-a4f4-e9256449d03a")
+	)
+	(no_connect
+		(at 119.38 266.7)
+		(uuid "e7587f65-5d6e-4ad1-a561-2300a5a41ac9")
+	)
+	(no_connect
+		(at -30.48 457.2)
+		(uuid "fa528c67-44b1-475b-8ac9-dbf6fb2c8818")
+	)
+	(no_connect
+		(at 477.52 584.2)
+		(uuid "ffaa0b78-cac7-422d-ae99-9a9f1cf5965b")
 	)
 	(wire
 		(pts
@@ -12743,6 +12906,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 114.3) (xy 71.12 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "119841d7-7c7f-4263-af08-3b3abc2cae52")
+	)
+	(wire
+		(pts
 			(xy 208.28 363.22) (xy 208.28 365.76)
 		)
 		(stroke
@@ -12780,6 +12953,16 @@
 			(type solid)
 		)
 		(uuid "130f7857-e53d-4cc1-b191-cf0e8cf6d1b8")
+	)
+	(wire
+		(pts
+			(xy 309.88 86.36) (xy 309.88 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1312e159-375e-40e7-87c0-3bc78ef8d020")
 	)
 	(wire
 		(pts
@@ -13603,6 +13786,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.88 58.42) (xy 312.42 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c781874-9279-4ed7-9b93-69ba7cb26594")
+	)
+	(wire
+		(pts
 			(xy 177.8 88.9) (xy 182.88 88.9)
 		)
 		(stroke
@@ -13993,6 +14186,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 111.76) (xy 76.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3643aa7b-9d20-467c-a5c5-f9a4c74542d4")
+	)
+	(wire
+		(pts
 			(xy 477.52 561.34) (xy 513.08 561.34)
 		)
 		(stroke
@@ -14130,6 +14333,16 @@
 			(type default)
 		)
 		(uuid "39c50962-2d39-4c44-86ef-b2b0481d89c9")
+	)
+	(wire
+		(pts
+			(xy 309.88 88.9) (xy 312.42 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a656615-8132-4c3b-ba7a-8f34c2e45746")
 	)
 	(wire
 		(pts
@@ -15293,6 +15506,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 147.32) (xy 236.22 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62c19720-1339-46ee-b365-8d34d74da619")
+	)
+	(wire
+		(pts
 			(xy 439.42 396.24) (xy 441.96 396.24)
 		)
 		(stroke
@@ -15473,7 +15696,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 78.74) (xy 68.58 78.74)
+			(xy 76.2 78.74) (xy 71.12 78.74)
 		)
 		(stroke
 			(width 0)
@@ -16643,7 +16866,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 58.42) (xy 312.42 58.42)
+			(xy 292.1 58.42) (xy 309.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -16790,6 +17013,16 @@
 			(type default)
 		)
 		(uuid "8dec96d4-9e0f-43a5-b63d-02beec6f229e")
+	)
+	(wire
+		(pts
+			(xy 309.88 55.88) (xy 309.88 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e06a7bd-022a-4845-8a5d-8a349db03279")
 	)
 	(wire
 		(pts
@@ -17453,7 +17686,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 147.32) (xy 228.6 147.32)
+			(xy 226.06 147.32) (xy 233.68 147.32)
 		)
 		(stroke
 			(width 0)
@@ -17770,6 +18003,16 @@
 			(type solid)
 		)
 		(uuid "ae465e33-1f8f-4cd0-902a-ab5d86300666")
+	)
+	(wire
+		(pts
+			(xy 71.12 76.2) (xy 71.12 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef4244e-be77-4fb4-99ab-0a032015b20f")
 	)
 	(wire
 		(pts
@@ -18340,6 +18583,16 @@
 			(type default)
 		)
 		(uuid "c5941a56-2b87-4b8b-9a91-e0c35354ac5b")
+	)
+	(wire
+		(pts
+			(xy 71.12 78.74) (xy 68.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5a64331-5923-40fa-b2f6-6c2e82fd942b")
 	)
 	(wire
 		(pts
@@ -19213,7 +19466,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 88.9) (xy 312.42 88.9)
+			(xy 302.26 88.9) (xy 309.88 88.9)
 		)
 		(stroke
 			(width 0)
@@ -19330,6 +19583,16 @@
 			(type solid)
 		)
 		(uuid "ec0edd33-21f4-4bd3-a660-ec7720842a37")
+	)
+	(wire
+		(pts
+			(xy 233.68 144.78) (xy 233.68 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec248b6e-cb85-42dd-9bb9-acee6cf93946")
 	)
 	(wire
 		(pts
@@ -21791,8 +22054,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 289.56 307.34 0)
+		(lib_id "power:+3V3")
+		(at 289.56 309.88 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -21803,7 +22066,7 @@
 		(dnp no)
 		(uuid "088fcf51-9a4b-4341-bd79-70f0f1981700")
 		(property "Reference" "#+3V031"
-			(at 289.56 307.34 0)
+			(at 289.56 309.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21814,7 +22077,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 289.56 304.8 0)
+			(at 289.56 307.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21824,7 +22087,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 289.56 307.34 0)
+			(at 289.56 309.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21835,7 +22098,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 289.56 307.34 0)
+			(at 289.56 309.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21846,7 +22109,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 289.56 307.34 0)
+			(at 289.56 309.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21947,8 +22210,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 96.52 551.18 0)
+		(lib_id "power:+3V3")
+		(at 96.52 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21958,7 +22221,7 @@
 		(dnp no)
 		(uuid "0c1d2250-c0fc-4122-a322-d99044d96d73")
 		(property "Reference" "#+3V021"
-			(at 96.52 551.18 0)
+			(at 96.52 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21969,7 +22232,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 96.52 548.64 90)
+			(at 96.52 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21980,7 +22243,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 551.18 0)
+			(at 96.52 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21991,7 +22254,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 551.18 0)
+			(at 96.52 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22002,7 +22265,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 96.52 551.18 0)
+			(at 96.52 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22103,8 +22366,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 86.36 551.18 0)
+		(lib_id "power:+3V3")
+		(at 86.36 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22114,7 +22377,7 @@
 		(dnp no)
 		(uuid "0d6197c6-3cd3-421a-83e4-bd566673b46a")
 		(property "Reference" "#+3V023"
-			(at 86.36 551.18 0)
+			(at 86.36 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22125,7 +22388,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 86.36 548.64 90)
+			(at 86.36 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22136,7 +22399,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 551.18 0)
+			(at 86.36 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22147,7 +22410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 551.18 0)
+			(at 86.36 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22158,7 +22421,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 551.18 0)
+			(at 86.36 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24219,8 +24482,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 441.96 482.6 0)
+		(lib_id "power:+3V3")
+		(at 441.96 485.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24230,7 +24493,7 @@
 		(dnp no)
 		(uuid "1ea68f13-1f04-4e94-82f2-67c323a5fa71")
 		(property "Reference" "#+3V14"
-			(at 441.96 482.6 0)
+			(at 441.96 485.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24241,7 +24504,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 441.96 480.06 0)
+			(at 441.96 482.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24252,7 +24515,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 441.96 482.6 0)
+			(at 441.96 485.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24263,7 +24526,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 441.96 482.6 0)
+			(at 441.96 485.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24274,7 +24537,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 441.96 482.6 0)
+			(at 441.96 485.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25130,8 +25393,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 284.48 355.6 0)
+		(lib_id "power:+3V3")
+		(at 284.48 358.14 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -25142,7 +25405,7 @@
 		(dnp no)
 		(uuid "24f87eb1-767b-40d3-ab12-f01fcb98b332")
 		(property "Reference" "#+3V029"
-			(at 284.48 355.6 0)
+			(at 284.48 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25153,7 +25416,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 281.94 350.52 0)
+			(at 281.94 353.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25164,7 +25427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 284.48 355.6 0)
+			(at 284.48 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25175,7 +25438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 284.48 355.6 0)
+			(at 284.48 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25186,7 +25449,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 284.48 355.6 0)
+			(at 284.48 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25209,8 +25472,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 63.5 170.18 0)
+		(lib_id "power:+3V3")
+		(at 63.5 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25220,7 +25483,7 @@
 		(dnp no)
 		(uuid "25fcf54f-0e3e-48ee-86b3-2a6b52cb76a1")
 		(property "Reference" "#+3V015"
-			(at 63.5 170.18 0)
+			(at 63.5 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25231,7 +25494,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 66.294 168.148 90)
+			(at 66.294 170.688 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25242,7 +25505,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 170.18 0)
+			(at 63.5 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25253,7 +25516,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 170.18 0)
+			(at 63.5 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25264,7 +25527,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 170.18 0)
+			(at 63.5 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25570,8 +25833,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 48.26 551.18 0)
+		(lib_id "power:+3V3")
+		(at 48.26 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25581,7 +25844,7 @@
 		(dnp no)
 		(uuid "2a1e4bf2-cacc-45bb-bbd0-7e32297cd6d1")
 		(property "Reference" "#+3V017"
-			(at 48.26 551.18 0)
+			(at 48.26 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25592,7 +25855,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 48.26 548.64 0)
+			(at 48.26 551.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25603,7 +25866,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 551.18 0)
+			(at 48.26 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25614,7 +25877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 551.18 0)
+			(at 48.26 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25625,7 +25888,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 551.18 0)
+			(at 48.26 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27803,8 +28066,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 55.88 314.96 0)
+		(lib_id "power:+3V3")
+		(at 55.88 317.5 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -27815,7 +28078,7 @@
 		(dnp no)
 		(uuid "3c170981-9876-4293-a984-6a42c141795f")
 		(property "Reference" "#+3V038"
-			(at 55.88 314.96 0)
+			(at 55.88 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27826,7 +28089,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 55.88 312.42 0)
+			(at 55.88 314.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27836,7 +28099,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 314.96 0)
+			(at 55.88 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27847,7 +28110,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 314.96 0)
+			(at 55.88 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27858,7 +28121,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 314.96 0)
+			(at 55.88 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28511,6 +28774,84 @@
 			(project "amyboard-v1.4"
 				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
 					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 71.12 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4092699c-5ca2-4a80-ab40-05a7ee0e2b2e")
+		(property "Reference" "#FLG01"
+			(at 71.12 74.295 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 71.12 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 71.12 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c1df214-f9de-444b-8f33-9d865c03288c")
+		)
+		(instances
+			(project "amyboard-v1.4"
+				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -29418,8 +29759,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 276.86 419.1 0)
+		(lib_id "power:+3V3")
+		(at 276.86 421.64 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -29430,7 +29771,7 @@
 		(dnp no)
 		(uuid "4d4c0a8c-afee-4260-8147-51003714c74e")
 		(property "Reference" "#+3V027"
-			(at 276.86 419.1 0)
+			(at 276.86 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29441,7 +29782,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 274.066 417.068 90)
+			(at 274.066 419.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29452,7 +29793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 419.1 0)
+			(at 276.86 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29463,7 +29804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 419.1 0)
+			(at 276.86 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29474,7 +29815,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 276.86 419.1 0)
+			(at 276.86 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30208,6 +30549,84 @@
 			(project "amyboard-v1.4"
 				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
 					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 76.2 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54415434-215f-4dcd-b930-8f69fb8b1add")
+		(property "Reference" "#FLG04"
+			(at 76.2 109.855 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 76.2 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 76.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76d763b5-9fcd-46c9-8152-6e0f0a192676")
+		)
+		(instances
+			(project "amyboard-v1.4"
+				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -31569,8 +31988,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 132.08 358.14 0)
+		(lib_id "power:+3V3")
+		(at 132.08 360.68 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -31581,7 +32000,7 @@
 		(dnp no)
 		(uuid "627fd551-ebdb-4575-a3cc-55a5de739e8e")
 		(property "Reference" "#+3V033"
-			(at 132.08 358.14 0)
+			(at 132.08 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31592,7 +32011,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 132.08 355.6 0)
+			(at 132.08 358.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31602,7 +32021,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 358.14 0)
+			(at 132.08 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31613,7 +32032,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 358.14 0)
+			(at 132.08 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31624,7 +32043,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 358.14 0)
+			(at 132.08 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32475,8 +32894,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 302.26 350.52 0)
+		(lib_id "power:+3V3")
+		(at 302.26 353.06 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -32487,7 +32906,7 @@
 		(dnp no)
 		(uuid "6b0d252f-3a93-4df7-80ad-21065b8abd0d")
 		(property "Reference" "#+3V030"
-			(at 302.26 350.52 0)
+			(at 302.26 353.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32498,7 +32917,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 302.26 347.98 0)
+			(at 302.26 350.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32508,7 +32927,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 302.26 350.52 0)
+			(at 302.26 353.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32519,7 +32938,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.26 350.52 0)
+			(at 302.26 353.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32530,7 +32949,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 302.26 350.52 0)
+			(at 302.26 353.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33041,8 +33460,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 114.3 551.18 0)
+		(lib_id "power:+3V3")
+		(at 114.3 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33052,7 +33471,7 @@
 		(dnp no)
 		(uuid "6e847d92-f0f6-49de-a5cb-4267d2743692")
 		(property "Reference" "#+3V019"
-			(at 114.3 551.18 0)
+			(at 114.3 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33063,7 +33482,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 114.3 548.64 90)
+			(at 114.3 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33074,7 +33493,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 551.18 0)
+			(at 114.3 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33085,7 +33504,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 551.18 0)
+			(at 114.3 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33096,7 +33515,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 551.18 0)
+			(at 114.3 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36012,8 +36431,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 73.66 314.96 0)
+		(lib_id "power:+3V3")
+		(at 73.66 317.5 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -36024,7 +36443,7 @@
 		(dnp no)
 		(uuid "8963b214-a724-4545-b3e3-86322a2cc0b2")
 		(property "Reference" "#+3V037"
-			(at 73.66 314.96 0)
+			(at 73.66 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36035,7 +36454,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 73.66 312.42 0)
+			(at 73.66 314.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36045,7 +36464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 314.96 0)
+			(at 73.66 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36056,7 +36475,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 314.96 0)
+			(at 73.66 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36067,7 +36486,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 314.96 0)
+			(at 73.66 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36294,8 +36713,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 281.94 419.1 0)
+		(lib_id "power:+3V3")
+		(at 281.94 421.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36305,7 +36724,7 @@
 		(dnp no)
 		(uuid "8a8b259e-90d3-487f-a6ff-454ef69ce3b0")
 		(property "Reference" "#+3V028"
-			(at 281.94 419.1 0)
+			(at 281.94 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36316,7 +36735,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 284.734 417.068 90)
+			(at 284.734 419.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36327,7 +36746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 281.94 419.1 0)
+			(at 281.94 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36338,7 +36757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 281.94 419.1 0)
+			(at 281.94 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36349,7 +36768,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 281.94 419.1 0)
+			(at 281.94 421.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36522,6 +36941,84 @@
 			(project "amyboard-v1.4"
 				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
 					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 233.68 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ce03cb5-a0d3-4d6a-8a77-5be6e30f7023")
+		(property "Reference" "#FLG05"
+			(at 233.68 142.875 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 233.68 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 233.68 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e243c64e-865d-4ab4-8f82-aed6b6bc6986")
+		)
+		(instances
+			(project "amyboard-v1.4"
+				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -37651,6 +38148,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 309.88 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b39ac31-2bca-4d05-9b98-8d712f6060f5")
+		(property "Reference" "#FLG03"
+			(at 309.88 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 309.88 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 309.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3269fc3-fb0d-4676-b2c0-1daf3ed4bcfe")
+		)
+		(instances
+			(project "amyboard-v1.4"
+				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12VA")
 		(at 436.88 284.48 0)
 		(unit 1)
@@ -37889,8 +38464,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 119.38 441.96 0)
+		(lib_id "power:+3V3")
+		(at 119.38 444.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -37900,7 +38475,7 @@
 		(dnp no)
 		(uuid "9fad16df-3d24-4244-9e9f-5b6e24389322")
 		(property "Reference" "#+3V026"
-			(at 119.38 441.96 0)
+			(at 119.38 444.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37911,7 +38486,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 122.174 439.928 90)
+			(at 122.174 442.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37922,7 +38497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 441.96 0)
+			(at 119.38 444.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37933,7 +38508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 441.96 0)
+			(at 119.38 444.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37944,7 +38519,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 441.96 0)
+			(at 119.38 444.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41214,8 +41789,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 76.2 551.18 0)
+		(lib_id "power:+3V3")
+		(at 76.2 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41225,7 +41800,7 @@
 		(dnp no)
 		(uuid "bad6f297-2e2f-47db-a0d3-8fbaef1ec289")
 		(property "Reference" "#+3V025"
-			(at 76.2 551.18 0)
+			(at 76.2 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41236,7 +41811,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 76.2 548.64 90)
+			(at 76.2 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41247,7 +41822,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 551.18 0)
+			(at 76.2 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41258,7 +41833,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 551.18 0)
+			(at 76.2 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41269,7 +41844,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 551.18 0)
+			(at 76.2 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44886,8 +45461,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 101.6 551.18 0)
+		(lib_id "power:+3V3")
+		(at 101.6 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44897,7 +45472,7 @@
 		(dnp no)
 		(uuid "ce8fb7d5-d8f3-4ad4-afa7-7fe8b8156a5a")
 		(property "Reference" "#+3V020"
-			(at 101.6 551.18 0)
+			(at 101.6 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44908,7 +45483,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 101.6 548.64 90)
+			(at 101.6 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44919,7 +45494,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 551.18 0)
+			(at 101.6 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44930,7 +45505,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 551.18 0)
+			(at 101.6 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44941,7 +45516,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 551.18 0)
+			(at 101.6 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44964,8 +45539,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 114.3 314.96 0)
+		(lib_id "power:+3V3")
+		(at 114.3 317.5 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -44976,7 +45551,7 @@
 		(dnp no)
 		(uuid "cf46c18b-8190-4398-bd1d-d0c7ed093c00")
 		(property "Reference" "#+3V036"
-			(at 114.3 314.96 0)
+			(at 114.3 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44987,7 +45562,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 114.3 312.42 0)
+			(at 114.3 314.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44997,7 +45572,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 314.96 0)
+			(at 114.3 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45008,7 +45583,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 314.96 0)
+			(at 114.3 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45019,7 +45594,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 314.96 0)
+			(at 114.3 317.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45315,6 +45890,84 @@
 			(project "amyboard-v1.4"
 				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 309.88 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2ce3610-698f-473a-8926-c60fc1e80af9")
+		(property "Reference" "#FLG02"
+			(at 309.88 53.975 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 309.88 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 309.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3470cb5-3edf-4b7c-bbf3-a6fb1877a26f")
+		)
+		(instances
+			(project "amyboard-v1.4"
+				(path "/6c5c5f1e-b953-464b-941a-bc9515f7d7b0"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -46199,8 +46852,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 81.28 551.18 0)
+		(lib_id "power:+3V3")
+		(at 81.28 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -46210,7 +46863,7 @@
 		(dnp no)
 		(uuid "da4581fd-09a6-4a56-8c81-0c8e4a8faeba")
 		(property "Reference" "#+3V024"
-			(at 81.28 551.18 0)
+			(at 81.28 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46221,7 +46874,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 81.28 548.64 90)
+			(at 81.28 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46232,7 +46885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 551.18 0)
+			(at 81.28 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46243,7 +46896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 551.18 0)
+			(at 81.28 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46254,7 +46907,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 551.18 0)
+			(at 81.28 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47097,8 +47750,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 139.7 358.14 0)
+		(lib_id "power:+3V3")
+		(at 139.7 360.68 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -47109,7 +47762,7 @@
 		(dnp no)
 		(uuid "e30120df-3ea6-4356-9a60-e680e2e0c226")
 		(property "Reference" "#+3V032"
-			(at 139.7 358.14 0)
+			(at 139.7 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47120,7 +47773,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 139.7 355.6 0)
+			(at 139.7 358.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47130,7 +47783,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 358.14 0)
+			(at 139.7 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47141,7 +47794,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 358.14 0)
+			(at 139.7 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47152,7 +47805,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 358.14 0)
+			(at 139.7 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48993,8 +49646,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 91.44 551.18 0)
+		(lib_id "power:+3V3")
+		(at 91.44 553.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49004,7 +49657,7 @@
 		(dnp no)
 		(uuid "f1e246f3-c698-4a4e-a7d3-a35fff389d95")
 		(property "Reference" "#+3V022"
-			(at 91.44 551.18 0)
+			(at 91.44 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49015,7 +49668,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 91.44 548.64 90)
+			(at 91.44 551.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49026,7 +49679,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 551.18 0)
+			(at 91.44 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49037,7 +49690,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 551.18 0)
+			(at 91.44 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49048,7 +49701,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 551.18 0)
+			(at 91.44 553.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49471,8 +50124,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 149.86 340.36 0)
+		(lib_id "power:+3V3")
+		(at 149.86 342.9 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -49483,7 +50136,7 @@
 		(dnp no)
 		(uuid "f7174f29-adaa-40b9-9008-7fe55b10265a")
 		(property "Reference" "#+3V035"
-			(at 149.86 340.36 0)
+			(at 149.86 342.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49494,7 +50147,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 149.86 337.82 0)
+			(at 149.86 340.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49504,7 +50157,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 340.36 0)
+			(at 149.86 342.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49515,7 +50168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 340.36 0)
+			(at 149.86 342.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49526,7 +50179,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 340.36 0)
+			(at 149.86 342.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49549,8 +50202,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 177.8 381 0)
+		(lib_id "power:+3V3")
+		(at 177.8 383.54 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -49561,7 +50214,7 @@
 		(dnp no)
 		(uuid "f72822b6-4fbc-49b0-bbe7-c4571bf6abaa")
 		(property "Reference" "#+3V034"
-			(at 177.8 381 0)
+			(at 177.8 383.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49572,7 +50225,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 177.8 378.46 0)
+			(at 177.8 381 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49582,7 +50235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 381 0)
+			(at 177.8 383.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49593,7 +50246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 381 0)
+			(at 177.8 383.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49604,7 +50257,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.8 381 0)
+			(at 177.8 383.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49705,8 +50358,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 142.24 434.34 0)
+		(lib_id "power:+3V3")
+		(at 142.24 436.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49716,7 +50369,7 @@
 		(dnp no)
 		(uuid "f7e6e8ce-707f-4d9c-b015-f673e9e8f083")
 		(property "Reference" "#+3V018"
-			(at 142.24 434.34 0)
+			(at 142.24 436.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49727,7 +50380,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 145.034 432.308 90)
+			(at 145.034 434.848 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49738,7 +50391,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 434.34 0)
+			(at 142.24 436.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49749,7 +50402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 434.34 0)
+			(at 142.24 436.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49760,7 +50413,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 434.34 0)
+			(at 142.24 436.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50104,8 +50757,8 @@
 		)
 	)
 	(symbol
-		(lib_id "amyboard-v1.4-eagle-import:+3V3")
-		(at 434.34 497.84 0)
+		(lib_id "power:+3V3")
+		(at 434.34 500.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -50115,7 +50768,7 @@
 		(dnp no)
 		(uuid "fcedd77a-676f-4e0b-a4ab-a1b5f33520ab")
 		(property "Reference" "#+3V016"
-			(at 434.34 497.84 0)
+			(at 434.34 500.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50126,7 +50779,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 434.34 495.3 0)
+			(at 434.34 497.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -50137,7 +50790,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 434.34 497.84 0)
+			(at 434.34 500.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50148,7 +50801,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 434.34 497.84 0)
+			(at 434.34 500.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50159,7 +50812,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 434.34 497.84 0)
+			(at 434.34 500.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50548,7 +51201,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Alt")
-		(at 228.6 147.32 270)
+		(at 236.22 147.32 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -50559,7 +51212,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffd95b36-17d5-440b-9999-9e9529dcd4ae")
 		(property "Reference" "TP1"
-			(at 233.68 146.0499 90)
+			(at 241.3 146.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -50570,7 +51223,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 233.68 148.5899 90)
+			(at 241.3 148.5899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -50581,7 +51234,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 228.6 152.4 0)
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50592,7 +51245,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 152.4 0)
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50603,7 +51256,7 @@
 			)
 		)
 		(property "Description" "test point (alternative shape)"
-			(at 228.6 147.32 0)
+			(at 236.22 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
