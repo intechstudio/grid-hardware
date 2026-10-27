@@ -77,7 +77,15 @@ jobs:
         export DISPLAY=:99
         timeout 1m freecad --hidden ./Mechanical/Design/${{ matrix.component }}/${{ matrix.component }}.FCStd ./.github/workflows/freecad_export.py step pdf || true
 
+    - name: Cache conda env
+      id: conda-cache
+      uses: actions/cache@v4
+      with:
+        path: ~/miniconda3/envs/occenv
+        key: occenv-${{ runner.os }}-python3.10-pythonocc-core7.7.2
+
     - name: Install conda, create env with pythonocc-core
+      if: steps.conda-cache.outputs.cache-hit != 'true'
       run: |
         CONDA_INSTALL_DIR="$HOME/miniconda3"
 
@@ -90,12 +98,14 @@ jobs:
         export PATH="$CONDA_INSTALL_DIR/bin:$PATH"
         source "$CONDA_INSTALL_DIR/etc/profile.d/conda.sh"
 
-        # Create environment and activate it
+        # Create environment, pulled from conda-forge (subject to rate limiting)
         conda create -n occenv python=3.10 pythonocc-core=7.7.2 -c conda-forge --yes
-        conda activate occenv
-    
-        # Run your Python script inside the environment
-        python ./.github/workflows/pythonocc_step_to_stl.py
+
+    - name: Run pythonocc script
+      run: |
+        # Use the env's python directly so this works whether the env was
+        # just created above or restored from cache (no base conda needed)
+        "$HOME/miniconda3/envs/occenv/bin/python" ./.github/workflows/pythonocc_step_to_stl.py
 
 
     - name: Generate Preview PNG
